@@ -1,0 +1,60 @@
+{
+  "pexels_api_key": "",
+  "buffer_token": "",
+  "buffer_channels": [
+    {
+      "id": "REPLACE_INSTAGRAM_CHANNEL_ID",
+      "service": "instagram",
+      "name": "curio667"
+    },
+    {
+      "id": "REPLACE_YOUTUBE_CHANNEL_ID",
+      "service": "youtube",
+      "name": "Curio"
+    },
+    {
+      "id": "REPLACE_TIKTOK_CHANNEL_ID",
+      "service": "tiktok",
+      "name": "curio667"
+    }
+  ],
+  "cloudinary_cloud_name": "",
+  "cloudinary_api_key": "",
+  "cloudinary_api_secret": "",
+  "voice": "en-US-BrianNeural",
+  "tts_rate": "+0%",
+  "tts_pitch": "+0Hz",
+  "segment_gap": 0.15,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "music_volume": 0.07,
+  "music_credit": "Music: CO.AG Music - https://www.youtube.com/c/COAGmusic",
+  "brand_name": "Curio",
+  "brand_handle": "@curio667",
+  "brand_cta": "Follow Curio for your daily dose of science 🔬",
+  "brand_hashtags": [
+    "#science",
+    "#technology",
+    "#didyouknow",
+    "#facts",
+    "#space",
+    "#tech",
+    "#shorts",
+    "#fyp"
+  ],
+  "color_grade": "eq=contrast=1.08:saturation=1.12:brightness=0.02,vignette=angle=PI/6",
+  "caption_words_per_line": 3,
+  "caption_fontsize": 80,
+  "caption_margin_v": 880,
+  "caption_margin_h": 185,
+  "ffmpeg": "ffmpeg",
+  "ffprobe": "ffprobe",
+  "caption_style": "color",
+  "caption_highlight_hex": "FFC800",
+  "caption_box_hex": "FFC800",
+  "caption_text_hex": "FFFFFF",
+  "caption_pop_scale": 112,
+  "brand_primary": "0x070d1a",
+  "brand_accent": "0x00c8ff"
+}
