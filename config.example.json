@@ -3,19 +3,14 @@
   "buffer_token": "",
   "buffer_channels": [
     {
-      "id": "REPLACE_INSTAGRAM_CHANNEL_ID",
-      "service": "instagram",
-      "name": "curio667"
-    },
-    {
-      "id": "REPLACE_YOUTUBE_CHANNEL_ID",
+      "id": "6a40d1e35ab6d2f1067e92c9",
       "service": "youtube",
       "name": "Curio"
     },
     {
-      "id": "REPLACE_TIKTOK_CHANNEL_ID",
-      "service": "tiktok",
-      "name": "curio667"
+      "id": "6a40d1d15ab6d2f1067e92ac",
+      "service": "instagram",
+      "name": "curi.o667"
     }
   ],
   "cloudinary_cloud_name": "",
