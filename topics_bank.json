@@ -1377,5 +1377,451 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "Uranus Might Be a Magma World",
+    "segments": [
+      {
+        "text": "Uranus may be hiding molten rock beneath its clouds.",
+        "keywords": "planet Uranus atmosphere",
+        "visual": {
+          "type": "hook",
+          "prompt": "dramatic scene image",
+          "big": "Molten core beneath clouds?"
+        }
+      },
+      {
+        "text": "This discovery changes everything we know about ice giants.",
+        "keywords": "ice giant planets",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of ice giant planets"
+        }
+      },
+      {
+        "text": "Scientists believe its interior is more volcanic than icy.",
+        "keywords": "volcano eruption CGI",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of volcanic eruption"
+        }
+      },
+      {
+        "text": "Unlike its twin Neptune, Uranus shows strange thermal patterns.",
+        "keywords": "planet thermal infrared",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI thermal map of Uranus"
+        }
+      },
+      {
+        "text": "This could mean magma activity is happening right now.",
+        "keywords": "magma pocket animation",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of magma pockets"
+        }
+      },
+      {
+        "text": "Is it possible that Uranus has active volcanoes?",
+        "keywords": "volcano on Uranus",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of volcano on Uranus"
+        }
+      },
+      {
+        "text": "Follow for the science they never taught you.",
+        "keywords": "space stars galaxy",
+        "visual": {
+          "type": "cta",
+          "prompt": "iconic planet Uranus"
+        }
+      }
+    ],
+    "description": "Uranus could be hiding something very hot. Follow for daily science & tech! 🔭",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#Uranus",
+      "#didyouknow",
+      "#facts",
+      "#tech",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Why Your Phone Is More Powerful Than It Seems",
+    "segments": [
+      {
+        "text": "Your smartphone has more computing power than the Apollo 11 mission.",
+        "keywords": "smartphone comparison CGI",
+        "visual": {
+          "type": "hook",
+          "prompt": "dramatic scene image",
+          "big": "Smartphone vs. Apollo 11?"
+        }
+      },
+      {
+        "text": "It packs more than 100,000 times the computing power.",
+        "keywords": "computer chips CGI",
+        "visual": {
+          "type": "counter",
+          "target": 100000,
+          "suffix": "x",
+          "label": "Computing power increase"
+        }
+      },
+      {
+        "text": "While Apollo 11 guided humans to the moon, your phone plays games.",
+        "keywords": "gaming on smartphone",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of gaming on smartphone"
+        }
+      },
+      {
+        "text": "It can also process data from complex sensors.",
+        "keywords": "smartphone sensors",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of smartphone sensors"
+        }
+      },
+      {
+        "text": "Imagine the tech evolution over just a few decades.",
+        "keywords": "technology revolution",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI tech timeline"
+        }
+      },
+      {
+        "text": "Your pocket gadget could guide missions to Mars someday.",
+        "keywords": "Mars mission CGI",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of Mars mission"
+        }
+      },
+      {
+        "text": "Follow for daily science that blows your mind.",
+        "keywords": "smartphone technology",
+        "visual": {
+          "type": "cta",
+          "prompt": "iconic smartphone"
+        }
+      }
+    ],
+    "description": "Your phone could lead the next moon missions. Follow for daily science & tech! 📱",
+    "hashtags": [
+      "#science",
+      "#technology",
+      "#smartphone",
+      "#didyouknow",
+      "#facts",
+      "#tech",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Massive Camera to Capture Our Universe",
+    "segments": [
+      {
+        "text": "A new camera will take 700 photos of the night sky every night.",
+        "keywords": "massive camera CGI",
+        "visual": {
+          "type": "hook",
+          "prompt": "dramatic scene image",
+          "big": "700 nightly photos!"
+        }
+      },
+      {
+        "text": "It boasts a staggering 3,200 megapixels of detail.",
+        "keywords": "megapixel comparison",
+        "visual": {
+          "type": "counter",
+          "target": 3200,
+          "suffix": "x",
+          "label": "Camera megapixels"
+        }
+      },
+      {
+        "text": "This camera will help us uncover hidden cosmic secrets.",
+        "keywords": "uncover cosmic mystery",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of cosmic secrets"
+        }
+      },
+      {
+        "text": "It will operate for a decade, capturing vast amounts of data.",
+        "keywords": "data collection CGI",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI data collection"
+        }
+      },
+      {
+        "text": "Researchers aim to find dark matter and exoplanets.",
+        "keywords": "dark matter exoplanets",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of exoplanets"
+        }
+      },
+      {
+        "text": "Just imagine how much our understanding of the universe might grow.",
+        "keywords": "expansion of knowledge",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of expanding universe"
+        }
+      },
+      {
+        "text": "Follow for the science they never taught you.",
+        "keywords": "space stars galaxy",
+        "visual": {
+          "type": "cta",
+          "prompt": "iconic night sky"
+        }
+      }
+    ],
+    "description": "This camera could change our cosmic perspective forever. Follow for daily science & tech! 🌌",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#technology",
+      "#didyouknow",
+      "#facts",
+      "#tech",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mysterious Water on Mars",
+    "segments": [
+      {
+        "text": "Ancient Martian river channels reveal evidence of complex organics.",
+        "keywords": "Martian river channel CGI",
+        "visual": {
+          "type": "hook",
+          "prompt": "dramatic scene image",
+          "big": "Water once flowed on Mars?"
+        }
+      },
+      {
+        "text": "This discovery suggests Mars might have supported life.",
+        "keywords": "possibilities of life on Mars",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of Mars with water"
+        }
+      },
+      {
+        "text": "The channels formed billions of years ago.",
+        "keywords": "ancient river bed CGI",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of ancient river bed"
+        }
+      },
+      {
+        "text": "Scientists are studying the complexity of these organic materials.",
+        "keywords": "organic materials analysis",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of organic analysis"
+        }
+      },
+      {
+        "text": "This could change our understanding of life's origins.",
+        "keywords": "life origin theories",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of origins"
+        }
+      },
+      {
+        "text": "What other secrets might Mars still hide from us?",
+        "keywords": "Mars exploration",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of exploring Mars"
+        }
+      },
+      {
+        "text": "Follow for daily science that blows your mind.",
+        "keywords": "Mars surface",
+        "visual": {
+          "type": "cta",
+          "prompt": "iconic Mars landscape"
+        }
+      }
+    ],
+    "description": "Mars might have held more than just water. Follow for daily science & tech! 🪐",
+    "hashtags": [
+      "#science",
+      "#Mars",
+      "#space",
+      "#didyouknow",
+      "#facts",
+      "#tech",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "AR 4478: The Giant Sunspot Group",
+    "segments": [
+      {
+        "text": "AR 4478 is one of the largest sunspot groups ever recorded.",
+        "keywords": "sunspot activity CGI",
+        "visual": {
+          "type": "hook",
+          "prompt": "dramatic scene image",
+          "big": "Largest sunspot revealed!"
+        }
+      },
+      {
+        "text": "This group has massive implications for solar activity.",
+        "keywords": "solar activity implications",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of solar flares"
+        }
+      },
+      {
+        "text": "Sunspots can affect satellites and power grids on Earth.",
+        "keywords": "satellite disruption CGI",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of satellite disruption"
+        }
+      },
+      {
+        "text": "Understanding these patterns helps predict solar storms.",
+        "keywords": "solar storm prediction",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of solar storm"
+        }
+      },
+      {
+        "text": "AR 4478 is crossing the Sun right now.",
+        "keywords": "current sunspot tracking",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of tracking sunspot"
+        }
+      },
+      {
+        "text": "Could this be a sign of increased solar activity ahead?",
+        "keywords": "increasing solar activity",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of solar activity warning"
+        }
+      },
+      {
+        "text": "Follow if curiosity runs your brain.",
+        "keywords": "solar system",
+        "visual": {
+          "type": "cta",
+          "prompt": "iconic sun in space"
+        }
+      }
+    ],
+    "description": "This sunspot group could change our solar forecasts. Follow for daily science & tech! ☀️",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#sunspot",
+      "#didyouknow",
+      "#facts",
+      "#tech",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Line City: Future of Urban Living",
+    "segments": [
+      {
+        "text": "Saudi Arabia's Line city could redefine urban living.",
+        "keywords": "Line city visual",
+        "visual": {
+          "type": "hook",
+          "prompt": "dramatic scene image",
+          "big": "A city unlike any other!"
+        }
+      },
+      {
+        "text": "The city is designed to sit just 200 meters wide.",
+        "keywords": "urban planning CGI",
+        "visual": {
+          "type": "counter",
+          "target": 200,
+          "suffix": "m",
+          "label": "Width of the city"
+        }
+      },
+      {
+        "text": "It will stretch over 170 kilometers in length.",
+        "keywords": "city length CGI",
+        "visual": {
+          "type": "counter",
+          "target": 170,
+          "suffix": "km",
+          "label": "Length of the city"
+        }
+      },
+      {
+        "text": "The design aims to minimize car use and promote walking.",
+        "keywords": "walkable city CGI",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of walkable urban area"
+        }
+      },
+      {
+        "text": "This ambitious project is part of a larger plan for sustainability.",
+        "keywords": "sustainable living CGI",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of green city living"
+        }
+      },
+      {
+        "text": "Could this be the future of our cities worldwide?",
+        "keywords": "future urban living",
+        "visual": {
+          "type": "kenburns",
+          "prompt": "CGI of future urban environment"
+        }
+      },
+      {
+        "text": "Follow for the science they never taught you.",
+        "keywords": "city skyline",
+        "visual": {
+          "type": "cta",
+          "prompt": "iconic city skyline"
+        }
+      }
+    ],
+    "description": "The Line city could transform how we think of urban spaces. Follow for daily science & tech! 🏙️",
+    "hashtags": [
+      "#science",
+      "#technology",
+      "#urbanplanning",
+      "#didyouknow",
+      "#facts",
+      "#tech",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
