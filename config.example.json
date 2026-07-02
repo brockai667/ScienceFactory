@@ -67,6 +67,6 @@
   "broll_fallback_query": "science technology laboratory",
   "pixabay_api_key": "",
   "visual_engine": "motion",
-  "motion_bg": "stars",
+  "motion_bg": "auto",
   "motion_style": "cinematic documentary photograph, dark clean background, dramatic light, vivid detail, single clear subject, no text, no watermark"
 }
