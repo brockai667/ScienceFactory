@@ -31,6 +31,8 @@ def main():
     used = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else []
 
     remaining = [t for t in bank if t["title"] not in used]
+    # preferuj temy NOVEHO (PRO) formatu
+    remaining.sort(key=lambda t: 0 if t.get("scenes") else 1)
     if not remaining:
         print("Vsetky temy z banky su uz pouzite. Pridaj nove do topics_bank.json.")
         return
@@ -46,7 +48,8 @@ def main():
         with open(path, "w", encoding="utf-8") as f:
             json.dump(spec, f, ensure_ascii=False, indent=2)
         print(f"\n===== [{i}/{len(batch)}] {title} =====")
-        r = subprocess.run([sys.executable, os.path.join(ROOT, "make_video.py"), path])
+        renderer = "pro_engine.py" if spec.get("scenes") else "make_video.py"
+        r = subprocess.run([sys.executable, os.path.join(ROOT, renderer), path])
         if r.returncode == 0:
             made.append(title)
             used.append(title)

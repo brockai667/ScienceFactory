@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Doplni banku tem cez GitHub Models (zadarmo). Nika: VEDA & TECHNOLOGIE (fascinujuce fakty, ako veci funguju)."""
+"""Doplni banku tem cez GitHub Models (zadarmo). Nika: VEDA & TECH.
+NOVY FORMAT (PRO engine): tema = 5 scen (hook/fact/fact/callout/cta) s presnymi
+subjektovymi queries, sync chipmi (len dolozitelne cisla) a kinetickym hookom.
+Stare temy bez 'scenes' sa vyradia az ked su aspon 3 nove (den nikdy neostane bez videi)."""
 import json
 import os
 import re
@@ -7,7 +10,7 @@ import sys
 
 import requests
 try:
-    import trends                      # trend scanner (Reddit + YouTube), volitelny
+    import trends
 except Exception:
     trends = None
 
@@ -20,29 +23,86 @@ MODEL = os.environ.get("MODELS_MODEL", "openai/gpt-4o-mini")
 BASE = os.environ.get("MODELS_BASE_URL", "https://models.github.ai/inference")
 TOKEN = os.environ.get("MODELS_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
-# Nika: VEDA & TECH -> kde ludia realne diskutuju / co pozeraju
 TREND_SUBREDDITS = ['space', 'science', 'askscience', 'Physics', 'spaceporn']
 TREND_YT_QUERIES = ['mind blowing science facts', 'space facts', 'how the universe works']
 
-SYSTEM = ("You are a viral short-form scriptwriter for a SCIENCE & TECHNOLOGY brand called Curio. You explain "
-          "fascinating, true science and tech: how everyday things actually work, space, physics, the human "
-          "body & brain, inventions, AI and future technology, and mind-blowing 'did you know' facts. Every "
-          "claim must be ACCURATE and widely accepted. NO invented statistics, NO pseudoscience, NO conspiracy, "
-          "NO sensational misinformation. Awe-inspiring but honest. You output strict JSON, nothing else. THE HOOK (the very first line / segment 1) is the single most important thing in the whole video: it MUST stop the scroll within 2 seconds. Make it concrete and specific (a number, a name, a vivid image, or a sharp contradiction) and open a curiosity gap that can ONLY be closed by watching to the end. Lead with the most shocking part FIRST, never a slow setup. Forbidden hook openers: 'Did you know', 'Have you ever', 'Imagine', 'Here are', 'In this video', 'Let me tell you'.")
+SYSTEM = ("You are a scriptwriter for a short-form brand about fascinating SCIENCE and TECHNOLOGY: space, physics, engineering, computers, nature's mechanisms. "
+          "ACCURACY IS CRITICAL: use ONLY widely-documented, verifiable facts. NEVER invent or guess "
+          "numbers, percentages, dates or statistics - if a figure is not universally established, say "
+          "it generally instead of making one up. You output strict JSON, nothing else.")
 
 EXAMPLE = {
-    "title": "Why Your Brain Tricks You Every Day",
-    "segments": [
-        {"text": "Your brain edits reality before you ever see it.", "keywords": "brain neurons animation"},
-        {"text": "And it does it about half a second early.", "keywords": "clock ticking macro"},
-        {"text": "Your eyes only send raw light, your brain predicts the rest.", "keywords": "human eye macro"},
-        {"text": "That's exactly why optical illusions fool everyone.", "keywords": "optical illusion pattern"},
-        {"text": "You never see the world, only your brain's best guess of it.", "keywords": "person thinking dark"},
-        {"text": "So reality is basically a controlled hallucination.", "keywords": "abstract neon lights"},
-        {"text": "Follow Curio for your daily dose of science.", "keywords": "galaxy stars space"},
+    "title": "The Machine That Left the Solar System",
+    "place": "",
+    "country": "",
+    "scenes": [
+        {
+            "role": "hook",
+            "text": "A machine launched in 1977 is still calling home, from beyond the solar system.",
+            "hook_top": "STILL CALLING HOME SINCE 1977",
+            "query": "deep space stars nebula",
+            "query2": "night sky stars timelapse"
+        },
+        {
+            "role": "fact",
+            "text": "Voyager 1 is more than twenty four billion kilometers away, the most distant human-made object ever.",
+            "query": "satellite space probe render",
+            "query2": "space dark stars slow",
+            "chips": [
+                {
+                    "t": "LAUNCHED 1977",
+                    "on": "1977",
+                    "style": "white"
+                },
+                {
+                    "t": "24+ BILLION KM",
+                    "on": "billion",
+                    "style": "accent"
+                }
+            ],
+            "punch": "billion"
+        },
+        {
+            "role": "fact",
+            "text": "Its signal takes over twenty two hours to reach Earth, traveling at the speed of light.",
+            "query": "radio telescope dish night",
+            "query2": "antenna satellite dish stars",
+            "chips": [
+                {
+                    "t": "22 HOURS AT LIGHT SPEED",
+                    "on": "hours",
+                    "style": "accent"
+                }
+            ]
+        },
+        {
+            "role": "callout",
+            "text": "And it runs on less power than a light bulb, on technology older than the personal computer.",
+            "query": "vintage computer electronics retro",
+            "query2": "old circuit board macro",
+            "label": "WEAKER THAN A BULB",
+            "sub": "1970s tech, still running",
+            "label_on": "power",
+            "punch": "bulb"
+        },
+        {
+            "role": "cta",
+            "text": "Follow for the science that sounds impossible.",
+            "query": "galaxy stars deep space",
+            "query2": "milky way night timelapse"
+        }
     ],
-    "description": "You don't see reality, you see your brain's prediction of it. Follow for daily science & tech! 🧠",
-    "hashtags": ["#science", "#brain", "#psychology", "#didyouknow", "#facts", "#tech", "#shorts", "#fyp"],
+    "description": "Voyager 1 launched in 1977 and is now 24+ billion km away - still transmitting on less power than a light bulb. Follow for daily science!",
+    "hashtags": [
+        "#science",
+        "#space",
+        "#voyager",
+        "#nasa",
+        "#technology",
+        "#universe",
+        "#shorts",
+        "#fyp"
+    ]
 }
 
 
@@ -63,49 +123,43 @@ def build_prompt(n, existing_titles, trending=None):
         joined = chr(10).join("- " + t for t in trending)
         trend_block = (
             " WHAT REAL PEOPLE DISCUSS AND WATCH THIS WEEK (live headlines from Reddit communities and "
-            "top YouTube videos in this niche - what the audience actually cares about right now): " + joined +
+            "top YouTube videos in this niche): " + joined +
             " Let at least HALF of the new topics be directly inspired by a SPECIFIC item above, turned "
-            "into a strong hook that STILL follows the style and safety rules described. Do NOT copy any "
-            "headline word-for-word, and NEVER mention Reddit or YouTube. "
+            "into a strong hook that STILL follows the rules. Do NOT copy any headline word-for-word, "
+            "and NEVER mention Reddit or YouTube. "
         )
     return (
-        f"Generate {n} NEW faceless short-form video topics for a SCIENCE & TECHNOLOGY brand called Curio "
-        "(TikTok / Reels / YouTube Shorts).\n"
-        "Niche: fascinating TRUE facts about how things work, space, physics, the human body & brain, "
-        "inventions, AI and future tech, and surprising 'did you know' science.\n"
+        f"Generate {n} NEW faceless short-form video topics for a brand about fascinating SCIENCE and TECHNOLOGY: space, physics, engineering, computers, nature's mechanisms. "
+        "Each video is a punchy MICRO-DOC of ONE idea (TikTok / Reels / Shorts).\n"
         "Return ONLY a JSON array (no markdown). Each item EXACTLY this schema:\n"
         f"{json.dumps(EXAMPLE, ensure_ascii=False, indent=2)}\n\n"
-        "Rules (make it feel PRO and VIRAL):\n"
-        "- title: a curiosity gap, like 'Why Space Is Completely Silent' or 'Your Phone Beats NASA's Moon Computer'.\n"
-        "- 6 to 9 segments. Segment 1 is THE HOOK: one surprising, true claim under 12 words. "
+        "Rules (PRO editing pipeline depends on these):\n"
+        "- EXACTLY 5 scenes in this order: hook, fact, fact, callout, cta. Each scene 'text' = 1-2 "
+        "short spoken sentences (energetic but natural voiceover).\n"
+        "- hook: the single most surprising TRUE thing, under 14 words, opens a curiosity gap. "
+        "'hook_top' = the same idea compressed to MAX 6 punchy words (big kinetic text on screen). "
         "Never start with 'Did you know'.\n"
-        "- segment 2 deepens the curiosity (e.g. 'And the reason is stranger than you think.').\n"
-        "- EVERYTHING must be scientifically accurate and mainstream. NO made-up numbers, NO pseudoscience, "
-        "NO conspiracy, NO health/medical advice. If you cite a number, it must be a real, well-known one.\n"
-        "- write for a clear, confident SPOKEN voiceover: short, simple, punchy sentences that build wonder.\n"
-        "- each segment 'keywords': 1-3 ENGLISH words for real Pexels footage that VISUALLY MATCHES the line "
-        "(e.g. 'galaxy stars space', 'circuit board macro', 'lightning storm night', 'human brain scan'). "
-        "Concrete and visual, never abstract.\n"
-        "- the SECOND-TO-LAST segment should loop back to the opening hook so a rewatch feels seamless.\n"
-        "- the LAST segment text MUST be exactly: 'Follow Curio for your daily dose of science.'\n"
-        "- description: one intriguing sentence ending with 'Follow for daily science & tech!'.\n"
-        "- About half the time, add ONE fitting emoji at the very END of the description (e.g. 🔬, 🧠, 🚀, ⚡, 🌌). "
-        "Emoji ONLY in the description text, NEVER inside any segment 'text' (spoken captions).\n"
-        "- hashtags: 6-8 tags including #science #tech #shorts #fyp.\n"
-        "- VARY THE TITLE FORMAT: do NOT start more than one in five titles with a number "
-        "(avoid the repetitive 'N things' pattern). Mix a bold claim, a question, a "
-        "'why/how' angle and a curiosity gap so titles never look the same.\n"
-        "- ACCURACY IS CRITICAL: use ONLY widely-documented, verifiable facts. NEVER invent or "
-        "guess numbers, percentages, dates, amounts or statistics. If a specific figure is not "
-        "universally established, say it generally instead of making one up. Wrong facts kill the "
-        "channel's credibility, so double-check every claim.\n"
-        "- BE SPECIFIC: name the ACTUAL subject of the video (the exact place, case, event, person "
-        "or thing) so it is never vague. Viewers complain when the location or subject is not named.\n"
+        "- fact scenes: ONE concrete supporting fact each. 'chips' = 1-2 short TRUE fact-chips: "
+        "{'t': 'MAX 22 CHARS', 'on': 'the spoken word that triggers it', 'style': 'white'|'accent'}. "
+        "ONLY widely-documented numbers; if no reliable number exists, use a word chip.\n"
+        "- callout scene: 'label' = 2-4 word on-screen label of the KEY takeaway, 'sub' = short "
+        "sub-line (max 34 chars), 'label_on' = spoken trigger word.\n"
+        "- 'punch' (optional): ONE spoken word where the shot subtly zooms.\n"
+        "- EVERY scene needs 'query' = Pexels stock search naming the CONCRETE subject of that exact "
+        "line (line about octopuses -> 'octopus underwater'; NEVER abstract) and 'query2' = visual "
+        "fallback. The viewer must SEE what the line talks about.\n"
+        "- prefer counterintuitive angles; include one concrete comparison a viewer can picture.\n"
+        "- the video must work with sound OFF (hook text + chips tell the story) AND with eyes closed "
+        "(voice explains everything).\n"
+        "- description: 1-2 engaging sentences, then 'Follow for daily science!'\n"
+        "- hashtags: 6-9 relevant tags including #shorts #fyp.\n"
+        "- VARY THE TITLE FORMAT: mix a bold claim, a question and a curiosity gap; do NOT start more "
+        "than one in five titles with a number.\n"
         f"- Do NOT reuse any of these existing titles: {existing_titles}\n"
-        "- Do NOT repeat the same SUBJECT, fact or concept as any existing title above, even reworded, "
-        "renumbered or from a different angle. Every topic must be a genuinely DIFFERENT idea.\n"
+        "- Do NOT repeat the same SUBJECT or fact as any existing title above, even reworded. Every "
+        "topic must be a genuinely DIFFERENT idea.\n"
         + trend_block +
-        "STORYBOARD (visual directing, IMPORTANT): to EVERY segment ADD a field 'visual' = an object choosing HOW to visualize exactly what that line SAYS (never generic): {\"type\":\"kenburns\",\"prompt\":\"LITERAL ENGLISH image prompt naming ONE concrete, instantly recognizable subject/scene that depicts exactly what the line says (a real thing a camera could photograph; NEVER abstract, NEVER metaphors)\"} for normal lines; {\"type\":\"counter\",\"target\":1000,\"suffix\":\"x\",\"label\":\"3-4 WORD CAPTION\"} when the line contains a big number; {\"type\":\"compare\",\"small_prompt\":\"...\",\"big_prompt\":\"...\",\"small_label\":\"X\",\"big_label\":\"Y\",\"stat\":\"300x\"} for size/amount comparisons; {\"type\":\"callouts\",\"prompt\":\"subject image\",\"labels\":[\"SHORT LABEL\"]} to point at parts of a subject; {\"type\":\"lineup\",\"items\":[{\"name\":\"A\",\"prompt\":\"...\"}]} for listing 3-5 things; {\"type\":\"arrow\",\"from_prompt\":\"...\",\"to_prompt\":\"...\",\"label\":\"WHAT MOVES\"} for movement/flow. First segment gets {\"type\":\"hook\",\"prompt\":\"dramatic scene image\",\"big\":\"SHORT PUNCHY QUESTION OR CLAIM (max 5 words)\"}; last segment {\"type\":\"cta\",\"prompt\":\"iconic subject of the video\"}. Labels MUST describe what the narration says at that moment - never invent unrelated text. Image prompts must describe 3D RENDERED CGI assets in a modern 3D-explainer style - NEVER photographs, NEVER photorealistic people; if a person is needed, describe an elegant dark silhouette with dramatic rim light, or the relevant anatomy/object instead - NEVER cartoon characters, NEVER toys; prefer objects, anatomy, environments, close-up details; the subject must FILL the frame and be well lit. Return ONLY the JSON array."
+        "Return ONLY the JSON array."
     )
 
 
@@ -134,15 +188,35 @@ def extract_json(s):
 
 
 def valid(t):
-    if not isinstance(t, dict) or "title" not in t or "segments" not in t:
+    """Overi + doopravi NOVY format temy (scenes). Stare/nevalidne temy odmietne."""
+    if not isinstance(t, dict) or not t.get("title"):
         return False
-    if not isinstance(t["segments"], list) or len(t["segments"]) < 4:
+    scenes = t.get("scenes")
+    if not isinstance(scenes, list) or not (4 <= len(scenes) <= 7):
         return False
-    for seg in t["segments"]:
-        if "text" not in seg or "keywords" not in seg:
+    for sc in scenes:
+        if not isinstance(sc, dict) or not sc.get("text"):
             return False
-    t.setdefault("description", t["title"] + " Follow for daily science & tech!")
-    t.setdefault("hashtags", ["#science", "#tech", "#shorts", "#fyp"])
+        sc.setdefault("role", "fact")
+    scenes[0]["role"] = "hook"
+    scenes[-1]["role"] = "cta"
+    for sc in scenes:
+        if sc["role"] == "hook":
+            top = re.sub(r"[^A-Za-z0-9' ]", "", str(sc.get("hook_top") or sc["text"]))
+            sc["hook_top"] = " ".join(top.split()[:6]).upper()
+        if not sc.get("query"):
+            sc["query"] = str(t["title"])
+        if not sc.get("query2"):
+            sc["query2"] = "cinematic nature landscape"
+        if sc["role"] == "fact":
+            chips = [c for c in (sc.get("chips") or []) if isinstance(c, dict) and c.get("t")]
+            for c in chips:
+                c["t"] = str(c["t"])[:24]
+            sc["chips"] = chips[:2]
+    t.setdefault("place", "")
+    t.setdefault("country", "")
+    t.setdefault("description", t["title"] + " Follow for daily science!")
+    t.setdefault("hashtags", ["#science", "#space", "#voyager", "#nasa"])
     return True
 
 
@@ -172,10 +246,7 @@ def _too_similar(sig, existing_sigs):
 
 
 
-# --- ANTI-OPAKOVANIE (dedup): po behu odstrani z banky NEPOUZITE temy, ktore su subjektom
-# prilis podobne inej teme. Signatura = title+description+hook + cisla/roky; caste niche-slova
-# sa auto-ignoruju cez frekvenciu (df). Duale pravidlo: rovnaky ROK + prekrytie = dup;
-# rozne roky = rozne pripady; bezrocnove niky -> silna slovna zhoda. Publikovane sa NIKDY nemazu.
+# --- ANTI-OPAKOVANIE (dedup): po behu odstrani z banky NEPOUZITE temy podobne inej teme.
 _DD_STOP = set("""a an the this that these those and or but so of to in on for with at by from as is are was
 were be been being it its you your they them their our we he she his her my me i do does did not no can cant
 will just every most more than then there here what when why how who which while into over out up down off only
@@ -185,8 +256,12 @@ revealed discover""".split())
 
 
 def _dd_sig(t):
-    txt = (str(t.get("title", "")) + " " + str(t.get("description", "")) + " "
-           + (t.get("segments", [{}])[0].get("text", "") if t.get("segments") else ""))
+    first = ""
+    if t.get("scenes"):
+        first = t["scenes"][0].get("text", "")
+    elif t.get("segments"):
+        first = t["segments"][0].get("text", "")
+    txt = (str(t.get("title", "")) + " " + str(t.get("description", "")) + " " + str(first))
     low = txt.lower()
     toks = set(w for w in re.findall(r"[a-z]+", low) if len(w) > 2 and w not in _DD_STOP)
     toks |= set("#" + n for n in re.findall(r"\d{2,}", low))
@@ -204,18 +279,17 @@ def _dd_dup(si, sj):
     yi, yj = _dd_years(si), _dd_years(sj)
     yc = yi & yj
     if yi and yj and not yc:
-        return False                                   # rozne roky = rozne pripady
+        return False
     jac = len(common) / (len(si | sj) or 1)
     if yc and len(common) >= 3:
-        return True                                    # spolocny rok + prekrytie
+        return True
     if not (yi or yj) and len(common) >= 4 and jac >= 0.5:
-        return True                                    # bezrocnove niky -> silna slovna zhoda
+        return True
     return False
 
 
 def _clean_bank():
-    """Odstrani NEPOUZITE temy prilis podobne inej teme (ziadne opakovanie videi).
-    Publikovane (used_topics) sa nikdy nemazu. Best-effort, nikdy nezhodi denny beh."""
+    """Odstrani NEPOUZITE temy prilis podobne inej teme. Publikovane sa nikdy nemazu."""
     from collections import Counter
     bank = json.load(open(BANK, encoding="utf-8"))
     used = set(json.load(open(STATE, encoding="utf-8"))) if os.path.exists(STATE) else set()
@@ -224,9 +298,9 @@ def _clean_bank():
     for s in raws:
         for w in s:
             df[w] += 1
-    cutoff = max(2, int(len(bank) * 0.25))             # slovo vo >25% tem = niche-filler -> ignoruj
+    cutoff = max(2, int(len(bank) * 0.25))
     sigs = [set(w for w in s if df[w] <= cutoff) for s in raws]
-    ks = [s for t, s in zip(bank, sigs) if t.get("title") in used]   # seed: vsetky publikovane
+    ks = [s for t, s in zip(bank, sigs) if t.get("title") in used]
     kept, removed = [], 0
     for t, s in zip(bank, sigs):
         if t.get("title") in used:
@@ -239,7 +313,7 @@ def _clean_bank():
         ks.append(s)
     if removed:
         json.dump(kept, open(BANK, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-        print("Dedup: odstranenych %d podobnych nepouzitych tem (ziadne opakovanie)." % removed)
+        print("Dedup: odstranenych %d podobnych nepouzitych tem." % removed)
     else:
         print("Dedup: ziadne podobne nepouzite temy.")
 
@@ -250,10 +324,17 @@ def main():
         print("CHYBA: chyba MODELS_TOKEN/GITHUB_TOKEN"); sys.exit(1)
     bank = json.load(open(BANK, encoding="utf-8"))
     used = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else []
+    # MIGRACIA: stare temy vyrad az ked su aspon 3 nove PRO temy (den nikdy neostane bez videi)
+    old = [t for t in bank if not t.get("scenes") and t["title"] not in used]
+    new_unused = [t for t in bank if t.get("scenes") and t["title"] not in used]
+    if old and len(new_unused) >= 3:
+        bank = [t for t in bank if t.get("scenes") or t["title"] in used]
+        print(f"Migracia: vyradenych {len(old)} nepouzitych tem stareho formatu.")
     titles = {t["title"] for t in bank}
     unused = [t for t in bank if t["title"] not in used]
     need = TARGET - len(unused)
     if need <= 0:
+        json.dump(bank, open(BANK, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
         print(f"Banka OK: {len(unused)} nepouzitych tem."); return
     print(f"Generujem ~{need} novych tem cez {MODEL}...")
     trending = []
@@ -261,7 +342,7 @@ def main():
         try:
             trending, meta = trends.gather(TREND_SUBREDDITS, TREND_YT_QUERIES, top=18, return_meta=True)
             if trending:
-                print(f"Trendy: {len(trending)} titulkov (Reddit={meta['reddit']}, YouTube={meta['youtube']}) -> temy z realneho dopytu.")
+                print(f"Trendy: {len(trending)} titulkov (Reddit={meta['reddit']}, YouTube={meta['youtube']}).")
         except Exception as e:
             print("Trendy preskocene:", str(e)[:120])
     items = extract_json(call_model(build_prompt(need + 3, sorted(titles), trending)))
@@ -271,10 +352,10 @@ def main():
         if not valid(t) or t["title"] in titles:
             continue
         _s = _sig(t["title"])
-        if _too_similar(_s, existing_sigs):   # ta ista TEMA (iny nazov) -> preskoc (ziadne opakovanie)
+        if _too_similar(_s, existing_sigs):
             print("  preskocene (podobna tema):", t["title"]); continue
-        if t.get("segments"):
-            t["segments"][-1]["text"] = random.choice(CTAS)  # CTAS_ROTATE: nie vzdy rovnaka veta
+        if t.get("scenes"):
+            t["scenes"][-1]["text"] = random.choice(CTAS)  # CTAS_ROTATE
         bank.append(t); titles.add(t["title"]); existing_sigs.append(_s); added += 1
     json.dump(bank, open(BANK, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"Pridanych {added} tem. Banka ma {len(bank)} tem.")
