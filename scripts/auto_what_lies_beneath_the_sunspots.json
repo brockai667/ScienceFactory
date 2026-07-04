@@ -1,0 +1,67 @@
+{
+  "title": "What Lies Beneath the Sunspots?",
+  "place": "The Sun",
+  "country": "Solar System",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "What if sunspots are hiding something amazing beneath them?",
+      "hook_top": "SECRETS OF SUNSPOTS",
+      "query": "sunspots solar activity",
+      "query2": "sun surface close-up"
+    },
+    {
+      "role": "fact",
+      "text": "Recent studies suggest sunspots can reveal hidden magnetic fields.",
+      "query": "magnets and sunspots",
+      "query2": "solar magnetic field diagram",
+      "chips": [
+        {
+          "t": "HIDDEN MAGNETIC FIELDS",
+          "on": "hidden",
+          "style": "accent"
+        }
+      ],
+      "punch": "fields"
+    },
+    {
+      "role": "fact",
+      "text": "These fields can influence solar flares and affect Earth's technology.",
+      "query": "solar flares",
+      "query2": "solar flare eruption",
+      "chips": [
+        {
+          "t": "AFFECT EARTH",
+          "on": "affect",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Understanding them could save technology on Earth.",
+      "query": "technicians monitoring systems",
+      "query2": "high-tech control room",
+      "label": "SAVE OUR TECH",
+      "sub": "Monitoring solar impacts",
+      "label_on": "understanding",
+      "punch": "save"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "solar system",
+      "query2": "solar system view"
+    }
+  ],
+  "description": "Sunspots on the Sun may hold secrets about magnetic fields that impact technology on Earth. Follow for daily science!",
+  "hashtags": [
+    "#sunspots",
+    "#solar",
+    "#space",
+    "#science",
+    "#technology",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "What If You Could Live on Mars?",
+  "place": "Mars Simulation Habitat",
+  "country": "United States",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Imagine living on Mars in a sealed habitat for an entire year.",
+      "hook_top": "LIVE ON MARS FOR A YEAR",
+      "query": "Mars simulation habitat interior",
+      "query2": "futuristic living inside"
+    },
+    {
+      "role": "fact",
+      "text": "NASA is conducting a year-long simulation to prepare for future Mars missions.",
+      "query": "NASA Mars simulation",
+      "query2": "space research facility",
+      "chips": [
+        {
+          "t": "1 YEAR SIMULATION",
+          "on": "year",
+          "style": "accent"
+        }
+      ],
+      "punch": "simulation"
+    },
+    {
+      "role": "fact",
+      "text": "Participants experience isolation, limited resources, and a Martian environment.",
+      "query": "Mars environment simulation",
+      "query2": "desert landscape",
+      "chips": [
+        {
+          "t": "LIMITED RESOURCES",
+          "on": "resources",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "It’s a test for our survival in alien worlds.",
+      "query": "astronauts training",
+      "query2": "space training exercises",
+      "label": "SURVIVOR TRAINING",
+      "sub": "Preparing for the ultimate challenge",
+      "label_on": "survival",
+      "punch": "challenge"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "Mars landscape",
+      "query2": "Martian surface panorama"
+    }
+  ],
+  "description": "NASA is simulating life on Mars for a year to prepare for future missions. Could you handle it? Follow for daily science!",
+  "hashtags": [
+    "#Mars",
+    "#NASA",
+    "#simulation",
+    "#space",
+    "#future",
+    "#science",
+    "#shorts",
+    "#fyp"
+  ]
+}

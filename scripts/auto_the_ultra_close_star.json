@@ -1,0 +1,67 @@
+{
+  "title": "The Ultra-Close Star",
+  "place": "Proxima Centauri",
+  "country": "Alpha Centauri System",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "The closest known star, Proxima Centauri, is just over four light years away.",
+      "hook_top": "CLOSEST STAR TO EARTH",
+      "query": "Proxima Centauri",
+      "query2": "star field night sky"
+    },
+    {
+      "role": "fact",
+      "text": "It’s part of a three-star system along with Alpha Centauri A and B.",
+      "query": "Alpha Centauri star system",
+      "query2": "star system diagram",
+      "chips": [
+        {
+          "t": "3 STARS TOGETHER",
+          "on": "three",
+          "style": "accent"
+        }
+      ],
+      "punch": "star"
+    },
+    {
+      "role": "fact",
+      "text": "Scientists discovered an Earth-sized exoplanet orbiting Proxima Centauri.",
+      "query": "Proxima Centauri b",
+      "query2": "exoplanet illustration",
+      "chips": [
+        {
+          "t": "EARTH-SIZED EXOPLANET",
+          "on": "Earth-sized",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This planet raises questions about the potential for life.",
+      "query": "life on exoplanets",
+      "query2": "alien planet concept art",
+      "label": "POTENTIAL FOR LIFE!",
+      "sub": "A world waiting to be explored",
+      "label_on": "life",
+      "punch": "explored"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "universe stars",
+      "query2": "galaxy view"
+    }
+  ],
+  "description": "Proxima Centauri, the closest star, features an Earth-sized exoplanet, sparking curiosity about potential life. Follow for daily science!",
+  "hashtags": [
+    "#space",
+    "#stars",
+    "#ProximaCentauri",
+    "#science",
+    "#exoplanets",
+    "#shorts",
+    "#fyp"
+  ]
+}

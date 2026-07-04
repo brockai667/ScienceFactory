@@ -1823,5 +1823,274 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "What If You Could Live on Mars?",
+    "place": "Mars Simulation Habitat",
+    "country": "United States",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Imagine living on Mars in a sealed habitat for an entire year.",
+        "hook_top": "LIVE ON MARS FOR A YEAR",
+        "query": "Mars simulation habitat interior",
+        "query2": "futuristic living inside"
+      },
+      {
+        "role": "fact",
+        "text": "NASA is conducting a year-long simulation to prepare for future Mars missions.",
+        "query": "NASA Mars simulation",
+        "query2": "space research facility",
+        "chips": [
+          {
+            "t": "1 YEAR SIMULATION",
+            "on": "year",
+            "style": "accent"
+          }
+        ],
+        "punch": "simulation"
+      },
+      {
+        "role": "fact",
+        "text": "Participants experience isolation, limited resources, and a Martian environment.",
+        "query": "Mars environment simulation",
+        "query2": "desert landscape",
+        "chips": [
+          {
+            "t": "LIMITED RESOURCES",
+            "on": "resources",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "It’s a test for our survival in alien worlds.",
+        "query": "astronauts training",
+        "query2": "space training exercises",
+        "label": "SURVIVOR TRAINING",
+        "sub": "Preparing for the ultimate challenge",
+        "label_on": "survival",
+        "punch": "challenge"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "Mars landscape",
+        "query2": "Martian surface panorama"
+      }
+    ],
+    "description": "NASA is simulating life on Mars for a year to prepare for future missions. Could you handle it? Follow for daily science!",
+    "hashtags": [
+      "#Mars",
+      "#NASA",
+      "#simulation",
+      "#space",
+      "#future",
+      "#science",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "What Lies Beneath the Sunspots?",
+    "place": "The Sun",
+    "country": "Solar System",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "What if sunspots are hiding something amazing beneath them?",
+        "hook_top": "SECRETS OF SUNSPOTS",
+        "query": "sunspots solar activity",
+        "query2": "sun surface close-up"
+      },
+      {
+        "role": "fact",
+        "text": "Recent studies suggest sunspots can reveal hidden magnetic fields.",
+        "query": "magnets and sunspots",
+        "query2": "solar magnetic field diagram",
+        "chips": [
+          {
+            "t": "HIDDEN MAGNETIC FIELDS",
+            "on": "hidden",
+            "style": "accent"
+          }
+        ],
+        "punch": "fields"
+      },
+      {
+        "role": "fact",
+        "text": "These fields can influence solar flares and affect Earth's technology.",
+        "query": "solar flares",
+        "query2": "solar flare eruption",
+        "chips": [
+          {
+            "t": "AFFECT EARTH",
+            "on": "affect",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Understanding them could save technology on Earth.",
+        "query": "technicians monitoring systems",
+        "query2": "high-tech control room",
+        "label": "SAVE OUR TECH",
+        "sub": "Monitoring solar impacts",
+        "label_on": "understanding",
+        "punch": "save"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "solar system",
+        "query2": "solar system view"
+      }
+    ],
+    "description": "Sunspots on the Sun may hold secrets about magnetic fields that impact technology on Earth. Follow for daily science!",
+    "hashtags": [
+      "#sunspots",
+      "#solar",
+      "#space",
+      "#science",
+      "#technology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Ultra-Close Star",
+    "place": "Proxima Centauri",
+    "country": "Alpha Centauri System",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "The closest known star, Proxima Centauri, is just over four light years away.",
+        "hook_top": "CLOSEST STAR TO EARTH",
+        "query": "Proxima Centauri",
+        "query2": "star field night sky"
+      },
+      {
+        "role": "fact",
+        "text": "It’s part of a three-star system along with Alpha Centauri A and B.",
+        "query": "Alpha Centauri star system",
+        "query2": "star system diagram",
+        "chips": [
+          {
+            "t": "3 STARS TOGETHER",
+            "on": "three",
+            "style": "accent"
+          }
+        ],
+        "punch": "star"
+      },
+      {
+        "role": "fact",
+        "text": "Scientists discovered an Earth-sized exoplanet orbiting Proxima Centauri.",
+        "query": "Proxima Centauri b",
+        "query2": "exoplanet illustration",
+        "chips": [
+          {
+            "t": "EARTH-SIZED EXOPLANET",
+            "on": "Earth-sized",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This planet raises questions about the potential for life.",
+        "query": "life on exoplanets",
+        "query2": "alien planet concept art",
+        "label": "POTENTIAL FOR LIFE!",
+        "sub": "A world waiting to be explored",
+        "label_on": "life",
+        "punch": "explored"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "universe stars",
+        "query2": "galaxy view"
+      }
+    ],
+    "description": "Proxima Centauri, the closest star, features an Earth-sized exoplanet, sparking curiosity about potential life. Follow for daily science!",
+    "hashtags": [
+      "#space",
+      "#stars",
+      "#ProximaCentauri",
+      "#science",
+      "#exoplanets",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Gigantic Camera Watching the Sky",
+    "place": "Chile",
+    "country": "Chile",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A colossal camera will take 700 photos of the night sky every night!",
+        "hook_top": "700 NIGHTLY SKY PHOTOS",
+        "query": "massive telescope facility",
+        "query2": "observatory timelapse"
+      },
+      {
+        "role": "fact",
+        "text": "This 3,200 megapixel camera is part of the Vera C. Rubin Observatory.",
+        "query": "Rubin Observatory",
+        "query2": "high-tech observatory",
+        "chips": [
+          {
+            "t": "3,200 MEGAPIXELS",
+            "on": "megapixels",
+            "style": "accent"
+          }
+        ],
+        "punch": "camera"
+      },
+      {
+        "role": "fact",
+        "text": "It aims to map the entire sky over ten years.",
+        "query": "star mapping telescopes",
+        "query2": "night sky with stars",
+        "chips": [
+          {
+            "t": "MAPPING FOR A DECADE",
+            "on": "decade",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This tool could unlock cosmic mysteries we haven't imagined yet.",
+        "query": "scientists observing sky",
+        "query2": "research lab",
+        "label": "UNLOCK COSMIC MYSTERIES",
+        "sub": "Mapping the vast unknown",
+        "label_on": "unlock",
+        "punch": "mysteries"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "observatory starry sky",
+        "query2": "instruments in astronomy"
+      }
+    ],
+    "description": "The Vera C. Rubin Observatory's massive camera will capture the night sky like never before, revealing cosmic secrets. Follow for daily science!",
+    "hashtags": [
+      "#observatory",
+      "#astronomy",
+      "#science",
+      "#technology",
+      "#space",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
