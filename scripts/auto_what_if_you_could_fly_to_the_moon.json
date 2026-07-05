@@ -1,0 +1,62 @@
+{
+  "title": "What If You Could Fly to the Moon?",
+  "place": "Moon",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Imagine commercial flights to the moon by now.",
+      "hook_top": "FLYING TO THE MOON",
+      "query": "moon lander commercial flight",
+      "query2": "space launch aircraft illustration"
+    },
+    {
+      "role": "fact",
+      "text": "In the 1960s, Pan Am promised moon flights by 2000.",
+      "query": "historical Pan Am moon flight",
+      "query2": "vintage airline advertisement",
+      "chips": [
+        {
+          "t": "MOON FLIGHTS BY 2000",
+          "on": "2000",
+          "style": "white"
+        }
+      ],
+      "punch": "moon"
+    },
+    {
+      "role": "fact",
+      "text": "Despite immense advancements, lunar tourism remains unrealized.",
+      "query": "moon tourism concept art",
+      "query2": "space hotel concept design",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Can we still hope for lunar vacations?",
+      "query": "holiday on moon",
+      "query2": "space tourists in bubbles",
+      "label": "LUNAR VACATIONS ON THE HORIZON",
+      "sub": "Future of space tourism?",
+      "label_on": "hope",
+      "punch": "vacations"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "space exploration",
+      "query2": "astronaut exploring universe"
+    }
+  ],
+  "description": "Imagine the possibility of flying to the moon! Discover Pan Am's ambitious proposal and the challenges of lunar tourism today. Follow for more unbelievable science and tech!",
+  "hashtags": [
+    "#science",
+    "#moon",
+    "#space",
+    "#technology",
+    "#tourism",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}

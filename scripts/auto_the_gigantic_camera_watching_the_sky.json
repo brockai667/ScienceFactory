@@ -1,0 +1,67 @@
+{
+  "title": "The Gigantic Camera Watching the Sky",
+  "place": "Chile",
+  "country": "Chile",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A colossal camera will take 700 photos of the night sky every night!",
+      "hook_top": "700 NIGHTLY SKY PHOTOS",
+      "query": "massive telescope facility",
+      "query2": "observatory timelapse"
+    },
+    {
+      "role": "fact",
+      "text": "This 3,200 megapixel camera is part of the Vera C. Rubin Observatory.",
+      "query": "Rubin Observatory",
+      "query2": "high-tech observatory",
+      "chips": [
+        {
+          "t": "3,200 MEGAPIXELS",
+          "on": "megapixels",
+          "style": "accent"
+        }
+      ],
+      "punch": "camera"
+    },
+    {
+      "role": "fact",
+      "text": "It aims to map the entire sky over ten years.",
+      "query": "star mapping telescopes",
+      "query2": "night sky with stars",
+      "chips": [
+        {
+          "t": "MAPPING FOR A DECADE",
+          "on": "decade",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This tool could unlock cosmic mysteries we haven't imagined yet.",
+      "query": "scientists observing sky",
+      "query2": "research lab",
+      "label": "UNLOCK COSMIC MYSTERIES",
+      "sub": "Mapping the vast unknown",
+      "label_on": "unlock",
+      "punch": "mysteries"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "observatory starry sky",
+      "query2": "instruments in astronomy"
+    }
+  ],
+  "description": "The Vera C. Rubin Observatory's massive camera will capture the night sky like never before, revealing cosmic secrets. Follow for daily science!",
+  "hashtags": [
+    "#observatory",
+    "#astronomy",
+    "#science",
+    "#technology",
+    "#space",
+    "#shorts",
+    "#fyp"
+  ]
+}

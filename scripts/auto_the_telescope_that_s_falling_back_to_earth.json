@@ -1,0 +1,62 @@
+{
+  "title": "The Telescope That's Falling Back to Earth",
+  "place": "Lunar Orbit",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A vital telescope is now in danger of re-entry!",
+      "hook_top": "TELESCOPE IN DANGER",
+      "query": "falling telescope space",
+      "query2": "telescope in space view"
+    },
+    {
+      "role": "fact",
+      "text": "NASA’s TESS telescope is losing altitude and could soon crash.",
+      "query": "NASA TESS mission",
+      "query2": "telescope in orbit illustration",
+      "chips": [
+        {
+          "t": "LOST ALTITUDE",
+          "on": "losing",
+          "style": "accent"
+        }
+      ],
+      "punch": "re-entry"
+    },
+    {
+      "role": "fact",
+      "text": "Previous NASA missions experienced similar re-entries, raising concerns.",
+      "query": "NASA mission re-entry",
+      "query2": "space debris falling",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Could we lose vital astronomical data?",
+      "query": "astronomical data collection",
+      "query2": "night sky astronomy",
+      "label": "DATA LOSS AT RISK",
+      "sub": "A major setback for science!",
+      "label_on": "lose",
+      "punch": "data"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space telescope",
+      "query2": "telescope under the stars"
+    }
+  ],
+  "description": "NASA's TESS telescope is at risk of re-entering Earth's atmosphere! Discover the implications this has for our understanding of the universe. Follow for more incredible science updates!",
+  "hashtags": [
+    "#science",
+    "#NASA",
+    "#telescope",
+    "#space",
+    "#astronomy",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}
