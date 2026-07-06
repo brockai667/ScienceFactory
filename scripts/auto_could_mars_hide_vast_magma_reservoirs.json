@@ -1,0 +1,62 @@
+{
+  "title": "Could Mars Hide Vast Magma Reservoirs?",
+  "place": "Mars",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Is there molten rock beneath Mars' surface?",
+      "hook_top": "MARS HAS MAGMA",
+      "query": "Mars surface geology",
+      "query2": "Mars landscape drone footage"
+    },
+    {
+      "role": "fact",
+      "text": "Recent studies suggest complex magma systems might exist on Mars.",
+      "query": "Mars geology study",
+      "query2": "Mars geological formations",
+      "chips": [
+        {
+          "t": "COMPLEX MAGMA SYSTEMS",
+          "on": "magma",
+          "style": "accent"
+        }
+      ],
+      "punch": "magma"
+    },
+    {
+      "role": "fact",
+      "text": "This could indicate past volcanic activity on the planet.",
+      "query": "Mars volcanic activity",
+      "query2": "Mars volcano eruption illustration",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Are we closer to finding life on Mars?",
+      "query": "Mars life exploration",
+      "query2": "Martian landscape with rover",
+      "label": "LIFE ON MARS POSSIBLE",
+      "sub": "Magma may be the key!",
+      "label_on": "life",
+      "punch": "key"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "Mars exploration",
+      "query2": "Mars rover exploring land"
+    }
+  ],
+  "description": "Could enormous magma reservoirs lie hidden beneath Mars? Recent research reveals potential signs of volcanic activity, raising hopes for extraterrestrial life! Follow for more planetary discoveries!",
+  "hashtags": [
+    "#science",
+    "#Mars",
+    "#volcano",
+    "#space",
+    "#exploration",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}

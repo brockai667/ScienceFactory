@@ -1,0 +1,62 @@
+{
+  "title": "The Stars We Can No Longer See",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Some stars have vanished from our night sky!",
+      "hook_top": "STARS DISAPPEARING",
+      "query": "night sky star fade",
+      "query2": "dark sky with stars"
+    },
+    {
+      "role": "fact",
+      "text": "Astronomers have discovered stars that are no longer visible due to cosmic events.",
+      "query": "astronomer observing sky",
+      "query2": "star location telescope",
+      "chips": [
+        {
+          "t": "HEAVY COSMIC EVENTS",
+          "on": "events",
+          "style": "white"
+        }
+      ],
+      "punch": "vanished"
+    },
+    {
+      "role": "fact",
+      "text": "These vanishings could be due to black holes or supernovae.",
+      "query": "black hole cosmic phenomenon",
+      "query2": "supernova explosion event",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "What does this mean for our understanding of the universe?",
+      "query": "universe concept art",
+      "query2": "galaxy in motion",
+      "label": "MYSTERIES OF THE UNIVERSE",
+      "sub": "More to explore!",
+      "label_on": "understanding",
+      "punch": "mean"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "cosmic phenomenon",
+      "query2": "stars in deep space"
+    }
+  ],
+  "description": "Some stars are disappearing from our night sky due to cosmic events. What implications does this have for our knowledge of the universe? Follow for more cosmic revelations!",
+  "hashtags": [
+    "#science",
+    "#stars",
+    "#universe",
+    "#cosmos",
+    "#astronomy",
+    "#space",
+    "#shorts",
+    "#fyp"
+  ]
+}

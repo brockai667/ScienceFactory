@@ -1,0 +1,62 @@
+{
+  "title": "How Astronomers Captured the Andromeda Galaxy",
+  "place": "Andromeda Galaxy",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Astronomers used advanced tech to capture stunning views of Andromeda.",
+      "hook_top": "ANDROMEDA REVEALED",
+      "query": "Andromeda galaxy capture telescope",
+      "query2": "galaxy deep space photograph"
+    },
+    {
+      "role": "fact",
+      "text": "They utilized extensive exposures and modern cameras for high-quality images.",
+      "query": "telescope photography technique",
+      "query2": "photographer capturing the sky",
+      "chips": [
+        {
+          "t": "HIGH-QUALITY IMAGES",
+          "on": "images",
+          "style": "accent"
+        }
+      ],
+      "punch": "quality"
+    },
+    {
+      "role": "fact",
+      "text": "Andromeda is on a collision course with the Milky Way.",
+      "query": "Andromeda galaxy collision course",
+      "query2": "colliding galaxies artwork",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "What does this mean for our own galaxy?",
+      "query": "Milky Way galaxy concept",
+      "query2": "galaxy swirl animation",
+      "label": "COLLISION WITH MILKY WAY",
+      "sub": "The future of our galaxy!",
+      "label_on": "collision",
+      "punch": "Milky"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "astronomy exploration",
+      "query2": "night sky with telescope"
+    }
+  ],
+  "description": "Astronomers captured stunning views of the Andromeda Galaxy using modern technology! Discover its collision course with the Milky Way. Follow for more incredible astronomy facts!",
+  "hashtags": [
+    "#science",
+    "#Andromeda",
+    "#astronomy",
+    "#space",
+    "#galaxies",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}
