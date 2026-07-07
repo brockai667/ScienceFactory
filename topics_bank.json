@@ -2398,5 +2398,401 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "What Did James Webb Find on Titan?",
+    "place": "Titan",
+    "country": "Saturn's Moon",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A groundbreaking molecule might be lurking beneath Titan's icy surface.",
+        "hook_top": "GROUNDBREAKING DISCOVERY IN SPACE",
+        "query": "Titan moon surface",
+        "query2": "Titan icy terrain"
+      },
+      {
+        "role": "fact",
+        "text": "James Webb Telescope has captured spectra suggesting complex organic molecules on Titan.",
+        "query": "James Webb Telescope image",
+        "query2": "space telescope stars",
+        "chips": [
+          {
+            "t": "COMPLEX MOLECULES",
+            "on": "molecules",
+            "style": "accent"
+          }
+        ],
+        "punch": "molecules"
+      },
+      {
+        "role": "fact",
+        "text": "Titan has lakes of liquid methane, making it a unique body for life search.",
+        "query": "Titan methane lakes",
+        "query2": "satellite methane surface",
+        "chips": [
+          {
+            "t": "LIQUID METHANE LAKES",
+            "on": "methane",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Could this moon hold the key to extraterrestrial life?",
+        "query": "extraterrestrial life concept",
+        "query2": "space life concept",
+        "label": "KEY TO LIFE?",
+        "sub": "Searching for life in the cosmos",
+        "label_on": "key",
+        "punch": "key"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "galaxy stars deep space",
+        "query2": "milky way night timelapse"
+      }
+    ],
+    "description": "James Webb Telescope may have found complex organic molecules on Titan. Could this moon be harboring extraterrestrial life? Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#jameswebb",
+      "#titan",
+      "#molecules",
+      "#exoplanets",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Asteroid That Taught Us About Planet Formation",
+    "place": "Itokawa",
+    "country": "Japan",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "One tiny asteroid holds secrets about our solar system's origins.",
+        "hook_top": "ASTEROID SECRETS REVEALED",
+        "query": "Itokawa asteroid",
+        "query2": "small asteroid"
+      },
+      {
+        "role": "fact",
+        "text": "Hayabusa2 brought back samples from asteroid Ryugu that reveal its building blocks.",
+        "query": "Hayabusa2 asteroid sample",
+        "query2": "asteroid samples close-up",
+        "chips": [
+          {
+            "t": "RYUGU SAMPLES",
+            "on": "Ryugu",
+            "style": "accent"
+          },
+          {
+            "t": "ASTEROID CELLS",
+            "on": "building blocks",
+            "style": "white"
+          }
+        ],
+        "punch": "blocks"
+      },
+      {
+        "role": "fact",
+        "text": "These samples may explain how planets formed billions of years ago.",
+        "query": "planet formation diagram",
+        "query2": "solar system formation",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "Understanding asteroids can reveal our own Earth's history.",
+        "query": "Earth history",
+        "query2": "ancient Earth landscape",
+        "label": "EARTH'S HISTORY",
+        "sub": "Asteroids tell our story!",
+        "label_on": "history",
+        "punch": "story"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "universe stars",
+        "query2": "starry sky"
+      }
+    ],
+    "description": "The Hayabusa2 mission has brought back samples that could reveal details about planet formation. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#asteroids",
+      "#hayabusa2",
+      "#planetformation",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Discovering the Secrets of Ocean Currents",
+    "place": "World's Oceans",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Hidden currents could hold the key to our changing climate.",
+        "hook_top": "CURRENTS THAT CHANGE CLIMATE",
+        "query": "ocean currents map",
+        "query2": "ocean waves"
+      },
+      {
+        "role": "fact",
+        "text": "Ocean currents transport heat across the planet, influencing weather patterns.",
+        "query": "global ocean currents",
+        "query2": "earth's climate map",
+        "chips": [
+          {
+            "t": "HEAT TRANSPORT",
+            "on": "transport",
+            "style": "accent"
+          }
+        ],
+        "punch": "transport"
+      },
+      {
+        "role": "fact",
+        "text": "Changes in these currents can lead to extreme weather events worldwide.",
+        "query": "extreme weather events",
+        "query2": "storm footage",
+        "chips": [
+          {
+            "t": "EXTREME WEATHER",
+            "on": "extreme",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Our understanding could be vital for future climate predictions.",
+        "query": "climate prediction",
+        "query2": "scientists studying climate",
+        "label": "VITAL FOR CLIMATE",
+        "sub": "Key to our future weather",
+        "label_on": "understanding",
+        "punch": "vital"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "earth from space",
+        "query2": "earth globe"
+      }
+    ],
+    "description": "Ocean currents play a crucial role in our climate system, affecting global weather patterns. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#ocean",
+      "#weather",
+      "#climatechange",
+      "#oceanography",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Why Bees Are Nature's Engineers",
+    "place": "Beekeeping Areas",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "These tiny architects build structures that inspire modern engineering!",
+        "hook_top": "NATURE'S ENGINEERS REVEALED",
+        "query": "honeycomb structure",
+        "query2": "bees in hive"
+      },
+      {
+        "role": "fact",
+        "text": "Honeycombs are built with hexagonal cells, maximizing space and efficiency.",
+        "query": "honeycomb close-up",
+        "query2": "bees making honeycomb",
+        "chips": [
+          {
+            "t": "HEXAGONAL CELLS",
+            "on": "cells",
+            "style": "accent"
+          }
+        ],
+        "punch": "cells"
+      },
+      {
+        "role": "fact",
+        "text": "The strength-to-weight ratio of honeycomb structures is superior, used in aviation.",
+        "query": "honeycomb strength comparison",
+        "query2": "aircraft materials",
+        "chips": [
+          {
+            "t": "STRONGER THAN STEEL",
+            "on": "strength",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "These natural builders may hold the secrets to sustainable design.",
+        "query": "sustainable architecture",
+        "query2": "eco-friendly designs",
+        "label": "SECRETS TO DESIGN",
+        "sub": "Learning from nature's engineers",
+        "label_on": "secrets",
+        "punch": "design"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "nature creativity",
+        "query2": "forest landscape"
+      }
+    ],
+    "description": "Bees create honeycombs with remarkable efficiency, inspiring sustainable engineering solutions. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#nature",
+      "#bees",
+      "#engineering",
+      "#sustainability",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "What Happens When You Capture the ISS?",
+    "place": "Outer Space",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An extraordinary moment: catching the ISS transit across the sun!",
+        "hook_top": "CATCHING THE ISS LIVE",
+        "query": "ISS transit",
+        "query2": "international space station"
+      },
+      {
+        "role": "fact",
+        "text": "Short-lived, this event lasts mere seconds as the ISS moves swiftly in orbit.",
+        "query": "space station speed",
+        "query2": "ISS orbit speed",
+        "chips": [
+          {
+            "t": "SPEEDY 28,000 KM/H",
+            "on": "speed",
+            "style": "accent"
+          }
+        ],
+        "punch": "speed"
+      },
+      {
+        "role": "fact",
+        "text": "Photographers have only a brief window to capture this celestial moment.",
+        "query": "photographer capturing ISS",
+        "query2": "camera shooting stars",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "Every capture is a reminder of our place in the universe.",
+        "query": "universe perspective",
+        "query2": "galaxy view",
+        "label": "A MOMENT IN TIME",
+        "sub": "Witnessing human achievement",
+        "label_on": "capture",
+        "punch": "moment"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "space exploration",
+        "query2": "planetary images"
+      }
+    ],
+    "description": "Capturing the ISS is a fleeting yet powerful reminder of our achievements in space. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#ISS",
+      "#photography",
+      "#celestial",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Ancient River That Shaped Mars",
+    "place": "Mars",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mars was once sculpted by rivers, shaping its surface like Earth!",
+        "hook_top": "MARS ONCE A WATERED LAND",
+        "query": "Mars river channels",
+        "query2": "Mars surface images"
+      },
+      {
+        "role": "fact",
+        "text": "Scientists discovered ancient river channels on Mars, hinting at past water flow.",
+        "query": "Mars ancient river bed",
+        "query2": "river patterns on Mars",
+        "chips": [
+          {
+            "t": "ANCIENT WATER FLOWS",
+            "on": "water",
+            "style": "accent"
+          }
+        ],
+        "punch": "channels"
+      },
+      {
+        "role": "fact",
+        "text": "These findings suggest Mars may have once supported life.",
+        "query": "Mars life search",
+        "query2": "scientists on Mars",
+        "chips": [
+          {
+            "t": "SUPPORTED LIFE?",
+            "on": "life",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "The red planet's past is more Earth-like than we realized.",
+        "query": "Mars landscape",
+        "query2": "Mars red desert",
+        "label": "EARTH-LIKE PAST",
+        "sub": "Is Mars still viable?",
+        "label_on": "past",
+        "punch": "Earth-like"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "Mars exploration",
+        "query2": "Mars rover"
+      }
+    ],
+    "description": "Ancient river channels on Mars suggest its surface was shaped by water, hinting at the possibility of life. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#Mars",
+      "#space",
+      "#exploration",
+      "#extraterrestrial",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

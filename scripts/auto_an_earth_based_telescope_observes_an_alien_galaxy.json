@@ -1,0 +1,68 @@
+{
+  "title": "An Earth-Based Telescope Observes an Alien Galaxy",
+  "place": "La Palma",
+  "country": "Spain",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An Earth-based telescope is capturing the elusive Andromeda galaxy.",
+      "hook_top": "CAPTURING AN ALIEN GALAXY",
+      "query": "Andromeda galaxy telescope",
+      "query2": "telescope night stars"
+    },
+    {
+      "role": "fact",
+      "text": "This telescope has a 3,200 megapixel resolution, providing unprecedented detail.",
+      "query": "high resolution telescope",
+      "query2": "galaxy stars detailed",
+      "chips": [
+        {
+          "t": "3,200 MEGAPIXELS",
+          "on": "megapixels",
+          "style": "accent"
+        }
+      ],
+      "punch": "megapixels"
+    },
+    {
+      "role": "fact",
+      "text": "It captures images at an incredible rate of 700 photos every night.",
+      "query": "telescope observing night sky",
+      "query2": "night sky telescope",
+      "chips": [
+        {
+          "t": "700 PHOTOS NIGHTLY",
+          "on": "photos",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This technology allows us to peer deep into the cosmos.",
+      "query": "deep space telescope view",
+      "query2": "cosmos stars",
+      "label": "PEERING INTO COSMOS",
+      "sub": "New insights from Earth",
+      "label_on": "telescope",
+      "punch": "peering"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "galaxy cosmic space",
+      "query2": "space stars"
+    }
+  ],
+  "description": "An Earth-based telescope in La Palma captures the Andromeda galaxy with powerful technology. Follow for more exciting cosmic discoveries!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#telescope",
+    "#Andromeda",
+    "#technology",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}

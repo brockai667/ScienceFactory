@@ -1,0 +1,68 @@
+{
+  "title": "The Moment Earth is Furthest from the Sun",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Earth recently reached its maximum distance from the Sun!",
+      "hook_top": "FURTHEST FROM THE SUN",
+      "query": "Earth Sun distance",
+      "query2": "Earth in space"
+    },
+    {
+      "role": "fact",
+      "text": "This event, known as aphelion, happens once a year.",
+      "query": "Earth orbit aphelion",
+      "query2": "planets orbiting",
+      "chips": [
+        {
+          "t": "ONCE A YEAR",
+          "on": "year",
+          "style": "white"
+        }
+      ],
+      "punch": "year"
+    },
+    {
+      "role": "fact",
+      "text": "At this point, Earth is about 152 million kilometers away from the Sun.",
+      "query": "distance Earth Sun",
+      "query2": "Earth and Sun distance",
+      "chips": [
+        {
+          "t": "ABOUT 152 MILLION KM",
+          "on": "million",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This distance affects climate patterns on Earth.",
+      "query": "Earth climate patterns",
+      "query2": "climate change",
+      "label": "CLIMATE AFFECTS",
+      "sub": "Earth's climate dynamics",
+      "label_on": "distance",
+      "punch": "climate"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "Earth atmosphere space",
+      "query2": "Earth from space"
+    }
+  ],
+  "description": "Earth just reached its aphelion, 152 million kilometers from the Sun. This distance affects climate patterns. Follow for more amazing Earth facts!",
+  "hashtags": [
+    "#science",
+    "#Earth",
+    "#Sun",
+    "#aphelion",
+    "#space",
+    "#climate",
+    "#shorts",
+    "#fyp"
+  ]
+}

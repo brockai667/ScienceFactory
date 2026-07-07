@@ -1,0 +1,68 @@
+{
+  "title": "NASA's Year-Long Mars Simulation",
+  "place": "Hawaii",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A group of volunteers is living on Mars, right here on Earth.",
+      "hook_top": "LIVING ON MARS ON EARTH",
+      "query": "Mars simulation location",
+      "query2": "Mars landscape simulation"
+    },
+    {
+      "role": "fact",
+      "text": "NASA's simulation lasts for an entire year, testing life on Mars.",
+      "query": "NASA Mars simulation",
+      "query2": "Mars habitat",
+      "chips": [
+        {
+          "t": "YEAR-LONG SIMULATION",
+          "on": "year-long",
+          "style": "accent"
+        }
+      ],
+      "punch": "simulation"
+    },
+    {
+      "role": "fact",
+      "text": "Participants experience isolation and limited resources like real astronauts.",
+      "query": "simulation life Mars",
+      "query2": "Mars habitat isolation",
+      "chips": [
+        {
+          "t": "ISOLATED RESOURCES",
+          "on": "isolation",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This is vital for planning future human missions to the red planet.",
+      "query": "Mars mission planning",
+      "query2": "Mars exploration",
+      "label": "PLANNING FOR MARS",
+      "sub": "Future human exploration",
+      "label_on": "planning",
+      "punch": "future"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "Mars exploration",
+      "query2": "Mars rover"
+    }
+  ],
+  "description": "NASA conducts a year-long simulation to prepare for Mars missions, testing life in isolation. Follow for more on Mars exploration!",
+  "hashtags": [
+    "#science",
+    "#Mars",
+    "#NASA",
+    "#simulation",
+    "#space",
+    "#exploration",
+    "#shorts",
+    "#fyp"
+  ]
+}
