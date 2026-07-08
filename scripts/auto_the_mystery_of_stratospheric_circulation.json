@@ -1,0 +1,67 @@
+{
+  "title": "The Mystery of Stratospheric Circulation",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Have you ever wondered how the atmosphere keeps moving?",
+      "hook_top": "MYSTERY OF ATMOSPHERIC CIRCULATION",
+      "query": "atmospheric circulation",
+      "query2": "clouds in sky"
+    },
+    {
+      "role": "fact",
+      "text": "Stratospheric circulation plays a crucial role in weather patterns.",
+      "query": "stratospheric movement",
+      "query2": "atmospheric movement",
+      "chips": [
+        {
+          "t": "CRUCIAL WEATHER ROLE",
+          "on": "weather",
+          "style": "white"
+        }
+      ],
+      "punch": "weather"
+    },
+    {
+      "role": "fact",
+      "text": "It's driven by temperature differences and the rotation of the Earth.",
+      "query": "Earth rotation atmosphere",
+      "query2": "render of Earth",
+      "chips": [
+        {
+          "t": "DRIVEN BY TEMPERATURE",
+          "on": "temperature",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Understanding this keeps our forecasts accurate and reliable.",
+      "query": "weather forecasting",
+      "query2": "weather maps",
+      "label": "ACCURATE FORECASTS",
+      "sub": "Unlocking weather secrets",
+      "label_on": "understanding",
+      "punch": "forecasts"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "clouds and winds",
+      "query2": "clouds floating"
+    }
+  ],
+  "description": "Atmospheric circulation influences our weather, driven by temperature and Earth's rotation. Follow for more atmospheric insights!",
+  "hashtags": [
+    "#science",
+    "#atmosphere",
+    "#weather",
+    "#circulation",
+    "#climate",
+    "#shorts",
+    "#fyp"
+  ]
+}

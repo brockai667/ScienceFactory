@@ -1,0 +1,68 @@
+{
+  "title": "The Camera With a Million Eyes",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Imagine a camera that can see with a million eyes!",
+      "hook_top": "A CAMERA WITH A MILLION EYES",
+      "query": "high resolution camera",
+      "query2": "advanced camera technology"
+    },
+    {
+      "role": "fact",
+      "text": "New technology allows for a 3,200-megapixel camera to capture stunning detail.",
+      "query": "3,200 megapixel photo",
+      "query2": "detailed photo camera",
+      "chips": [
+        {
+          "t": "3,200 MEGAPIXELS",
+          "on": "megapixels",
+          "style": "accent"
+        }
+      ],
+      "punch": "megapixels"
+    },
+    {
+      "role": "fact",
+      "text": "This camera can capture 700 images every night in exquisite quality.",
+      "query": "night sky photography",
+      "query2": "night sky stars",
+      "chips": [
+        {
+          "t": "700 IMAGES NIGHTLY",
+          "on": "images",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Such advancements reveal details of distant galaxies and phenomena.",
+      "query": "distant galaxy photo",
+      "query2": "galaxy stars",
+      "label": "REVEALING THE UNSEEN",
+      "sub": "Exploring distant realms",
+      "label_on": "advancements",
+      "punch": "distant"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "camera technology shot",
+      "query2": "advanced technology"
+    }
+  ],
+  "description": "A camera with 3,200 megapixels can capture 700 images every night, revealing distant galaxies. Follow for more on technology breakthroughs!",
+  "hashtags": [
+    "#science",
+    "#technology",
+    "#camera",
+    "#photography",
+    "#space",
+    "#innovation",
+    "#shorts",
+    "#fyp"
+  ]
+}

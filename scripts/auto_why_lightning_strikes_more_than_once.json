@@ -1,0 +1,67 @@
+{
+  "title": "Why Lightning Strikes More Than Once",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Lightning can strike the same place multiple times!",
+      "hook_top": "LIGHTNING STRIKES TWICE",
+      "query": "lightning strike",
+      "query2": "storm clouds"
+    },
+    {
+      "role": "fact",
+      "text": "Tall buildings and trees attract lightning due to their height.",
+      "query": "tall building lightning",
+      "query2": "lightning on building",
+      "chips": [
+        {
+          "t": "ATTRACTS LIGHTNING",
+          "on": "attract",
+          "style": "accent"
+        }
+      ],
+      "punch": "attracts"
+    },
+    {
+      "role": "fact",
+      "text": "Each event can discharge millions of volts of electricity.",
+      "query": "high voltage lightning",
+      "query2": "lightning discharge",
+      "chips": [
+        {
+          "t": "MILLIONS OF VOLTS",
+          "on": "millions",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This phenomenon is crucial for understanding storm behavior.",
+      "query": "storm behavior lightning",
+      "query2": "lightning in storm",
+      "label": "UNDERSTANDING STORMS",
+      "sub": "Lightning's role",
+      "label_on": "phenomenon",
+      "punch": "understanding"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "storm clouds lightning",
+      "query2": "storm lightning"
+    }
+  ],
+  "description": "Lightning can strike the same spot more than once, important for understanding storms. Follow for more shocking science facts!",
+  "hashtags": [
+    "#science",
+    "#lightning",
+    "#storms",
+    "#nature",
+    "#electricity",
+    "#shorts",
+    "#fyp"
+  ]
+}

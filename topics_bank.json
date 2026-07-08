@@ -2794,5 +2794,205 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Telescope That Captured Andromeda",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An everyday telescope managed to capture breathtaking images of an entire galaxy!",
+        "hook_top": "CAPTURING A WHOLE GALAXY",
+        "query": "amateur telescope night sky",
+        "query2": "galaxy stars telescope"
+      },
+      {
+        "role": "fact",
+        "text": "Amateur astronomers can now capture the Andromeda galaxy with the right settings.",
+        "query": "amateur astronomer equipment",
+        "query2": "astronomy setup night",
+        "chips": [
+          {
+            "t": "ANDROMEDA GALAXY",
+            "on": "Andromeda",
+            "style": "accent"
+          }
+        ],
+        "punch": "Andromeda"
+      },
+      {
+        "role": "fact",
+        "text": "This spiral galaxy is over two million light-years away, yet now visible to hobbyists.",
+        "query": "galaxy distance light year",
+        "query2": "stars night sky",
+        "chips": [
+          {
+            "t": "2+ MILLION LIGHT-YEARS",
+            "on": "million",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "With patience and practice, you can photograph distant galaxies too!",
+        "query": "astrophotography setup",
+        "query2": "night photography stars",
+        "label": "DREAM OF GALAXIES",
+        "sub": "Capture the universe yourself!",
+        "label_on": "photograph",
+        "punch": "photograph"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "galaxy stars telescope",
+        "query2": "night sky telescope"
+      }
+    ],
+    "description": "With an everyday telescope, capturing the Andromeda galaxy is becoming a reality. Follow for more breathtaking astronomy tips!",
+    "hashtags": [
+      "#science",
+      "#astronomy",
+      "#galaxy",
+      "#amateurastronomy",
+      "#photography",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mini Moon of Earth You Didn't Know About",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Did you know Earth has a 'mini-moon' that orbits us occasionally?",
+        "hook_top": "EARTH'S HIDDEN MINI MOON",
+        "query": "Earth mini moon",
+        "query2": "Earth and moon orbit"
+      },
+      {
+        "role": "fact",
+        "text": "This mini-moon, also called a temporary satellite, orbits Earth for a short time before leaving.",
+        "query": "temporary satellite orbit",
+        "query2": "moon orbiting Earth",
+        "chips": [
+          {
+            "t": "TEMPORARY SATELLITE",
+            "on": "temporary",
+            "style": "white"
+          }
+        ],
+        "punch": "temporary"
+      },
+      {
+        "role": "fact",
+        "text": "These mini-moons can range from the size of a car to larger than a home.",
+        "query": "mini moon size comparison",
+        "query2": "car and house comparison",
+        "chips": [
+          {
+            "t": "SIZE OF A CAR",
+            "on": "car",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "It's like finding a new friend in space that only visits for a while!",
+        "query": "mini moon illustration",
+        "query2": "space animation",
+        "label": "SPACE FRIEND",
+        "sub": "Only visiting briefly!",
+        "label_on": "mini-moon",
+        "punch": "friend"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "cosmic surprises",
+        "query2": "space discoveries"
+      }
+    ],
+    "description": "Earth has a 'mini-moon' that orbits us before disappearing into space. What a cosmic surprise! Follow for more incredible discoveries!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#moon",
+      "#Earth",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Rescue Mission for a Falling Telescope",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A critical telescope is headed for a fall—can it be saved?",
+        "hook_top": "TIME IS RUNNING OUT",
+        "query": "falling telescope rescue",
+        "query2": "telescope in space"
+      },
+      {
+        "role": "fact",
+        "text": "NASA is planning a daring mission to rescue a telescope that is falling back to Earth.",
+        "query": "NASA telescope rescue plan",
+        "query2": "NASA team preparing",
+        "chips": [
+          {
+            "t": "FALLING BACK TO EARTH",
+            "on": "falling",
+            "style": "white"
+          }
+        ],
+        "punch": "falling"
+      },
+      {
+        "role": "fact",
+        "text": "This telescope has provided vital data about our universe and could be lost forever.",
+        "query": "telescope data universe",
+        "query2": "space data analysis",
+        "chips": [
+          {
+            "t": "VITAL DATA",
+            "on": "data",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Saving it means saving a wealth of knowledge about our cosmos!",
+        "query": "telescope launch news",
+        "query2": "space exploration",
+        "label": "SAVING KNOWLEDGE",
+        "sub": "A mission for our future!",
+        "label_on": "knowledge",
+        "punch": "saving"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "space rescue mission",
+        "query2": "NASA mission updates"
+      }
+    ],
+    "description": "NASA is launching a daring mission to save a valuable telescope falling back to Earth—essential for our understanding of the universe. Follow for updates!",
+    "hashtags": [
+      "#science",
+      "#NASA",
+      "#telescope",
+      "#space",
+      "#rescue",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
