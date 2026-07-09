@@ -2994,5 +2994,209 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "A Telescope Captures the Sun's Outer Layers",
+    "place": "La Palma",
+    "country": "Spain",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A telescope has revealed the Sun’s outer layers in unprecedented detail.",
+        "hook_top": "NEW VIEW OF THE SUN",
+        "query": "solar telescope sun",
+        "query2": "sun solar flare timelapse"
+      },
+      {
+        "role": "fact",
+        "text": "This telescope captures images of the Sun that are ten times sharper than previous efforts.",
+        "query": "high-resolution sun image",
+        "query2": "solar corona close-up",
+        "chips": [
+          {
+            "t": "10X SHARPER",
+            "on": "sharper",
+            "style": "accent"
+          }
+        ],
+        "punch": "sharper"
+      },
+      {
+        "role": "fact",
+        "text": "It also helps scientists better understand solar storms and their impact on Earth.",
+        "query": "solar storm impact",
+        "query2": "gorgeous auroras night",
+        "chips": [
+          {
+            "t": "UNDERSTANDING SOLAR STOR",
+            "on": "solar storms",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This could improve our prediction of space weather events.",
+        "query": "space weather forecast",
+        "query2": "satellite in orbit",
+        "label": "IMPROVING SPACE WEATHER PREDICTION",
+        "sub": "Sharpening our forecasts",
+        "label_on": "prediction",
+        "punch": "prediction"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "universe space stars",
+        "query2": "deep space night timelapse"
+      }
+    ],
+    "description": "A new telescope is changing how we view the Sun. Its detailed images could revolutionize space weather forecasts. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#sun",
+      "#telescope",
+      "#technology",
+      "#solar",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Asteroid with Two Heads",
+    "place": "Outer Space",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "There’s an asteroid out there with two distinct heads.",
+        "hook_top": "A 2HEADED ASTEROID",
+        "query": "double-headed asteroid",
+        "query2": "asteroid in the dark"
+      },
+      {
+        "role": "fact",
+        "text": "This unique shape presents challenges for space travel and landing operations.",
+        "query": "landing on asteroid",
+        "query2": "space probe landing",
+        "chips": [
+          {
+            "t": "CHALLENGING LANDING",
+            "on": "challenges",
+            "style": "accent"
+          }
+        ],
+        "punch": "landing"
+      },
+      {
+        "role": "fact",
+        "text": "Captured by Japan’s Hayabusa2 probe, this asteroid is 62 million miles away.",
+        "query": "hayabusa2 asteroid photo",
+        "query2": "space probe imagery",
+        "chips": [
+          {
+            "t": "62 MILLION MILES",
+            "on": "million",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Studying it could unveil secrets about the formation of our solar system.",
+        "query": "solar system formation",
+        "query2": "planetary nebula",
+        "label": "UNLOCKING SOLAR SYSTEM SECRETS",
+        "sub": "Exploring our origins",
+        "label_on": "secrets",
+        "punch": "secrets"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "cosmic discoveries",
+        "query2": "stars and planets"
+      }
+    ],
+    "description": "Meet the two-headed asteroid, a rare cosmic object that may hold clues to our solar system's history. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#asteroid",
+      "#hayabusa2",
+      "#discovery",
+      "#technology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Unexpected Treasure on Titan",
+    "place": "Titan",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Scientists suspect Titan could be hiding a never-before-seen molecule!",
+        "hook_top": "TITAN'S SECRET MOLECULE",
+        "query": "Titan moon",
+        "query2": "Titan surface imagery"
+      },
+      {
+        "role": "fact",
+        "text": "Recent observations by James Webb suggest unique organic compounds on Titan’s surface.",
+        "query": "james webb telescope titan",
+        "query2": "james webb telescope view",
+        "chips": [
+          {
+            "t": "UNIQUE ORGANIC COMPOUNDS",
+            "on": "compounds",
+            "style": "accent"
+          }
+        ],
+        "punch": "compounds"
+      },
+      {
+        "role": "fact",
+        "text": "These findings could redefine our understanding of extraterrestrial chemistry.",
+        "query": "extraterrestrial chemistry",
+        "query2": "alien environment",
+        "chips": [
+          {
+            "t": "REDIFINING CHEMISTRY",
+            "on": "redefine",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Revealing Titan's secrets could answer the question: is life beyond Earth possible?",
+        "query": "search for extraterrestrial life",
+        "query2": "astrobiology research",
+        "label": "LIFE BEYOND EARTH?",
+        "sub": "Tracking potential life",
+        "label_on": "life",
+        "punch": "life"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space exploration",
+        "query2": "galaxy view"
+      }
+    ],
+    "description": "Titan may possess new organic molecules that could change our view of chemical processes beyond Earth. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#titan",
+      "#jameswebb",
+      "#chemistry",
+      "#discovery",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

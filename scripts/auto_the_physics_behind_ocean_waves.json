@@ -1,0 +1,67 @@
+{
+  "title": "The Physics Behind Ocean Waves",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Have you ever wondered how ocean waves are formed?",
+      "hook_top": "THE SECRET OF OCEAN WAVES",
+      "query": "ocean waves",
+      "query2": "waves crashing"
+    },
+    {
+      "role": "fact",
+      "text": "Waves are caused by wind pushing water across the surface.",
+      "query": "waves wind interaction",
+      "query2": "wind on water",
+      "chips": [
+        {
+          "t": "WIND PUSHES WATER",
+          "on": "pushes",
+          "style": "accent"
+        }
+      ],
+      "punch": "pushes"
+    },
+    {
+      "role": "fact",
+      "text": "They carry energy, affecting everything in their path.",
+      "query": "ocean waves energy",
+      "query2": "waves crashing shore",
+      "chips": [
+        {
+          "t": "CARRY ENERGY",
+          "on": "energy",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Understanding waves helps protect coastal communities.",
+      "query": "coastal communities",
+      "query2": "coastline protection",
+      "label": "PROTECTING COASTAL AREAS",
+      "sub": "Physics in action",
+      "label_on": "understanding",
+      "punch": "protecting"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "ocean waves blue",
+      "query2": "ocean surface"
+    }
+  ],
+  "description": "Waves are formed by wind pushing water, carrying energy and affecting coasts. Follow for more ocean science insights!",
+  "hashtags": [
+    "#science",
+    "#ocean",
+    "#waves",
+    "#physics",
+    "#nature",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "How Plants Talk to Each Other",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Plants can communicate and warn each other of danger!",
+      "hook_top": "PLANTS TALK TO EACH OTHER",
+      "query": "plants communicating",
+      "query2": "plants in forest"
+    },
+    {
+      "role": "fact",
+      "text": "They release chemical signals when attacked by pests.",
+      "query": "plants chemical signals",
+      "query2": "plant pest interaction",
+      "chips": [
+        {
+          "t": "RELEASE CHEMICALS",
+          "on": "release",
+          "style": "accent"
+        }
+      ],
+      "punch": "chemicals"
+    },
+    {
+      "role": "fact",
+      "text": "Nearby plants can sense these signals and activate defenses.",
+      "query": "plants activating defense",
+      "query2": "plants reacting",
+      "chips": [
+        {
+          "t": "ACTIVATE DEFENSES",
+          "on": "activate",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This behavior helps ensure survival in their ecosystem.",
+      "query": "plant survival ecosystem",
+      "query2": "forest environment",
+      "label": "ENSURING SURVIVAL",
+      "sub": "Plants in action",
+      "label_on": "survival",
+      "punch": "survival"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "plants in nature",
+      "query2": "green plants"
+    }
+  ],
+  "description": "Plants can communicate and warn each other through chemical signals, ensuring survival. Follow for more amazing plant facts!",
+  "hashtags": [
+    "#science",
+    "#plants",
+    "#communication",
+    "#nature",
+    "#ecosystem",
+    "#shorts",
+    "#fyp"
+  ]
+}
