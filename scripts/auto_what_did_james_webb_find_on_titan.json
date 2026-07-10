@@ -1,0 +1,68 @@
+{
+  "title": "What Did James Webb Find on Titan?",
+  "place": "Titan",
+  "country": "Saturn's Moon",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A groundbreaking molecule might be lurking beneath Titan's icy surface.",
+      "hook_top": "GROUNDBREAKING DISCOVERY IN SPACE",
+      "query": "Titan moon surface",
+      "query2": "Titan icy terrain"
+    },
+    {
+      "role": "fact",
+      "text": "James Webb Telescope has captured spectra suggesting complex organic molecules on Titan.",
+      "query": "James Webb Telescope image",
+      "query2": "space telescope stars",
+      "chips": [
+        {
+          "t": "COMPLEX MOLECULES",
+          "on": "molecules",
+          "style": "accent"
+        }
+      ],
+      "punch": "molecules"
+    },
+    {
+      "role": "fact",
+      "text": "Titan has lakes of liquid methane, making it a unique body for life search.",
+      "query": "Titan methane lakes",
+      "query2": "satellite methane surface",
+      "chips": [
+        {
+          "t": "LIQUID METHANE LAKES",
+          "on": "methane",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Could this moon hold the key to extraterrestrial life?",
+      "query": "extraterrestrial life concept",
+      "query2": "space life concept",
+      "label": "KEY TO LIFE?",
+      "sub": "Searching for life in the cosmos",
+      "label_on": "key",
+      "punch": "key"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "galaxy stars deep space",
+      "query2": "milky way night timelapse"
+    }
+  ],
+  "description": "James Webb Telescope may have found complex organic molecules on Titan. Could this moon be harboring extraterrestrial life? Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#jameswebb",
+    "#titan",
+    "#molecules",
+    "#exoplanets",
+    "#shorts",
+    "#fyp"
+  ]
+}

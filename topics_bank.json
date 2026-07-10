@@ -3198,5 +3198,255 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Doctor Who Captured the ISS",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An amateur photographer caught the ISS crossing the Sun!",
+        "hook_top": "ISS CROSSING THE SUN",
+        "query": "ISS transiting sun",
+        "query2": "sun with satellite transit"
+      },
+      {
+        "role": "fact",
+        "text": "The International Space Station travels at 28,000 kilometers per hour.",
+        "query": "international space station orbit",
+        "query2": "fast moving ISS",
+        "chips": [
+          {
+            "t": "28,000 KM/H",
+            "on": "28,000",
+            "style": "accent"
+          }
+        ],
+        "punch": "KM/H"
+      },
+      {
+        "role": "fact",
+        "text": "It's visible from Earth with the naked eye for just a few minutes.",
+        "query": "ISS visible from earth",
+        "query2": "night sky with ISS",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "This fleeting sight was perfectly timed!",
+        "query": "sunset photograph",
+        "query2": "time-lapse sunset",
+        "label": "TIMING IS EVERYTHING",
+        "sub": "A unique moment in time",
+        "label_on": "timed",
+        "punch": "timed"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "galaxy view from earth",
+        "query2": "night sky stars"
+      }
+    ],
+    "description": "An incredible photo captured the ISS crossing the Sun. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#ISS",
+      "#photography",
+      "#technology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The First Image from Tianwen-2",
+    "place": "",
+    "country": "China",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A new mini moon has been revealed by Tianwen-2's first image!",
+        "hook_top": "NEW MINI MOON REVEALED",
+        "query": "mini moon image",
+        "query2": "satellite around earth"
+      },
+      {
+        "role": "fact",
+        "text": "Tianwen-2 launched to explore the mini moon and collect samples.",
+        "query": "Tianwen-2 spacecraft",
+        "query2": "rocket launch animation",
+        "chips": [
+          {
+            "t": "SAMPLE COLLECTION",
+            "on": "samples",
+            "style": "white"
+          }
+        ],
+        "punch": "samples"
+      },
+      {
+        "role": "fact",
+        "text": "The mission aims to return with asteroid samples by the end of the decade.",
+        "query": "asteroid sample return",
+        "query2": "space mission animation",
+        "chips": [
+          {
+            "t": "RETURN BY 2030",
+            "on": "2030",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "A mission advancing our knowledge of the solar system!",
+        "query": "space exploration",
+        "query2": "planets in solar system",
+        "label": "SOLAR SYSTEM INSIGHT",
+        "sub": "A leap into the unknown",
+        "label_on": "knowledge",
+        "punch": "knowledge"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "night sky stars",
+        "query2": "galaxy view"
+      }
+    ],
+    "description": "Tianwen-2 has captured its first image of a new mini moon, aiming for asteroid samples. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#Tianwen2",
+      "#moon",
+      "#technology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Rocket Revolutionizing Space Travel",
+    "place": "",
+    "country": "China",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "China has just achieved a major breakthrough in rocket reusability!",
+        "hook_top": "ROCKET REUSABILITY BREAKTHROUGH",
+        "query": "rocket reusability",
+        "query2": "reusable rocket launch"
+      },
+      {
+        "role": "fact",
+        "text": "The Long March 10B rocket can be reused multiple times, saving costs.",
+        "query": "reusable rocket technology",
+        "query2": "reusable rocket landing",
+        "chips": [
+          {
+            "t": "COST SAVINGS",
+            "on": "saving",
+            "style": "white"
+          }
+        ],
+        "punch": "saving"
+      },
+      {
+        "role": "fact",
+        "text": "Reusability could change how we access space, reducing launch expenses.",
+        "query": "space launch costs",
+        "query2": "costly rocket launch",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "This could pave the way for affordable space exploration!",
+        "query": "space exploration",
+        "query2": "future of space travel",
+        "label": "ACCESSIBLE SPACE TRAVEL",
+        "sub": "Opening doors to new frontiers",
+        "label_on": "exploration",
+        "punch": "exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "rocket launching",
+        "query2": "launch in slow motion"
+      }
+    ],
+    "description": "China's Long March 10B rocket represents a major leap forward in rocket reusability. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#rockets",
+      "#technology",
+      "#innovation",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Pioneering Discovery by James Webb",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "James Webb may have found a never-before-seen molecule on Titan!",
+        "hook_top": "NEW MOLECULE ON TITAN",
+        "query": "James Webb Titan",
+        "query2": "Titan moon explorer"
+      },
+      {
+        "role": "fact",
+        "text": "This discovery could revolutionize our understanding of Titan's atmosphere.",
+        "query": "Titan atmosphere analysis",
+        "query2": "Titan surface",
+        "chips": [
+          {
+            "t": "ATMOSPHERIC REVOLUTION",
+            "on": "revolution",
+            "style": "accent"
+          }
+        ],
+        "punch": "revolution"
+      },
+      {
+        "role": "fact",
+        "text": "Titan is the only moon with a dense atmosphere, similar to early Earth.",
+        "query": "Titan moon features",
+        "query2": "Titan's clouds",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "This could unlock secrets about life's origins!",
+        "query": "origin of life",
+        "query2": "ancient Earth imagery",
+        "label": "SECRETS OF LIFE",
+        "sub": "Exploring cosmic origins",
+        "label_on": "secrets",
+        "punch": "secrets"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "cosmic exploration",
+        "query2": "galaxy overview"
+      }
+    ],
+    "description": "James Webb may have identified a new molecule on Titan, changing our view of its atmosphere. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#JamesWebb",
+      "#Titan",
+      "#discovery",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

@@ -1,0 +1,67 @@
+{
+  "title": "How Heat Waves Affect Your Body",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Heatwaves can transform the way your body feels!",
+      "hook_top": "HEATWAVES AND YOUR BODY",
+      "query": "heat wave effects",
+      "query2": "heat wave"
+    },
+    {
+      "role": "fact",
+      "text": "They can lead to dehydration and heat exhaustion if not managed.",
+      "query": "dehydration heat wave",
+      "query2": "heat health concerns",
+      "chips": [
+        {
+          "t": "DEHYDRATION RISKS",
+          "on": "dehydration",
+          "style": "accent"
+        }
+      ],
+      "punch": "dehydration"
+    },
+    {
+      "role": "fact",
+      "text": "Your body struggles to regulate temperature, which can lead to heat-related illnesses.",
+      "query": "body temperature regulation",
+      "query2": "thermoregulation",
+      "chips": [
+        {
+          "t": "REGULATE TEMPERATURE",
+          "on": "regulate",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Staying cool is essential for health during extreme heat.",
+      "query": "cooling down",
+      "query2": "staying cool",
+      "label": "STAYING COOL",
+      "sub": "Health in extreme weather",
+      "label_on": "heat",
+      "punch": "health"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "health tips",
+      "query2": "healthy lifestyle"
+    }
+  ],
+  "description": "Heatwaves can lead to dehydration and affect your body’s ability to regulate temperature. Follow for more health science!",
+  "hashtags": [
+    "#science",
+    "#health",
+    "#heatwave",
+    "#wellness",
+    "#nature",
+    "#shorts",
+    "#fyp"
+  ]
+}
