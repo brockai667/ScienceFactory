@@ -1,0 +1,67 @@
+{
+  "title": "Why Bees Are Nature's Engineers",
+  "place": "Beekeeping Areas",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "These tiny architects build structures that inspire modern engineering!",
+      "hook_top": "NATURE'S ENGINEERS REVEALED",
+      "query": "honeycomb structure",
+      "query2": "bees in hive"
+    },
+    {
+      "role": "fact",
+      "text": "Honeycombs are built with hexagonal cells, maximizing space and efficiency.",
+      "query": "honeycomb close-up",
+      "query2": "bees making honeycomb",
+      "chips": [
+        {
+          "t": "HEXAGONAL CELLS",
+          "on": "cells",
+          "style": "accent"
+        }
+      ],
+      "punch": "cells"
+    },
+    {
+      "role": "fact",
+      "text": "The strength-to-weight ratio of honeycomb structures is superior, used in aviation.",
+      "query": "honeycomb strength comparison",
+      "query2": "aircraft materials",
+      "chips": [
+        {
+          "t": "STRONGER THAN STEEL",
+          "on": "strength",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "These natural builders may hold the secrets to sustainable design.",
+      "query": "sustainable architecture",
+      "query2": "eco-friendly designs",
+      "label": "SECRETS TO DESIGN",
+      "sub": "Learning from nature's engineers",
+      "label_on": "secrets",
+      "punch": "design"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "nature creativity",
+      "query2": "forest landscape"
+    }
+  ],
+  "description": "Bees create honeycombs with remarkable efficiency, inspiring sustainable engineering solutions. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#nature",
+    "#bees",
+    "#engineering",
+    "#sustainability",
+    "#shorts",
+    "#fyp"
+  ]
+}

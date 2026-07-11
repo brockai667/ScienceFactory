@@ -1,0 +1,66 @@
+{
+  "title": "The Asteroid That Taught Us About Planet Formation",
+  "place": "Itokawa",
+  "country": "Japan",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "One tiny asteroid holds secrets about our solar system's origins.",
+      "hook_top": "ASTEROID SECRETS REVEALED",
+      "query": "Itokawa asteroid",
+      "query2": "small asteroid"
+    },
+    {
+      "role": "fact",
+      "text": "Hayabusa2 brought back samples from asteroid Ryugu that reveal its building blocks.",
+      "query": "Hayabusa2 asteroid sample",
+      "query2": "asteroid samples close-up",
+      "chips": [
+        {
+          "t": "RYUGU SAMPLES",
+          "on": "Ryugu",
+          "style": "accent"
+        },
+        {
+          "t": "ASTEROID CELLS",
+          "on": "building blocks",
+          "style": "white"
+        }
+      ],
+      "punch": "blocks"
+    },
+    {
+      "role": "fact",
+      "text": "These samples may explain how planets formed billions of years ago.",
+      "query": "planet formation diagram",
+      "query2": "solar system formation",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Understanding asteroids can reveal our own Earth's history.",
+      "query": "Earth history",
+      "query2": "ancient Earth landscape",
+      "label": "EARTH'S HISTORY",
+      "sub": "Asteroids tell our story!",
+      "label_on": "history",
+      "punch": "story"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "universe stars",
+      "query2": "starry sky"
+    }
+  ],
+  "description": "The Hayabusa2 mission has brought back samples that could reveal details about planet formation. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#asteroids",
+    "#hayabusa2",
+    "#planetformation",
+    "#shorts",
+    "#fyp"
+  ]
+}
