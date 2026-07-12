@@ -1,0 +1,61 @@
+{
+  "title": "What Happens When You Capture the ISS?",
+  "place": "Outer Space",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An extraordinary moment: catching the ISS transit across the sun!",
+      "hook_top": "CATCHING THE ISS LIVE",
+      "query": "ISS transit",
+      "query2": "international space station"
+    },
+    {
+      "role": "fact",
+      "text": "Short-lived, this event lasts mere seconds as the ISS moves swiftly in orbit.",
+      "query": "space station speed",
+      "query2": "ISS orbit speed",
+      "chips": [
+        {
+          "t": "SPEEDY 28,000 KM/H",
+          "on": "speed",
+          "style": "accent"
+        }
+      ],
+      "punch": "speed"
+    },
+    {
+      "role": "fact",
+      "text": "Photographers have only a brief window to capture this celestial moment.",
+      "query": "photographer capturing ISS",
+      "query2": "camera shooting stars",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Every capture is a reminder of our place in the universe.",
+      "query": "universe perspective",
+      "query2": "galaxy view",
+      "label": "A MOMENT IN TIME",
+      "sub": "Witnessing human achievement",
+      "label_on": "capture",
+      "punch": "moment"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space exploration",
+      "query2": "planetary images"
+    }
+  ],
+  "description": "Capturing the ISS is a fleeting yet powerful reminder of our achievements in space. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#ISS",
+    "#photography",
+    "#celestial",
+    "#shorts",
+    "#fyp"
+  ]
+}

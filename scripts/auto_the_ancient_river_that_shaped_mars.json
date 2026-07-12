@@ -1,0 +1,67 @@
+{
+  "title": "The Ancient River That Shaped Mars",
+  "place": "Mars",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Mars was once sculpted by rivers, shaping its surface like Earth!",
+      "hook_top": "MARS ONCE A WATERED LAND",
+      "query": "Mars river channels",
+      "query2": "Mars surface images"
+    },
+    {
+      "role": "fact",
+      "text": "Scientists discovered ancient river channels on Mars, hinting at past water flow.",
+      "query": "Mars ancient river bed",
+      "query2": "river patterns on Mars",
+      "chips": [
+        {
+          "t": "ANCIENT WATER FLOWS",
+          "on": "water",
+          "style": "accent"
+        }
+      ],
+      "punch": "channels"
+    },
+    {
+      "role": "fact",
+      "text": "These findings suggest Mars may have once supported life.",
+      "query": "Mars life search",
+      "query2": "scientists on Mars",
+      "chips": [
+        {
+          "t": "SUPPORTED LIFE?",
+          "on": "life",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "The red planet's past is more Earth-like than we realized.",
+      "query": "Mars landscape",
+      "query2": "Mars red desert",
+      "label": "EARTH-LIKE PAST",
+      "sub": "Is Mars still viable?",
+      "label_on": "past",
+      "punch": "Earth-like"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "Mars exploration",
+      "query2": "Mars rover"
+    }
+  ],
+  "description": "Ancient river channels on Mars suggest its surface was shaped by water, hinting at the possibility of life. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#Mars",
+    "#space",
+    "#exploration",
+    "#extraterrestrial",
+    "#shorts",
+    "#fyp"
+  ]
+}

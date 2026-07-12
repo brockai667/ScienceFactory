@@ -1,0 +1,67 @@
+{
+  "title": "The Telescope That Captured Andromeda",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An everyday telescope managed to capture breathtaking images of an entire galaxy!",
+      "hook_top": "CAPTURING A WHOLE GALAXY",
+      "query": "amateur telescope night sky",
+      "query2": "galaxy stars telescope"
+    },
+    {
+      "role": "fact",
+      "text": "Amateur astronomers can now capture the Andromeda galaxy with the right settings.",
+      "query": "amateur astronomer equipment",
+      "query2": "astronomy setup night",
+      "chips": [
+        {
+          "t": "ANDROMEDA GALAXY",
+          "on": "Andromeda",
+          "style": "accent"
+        }
+      ],
+      "punch": "Andromeda"
+    },
+    {
+      "role": "fact",
+      "text": "This spiral galaxy is over two million light-years away, yet now visible to hobbyists.",
+      "query": "galaxy distance light year",
+      "query2": "stars night sky",
+      "chips": [
+        {
+          "t": "2+ MILLION LIGHT-YEARS",
+          "on": "million",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "With patience and practice, you can photograph distant galaxies too!",
+      "query": "astrophotography setup",
+      "query2": "night photography stars",
+      "label": "DREAM OF GALAXIES",
+      "sub": "Capture the universe yourself!",
+      "label_on": "photograph",
+      "punch": "photograph"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "galaxy stars telescope",
+      "query2": "night sky telescope"
+    }
+  ],
+  "description": "With an everyday telescope, capturing the Andromeda galaxy is becoming a reality. Follow for more breathtaking astronomy tips!",
+  "hashtags": [
+    "#science",
+    "#astronomy",
+    "#galaxy",
+    "#amateurastronomy",
+    "#photography",
+    "#shorts",
+    "#fyp"
+  ]
+}

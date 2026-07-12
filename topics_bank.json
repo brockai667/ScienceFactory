@@ -3448,5 +3448,238 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Two-Headed Asteroid That Surprised Us",
+    "place": "Outer Space",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Astronomers captured a photo of an asteroid with two heads!",
+        "hook_top": "A TWOHEADED ASTEROID",
+        "query": "two-headed asteroid",
+        "query2": "outer space asteroid"
+      },
+      {
+        "role": "fact",
+        "text": "Hayabusa2 captured stunning images of asteroid 1996 FG3 from over sixty million miles away.",
+        "query": "hayabusa2 asteroid image",
+        "query2": "space telescope view",
+        "chips": [
+          {
+            "t": "60+ MILLION MILES",
+            "on": "million",
+            "style": "accent"
+          }
+        ],
+        "punch": "million"
+      },
+      {
+        "role": "fact",
+        "text": "It provides insights into how binary asteroids form and evolve over time.",
+        "query": "binary asteroid formation",
+        "query2": "asteroid evolution",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "A glimpse into the past of our solar system!",
+        "query": "solar system models",
+        "query2": "space timeline",
+        "label": "SOLAR SYSTEM SECRETS",
+        "sub": "Understanding cosmic origins",
+        "label_on": "secrets",
+        "punch": "secrets"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "stunning space images",
+        "query2": "deep space visuals"
+      }
+    ],
+    "description": "Asteroid 1996 FG3 challenges our understanding of space with its two-headed structure. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#asteroids",
+      "#hayabusa2",
+      "#universe",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Rocket That Just Won't Quit",
+    "place": "China",
+    "country": "China",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A new Chinese rocket has just shown its incredible reusability!",
+        "hook_top": "REUSABLE ROCKET BREAKTHROUGH",
+        "query": "reusable rocket launch",
+        "query2": "rocket launch success"
+      },
+      {
+        "role": "fact",
+        "text": "The Long March 10B is designed to be reused multiple times, changing the future of space travel.",
+        "query": "long march 10b rocket",
+        "query2": "rocket technology",
+        "chips": [
+          {
+            "t": "REUSABLE MULTIPLE TIMES",
+            "on": "reused",
+            "style": "white"
+          }
+        ],
+        "punch": "reuse"
+      },
+      {
+        "role": "fact",
+        "text": "This marks a significant step in reducing costs for future space missions.",
+        "query": "rocket cost comparison",
+        "query2": "space mission costs",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "A leap towards affordable space exploration!",
+        "query": "affordable space travel",
+        "query2": "future of space",
+        "label": "AFFORDABLE SPACE!",
+        "sub": "The new era of exploration",
+        "label_on": "affordable",
+        "punch": "exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "advanced rocket tech",
+        "query2": "technological innovations"
+      }
+    ],
+    "description": "The Long March 10B opens new doors for reusability, promising to change space exploration. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#technology",
+      "#rockets",
+      "#spacetravel",
+      "#innovation",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Lake That Mirrors the Milky Way",
+    "place": "New Zealand",
+    "country": "New Zealand",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "There's a lake that beautifully reflects the Milky Way!",
+        "hook_top": "LAKE OF THE MILKY WAY",
+        "query": "lake milky way reflection",
+        "query2": "night sky lake"
+      },
+      {
+        "role": "fact",
+        "text": "Lake Mavora is a prime spot for astrophotographers seeking the perfect galaxy reflection.",
+        "query": "astro photography lake",
+        "query2": "lake photography",
+        "chips": [
+          {
+            "t": "PERFECT REFLECTIONS",
+            "on": "reflections",
+            "style": "white"
+          }
+        ],
+        "punch": "reflections"
+      },
+      {
+        "role": "fact",
+        "text": "Its remote location offers stunning views, free from urban light pollution.",
+        "query": "dark sky locations",
+        "query2": "night sky without light pollution",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "Nature's ultimate mirror for stargazers!",
+        "query": "stargazers in nature",
+        "query2": "people stargazing",
+        "label": "NATURE'S MIRROR",
+        "sub": "Explore stunning reflections",
+        "label_on": "mirror",
+        "punch": "mirror"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "nature landscapes",
+        "query2": "breathtaking scenery"
+      }
+    ],
+    "description": "Lake Mavora provides stunning reflections of the Milky Way, making it a paradise for stargazers. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#nature",
+      "#astrophotography",
+      "#milkyway",
+      "#reflection",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Sun-Reflecting Space Mirror Controversy",
+    "place": "Earth's Orbit",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Could a giant mirror in space change our climate?",
+        "hook_top": "A SPACE MIRROR DEBATE",
+        "query": "space mirror concept",
+        "query2": "space exploration"
+      },
+      {
+        "role": "fact",
+        "text": "FCC approval was granted for a sun-reflecting mirror to combat climate change.",
+        "query": "fcc approval sun mirror",
+        "query2": "space mirror",
+        "chips": []
+      },
+      {
+        "role": "fact",
+        "text": "Critics warn it may disrupt astronomical observations and alter ecosystems.",
+        "query": "space mirror impact",
+        "query2": "environmental impact",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "A bold solution that divides scientists!",
+        "query": "scientists debating",
+        "query2": "scientific community"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science debates",
+        "query2": "interesting discussions"
+      }
+    ],
+    "description": "A controversial sun-reflecting mirror in space has sparked debate among scientists. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#technology",
+      "#space",
+      "#climatechange",
+      "#controversy",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
