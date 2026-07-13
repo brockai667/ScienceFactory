@@ -3681,5 +3681,273 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Sugar Found Floating in Space",
+    "place": "Interstellar Space",
+    "country": "Unknown",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Scientists have discovered sugar molecules in the vastness of interstellar space.",
+        "hook_top": "SUGAR IN OUTER SPACE",
+        "query": "interstellar space nebula",
+        "query2": "galaxy stars night sky"
+      },
+      {
+        "role": "fact",
+        "text": "This discovery marks the first time sugar has been identified outside our Solar System.",
+        "query": "space science discovery",
+        "query2": "science lab space research",
+        "chips": [
+          {
+            "t": "FIRST DISCOVERY",
+            "on": "first",
+            "style": "white"
+          }
+        ],
+        "punch": "discovery"
+      },
+      {
+        "role": "fact",
+        "text": "These sugar molecules could give insights into the building blocks of life in the universe.",
+        "query": "life in space concept",
+        "query2": "space life illustration",
+        "chips": [
+          {
+            "t": "BUILDING BLOCKS",
+            "on": "blocks",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Could this be key to understanding life's origins in the cosmos?",
+        "query": "space research laboratory",
+        "query2": "cosmology concept illustration",
+        "label": "KEY TO LIFE?",
+        "sub": "Are we alone in the universe?",
+        "label_on": "key",
+        "punch": "key"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "universe galaxy stars",
+        "query2": "starry night timelapse"
+      }
+    ],
+    "description": "Sugar has been found in interstellar space, potentially illuminating the secrets of how life began. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#sugar",
+      "#cosmos",
+      "#discovery",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Rocket Reusability Revolutionized",
+    "place": "China",
+    "country": "China",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "China has successfully recovered a rocket after its first flight—game changer for space travel!",
+        "hook_top": "ROCKET RECOVERY SUCCESS",
+        "query": "rocket launch footage",
+        "query2": "successful rocket recovery"
+      },
+      {
+        "role": "fact",
+        "text": "The Long March 10B rocket marks a significant leap in reusable rocket technology.",
+        "query": "Long March 10B rocket",
+        "query2": "rocket launch space",
+        "chips": [
+          {
+            "t": "SIGNIFICANT LEAP",
+            "on": "significant",
+            "style": "white"
+          }
+        ],
+        "punch": "leap"
+      },
+      {
+        "role": "fact",
+        "text": "Reusability could drastically reduce the cost of space missions, making them more accessible.",
+        "query": "space mission launch",
+        "query2": "cheap satellite launch",
+        "chips": [
+          {
+            "t": "COST REDUCTION",
+            "on": "reduce",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This innovation could open new frontiers in space exploration!",
+        "query": "space exploration concept",
+        "query2": "space mission planning",
+        "label": "NEW FRONTIERS!",
+        "sub": "The future looks bright!",
+        "label_on": "frontiers",
+        "punch": "new"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "rocket sky launch",
+        "query2": "night launch timelapse"
+      }
+    ],
+    "description": "China's successful recovery of the Long March 10B marks a major advancement in reusable rocket technology. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#technology",
+      "#rocket",
+      "#space",
+      "#innovation",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Secret Behind the Southern Pinwheel Galaxy",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "What if you could capture stunning images of a galaxy from your backyard?",
+        "hook_top": "CATCH A GALAXY",
+        "query": "Southern Pinwheel Galaxy",
+        "query2": "galaxy in backyard"
+      },
+      {
+        "role": "fact",
+        "text": "The Southern Pinwheel Galaxy is only about 15 million light-years away from Earth.",
+        "query": "Southern Pinwheel Galaxy distance",
+        "query2": "galaxy distance graphic",
+        "chips": [
+          {
+            "t": "15 MILLION LIGHT-YEARS",
+            "on": "million",
+            "style": "white"
+          }
+        ],
+        "punch": "million"
+      },
+      {
+        "role": "fact",
+        "text": "It's one of the closest spiral galaxies, making it a favorite for amateur astronomers.",
+        "query": "amateur astronomers viewing",
+        "query2": "amateur telescope observing",
+        "chips": [
+          {
+            "t": "FAVORITE VIEWING SPOT",
+            "on": "favorite",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "All you need is a telescope and clear skies to glimpse this beauty!",
+        "query": "telescope backyard stargazing",
+        "query2": "telescope night sky",
+        "label": "EASY TO SPOT!",
+        "sub": "Grab your telescope!",
+        "label_on": "spot",
+        "punch": "gaze"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "galaxy stars night",
+        "query2": "galaxy night time"
+      }
+    ],
+    "description": "With a telescope, you can capture breathtaking images of the Southern Pinwheel Galaxy from your yard. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#galaxy",
+      "#astronomy",
+      "#backyard",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Nature's Mechanics: How Trees Communicate",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Did you know that trees can communicate with each other underground?",
+        "hook_top": "TREES TALK UNDERGROUND",
+        "query": "forest floor roots",
+        "query2": "tree root network"
+      },
+      {
+        "role": "fact",
+        "text": "Trees use a network of fungi to share nutrients and information.",
+        "query": "mycorrhizal networks",
+        "query2": "fungal network close-up",
+        "chips": [
+          {
+            "t": "NUTRIENT SHARING",
+            "on": "share",
+            "style": "white"
+          }
+        ],
+        "punch": "network"
+      },
+      {
+        "role": "fact",
+        "text": "This communication helps trees warn each other of threats like pests and drought.",
+        "query": "trees warning each other",
+        "query2": "tree pest attack illustration",
+        "chips": [
+          {
+            "t": "WARNING SYSTEM",
+            "on": "warn",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Imagine a whole forest working together to survive!",
+        "query": "trees working together",
+        "query2": "forest aerial view",
+        "label": "FOREST COOPERATION!",
+        "sub": "Nature's teamwork at its best!",
+        "label_on": "cooperation",
+        "punch": "teamwork"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "forest nature close-up",
+        "query2": "nature time-lapse"
+      }
+    ],
+    "description": "Trees communicate through a vast underground network, sharing nutrients and warning each other of dangers. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#nature",
+      "#trees",
+      "#communication",
+      "#forest",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

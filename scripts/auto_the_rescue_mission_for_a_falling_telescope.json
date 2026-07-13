@@ -1,0 +1,67 @@
+{
+  "title": "The Rescue Mission for a Falling Telescope",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A critical telescope is headed for a fall—can it be saved?",
+      "hook_top": "TIME IS RUNNING OUT",
+      "query": "falling telescope rescue",
+      "query2": "telescope in space"
+    },
+    {
+      "role": "fact",
+      "text": "NASA is planning a daring mission to rescue a telescope that is falling back to Earth.",
+      "query": "NASA telescope rescue plan",
+      "query2": "NASA team preparing",
+      "chips": [
+        {
+          "t": "FALLING BACK TO EARTH",
+          "on": "falling",
+          "style": "white"
+        }
+      ],
+      "punch": "falling"
+    },
+    {
+      "role": "fact",
+      "text": "This telescope has provided vital data about our universe and could be lost forever.",
+      "query": "telescope data universe",
+      "query2": "space data analysis",
+      "chips": [
+        {
+          "t": "VITAL DATA",
+          "on": "data",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Saving it means saving a wealth of knowledge about our cosmos!",
+      "query": "telescope launch news",
+      "query2": "space exploration",
+      "label": "SAVING KNOWLEDGE",
+      "sub": "A mission for our future!",
+      "label_on": "knowledge",
+      "punch": "saving"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "space rescue mission",
+      "query2": "NASA mission updates"
+    }
+  ],
+  "description": "NASA is launching a daring mission to save a valuable telescope falling back to Earth—essential for our understanding of the universe. Follow for updates!",
+  "hashtags": [
+    "#science",
+    "#NASA",
+    "#telescope",
+    "#space",
+    "#rescue",
+    "#shorts",
+    "#fyp"
+  ]
+}

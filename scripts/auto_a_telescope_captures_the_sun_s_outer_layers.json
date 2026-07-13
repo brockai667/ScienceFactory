@@ -1,0 +1,68 @@
+{
+  "title": "A Telescope Captures the Sun's Outer Layers",
+  "place": "La Palma",
+  "country": "Spain",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A telescope has revealed the Sun’s outer layers in unprecedented detail.",
+      "hook_top": "NEW VIEW OF THE SUN",
+      "query": "solar telescope sun",
+      "query2": "sun solar flare timelapse"
+    },
+    {
+      "role": "fact",
+      "text": "This telescope captures images of the Sun that are ten times sharper than previous efforts.",
+      "query": "high-resolution sun image",
+      "query2": "solar corona close-up",
+      "chips": [
+        {
+          "t": "10X SHARPER",
+          "on": "sharper",
+          "style": "accent"
+        }
+      ],
+      "punch": "sharper"
+    },
+    {
+      "role": "fact",
+      "text": "It also helps scientists better understand solar storms and their impact on Earth.",
+      "query": "solar storm impact",
+      "query2": "gorgeous auroras night",
+      "chips": [
+        {
+          "t": "UNDERSTANDING SOLAR STOR",
+          "on": "solar storms",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This could improve our prediction of space weather events.",
+      "query": "space weather forecast",
+      "query2": "satellite in orbit",
+      "label": "IMPROVING SPACE WEATHER PREDICTION",
+      "sub": "Sharpening our forecasts",
+      "label_on": "prediction",
+      "punch": "prediction"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "universe space stars",
+      "query2": "deep space night timelapse"
+    }
+  ],
+  "description": "A new telescope is changing how we view the Sun. Its detailed images could revolutionize space weather forecasts. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#sun",
+    "#telescope",
+    "#technology",
+    "#solar",
+    "#shorts",
+    "#fyp"
+  ]
+}

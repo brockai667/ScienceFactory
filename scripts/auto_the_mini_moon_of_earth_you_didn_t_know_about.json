@@ -1,0 +1,66 @@
+{
+  "title": "The Mini Moon of Earth You Didn't Know About",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Did you know Earth has a 'mini-moon' that orbits us occasionally?",
+      "hook_top": "EARTH'S HIDDEN MINI MOON",
+      "query": "Earth mini moon",
+      "query2": "Earth and moon orbit"
+    },
+    {
+      "role": "fact",
+      "text": "This mini-moon, also called a temporary satellite, orbits Earth for a short time before leaving.",
+      "query": "temporary satellite orbit",
+      "query2": "moon orbiting Earth",
+      "chips": [
+        {
+          "t": "TEMPORARY SATELLITE",
+          "on": "temporary",
+          "style": "white"
+        }
+      ],
+      "punch": "temporary"
+    },
+    {
+      "role": "fact",
+      "text": "These mini-moons can range from the size of a car to larger than a home.",
+      "query": "mini moon size comparison",
+      "query2": "car and house comparison",
+      "chips": [
+        {
+          "t": "SIZE OF A CAR",
+          "on": "car",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "It's like finding a new friend in space that only visits for a while!",
+      "query": "mini moon illustration",
+      "query2": "space animation",
+      "label": "SPACE FRIEND",
+      "sub": "Only visiting briefly!",
+      "label_on": "mini-moon",
+      "punch": "friend"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "cosmic surprises",
+      "query2": "space discoveries"
+    }
+  ],
+  "description": "Earth has a 'mini-moon' that orbits us before disappearing into space. What a cosmic surprise! Follow for more incredible discoveries!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#moon",
+    "#Earth",
+    "#shorts",
+    "#fyp"
+  ]
+}
