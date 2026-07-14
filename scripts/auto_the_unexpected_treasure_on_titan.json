@@ -1,0 +1,68 @@
+{
+  "title": "The Unexpected Treasure on Titan",
+  "place": "Titan",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Scientists suspect Titan could be hiding a never-before-seen molecule!",
+      "hook_top": "TITAN'S SECRET MOLECULE",
+      "query": "Titan moon",
+      "query2": "Titan surface imagery"
+    },
+    {
+      "role": "fact",
+      "text": "Recent observations by James Webb suggest unique organic compounds on Titan’s surface.",
+      "query": "james webb telescope titan",
+      "query2": "james webb telescope view",
+      "chips": [
+        {
+          "t": "UNIQUE ORGANIC COMPOUNDS",
+          "on": "compounds",
+          "style": "accent"
+        }
+      ],
+      "punch": "compounds"
+    },
+    {
+      "role": "fact",
+      "text": "These findings could redefine our understanding of extraterrestrial chemistry.",
+      "query": "extraterrestrial chemistry",
+      "query2": "alien environment",
+      "chips": [
+        {
+          "t": "REDIFINING CHEMISTRY",
+          "on": "redefine",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Revealing Titan's secrets could answer the question: is life beyond Earth possible?",
+      "query": "search for extraterrestrial life",
+      "query2": "astrobiology research",
+      "label": "LIFE BEYOND EARTH?",
+      "sub": "Tracking potential life",
+      "label_on": "life",
+      "punch": "life"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "space exploration",
+      "query2": "galaxy view"
+    }
+  ],
+  "description": "Titan may possess new organic molecules that could change our view of chemical processes beyond Earth. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#titan",
+    "#jameswebb",
+    "#chemistry",
+    "#discovery",
+    "#shorts",
+    "#fyp"
+  ]
+}

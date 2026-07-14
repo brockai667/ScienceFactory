@@ -1,0 +1,68 @@
+{
+  "title": "The Asteroid with Two Heads",
+  "place": "Outer Space",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "There’s an asteroid out there with two distinct heads.",
+      "hook_top": "A 2HEADED ASTEROID",
+      "query": "double-headed asteroid",
+      "query2": "asteroid in the dark"
+    },
+    {
+      "role": "fact",
+      "text": "This unique shape presents challenges for space travel and landing operations.",
+      "query": "landing on asteroid",
+      "query2": "space probe landing",
+      "chips": [
+        {
+          "t": "CHALLENGING LANDING",
+          "on": "challenges",
+          "style": "accent"
+        }
+      ],
+      "punch": "landing"
+    },
+    {
+      "role": "fact",
+      "text": "Captured by Japan’s Hayabusa2 probe, this asteroid is 62 million miles away.",
+      "query": "hayabusa2 asteroid photo",
+      "query2": "space probe imagery",
+      "chips": [
+        {
+          "t": "62 MILLION MILES",
+          "on": "million",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Studying it could unveil secrets about the formation of our solar system.",
+      "query": "solar system formation",
+      "query2": "planetary nebula",
+      "label": "UNLOCKING SOLAR SYSTEM SECRETS",
+      "sub": "Exploring our origins",
+      "label_on": "secrets",
+      "punch": "secrets"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "cosmic discoveries",
+      "query2": "stars and planets"
+    }
+  ],
+  "description": "Meet the two-headed asteroid, a rare cosmic object that may hold clues to our solar system's history. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#asteroid",
+    "#hayabusa2",
+    "#discovery",
+    "#technology",
+    "#shorts",
+    "#fyp"
+  ]
+}

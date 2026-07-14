@@ -1,0 +1,61 @@
+{
+  "title": "The Doctor Who Captured the ISS",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An amateur photographer caught the ISS crossing the Sun!",
+      "hook_top": "ISS CROSSING THE SUN",
+      "query": "ISS transiting sun",
+      "query2": "sun with satellite transit"
+    },
+    {
+      "role": "fact",
+      "text": "The International Space Station travels at 28,000 kilometers per hour.",
+      "query": "international space station orbit",
+      "query2": "fast moving ISS",
+      "chips": [
+        {
+          "t": "28,000 KM/H",
+          "on": "28,000",
+          "style": "accent"
+        }
+      ],
+      "punch": "KM/H"
+    },
+    {
+      "role": "fact",
+      "text": "It's visible from Earth with the naked eye for just a few minutes.",
+      "query": "ISS visible from earth",
+      "query2": "night sky with ISS",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "This fleeting sight was perfectly timed!",
+      "query": "sunset photograph",
+      "query2": "time-lapse sunset",
+      "label": "TIMING IS EVERYTHING",
+      "sub": "A unique moment in time",
+      "label_on": "timed",
+      "punch": "timed"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "galaxy view from earth",
+      "query2": "night sky stars"
+    }
+  ],
+  "description": "An incredible photo captured the ISS crossing the Sun. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#ISS",
+    "#photography",
+    "#technology",
+    "#shorts",
+    "#fyp"
+  ]
+}
