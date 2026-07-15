@@ -1,0 +1,61 @@
+{
+  "title": "The Pioneering Discovery by James Webb",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "James Webb may have found a never-before-seen molecule on Titan!",
+      "hook_top": "NEW MOLECULE ON TITAN",
+      "query": "James Webb Titan",
+      "query2": "Titan moon explorer"
+    },
+    {
+      "role": "fact",
+      "text": "This discovery could revolutionize our understanding of Titan's atmosphere.",
+      "query": "Titan atmosphere analysis",
+      "query2": "Titan surface",
+      "chips": [
+        {
+          "t": "ATMOSPHERIC REVOLUTION",
+          "on": "revolution",
+          "style": "accent"
+        }
+      ],
+      "punch": "revolution"
+    },
+    {
+      "role": "fact",
+      "text": "Titan is the only moon with a dense atmosphere, similar to early Earth.",
+      "query": "Titan moon features",
+      "query2": "Titan's clouds",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "This could unlock secrets about life's origins!",
+      "query": "origin of life",
+      "query2": "ancient Earth imagery",
+      "label": "SECRETS OF LIFE",
+      "sub": "Exploring cosmic origins",
+      "label_on": "secrets",
+      "punch": "secrets"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "cosmic exploration",
+      "query2": "galaxy overview"
+    }
+  ],
+  "description": "James Webb may have identified a new molecule on Titan, changing our view of its atmosphere. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#JamesWebb",
+    "#Titan",
+    "#discovery",
+    "#shorts",
+    "#fyp"
+  ]
+}

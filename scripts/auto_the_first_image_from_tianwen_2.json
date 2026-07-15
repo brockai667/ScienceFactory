@@ -1,0 +1,67 @@
+{
+  "title": "The First Image from Tianwen-2",
+  "place": "",
+  "country": "China",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A new mini moon has been revealed by Tianwen-2's first image!",
+      "hook_top": "NEW MINI MOON REVEALED",
+      "query": "mini moon image",
+      "query2": "satellite around earth"
+    },
+    {
+      "role": "fact",
+      "text": "Tianwen-2 launched to explore the mini moon and collect samples.",
+      "query": "Tianwen-2 spacecraft",
+      "query2": "rocket launch animation",
+      "chips": [
+        {
+          "t": "SAMPLE COLLECTION",
+          "on": "samples",
+          "style": "white"
+        }
+      ],
+      "punch": "samples"
+    },
+    {
+      "role": "fact",
+      "text": "The mission aims to return with asteroid samples by the end of the decade.",
+      "query": "asteroid sample return",
+      "query2": "space mission animation",
+      "chips": [
+        {
+          "t": "RETURN BY 2030",
+          "on": "2030",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "A mission advancing our knowledge of the solar system!",
+      "query": "space exploration",
+      "query2": "planets in solar system",
+      "label": "SOLAR SYSTEM INSIGHT",
+      "sub": "A leap into the unknown",
+      "label_on": "knowledge",
+      "punch": "knowledge"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "night sky stars",
+      "query2": "galaxy view"
+    }
+  ],
+  "description": "Tianwen-2 has captured its first image of a new mini moon, aiming for asteroid samples. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#Tianwen2",
+    "#moon",
+    "#technology",
+    "#shorts",
+    "#fyp"
+  ]
+}

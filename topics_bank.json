@@ -4079,5 +4079,277 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The First Interstellar Sugar Discovery",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Scientists just found sugar floating in the vastness of space!",
+        "hook_top": "SUGAR IN INTERSTELLAR SPACE",
+        "query": "interstellar space sugar",
+        "query2": "galaxy stars night sky"
+      },
+      {
+        "role": "fact",
+        "text": "This sugar was detected in a star-forming region, showing life's building blocks may be common.",
+        "query": "star formation region",
+        "query2": "cosmic dust nebula",
+        "chips": [
+          {
+            "t": "LIFE'S BUILDING BLOCKS",
+            "on": "life",
+            "style": "accent"
+          }
+        ],
+        "punch": "blocks"
+      },
+      {
+        "role": "fact",
+        "text": "The discovery helps explain how organic molecules can form in extreme environments.",
+        "query": "organic molecules space",
+        "query2": "scientist lab research",
+        "chips": [
+          {
+            "t": "EXTREME ENVIRONMENTS",
+            "on": "extreme",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This discovery suggests life's ingredients might be ubiquitous throughout the universe.",
+        "query": "universe galaxy",
+        "query2": "space view stars",
+        "label": "LIFE MAY BE COMMON",
+        "sub": "Ingredients scattered in space.",
+        "label_on": "ingredients",
+        "punch": "common"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "wonderful universe",
+        "query2": "starry sky timelapse"
+      }
+    ],
+    "description": "Scientists discovered sugar in interstellar space, hinting that life's building blocks might be more common than we think. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#sugar",
+      "#life",
+      "#discovery",
+      "#universe",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mirror That Will Illuminate the Night Sky",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A satellite mirror could light up Earth’s nights like never before!",
+        "hook_top": "NIGHT SKY LIGHTING UP",
+        "query": "satellite mirror night",
+        "query2": "satellite view earth"
+      },
+      {
+        "role": "fact",
+        "text": "This mirror can reflect sunlight, potentially illuminating dark areas on Earth.",
+        "query": "sun reflecting satellite",
+        "query2": "sunlight clouds earth",
+        "chips": [
+          {
+            "t": "REFLECTING SUNLIGHT",
+            "on": "reflecting",
+            "style": "accent"
+          }
+        ],
+        "punch": "illumination"
+      },
+      {
+        "role": "fact",
+        "text": "This controversial technology could help reduce energy costs in poorly lit regions.",
+        "query": "energy saving technology",
+        "query2": "energy efficient lights",
+        "chips": [
+          {
+            "t": "REDUCING ENERGY COSTS",
+            "on": "energy",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "However, it raises concerns over light pollution and wildlife disturbance.",
+        "query": "light pollution wildlife",
+        "query2": "starry night sky",
+        "label": "LIGHT POLLUTION CONCERNS",
+        "sub": "Will nature be affected?",
+        "label_on": "concerns",
+        "punch": "wildlife"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "innovation technology",
+        "query2": "futuristic tech concept"
+      }
+    ],
+    "description": "A new satellite mirror might illuminate Earth's nights, saving energy but raising light pollution concerns. Follow for daily science!",
+    "hashtags": [
+      "#technology",
+      "#innovation",
+      "#space",
+      "#sustainability",
+      "#lightpollution",
+      "#satellite",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "China's Breakthrough in Rocket Recoveries",
+    "place": "China",
+    "country": "China",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "China just recovered a rocket successfully after its maiden flight!",
+        "hook_top": "MAIDEN FLIGHT SUCCESS",
+        "query": "rocket recovery china",
+        "query2": "rocket launch sky"
+      },
+      {
+        "role": "fact",
+        "text": "This Long March 10B rocket marks a significant step in reusable rocket technology.",
+        "query": "Long March 10B rocket",
+        "query2": "rocket launch pad",
+        "chips": [
+          {
+            "t": "REUSABLE ROCKET TECH",
+            "on": "reusable",
+            "style": "accent"
+          }
+        ],
+        "punch": "step"
+      },
+      {
+        "role": "fact",
+        "text": "Reusable rockets can dramatically reduce costs and increase launch frequency.",
+        "query": "cost effective rockets",
+        "query2": "rocket launch frequency",
+        "chips": [
+          {
+            "t": "REDUCING COSTS",
+            "on": "costs",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This success could change the future of space exploration dramatically!",
+        "query": "future space exploration",
+        "query2": "space exploration concept",
+        "label": "FUTURE OF SPACE",
+        "sub": "A new era begins.",
+        "label_on": "future",
+        "punch": "exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space technology",
+        "query2": "rocket launching"
+      }
+    ],
+    "description": "China's successful recovery of the Long March 10B rocket paves the way for more affordable and frequent space launches. Follow for daily science!",
+    "hashtags": [
+      "#space",
+      "#technology",
+      "#rocket",
+      "#innovation",
+      "#exploration",
+      "#china",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Fourth Dimension Explained by an Apple!",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An apple was used to illustrate the concept of the fourth dimension!",
+        "hook_top": "FOURTH DIMENSION IN AN APPLE",
+        "query": "fourth dimension apple",
+        "query2": "sliced apple concept"
+      },
+      {
+        "role": "fact",
+        "text": "Carl Sagan famously used this example to explain complex spacetime ideas.",
+        "query": "Carl Sagan fourth dimension",
+        "query2": "Carl Sagan speaking",
+        "chips": [
+          {
+            "t": "CARL SAGAN'S EXAMPLE",
+            "on": "Sagan",
+            "style": "accent"
+          }
+        ],
+        "punch": "spacetime"
+      },
+      {
+        "role": "fact",
+        "text": "The sliced apple shows how our perception of reality can be limited.",
+        "query": "sliced apple",
+        "query2": "apple cutting",
+        "chips": [
+          {
+            "t": "LIMITED PERCEPTION",
+            "on": "perception",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This analogy reveals the deeper nature of dimensions and reality.",
+        "query": "dimensions concept",
+        "query2": "abstract dimension art",
+        "label": "DIMENSIONS EXPLAINED",
+        "sub": "Reality in layers.",
+        "label_on": "nature",
+        "punch": "deeper"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "concept of reality",
+        "query2": "philosophical thinking"
+      }
+    ],
+    "description": "Carl Sagan used an apple to vividly explain the fourth dimension, revealing how our perception might be limited. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#philosophy",
+      "#CarlSagan",
+      "#fourthdimension",
+      "#reality",
+      "#concepts",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
