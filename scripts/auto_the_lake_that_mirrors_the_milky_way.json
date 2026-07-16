@@ -1,0 +1,61 @@
+{
+  "title": "The Lake That Mirrors the Milky Way",
+  "place": "New Zealand",
+  "country": "New Zealand",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "There's a lake that beautifully reflects the Milky Way!",
+      "hook_top": "LAKE OF THE MILKY WAY",
+      "query": "lake milky way reflection",
+      "query2": "night sky lake"
+    },
+    {
+      "role": "fact",
+      "text": "Lake Mavora is a prime spot for astrophotographers seeking the perfect galaxy reflection.",
+      "query": "astro photography lake",
+      "query2": "lake photography",
+      "chips": [
+        {
+          "t": "PERFECT REFLECTIONS",
+          "on": "reflections",
+          "style": "white"
+        }
+      ],
+      "punch": "reflections"
+    },
+    {
+      "role": "fact",
+      "text": "Its remote location offers stunning views, free from urban light pollution.",
+      "query": "dark sky locations",
+      "query2": "night sky without light pollution",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Nature's ultimate mirror for stargazers!",
+      "query": "stargazers in nature",
+      "query2": "people stargazing",
+      "label": "NATURE'S MIRROR",
+      "sub": "Explore stunning reflections",
+      "label_on": "mirror",
+      "punch": "mirror"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "nature landscapes",
+      "query2": "breathtaking scenery"
+    }
+  ],
+  "description": "Lake Mavora provides stunning reflections of the Milky Way, making it a paradise for stargazers. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#nature",
+    "#astrophotography",
+    "#milkyway",
+    "#reflection",
+    "#shorts",
+    "#fyp"
+  ]
+}

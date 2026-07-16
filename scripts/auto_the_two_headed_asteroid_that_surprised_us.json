@@ -1,0 +1,61 @@
+{
+  "title": "The Two-Headed Asteroid That Surprised Us",
+  "place": "Outer Space",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Astronomers captured a photo of an asteroid with two heads!",
+      "hook_top": "A TWOHEADED ASTEROID",
+      "query": "two-headed asteroid",
+      "query2": "outer space asteroid"
+    },
+    {
+      "role": "fact",
+      "text": "Hayabusa2 captured stunning images of asteroid 1996 FG3 from over sixty million miles away.",
+      "query": "hayabusa2 asteroid image",
+      "query2": "space telescope view",
+      "chips": [
+        {
+          "t": "60+ MILLION MILES",
+          "on": "million",
+          "style": "accent"
+        }
+      ],
+      "punch": "million"
+    },
+    {
+      "role": "fact",
+      "text": "It provides insights into how binary asteroids form and evolve over time.",
+      "query": "binary asteroid formation",
+      "query2": "asteroid evolution",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "A glimpse into the past of our solar system!",
+      "query": "solar system models",
+      "query2": "space timeline",
+      "label": "SOLAR SYSTEM SECRETS",
+      "sub": "Understanding cosmic origins",
+      "label_on": "secrets",
+      "punch": "secrets"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "stunning space images",
+      "query2": "deep space visuals"
+    }
+  ],
+  "description": "Asteroid 1996 FG3 challenges our understanding of space with its two-headed structure. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#asteroids",
+    "#hayabusa2",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}

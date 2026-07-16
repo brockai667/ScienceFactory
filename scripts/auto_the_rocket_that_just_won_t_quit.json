@@ -1,0 +1,61 @@
+{
+  "title": "The Rocket That Just Won't Quit",
+  "place": "China",
+  "country": "China",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A new Chinese rocket has just shown its incredible reusability!",
+      "hook_top": "REUSABLE ROCKET BREAKTHROUGH",
+      "query": "reusable rocket launch",
+      "query2": "rocket launch success"
+    },
+    {
+      "role": "fact",
+      "text": "The Long March 10B is designed to be reused multiple times, changing the future of space travel.",
+      "query": "long march 10b rocket",
+      "query2": "rocket technology",
+      "chips": [
+        {
+          "t": "REUSABLE MULTIPLE TIMES",
+          "on": "reused",
+          "style": "white"
+        }
+      ],
+      "punch": "reuse"
+    },
+    {
+      "role": "fact",
+      "text": "This marks a significant step in reducing costs for future space missions.",
+      "query": "rocket cost comparison",
+      "query2": "space mission costs",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "A leap towards affordable space exploration!",
+      "query": "affordable space travel",
+      "query2": "future of space",
+      "label": "AFFORDABLE SPACE!",
+      "sub": "The new era of exploration",
+      "label_on": "affordable",
+      "punch": "exploration"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "advanced rocket tech",
+      "query2": "technological innovations"
+    }
+  ],
+  "description": "The Long March 10B opens new doors for reusability, promising to change space exploration. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#technology",
+    "#rockets",
+    "#spacetravel",
+    "#innovation",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -4351,5 +4351,205 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "Astronomers Spot Cosmic Sugar for the First Time!",
+    "place": "Interstellar Space",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Scientists discovered sugar molecules floating in the cosmos!",
+        "hook_top": "SUGAR FOUND IN SPACE",
+        "query": "interstellar space sugar",
+        "query2": "cosmic background stars"
+      },
+      {
+        "role": "fact",
+        "text": "This is the first time sugar has been identified outside our solar system.",
+        "query": "cosmic discovery artist rendering",
+        "query2": "space nebula stars",
+        "chips": [
+          {
+            "t": "FIRST DISCOVERY",
+            "on": "first",
+            "style": "accent"
+          }
+        ],
+        "punch": "discovery"
+      },
+      {
+        "role": "fact",
+        "text": "Molecules found are similar to those that form life on Earth.",
+        "query": "chemical structure animation",
+        "query2": "chemical bonds macro",
+        "chips": [
+          {
+            "t": "LIFE ON EARTH",
+            "on": "life",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This finding hints at the building blocks of life in the universe.",
+        "query": "space exploration concept",
+        "query2": "universe wide shot",
+        "label": "BUILDING BLOCKS OF LIFE",
+        "sub": "Could life exist elsewhere?",
+        "label_on": "building",
+        "punch": "life"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "galaxy stars deep space",
+        "query2": "milky way night time lapse"
+      }
+    ],
+    "description": "Astronomers have uncovered sugar molecules in interstellar space, reshaping our understanding of life's building blocks. Follow for more cosmic discoveries!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#sugar",
+      "#astronomy",
+      "#universe",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Giant Space Mirror Shining on Earth!",
+    "place": "",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Imagine a satellite reflecting sunlight to illuminate our nights!",
+        "hook_top": "A SPACE MIRROR FOR EARTH",
+        "query": "satellite concept",
+        "query2": "space mirror simulation"
+      },
+      {
+        "role": "fact",
+        "text": "The US has approved a giant satellite designed to reflect sunlight back to Earth.",
+        "query": "space satellite render",
+        "query2": "satellite night sky",
+        "chips": [
+          {
+            "t": "GIANT SATELLITE",
+            "on": "giant",
+            "style": "accent"
+          }
+        ],
+        "punch": "satellite"
+      },
+      {
+        "role": "fact",
+        "text": "This mirror could brighten cities at night without electricity.",
+        "query": "city skyline night",
+        "query2": "city lights at night",
+        "chips": [
+          {
+            "t": "ECO-FRIENDLY POSSIBILITI",
+            "on": "eco-friendly",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "But some astronomers worry about its impact on stargazing!",
+        "query": "astronomers telescope night",
+        "query2": "night sky star tracking",
+        "label": "ASTRONOMICAL CONCERNS",
+        "sub": "Is it worth the trade-off?",
+        "label_on": "impact",
+        "punch": "stargazing"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "innovative technology concept",
+        "query2": "futuristic technology display"
+      }
+    ],
+    "description": "A giant space mirror satellite is set to reflect sunlight to Earth, raising intriguing possibilities and concerns. Follow for groundbreaking tech stories!",
+    "hashtags": [
+      "#science",
+      "#technology",
+      "#space",
+      "#innovation",
+      "#satellite",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Hidden Universe Within a Star!",
+    "place": "Stars",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "What secrets might a single star hold within its core?",
+        "hook_top": "UNVEILING STAR SECRETS",
+        "query": "star core animation",
+        "query2": "star explosion visual"
+      },
+      {
+        "role": "fact",
+        "text": "Stars undergo fusion, releasing massive energy levels in the process.",
+        "query": "fusion reaction animation",
+        "query2": "nuclear fusion illustration",
+        "chips": [
+          {
+            "t": "MASSIVE ENERGY",
+            "on": "energy",
+            "style": "accent"
+          }
+        ],
+        "punch": "energy"
+      },
+      {
+        "role": "fact",
+        "text": "Their cores reach temperatures hotter than the surface of the Sun.",
+        "query": "star heat concept",
+        "query2": "heated star close-up",
+        "chips": [
+          {
+            "t": "HOTTER THAN THE SUN",
+            "on": "hotter",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "This energy powers whole galaxies, even our Milky Way!",
+        "query": "galaxy view",
+        "query2": "milky way wide shot",
+        "label": "FUELING THE GALAXY",
+        "sub": "Stars connect us all.",
+        "label_on": "powers",
+        "punch": "galaxies"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "galactic phenomena",
+        "query2": "star clusters"
+      }
+    ],
+    "description": "Stars are wonderous entities, fueling galaxies with energy generated from fusion deep within their cores. Follow for more cosmic revelations!",
+    "hashtags": [
+      "#science",
+      "#astronomy",
+      "#stars",
+      "#galaxies",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
