@@ -1,0 +1,67 @@
+{
+  "title": "The Sugar Found Floating in Space",
+  "place": "Interstellar Space",
+  "country": "Unknown",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Scientists have discovered sugar molecules in the vastness of interstellar space.",
+      "hook_top": "SUGAR IN OUTER SPACE",
+      "query": "interstellar space nebula",
+      "query2": "galaxy stars night sky"
+    },
+    {
+      "role": "fact",
+      "text": "This discovery marks the first time sugar has been identified outside our Solar System.",
+      "query": "space science discovery",
+      "query2": "science lab space research",
+      "chips": [
+        {
+          "t": "FIRST DISCOVERY",
+          "on": "first",
+          "style": "white"
+        }
+      ],
+      "punch": "discovery"
+    },
+    {
+      "role": "fact",
+      "text": "These sugar molecules could give insights into the building blocks of life in the universe.",
+      "query": "life in space concept",
+      "query2": "space life illustration",
+      "chips": [
+        {
+          "t": "BUILDING BLOCKS",
+          "on": "blocks",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Could this be key to understanding life's origins in the cosmos?",
+      "query": "space research laboratory",
+      "query2": "cosmology concept illustration",
+      "label": "KEY TO LIFE?",
+      "sub": "Are we alone in the universe?",
+      "label_on": "key",
+      "punch": "key"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "universe galaxy stars",
+      "query2": "starry night timelapse"
+    }
+  ],
+  "description": "Sugar has been found in interstellar space, potentially illuminating the secrets of how life began. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#sugar",
+    "#cosmos",
+    "#discovery",
+    "#shorts",
+    "#fyp"
+  ]
+}

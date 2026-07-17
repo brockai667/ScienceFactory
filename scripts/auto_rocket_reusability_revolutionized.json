@@ -1,0 +1,67 @@
+{
+  "title": "Rocket Reusability Revolutionized",
+  "place": "China",
+  "country": "China",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "China has successfully recovered a rocket after its first flight—game changer for space travel!",
+      "hook_top": "ROCKET RECOVERY SUCCESS",
+      "query": "rocket launch footage",
+      "query2": "successful rocket recovery"
+    },
+    {
+      "role": "fact",
+      "text": "The Long March 10B rocket marks a significant leap in reusable rocket technology.",
+      "query": "Long March 10B rocket",
+      "query2": "rocket launch space",
+      "chips": [
+        {
+          "t": "SIGNIFICANT LEAP",
+          "on": "significant",
+          "style": "white"
+        }
+      ],
+      "punch": "leap"
+    },
+    {
+      "role": "fact",
+      "text": "Reusability could drastically reduce the cost of space missions, making them more accessible.",
+      "query": "space mission launch",
+      "query2": "cheap satellite launch",
+      "chips": [
+        {
+          "t": "COST REDUCTION",
+          "on": "reduce",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This innovation could open new frontiers in space exploration!",
+      "query": "space exploration concept",
+      "query2": "space mission planning",
+      "label": "NEW FRONTIERS!",
+      "sub": "The future looks bright!",
+      "label_on": "frontiers",
+      "punch": "new"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "rocket sky launch",
+      "query2": "night launch timelapse"
+    }
+  ],
+  "description": "China's successful recovery of the Long March 10B marks a major advancement in reusable rocket technology. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#technology",
+    "#rocket",
+    "#space",
+    "#innovation",
+    "#shorts",
+    "#fyp"
+  ]
+}

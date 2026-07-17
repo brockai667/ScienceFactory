@@ -4551,5 +4551,209 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "Why Sugar Was Spotted in Interstellar Space",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Scientists have discovered sugar floating through space! But how?",
+        "hook_top": "SUGAR IN THE COSMOS",
+        "query": "space sugar molecules",
+        "query2": "sugar in space"
+      },
+      {
+        "role": "fact",
+        "text": "This is the first time sugar was identified outside Earth, found in a distant gas cloud.",
+        "query": "gas cloud in space",
+        "query2": "cosmic clouds",
+        "chips": [
+          {
+            "t": "FIRST OF ITS KIND",
+            "on": "first",
+            "style": "accent"
+          }
+        ],
+        "punch": "sugar"
+      },
+      {
+        "role": "fact",
+        "text": "It gives clues about how organic compounds could form in space.",
+        "query": "organic compounds space",
+        "query2": "chemical reactions",
+        "chips": [
+          {
+            "t": "LINK TO LIFE'S ORIGINS",
+            "on": "life's",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Could this mean we're not alone in the universe?",
+        "query": "alien life possibility",
+        "query2": "space exploration",
+        "label": "A SWEET DISCOVERY",
+        "sub": "Hints of extraterrestrial life?",
+        "label_on": "sugar",
+        "punch": "discovery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "universe stars animation",
+        "query2": "stars night sky"
+      }
+    ],
+    "description": "Sugar has been detected in interstellar space, revealing hints about the building blocks of life. Follow for daily science!",
+    "hashtags": [
+      "#space",
+      "#sugar",
+      "#astrophysics",
+      "#science",
+      "#discovery",
+      "#universe",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "How Earth-Like Exoplanets Are Found",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Searching for Earth-like worlds is like finding a needle in a haystack!",
+        "hook_top": "SEARCH FOR OTHER EARTHS",
+        "query": "planet discovery telescopes",
+        "query2": "exoplanet observations"
+      },
+      {
+        "role": "fact",
+        "text": "Exoplanets are detected by monitoring the light from stars, looking for dips.",
+        "query": "star dimming telescope",
+        "query2": "stars light change",
+        "chips": [
+          {
+            "t": "LIGHT VARIATIONS",
+            "on": "light",
+            "style": "accent"
+          }
+        ],
+        "punch": "light"
+      },
+      {
+        "role": "fact",
+        "text": "This technique helps identify planets that may support life.",
+        "query": "habitable exoplanets",
+        "query2": "planets orbiting stars",
+        "chips": [
+          {
+            "t": "SEARCHING FOR HABITABLE ",
+            "on": "habitable",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Are we alone in the universe, or are there many like us?",
+        "query": "alien life search",
+        "query2": "scientist thinking",
+        "label": "ROMANCING THE STARS",
+        "sub": "Hope for another Earth",
+        "label_on": "search",
+        "punch": "stars"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space exploration",
+        "query2": "exploration of space"
+      }
+    ],
+    "description": "Finding Earth-like exoplanets involves a close watch on star light. Follow for daily science and discoveries!",
+    "hashtags": [
+      "#exoplanets",
+      "#space",
+      "#discovery",
+      "#science",
+      "#searchforlife",
+      "#astrophysics",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mystery of Cygnus Captured in Stunning Detail",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A breathtaking view of the Cygnus constellation from Earth has surfaced!",
+        "hook_top": "CYGNUS REVEALED",
+        "query": "Cygnus constellation photograph",
+        "query2": "Cygnus night sky"
+      },
+      {
+        "role": "fact",
+        "text": "This celestial object showcases intricate patterns and star formations.",
+        "query": "stars in Cygnus",
+        "query2": "constellation patterns",
+        "chips": [
+          {
+            "t": "A SPECTACULAR SHOW",
+            "on": "spectacular",
+            "style": "accent"
+          }
+        ],
+        "punch": "patterns"
+      },
+      {
+        "role": "fact",
+        "text": "It's a testing ground for understanding star formation and cosmic dynamics.",
+        "query": "star formation",
+        "query2": "stars elements space",
+        "chips": [
+          {
+            "t": "A LAB FOR ASTRONOMY",
+            "on": "lab",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Could these patterns reveal the secrets of the universe?",
+        "query": "finding cosmic secrets",
+        "query2": "scientists with telescopes",
+        "label": "UNLOCKING COSMIC SECRETS",
+        "sub": "Understanding our universe",
+        "label_on": "reveal",
+        "punch": "mystery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "space stars galaxy",
+        "query2": "galaxy animation"
+      }
+    ],
+    "description": "The stunning details of the Cygnus constellation provide a view into star formation and cosmic mysteries. Follow for daily science!",
+    "hashtags": [
+      "#Cygnus",
+      "#space",
+      "#constellation",
+      "#astronomy",
+      "#science",
+      "#starformation",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

@@ -1,0 +1,50 @@
+{
+  "title": "The Sun-Reflecting Space Mirror Controversy",
+  "place": "Earth's Orbit",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Could a giant mirror in space change our climate?",
+      "hook_top": "A SPACE MIRROR DEBATE",
+      "query": "space mirror concept",
+      "query2": "space exploration"
+    },
+    {
+      "role": "fact",
+      "text": "FCC approval was granted for a sun-reflecting mirror to combat climate change.",
+      "query": "fcc approval sun mirror",
+      "query2": "space mirror",
+      "chips": []
+    },
+    {
+      "role": "fact",
+      "text": "Critics warn it may disrupt astronomical observations and alter ecosystems.",
+      "query": "space mirror impact",
+      "query2": "environmental impact",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "A bold solution that divides scientists!",
+      "query": "scientists debating",
+      "query2": "scientific community"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science debates",
+      "query2": "interesting discussions"
+    }
+  ],
+  "description": "A controversial sun-reflecting mirror in space has sparked debate among scientists. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#technology",
+    "#space",
+    "#climatechange",
+    "#controversy",
+    "#shorts",
+    "#fyp"
+  ]
+}
