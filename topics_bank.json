@@ -4755,5 +4755,279 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "Will This Space Mirror Change Nights?",
+    "place": "",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A giant satellite reflects sunlight to illuminate Earth at night!",
+        "hook_top": "CHANGE NIGHT INTO DAY",
+        "query": "space satellite mirror",
+        "query2": "night city lights aerial"
+      },
+      {
+        "role": "fact",
+        "text": "This revolutionary project aims to harness satellite technology for nighttime illumination.",
+        "query": "satellite technology overview",
+        "query2": "space satellite orbit",
+        "chips": [
+          {
+            "t": "REVOLUTIONARY PROJECT",
+            "on": "project",
+            "style": "white"
+          }
+        ],
+        "punch": "project"
+      },
+      {
+        "role": "fact",
+        "text": "Astronomers worry it could disrupt natural night and wildlife behavior.",
+        "query": "night sky wildlife",
+        "query2": "animals in the dark",
+        "chips": [
+          {
+            "t": "DISRUPT WILDLIFE",
+            "on": "disrupt",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Will we trade darkness for convenience?",
+        "query": "city night bright lights",
+        "query2": "urban night skyline",
+        "label": "DARKNESS VS. CONVENIENCE",
+        "sub": "Is it worth the trade-off?",
+        "label_on": "trade",
+        "punch": "convenience"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "night sky stars",
+        "query2": "galaxy timelapse"
+      }
+    ],
+    "description": "A space mirror might illuminate our nights, but what about our stars? Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#technology",
+      "#satellite",
+      "#environment",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Discovering Pluto's Giant Landslides",
+    "place": "Pluto",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Pluto hides massive landslides that reshape its icy surface.",
+        "hook_top": "PLUTO'S ICY SURPRISES",
+        "query": "Pluto landslides",
+        "query2": "Pluto surface overview"
+      },
+      {
+        "role": "fact",
+        "text": "New Horizons revealed six large landslides on Pluto's unique terrain.",
+        "query": "New Horizons Pluto data",
+        "query2": "Pluto flyby images",
+        "chips": [
+          {
+            "t": "SIX GIANT LANDSLIDES",
+            "on": "six",
+            "style": "white"
+          },
+          {
+            "t": "NASA'S NEW HORIZONS",
+            "on": "New Horizons",
+            "style": "accent"
+          }
+        ],
+        "punch": "landslides"
+      },
+      {
+        "role": "fact",
+        "text": "These landslides provide new insights into Pluto's geologic activity.",
+        "query": "Pluto geology",
+        "query2": "geologic formations",
+        "chips": [
+          {
+            "t": "NEW GEOLOGIC INSIGHTS",
+            "on": "insights",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Frozen landscapes may still be active!",
+        "query": "Pluto icy landscape",
+        "query2": "ice and rock formations",
+        "label": "ACTIVE ICY WORLD",
+        "sub": "Pluto isn't just a rock!",
+        "label_on": "active",
+        "punch": "active"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "space exploration",
+        "query2": "space discovery timelapse"
+      }
+    ],
+    "description": "Discover why Pluto is more than just a frozen rock with its surprising landslides. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#Pluto",
+      "#NASA",
+      "#NewHorizons",
+      "#astronomy",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The First Earth-Like Exoplanet with Atmosphere!",
+    "place": "Space",
+    "country": "",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Astronomers spot the first Earth-like exoplanet with an atmosphere!",
+        "hook_top": "A NEW EARTH DISCOVERED",
+        "query": "Earth-like exoplanet",
+        "query2": "artist's view of exoplanet"
+      },
+      {
+        "role": "fact",
+        "text": "This discovery opens new possibilities for finding life beyond Earth.",
+        "query": "life on exoplanets",
+        "query2": "alien worlds concept",
+        "chips": [
+          {
+            "t": "NEW LIFE POSSIBILITIES",
+            "on": "possibilities",
+            "style": "accent"
+          }
+        ],
+        "punch": "life"
+      },
+      {
+        "role": "fact",
+        "text": "Its atmosphere contains elements essential for life as we know it.",
+        "query": "exoplanet atmosphere",
+        "query2": "atmospheric layers",
+        "chips": [
+          {
+            "t": "ESSENTIAL ELEMENTS FOUND",
+            "on": "elements",
+            "style": "white"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "Could this be our next home?",
+        "query": "Earth-like environment",
+        "query2": "earth landscape",
+        "label": "NEXT POSSIBLE HOME",
+        "sub": "Are we alone?",
+        "label_on": "next",
+        "punch": "home"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "stars and planets",
+        "query2": "starry night sky"
+      }
+    ],
+    "description": "A groundbreaking discovery of an Earth-like exoplanet with an atmosphere means promising possibilities for life. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#exoplanets",
+      "#astrophysics",
+      "#NASA",
+      "#discovery",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Vikram-1: India's Orbital Rocket Success!",
+    "place": "",
+    "country": "India",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "India just launched its first privately developed rocket into orbit!",
+        "hook_top": "FIRST PRIVATE LAUNCH SUCCESS",
+        "query": "Vikram-1 launch",
+        "query2": "rocket launch festival"
+      },
+      {
+        "role": "fact",
+        "text": "Vikram-1 achieved orbit on its very first attempt, a major milestone for India.",
+        "query": "Vikram-1 rocket overview",
+        "query2": "rocket in space",
+        "chips": [
+          {
+            "t": "MAJOR MILESTONE",
+            "on": "milestone",
+            "style": "white"
+          }
+        ],
+        "punch": "milestone"
+      },
+      {
+        "role": "fact",
+        "text": "This success is a game changer for India's growing space industry.",
+        "query": "India space industry",
+        "query2": "space industry growth chart",
+        "chips": [
+          {
+            "t": "GAME CHANGER",
+            "on": "game",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "A new era of private exploration begins!",
+        "query": "private space company",
+        "query2": "private space launch",
+        "label": "NEW ERA OF SPACE!",
+        "sub": "Welcome to private exploration.",
+        "label_on": "era",
+        "punch": "exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "rocket launching",
+        "query2": "rocket liftoff slow motion"
+      }
+    ],
+    "description": "India's Vikram-1 rocket achieves orbit on its first launch, marking a turning point for private space endeavors. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#India",
+      "#rocket",
+      "#space",
+      "#Vikram1",
+      "#innovation",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

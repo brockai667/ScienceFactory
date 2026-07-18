@@ -1,0 +1,62 @@
+{
+  "title": "Sugar from the Stars: A Cosmic Discovery",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Scientists have found sugar floating in interstellar space for the first time!",
+      "hook_top": "SUGAR IN INTERSTELLAR SPACE",
+      "query": "sugar in space illustration",
+      "query2": "cosmic dust stars"
+    },
+    {
+      "role": "fact",
+      "text": "This groundbreaking discovery suggests that complex organic molecules can form in the vast cosmos.",
+      "query": "space organic molecules",
+      "query2": "galactic clouds time lapse",
+      "chips": [
+        {
+          "t": "COMPLEX ORGANIC MOLECULE",
+          "on": "molecules",
+          "style": "white"
+        }
+      ],
+      "punch": "molecules"
+    },
+    {
+      "role": "fact",
+      "text": "Sugar, essential for life on Earth, might also be prevalent in other parts of the universe.",
+      "query": "sugar grains cosmic",
+      "query2": "galaxy cluster",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Could extraterrestrial life rely on these cosmic sugars?",
+      "query": "alien life theories",
+      "query2": "space exploration imagination",
+      "label": "COSMIC SWEETS!",
+      "sub": "Life beyond Earth?",
+      "label_on": "life",
+      "punch": "sweets"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "universe stars",
+      "query2": "nebula night sky"
+    }
+  ],
+  "description": "Scientists have discovered sugar in interstellar space, suggesting life-sustaining molecules exist beyond Earth. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#sugar",
+    "#extraterrestrial",
+    "#discovery",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}

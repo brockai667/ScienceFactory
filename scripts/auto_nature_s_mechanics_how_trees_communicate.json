@@ -1,0 +1,67 @@
+{
+  "title": "Nature's Mechanics: How Trees Communicate",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Did you know that trees can communicate with each other underground?",
+      "hook_top": "TREES TALK UNDERGROUND",
+      "query": "forest floor roots",
+      "query2": "tree root network"
+    },
+    {
+      "role": "fact",
+      "text": "Trees use a network of fungi to share nutrients and information.",
+      "query": "mycorrhizal networks",
+      "query2": "fungal network close-up",
+      "chips": [
+        {
+          "t": "NUTRIENT SHARING",
+          "on": "share",
+          "style": "white"
+        }
+      ],
+      "punch": "network"
+    },
+    {
+      "role": "fact",
+      "text": "This communication helps trees warn each other of threats like pests and drought.",
+      "query": "trees warning each other",
+      "query2": "tree pest attack illustration",
+      "chips": [
+        {
+          "t": "WARNING SYSTEM",
+          "on": "warn",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "Imagine a whole forest working together to survive!",
+      "query": "trees working together",
+      "query2": "forest aerial view",
+      "label": "FOREST COOPERATION!",
+      "sub": "Nature's teamwork at its best!",
+      "label_on": "cooperation",
+      "punch": "teamwork"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "forest nature close-up",
+      "query2": "nature time-lapse"
+    }
+  ],
+  "description": "Trees communicate through a vast underground network, sharing nutrients and warning each other of dangers. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#nature",
+    "#trees",
+    "#communication",
+    "#forest",
+    "#shorts",
+    "#fyp"
+  ]
+}
