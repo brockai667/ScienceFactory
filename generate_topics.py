@@ -23,8 +23,8 @@ MODEL = os.environ.get("MODELS_MODEL", "openai/gpt-4o-mini")
 BASE = os.environ.get("MODELS_BASE_URL", "https://models.github.ai/inference")
 TOKEN = os.environ.get("MODELS_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
-TREND_SUBREDDITS = ['space', 'science', 'askscience', 'Physics', 'spaceporn']
-TREND_YT_QUERIES = ['mind blowing science facts', 'space facts', 'how the universe works']
+TREND_SUBREDDITS = ['space', 'science', 'askscience', 'biology', 'spaceporn']
+TREND_YT_QUERIES = ['space discoveries', 'james webb telescope', 'human body facts', 'astronomy news']
 
 SYSTEM = ("You are a scriptwriter for a short-form brand about fascinating SCIENCE and TECHNOLOGY: space, physics, engineering, computers, nature's mechanisms. "
           "ACCURACY IS CRITICAL: use ONLY widely-documented, verifiable facts. NEVER invent or guess "
@@ -117,6 +117,13 @@ CTAS = [
 ]
 
 
+
+PERFORMANCE = (
+    "\nPERFORMANCE DATA (real results - obey this, it decides reach):\n"
+    "- WHAT PERFORMS (strongly prefer these): concrete, real discoveries people can look up (James Webb, Mars, Titan, telescopes, recent space news) and surprising VERIFIED body and biology facts. Name a real thing.\n"
+    "- WHAT KILLS REACH (avoid): vague hypotheticals ('what if you could fly to the moon'), speculative future scenarios, and abstract theory with no concrete named discovery - these die.\n"
+)
+
 def build_prompt(n, existing_titles, trending=None):
     trend_block = ""
     if trending:
@@ -158,7 +165,7 @@ def build_prompt(n, existing_titles, trending=None):
         f"- Do NOT reuse any of these existing titles: {existing_titles}\n"
         "- Do NOT repeat the same SUBJECT or fact as any existing title above, even reworded. Every "
         "topic must be a genuinely DIFFERENT idea.\n"
-        + trend_block +
+        + PERFORMANCE + trend_block +
         "Return ONLY the JSON array."
     )
 
