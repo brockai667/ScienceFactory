@@ -987,6 +987,29 @@ def make_thumbnail(spec, work, out_path):
         return None
 
 
+def prepend_cover(final_path, jpg_path, work):
+    """Predsadi ~0.6s dizajnovy cover (thumbnail) na zaciatok videa: pekny 'grid' thumbnail na
+    VSETKYCH kanaloch (bez telefon-verifikacie) + posilneny hook. Best-effort - pri chybe necha original."""
+    try:
+        if not os.path.exists(jpg_path):
+            return
+        run([FF, "-y", "-loop", "1", "-i", jpg_path, "-f", "lavfi",
+             "-i", "anullsrc=r=44100:cl=stereo", "-t", "0.6",
+             "-vf", f"scale={W}:{H},format=yuv420p", "-r", str(FPS),
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+             "-c:a", "aac", "-b:a", "160k", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
+             "cover.mp4"], cwd=work)
+        run([FF, "-y", "-i", "cover.mp4", "-i", final_path,
+             "-filter_complex", "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[v][a]",
+             "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+             "-maxrate", "9M", "-bufsize", "14M", "-pix_fmt", "yuv420p",
+             "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", "with_cover.mp4"], cwd=work)
+        shutil.copy(os.path.join(work, "with_cover.mp4"), final_path)
+        print("  cover predsadeny (0.6s) -> grid thumbnail + silny hook")
+    except Exception as e:
+        sys.stderr.write(f"[cover] {str(e)[:120]}\n")
+
+
 def main():
     if len(sys.argv) < 2:
         print("Pouzitie: python pro_engine.py scripts/spec.json"); sys.exit(1)
@@ -1063,7 +1086,9 @@ def main():
     body = desc if place_line.lower() in desc.lower() else f"{place_line} - {desc}".strip(" -")
     open(os.path.join(OUT_DIR, name + ".txt"), "w", encoding="utf-8").write(
         f"{spec.get('title', name)}\n{body}\n\n{tags}\n")
-    make_thumbnail(spec, work, os.path.join(OUT_DIR, name + ".jpg"))   # <slug>.jpg pre YT thumbnail
+    jpg = os.path.join(OUT_DIR, name + ".jpg")
+    make_thumbnail(spec, work, jpg)                         # dizajnovy thumbnail (<slug>.jpg)
+    prepend_cover(os.path.abspath(final), jpg, work)        # predsadi ho ako ~0.6s cover -> grid thumb vsade
     shutil.rmtree(work, ignore_errors=True)
     print(f"OK: {final}")
 
