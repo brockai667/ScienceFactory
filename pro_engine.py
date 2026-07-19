@@ -947,39 +947,41 @@ def make_thumbnail(spec, work, out_path):
         bg = bg.resize((int(bg.width * r), int(bg.height * r)), Image.LANCZOS)
         ox, oy = (bg.width - W) // 2, (bg.height - H) // 2
         bg = bg.crop((ox, oy, ox + W, oy + H)).convert("RGBA")
-        bg.alpha_composite(Image.new("RGBA", (W, H), (0, 0, 0, 70)))
+        bg.alpha_composite(Image.new("RGBA", (W, H), (0, 0, 0, 42)))     # lahke stmavenie -> subjekt vidno
         grad = Image.new("L", (1, H), 0)
         for y in range(H):
-            grad.putpixel((0, y), int(232 * min(1, max(0, (y - H * 0.42) / (H * 0.58)))))
-        gg = Image.new("RGBA", (W, H), (6, 8, 12, 255)); gg.putalpha(grad.resize((W, H)))
+            grad.putpixel((0, y), int(245 * (min(1, max(0, (y - H * 0.5) / (H * 0.5))) ** 1.15)))
+        gg = Image.new("RGBA", (W, H), (5, 7, 10, 255)); gg.putalpha(grad.resize((W, H)))
         bg.alpha_composite(gg)
         d = ImageDraw.Draw(bg)
-        raw = re.sub(r"[^A-Za-z0-9'? ]", "", str(spec["scenes"][0].get("hook_top")
-                     or spec.get("title", "")).upper())
-        words = raw.split()[:6] or ["CURIO"]
-        acc_i = len(words) - 1
-        fT = ImageFont.truetype(FONT_ANT, 158)
+        # 2026 best-practice: <=3 slova, ziadny clutter (handle netreba - grid ukazuje nazov kanala)
+        raw = spec.get("thumb") or spec["scenes"][0].get("hook_top") or spec.get("title", "")
+        words = [w for w in re.sub(r"[^A-Za-z0-9'? ]", "", str(raw).upper()).split() if w]
+        if not spec.get("thumb"):
+            while words and words[0] in ("THE", "A", "AN"):
+                words.pop(0)
+            words = words[:3]
+        words = words[:4] or ["?"]
+        n = len(words); acc_i = n - 1
+        size = 196 if n <= 2 else (172 if n == 3 else 150)
+        fT = ImageFont.truetype(FONT_ANT, size)
         lines, line, lw = [], [], 0
         for i, w in enumerate(words):
             wwd = d.textlength(w, font=fT)
-            if lw + wwd > W - 130 and line:
+            if lw + wwd > W - 110 and line:
                 lines.append(line); line, lw = [], 0
-            line.append((w, i, wwd)); lw += wwd + 30
+            line.append((w, i, wwd)); lw += wwd + 28
         if line:
             lines.append(line)
-        y0 = H - 300 - len(lines) * 176
-        d.rounded_rectangle((W / 2 - 70, y0 - 52, W / 2 + 70, y0 - 34), radius=9, fill=ACCENT + (255,))
+        lh = int(size * 1.06); y0 = H - 215 - len(lines) * lh
         for li, ln in enumerate(lines):
-            tot = sum(x for _, _, x in ln) + 30 * (len(ln) - 1); x = (W - tot) / 2
+            tot = sum(x for _, _, x in ln) + 28 * (len(ln) - 1); x = (W - tot) / 2
             for w, i, wwd in ln:
                 fill = ACCENT if i == acc_i else (255, 255, 255)
-                d.text((x, y0 + li * 176), w, font=fT, fill=fill + (255,),
-                       stroke_width=10, stroke_fill=(6, 6, 8, 255))
-                x += wwd + 30
-        fH = ImageFont.truetype(FONT_POP, 52); hw = d.textlength(BRAND_HANDLE, font=fH)
-        d.rounded_rectangle((W / 2 - hw / 2 - 34, 72, W / 2 + hw / 2 + 34, 154), radius=41, fill=ACCENT + (255,))
-        d.text((W / 2 - hw / 2, 86), BRAND_HANDLE, font=fH, fill=(16, 14, 10, 255))
-        bg.convert("RGB").save(out_path, quality=90)
+                d.text((x, y0 + li * lh), w, font=fT, fill=fill + (255,),
+                       stroke_width=12, stroke_fill=(4, 4, 6, 255))
+                x += wwd + 28
+        bg.convert("RGB").save(out_path, quality=94)
         print(f"  thumbnail OK: {os.path.basename(out_path)}")
         return out_path
     except Exception as e:
