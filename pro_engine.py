@@ -916,6 +916,77 @@ def slugify(t):
     return re.sub(r"[^a-z0-9]+", "_", str(t).lower()).strip("_")[:50] or "video"
 
 
+BRAND_HANDLE = "@Curio"   # thumbnail brand handle (per fabrika)
+
+
+def make_thumbnail(spec, work, out_path):
+    """Putavy YouTube thumbnail: cisty b-roll frame (pred hook textom) + velky hook titulok
+    + accent keyword + brand handle. Best-effort - nikdy nezhodi render."""
+    try:
+        cand = []
+        # kandidati: cisty hook opening (video.mp4 pred textom) + CISTE b-roll scen (base_i.mp4 pred overlaymi)
+        srcs = [("video.mp4", "0.12")]
+        for i in range(1, 7):
+            if os.path.exists(os.path.join(work, f"base_{i}.mp4")):
+                srcs.append((f"base_{i}.mp4", "1.0"))
+        for src, ts in srcs:
+            fp = "th_" + src.replace(".mp4", "") + ".png"
+            run([FF, "-y", "-ss", ts, "-i", src, "-frames:v", "1", fp], cwd=work)
+            p = os.path.join(work, fp)
+            if os.path.exists(p):
+                px = list(Image.open(p).convert("L").resize((32, 32)).getdata())
+                mean = sum(px) / len(px)
+                var = sum((v - mean) ** 2 for v in px) / len(px)
+                score = min(mean, 200) + var ** 0.5   # jas (nie cierne) + kontrast (nie ploche/mriezka)
+                cand.append((score, p))   # jas -> obide cierne/prechodove framy
+        if not cand:
+            return None
+        cand.sort(reverse=True)
+        bg = Image.open(cand[0][1]).convert("RGB")
+        r = max(W / bg.width, H / bg.height)
+        bg = bg.resize((int(bg.width * r), int(bg.height * r)), Image.LANCZOS)
+        ox, oy = (bg.width - W) // 2, (bg.height - H) // 2
+        bg = bg.crop((ox, oy, ox + W, oy + H)).convert("RGBA")
+        bg.alpha_composite(Image.new("RGBA", (W, H), (0, 0, 0, 70)))
+        grad = Image.new("L", (1, H), 0)
+        for y in range(H):
+            grad.putpixel((0, y), int(232 * min(1, max(0, (y - H * 0.42) / (H * 0.58)))))
+        gg = Image.new("RGBA", (W, H), (6, 8, 12, 255)); gg.putalpha(grad.resize((W, H)))
+        bg.alpha_composite(gg)
+        d = ImageDraw.Draw(bg)
+        raw = re.sub(r"[^A-Za-z0-9'? ]", "", str(spec["scenes"][0].get("hook_top")
+                     or spec.get("title", "")).upper())
+        words = raw.split()[:6] or ["CURIO"]
+        acc_i = len(words) - 1
+        fT = ImageFont.truetype(FONT_ANT, 158)
+        lines, line, lw = [], [], 0
+        for i, w in enumerate(words):
+            wwd = d.textlength(w, font=fT)
+            if lw + wwd > W - 130 and line:
+                lines.append(line); line, lw = [], 0
+            line.append((w, i, wwd)); lw += wwd + 30
+        if line:
+            lines.append(line)
+        y0 = H - 300 - len(lines) * 176
+        d.rounded_rectangle((W / 2 - 70, y0 - 52, W / 2 + 70, y0 - 34), radius=9, fill=ACCENT + (255,))
+        for li, ln in enumerate(lines):
+            tot = sum(x for _, _, x in ln) + 30 * (len(ln) - 1); x = (W - tot) / 2
+            for w, i, wwd in ln:
+                fill = ACCENT if i == acc_i else (255, 255, 255)
+                d.text((x, y0 + li * 176), w, font=fT, fill=fill + (255,),
+                       stroke_width=10, stroke_fill=(6, 6, 8, 255))
+                x += wwd + 30
+        fH = ImageFont.truetype(FONT_POP, 52); hw = d.textlength(BRAND_HANDLE, font=fH)
+        d.rounded_rectangle((W / 2 - hw / 2 - 34, 72, W / 2 + hw / 2 + 34, 154), radius=41, fill=ACCENT + (255,))
+        d.text((W / 2 - hw / 2, 86), BRAND_HANDLE, font=fH, fill=(16, 14, 10, 255))
+        bg.convert("RGB").save(out_path, quality=90)
+        print(f"  thumbnail OK: {os.path.basename(out_path)}")
+        return out_path
+    except Exception as e:
+        sys.stderr.write(f"[thumb] {str(e)[:120]}\n")
+        return None
+
+
 def main():
     if len(sys.argv) < 2:
         print("Pouzitie: python pro_engine.py scripts/spec.json"); sys.exit(1)
@@ -992,6 +1063,7 @@ def main():
     body = desc if place_line.lower() in desc.lower() else f"{place_line} - {desc}".strip(" -")
     open(os.path.join(OUT_DIR, name + ".txt"), "w", encoding="utf-8").write(
         f"{spec.get('title', name)}\n{body}\n\n{tags}\n")
+    make_thumbnail(spec, work, os.path.join(OUT_DIR, name + ".jpg"))   # <slug>.jpg pre YT thumbnail
     shutil.rmtree(work, ignore_errors=True)
     print(f"OK: {final}")
 
