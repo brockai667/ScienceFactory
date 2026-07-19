@@ -124,6 +124,60 @@ PERFORMANCE = (
     "- WHAT KILLS REACH (avoid): vague hypotheticals ('what if you could fly to the moon'), speculative future scenarios, and abstract theory with no concrete named discovery - these die.\n"
 )
 
+# FORMATY: rozne kostry scen -> videa nie su vsetky rovnake sablona. Curio podpis (mix sa rotuje).
+FORMATS = {
+    "COUNTDOWN": ["hook", "count", "count", "count", "cta"],
+    "MYTH":      ["hook", "myth", "truth", "callout", "cta"],
+    "REVEAL":    ["hook", "fact", "fact", "reveal", "cta"],
+    "CLASSIC":   ["hook", "fact", "fact", "callout", "cta"],
+    "DEEP":      ["hook", "fact", "callout", "cta"],
+}
+FORMAT_MIX = ["COUNTDOWN", "REVEAL", "MYTH", "CLASSIC", "DEEP"]
+
+_ROLE_SPEC = {
+    "hook":    "hook: text (<14 words, opens a curiosity gap, never 'Did you know'); 'hook_top' = same idea in MAX 6 punchy UPPERCASE words.",
+    "fact":    "fact: text (ONE concrete supporting fact); 'chips' = 1-2 {'t':'MAX 22 CHARS','on':'spoken trigger word','style':'white'|'accent'} using ONLY real documented numbers; optional 'punch' = one spoken word to zoom.",
+    "callout": "callout: text; 'label' = 2-4 word on-screen takeaway; 'sub' = <=34 chars; 'label_on' = spoken trigger word.",
+    "count":   "count: text (one distinct point); 'num' = item number (1,2,3); 'label' = that point in <=22 UPPERCASE chars; 'label_on' = spoken trigger word.",
+    "myth":    "myth: text (states a COMMON BELIEF people wrongly hold); 'label' = that myth in <=28 chars.",
+    "truth":   "truth: text (the CORRECTION / real fact busting the myth); 'label' = the real fact in <=28 chars.",
+    "reveal":  "reveal: text (the surprising TWIST); 'reveal_top' = the twist in MAX 6 punchy UPPERCASE words.",
+    "cta":     "cta: text (a short 'follow' line).",
+}
+_FMT_HINT = {
+    "COUNTDOWN": "- Shape: a 3-point countdown. The three 'count' scenes are three DISTINCT facts about the topic, num=1,2,3.\n",
+    "MYTH":      "- Shape: myth-buster. 'myth' states what people wrongly believe; 'truth' delivers the real documented fact.\n",
+    "REVEAL":    "- Shape: build tension across the two 'fact' scenes, then 'reveal' drops the surprising twist.\n",
+}
+
+
+def build_prompt_fmt(fmt, n, existing_titles, trending=None):
+    seq = FORMATS[fmt]
+    roles_used = list(dict.fromkeys(seq))
+    spec_lines = "\n".join("- " + _ROLE_SPEC[r] for r in roles_used)
+    trend_block = ""
+    if trending:
+        joined = chr(10).join("- " + t for t in trending)
+        trend_block = (" REAL headlines people watch this week (inspire some topics; do NOT copy "
+                       "verbatim, never mention Reddit/YouTube): " + joined + " ")
+    return (
+        f"Generate {n} NEW faceless short-form SCIENCE/TECH video topics, ALL in the '{fmt}' format.\n"
+        f"Each topic MUST have EXACTLY these scenes, in THIS order: {' -> '.join(seq)}.\n"
+        "Return ONLY a JSON array. Each item = "
+        "{'title':..., 'scenes':[{role fields...}], 'description':..., 'hashtags':[...]}.\n"
+        "Scene field rules:\n" + spec_lines + "\n"
+        "- EVERY scene needs 'query' = Pexels stock search naming the CONCRETE subject of that exact "
+        "line (line about octopuses -> 'octopus underwater'; NEVER abstract) and 'query2' = fallback.\n"
+        + _FMT_HINT.get(fmt, "") +
+        "- ACCURACY IS CRITICAL: only widely-documented facts and real numbers; never invent figures.\n"
+        "- description: 1-2 sentences then 'Follow for daily science!'; hashtags: 6-9 incl #shorts #fyp.\n"
+        "- VARY titles (bold claim / question / curiosity gap); don't start more than 1 in 5 with a number.\n"
+        f"- Do NOT reuse or rephrase any of these existing titles: {existing_titles}\n"
+        + PERFORMANCE + trend_block +
+        "Return ONLY the JSON array."
+    )
+
+
 def build_prompt(n, existing_titles, trending=None):
     trend_block = ""
     if trending:
@@ -194,8 +248,11 @@ def extract_json(s):
     return json.loads(s)
 
 
+_ALLOWED_ROLES = {"hook", "fact", "callout", "cta", "count", "myth", "truth", "reveal", "map", "archive"}
+
+
 def valid(t):
-    """Overi + doopravi NOVY format temy (scenes). Stare/nevalidne temy odmietne."""
+    """Overi + doopravi temu (scenes, ROZNE formaty/role). Nevalidne odmietne, ostatne dooupravi."""
     if not isinstance(t, dict) or not t.get("title"):
         return False
     scenes = t.get("scenes")
@@ -205,21 +262,37 @@ def valid(t):
         if not isinstance(sc, dict) or not sc.get("text"):
             return False
         sc.setdefault("role", "fact")
+        if sc["role"] not in _ALLOWED_ROLES:
+            sc["role"] = "fact"
     scenes[0]["role"] = "hook"
     scenes[-1]["role"] = "cta"
+    cnt = 0
     for sc in scenes:
-        if sc["role"] == "hook":
+        r = sc["role"]
+        if r == "hook":
             top = re.sub(r"[^A-Za-z0-9' ]", "", str(sc.get("hook_top") or sc["text"]))
             sc["hook_top"] = " ".join(top.split()[:6]).upper()
         if not sc.get("query"):
             sc["query"] = str(t["title"])
         if not sc.get("query2"):
             sc["query2"] = "cinematic nature landscape"
-        if sc["role"] == "fact":
+        if r == "fact":
             chips = [c for c in (sc.get("chips") or []) if isinstance(c, dict) and c.get("t")]
             for c in chips:
                 c["t"] = str(c["t"])[:24]
             sc["chips"] = chips[:2]
+        elif r == "count":
+            cnt += 1
+            try:
+                sc["num"] = int(sc.get("num") or cnt)
+            except Exception:
+                sc["num"] = cnt
+            sc["label"] = str(sc.get("label") or sc.get("text", ""))[:22]
+        elif r in ("myth", "truth"):
+            sc["label"] = str(sc.get("label") or sc.get("text", ""))[:28]
+        elif r == "reveal":
+            rt = re.sub(r"[^A-Za-z0-9' ]", "", str(sc.get("reveal_top") or sc["text"]))
+            sc["reveal_top"] = " ".join(rt.split()[:6]).upper()
     t.setdefault("place", "")
     t.setdefault("country", "")
     t.setdefault("description", t["title"] + " Follow for daily science!")
@@ -352,7 +425,17 @@ def main():
                 print(f"Trendy: {len(trending)} titulkov (Reddit={meta['reddit']}, YouTube={meta['youtube']}).")
         except Exception as e:
             print("Trendy preskocene:", str(e)[:120])
-    items = extract_json(call_model(build_prompt(need + 3, sorted(titles), trending)))
+    # rozdel 'need' medzi formaty (rotuje sa mix) -> pestre videa, nie stale ta ista sablona
+    from collections import Counter
+    plan = Counter(FORMAT_MIX[i % len(FORMAT_MIX)] for i in range(need + 2))
+    items = []
+    for fmt, cnt in plan.items():
+        try:
+            got = extract_json(call_model(build_prompt_fmt(fmt, cnt, sorted(titles), trending)))
+            items += got
+            print(f"  format {fmt}: {len(got)} tem")
+        except Exception as e:
+            print(f"  format {fmt} preskoceny: {str(e)[:100]}")
     added = 0
     existing_sigs = [_sig(x) for x in titles]
     for t in items:
