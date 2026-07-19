@@ -1,0 +1,50 @@
+{
+  "title": "The Great Wall From Space Myth",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "You cannot actually see the Great Wall of China from space.",
+      "hook_top": "NOT VISIBLE FROM SPACE",
+      "query": "great wall of china aerial",
+      "query2": "great wall mountains dawn"
+    },
+    {
+      "role": "myth",
+      "text": "A popular claim says it is the only human structure visible from the Moon.",
+      "label": "SEEN FROM THE MOON",
+      "query": "full moon night sky",
+      "query2": "moon surface craters"
+    },
+    {
+      "role": "truth",
+      "text": "Astronauts have confirmed you cannot see it unaided from orbit.",
+      "label": "INVISIBLE TO THE EYE",
+      "query": "earth from orbit space station",
+      "query2": "astronaut window earth view"
+    },
+    {
+      "role": "callout",
+      "text": "It is thousands of miles long, but far too narrow to spot.",
+      "label": "TOO NARROW TO SEE",
+      "sub": "and it blends into the land",
+      "label_on": "narrow",
+      "query": "great wall stone winding",
+      "query2": "long wall aerial landscape"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily space science.",
+      "query": "earth from space stars",
+      "query2": "blue planet orbit"
+    }
+  ],
+  "place": "",
+  "country": "",
+  "description": "The Great Wall From Space Myth Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#voyager",
+    "#nasa"
+  ]
+}

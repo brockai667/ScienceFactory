@@ -1,0 +1,60 @@
+{
+  "title": "The Visitor From Another Star",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "In 2017, something entered our solar system from another star.",
+      "hook_top": "A VISITOR FROM ANOTHER STAR",
+      "query": "deep space stars nebula",
+      "query2": "night sky stars timelapse"
+    },
+    {
+      "role": "fact",
+      "text": "It was elongated and reddish, tumbling unlike any comet or asteroid.",
+      "query": "asteroid tumbling dark space",
+      "query2": "comet deep space",
+      "chips": [
+        {
+          "t": "ENTERED IN 2017",
+          "on": "2017",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "fact",
+      "text": "As it left, it sped up, with no visible tail to explain the push.",
+      "query": "comet tail sun space",
+      "query2": "object leaving solar system",
+      "chips": [
+        {
+          "t": "NO VISIBLE TAIL",
+          "on": "tail",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "role": "reveal",
+      "text": "It was Oumuamua, the first known interstellar object ever seen.",
+      "reveal_top": "THE FIRST INTERSTELLAR VISITOR",
+      "query": "interstellar object render space",
+      "query2": "deep space stars nebula"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily space science.",
+      "query": "milky way galaxy night",
+      "query2": "stars deep space"
+    }
+  ],
+  "place": "",
+  "country": "",
+  "description": "The Visitor From Another Star Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#voyager",
+    "#nasa"
+  ]
+}

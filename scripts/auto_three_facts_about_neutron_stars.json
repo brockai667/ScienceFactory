@@ -1,0 +1,54 @@
+{
+  "title": "Three Facts About Neutron Stars",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Neutron stars are the strangest objects in the known universe.",
+      "hook_top": "THE STRANGEST STARS",
+      "query": "neutron star render space",
+      "query2": "collapsing star cosmos dark"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "A single teaspoon of one would weigh about a billion tons.",
+      "label": "BILLION TONS A SPOON",
+      "label_on": "teaspoon",
+      "query": "neutron star glowing space",
+      "query2": "dense star cosmos"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "Some spin over seven hundred times every single second.",
+      "label": "700 SPINS PER SECOND",
+      "label_on": "spin",
+      "query": "pulsar spinning light beams",
+      "query2": "rotating star space"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "Their magnetic fields are trillions of times stronger than Earth's.",
+      "label": "TRILLION-STRONG FIELD",
+      "label_on": "magnetic",
+      "query": "magnetic field lines glow",
+      "query2": "aurora space earth"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily space science.",
+      "query": "galaxy stars deep space",
+      "query2": "milky way timelapse night"
+    }
+  ],
+  "place": "",
+  "country": "",
+  "description": "Three Facts About Neutron Stars Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#voyager",
+    "#nasa"
+  ]
+}
