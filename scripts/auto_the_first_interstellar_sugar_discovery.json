@@ -1,0 +1,68 @@
+{
+  "title": "The First Interstellar Sugar Discovery",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Scientists just found sugar floating in the vastness of space!",
+      "hook_top": "SUGAR IN INTERSTELLAR SPACE",
+      "query": "interstellar space sugar",
+      "query2": "galaxy stars night sky"
+    },
+    {
+      "role": "fact",
+      "text": "This sugar was detected in a star-forming region, showing life's building blocks may be common.",
+      "query": "star formation region",
+      "query2": "cosmic dust nebula",
+      "chips": [
+        {
+          "t": "LIFE'S BUILDING BLOCKS",
+          "on": "life",
+          "style": "accent"
+        }
+      ],
+      "punch": "blocks"
+    },
+    {
+      "role": "fact",
+      "text": "The discovery helps explain how organic molecules can form in extreme environments.",
+      "query": "organic molecules space",
+      "query2": "scientist lab research",
+      "chips": [
+        {
+          "t": "EXTREME ENVIRONMENTS",
+          "on": "extreme",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This discovery suggests life's ingredients might be ubiquitous throughout the universe.",
+      "query": "universe galaxy",
+      "query2": "space view stars",
+      "label": "LIFE MAY BE COMMON",
+      "sub": "Ingredients scattered in space.",
+      "label_on": "ingredients",
+      "punch": "common"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "wonderful universe",
+      "query2": "starry sky timelapse"
+    }
+  ],
+  "description": "Scientists discovered sugar in interstellar space, hinting that life's building blocks might be more common than we think. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#sugar",
+    "#life",
+    "#discovery",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}

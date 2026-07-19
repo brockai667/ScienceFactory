@@ -1,0 +1,68 @@
+{
+  "title": "The Mirror That Will Illuminate the Night Sky",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A satellite mirror could light up Earth’s nights like never before!",
+      "hook_top": "NIGHT SKY LIGHTING UP",
+      "query": "satellite mirror night",
+      "query2": "satellite view earth"
+    },
+    {
+      "role": "fact",
+      "text": "This mirror can reflect sunlight, potentially illuminating dark areas on Earth.",
+      "query": "sun reflecting satellite",
+      "query2": "sunlight clouds earth",
+      "chips": [
+        {
+          "t": "REFLECTING SUNLIGHT",
+          "on": "reflecting",
+          "style": "accent"
+        }
+      ],
+      "punch": "illumination"
+    },
+    {
+      "role": "fact",
+      "text": "This controversial technology could help reduce energy costs in poorly lit regions.",
+      "query": "energy saving technology",
+      "query2": "energy efficient lights",
+      "chips": [
+        {
+          "t": "REDUCING ENERGY COSTS",
+          "on": "energy",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "However, it raises concerns over light pollution and wildlife disturbance.",
+      "query": "light pollution wildlife",
+      "query2": "starry night sky",
+      "label": "LIGHT POLLUTION CONCERNS",
+      "sub": "Will nature be affected?",
+      "label_on": "concerns",
+      "punch": "wildlife"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "innovation technology",
+      "query2": "futuristic tech concept"
+    }
+  ],
+  "description": "A new satellite mirror might illuminate Earth's nights, saving energy but raising light pollution concerns. Follow for daily science!",
+  "hashtags": [
+    "#technology",
+    "#innovation",
+    "#space",
+    "#sustainability",
+    "#lightpollution",
+    "#satellite",
+    "#shorts",
+    "#fyp"
+  ]
+}

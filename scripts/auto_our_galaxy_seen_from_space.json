@@ -1,0 +1,68 @@
+{
+  "title": "Our Galaxy Seen from Space!",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Imagine seeing the Milky Way from orbit with stunning clarity!",
+      "hook_top": "MILKY WAY FROM SPACE",
+      "query": "Milky Way from space",
+      "query2": "satellite view of galaxy"
+    },
+    {
+      "role": "fact",
+      "text": "This breathtaking view reveals the intricate structure of our galaxy—spanning over a hundred thousand light-years.",
+      "query": "galaxy structure overview",
+      "query2": "galactic core animation",
+      "chips": [
+        {
+          "t": "OVER 100,000 LIGHT-YEARS",
+          "on": "light-years",
+          "style": "accent"
+        }
+      ],
+      "punch": "light-years"
+    },
+    {
+      "role": "fact",
+      "text": "Our galaxy contains billions of stars, each with its own unique systems.",
+      "query": "stars in galaxy",
+      "query2": "star field time lapse",
+      "chips": [
+        {
+          "t": "BILLIONS OF STARS",
+          "on": "billions",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "What kinds of worlds could be out there, waiting to be discovered?",
+      "query": "alien worlds concept",
+      "query2": "artistic rendering of planets",
+      "label": "ENDLESS POSSIBILITIES!",
+      "sub": "What awaits in our galaxy?",
+      "label_on": "worlds",
+      "punch": "possibilities"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "galaxy view",
+      "query2": "space timelapse"
+    }
+  ],
+  "description": "Experience the Milky Way from orbit and marvel at its vastness and beauty. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#milkyway",
+    "#galaxy",
+    "#exploration",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}
