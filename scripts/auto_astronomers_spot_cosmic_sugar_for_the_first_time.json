@@ -1,0 +1,67 @@
+{
+  "title": "Astronomers Spot Cosmic Sugar for the First Time!",
+  "place": "Interstellar Space",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Scientists discovered sugar molecules floating in the cosmos!",
+      "hook_top": "SUGAR FOUND IN SPACE",
+      "query": "interstellar space sugar",
+      "query2": "cosmic background stars"
+    },
+    {
+      "role": "fact",
+      "text": "This is the first time sugar has been identified outside our solar system.",
+      "query": "cosmic discovery artist rendering",
+      "query2": "space nebula stars",
+      "chips": [
+        {
+          "t": "FIRST DISCOVERY",
+          "on": "first",
+          "style": "accent"
+        }
+      ],
+      "punch": "discovery"
+    },
+    {
+      "role": "fact",
+      "text": "Molecules found are similar to those that form life on Earth.",
+      "query": "chemical structure animation",
+      "query2": "chemical bonds macro",
+      "chips": [
+        {
+          "t": "LIFE ON EARTH",
+          "on": "life",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This finding hints at the building blocks of life in the universe.",
+      "query": "space exploration concept",
+      "query2": "universe wide shot",
+      "label": "BUILDING BLOCKS OF LIFE",
+      "sub": "Could life exist elsewhere?",
+      "label_on": "building",
+      "punch": "life"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "galaxy stars deep space",
+      "query2": "milky way night time lapse"
+    }
+  ],
+  "description": "Astronomers have uncovered sugar molecules in interstellar space, reshaping our understanding of life's building blocks. Follow for more cosmic discoveries!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#sugar",
+    "#astronomy",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}

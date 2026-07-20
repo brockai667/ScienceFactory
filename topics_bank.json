@@ -5193,5 +5193,176 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "Could a Space Mirror Light Up the Night?",
+    "thumb": "SPACE MIRROR REVEAL",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A new giant space mirror could illuminate Earth at night!",
+        "hook_top": "LIGHT UP THE NIGHT",
+        "query": "giant space mirror",
+        "query2": "satellite in space"
+      },
+      {
+        "role": "fact",
+        "text": "This satellite aims to reflect sunlight back to Earth’s surface.",
+        "chips": [
+          {
+            "t": "SUNLIGHT REFLECTION",
+            "on": "sunlight",
+            "style": "white"
+          }
+        ],
+        "query": "satellite reflecting sunlight",
+        "query2": "space technology"
+      },
+      {
+        "role": "fact",
+        "text": "Astronomers fear it may disrupt nighttime ecosystems and astronomy.",
+        "chips": [
+          {
+            "t": "NIGHTTIME ECOSYSTEMS",
+            "on": "ecosystems",
+            "style": "accent"
+          }
+        ],
+        "query": "astroecology at night",
+        "query2": "night sky pollution"
+      },
+      {
+        "role": "reveal",
+        "text": "Some experts say it could turn dark skies into twilight!",
+        "reveal_top": "TWILIGHT IN DARK SKIES",
+        "query": "twilight sky",
+        "query2": "dark sky"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "science discoveries",
+        "query2": "latest science news"
+      }
+    ],
+    "description": "Learn about the controversial space mirror that could change how we experience nighttime! Follow for daily science!",
+    "hashtags": [
+      "#space",
+      "#technology",
+      "#science",
+      "#shorts",
+      "#fyp",
+      "#innovation",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Truth About Space Mirrors!",
+    "thumb": "SPACE MIRROR DEBUNKED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's space mirror could change our nights forever!",
+        "hook_top": "A SPACE MIRROR AT NIGHT",
+        "query": "space mirror satellite",
+        "query2": "space technology"
+      },
+      {
+        "role": "myth",
+        "text": "Many believe a space mirror will dangerously intensify light on Earth.",
+        "label": "Dangerous Light Intensity",
+        "query": "intense sunlight on Earth",
+        "query2": "light pollution"
+      },
+      {
+        "role": "truth",
+        "text": "In reality, these mirrors will reflect light safely and efficiently.",
+        "label": "Safe Light Reflection",
+        "query": "reflection of sunlight",
+        "query2": "solar technology"
+      },
+      {
+        "role": "callout",
+        "text": "LIGHT REFLECTION FACT",
+        "label": "Mirrors will control brightness.",
+        "sub": "They won’t blind us!",
+        "label_on": "space mirror",
+        "query": "space mirror design",
+        "query2": "satellite technology"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "science videos",
+        "query2": "educational content"
+      }
+    ],
+    "description": "Explore the myth and truth about space mirrors and their impact on Earth. Follow for daily science!",
+    "hashtags": [
+      "#space",
+      "#technology",
+      "#science",
+      "#mythbusters",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Earth-Twin with an Atmosphere!",
+    "thumb": "EARTH-TWIN DISCOVERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "One Earth-like exoplanet has an atmosphere!",
+        "hook_top": "EARTHLIKE EXOPLANET FOUND",
+        "query": "exoplanet atmosphere",
+        "query2": "earth-like planets"
+      },
+      {
+        "role": "fact",
+        "text": "This new exoplanet, identified as K2-18 b, is about 120 light-years away and shows signs of water vapor.",
+        "chips": [
+          {
+            "t": "120 LIGHT YEARS",
+            "on": "light-years",
+            "style": "white"
+          }
+        ],
+        "punch": "wow",
+        "query": "K2-18 b exoplanet",
+        "query2": "space discoveries"
+      },
+      {
+        "role": "callout",
+        "text": "Could this be our future home?",
+        "label": "EXOPLANET POTENTIAL",
+        "sub": "A glimpse into the future.",
+        "label_on": "future",
+        "query": "future home exoplanet",
+        "query2": "earth-like planet"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "science facts",
+        "query2": "science exploration"
+      }
+    ],
+    "description": "K2-18 b is the first Earth-like exoplanet confirmed to have an atmosphere. This discovery could change our understanding of habitable worlds. Follow for daily science!",
+    "hashtags": [
+      "#exoplanets",
+      "#space",
+      "#science",
+      "#discovery",
+      "#K218b",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

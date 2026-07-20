@@ -1,0 +1,68 @@
+{
+  "title": "The Fourth Dimension Explained by an Apple!",
+  "place": "",
+  "country": "",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An apple was used to illustrate the concept of the fourth dimension!",
+      "hook_top": "FOURTH DIMENSION IN AN APPLE",
+      "query": "fourth dimension apple",
+      "query2": "sliced apple concept"
+    },
+    {
+      "role": "fact",
+      "text": "Carl Sagan famously used this example to explain complex spacetime ideas.",
+      "query": "Carl Sagan fourth dimension",
+      "query2": "Carl Sagan speaking",
+      "chips": [
+        {
+          "t": "CARL SAGAN'S EXAMPLE",
+          "on": "Sagan",
+          "style": "accent"
+        }
+      ],
+      "punch": "spacetime"
+    },
+    {
+      "role": "fact",
+      "text": "The sliced apple shows how our perception of reality can be limited.",
+      "query": "sliced apple",
+      "query2": "apple cutting",
+      "chips": [
+        {
+          "t": "LIMITED PERCEPTION",
+          "on": "perception",
+          "style": "white"
+        }
+      ]
+    },
+    {
+      "role": "callout",
+      "text": "This analogy reveals the deeper nature of dimensions and reality.",
+      "query": "dimensions concept",
+      "query2": "abstract dimension art",
+      "label": "DIMENSIONS EXPLAINED",
+      "sub": "Reality in layers.",
+      "label_on": "nature",
+      "punch": "deeper"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "concept of reality",
+      "query2": "philosophical thinking"
+    }
+  ],
+  "description": "Carl Sagan used an apple to vividly explain the fourth dimension, revealing how our perception might be limited. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#philosophy",
+    "#CarlSagan",
+    "#fourthdimension",
+    "#reality",
+    "#concepts",
+    "#shorts",
+    "#fyp"
+  ]
+}
