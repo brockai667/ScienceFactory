@@ -151,7 +151,38 @@ _FMT_HINT = {
 }
 
 
-def build_prompt_fmt(fmt, n, existing_titles, trending=None):
+
+CHANNEL_ID = "UCmRfvAQKGLBRxpAF4A0b2Kw"
+
+
+def own_channel_performance(top=5, bottom=5):
+    """WINNERS/LOSERS z vlastneho kanala cez verejny RSS feed (ziadny kluc). Best-effort."""
+    try:
+        import urllib.request
+        import datetime
+        xml = urllib.request.urlopen("https://www.youtube.com/feeds/videos.xml?channel_id="
+                                     + CHANNEL_ID, timeout=20).read().decode("utf-8", "replace")
+        rows = []
+        for e in re.findall(r"<entry>.*?</entry>", xml, re.S):
+            t = re.search(r"<media:title>([^<]*)</media:title>", e)
+            v = re.search(r'views="(\d+)"', e)
+            p = re.search(r"<published>(\d{4}-\d{2}-\d{2})", e)
+            if t and v:
+                rows.append((int(v.group(1)), t.group(1), p.group(1) if p else ""))
+        cut = (datetime.date.today() - datetime.timedelta(days=2)).isoformat()
+        mature = [r for r in rows if r[2] and r[2] <= cut] or rows
+        if len(mature) < 4:
+            return ""
+        mature.sort(key=lambda r: -r[0])
+        win = " | ".join(t for _, t, _ in mature[:top])
+        lose = " | ".join(t for _, t, _ in mature[-bottom:])
+        return ("\nOUR CHANNEL'S LIVE RESULTS (make topics with the winners' subject-style and energy; "
+                "avoid the losers' style):\nWINNERS: " + win + "\nLOSERS: " + lose + "\n")
+    except Exception:
+        return ""
+
+
+def build_prompt_fmt(fmt, n, existing_titles, trending=None, perf=""):
     seq = FORMATS[fmt]
     roles_used = list(dict.fromkeys(seq))
     spec_lines = "\n".join("- " + _ROLE_SPEC[r] for r in roles_used)
@@ -164,16 +195,18 @@ def build_prompt_fmt(fmt, n, existing_titles, trending=None):
         f"Generate {n} NEW faceless short-form SCIENCE/TECH video topics, ALL in the '{fmt}' format.\n"
         f"Each topic MUST have EXACTLY these scenes, in THIS order: {' -> '.join(seq)}.\n"
         "Return ONLY a JSON array. Each item = "
-        "{'title':..., 'scenes':[{role fields...}], 'description':..., 'hashtags':[...]}.\n"
+        "{'title':..., 'thumb':..., 'scenes':[{role fields...}], 'description':..., 'hashtags':[...]}.\n"
         "Scene field rules:\n" + spec_lines + "\n"
         "- EVERY scene needs 'query' = Pexels stock search naming the CONCRETE subject of that exact "
         "line (line about octopuses -> 'octopus underwater'; NEVER abstract) and 'query2' = fallback.\n"
         + _FMT_HINT.get(fmt, "") +
+        "- hook MUST contain a concrete number, name or place; NEVER start with 'Imagine', 'What if', 'Did you know' or 'Have you ever'.\n"
+        "- 'thumb' = 2-3 punchy UPPERCASE words for the thumbnail (most clickable phrase, NOT a sentence).\n"
         "- ACCURACY IS CRITICAL: only widely-documented facts and real numbers; never invent figures.\n"
         "- description: 1-2 sentences then 'Follow for daily science!'; hashtags: 6-9 incl #shorts #fyp.\n"
         "- VARY titles (bold claim / question / curiosity gap); don't start more than 1 in 5 with a number.\n"
         f"- Do NOT reuse or rephrase any of these existing titles: {existing_titles}\n"
-        + PERFORMANCE + trend_block +
+        + PERFORMANCE + perf + trend_block +
         "Return ONLY the JSON array."
     )
 
@@ -296,6 +329,7 @@ def valid(t):
     t.setdefault("place", "")
     t.setdefault("country", "")
     t.setdefault("description", t["title"] + " Follow for daily science!")
+    t["thumb"] = " ".join(str(t.get("thumb") or "").split()[:4]).upper()
     t.setdefault("hashtags", ["#science", "#space", "#voyager", "#nasa"])
     return True
 
@@ -426,12 +460,15 @@ def main():
         except Exception as e:
             print("Trendy preskocene:", str(e)[:120])
     # rozdel 'need' medzi formaty (rotuje sa mix) -> pestre videa, nie stale ta ista sablona
+    perf = own_channel_performance()
+    if perf:
+        print("Live kanal-data: WINNERS/LOSERS zapracovane do promptu.")
     from collections import Counter
     plan = Counter(FORMAT_MIX[i % len(FORMAT_MIX)] for i in range(need + 2))
     items = []
     for fmt, cnt in plan.items():
         try:
-            got = extract_json(call_model(build_prompt_fmt(fmt, cnt, sorted(titles), trending)))
+            got = extract_json(call_model(build_prompt_fmt(fmt, cnt, sorted(titles), trending, perf)))
             items += got
             print(f"  format {fmt}: {len(got)} tem")
         except Exception as e:
