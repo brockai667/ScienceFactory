@@ -4821,5 +4821,608 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Unveiling the Mysteries of Exoplanets",
+    "thumb": "EXOPLANET MYSTERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Over 5,000 exoplanets have been confirmed so far!",
+        "hook_top": "5000 EXOPLANETS DISCOVERED",
+        "query": "exoplanet discoveries",
+        "query2": "space exploration"
+      },
+      {
+        "role": "fact",
+        "text": "The Kepler Space Telescope discovered the majority of these.",
+        "chips": [
+          {
+            "t": "MAX 22 CHARS",
+            "on": "Kepler Space Telescope",
+            "style": "white"
+          }
+        ],
+        "punch": "incredible",
+        "query": "Kepler Space Telescope",
+        "query2": "space telescopes"
+      },
+      {
+        "role": "fact",
+        "text": "Some exoplanets may have conditions for life as we know it.",
+        "chips": [
+          {
+            "t": "MAX 22 CHARS",
+            "on": "conditions for life",
+            "style": "accent"
+          }
+        ],
+        "punch": "potential",
+        "query": "exoplanet conditions for life",
+        "query2": "habitable zones"
+      },
+      {
+        "role": "reveal",
+        "text": "Yet, we've only scratched the surface!",
+        "reveal_top": "LIFE BEYOND OUR REACH",
+        "query": "unexplored space",
+        "query2": "astronomy"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science follow",
+        "query2": "daily science"
+      }
+    ],
+    "description": "The search for exoplanets reveals more than just planets; it suggests potential homes for life. Follow for daily science!",
+    "hashtags": [
+      "#Exoplanets",
+      "#NASA",
+      "#ScienceFacts",
+      "#Astronomy",
+      "#SpaceExploration",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Secret Life of Meteorites",
+    "thumb": "METEORITE SECRETS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Over 63,000 meteorites have been found on Earth!",
+        "hook_top": "63000 METEORITES FOUND",
+        "query": "meteorite discoveries",
+        "query2": "meteorites on Earth"
+      },
+      {
+        "role": "fact",
+        "text": "Each meteorite can contain clues about the solar system's formation.",
+        "chips": [
+          {
+            "t": "MAX 22 CHARS",
+            "on": "solar system formation",
+            "style": "white"
+          }
+        ],
+        "punch": "fascinating",
+        "query": "meteorite clues",
+        "query2": "meteorite composition"
+      },
+      {
+        "role": "fact",
+        "text": "Some meteorites even carry organic molecules necessary for life.",
+        "chips": [
+          {
+            "t": "MAX 22 CHARS",
+            "on": "organic molecules",
+            "style": "accent"
+          }
+        ],
+        "punch": "essential",
+        "query": "meteorites with organic molecules",
+        "query2": "life on meteorites"
+      },
+      {
+        "role": "reveal",
+        "text": "They may hold secrets from beyond our planet!",
+        "reveal_top": "SECRETS FROM SPACE",
+        "query": "secrets in meteorites",
+        "query2": "space science"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science follow",
+        "query2": "science news"
+      }
+    ],
+    "description": "Meteorites are more than just space rocks; they're time capsules from the universe. Follow for daily science!",
+    "hashtags": [
+      "#Meteorites",
+      "#Space",
+      "#ScienceFacts",
+      "#Astronomy",
+      "#Astrophysics",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Power of Solar Flares!",
+    "thumb": "SOLAR FLARE POWER",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A single solar flare can release energy equivalent to billions of atomic bombs!",
+        "hook_top": "BILLIONS OF ATOMIC BOMBS",
+        "query": "solar flare energy",
+        "query2": "solar phenomena"
+      },
+      {
+        "role": "fact",
+        "text": "Solar flares are caused by magnetic energy being released in the sun's atmosphere.",
+        "chips": [
+          {
+            "t": "MAX 22 CHARS",
+            "on": "solar magnetic energy",
+            "style": "white"
+          }
+        ],
+        "punch": "explosive",
+        "query": "solar flare causes",
+        "query2": "sun's atmosphere"
+      },
+      {
+        "role": "fact",
+        "text": "They can disrupt satellites and electrical grids on Earth.",
+        "chips": [
+          {
+            "t": "MAX 22 CHARS",
+            "on": "disrupt satellites",
+            "style": "accent"
+          }
+        ],
+        "punch": "impactful",
+        "query": "solar flares disrupt",
+        "query2": "effects of solar flares"
+      },
+      {
+        "role": "reveal",
+        "text": "But they also help us learn about the sun's behavior!",
+        "reveal_top": "TEACHING US ABOUT THE SUN",
+        "query": "studying solar flares",
+        "query2": "solar observations"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science follow",
+        "query2": "daily science"
+      }
+    ],
+    "description": "Solar flares are powerful events that impact technology and deepen our understanding of the sun. Follow for daily science!",
+    "hashtags": [
+      "#SolarFlares",
+      "#Space",
+      "#Sun",
+      "#Physics",
+      "#Astrophysics",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Truth Behind Pluto's Size!",
+    "thumb": "PLUTO'S TRUE SIZE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Pluto is no longer considered a planet.",
+        "hook_top": "PLUTO'S PLANET STATUS CHANGED",
+        "query": "Pluto dwarf planet",
+        "query2": "Pluto images"
+      },
+      {
+        "role": "myth",
+        "text": "Many believe Pluto was unfairly demoted.",
+        "label": "Pluto's Demotion Was Unjust",
+        "query": "Pluto night sky",
+        "query2": "Pluto historical images"
+      },
+      {
+        "role": "truth",
+        "text": "Pluto is classified as a dwarf planet due to its size and orbit.",
+        "label": "Dwarf Planet Classification",
+        "query": "dwarf planet definition",
+        "query2": "exoplanets classification"
+      },
+      {
+        "role": "callout",
+        "text": "Smaller than Earth!",
+        "label": "Size Matters!",
+        "sub": "Understanding Pluto's Size",
+        "label_on": "Pluto",
+        "query": "The Truth Behind Pluto's Size!",
+        "query2": "cinematic nature landscape"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science videos",
+        "query2": "space exploration"
+      }
+    ],
+    "description": "Explore why Pluto's classification changed and its real status today. Follow for daily science!",
+    "hashtags": [
+      "#Pluto",
+      "#DwarfPlanet",
+      "#space",
+      "#astrophysics",
+      "#science",
+      "#shorts",
+      "#fyp",
+      "#NASA"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Secret of Moon's Water!",
+    "thumb": "MOON'S HIDDEN WATER",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Scientists found water on the Moon's surface.",
+        "hook_top": "WATER DISCOVERED ON THE MOON",
+        "query": "water on moon",
+        "query2": "Moon surface images"
+      },
+      {
+        "role": "myth",
+        "text": "People think the Moon is completely dry.",
+        "label": "Moon Is Waterless",
+        "query": "dry moon surface",
+        "query2": "moon exploration"
+      },
+      {
+        "role": "truth",
+        "text": "Recent missions confirm water ice exists in permanently shadowed craters.",
+        "label": "Ice Found in Craters",
+        "query": "Moon craters water ice",
+        "query2": "lunar missions"
+      },
+      {
+        "role": "callout",
+        "text": "Vital for future missions!",
+        "label": "Water on the Moon!",
+        "sub": "A Key Resource for Exploration",
+        "label_on": "Water",
+        "query": "The Secret of Moon's Water!",
+        "query2": "cinematic nature landscape"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "space video",
+        "query2": "moon science"
+      }
+    ],
+    "description": "Learn about the significant discovery of water on the Moon and its implications for future missions. Follow for daily science!",
+    "hashtags": [
+      "#Moon",
+      "#WaterOnMoon",
+      "#space",
+      "#lunarexploration",
+      "#science",
+      "#shorts",
+      "#fyp",
+      "#NASA"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Unlocking Mars' Ancient Secrets!",
+    "thumb": "MARS ANCIENT SECRETS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mars has evidence of ancient river systems.",
+        "hook_top": "MARS HAD RUNNING WATER",
+        "query": "Mars river systems",
+        "query2": "Mars landscape"
+      },
+      {
+        "role": "myth",
+        "text": "Some think Mars was always barren.",
+        "label": "Mars Is Always Dry",
+        "query": "barren Mars",
+        "query2": "Mars surface photos"
+      },
+      {
+        "role": "truth",
+        "text": "Mars had flowing water and possibly life billions of years ago.",
+        "label": "Ancient Rivers on Mars",
+        "query": "Mars ancient rivers",
+        "query2": "Mars water evidence"
+      },
+      {
+        "role": "callout",
+        "text": "Life could have existed!",
+        "label": "Mars' Wet Past!",
+        "sub": "Fascinating Ancient History",
+        "label_on": "Rivers",
+        "query": "Unlocking Mars' Ancient Secrets!",
+        "query2": "cinematic nature landscape"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "Mars discovery videos",
+        "query2": "space news"
+      }
+    ],
+    "description": "Discover the ancient waterways of Mars and what they mean for the possibility of life. Follow for daily science!",
+    "hashtags": [
+      "#Mars",
+      "#AncientRivers",
+      "#space",
+      "#astrophysics",
+      "#science",
+      "#shorts",
+      "#fyp",
+      "#NASA"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Pluto's Surprising Landscapes Revealed!",
+    "thumb": "PLUTO'S MYSTERIES",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's New Horizons found six massive landslides on Pluto.",
+        "hook_top": "PLUTO'S LANDSLIDES REVEALED",
+        "query": "New Horizons Pluto images",
+        "query2": "Pluto landscape"
+      },
+      {
+        "role": "fact",
+        "text": "These landslides suggest active geological processes on Pluto.",
+        "chips": [
+          {
+            "t": "6 LARGE LANDSLIDES",
+            "on": "landslides",
+            "style": "accent"
+          }
+        ],
+        "query": "Pluto geological features",
+        "query2": "Pluto distant world"
+      },
+      {
+        "role": "fact",
+        "text": "The terrains are more diverse than many scientists expected.",
+        "chips": [
+          {
+            "t": "DIVerse TERRAIN",
+            "on": "diverse",
+            "style": "white"
+          }
+        ],
+        "query": "Pluto varied terrain",
+        "query2": "Pluto geological diversity"
+      },
+      {
+        "role": "callout",
+        "text": "Active geology surprises us!",
+        "label": "SURPRISING GEOLOGY",
+        "sub": "What more could we discover?",
+        "label_on": "surprises",
+        "query": "Pluto exploration",
+        "query2": "NASA Pluto mission"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "space exploration",
+        "query2": "NASA news"
+      }
+    ],
+    "description": "NASA's New Horizons has revealed unexpected landscapes on Pluto, showcasing its dynamic geology. Follow for daily science!",
+    "hashtags": [
+      "#Pluto",
+      "#NASA",
+      "#NewHorizons",
+      "#space",
+      "#discovery",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Astonishing Atmosphere on Exoplanet Discovered!",
+    "thumb": "EXOPLANET REVEAL",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An Earth-like exoplanet may have a significant atmosphere!",
+        "hook_top": "EARTHLIKE ATMOSPHERE",
+        "query": "Earth-like exoplanet",
+        "query2": "exoplanet atmosphere"
+      },
+      {
+        "role": "fact",
+        "text": "This exoplanet orbits a nearby star and shows potential for life.",
+        "chips": [
+          {
+            "t": "POTENTIAL FOR LIFE",
+            "on": "life",
+            "style": "accent"
+          }
+        ],
+        "query": "exoplanet habitability",
+        "query2": "nearby star systems"
+      },
+      {
+        "role": "fact",
+        "text": "Spectroscopic analysis suggests the presence of gases that could support life.",
+        "chips": [
+          {
+            "t": "LIFE-SUPPORTING GASES",
+            "on": "gases",
+            "style": "white"
+          }
+        ],
+        "query": "exoplanet atmosphere analysis",
+        "query2": "atmosphere composition"
+      },
+      {
+        "role": "callout",
+        "text": "Could life exist beyond Earth?",
+        "label": "LIFE BEYOND EARTH",
+        "sub": "The quest continues!",
+        "label_on": "life",
+        "query": "search for extraterrestrial life",
+        "query2": "exoplanets"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "space exploration",
+        "query2": "scientific discoveries"
+      }
+    ],
+    "description": "Scientists have discovered an Earth-like exoplanet with a possible atmosphere, raising questions about extraterrestrial life. Follow for daily science!",
+    "hashtags": [
+      "#exoplanet",
+      "#space",
+      "#atmosphere",
+      "#discovery",
+      "#life",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The New Frontier of Space Mirrors!",
+    "thumb": "SPACE MIRROR REVOLUTION",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Humanity is launching enormous space mirrors soon.",
+        "hook_top": "SPACE MIRRORS ARE COMING",
+        "query": "space mirror satellite",
+        "query2": "space mirrors"
+      },
+      {
+        "role": "fact",
+        "text": "The U.S. has approved a satellite designed to reflect sunlight back to Earth.",
+        "chips": [
+          {
+            "t": "SPACE SATELLITE",
+            "on": "space mirror",
+            "style": "white"
+          }
+        ],
+        "punch": "revolutionize",
+        "query": "space satellite",
+        "query2": "satellite technology"
+      },
+      {
+        "role": "callout",
+        "text": "Reflecting sunlight could alter climates.",
+        "label": "CLIMATE IMPACT!",
+        "sub": "Could it cool the Earth?",
+        "label_on": "impact",
+        "query": "climate change",
+        "query2": "weather patterns"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "daily science news",
+        "query2": "science updates"
+      }
+    ],
+    "description": "A giant space mirror might change how we interact with our planet's climate. Follow for daily science!",
+    "hashtags": [
+      "#space",
+      "#science",
+      "#technology",
+      "#satellite",
+      "#climate",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Mars' Most Stunning Discovery Yet!",
+    "thumb": "MARS VOLCANIC SECRETS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA just found volcanic activity in Mars' past!",
+        "hook_top": "VOLCANIC MARS REVEALED",
+        "query": "Mars volcanic activity",
+        "query2": "Mars exploration"
+      },
+      {
+        "role": "fact",
+        "text": "Large landslides discovered by New Horizons indicate Mars had flowing lava.",
+        "chips": [
+          {
+            "t": "LARGE LANDSLIDES",
+            "on": "landslides",
+            "style": "accent"
+          }
+        ],
+        "punch": "amazing",
+        "query": "Mars landscape",
+        "query2": "Mars geology"
+      },
+      {
+        "role": "callout",
+        "text": "This could change our understanding of Martian history.",
+        "label": "NEW MARS INSIGHTS!",
+        "sub": "History written in stone.",
+        "label_on": "insights",
+        "query": "Mars science",
+        "query2": "Mars history"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "daily space science",
+        "query2": "space updates"
+      }
+    ],
+    "description": "Discoveries like this reshape how we view the history of Mars! Follow for daily science!",
+    "hashtags": [
+      "#Mars",
+      "#NASA",
+      "#space",
+      "#science",
+      "#exploration",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

@@ -1,0 +1,53 @@
+{
+  "title": "The Truth About Space Mirrors!",
+  "thumb": "SPACE MIRROR DEBUNKED",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's space mirror could change our nights forever!",
+      "hook_top": "A SPACE MIRROR AT NIGHT",
+      "query": "space mirror satellite",
+      "query2": "space technology"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe a space mirror will dangerously intensify light on Earth.",
+      "label": "Dangerous Light Intensity",
+      "query": "intense sunlight on Earth",
+      "query2": "light pollution"
+    },
+    {
+      "role": "truth",
+      "text": "In reality, these mirrors will reflect light safely and efficiently.",
+      "label": "Safe Light Reflection",
+      "query": "reflection of sunlight",
+      "query2": "solar technology"
+    },
+    {
+      "role": "callout",
+      "text": "LIGHT REFLECTION FACT",
+      "label": "Mirrors will control brightness.",
+      "sub": "They won’t blind us!",
+      "label_on": "space mirror",
+      "query": "space mirror design",
+      "query2": "satellite technology"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "science videos",
+      "query2": "educational content"
+    }
+  ],
+  "description": "Explore the myth and truth about space mirrors and their impact on Earth. Follow for daily science!",
+  "hashtags": [
+    "#space",
+    "#technology",
+    "#science",
+    "#mythbusters",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

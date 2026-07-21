@@ -1,0 +1,64 @@
+{
+  "title": "Could a Space Mirror Light Up the Night?",
+  "thumb": "SPACE MIRROR REVEAL",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A new giant space mirror could illuminate Earth at night!",
+      "hook_top": "LIGHT UP THE NIGHT",
+      "query": "giant space mirror",
+      "query2": "satellite in space"
+    },
+    {
+      "role": "fact",
+      "text": "This satellite aims to reflect sunlight back to Earth’s surface.",
+      "chips": [
+        {
+          "t": "SUNLIGHT REFLECTION",
+          "on": "sunlight",
+          "style": "white"
+        }
+      ],
+      "query": "satellite reflecting sunlight",
+      "query2": "space technology"
+    },
+    {
+      "role": "fact",
+      "text": "Astronomers fear it may disrupt nighttime ecosystems and astronomy.",
+      "chips": [
+        {
+          "t": "NIGHTTIME ECOSYSTEMS",
+          "on": "ecosystems",
+          "style": "accent"
+        }
+      ],
+      "query": "astroecology at night",
+      "query2": "night sky pollution"
+    },
+    {
+      "role": "reveal",
+      "text": "Some experts say it could turn dark skies into twilight!",
+      "reveal_top": "TWILIGHT IN DARK SKIES",
+      "query": "twilight sky",
+      "query2": "dark sky"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science discoveries",
+      "query2": "latest science news"
+    }
+  ],
+  "description": "Learn about the controversial space mirror that could change how we experience nighttime! Follow for daily science!",
+  "hashtags": [
+    "#space",
+    "#technology",
+    "#science",
+    "#shorts",
+    "#fyp",
+    "#innovation",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}
