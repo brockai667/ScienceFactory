@@ -4584,617 +4584,6 @@
     ]
   },
   {
-    "title": "The Giant Space Mirror Shining on Earth!",
-    "place": "",
-    "country": "USA",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "Imagine a satellite reflecting sunlight to illuminate our nights!",
-        "hook_top": "A SPACE MIRROR FOR EARTH",
-        "query": "satellite concept",
-        "query2": "space mirror simulation"
-      },
-      {
-        "role": "fact",
-        "text": "The US has approved a giant satellite designed to reflect sunlight back to Earth.",
-        "query": "space satellite render",
-        "query2": "satellite night sky",
-        "chips": [
-          {
-            "t": "GIANT SATELLITE",
-            "on": "giant",
-            "style": "accent"
-          }
-        ],
-        "punch": "satellite"
-      },
-      {
-        "role": "fact",
-        "text": "This mirror could brighten cities at night without electricity.",
-        "query": "city skyline night",
-        "query2": "city lights at night",
-        "chips": [
-          {
-            "t": "ECO-FRIENDLY POSSIBILITI",
-            "on": "eco-friendly",
-            "style": "white"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "But some astronomers worry about its impact on stargazing!",
-        "query": "astronomers telescope night",
-        "query2": "night sky star tracking",
-        "label": "ASTRONOMICAL CONCERNS",
-        "sub": "Is it worth the trade-off?",
-        "label_on": "impact",
-        "punch": "stargazing"
-      },
-      {
-        "role": "cta",
-        "text": "Follow for the science they never taught you.",
-        "query": "innovative technology concept",
-        "query2": "futuristic technology display"
-      }
-    ],
-    "description": "A giant space mirror satellite is set to reflect sunlight to Earth, raising intriguing possibilities and concerns. Follow for groundbreaking tech stories!",
-    "hashtags": [
-      "#science",
-      "#technology",
-      "#space",
-      "#innovation",
-      "#satellite",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
-    "title": "The Hidden Universe Within a Star!",
-    "place": "Stars",
-    "country": "",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "What secrets might a single star hold within its core?",
-        "hook_top": "UNVEILING STAR SECRETS",
-        "query": "star core animation",
-        "query2": "star explosion visual"
-      },
-      {
-        "role": "fact",
-        "text": "Stars undergo fusion, releasing massive energy levels in the process.",
-        "query": "fusion reaction animation",
-        "query2": "nuclear fusion illustration",
-        "chips": [
-          {
-            "t": "MASSIVE ENERGY",
-            "on": "energy",
-            "style": "accent"
-          }
-        ],
-        "punch": "energy"
-      },
-      {
-        "role": "fact",
-        "text": "Their cores reach temperatures hotter than the surface of the Sun.",
-        "query": "star heat concept",
-        "query2": "heated star close-up",
-        "chips": [
-          {
-            "t": "HOTTER THAN THE SUN",
-            "on": "hotter",
-            "style": "white"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "This energy powers whole galaxies, even our Milky Way!",
-        "query": "galaxy view",
-        "query2": "milky way wide shot",
-        "label": "FUELING THE GALAXY",
-        "sub": "Stars connect us all.",
-        "label_on": "powers",
-        "punch": "galaxies"
-      },
-      {
-        "role": "cta",
-        "text": "Follow to feed your curious mind daily.",
-        "query": "galactic phenomena",
-        "query2": "star clusters"
-      }
-    ],
-    "description": "Stars are wonderous entities, fueling galaxies with energy generated from fusion deep within their cores. Follow for more cosmic revelations!",
-    "hashtags": [
-      "#science",
-      "#astronomy",
-      "#stars",
-      "#galaxies",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
-    "title": "Why Sugar Was Spotted in Interstellar Space",
-    "place": "",
-    "country": "",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "Scientists have discovered sugar floating through space! But how?",
-        "hook_top": "SUGAR IN THE COSMOS",
-        "query": "space sugar molecules",
-        "query2": "sugar in space"
-      },
-      {
-        "role": "fact",
-        "text": "This is the first time sugar was identified outside Earth, found in a distant gas cloud.",
-        "query": "gas cloud in space",
-        "query2": "cosmic clouds",
-        "chips": [
-          {
-            "t": "FIRST OF ITS KIND",
-            "on": "first",
-            "style": "accent"
-          }
-        ],
-        "punch": "sugar"
-      },
-      {
-        "role": "fact",
-        "text": "It gives clues about how organic compounds could form in space.",
-        "query": "organic compounds space",
-        "query2": "chemical reactions",
-        "chips": [
-          {
-            "t": "LINK TO LIFE'S ORIGINS",
-            "on": "life's",
-            "style": "white"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "Could this mean we're not alone in the universe?",
-        "query": "alien life possibility",
-        "query2": "space exploration",
-        "label": "A SWEET DISCOVERY",
-        "sub": "Hints of extraterrestrial life?",
-        "label_on": "sugar",
-        "punch": "discovery"
-      },
-      {
-        "role": "cta",
-        "text": "Follow for a new science fact every day.",
-        "query": "universe stars animation",
-        "query2": "stars night sky"
-      }
-    ],
-    "description": "Sugar has been detected in interstellar space, revealing hints about the building blocks of life. Follow for daily science!",
-    "hashtags": [
-      "#space",
-      "#sugar",
-      "#astrophysics",
-      "#science",
-      "#discovery",
-      "#universe",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
-    "title": "How Earth-Like Exoplanets Are Found",
-    "place": "",
-    "country": "",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "Searching for Earth-like worlds is like finding a needle in a haystack!",
-        "hook_top": "SEARCH FOR OTHER EARTHS",
-        "query": "planet discovery telescopes",
-        "query2": "exoplanet observations"
-      },
-      {
-        "role": "fact",
-        "text": "Exoplanets are detected by monitoring the light from stars, looking for dips.",
-        "query": "star dimming telescope",
-        "query2": "stars light change",
-        "chips": [
-          {
-            "t": "LIGHT VARIATIONS",
-            "on": "light",
-            "style": "accent"
-          }
-        ],
-        "punch": "light"
-      },
-      {
-        "role": "fact",
-        "text": "This technique helps identify planets that may support life.",
-        "query": "habitable exoplanets",
-        "query2": "planets orbiting stars",
-        "chips": [
-          {
-            "t": "SEARCHING FOR HABITABLE ",
-            "on": "habitable",
-            "style": "white"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "Are we alone in the universe, or are there many like us?",
-        "query": "alien life search",
-        "query2": "scientist thinking",
-        "label": "ROMANCING THE STARS",
-        "sub": "Hope for another Earth",
-        "label_on": "search",
-        "punch": "stars"
-      },
-      {
-        "role": "cta",
-        "text": "Follow for the science they never taught you.",
-        "query": "space exploration",
-        "query2": "exploration of space"
-      }
-    ],
-    "description": "Finding Earth-like exoplanets involves a close watch on star light. Follow for daily science and discoveries!",
-    "hashtags": [
-      "#exoplanets",
-      "#space",
-      "#discovery",
-      "#science",
-      "#searchforlife",
-      "#astrophysics",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
-    "title": "The Mystery of Cygnus Captured in Stunning Detail",
-    "place": "",
-    "country": "",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "A breathtaking view of the Cygnus constellation from Earth has surfaced!",
-        "hook_top": "CYGNUS REVEALED",
-        "query": "Cygnus constellation photograph",
-        "query2": "Cygnus night sky"
-      },
-      {
-        "role": "fact",
-        "text": "This celestial object showcases intricate patterns and star formations.",
-        "query": "stars in Cygnus",
-        "query2": "constellation patterns",
-        "chips": [
-          {
-            "t": "A SPECTACULAR SHOW",
-            "on": "spectacular",
-            "style": "accent"
-          }
-        ],
-        "punch": "patterns"
-      },
-      {
-        "role": "fact",
-        "text": "It's a testing ground for understanding star formation and cosmic dynamics.",
-        "query": "star formation",
-        "query2": "stars elements space",
-        "chips": [
-          {
-            "t": "A LAB FOR ASTRONOMY",
-            "on": "lab",
-            "style": "white"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "Could these patterns reveal the secrets of the universe?",
-        "query": "finding cosmic secrets",
-        "query2": "scientists with telescopes",
-        "label": "UNLOCKING COSMIC SECRETS",
-        "sub": "Understanding our universe",
-        "label_on": "reveal",
-        "punch": "mystery"
-      },
-      {
-        "role": "cta",
-        "text": "Follow for a new science fact every day.",
-        "query": "space stars galaxy",
-        "query2": "galaxy animation"
-      }
-    ],
-    "description": "The stunning details of the Cygnus constellation provide a view into star formation and cosmic mysteries. Follow for daily science!",
-    "hashtags": [
-      "#Cygnus",
-      "#space",
-      "#constellation",
-      "#astronomy",
-      "#science",
-      "#starformation",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
-    "title": "Will This Space Mirror Change Nights?",
-    "place": "",
-    "country": "",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "A giant satellite reflects sunlight to illuminate Earth at night!",
-        "hook_top": "CHANGE NIGHT INTO DAY",
-        "query": "space satellite mirror",
-        "query2": "night city lights aerial"
-      },
-      {
-        "role": "fact",
-        "text": "This revolutionary project aims to harness satellite technology for nighttime illumination.",
-        "query": "satellite technology overview",
-        "query2": "space satellite orbit",
-        "chips": [
-          {
-            "t": "REVOLUTIONARY PROJECT",
-            "on": "project",
-            "style": "white"
-          }
-        ],
-        "punch": "project"
-      },
-      {
-        "role": "fact",
-        "text": "Astronomers worry it could disrupt natural night and wildlife behavior.",
-        "query": "night sky wildlife",
-        "query2": "animals in the dark",
-        "chips": [
-          {
-            "t": "DISRUPT WILDLIFE",
-            "on": "disrupt",
-            "style": "accent"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "Will we trade darkness for convenience?",
-        "query": "city night bright lights",
-        "query2": "urban night skyline",
-        "label": "DARKNESS VS. CONVENIENCE",
-        "sub": "Is it worth the trade-off?",
-        "label_on": "trade",
-        "punch": "convenience"
-      },
-      {
-        "role": "cta",
-        "text": "Follow to feed your curious mind daily.",
-        "query": "night sky stars",
-        "query2": "galaxy timelapse"
-      }
-    ],
-    "description": "A space mirror might illuminate our nights, but what about our stars? Follow for daily science!",
-    "hashtags": [
-      "#science",
-      "#space",
-      "#technology",
-      "#satellite",
-      "#environment",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
-    "title": "Discovering Pluto's Giant Landslides",
-    "place": "Pluto",
-    "country": "",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "Pluto hides massive landslides that reshape its icy surface.",
-        "hook_top": "PLUTO'S ICY SURPRISES",
-        "query": "Pluto landslides",
-        "query2": "Pluto surface overview"
-      },
-      {
-        "role": "fact",
-        "text": "New Horizons revealed six large landslides on Pluto's unique terrain.",
-        "query": "New Horizons Pluto data",
-        "query2": "Pluto flyby images",
-        "chips": [
-          {
-            "t": "SIX GIANT LANDSLIDES",
-            "on": "six",
-            "style": "white"
-          },
-          {
-            "t": "NASA'S NEW HORIZONS",
-            "on": "New Horizons",
-            "style": "accent"
-          }
-        ],
-        "punch": "landslides"
-      },
-      {
-        "role": "fact",
-        "text": "These landslides provide new insights into Pluto's geologic activity.",
-        "query": "Pluto geology",
-        "query2": "geologic formations",
-        "chips": [
-          {
-            "t": "NEW GEOLOGIC INSIGHTS",
-            "on": "insights",
-            "style": "accent"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "Frozen landscapes may still be active!",
-        "query": "Pluto icy landscape",
-        "query2": "ice and rock formations",
-        "label": "ACTIVE ICY WORLD",
-        "sub": "Pluto isn't just a rock!",
-        "label_on": "active",
-        "punch": "active"
-      },
-      {
-        "role": "cta",
-        "text": "Follow for daily science that blows your mind.",
-        "query": "space exploration",
-        "query2": "space discovery timelapse"
-      }
-    ],
-    "description": "Discover why Pluto is more than just a frozen rock with its surprising landslides. Follow for daily science!",
-    "hashtags": [
-      "#science",
-      "#Pluto",
-      "#NASA",
-      "#NewHorizons",
-      "#astronomy",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
-    "title": "The First Earth-Like Exoplanet with Atmosphere!",
-    "place": "Space",
-    "country": "",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "Astronomers spot the first Earth-like exoplanet with an atmosphere!",
-        "hook_top": "A NEW EARTH DISCOVERED",
-        "query": "Earth-like exoplanet",
-        "query2": "artist's view of exoplanet"
-      },
-      {
-        "role": "fact",
-        "text": "This discovery opens new possibilities for finding life beyond Earth.",
-        "query": "life on exoplanets",
-        "query2": "alien worlds concept",
-        "chips": [
-          {
-            "t": "NEW LIFE POSSIBILITIES",
-            "on": "possibilities",
-            "style": "accent"
-          }
-        ],
-        "punch": "life"
-      },
-      {
-        "role": "fact",
-        "text": "Its atmosphere contains elements essential for life as we know it.",
-        "query": "exoplanet atmosphere",
-        "query2": "atmospheric layers",
-        "chips": [
-          {
-            "t": "ESSENTIAL ELEMENTS FOUND",
-            "on": "elements",
-            "style": "white"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "Could this be our next home?",
-        "query": "Earth-like environment",
-        "query2": "earth landscape",
-        "label": "NEXT POSSIBLE HOME",
-        "sub": "Are we alone?",
-        "label_on": "next",
-        "punch": "home"
-      },
-      {
-        "role": "cta",
-        "text": "Follow if curiosity runs your brain.",
-        "query": "stars and planets",
-        "query2": "starry night sky"
-      }
-    ],
-    "description": "A groundbreaking discovery of an Earth-like exoplanet with an atmosphere means promising possibilities for life. Follow for daily science!",
-    "hashtags": [
-      "#science",
-      "#exoplanets",
-      "#astrophysics",
-      "#NASA",
-      "#discovery",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
-    "title": "Vikram-1: India's Orbital Rocket Success!",
-    "place": "",
-    "country": "India",
-    "scenes": [
-      {
-        "role": "hook",
-        "text": "India just launched its first privately developed rocket into orbit!",
-        "hook_top": "FIRST PRIVATE LAUNCH SUCCESS",
-        "query": "Vikram-1 launch",
-        "query2": "rocket launch festival"
-      },
-      {
-        "role": "fact",
-        "text": "Vikram-1 achieved orbit on its very first attempt, a major milestone for India.",
-        "query": "Vikram-1 rocket overview",
-        "query2": "rocket in space",
-        "chips": [
-          {
-            "t": "MAJOR MILESTONE",
-            "on": "milestone",
-            "style": "white"
-          }
-        ],
-        "punch": "milestone"
-      },
-      {
-        "role": "fact",
-        "text": "This success is a game changer for India's growing space industry.",
-        "query": "India space industry",
-        "query2": "space industry growth chart",
-        "chips": [
-          {
-            "t": "GAME CHANGER",
-            "on": "game",
-            "style": "accent"
-          }
-        ]
-      },
-      {
-        "role": "callout",
-        "text": "A new era of private exploration begins!",
-        "query": "private space company",
-        "query2": "private space launch",
-        "label": "NEW ERA OF SPACE!",
-        "sub": "Welcome to private exploration.",
-        "label_on": "era",
-        "punch": "exploration"
-      },
-      {
-        "role": "cta",
-        "text": "Follow if curiosity runs your brain.",
-        "query": "rocket launching",
-        "query2": "rocket liftoff slow motion"
-      }
-    ],
-    "description": "India's Vikram-1 rocket achieves orbit on its first launch, marking a turning point for private space endeavors. Follow for daily science!",
-    "hashtags": [
-      "#science",
-      "#India",
-      "#rocket",
-      "#space",
-      "#Vikram1",
-      "#innovation",
-      "#shorts",
-      "#fyp"
-    ]
-  },
-  {
     "title": "Could a Space Mirror Light Up the Night?",
     "thumb": "SPACE MIRROR REVEAL",
     "scenes": [
@@ -5310,6 +4699,74 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Vikram-1: India's Orbital Rocket Success!",
+    "place": "",
+    "country": "India",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "India just launched its first privately developed rocket into orbit!",
+        "hook_top": "FIRST PRIVATE LAUNCH SUCCESS",
+        "query": "Vikram-1 launch",
+        "query2": "rocket launch festival"
+      },
+      {
+        "role": "fact",
+        "text": "Vikram-1 achieved orbit on its very first attempt, a major milestone for India.",
+        "query": "Vikram-1 rocket overview",
+        "query2": "rocket in space",
+        "chips": [
+          {
+            "t": "MAJOR MILESTONE",
+            "on": "milestone",
+            "style": "white"
+          }
+        ],
+        "punch": "milestone"
+      },
+      {
+        "role": "fact",
+        "text": "This success is a game changer for India's growing space industry.",
+        "query": "India space industry",
+        "query2": "space industry growth chart",
+        "chips": [
+          {
+            "t": "GAME CHANGER",
+            "on": "game",
+            "style": "accent"
+          }
+        ]
+      },
+      {
+        "role": "callout",
+        "text": "A new era of private exploration begins!",
+        "query": "private space company",
+        "query2": "private space launch",
+        "label": "NEW ERA OF SPACE!",
+        "sub": "Welcome to private exploration.",
+        "label_on": "era",
+        "punch": "exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "rocket launching",
+        "query2": "rocket liftoff slow motion"
+      }
+    ],
+    "description": "India's Vikram-1 rocket achieves orbit on its first launch, marking a turning point for private space endeavors. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#India",
+      "#rocket",
+      "#space",
+      "#Vikram1",
+      "#innovation",
+      "#shorts",
+      "#fyp"
+    ]
   },
   {
     "title": "The Earth-Twin with an Atmosphere!",
