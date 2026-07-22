@@ -5424,5 +5424,304 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Astronomical Discoveries Hidden in Plain Sight!",
+    "thumb": "HIDDEN PLANET DISCOVERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Two Telescopes Reveal a Planet Overlooked for Years.",
+        "hook_top": "PLANET FOUND IN PLAIN SIGHT",
+        "query": "two telescopes discovering planet",
+        "query2": "planet discovery telescopes"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "HIDDEN IN PLAIN SIGHT",
+        "label_on": "point one",
+        "text": "The planet was hiding in the data of stars we already knew.",
+        "query": "star data analysis",
+        "query2": "data hidden planet"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "UNEXPECTED FINDING",
+        "label_on": "point two",
+        "text": "It orbits a star similar to our Sun but was undetected until now.",
+        "query": "star similar to sun",
+        "query2": "solar system discovery"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "A NEW PERSPECTIVE",
+        "label_on": "point three",
+        "text": "This discovery encourages astronomers to revisit old data for more clues.",
+        "query": "data revisiting astronomy",
+        "query2": "astronomy data analysis"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science news updates",
+        "query2": "latest science discoveries"
+      }
+    ],
+    "description": "A groundbreaking discovery of a planet hiding in plain sight has been made using existing data. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#discovery",
+      "#space",
+      "#astronomy",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "India's Rocket Revolution: A New Era Begins!",
+    "thumb": "VIKRAM-1 ROCKET FLIGHT",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Vikram-1 Marks India’s Leap into Private Space Exploration.",
+        "hook_top": "INDIA'S ROCKET SUCCESS",
+        "query": "Vikram-1 rocket launch",
+        "query2": "India space revolution"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "PRIVATELY FUNDED",
+        "label_on": "point one",
+        "text": "This is India's first privately developed orbital rocket, making history.",
+        "query": "private orbital rocket",
+        "query2": "rocket history India"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "COMPLEX MISSION",
+        "label_on": "point two",
+        "text": "Vikram-1 successfully reached orbit on its very first flight.",
+        "query": "Vikram-1 first flight",
+        "query2": "first flight mission success"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "FUTURE PLANS",
+        "label_on": "point three",
+        "text": "This success paves the way for India’s future in space missions.",
+        "query": "India future space missions",
+        "query2": "space mission plans India"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "science updates",
+        "query2": "latest space news"
+      }
+    ],
+    "description": "India has taken a significant step with the successful launch of the Vikram-1 rocket. Follow for daily science!",
+    "hashtags": [
+      "#India",
+      "#space",
+      "#rocket",
+      "#Vikram1",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "NASA's Ingenious New Spacecraft!",
+    "thumb": "NASA'S NEW SPACECRAFT",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "In 2024, NASA will launch a groundbreaking spacecraft.",
+        "hook_top": "NASA'S NEXT BIG THING",
+        "query": "NASA spacecraft launch 2024",
+        "query2": "NASA spacecraft"
+      },
+      {
+        "role": "fact",
+        "text": "This spacecraft will study asteroids, including a rare metallic one.",
+        "chips": [
+          {
+            "t": "RARE METALLIC ASTEROID",
+            "on": "metallic",
+            "style": "accent"
+          }
+        ],
+        "query": "metallic asteroid",
+        "query2": "asteroid exploration"
+      },
+      {
+        "role": "fact",
+        "text": "Its mission aims to unlock secrets about the solar system's formation.",
+        "chips": [
+          {
+            "t": "SOLAR SYSTEM FORMATION",
+            "on": "formation",
+            "style": "white"
+          }
+        ],
+        "query": "solar system formation",
+        "query2": "solar system"
+      },
+      {
+        "role": "reveal",
+        "text": "It's designed to make close-up observations for the first time!",
+        "reveal_top": "CLOSEUP ASTEROID INSIGHT",
+        "query": "NASA close-up asteroid",
+        "query2": "asteroid"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science news",
+        "query2": "latest science discoveries"
+      }
+    ],
+    "description": "Get ready for NASA's revolutionary spacecraft that will explore asteroids! Follow for daily science!",
+    "hashtags": [
+      "#NASA",
+      "#Space",
+      "#Asteroids",
+      "#science",
+      "#technology",
+      "#innovation",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Astronomers Find Earth-Like Exoplanet with an Atmosphere!",
+    "thumb": "EXOPLANET ATMOSPHERE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A newly discovered exoplanet has its own atmosphere!",
+        "hook_top": "EARTHLIKE EXOPLANET FOUND",
+        "query": "earth-like exoplanet",
+        "query2": "exoplanet atmosphere"
+      },
+      {
+        "role": "fact",
+        "text": "The planet is located around 100 light-years away and is rocky.",
+        "chips": [
+          {
+            "t": "100 light-years",
+            "on": "distance",
+            "style": "white"
+          }
+        ],
+        "punch": "incredible!",
+        "query": "rocky exoplanet",
+        "query2": "planet atmosphere"
+      },
+      {
+        "role": "fact",
+        "text": "It may have conditions suitable for liquid water.",
+        "chips": [
+          {
+            "t": "liquid water",
+            "on": "water",
+            "style": "accent"
+          }
+        ],
+        "query": "liquid water on exoplanet",
+        "query2": "conditions for life"
+      },
+      {
+        "role": "callout",
+        "text": "Could this be our next home?",
+        "label": "NEXT HOME?",
+        "sub": "A planet with potential!",
+        "label_on": "home",
+        "query": "exoplanet potential",
+        "query2": "life on exoplanets"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science facts",
+        "query2": "space discoveries"
+      }
+    ],
+    "description": "Astronomers have found an Earth-like exoplanet with an atmosphere that could support life. Follow for daily science!",
+    "hashtags": [
+      "#exoplanet",
+      "#space",
+      "#astronomy",
+      "#science",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "NASA's Most Complicated Mission Yet!",
+    "thumb": "COMPLICATED MISSION",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Four astronauts, three spacecraft, two weeks in orbit!",
+        "hook_top": "FOUR ASTRONAUTS THREE CRAFT",
+        "query": "NASA Artemis III mission",
+        "query2": "NASA missions"
+      },
+      {
+        "role": "fact",
+        "text": "Artemis III aims to land astronauts on the Moon in 2025.",
+        "chips": [
+          {
+            "t": "2025",
+            "on": "land",
+            "style": "white"
+          }
+        ],
+        "punch": "moon",
+        "query": "NASA Artemis III",
+        "query2": "moon landing"
+      },
+      {
+        "role": "callout",
+        "text": "NASA's bold return to the Moon!",
+        "label": "BOLD RETURN",
+        "sub": "Prepare for a new lunar age!",
+        "label_on": "return",
+        "query": "NASA Moon return",
+        "query2": "lunar missions"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science technology",
+        "query2": "latest science news"
+      }
+    ],
+    "description": "Artemis III is set to revolutionize our understanding of the Moon and beyond. Follow for daily science!",
+    "hashtags": [
+      "#NASA",
+      "#ArtemisIII",
+      "#moon",
+      "#space",
+      "#shorts",
+      "#fyp",
+      "#missions"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

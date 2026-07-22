@@ -1,0 +1,54 @@
+{
+  "title": "The Earth-Twin with an Atmosphere!",
+  "thumb": "EARTH-TWIN DISCOVERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "One Earth-like exoplanet has an atmosphere!",
+      "hook_top": "EARTHLIKE EXOPLANET FOUND",
+      "query": "exoplanet atmosphere",
+      "query2": "earth-like planets"
+    },
+    {
+      "role": "fact",
+      "text": "This new exoplanet, identified as K2-18 b, is about 120 light-years away and shows signs of water vapor.",
+      "chips": [
+        {
+          "t": "120 LIGHT YEARS",
+          "on": "light-years",
+          "style": "white"
+        }
+      ],
+      "punch": "wow",
+      "query": "K2-18 b exoplanet",
+      "query2": "space discoveries"
+    },
+    {
+      "role": "callout",
+      "text": "Could this be our future home?",
+      "label": "EXOPLANET POTENTIAL",
+      "sub": "A glimpse into the future.",
+      "label_on": "future",
+      "query": "future home exoplanet",
+      "query2": "earth-like planet"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science facts",
+      "query2": "science exploration"
+    }
+  ],
+  "description": "K2-18 b is the first Earth-like exoplanet confirmed to have an atmosphere. This discovery could change our understanding of habitable worlds. Follow for daily science!",
+  "hashtags": [
+    "#exoplanets",
+    "#space",
+    "#science",
+    "#discovery",
+    "#K218b",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

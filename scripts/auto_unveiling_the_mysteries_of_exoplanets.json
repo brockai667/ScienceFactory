@@ -1,0 +1,66 @@
+{
+  "title": "Unveiling the Mysteries of Exoplanets",
+  "thumb": "EXOPLANET MYSTERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Over 5,000 exoplanets have been confirmed so far!",
+      "hook_top": "5000 EXOPLANETS DISCOVERED",
+      "query": "exoplanet discoveries",
+      "query2": "space exploration"
+    },
+    {
+      "role": "fact",
+      "text": "The Kepler Space Telescope discovered the majority of these.",
+      "chips": [
+        {
+          "t": "MAX 22 CHARS",
+          "on": "Kepler Space Telescope",
+          "style": "white"
+        }
+      ],
+      "punch": "incredible",
+      "query": "Kepler Space Telescope",
+      "query2": "space telescopes"
+    },
+    {
+      "role": "fact",
+      "text": "Some exoplanets may have conditions for life as we know it.",
+      "chips": [
+        {
+          "t": "MAX 22 CHARS",
+          "on": "conditions for life",
+          "style": "accent"
+        }
+      ],
+      "punch": "potential",
+      "query": "exoplanet conditions for life",
+      "query2": "habitable zones"
+    },
+    {
+      "role": "reveal",
+      "text": "Yet, we've only scratched the surface!",
+      "reveal_top": "LIFE BEYOND OUR REACH",
+      "query": "unexplored space",
+      "query2": "astronomy"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science follow",
+      "query2": "daily science"
+    }
+  ],
+  "description": "The search for exoplanets reveals more than just planets; it suggests potential homes for life. Follow for daily science!",
+  "hashtags": [
+    "#Exoplanets",
+    "#NASA",
+    "#ScienceFacts",
+    "#Astronomy",
+    "#SpaceExploration",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
