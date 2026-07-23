@@ -2,7 +2,7 @@ name: ScienceFactory (Curio) Daily
 
 on:
   schedule:
-    - cron: "24 20 * * *"   # 01:24 UTC (~03:24 Bratislava) - skoro rano, hotove davno pred publik. slotom
+    - cron: "54 3 * * *"   # rozhadzane (anti rate-limit GitHub Models)
   workflow_dispatch: {}    # umoznuje rucne spustenie z GitHub UI
 
 permissions:
