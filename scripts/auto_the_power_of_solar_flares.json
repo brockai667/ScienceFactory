@@ -1,0 +1,66 @@
+{
+  "title": "The Power of Solar Flares!",
+  "thumb": "SOLAR FLARE POWER",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A single solar flare can release energy equivalent to billions of atomic bombs!",
+      "hook_top": "BILLIONS OF ATOMIC BOMBS",
+      "query": "solar flare energy",
+      "query2": "solar phenomena"
+    },
+    {
+      "role": "fact",
+      "text": "Solar flares are caused by magnetic energy being released in the sun's atmosphere.",
+      "chips": [
+        {
+          "t": "MAX 22 CHARS",
+          "on": "solar magnetic energy",
+          "style": "white"
+        }
+      ],
+      "punch": "explosive",
+      "query": "solar flare causes",
+      "query2": "sun's atmosphere"
+    },
+    {
+      "role": "fact",
+      "text": "They can disrupt satellites and electrical grids on Earth.",
+      "chips": [
+        {
+          "t": "MAX 22 CHARS",
+          "on": "disrupt satellites",
+          "style": "accent"
+        }
+      ],
+      "punch": "impactful",
+      "query": "solar flares disrupt",
+      "query2": "effects of solar flares"
+    },
+    {
+      "role": "reveal",
+      "text": "But they also help us learn about the sun's behavior!",
+      "reveal_top": "TEACHING US ABOUT THE SUN",
+      "query": "studying solar flares",
+      "query2": "solar observations"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science follow",
+      "query2": "daily science"
+    }
+  ],
+  "description": "Solar flares are powerful events that impact technology and deepen our understanding of the sun. Follow for daily science!",
+  "hashtags": [
+    "#SolarFlares",
+    "#Space",
+    "#Sun",
+    "#Physics",
+    "#Astrophysics",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

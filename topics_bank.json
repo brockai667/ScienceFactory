@@ -5723,5 +5723,181 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Astronomers Discover the First Moon Beyond Our Solar System!",
+    "thumb": "FIRST EXO MOON!",
+    "scenes": [
+      {
+        "hook_top": "EXO MOON FOUND",
+        "query": "exoplanet moon discovery",
+        "query2": "exoplanets",
+        "role": "hook",
+        "text": "Astronomers have found a moon beyond our solar system!"
+      },
+      {
+        "num": 1,
+        "label": "FIRST OF ITS KIND",
+        "label_on": "first",
+        "text": "This moon orbits a distant exoplanet called Kepler-1625b.",
+        "query": "Kepler-1625b exoplanet",
+        "query2": "exoplanets",
+        "role": "count"
+      },
+      {
+        "num": 2,
+        "label": "LARGE AND UNIQUE",
+        "label_on": "large",
+        "text": "It is about the size of Neptune, making it extraordinarily large for a moon.",
+        "query": "Neptune size comparison",
+        "query2": "neptune",
+        "role": "count"
+      },
+      {
+        "num": 3,
+        "label": "SIGNIFICANT FINDING",
+        "label_on": "significant",
+        "text": "This discovery opens up new possibilities for moon exploration in outer space.",
+        "query": "moon exploration",
+        "query2": "space exploration",
+        "role": "count"
+      },
+      {
+        "query": "science news",
+        "query2": "latest discoveries",
+        "role": "cta",
+        "text": "Follow for a new science fact every day."
+      }
+    ],
+    "description": "Astronomers have made an incredible discovery by finding the first known moon outside our solar system. Follow for daily science!",
+    "hashtags": [
+      "#exoplanet",
+      "#moon",
+      "#astronomy",
+      "#space",
+      "#discovery",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Moon's Hidden Crater Network!",
+    "thumb": "MOON CRATERS REVEALED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Over 300,000 craters are hidden on the Moon's surface!",
+        "hook_top": "HIDDEN MOON CRATERS REVEALED",
+        "query": "moon craters",
+        "query2": "moon surface"
+      },
+      {
+        "role": "fact",
+        "text": "Some craters are over 1,500 kilometers wide.",
+        "chips": [
+          {
+            "t": "1,500 kilometers",
+            "on": "spatial size",
+            "style": "accent"
+          }
+        ],
+        "query": "large moon crater",
+        "query2": "moon surface"
+      },
+      {
+        "role": "fact",
+        "text": "More than 15,000 craters are larger than 20 kilometers.",
+        "chips": [
+          {
+            "t": "15,000 craters",
+            "on": "spatial count",
+            "style": "white"
+          }
+        ],
+        "query": "moon craters",
+        "query2": "moon surface"
+      },
+      {
+        "role": "reveal",
+        "text": "Many are hidden beneath lunar dust!",
+        "reveal_top": "CRATERS BURIED UNDER DUST",
+        "query": "lunar dust",
+        "query2": "moon surface"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "follow science",
+        "query2": "science videos"
+      }
+    ],
+    "description": "The Moon's surface holds a shocking secret of over 300,000 craters, many obscured by dust! Follow for daily science!",
+    "hashtags": [
+      "#moon",
+      "#science",
+      "#craters",
+      "#space",
+      "#discovery",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Mars Was Once a Blue Planet!",
+    "thumb": "MARS' OCEANS MYTH!",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "3 billion years ago, Mars had vast oceans.",
+        "hook_top": "MARS HAD OCEANS",
+        "query": "Mars oceans",
+        "query2": "Mars water history"
+      },
+      {
+        "role": "myth",
+        "text": "Many believe Mars is a completely dry planet.",
+        "label": "Mars is completely dry",
+        "query": "dry Mars landscape",
+        "query2": "Mars desert image"
+      },
+      {
+        "role": "truth",
+        "text": "In reality, liquid water once existed on Mars' surface.",
+        "label": "Mars had liquid water",
+        "query": "Mars water evidence",
+        "query2": "Mars past oceans"
+      },
+      {
+        "role": "callout",
+        "text": "WATER ON MARS!",
+        "label": "Once covered in liquid",
+        "sub": "Mars had oceans long ago!",
+        "label_on": "oceans",
+        "query": "Mars Was Once a Blue Planet!",
+        "query2": "cinematic nature landscape"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science experiments",
+        "query2": "space exploration"
+      }
+    ],
+    "description": "Mars was once home to vast oceans, challenging our understanding of the planet. Follow for daily science!",
+    "hashtags": [
+      "#Mars",
+      "#science",
+      "#space",
+      "#mythbusting",
+      "#facts",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

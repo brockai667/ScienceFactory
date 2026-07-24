@@ -1,0 +1,55 @@
+{
+  "title": "The Truth Behind Pluto's Size!",
+  "thumb": "PLUTO'S TRUE SIZE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Pluto is no longer considered a planet.",
+      "hook_top": "PLUTO'S PLANET STATUS CHANGED",
+      "query": "Pluto dwarf planet",
+      "query2": "Pluto images"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe Pluto was unfairly demoted.",
+      "label": "Pluto's Demotion Was Unjust",
+      "query": "Pluto night sky",
+      "query2": "Pluto historical images"
+    },
+    {
+      "role": "truth",
+      "text": "Pluto is classified as a dwarf planet due to its size and orbit.",
+      "label": "Dwarf Planet Classification",
+      "query": "dwarf planet definition",
+      "query2": "exoplanets classification"
+    },
+    {
+      "role": "callout",
+      "text": "Smaller than Earth!",
+      "label": "Size Matters!",
+      "sub": "Understanding Pluto's Size",
+      "label_on": "Pluto",
+      "query": "The Truth Behind Pluto's Size!",
+      "query2": "cinematic nature landscape"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science videos",
+      "query2": "space exploration"
+    }
+  ],
+  "description": "Explore why Pluto's classification changed and its real status today. Follow for daily science!",
+  "hashtags": [
+    "#Pluto",
+    "#DwarfPlanet",
+    "#space",
+    "#astrophysics",
+    "#science",
+    "#shorts",
+    "#fyp",
+    "#NASA"
+  ],
+  "place": "",
+  "country": ""
+}
