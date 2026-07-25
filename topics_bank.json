@@ -5899,5 +5899,191 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "India's First Private Rocket Reaches Orbit!",
+    "thumb": "PRIVATE ROCKET SUCCESS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "India just launched its first private rocket into space!",
+        "hook_top": "PRIVATE ROCKET IN SPACE",
+        "query": "Vikram-1 rocket launch",
+        "query2": "Indian space launch"
+      },
+      {
+        "role": "fact",
+        "text": "The Vikram-1 rocket achieved orbit on its first attempt.",
+        "chips": [
+          {
+            "t": "FIRST ATTEMPT",
+            "on": "orbit",
+            "style": "accent"
+          }
+        ],
+        "punch": "amazing!",
+        "query": "Vikram-1 rocket launch",
+        "query2": "Indian rocket launch"
+      },
+      {
+        "role": "fact",
+        "text": "This mission was developed by Skyroot Aerospace.",
+        "chips": [
+          {
+            "t": "SKYROOT AEROSPACE",
+            "on": "Skyroot",
+            "style": "white"
+          }
+        ],
+        "query": "Skyroot Aerospace",
+        "query2": "Indian aerospace company"
+      },
+      {
+        "role": "reveal",
+        "text": "It opens a new chapter for India's space industry.",
+        "reveal_top": "NEW ERA IN SPACE",
+        "query": "Indian space industry",
+        "query2": "India space exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science content",
+        "query2": "science education"
+      }
+    ],
+    "description": "India achieves a milestone with its first privately developed rocket reaching orbit. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#technology",
+      "#space",
+      "#rocket",
+      "#Vikram1",
+      "#shorts",
+      "#fyp",
+      "#education"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The REAL Reason Space is Dark",
+    "thumb": "SPACE DARKNESS MYTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Space is totally dark because there's no light in space.",
+        "hook_top": "SPACE IS ALWAYS DARK",
+        "query": "space darkness",
+        "query2": "space night sky"
+      },
+      {
+        "role": "myth",
+        "text": "Many believe that space is completely devoid of light.",
+        "label": "Space is completely dark",
+        "query": "outer space",
+        "query2": "black hole"
+      },
+      {
+        "role": "truth",
+        "text": "In reality, space is filled with photons and light from stars.",
+        "label": "Space is filled with light",
+        "query": "stars in space",
+        "query2": "light in universe"
+      },
+      {
+        "role": "callout",
+        "text": "LIGHT EXISTS IN SPACE",
+        "label": "Illuminating Truth",
+        "sub": "Stars emit light throughout space.",
+        "label_on": "light",
+        "query": "light from stars",
+        "query2": "galaxy formation"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science facts video",
+        "query2": "science education"
+      }
+    ],
+    "description": "Many think space is pitch dark, but there’s actually light from countless stars. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#mythbusting",
+      "#light",
+      "#stars",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "A New Twist in Space Exploration!",
+    "thumb": "SPACE EXPLORATION BOOST",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA is launching Artemis III, its most complex mission yet!",
+        "hook_top": "NASA'S BIGGEST CHALLENGE YET",
+        "query": "NASA Artemis III launch",
+        "query2": "NASA space missions"
+      },
+      {
+        "role": "fact",
+        "text": "Artemis III will involve four astronauts in multiple spacecraft.",
+        "chips": [
+          {
+            "t": "4 ASTRONAUTS",
+            "on": "astronauts",
+            "style": "accent"
+          }
+        ],
+        "punch": "Crew!",
+        "query": "NASA astronauts",
+        "query2": "NASA missions overview"
+      },
+      {
+        "role": "fact",
+        "text": "This mission aims to land astronauts on the Moon by 2025.",
+        "chips": [
+          {
+            "t": "BY 2025",
+            "on": "2025",
+            "style": "white"
+          }
+        ],
+        "query": "Moon landing 2025",
+        "query2": "NASA lunar missions"
+      },
+      {
+        "role": "callout",
+        "text": "Exciting new era in space!",
+        "label": "NEW SPACE FRONTIERS",
+        "sub": "Join us on this journey!",
+        "label_on": "space",
+        "query": "A New Twist in Space Exploration!",
+        "query2": "cinematic nature landscape"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "NASA science news",
+        "query2": "space technology updates"
+      }
+    ],
+    "description": "Join NASA as it embarks on Artemis III, aiming for a lunar landing by 2025! Follow for daily science!",
+    "hashtags": [
+      "#NASA",
+      "#ArtemisIII",
+      "#SpaceExploration",
+      "#MoonLanding",
+      "#Science #Shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

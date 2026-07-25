@@ -1,0 +1,66 @@
+{
+  "title": "Pluto's Surprising Landscapes Revealed!",
+  "thumb": "PLUTO'S MYSTERIES",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's New Horizons found six massive landslides on Pluto.",
+      "hook_top": "PLUTO'S LANDSLIDES REVEALED",
+      "query": "New Horizons Pluto images",
+      "query2": "Pluto landscape"
+    },
+    {
+      "role": "fact",
+      "text": "These landslides suggest active geological processes on Pluto.",
+      "chips": [
+        {
+          "t": "6 LARGE LANDSLIDES",
+          "on": "landslides",
+          "style": "accent"
+        }
+      ],
+      "query": "Pluto geological features",
+      "query2": "Pluto distant world"
+    },
+    {
+      "role": "fact",
+      "text": "The terrains are more diverse than many scientists expected.",
+      "chips": [
+        {
+          "t": "DIVerse TERRAIN",
+          "on": "diverse",
+          "style": "white"
+        }
+      ],
+      "query": "Pluto varied terrain",
+      "query2": "Pluto geological diversity"
+    },
+    {
+      "role": "callout",
+      "text": "Active geology surprises us!",
+      "label": "SURPRISING GEOLOGY",
+      "sub": "What more could we discover?",
+      "label_on": "surprises",
+      "query": "Pluto exploration",
+      "query2": "NASA Pluto mission"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space exploration",
+      "query2": "NASA news"
+    }
+  ],
+  "description": "NASA's New Horizons has revealed unexpected landscapes on Pluto, showcasing its dynamic geology. Follow for daily science!",
+  "hashtags": [
+    "#Pluto",
+    "#NASA",
+    "#NewHorizons",
+    "#space",
+    "#discovery",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

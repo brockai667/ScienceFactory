@@ -1,0 +1,66 @@
+{
+  "title": "Astonishing Atmosphere on Exoplanet Discovered!",
+  "thumb": "EXOPLANET REVEAL",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An Earth-like exoplanet may have a significant atmosphere!",
+      "hook_top": "EARTHLIKE ATMOSPHERE",
+      "query": "Earth-like exoplanet",
+      "query2": "exoplanet atmosphere"
+    },
+    {
+      "role": "fact",
+      "text": "This exoplanet orbits a nearby star and shows potential for life.",
+      "chips": [
+        {
+          "t": "POTENTIAL FOR LIFE",
+          "on": "life",
+          "style": "accent"
+        }
+      ],
+      "query": "exoplanet habitability",
+      "query2": "nearby star systems"
+    },
+    {
+      "role": "fact",
+      "text": "Spectroscopic analysis suggests the presence of gases that could support life.",
+      "chips": [
+        {
+          "t": "LIFE-SUPPORTING GASES",
+          "on": "gases",
+          "style": "white"
+        }
+      ],
+      "query": "exoplanet atmosphere analysis",
+      "query2": "atmosphere composition"
+    },
+    {
+      "role": "callout",
+      "text": "Could life exist beyond Earth?",
+      "label": "LIFE BEYOND EARTH",
+      "sub": "The quest continues!",
+      "label_on": "life",
+      "query": "search for extraterrestrial life",
+      "query2": "exoplanets"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "space exploration",
+      "query2": "scientific discoveries"
+    }
+  ],
+  "description": "Scientists have discovered an Earth-like exoplanet with a possible atmosphere, raising questions about extraterrestrial life. Follow for daily science!",
+  "hashtags": [
+    "#exoplanet",
+    "#space",
+    "#atmosphere",
+    "#discovery",
+    "#life",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
