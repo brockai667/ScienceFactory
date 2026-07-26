@@ -1,0 +1,54 @@
+{
+  "title": "The New Frontier of Space Mirrors!",
+  "thumb": "SPACE MIRROR REVOLUTION",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Humanity is launching enormous space mirrors soon.",
+      "hook_top": "SPACE MIRRORS ARE COMING",
+      "query": "space mirror satellite",
+      "query2": "space mirrors"
+    },
+    {
+      "role": "fact",
+      "text": "The U.S. has approved a satellite designed to reflect sunlight back to Earth.",
+      "chips": [
+        {
+          "t": "SPACE SATELLITE",
+          "on": "space mirror",
+          "style": "white"
+        }
+      ],
+      "punch": "revolutionize",
+      "query": "space satellite",
+      "query2": "satellite technology"
+    },
+    {
+      "role": "callout",
+      "text": "Reflecting sunlight could alter climates.",
+      "label": "CLIMATE IMPACT!",
+      "sub": "Could it cool the Earth?",
+      "label_on": "impact",
+      "query": "climate change",
+      "query2": "weather patterns"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "daily science news",
+      "query2": "science updates"
+    }
+  ],
+  "description": "A giant space mirror might change how we interact with our planet's climate. Follow for daily science!",
+  "hashtags": [
+    "#space",
+    "#science",
+    "#technology",
+    "#satellite",
+    "#climate",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

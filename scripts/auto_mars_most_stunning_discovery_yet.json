@@ -1,0 +1,54 @@
+{
+  "title": "Mars' Most Stunning Discovery Yet!",
+  "thumb": "MARS VOLCANIC SECRETS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA just found volcanic activity in Mars' past!",
+      "hook_top": "VOLCANIC MARS REVEALED",
+      "query": "Mars volcanic activity",
+      "query2": "Mars exploration"
+    },
+    {
+      "role": "fact",
+      "text": "Large landslides discovered by New Horizons indicate Mars had flowing lava.",
+      "chips": [
+        {
+          "t": "LARGE LANDSLIDES",
+          "on": "landslides",
+          "style": "accent"
+        }
+      ],
+      "punch": "amazing",
+      "query": "Mars landscape",
+      "query2": "Mars geology"
+    },
+    {
+      "role": "callout",
+      "text": "This could change our understanding of Martian history.",
+      "label": "NEW MARS INSIGHTS!",
+      "sub": "History written in stone.",
+      "label_on": "insights",
+      "query": "Mars science",
+      "query2": "Mars history"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "daily space science",
+      "query2": "space updates"
+    }
+  ],
+  "description": "Discoveries like this reshape how we view the history of Mars! Follow for daily science!",
+  "hashtags": [
+    "#Mars",
+    "#NASA",
+    "#space",
+    "#science",
+    "#exploration",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

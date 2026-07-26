@@ -1,0 +1,57 @@
+{
+  "title": "Astronomical Discoveries Hidden in Plain Sight!",
+  "thumb": "HIDDEN PLANET DISCOVERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Two Telescopes Reveal a Planet Overlooked for Years.",
+      "hook_top": "PLANET FOUND IN PLAIN SIGHT",
+      "query": "two telescopes discovering planet",
+      "query2": "planet discovery telescopes"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "HIDDEN IN PLAIN SIGHT",
+      "label_on": "point one",
+      "text": "The planet was hiding in the data of stars we already knew.",
+      "query": "star data analysis",
+      "query2": "data hidden planet"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "UNEXPECTED FINDING",
+      "label_on": "point two",
+      "text": "It orbits a star similar to our Sun but was undetected until now.",
+      "query": "star similar to sun",
+      "query2": "solar system discovery"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "A NEW PERSPECTIVE",
+      "label_on": "point three",
+      "text": "This discovery encourages astronomers to revisit old data for more clues.",
+      "query": "data revisiting astronomy",
+      "query2": "astronomy data analysis"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science news updates",
+      "query2": "latest science discoveries"
+    }
+  ],
+  "description": "A groundbreaking discovery of a planet hiding in plain sight has been made using existing data. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#discovery",
+    "#space",
+    "#astronomy",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
