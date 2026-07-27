@@ -6316,5 +6316,182 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Exploring the Universe: Three Stunning Cluster Facts!",
+    "thumb": "STUNNING STAR CLUSTERS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Over 100,000 stars cluster together in space!",
+        "hook_top": "100000 STARS IN A CLUSTER",
+        "query": "star cluster in space",
+        "query2": "stellar cluster photography"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "FAMOUS STAR CLUSTERS",
+        "label_on": "cluster",
+        "text": "The Pleiades cluster contains over 1,000 stars visible to the naked eye.",
+        "query": "Pleiades star cluster",
+        "query2": "Pleiades constellation"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "HERCULES CLUSTER",
+        "label_on": "Hercules",
+        "text": "The Hercules Cluster has around 1000 galaxies packed into a small area.",
+        "query": "Hercules galaxy cluster",
+        "query2": "Hercules constellation"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "RICH IN STARS",
+        "label_on": "rich clusters",
+        "text": "Rich clusters can host up to 2,000 galaxies in just a few million light-years.",
+        "query": "rich galaxy cluster",
+        "query2": "massive galaxy cluster"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space science",
+        "query2": "latest in astronomy"
+      }
+    ],
+    "description": "Discover the breathtaking vastness of star clusters and their incredible facts! Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#astronomy",
+      "#clusters",
+      "#universe",
+      "#shorts",
+      "#fyp",
+      "#discover"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Unseen Wonders of the Milky Way!",
+    "thumb": "MILKY WAY MAGIC",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Over 100,000 stars are hiding in plain sight!",
+        "hook_top": "HIDING STARS REVEALED",
+        "query": "milky way galaxy",
+        "query2": "stars in the galaxy"
+      },
+      {
+        "role": "fact",
+        "text": "Many stars in our galaxy are undetected by current telescopes.",
+        "chips": [
+          {
+            "t": "UNDETECTED STARS",
+            "on": "stars",
+            "style": "accent"
+          }
+        ],
+        "query": "telescopes observing stars",
+        "query2": "hidden stars in space"
+      },
+      {
+        "role": "fact",
+        "text": "Recent studies suggest these stars could significantly impact galactic dynamics.",
+        "chips": [
+          {
+            "t": "GALACTIC IMPACT!",
+            "on": "impact",
+            "style": "white"
+          }
+        ],
+        "query": "galaxy dynamics illustration",
+        "query2": "galactic star formations"
+      },
+      {
+        "role": "reveal",
+        "text": "Astronomers are now using AI to locate these hidden stars!",
+        "reveal_top": "AI FINDING HIDDEN STARS",
+        "query": "AI searching stars",
+        "query2": "artificial intelligence astronomy"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science discoveries",
+        "query2": "latest science news"
+      }
+    ],
+    "description": "Discover how hidden stars affect our galaxy and the cutting-edge AI being used to find them. Follow for daily science!",
+    "hashtags": [
+      "#science",
+      "#milkyway",
+      "#stars",
+      "#AI",
+      "#astronomy",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Myth About Mars' Water!",
+    "thumb": "MARS WATER MYTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mars is a barren desert with no water.",
+        "hook_top": "MARS HAS NO WATER",
+        "query": "Mars surface images",
+        "query2": "Mars landscape"
+      },
+      {
+        "role": "myth",
+        "text": "Many believe Mars is completely dry and devoid of any water.",
+        "label": "Mars is completely dry",
+        "query": "Mars water exploration",
+        "query2": "Mars exploration"
+      },
+      {
+        "role": "truth",
+        "text": "In fact, Mars has ice caps and evidence of liquid water flowing in ancient times.",
+        "label": "Mars has ancient water",
+        "query": "Mars ice caps",
+        "query2": "Mars water evidence"
+      },
+      {
+        "role": "callout",
+        "text": "MARS HAD WATER!",
+        "label": "Mars had liquid water",
+        "sub": "Evidence of ancient rivers exists.",
+        "label_on": "water",
+        "query": "Mars ancient rivers",
+        "query2": "Mars evidence water"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "science facts",
+        "query2": "latest science"
+      }
+    ],
+    "description": "Mars was once home to water, with evidence indicating ancient rivers. Follow for daily science!",
+    "hashtags": [
+      "#Mars",
+      "#ScienceMyth",
+      "#Water",
+      "#SpaceExploration",
+      "#NASA",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

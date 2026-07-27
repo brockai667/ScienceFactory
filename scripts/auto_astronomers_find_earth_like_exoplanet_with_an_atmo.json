@@ -1,0 +1,66 @@
+{
+  "title": "Astronomers Find Earth-Like Exoplanet with an Atmosphere!",
+  "thumb": "EXOPLANET ATMOSPHERE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A newly discovered exoplanet has its own atmosphere!",
+      "hook_top": "EARTHLIKE EXOPLANET FOUND",
+      "query": "earth-like exoplanet",
+      "query2": "exoplanet atmosphere"
+    },
+    {
+      "role": "fact",
+      "text": "The planet is located around 100 light-years away and is rocky.",
+      "chips": [
+        {
+          "t": "100 light-years",
+          "on": "distance",
+          "style": "white"
+        }
+      ],
+      "punch": "incredible!",
+      "query": "rocky exoplanet",
+      "query2": "planet atmosphere"
+    },
+    {
+      "role": "fact",
+      "text": "It may have conditions suitable for liquid water.",
+      "chips": [
+        {
+          "t": "liquid water",
+          "on": "water",
+          "style": "accent"
+        }
+      ],
+      "query": "liquid water on exoplanet",
+      "query2": "conditions for life"
+    },
+    {
+      "role": "callout",
+      "text": "Could this be our next home?",
+      "label": "NEXT HOME?",
+      "sub": "A planet with potential!",
+      "label_on": "home",
+      "query": "exoplanet potential",
+      "query2": "life on exoplanets"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science facts",
+      "query2": "space discoveries"
+    }
+  ],
+  "description": "Astronomers have found an Earth-like exoplanet with an atmosphere that could support life. Follow for daily science!",
+  "hashtags": [
+    "#exoplanet",
+    "#space",
+    "#astronomy",
+    "#science",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

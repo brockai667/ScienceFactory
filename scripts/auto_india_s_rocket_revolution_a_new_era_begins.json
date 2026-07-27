@@ -1,0 +1,57 @@
+{
+  "title": "India's Rocket Revolution: A New Era Begins!",
+  "thumb": "VIKRAM-1 ROCKET FLIGHT",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Vikram-1 Marks India’s Leap into Private Space Exploration.",
+      "hook_top": "INDIA'S ROCKET SUCCESS",
+      "query": "Vikram-1 rocket launch",
+      "query2": "India space revolution"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "PRIVATELY FUNDED",
+      "label_on": "point one",
+      "text": "This is India's first privately developed orbital rocket, making history.",
+      "query": "private orbital rocket",
+      "query2": "rocket history India"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "COMPLEX MISSION",
+      "label_on": "point two",
+      "text": "Vikram-1 successfully reached orbit on its very first flight.",
+      "query": "Vikram-1 first flight",
+      "query2": "first flight mission success"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "FUTURE PLANS",
+      "label_on": "point three",
+      "text": "This success paves the way for India’s future in space missions.",
+      "query": "India future space missions",
+      "query2": "space mission plans India"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science updates",
+      "query2": "latest space news"
+    }
+  ],
+  "description": "India has taken a significant step with the successful launch of the Vikram-1 rocket. Follow for daily science!",
+  "hashtags": [
+    "#India",
+    "#space",
+    "#rocket",
+    "#Vikram1",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

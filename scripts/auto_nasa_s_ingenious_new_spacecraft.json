@@ -1,0 +1,65 @@
+{
+  "title": "NASA's Ingenious New Spacecraft!",
+  "thumb": "NASA'S NEW SPACECRAFT",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "In 2024, NASA will launch a groundbreaking spacecraft.",
+      "hook_top": "NASA'S NEXT BIG THING",
+      "query": "NASA spacecraft launch 2024",
+      "query2": "NASA spacecraft"
+    },
+    {
+      "role": "fact",
+      "text": "This spacecraft will study asteroids, including a rare metallic one.",
+      "chips": [
+        {
+          "t": "RARE METALLIC ASTEROID",
+          "on": "metallic",
+          "style": "accent"
+        }
+      ],
+      "query": "metallic asteroid",
+      "query2": "asteroid exploration"
+    },
+    {
+      "role": "fact",
+      "text": "Its mission aims to unlock secrets about the solar system's formation.",
+      "chips": [
+        {
+          "t": "SOLAR SYSTEM FORMATION",
+          "on": "formation",
+          "style": "white"
+        }
+      ],
+      "query": "solar system formation",
+      "query2": "solar system"
+    },
+    {
+      "role": "reveal",
+      "text": "It's designed to make close-up observations for the first time!",
+      "reveal_top": "CLOSEUP ASTEROID INSIGHT",
+      "query": "NASA close-up asteroid",
+      "query2": "asteroid"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "science news",
+      "query2": "latest science discoveries"
+    }
+  ],
+  "description": "Get ready for NASA's revolutionary spacecraft that will explore asteroids! Follow for daily science!",
+  "hashtags": [
+    "#NASA",
+    "#Space",
+    "#Asteroids",
+    "#science",
+    "#technology",
+    "#innovation",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
