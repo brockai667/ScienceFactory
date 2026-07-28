@@ -1,0 +1,58 @@
+{
+  "title": "Astronomers Discover the First Moon Beyond Our Solar System!",
+  "thumb": "FIRST EXO MOON!",
+  "scenes": [
+    {
+      "hook_top": "EXO MOON FOUND",
+      "query": "exoplanet moon discovery",
+      "query2": "exoplanets",
+      "role": "hook",
+      "text": "Astronomers have found a moon beyond our solar system!"
+    },
+    {
+      "num": 1,
+      "label": "FIRST OF ITS KIND",
+      "label_on": "first",
+      "text": "This moon orbits a distant exoplanet called Kepler-1625b.",
+      "query": "Kepler-1625b exoplanet",
+      "query2": "exoplanets",
+      "role": "count"
+    },
+    {
+      "num": 2,
+      "label": "LARGE AND UNIQUE",
+      "label_on": "large",
+      "text": "It is about the size of Neptune, making it extraordinarily large for a moon.",
+      "query": "Neptune size comparison",
+      "query2": "neptune",
+      "role": "count"
+    },
+    {
+      "num": 3,
+      "label": "SIGNIFICANT FINDING",
+      "label_on": "significant",
+      "text": "This discovery opens up new possibilities for moon exploration in outer space.",
+      "query": "moon exploration",
+      "query2": "space exploration",
+      "role": "count"
+    },
+    {
+      "query": "science news",
+      "query2": "latest discoveries",
+      "role": "cta",
+      "text": "Follow for a new science fact every day."
+    }
+  ],
+  "description": "Astronomers have made an incredible discovery by finding the first known moon outside our solar system. Follow for daily science!",
+  "hashtags": [
+    "#exoplanet",
+    "#moon",
+    "#astronomy",
+    "#space",
+    "#discovery",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

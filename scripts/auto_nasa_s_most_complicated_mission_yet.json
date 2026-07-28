@@ -1,0 +1,54 @@
+{
+  "title": "NASA's Most Complicated Mission Yet!",
+  "thumb": "COMPLICATED MISSION",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Four astronauts, three spacecraft, two weeks in orbit!",
+      "hook_top": "FOUR ASTRONAUTS THREE CRAFT",
+      "query": "NASA Artemis III mission",
+      "query2": "NASA missions"
+    },
+    {
+      "role": "fact",
+      "text": "Artemis III aims to land astronauts on the Moon in 2025.",
+      "chips": [
+        {
+          "t": "2025",
+          "on": "land",
+          "style": "white"
+        }
+      ],
+      "punch": "moon",
+      "query": "NASA Artemis III",
+      "query2": "moon landing"
+    },
+    {
+      "role": "callout",
+      "text": "NASA's bold return to the Moon!",
+      "label": "BOLD RETURN",
+      "sub": "Prepare for a new lunar age!",
+      "label_on": "return",
+      "query": "NASA Moon return",
+      "query2": "lunar missions"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science technology",
+      "query2": "latest science news"
+    }
+  ],
+  "description": "Artemis III is set to revolutionize our understanding of the Moon and beyond. Follow for daily science!",
+  "hashtags": [
+    "#NASA",
+    "#ArtemisIII",
+    "#moon",
+    "#space",
+    "#shorts",
+    "#fyp",
+    "#missions"
+  ],
+  "place": "",
+  "country": ""
+}
