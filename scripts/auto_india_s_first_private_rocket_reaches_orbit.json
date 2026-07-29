@@ -1,0 +1,66 @@
+{
+  "title": "India's First Private Rocket Reaches Orbit!",
+  "thumb": "PRIVATE ROCKET SUCCESS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "India just launched its first private rocket into space!",
+      "hook_top": "PRIVATE ROCKET IN SPACE",
+      "query": "Vikram-1 rocket launch",
+      "query2": "Indian space launch"
+    },
+    {
+      "role": "fact",
+      "text": "The Vikram-1 rocket achieved orbit on its first attempt.",
+      "chips": [
+        {
+          "t": "FIRST ATTEMPT",
+          "on": "orbit",
+          "style": "accent"
+        }
+      ],
+      "punch": "amazing!",
+      "query": "Vikram-1 rocket launch",
+      "query2": "Indian rocket launch"
+    },
+    {
+      "role": "fact",
+      "text": "This mission was developed by Skyroot Aerospace.",
+      "chips": [
+        {
+          "t": "SKYROOT AEROSPACE",
+          "on": "Skyroot",
+          "style": "white"
+        }
+      ],
+      "query": "Skyroot Aerospace",
+      "query2": "Indian aerospace company"
+    },
+    {
+      "role": "reveal",
+      "text": "It opens a new chapter for India's space industry.",
+      "reveal_top": "NEW ERA IN SPACE",
+      "query": "Indian space industry",
+      "query2": "India space exploration"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science content",
+      "query2": "science education"
+    }
+  ],
+  "description": "India achieves a milestone with its first privately developed rocket reaching orbit. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#technology",
+    "#space",
+    "#rocket",
+    "#Vikram1",
+    "#shorts",
+    "#fyp",
+    "#education"
+  ],
+  "place": "",
+  "country": ""
+}

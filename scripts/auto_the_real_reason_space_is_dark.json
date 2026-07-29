@@ -1,0 +1,54 @@
+{
+  "title": "The REAL Reason Space is Dark",
+  "thumb": "SPACE DARKNESS MYTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Space is totally dark because there's no light in space.",
+      "hook_top": "SPACE IS ALWAYS DARK",
+      "query": "space darkness",
+      "query2": "space night sky"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe that space is completely devoid of light.",
+      "label": "Space is completely dark",
+      "query": "outer space",
+      "query2": "black hole"
+    },
+    {
+      "role": "truth",
+      "text": "In reality, space is filled with photons and light from stars.",
+      "label": "Space is filled with light",
+      "query": "stars in space",
+      "query2": "light in universe"
+    },
+    {
+      "role": "callout",
+      "text": "LIGHT EXISTS IN SPACE",
+      "label": "Illuminating Truth",
+      "sub": "Stars emit light throughout space.",
+      "label_on": "light",
+      "query": "light from stars",
+      "query2": "galaxy formation"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "science facts video",
+      "query2": "science education"
+    }
+  ],
+  "description": "Many think space is pitch dark, but there’s actually light from countless stars. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#mythbusting",
+    "#light",
+    "#stars",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

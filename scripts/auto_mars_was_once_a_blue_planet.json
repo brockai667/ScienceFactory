@@ -1,0 +1,54 @@
+{
+  "title": "Mars Was Once a Blue Planet!",
+  "thumb": "MARS' OCEANS MYTH!",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "3 billion years ago, Mars had vast oceans.",
+      "hook_top": "MARS HAD OCEANS",
+      "query": "Mars oceans",
+      "query2": "Mars water history"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe Mars is a completely dry planet.",
+      "label": "Mars is completely dry",
+      "query": "dry Mars landscape",
+      "query2": "Mars desert image"
+    },
+    {
+      "role": "truth",
+      "text": "In reality, liquid water once existed on Mars' surface.",
+      "label": "Mars had liquid water",
+      "query": "Mars water evidence",
+      "query2": "Mars past oceans"
+    },
+    {
+      "role": "callout",
+      "text": "WATER ON MARS!",
+      "label": "Once covered in liquid",
+      "sub": "Mars had oceans long ago!",
+      "label_on": "oceans",
+      "query": "Mars Was Once a Blue Planet!",
+      "query2": "cinematic nature landscape"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "science experiments",
+      "query2": "space exploration"
+    }
+  ],
+  "description": "Mars was once home to vast oceans, challenging our understanding of the planet. Follow for daily science!",
+  "hashtags": [
+    "#Mars",
+    "#science",
+    "#space",
+    "#mythbusting",
+    "#facts",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
