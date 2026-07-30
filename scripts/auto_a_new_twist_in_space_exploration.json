@@ -1,0 +1,66 @@
+{
+  "title": "A New Twist in Space Exploration!",
+  "thumb": "SPACE EXPLORATION BOOST",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA is launching Artemis III, its most complex mission yet!",
+      "hook_top": "NASA'S BIGGEST CHALLENGE YET",
+      "query": "NASA Artemis III launch",
+      "query2": "NASA space missions"
+    },
+    {
+      "role": "fact",
+      "text": "Artemis III will involve four astronauts in multiple spacecraft.",
+      "chips": [
+        {
+          "t": "4 ASTRONAUTS",
+          "on": "astronauts",
+          "style": "accent"
+        }
+      ],
+      "punch": "Crew!",
+      "query": "NASA astronauts",
+      "query2": "NASA missions overview"
+    },
+    {
+      "role": "fact",
+      "text": "This mission aims to land astronauts on the Moon by 2025.",
+      "chips": [
+        {
+          "t": "BY 2025",
+          "on": "2025",
+          "style": "white"
+        }
+      ],
+      "query": "Moon landing 2025",
+      "query2": "NASA lunar missions"
+    },
+    {
+      "role": "callout",
+      "text": "Exciting new era in space!",
+      "label": "NEW SPACE FRONTIERS",
+      "sub": "Join us on this journey!",
+      "label_on": "space",
+      "query": "A New Twist in Space Exploration!",
+      "query2": "cinematic nature landscape"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "NASA science news",
+      "query2": "space technology updates"
+    }
+  ],
+  "description": "Join NASA as it embarks on Artemis III, aiming for a lunar landing by 2025! Follow for daily science!",
+  "hashtags": [
+    "#NASA",
+    "#ArtemisIII",
+    "#SpaceExploration",
+    "#MoonLanding",
+    "#Science #Shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

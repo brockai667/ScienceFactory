@@ -6854,5 +6854,169 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Three Incredible Facts About the Milky Way!",
+    "thumb": "MILKY WAY REVEALED",
+    "scenes": [
+      {
+        "hook_top": "100 BILLION STARS",
+        "query": "Milky Way galaxy stars",
+        "query2": "galaxy images",
+        "num": 1,
+        "label": "BILLIONS OF STARS",
+        "label_on": "stars",
+        "role": "hook",
+        "text": "Over 100 billion stars reside in our Milky Way!"
+      },
+      {
+        "query": "Andromeda Galaxy collision",
+        "query2": "Milky Way collision",
+        "num": 2,
+        "label": "COLLISION COURSE",
+        "label_on": "collision",
+        "role": "count",
+        "text": "The Milky Way is on a collision course with the Andromeda Galaxy."
+      },
+      {
+        "query": "barred spiral galaxy",
+        "query2": "spiral galaxies",
+        "num": 3,
+        "label": "BARRED SPIRAL",
+        "label_on": "barred",
+        "role": "count",
+        "text": "Our galaxy is a barred spiral, with a unique central bar structure."
+      },
+      {
+        "query": "Milky Way galaxy",
+        "query2": "galaxy images",
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind."
+      }
+    ],
+    "description": "Discover the staggering details of our Milky Way galaxy, from its stars to its cosmic neighbors. Follow for daily science!",
+    "hashtags": [
+      "#MilkyWay",
+      "#Galaxy",
+      "#Space",
+      "#Astronomy",
+      "#ScienceFacts",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "NASA's New Telescope: Unveiling Cosmic Secrets!",
+    "thumb": "COSMIC SECRETS REVEALED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A groundbreaking telescope launched to uncover the universe!",
+        "hook_top": "NEW TELESCOPE NEW SECRETS",
+        "query": "NASA telescope launch",
+        "query2": "new telescope"
+      },
+      {
+        "role": "fact",
+        "text": "NASA's Nancy Grace Roman Space Telescope can survey 100 times more area than Hubble.",
+        "chips": [
+          {
+            "t": "100 TIMES MORE",
+            "on": "survey",
+            "style": "white"
+          }
+        ],
+        "query": "NASA telescope overview",
+        "query2": "space telescope facts"
+      },
+      {
+        "role": "fact",
+        "text": "It will help us understand dark energy and the accelerating universe.",
+        "chips": [],
+        "query": "dark energy research",
+        "query2": "accelerating universe studies"
+      },
+      {
+        "role": "reveal",
+        "text": "This telescope could rewrite our understanding of cosmic expansion!",
+        "reveal_top": "COSMIC EXPANSION REDEFINED",
+        "query": "cosmic expansion",
+        "query2": "NASA discoveries"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "follow science news",
+        "query2": "daily science updates"
+      }
+    ],
+    "description": "The Nancy Grace Roman Space Telescope is set to revolutionize our grasp of the cosmos. Follow for daily science!",
+    "hashtags": [
+      "#NASA",
+      "#telescope",
+      "#space",
+      "#darkenergy",
+      "#cosmos",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Moon is NOT the Hottest Place!",
+    "thumb": "MOON HEAT MYTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "The Moon is often believed to be the hottest place in our solar system.",
+        "hook_top": "MOON'S HEAT MYTH",
+        "query": "moon surface temperature",
+        "query2": "moon landscape"
+      },
+      {
+        "role": "myth",
+        "text": "Many people think the Moon experiences extreme temperatures due to sunlight.",
+        "label": "Moon's Extreme Heat",
+        "query": "moon sunlight effect",
+        "query2": "sunlight on moon"
+      },
+      {
+        "role": "truth",
+        "text": "In reality, the hottest place is actually the surface of Venus, with temperatures reaching over 900°F.",
+        "label": "Venus is Hotter",
+        "query": "surface of Venus",
+        "query2": "Venus atmosphere"
+      },
+      {
+        "role": "callout",
+        "text": "Hottest in Solar System?",
+        "label": "Think Again!",
+        "sub": "The Moon is cooler than Venus.",
+        "label_on": "Hottest",
+        "query": "The Moon is NOT the Hottest Place!",
+        "query2": "cinematic nature landscape"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "moon science facts",
+        "query2": "Venus science facts"
+      }
+    ],
+    "description": "The Moon is thought to be extremely hot, but it's cooler than Venus. Follow for daily science!",
+    "hashtags": [
+      "#space",
+      "#moon",
+      "#venus",
+      "#science",
+      "#myths",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

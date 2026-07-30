@@ -1,0 +1,58 @@
+{
+  "title": "The Controversy Over Space Datacenters!",
+  "thumb": "SPACE DATACENTERS DEBATE",
+  "scenes": [
+    {
+      "hook_top": "SPACE DATACENTERS AT RISK",
+      "query": "space datacenters",
+      "query2": "space technology",
+      "role": "hook",
+      "text": "Experts warn space datacenters could harm Earth!"
+    },
+    {
+      "num": 1,
+      "label": "CARBON FOOTPRINT",
+      "label_on": "carbon",
+      "text": "Space datacenters may lead to significant carbon emissions globally.",
+      "query": "carbon emissions",
+      "query2": "environment impact",
+      "role": "count"
+    },
+    {
+      "num": 2,
+      "label": "HABITAT DAMAGE",
+      "label_on": "habitat",
+      "text": "Construction of these facilities could disrupt delicate space environments.",
+      "query": "disruption in space",
+      "query2": "space habitats",
+      "role": "count"
+    },
+    {
+      "num": 3,
+      "label": "DEEP SPACE RISK",
+      "label_on": "risk",
+      "text": "Potential for catastrophic collisions with satellites and other debris.",
+      "query": "space debris",
+      "query2": "satellite collisions",
+      "role": "count"
+    },
+    {
+      "query": "space exploration",
+      "query2": "latest space news",
+      "role": "cta",
+      "text": "Follow for a new science fact every day."
+    }
+  ],
+  "description": "The rise of space datacenters sparks controversy about their environmental impact. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#spacetechnology",
+    "#environment",
+    "#science",
+    "#satellites",
+    "#futuretech"
+  ],
+  "place": "",
+  "country": ""
+}
