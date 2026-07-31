@@ -1,0 +1,59 @@
+{
+  "title": "Exploring the Universe: Three Stunning Cluster Facts!",
+  "thumb": "STUNNING STAR CLUSTERS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Over 100,000 stars cluster together in space!",
+      "hook_top": "100000 STARS IN A CLUSTER",
+      "query": "star cluster in space",
+      "query2": "stellar cluster photography"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "FAMOUS STAR CLUSTERS",
+      "label_on": "cluster",
+      "text": "The Pleiades cluster contains over 1,000 stars visible to the naked eye.",
+      "query": "Pleiades star cluster",
+      "query2": "Pleiades constellation"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "HERCULES CLUSTER",
+      "label_on": "Hercules",
+      "text": "The Hercules Cluster has around 1000 galaxies packed into a small area.",
+      "query": "Hercules galaxy cluster",
+      "query2": "Hercules constellation"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "RICH IN STARS",
+      "label_on": "rich clusters",
+      "text": "Rich clusters can host up to 2,000 galaxies in just a few million light-years.",
+      "query": "rich galaxy cluster",
+      "query2": "massive galaxy cluster"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "space science",
+      "query2": "latest in astronomy"
+    }
+  ],
+  "description": "Discover the breathtaking vastness of star clusters and their incredible facts! Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#space",
+    "#astronomy",
+    "#clusters",
+    "#universe",
+    "#shorts",
+    "#fyp",
+    "#discover"
+  ],
+  "place": "",
+  "country": ""
+}

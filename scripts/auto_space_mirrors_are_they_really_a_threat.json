@@ -1,0 +1,48 @@
+{
+  "title": "Space Mirrors: Are They Really a Threat?",
+  "thumb": "SPACE MIRRORS DANGER",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Over 1,000 space mirrors could harm ecosystems!",
+      "hook_top": "SPACE MIRRORS COULD HURT EARTH",
+      "query": "space mirrors in orbit",
+      "query2": "satellite mirrors"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe space mirrors will only provide light.",
+      "label": "Only provide light",
+      "query": "solar space mirror concept",
+      "query2": "space mirrors"
+    },
+    {
+      "role": "truth",
+      "text": "In reality, they can alter ecosystems and climate.",
+      "label": "Alter ecosystems and climate",
+      "query": "environmental impact space mirrors",
+      "query2": "effects of space mirrors"
+    },
+    {
+      "role": "callout",
+      "text": "THINK AGAIN!",
+      "label": "Warning about space mirrors",
+      "sub": "Space mirrors may cause damage!",
+      "label_on": "DANGER",
+      "query": "space mirrors",
+      "query2": "space technology"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science communication",
+      "query2": "science topics"
+    }
+  ],
+  "description": "Space mirrors could have unintended environmental impacts, challenging the idea they only serve a beneficial purpose. Follow for daily science!",
+  "hashtags": [
+    "#space #technology #environment #science #mythbusters #shorts #fyp"
+  ],
+  "place": "",
+  "country": ""
+}

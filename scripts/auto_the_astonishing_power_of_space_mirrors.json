@@ -1,0 +1,65 @@
+{
+  "title": "The Astonishing Power of Space Mirrors!",
+  "thumb": "SPACE MIRRORS POWER",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Over 30 proposed space mirrors could illuminate our nights.",
+      "hook_top": "SPACE MIRRORS ILLUMINATE NIGHT",
+      "query": "space mirrors in orbit",
+      "query2": "space mirrors technology"
+    },
+    {
+      "role": "fact",
+      "text": "These mirrors can reflect sunlight and reduce light pollution.",
+      "chips": [
+        {
+          "t": "reduce light pollution",
+          "on": "reduce",
+          "style": "accent"
+        }
+      ],
+      "query": "light pollution",
+      "query2": "effects of light pollution"
+    },
+    {
+      "role": "fact",
+      "text": "Countries like China and the USA are exploring this technology.",
+      "chips": [
+        {
+          "t": "China and USA involved",
+          "on": "China",
+          "style": "white"
+        }
+      ],
+      "query": "China space technology",
+      "query2": "USA space projects"
+    },
+    {
+      "role": "callout",
+      "text": "SHINING A LIGHT!",
+      "label": "A BRIGHT FUTURE AHEAD",
+      "sub": "Exploring new technologies in space",
+      "label_on": "light",
+      "query": "The Astonishing Power of Space Mirrors!",
+      "query2": "cinematic nature landscape"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science technology",
+      "query2": "cinematic nature landscape"
+    }
+  ],
+  "description": "Space mirrors could revolutionize night lighting and cut down light pollution. Follow for daily science!",
+  "hashtags": [
+    "#Science",
+    "#Space",
+    "#Technology",
+    "#Innovation",
+    "#Shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
