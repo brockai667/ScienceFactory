@@ -1,0 +1,59 @@
+{
+  "title": "Three Astounding Facts About Voyager 1!",
+  "thumb": "VOYAGER 1 DISCOVERIES",
+  "scenes": [
+    {
+      "hook_top": "VOYAGER 1'S DISTANCE TRAVELED",
+      "query": "Voyager 1 in space",
+      "query2": "space exploration",
+      "role": "hook",
+      "text": "Voyager 1 has traveled over 14 billion miles since launch!"
+    },
+    {
+      "num": 1,
+      "label": "FIRST INTERSTELLAR PRO",
+      "label_on": "first",
+      "text": "Voyager 1 is the first human-made object to enter interstellar space.",
+      "query": "interstellar space Voyager 1",
+      "query2": "space probes",
+      "role": "count"
+    },
+    {
+      "num": 2,
+      "label": "GOLDEN RECORD MESSAGE",
+      "label_on": "record",
+      "text": "It carries a Golden Record with sounds and images of Earth.",
+      "query": "Golden Record Voyager 1",
+      "query2": "Voyager Golden Record",
+      "role": "count"
+    },
+    {
+      "num": 3,
+      "label": "DATA TRANSMISSION",
+      "label_on": "data",
+      "text": "Voyager 1 sends data from over 14 billion miles away, taking over 21 hours to reach Earth.",
+      "query": "data transmission Voyager 1",
+      "query2": "space communication",
+      "role": "count"
+    },
+    {
+      "query": "NASA Voyager 1",
+      "query2": "space exploration",
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind."
+    }
+  ],
+  "description": "Voyager 1 continues to amaze us with its achievements in space exploration. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#NASA",
+    "#Voyager1",
+    "#spaceexploration",
+    "#sciencefacts",
+    "#technology",
+    "#interstellar"
+  ],
+  "place": "",
+  "country": ""
+}

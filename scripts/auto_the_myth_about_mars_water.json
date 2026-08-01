@@ -1,0 +1,54 @@
+{
+  "title": "The Myth About Mars' Water!",
+  "thumb": "MARS WATER MYTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Mars is a barren desert with no water.",
+      "hook_top": "MARS HAS NO WATER",
+      "query": "Mars surface images",
+      "query2": "Mars landscape"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe Mars is completely dry and devoid of any water.",
+      "label": "Mars is completely dry",
+      "query": "Mars water exploration",
+      "query2": "Mars exploration"
+    },
+    {
+      "role": "truth",
+      "text": "In fact, Mars has ice caps and evidence of liquid water flowing in ancient times.",
+      "label": "Mars has ancient water",
+      "query": "Mars ice caps",
+      "query2": "Mars water evidence"
+    },
+    {
+      "role": "callout",
+      "text": "MARS HAD WATER!",
+      "label": "Mars had liquid water",
+      "sub": "Evidence of ancient rivers exists.",
+      "label_on": "water",
+      "query": "Mars ancient rivers",
+      "query2": "Mars evidence water"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science facts",
+      "query2": "latest science"
+    }
+  ],
+  "description": "Mars was once home to water, with evidence indicating ancient rivers. Follow for daily science!",
+  "hashtags": [
+    "#Mars",
+    "#ScienceMyth",
+    "#Water",
+    "#SpaceExploration",
+    "#NASA",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

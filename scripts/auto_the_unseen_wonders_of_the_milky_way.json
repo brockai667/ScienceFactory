@@ -1,0 +1,64 @@
+{
+  "title": "The Unseen Wonders of the Milky Way!",
+  "thumb": "MILKY WAY MAGIC",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Over 100,000 stars are hiding in plain sight!",
+      "hook_top": "HIDING STARS REVEALED",
+      "query": "milky way galaxy",
+      "query2": "stars in the galaxy"
+    },
+    {
+      "role": "fact",
+      "text": "Many stars in our galaxy are undetected by current telescopes.",
+      "chips": [
+        {
+          "t": "UNDETECTED STARS",
+          "on": "stars",
+          "style": "accent"
+        }
+      ],
+      "query": "telescopes observing stars",
+      "query2": "hidden stars in space"
+    },
+    {
+      "role": "fact",
+      "text": "Recent studies suggest these stars could significantly impact galactic dynamics.",
+      "chips": [
+        {
+          "t": "GALACTIC IMPACT!",
+          "on": "impact",
+          "style": "white"
+        }
+      ],
+      "query": "galaxy dynamics illustration",
+      "query2": "galactic star formations"
+    },
+    {
+      "role": "reveal",
+      "text": "Astronomers are now using AI to locate these hidden stars!",
+      "reveal_top": "AI FINDING HIDDEN STARS",
+      "query": "AI searching stars",
+      "query2": "artificial intelligence astronomy"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science discoveries",
+      "query2": "latest science news"
+    }
+  ],
+  "description": "Discover how hidden stars affect our galaxy and the cutting-edge AI being used to find them. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#milkyway",
+    "#stars",
+    "#AI",
+    "#astronomy",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
