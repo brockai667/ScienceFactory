@@ -1,0 +1,54 @@
+{
+  "title": "The Myth of Cryogenic Freezing Bodies!",
+  "thumb": "FREEZING BODIES MYTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Over 250 bodies are cryogenically frozen each year.",
+      "hook_top": "CRYOGENIC BODIES WHAT HAPPENS",
+      "query": "cryogenic freezing process",
+      "query2": "cryonics"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe that all cryogenically frozen bodies will be revived.",
+      "label": "All bodies can be revived",
+      "query": "cryogenic revival myth",
+      "query2": "cryonics"
+    },
+    {
+      "role": "truth",
+      "text": "Currently, there’s no scientific proof that revived cryogenically frozen bodies can be brought back to life.",
+      "label": "No proof of revival",
+      "query": "cryonics scientific evidence",
+      "query2": "cryogenic freezing"
+    },
+    {
+      "role": "callout",
+      "text": "Takeaway:",
+      "label": "Revival is not guaranteed!",
+      "sub": "Cryonics holds uncertain future.",
+      "label_on": "Myth!",
+      "query": "The Myth of Cryogenic Freezing Bodies!",
+      "query2": "cinematic nature landscape"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "science discovery",
+      "query2": "science facts"
+    }
+  ],
+  "description": "Cryogenic freezing may sound like a way to cheat death, but the reality is different. Follow for daily science!",
+  "hashtags": [
+    "#cryonics",
+    "#science",
+    "#mythbusting",
+    "#technology",
+    "#fyp",
+    "#shorts",
+    "#facts"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Starship's Remarkable Ocean Splashdown!",
+  "thumb": "STARSHIP SPLASHDOWN",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "After 13 flights, Starship made a surprising splash in the ocean!",
+      "hook_top": "STARSHIP'S OCEAN SPLASHDOWN",
+      "query": "SpaceX Starship launch",
+      "query2": "SpaceX rocket in ocean"
+    },
+    {
+      "role": "fact",
+      "text": "The latest flight occurred in September 2023, marking its first ocean landing.",
+      "chips": [
+        {
+          "t": "SEPTEMBER 2023",
+          "on": "September",
+          "style": "accent"
+        }
+      ],
+      "punch": "date",
+      "query": "Starship landing in ocean",
+      "query2": "Starship rocket"
+    },
+    {
+      "role": "fact",
+      "text": "Starship reached nearly 12 kilometers in altitude before its descent.",
+      "chips": [
+        {
+          "t": "12 KILOMETERS",
+          "on": "12 kilometers",
+          "style": "white"
+        }
+      ],
+      "punch": "height",
+      "query": "Starship ascent in sky",
+      "query2": "rocket launches"
+    },
+    {
+      "role": "reveal",
+      "text": "Its splashdown may redefine future ocean recovery missions!",
+      "reveal_top": "A NEW RECOVERY METHOD",
+      "query": "Starship ocean recovery",
+      "query2": "rocket recovery methods"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "space technology",
+      "query2": "technology news"
+    }
+  ],
+  "description": "After 13 flights, SpaceX's Starship made a stunning splashdown in the ocean. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#SpaceX",
+    "#Starship",
+    "#NASA",
+    "#rocketlaunch",
+    "#technology",
+    "#ocean",
+    "#innovation"
+  ],
+  "place": "",
+  "country": ""
+}
