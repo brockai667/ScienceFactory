@@ -1,0 +1,66 @@
+{
+  "title": "The Largest Known Star Revealed!",
+  "thumb": "LARGEST KNOWN STAR",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Discover the size of the largest known star, UY Scuti.",
+      "hook_top": "LARGEST KNOWN STAR",
+      "query": "UY Scuti star",
+      "query2": "stars in the universe"
+    },
+    {
+      "role": "fact",
+      "text": "UY Scuti has a radius approximately 1,700 times larger than our sun.",
+      "chips": [
+        {
+          "t": "1,700 TIMES LARGER",
+          "on": "radius",
+          "style": "white"
+        }
+      ],
+      "punch": "incredible!",
+      "query": "star size comparison",
+      "query2": "largest stars"
+    },
+    {
+      "role": "fact",
+      "text": "If UY Scuti were in our solar system, it would extend beyond the orbit of Saturn.",
+      "chips": [
+        {
+          "t": "EXTENDS BEYOND SATURN",
+          "on": "orbit",
+          "style": "accent"
+        }
+      ],
+      "punch": "mind-blowing!",
+      "query": "UY Scuti orbit",
+      "query2": "solar system layout"
+    },
+    {
+      "role": "reveal",
+      "text": "It's an astonishing reminder of how vast our universe truly is!",
+      "reveal_top": "A VAST UNIVERSE",
+      "query": "universe expansion",
+      "query2": "space exploration"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "science news",
+      "query2": "latest discoveries"
+    }
+  ],
+  "description": "UY Scuti is a giant star that dwarfs our sun significantly. Follow for daily science!",
+  "hashtags": [
+    "#science",
+    "#astronomy",
+    "#stars",
+    "#space",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

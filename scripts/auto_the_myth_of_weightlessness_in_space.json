@@ -1,0 +1,56 @@
+{
+  "title": "The Myth of Weightlessness in Space!",
+  "thumb": "WEIGHTLESSNESS MYTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Astronauts feel weightless, but is that true?",
+      "hook_top": "WEIGHTLESSNESS IN SPACE",
+      "query": "astronauts in space",
+      "query2": "astronauts zero gravity"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe astronauts float because there’s no gravity in space.",
+      "label": "NO GRAVITY IN SPACE",
+      "query": "gravity in space",
+      "query2": "space gravity explanation"
+    },
+    {
+      "role": "truth",
+      "text": "In fact, gravity still exists in space; it's the condition of free fall that creates weightlessness.",
+      "label": "GRAVITY STILL EXISTS",
+      "query": "gravity effects in space",
+      "query2": "free fall in space"
+    },
+    {
+      "role": "callout",
+      "text": "WEIGHTLESSNESS DEBUNKED!",
+      "label": "Floating is a Fallback!",
+      "sub": "Learn the science behind gravity.",
+      "label_on": "gravity",
+      "query": "gravity animation",
+      "query2": "weightlessness demonstration"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science exploration",
+      "query2": "latest science news"
+    }
+  ],
+  "description": "The truth about weightlessness in space is more fascinating than the myth! Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#gravity",
+    "#science",
+    "#mythbusters",
+    "#education",
+    "#astronomy",
+    "#iss"
+  ],
+  "place": "",
+  "country": ""
+}
