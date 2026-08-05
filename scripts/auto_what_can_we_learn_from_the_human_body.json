@@ -1,0 +1,59 @@
+{
+  "title": "What Can We Learn from the Human Body?",
+  "thumb": "HUMAN BODY SECRETS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "The human nose can detect over 1 trillion scents",
+      "hook_top": "NOSE POWER",
+      "query": "human nose",
+      "query2": "sense of smell"
+    },
+    {
+      "role": "count",
+      "text": "The human brain contains approximately 86 billion neurons",
+      "num": 1,
+      "label": "BRAIN CELLS",
+      "label_on": "brain cells",
+      "query": "human brain neurons",
+      "query2": "brain cells"
+    },
+    {
+      "role": "count",
+      "text": "The human eye can process 36,000 bits of information every hour",
+      "num": 2,
+      "label": "EYE PROCESSING",
+      "label_on": "eye processing",
+      "query": "human eye vision",
+      "query2": "eye processing power"
+    },
+    {
+      "role": "count",
+      "text": "The human liver performs over 500 functions in the body",
+      "num": 3,
+      "label": "LIVER FUNCTIONS",
+      "label_on": "liver functions",
+      "query": "human liver functions",
+      "query2": "liver health"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "biology and health news",
+      "query2": "daily health updates"
+    }
+  ],
+  "description": "The human body is a fascinating and complex system. Follow for daily science updates! ",
+  "hashtags": [
+    "#humanbody",
+    "#biology",
+    "#health",
+    "#science",
+    "#medicine",
+    "#wellness",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

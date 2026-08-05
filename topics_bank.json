@@ -7407,5 +7407,299 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "James Webb's Top 3 Discoveries",
+    "thumb": "JAMES WEBB TELESCOPE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "7 months after launch",
+        "hook_top": "JAMES WEBB LAUNCH",
+        "query": "James Webb telescope in space",
+        "query2": "space telescope"
+      },
+      {
+        "role": "count",
+        "text": "First discovery of water vapor",
+        "num": 1,
+        "label": "WATER VAPOR",
+        "label_on": "water",
+        "query": "water vapor in space",
+        "query2": "space water"
+      },
+      {
+        "role": "count",
+        "text": "Detailed image of the Cartwheel Galaxy",
+        "num": 2,
+        "label": "CARTWHEEL GALAXY",
+        "label_on": "galaxy",
+        "query": "Cartwheel Galaxy",
+        "query2": "galaxy image"
+      },
+      {
+        "role": "count",
+        "text": "Spectrum analysis of Titan's atmosphere",
+        "num": 3,
+        "label": "TITAN ATMOSPHERE",
+        "label_on": "atmosphere",
+        "query": "Titan atmosphere",
+        "query2": "saturn moon"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "astronaut in space",
+        "query2": "space news"
+      }
+    ],
+    "description": "The James Webb Space Telescope has made several groundbreaking discoveries. Follow for daily science!",
+    "hashtags": [
+      "#JamesWebb",
+      "#SpaceTelescope",
+      "#NASA",
+      "#SpaceDiscoveries",
+      "#Astronomy",
+      "#SpaceNews",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "3 Surprising Facts About Black Holes",
+    "thumb": "BLACK HOLE MYSTERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "170 million in the Milky Way",
+        "hook_top": "MILKY WAY BLACK",
+        "query": "black hole in the Milky Way",
+        "query2": "galaxy center"
+      },
+      {
+        "role": "count",
+        "text": "Supermassive black holes reside at galaxy centers",
+        "num": 1,
+        "label": "GALAXY CENTER",
+        "label_on": "center",
+        "query": "galaxy center black hole",
+        "query2": "supermassive black hole"
+      },
+      {
+        "role": "count",
+        "text": "Black holes distort space-time around them",
+        "num": 2,
+        "label": "SPACE TIME",
+        "label_on": "space",
+        "query": "space-time distortion",
+        "query2": "gravity well"
+      },
+      {
+        "role": "count",
+        "text": "Hawking radiation is a theoretical prediction",
+        "num": 3,
+        "label": "HAWKING RADIATION",
+        "label_on": "radiation",
+        "query": "Hawking radiation",
+        "query2": "black hole evaporation"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "astronomer looking at stars",
+        "query2": "space facts"
+      }
+    ],
+    "description": "Black holes are mysterious objects in space. Follow for daily science!",
+    "hashtags": [
+      "#BlackHoles",
+      "#Astronomy",
+      "#SpaceFacts",
+      "#Galaxy",
+      "#MilkyWay",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Nancy Grace Roman Space Telescope",
+    "thumb": "ROMAN TELESCOPE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's new Roman Telescope",
+        "hook_top": "ROMAN TELESCOPE",
+        "query": "Nancy Grace Roman Space Telescope",
+        "query2": "NASA telescope"
+      },
+      {
+        "role": "count",
+        "text": "Will study dark energy and dark matter",
+        "num": 1,
+        "label": "DARK ENERGY",
+        "label_on": "dark",
+        "query": "dark energy in space",
+        "query2": "cosmology"
+      },
+      {
+        "role": "count",
+        "text": "Features a 2.4-meter primary mirror",
+        "num": 2,
+        "label": "PRIMARY MIRROR",
+        "label_on": "mirror",
+        "query": "primary mirror telescope",
+        "query2": "space telescope optics"
+      },
+      {
+        "role": "count",
+        "text": "Scheduled to launch in the near future",
+        "num": 3,
+        "label": "LAUNCH DATE",
+        "label_on": "launch",
+        "query": "NASA launch schedule",
+        "query2": "space telescope launch"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "NASA astronaut in space",
+        "query2": "space news"
+      }
+    ],
+    "description": "The Nancy Grace Roman Space Telescope is a new NASA mission. Follow for daily science!",
+    "hashtags": [
+      "#RomanTelescope",
+      "#NASA",
+      "#SpaceTelescope",
+      "#Astronomy",
+      "#SpaceNews",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "What's Hidden in the Gum Nebula?",
+    "thumb": "GUM NEBULA SECRET",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "The Gum Nebula is 100 light-years wide",
+        "hook_top": "GUM NEBULA SIZE",
+        "query": "gum nebula",
+        "query2": "nebula in space"
+      },
+      {
+        "role": "fact",
+        "text": "It's the remains of a supernova explosion",
+        "chips": [
+          {
+            "t": "SN1006",
+            "on": "sn1006",
+            "style": "white"
+          }
+        ],
+        "query": "supernova explosion remnants",
+        "query2": "space explosion"
+      },
+      {
+        "role": "fact",
+        "text": "Astronomers use the Atacama Large Millimeter/submillimeter Array to study it",
+        "chips": [
+          {
+            "t": "ALMA",
+            "on": "alma",
+            "style": "accent"
+          }
+        ],
+        "punch": "Zoom",
+        "query": "atacama large millimeter array",
+        "query2": "radio telescope array"
+      },
+      {
+        "role": "reveal",
+        "text": "And found a massive star-forming region inside",
+        "reveal_top": "STAR FORMATION",
+        "query": "star-forming region in nebula",
+        "query2": "nebula with new stars"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "space news",
+        "query2": "astronomy updates"
+      }
+    ],
+    "description": "The Gum Nebula is a vast star-forming region. Follow for daily space discoveries!",
+    "hashtags": [
+      "#space",
+      "#nebula",
+      "#astronomy",
+      "#gumnebula",
+      "#starformation",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "What's Hiding in the Largest Known Galaxy?",
+    "thumb": "GALAXY SECRETS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Astronomers measured the full size of IC 1101",
+        "hook_top": "GALAXY SIZE",
+        "query": "galaxy ic 1101",
+        "query2": "largest known galaxy"
+      },
+      {
+        "role": "myth",
+        "text": "People think the largest galaxy is small",
+        "label": "Small Galaxy",
+        "query": "galaxy size comparison",
+        "query2": "galaxy scale"
+      },
+      {
+        "role": "truth",
+        "text": "IC 1101 is 6 million light-years across",
+        "label": "Huge Galaxy",
+        "query": "ic 1101 galaxy",
+        "query2": "largest galaxy"
+      },
+      {
+        "role": "callout",
+        "text": "The universe is full of massive mysteries",
+        "label": "Galaxy Secrets",
+        "sub": "Explore the cosmos",
+        "label_on": "Discover",
+        "query": "galaxy exploration",
+        "query2": "space discovery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "space news",
+        "query2": "astronomy updates"
+      }
+    ],
+    "description": "Explore the largest known galaxy and its secrets. Follow for daily space updates!",
+    "hashtags": [
+      "#space",
+      "#galaxy",
+      "#astronomy",
+      "#ic1101",
+      "#largestgalaxy",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
