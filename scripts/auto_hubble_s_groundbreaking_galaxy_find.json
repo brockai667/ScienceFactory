@@ -1,0 +1,67 @@
+{
+  "title": "Hubble's Groundbreaking Galaxy Find",
+  "thumb": "GALAXY DISCOVERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "13.4 billion years ago",
+      "hook_top": "EARLY GALAXY",
+      "query": "galaxy formation",
+      "query2": "early universe"
+    },
+    {
+      "role": "fact",
+      "text": "The largest known galaxy is Alcyoneus, spanning 16 million light-years",
+      "chips": [
+        {
+          "t": "16M",
+          "on": "light-years",
+          "style": "white"
+        }
+      ],
+      "punch": "massive",
+      "query": "alcyoneus galaxy",
+      "query2": "large galaxies"
+    },
+    {
+      "role": "fact",
+      "text": "NASA's Hubble Space Telescope captured the galaxy's full size",
+      "chips": [
+        {
+          "t": "Hubble",
+          "on": "telescope",
+          "style": "accent"
+        }
+      ],
+      "query": "hubble space telescope",
+      "query2": "nasa telescope"
+    },
+    {
+      "role": "callout",
+      "text": "Explore the largest galaxy with Hubble",
+      "label": "Galaxy Discovery",
+      "sub": "16M ly",
+      "label_on": "Hubble",
+      "query": "galaxy exploration",
+      "query2": "space telescope"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "space news",
+      "query2": "astronomy"
+    }
+  ],
+  "description": "Discover the largest known galaxy, Alcyoneus, and its massive size. Follow for daily space updates and exploration news. Follow for daily science!",
+  "hashtags": [
+    "#space",
+    "#galaxy",
+    "#hubble",
+    "#nasa",
+    "#astronomy",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

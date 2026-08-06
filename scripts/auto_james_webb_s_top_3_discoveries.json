@@ -1,0 +1,59 @@
+{
+  "title": "James Webb's Top 3 Discoveries",
+  "thumb": "JAMES WEBB TELESCOPE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "7 months after launch",
+      "hook_top": "JAMES WEBB LAUNCH",
+      "query": "James Webb telescope in space",
+      "query2": "space telescope"
+    },
+    {
+      "role": "count",
+      "text": "First discovery of water vapor",
+      "num": 1,
+      "label": "WATER VAPOR",
+      "label_on": "water",
+      "query": "water vapor in space",
+      "query2": "space water"
+    },
+    {
+      "role": "count",
+      "text": "Detailed image of the Cartwheel Galaxy",
+      "num": 2,
+      "label": "CARTWHEEL GALAXY",
+      "label_on": "galaxy",
+      "query": "Cartwheel Galaxy",
+      "query2": "galaxy image"
+    },
+    {
+      "role": "count",
+      "text": "Spectrum analysis of Titan's atmosphere",
+      "num": 3,
+      "label": "TITAN ATMOSPHERE",
+      "label_on": "atmosphere",
+      "query": "Titan atmosphere",
+      "query2": "saturn moon"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "astronaut in space",
+      "query2": "space news"
+    }
+  ],
+  "description": "The James Webb Space Telescope has made several groundbreaking discoveries. Follow for daily science!",
+  "hashtags": [
+    "#JamesWebb",
+    "#SpaceTelescope",
+    "#NASA",
+    "#SpaceDiscoveries",
+    "#Astronomy",
+    "#SpaceNews",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

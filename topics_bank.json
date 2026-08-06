@@ -7701,5 +7701,132 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Titan's Surprising Lake Secrets",
+    "thumb": "TITAN LAKES",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Titan has 3 large lakes",
+        "hook_top": "TITAN'S HIDDEN LAKES",
+        "query": "titan lake surface",
+        "query2": "saturn moon landscape"
+      },
+      {
+        "role": "count",
+        "text": "1: Kraken Mare is the largest lake",
+        "num": 1,
+        "label": "LARGEST LAKE",
+        "label_on": "Kraken Mare",
+        "query": "kraken mare titan",
+        "query2": "titan lake kraken"
+      },
+      {
+        "role": "count",
+        "text": "2: Ligeia Mare is filled with methane",
+        "num": 2,
+        "label": "METHANE LAKE",
+        "label_on": "Ligeia Mare",
+        "query": "ligeia mare titan",
+        "query2": "titan methane lake"
+      },
+      {
+        "role": "count",
+        "text": "3: Ontario Lacus is a seasonal lake",
+        "num": 3,
+        "label": "SEASONAL LAKE",
+        "label_on": "Ontario Lacus",
+        "query": "ontario lacus titan",
+        "query2": "titan seasonal lake"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space news update",
+        "query2": "astronomy news"
+      }
+    ],
+    "description": "Explore Titan's lake secrets with the latest discoveries. Follow for daily space news!",
+    "hashtags": [
+      "#space",
+      "#titan",
+      "#saturn",
+      "#lakes",
+      "#astronomy",
+      "#spaceexploration",
+      "#nasa",
+      "#jameswebb"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Voyager 1's Surprising Power",
+    "thumb": "VOYAGER 1",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Voyager 1 is 14 billion miles away",
+        "hook_top": "VOYAGER 1",
+        "query": "Voyager 1 spacecraft",
+        "query2": "spacecraft in deep space"
+      },
+      {
+        "role": "fact",
+        "text": "And still sending data back to Earth",
+        "chips": [
+          {
+            "t": "14B",
+            "on": "billion",
+            "style": "white"
+          }
+        ],
+        "punch": "data",
+        "query": "Voyager 1 data transmission",
+        "query2": "spacecraft communication"
+      },
+      {
+        "role": "fact",
+        "text": "Using a power source that's been working for 44 years",
+        "chips": [
+          {
+            "t": "44Y",
+            "on": "years",
+            "style": "accent"
+          }
+        ],
+        "punch": "years",
+        "query": "nuclear battery in space",
+        "query2": "long-lasting spacecraft power"
+      },
+      {
+        "role": "reveal",
+        "text": "A testament to human engineering and space exploration",
+        "reveal_top": "SPACE ENGINEERING",
+        "query": "spacecraft engineering",
+        "query2": "space exploration technology"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space news",
+        "query2": "astronomy updates"
+      }
+    ],
+    "description": "Voyager 1 is still sending data back to Earth after 44 years. Follow for more space news and updates",
+    "hashtags": [
+      "#Voyager1",
+      "#SpaceExploration",
+      "#Spacecraft",
+      "#Engineering",
+      "#Astronomy",
+      "#SpaceNews",
+      "#NASA",
+      "#Shorts",
+      "#FYP"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
