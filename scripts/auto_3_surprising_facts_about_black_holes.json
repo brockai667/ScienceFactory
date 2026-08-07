@@ -1,0 +1,58 @@
+{
+  "title": "3 Surprising Facts About Black Holes",
+  "thumb": "BLACK HOLE MYSTERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "170 million in the Milky Way",
+      "hook_top": "MILKY WAY BLACK",
+      "query": "black hole in the Milky Way",
+      "query2": "galaxy center"
+    },
+    {
+      "role": "count",
+      "text": "Supermassive black holes reside at galaxy centers",
+      "num": 1,
+      "label": "GALAXY CENTER",
+      "label_on": "center",
+      "query": "galaxy center black hole",
+      "query2": "supermassive black hole"
+    },
+    {
+      "role": "count",
+      "text": "Black holes distort space-time around them",
+      "num": 2,
+      "label": "SPACE TIME",
+      "label_on": "space",
+      "query": "space-time distortion",
+      "query2": "gravity well"
+    },
+    {
+      "role": "count",
+      "text": "Hawking radiation is a theoretical prediction",
+      "num": 3,
+      "label": "HAWKING RADIATION",
+      "label_on": "radiation",
+      "query": "Hawking radiation",
+      "query2": "black hole evaporation"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "astronomer looking at stars",
+      "query2": "space facts"
+    }
+  ],
+  "description": "Black holes are mysterious objects in space. Follow for daily science!",
+  "hashtags": [
+    "#BlackHoles",
+    "#Astronomy",
+    "#SpaceFacts",
+    "#Galaxy",
+    "#MilkyWay",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

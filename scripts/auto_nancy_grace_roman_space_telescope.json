@@ -1,0 +1,58 @@
+{
+  "title": "Nancy Grace Roman Space Telescope",
+  "thumb": "ROMAN TELESCOPE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's new Roman Telescope",
+      "hook_top": "ROMAN TELESCOPE",
+      "query": "Nancy Grace Roman Space Telescope",
+      "query2": "NASA telescope"
+    },
+    {
+      "role": "count",
+      "text": "Will study dark energy and dark matter",
+      "num": 1,
+      "label": "DARK ENERGY",
+      "label_on": "dark",
+      "query": "dark energy in space",
+      "query2": "cosmology"
+    },
+    {
+      "role": "count",
+      "text": "Features a 2.4-meter primary mirror",
+      "num": 2,
+      "label": "PRIMARY MIRROR",
+      "label_on": "mirror",
+      "query": "primary mirror telescope",
+      "query2": "space telescope optics"
+    },
+    {
+      "role": "count",
+      "text": "Scheduled to launch in the near future",
+      "num": 3,
+      "label": "LAUNCH DATE",
+      "label_on": "launch",
+      "query": "NASA launch schedule",
+      "query2": "space telescope launch"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "NASA astronaut in space",
+      "query2": "space news"
+    }
+  ],
+  "description": "The Nancy Grace Roman Space Telescope is a new NASA mission. Follow for daily science!",
+  "hashtags": [
+    "#RomanTelescope",
+    "#NASA",
+    "#SpaceTelescope",
+    "#Astronomy",
+    "#SpaceNews",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

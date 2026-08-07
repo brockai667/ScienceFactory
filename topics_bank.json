@@ -7828,5 +7828,64 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "The Hidden Risk of Kidney Stones in Space",
+    "thumb": "SPACE HEALTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Astronauts on Mars missions risk kidney stones",
+        "hook_top": "SPACE HEALTH",
+        "query": "astronaut in space suit",
+        "query2": "space medicine"
+      },
+      {
+        "role": "count",
+        "text": "Prolonged space travel increases the risk",
+        "num": 1,
+        "label": "SPACE TRAVEL",
+        "label_on": "travel",
+        "query": "astronaut in space",
+        "query2": "space travel risks"
+      },
+      {
+        "role": "count",
+        "text": "Dehydration is a major factor in kidney stone formation",
+        "num": 2,
+        "label": "DEHYDRATION",
+        "label_on": "dehydration",
+        "query": "dehydration in space",
+        "query2": "space health risks"
+      },
+      {
+        "role": "count",
+        "text": "NASA is researching ways to prevent kidney stones in space",
+        "num": 3,
+        "label": "NASA RESEARCH",
+        "label_on": "research",
+        "query": "NASA researcher",
+        "query2": "space health research"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "doctor looking at medical data",
+        "query2": "health research"
+      }
+    ],
+    "description": "Kidney stones are a hidden risk for astronauts on long-duration missions. Follow for daily science updates!",
+    "hashtags": [
+      "#spacehealth",
+      "#kidneystones",
+      "#NASA",
+      "#space",
+      "#health",
+      "#spacefacts",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

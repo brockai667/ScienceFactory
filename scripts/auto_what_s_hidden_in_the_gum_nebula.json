@@ -1,0 +1,65 @@
+{
+  "title": "What's Hidden in the Gum Nebula?",
+  "thumb": "GUM NEBULA SECRET",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "The Gum Nebula is 100 light-years wide",
+      "hook_top": "GUM NEBULA SIZE",
+      "query": "gum nebula",
+      "query2": "nebula in space"
+    },
+    {
+      "role": "fact",
+      "text": "It's the remains of a supernova explosion",
+      "chips": [
+        {
+          "t": "SN1006",
+          "on": "sn1006",
+          "style": "white"
+        }
+      ],
+      "query": "supernova explosion remnants",
+      "query2": "space explosion"
+    },
+    {
+      "role": "fact",
+      "text": "Astronomers use the Atacama Large Millimeter/submillimeter Array to study it",
+      "chips": [
+        {
+          "t": "ALMA",
+          "on": "alma",
+          "style": "accent"
+        }
+      ],
+      "punch": "Zoom",
+      "query": "atacama large millimeter array",
+      "query2": "radio telescope array"
+    },
+    {
+      "role": "reveal",
+      "text": "And found a massive star-forming region inside",
+      "reveal_top": "STAR FORMATION",
+      "query": "star-forming region in nebula",
+      "query2": "nebula with new stars"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space news",
+      "query2": "astronomy updates"
+    }
+  ],
+  "description": "The Gum Nebula is a vast star-forming region. Follow for daily space discoveries!",
+  "hashtags": [
+    "#space",
+    "#nebula",
+    "#astronomy",
+    "#gumnebula",
+    "#starformation",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
