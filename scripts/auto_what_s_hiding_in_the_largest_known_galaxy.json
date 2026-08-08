@@ -1,0 +1,54 @@
+{
+  "title": "What's Hiding in the Largest Known Galaxy?",
+  "thumb": "GALAXY SECRETS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Astronomers measured the full size of IC 1101",
+      "hook_top": "GALAXY SIZE",
+      "query": "galaxy ic 1101",
+      "query2": "largest known galaxy"
+    },
+    {
+      "role": "myth",
+      "text": "People think the largest galaxy is small",
+      "label": "Small Galaxy",
+      "query": "galaxy size comparison",
+      "query2": "galaxy scale"
+    },
+    {
+      "role": "truth",
+      "text": "IC 1101 is 6 million light-years across",
+      "label": "Huge Galaxy",
+      "query": "ic 1101 galaxy",
+      "query2": "largest galaxy"
+    },
+    {
+      "role": "callout",
+      "text": "The universe is full of massive mysteries",
+      "label": "Galaxy Secrets",
+      "sub": "Explore the cosmos",
+      "label_on": "Discover",
+      "query": "galaxy exploration",
+      "query2": "space discovery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "space news",
+      "query2": "astronomy updates"
+    }
+  ],
+  "description": "Explore the largest known galaxy and its secrets. Follow for daily space updates!",
+  "hashtags": [
+    "#space",
+    "#galaxy",
+    "#astronomy",
+    "#ic1101",
+    "#largestgalaxy",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

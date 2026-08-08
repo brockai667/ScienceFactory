@@ -7887,5 +7887,249 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mars' Hidden Underground Lakes",
+    "thumb": "MARS LAKES",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Beneath Mars' surface, 1.4 km down",
+        "hook_top": "MARS HIDDEN LAKES",
+        "query": "Mars terrain",
+        "query2": "Mars landscape"
+      },
+      {
+        "role": "count",
+        "text": "One lake is 20 km wide",
+        "num": 1,
+        "label": "LAKE SIZE",
+        "label_on": "size",
+        "query": "Mars lake",
+        "query2": "underground lake"
+      },
+      {
+        "role": "count",
+        "text": "Two types of ice are present",
+        "num": 2,
+        "label": "ICE TYPES",
+        "label_on": "composition",
+        "query": "ice formation",
+        "query2": "frozen lake"
+      },
+      {
+        "role": "count",
+        "text": "Three NASA missions are studying them",
+        "num": 3,
+        "label": "NASA MISSIONS",
+        "label_on": "research",
+        "query": "NASA Mars mission",
+        "query2": "Mars exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space news",
+        "query2": "astronomy updates"
+      }
+    ],
+    "description": "Explore Mars' hidden underground lakes and their unique features. Follow for daily science!",
+    "hashtags": [
+      "#MarsExploration",
+      "#SpaceDiscoveries",
+      "#NASA",
+      "#Astronomy",
+      "#Science",
+      "#Space",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Milky Way's Black Hole Secret",
+    "thumb": "GALACTIC BLACK",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "At the Milky Way's center, a 4 million solar mass",
+        "hook_top": "MILKY WAY BLACK",
+        "query": "Milky Way galaxy",
+        "query2": "galactic center"
+      },
+      {
+        "role": "count",
+        "text": "One hundred stars are within its gravitational pull",
+        "num": 1,
+        "label": "STAR COUNT",
+        "label_on": "gravity",
+        "query": "star formation",
+        "query2": "stellar motion"
+      },
+      {
+        "role": "count",
+        "text": "Two types of radiation are emitted by the black hole",
+        "num": 2,
+        "label": "RADIATION TYPES",
+        "label_on": "emission",
+        "query": "black hole radiation",
+        "query2": "cosmic radiation"
+      },
+      {
+        "role": "count",
+        "text": "Three telescopes are monitoring its activity",
+        "num": 3,
+        "label": "TELESCOPE ARRAY",
+        "label_on": "observation",
+        "query": "telescope array",
+        "query2": "astronomical observation"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "astronomy news",
+        "query2": "space updates"
+      }
+    ],
+    "description": "Uncover the secrets of the Milky Way's black hole. Follow for daily science!",
+    "hashtags": [
+      "#MilkyWay",
+      "#BlackHole",
+      "#Astronomy",
+      "#Space",
+      "#Science",
+      "#Galaxy",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Secret Life of Betelgeuse",
+    "thumb": "BETELGEUSE SECRET",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Betelgeuse, the star in Orion",
+        "hook_top": "BETELGEUSE MYSTERY",
+        "query": "Betelgeuse star",
+        "query2": "Orion constellation"
+      },
+      {
+        "role": "fact",
+        "text": "Astronomers have been studying Betelgeuse's unique dimming patterns",
+        "chips": [
+          {
+            "t": "10",
+            "on": "ten",
+            "style": "white"
+          }
+        ],
+        "query": "Betelgeuse dimming",
+        "query2": "star dimming patterns"
+      },
+      {
+        "role": "fact",
+        "text": "The Hubble Space Telescope has captured stunning images of Betelgeuse's surface",
+        "chips": [
+          {
+            "t": "Hubble",
+            "on": "Hubble Space Telescope",
+            "style": "accent"
+          }
+        ],
+        "query": "Hubble Space Telescope",
+        "query2": "Betelgeuse surface"
+      },
+      {
+        "role": "reveal",
+        "text": "Betelgeuse has a long-suspected stellar companion, recently confirmed by astronomers",
+        "reveal_top": "BETELGEUSE COMPANION",
+        "query": "Betelgeuse companion star",
+        "query2": "stellar companions"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "astronomy news",
+        "query2": "space updates"
+      }
+    ],
+    "description": "Betelgeuse, one of the brightest stars in the night sky, has been a subject of fascination for astronomers. Recent discoveries have shed light on its secret life. Follow for daily science!",
+    "hashtags": [
+      "#Betelgeuse",
+      "#astronomy",
+      "#space",
+      "#Hubble",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Mars' Valles Marineris Canyon System",
+    "thumb": "MARS CANYON",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "4,000 km long canyon on Mars",
+        "hook_top": "MARS DEEPEST CANYON",
+        "query": "Valles Marineris canyon",
+        "query2": "Mars canyon system"
+      },
+      {
+        "role": "fact",
+        "text": "Valles Marineris is up to 7 km deep",
+        "chips": [
+          {
+            "t": "7 km",
+            "on": "deep",
+            "style": "white"
+          }
+        ],
+        "punch": "deep",
+        "query": "Valles Marineris depth",
+        "query2": "Mars canyon depth"
+      },
+      {
+        "role": "fact",
+        "text": "It was formed by tectonic activity",
+        "chips": [],
+        "query": "Valles Marineris formation",
+        "query2": "Mars tectonic activity"
+      },
+      {
+        "role": "callout",
+        "text": "Exploring Mars' geology",
+        "label": "Mars Geology",
+        "sub": "Canyon system",
+        "label_on": "geology",
+        "query": "Mars geology",
+        "query2": "Valles Marineris geology"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space news",
+        "query2": "daily space updates"
+      }
+    ],
+    "description": "Explore the largest canyon in our solar system, Valles Marineris on Mars. Follow for daily space updates",
+    "hashtags": [
+      "#Mars",
+      "#VallesMarineris",
+      "#space",
+      "#geology",
+      "#solarsystem",
+      "#exploration",
+      "#NASA",
+      "#spacefacts",
+      "#shorts"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
