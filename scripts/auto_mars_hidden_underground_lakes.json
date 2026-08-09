@@ -1,0 +1,59 @@
+{
+  "title": "Mars' Hidden Underground Lakes",
+  "thumb": "MARS LAKES",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Beneath Mars' surface, 1.4 km down",
+      "hook_top": "MARS HIDDEN LAKES",
+      "query": "Mars terrain",
+      "query2": "Mars landscape"
+    },
+    {
+      "role": "count",
+      "text": "One lake is 20 km wide",
+      "num": 1,
+      "label": "LAKE SIZE",
+      "label_on": "size",
+      "query": "Mars lake",
+      "query2": "underground lake"
+    },
+    {
+      "role": "count",
+      "text": "Two types of ice are present",
+      "num": 2,
+      "label": "ICE TYPES",
+      "label_on": "composition",
+      "query": "ice formation",
+      "query2": "frozen lake"
+    },
+    {
+      "role": "count",
+      "text": "Three NASA missions are studying them",
+      "num": 3,
+      "label": "NASA MISSIONS",
+      "label_on": "research",
+      "query": "NASA Mars mission",
+      "query2": "Mars exploration"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "space news",
+      "query2": "astronomy updates"
+    }
+  ],
+  "description": "Explore Mars' hidden underground lakes and their unique features. Follow for daily science!",
+  "hashtags": [
+    "#MarsExploration",
+    "#SpaceDiscoveries",
+    "#NASA",
+    "#Astronomy",
+    "#Science",
+    "#Space",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

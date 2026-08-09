@@ -8131,5 +8131,185 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mars Explorer Discovers Underground Rivers",
+    "thumb": "MARS RIVERS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's Mars probe discovers 12 ancient rivers",
+        "hook_top": "MARS RIVER SECRETS",
+        "query": "Mars river valley",
+        "query2": "mars landscape"
+      },
+      {
+        "role": "count",
+        "text": "Mars' Valles Marineris canyon system is 4 times longer than the Grand Canyon",
+        "num": 1,
+        "label": "LONGEST CANYON",
+        "label_on": "canyon",
+        "query": "Valles Marineris canyon",
+        "query2": "mars canyon system"
+      },
+      {
+        "role": "count",
+        "text": "Mars has the tallest volcano in our solar system, Olympus Mons, at 27 km high",
+        "num": 2,
+        "label": "TALLEST VOLCANO",
+        "label_on": "volcano",
+        "query": "Olympus Mons volcano",
+        "query2": "mars volcano"
+      },
+      {
+        "role": "count",
+        "text": "Mars' polar ice caps are made of water ice and dry ice, with a thickness of up to 3 km",
+        "num": 3,
+        "label": "POLAR ICE CAPS",
+        "label_on": "ice caps",
+        "query": "Mars polar ice cap",
+        "query2": "mars ice"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "astronaut in space",
+        "query2": "space station"
+      }
+    ],
+    "description": "Explore the fascinating geology of Mars, from ancient rivers to towering volcanoes. Follow for daily science!",
+    "hashtags": [
+      "#MarsExploration",
+      "#SpaceDiscoveries",
+      "#NASA",
+      "#MarsGeology",
+      "#Astronomy",
+      "#Space",
+      "#Science",
+      "#Shorts",
+      "#FYP"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "James Webb Unveils the Secrets of the Universe",
+    "thumb": "JAMES WEBB",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "James Webb Space Telescope discovers water on a distant exoplanet",
+        "hook_top": "JAMES WEBB DISCOVERY",
+        "query": "James Webb Space Telescope",
+        "query2": "space telescope"
+      },
+      {
+        "role": "count",
+        "text": "James Webb has captured the most detailed image of the Cartwheel Galaxy to date",
+        "num": 1,
+        "label": "DETAILED GALAXY",
+        "label_on": "galaxy",
+        "query": "Cartwheel Galaxy",
+        "query2": "galaxy image"
+      },
+      {
+        "role": "count",
+        "text": "The telescope has observed the formation of stars in the Tarantula Nebula",
+        "num": 2,
+        "label": "STAR FORMATION",
+        "label_on": "star formation",
+        "query": "Tarantula Nebula",
+        "query2": "star formation"
+      },
+      {
+        "role": "count",
+        "text": "James Webb has detected the presence of complex organic molecules in interstellar space",
+        "num": 3,
+        "label": "ORGANIC MOLECULES",
+        "label_on": "molecules",
+        "query": "interstellar space",
+        "query2": "organic molecules"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "astronomer looking at stars",
+        "query2": "space news"
+      }
+    ],
+    "description": "Discover the latest findings from the James Webb Space Telescope, from distant galaxies to the formation of stars. Follow for daily science!",
+    "hashtags": [
+      "#JamesWebb",
+      "#SpaceTelescope",
+      "#Astronomy",
+      "#Galaxies",
+      "#Stars",
+      "#Science",
+      "#Space",
+      "#Shorts",
+      "#FYP"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Titan's Mysteries Revealed by NASA's Cassini",
+    "thumb": "TITAN SECRETS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's Cassini mission discovers liquid methane lakes on Titan",
+        "hook_top": "TITAN LAKES",
+        "query": "Titan lakes",
+        "query2": "saturn moon"
+      },
+      {
+        "role": "count",
+        "text": "Titan's surface temperature is around -179°C, making it one of the coldest places in the solar system",
+        "num": 1,
+        "label": "COLDEST PLACE",
+        "label_on": "temperature",
+        "query": "Titan surface",
+        "query2": "cold planet"
+      },
+      {
+        "role": "count",
+        "text": "Cassini has observed geysers of water vapor and organic compounds erupting from Titan's surface",
+        "num": 2,
+        "label": "GEYSERS",
+        "label_on": "geysers",
+        "query": "Titan geysers",
+        "query2": "water vapor"
+      },
+      {
+        "role": "count",
+        "text": "Titan's atmosphere is composed mostly of nitrogen and methane, with a pressure 45% greater than Earth's",
+        "num": 3,
+        "label": "ATMOSPHERIC PRESSURE",
+        "label_on": "atmosphere",
+        "query": "Titan atmosphere",
+        "query2": "methane atmosphere"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "astronaut in space suit",
+        "query2": "space exploration"
+      }
+    ],
+    "description": "Explore the fascinating world of Titan, from liquid methane lakes to geysers and a thick atmosphere. Follow for daily science!",
+    "hashtags": [
+      "#Titan",
+      "#Cassini",
+      "#NASA",
+      "#SpaceExploration",
+      "#SaturnMoon",
+      "#Astronomy",
+      "#Science",
+      "#Shorts",
+      "#FYP"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
