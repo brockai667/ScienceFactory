@@ -1,0 +1,63 @@
+{
+  "title": "Mars' Valles Marineris Canyon System",
+  "thumb": "MARS CANYON",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "4,000 km long canyon on Mars",
+      "hook_top": "MARS DEEPEST CANYON",
+      "query": "Valles Marineris canyon",
+      "query2": "Mars canyon system"
+    },
+    {
+      "role": "fact",
+      "text": "Valles Marineris is up to 7 km deep",
+      "chips": [
+        {
+          "t": "7 km",
+          "on": "deep",
+          "style": "white"
+        }
+      ],
+      "punch": "deep",
+      "query": "Valles Marineris depth",
+      "query2": "Mars canyon depth"
+    },
+    {
+      "role": "fact",
+      "text": "It was formed by tectonic activity",
+      "chips": [],
+      "query": "Valles Marineris formation",
+      "query2": "Mars tectonic activity"
+    },
+    {
+      "role": "callout",
+      "text": "Exploring Mars' geology",
+      "label": "Mars Geology",
+      "sub": "Canyon system",
+      "label_on": "geology",
+      "query": "Mars geology",
+      "query2": "Valles Marineris geology"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "space news",
+      "query2": "daily space updates"
+    }
+  ],
+  "description": "Explore the largest canyon in our solar system, Valles Marineris on Mars. Follow for daily space updates",
+  "hashtags": [
+    "#Mars",
+    "#VallesMarineris",
+    "#space",
+    "#geology",
+    "#solarsystem",
+    "#exploration",
+    "#NASA",
+    "#spacefacts",
+    "#shorts"
+  ],
+  "place": "",
+  "country": ""
+}

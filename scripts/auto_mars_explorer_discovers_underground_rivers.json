@@ -1,0 +1,60 @@
+{
+  "title": "Mars Explorer Discovers Underground Rivers",
+  "thumb": "MARS RIVERS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's Mars probe discovers 12 ancient rivers",
+      "hook_top": "MARS RIVER SECRETS",
+      "query": "Mars river valley",
+      "query2": "mars landscape"
+    },
+    {
+      "role": "count",
+      "text": "Mars' Valles Marineris canyon system is 4 times longer than the Grand Canyon",
+      "num": 1,
+      "label": "LONGEST CANYON",
+      "label_on": "canyon",
+      "query": "Valles Marineris canyon",
+      "query2": "mars canyon system"
+    },
+    {
+      "role": "count",
+      "text": "Mars has the tallest volcano in our solar system, Olympus Mons, at 27 km high",
+      "num": 2,
+      "label": "TALLEST VOLCANO",
+      "label_on": "volcano",
+      "query": "Olympus Mons volcano",
+      "query2": "mars volcano"
+    },
+    {
+      "role": "count",
+      "text": "Mars' polar ice caps are made of water ice and dry ice, with a thickness of up to 3 km",
+      "num": 3,
+      "label": "POLAR ICE CAPS",
+      "label_on": "ice caps",
+      "query": "Mars polar ice cap",
+      "query2": "mars ice"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "astronaut in space",
+      "query2": "space station"
+    }
+  ],
+  "description": "Explore the fascinating geology of Mars, from ancient rivers to towering volcanoes. Follow for daily science!",
+  "hashtags": [
+    "#MarsExploration",
+    "#SpaceDiscoveries",
+    "#NASA",
+    "#MarsGeology",
+    "#Astronomy",
+    "#Space",
+    "#Science",
+    "#Shorts",
+    "#FYP"
+  ],
+  "place": "",
+  "country": ""
+}

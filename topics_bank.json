@@ -8311,5 +8311,248 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "NASA Shuts Down Voyager 1 Instrument",
+    "thumb": "VOYAGER 1",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Voyager 1 is 14 billion miles away",
+        "hook_top": "VOYAGER 1 SHOCK",
+        "query": "Voyager 1 spacecraft",
+        "query2": "spacecraft in deep space"
+      },
+      {
+        "role": "count",
+        "text": "Voyager 1 has 3 functional instruments left",
+        "num": 1,
+        "label": "INSTRUMENTS LEFT",
+        "label_on": "instruments",
+        "query": "Voyager 1 instruments",
+        "query2": "spacecraft instruments"
+      },
+      {
+        "role": "count",
+        "text": "Voyager 1 travels 38,000 miles per hour",
+        "num": 2,
+        "label": "SPEED",
+        "label_on": "speed",
+        "query": "Voyager 1 speed",
+        "query2": "fastest spacecraft"
+      },
+      {
+        "role": "count",
+        "text": "Voyager 1 has a 12.5 percent power decrease",
+        "num": 3,
+        "label": "POWER LOSS",
+        "label_on": "power",
+        "query": "Voyager 1 power",
+        "query2": "spacecraft power source"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "space news update",
+        "query2": "daily space news"
+      }
+    ],
+    "description": "Voyager 1 is one of the most distant human-made objects in space. NASA shuts down one of its instruments to keep the spacecraft operating. Follow for daily space updates!",
+    "hashtags": [
+      "#Voyager1",
+      "#SpaceNews",
+      "#NASA",
+      "#Spacecraft",
+      "#SpaceUpdates",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "James Webb's Hidden Galaxy",
+    "thumb": "JAMES WEBB",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "4 new galaxies found",
+        "hook_top": "NEW GALAXIES",
+        "query": "galaxy cluster",
+        "query2": "space telescope"
+      },
+      {
+        "role": "fact",
+        "text": "James Webb uses 18 mirrors",
+        "chips": [
+          {
+            "t": "18",
+            "on": "mirrors",
+            "style": "white"
+          }
+        ],
+        "punch": "Zoom",
+        "query": "James Webb telescope mirrors",
+        "query2": "space telescope mirrors"
+      },
+      {
+        "role": "fact",
+        "text": "Each mirror is 1.5 meters wide",
+        "chips": [
+          {
+            "t": "1.5m",
+            "on": "wide",
+            "style": "accent"
+          }
+        ],
+        "query": "James Webb telescope mirror size",
+        "query2": "space telescope mirror diameter"
+      },
+      {
+        "role": "reveal",
+        "text": "They form a 6.5 meter wide mirror",
+        "reveal_top": "GIANT MIRROR",
+        "query": "James Webb telescope primary mirror",
+        "query2": "space telescope primary mirror"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space news",
+        "query2": "astronomy updates"
+      }
+    ],
+    "description": "James Webb's hidden galaxy discovery is a game-changer. Follow for daily science!",
+    "hashtags": [
+      "#JamesWebb",
+      "#SpaceTelescope",
+      "#GalaxyDiscovery",
+      "#Astronomy",
+      "#Science",
+      "#SpaceNews",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Voyager 1's Surprising Signal",
+    "thumb": "VOYAGER SIGNAL",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Voyager 1 is 14 billion miles away",
+        "hook_top": "VOYAGER DISTANCE",
+        "query": "Voyager 1 distance",
+        "query2": "spacecraft distance"
+      },
+      {
+        "role": "fact",
+        "text": "It uses 3 radioisotope thermoelectric generators",
+        "chips": [
+          {
+            "t": "3",
+            "on": "generators",
+            "style": "white"
+          }
+        ],
+        "punch": "Power",
+        "query": "Voyager 1 power source",
+        "query2": "spacecraft power source"
+      },
+      {
+        "role": "fact",
+        "text": "Each generator produces 157 watts",
+        "chips": [
+          {
+            "t": "157W",
+            "on": "watts",
+            "style": "accent"
+          }
+        ],
+        "query": "Voyager 1 power output",
+        "query2": "spacecraft power output"
+      },
+      {
+        "role": "reveal",
+        "text": "It still sends signals back to Earth",
+        "reveal_top": "SIGNAL FROM SPACE",
+        "query": "Voyager 1 signal",
+        "query2": "spacecraft signal"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "Voyager news",
+        "query2": "space exploration"
+      }
+    ],
+    "description": "Voyager 1's surprising signal is still being received. Follow for daily science!",
+    "hashtags": [
+      "#Voyager1",
+      "#SpaceExploration",
+      "#Astronomy",
+      "#Science",
+      "#VoyagerNews",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Mars' Hidden Rivers",
+    "thumb": "MARS RIVERS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's Mars Reconnaissance Orbiter spots 10,000",
+        "hook_top": "MARS BIG FIND",
+        "query": "Mars Reconnaissance Orbiter",
+        "query2": "Mars riverbeds"
+      },
+      {
+        "role": "myth",
+        "text": "Mars is a completely dry planet",
+        "label": "Mars Dry",
+        "query": "Mars landscape",
+        "query2": "barren planet"
+      },
+      {
+        "role": "truth",
+        "text": "Recent findings show evidence of ancient rivers and lakes",
+        "label": "Mars Rivers",
+        "query": "Mars river delta",
+        "query2": "water on Mars"
+      },
+      {
+        "role": "callout",
+        "text": "The discovery changes our understanding of Mars' history",
+        "label": "New Find",
+        "sub": "Rivers on Mars",
+        "label_on": "New",
+        "query": "Mars geological map",
+        "query2": "Mars terrain"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "space news",
+        "query2": "astronomy updates"
+      }
+    ],
+    "description": "NASA's Mars Reconnaissance Orbiter reveals the planet's hidden rivers. Follow for daily science!",
+    "hashtags": [
+      "#Mars",
+      "#Space",
+      "#NASA",
+      "#Rivers",
+      "#Science",
+      "#Shorts",
+      "#FYP"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
