@@ -8554,5 +8554,73 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mars Exploration Uncovers Hidden Water",
+    "thumb": "MARS WATER DISCOVERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's Mars Reconnaissance Orbiter finds 40 kilometers",
+        "hook_top": "MARS WATER FOUND",
+        "query": "Mars Reconnaissance Orbiter",
+        "query2": "Mars exploration"
+      },
+      {
+        "role": "fact",
+        "text": "The orbiter uses radar to detect water ice beneath the surface",
+        "chips": [
+          {
+            "t": "40 km",
+            "on": "water ice",
+            "style": "white"
+          }
+        ],
+        "query": "Mars water ice",
+        "query2": "Mars radar detection"
+      },
+      {
+        "role": "fact",
+        "text": "This discovery could aid future human missions to Mars",
+        "chips": [
+          {
+            "t": "NASA",
+            "on": "human missions",
+            "style": "accent"
+          }
+        ],
+        "query": "Mars human missions",
+        "query2": "NASA Mars plans"
+      },
+      {
+        "role": "callout",
+        "text": "Water on Mars is a crucial resource for astronauts",
+        "label": "Mars Water",
+        "sub": "Astronaut lifeline",
+        "label_on": "crucial resource",
+        "query": "Mars astronaut water",
+        "query2": "Mars life support"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "Mars exploration news",
+        "query2": "NASA Mars updates"
+      }
+    ],
+    "description": "NASA's Mars Reconnaissance Orbiter discovers hidden water on Mars. This finding could aid future human missions to the planet. Follow for daily science!",
+    "hashtags": [
+      "#MarsExploration",
+      "#NASA",
+      "#SpaceDiscovery",
+      "#MarsWater",
+      "#AstronautLife",
+      "#SpaceNews",
+      "#Science",
+      "#Technology",
+      "#Innovation"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

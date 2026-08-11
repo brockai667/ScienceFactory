@@ -1,0 +1,58 @@
+{
+  "title": "NASA Shuts Down Voyager 1 Instrument",
+  "thumb": "VOYAGER 1",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Voyager 1 is 14 billion miles away",
+      "hook_top": "VOYAGER 1 SHOCK",
+      "query": "Voyager 1 spacecraft",
+      "query2": "spacecraft in deep space"
+    },
+    {
+      "role": "count",
+      "text": "Voyager 1 has 3 functional instruments left",
+      "num": 1,
+      "label": "INSTRUMENTS LEFT",
+      "label_on": "instruments",
+      "query": "Voyager 1 instruments",
+      "query2": "spacecraft instruments"
+    },
+    {
+      "role": "count",
+      "text": "Voyager 1 travels 38,000 miles per hour",
+      "num": 2,
+      "label": "SPEED",
+      "label_on": "speed",
+      "query": "Voyager 1 speed",
+      "query2": "fastest spacecraft"
+    },
+    {
+      "role": "count",
+      "text": "Voyager 1 has a 12.5 percent power decrease",
+      "num": 3,
+      "label": "POWER LOSS",
+      "label_on": "power",
+      "query": "Voyager 1 power",
+      "query2": "spacecraft power source"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "space news update",
+      "query2": "daily space news"
+    }
+  ],
+  "description": "Voyager 1 is one of the most distant human-made objects in space. NASA shuts down one of its instruments to keep the spacecraft operating. Follow for daily space updates!",
+  "hashtags": [
+    "#Voyager1",
+    "#SpaceNews",
+    "#NASA",
+    "#Spacecraft",
+    "#SpaceUpdates",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

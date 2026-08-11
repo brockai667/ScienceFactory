@@ -1,0 +1,60 @@
+{
+  "title": "Titan's Mysteries Revealed by NASA's Cassini",
+  "thumb": "TITAN SECRETS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's Cassini mission discovers liquid methane lakes on Titan",
+      "hook_top": "TITAN LAKES",
+      "query": "Titan lakes",
+      "query2": "saturn moon"
+    },
+    {
+      "role": "count",
+      "text": "Titan's surface temperature is around -179°C, making it one of the coldest places in the solar system",
+      "num": 1,
+      "label": "COLDEST PLACE",
+      "label_on": "temperature",
+      "query": "Titan surface",
+      "query2": "cold planet"
+    },
+    {
+      "role": "count",
+      "text": "Cassini has observed geysers of water vapor and organic compounds erupting from Titan's surface",
+      "num": 2,
+      "label": "GEYSERS",
+      "label_on": "geysers",
+      "query": "Titan geysers",
+      "query2": "water vapor"
+    },
+    {
+      "role": "count",
+      "text": "Titan's atmosphere is composed mostly of nitrogen and methane, with a pressure 45% greater than Earth's",
+      "num": 3,
+      "label": "ATMOSPHERIC PRESSURE",
+      "label_on": "atmosphere",
+      "query": "Titan atmosphere",
+      "query2": "methane atmosphere"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "astronaut in space suit",
+      "query2": "space exploration"
+    }
+  ],
+  "description": "Explore the fascinating world of Titan, from liquid methane lakes to geysers and a thick atmosphere. Follow for daily science!",
+  "hashtags": [
+    "#Titan",
+    "#Cassini",
+    "#NASA",
+    "#SpaceExploration",
+    "#SaturnMoon",
+    "#Astronomy",
+    "#Science",
+    "#Shorts",
+    "#FYP"
+  ],
+  "place": "",
+  "country": ""
+}
