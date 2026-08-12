@@ -1,0 +1,54 @@
+{
+  "title": "Mars' Hidden Rivers",
+  "thumb": "MARS RIVERS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's Mars Reconnaissance Orbiter spots 10,000",
+      "hook_top": "MARS BIG FIND",
+      "query": "Mars Reconnaissance Orbiter",
+      "query2": "Mars riverbeds"
+    },
+    {
+      "role": "myth",
+      "text": "Mars is a completely dry planet",
+      "label": "Mars Dry",
+      "query": "Mars landscape",
+      "query2": "barren planet"
+    },
+    {
+      "role": "truth",
+      "text": "Recent findings show evidence of ancient rivers and lakes",
+      "label": "Mars Rivers",
+      "query": "Mars river delta",
+      "query2": "water on Mars"
+    },
+    {
+      "role": "callout",
+      "text": "The discovery changes our understanding of Mars' history",
+      "label": "New Find",
+      "sub": "Rivers on Mars",
+      "label_on": "New",
+      "query": "Mars geological map",
+      "query2": "Mars terrain"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "space news",
+      "query2": "astronomy updates"
+    }
+  ],
+  "description": "NASA's Mars Reconnaissance Orbiter reveals the planet's hidden rivers. Follow for daily science!",
+  "hashtags": [
+    "#Mars",
+    "#Space",
+    "#NASA",
+    "#Rivers",
+    "#Science",
+    "#Shorts",
+    "#FYP"
+  ],
+  "place": "",
+  "country": ""
+}

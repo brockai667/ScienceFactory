@@ -1,0 +1,66 @@
+{
+  "title": "James Webb's Hidden Galaxy",
+  "thumb": "JAMES WEBB",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "4 new galaxies found",
+      "hook_top": "NEW GALAXIES",
+      "query": "galaxy cluster",
+      "query2": "space telescope"
+    },
+    {
+      "role": "fact",
+      "text": "James Webb uses 18 mirrors",
+      "chips": [
+        {
+          "t": "18",
+          "on": "mirrors",
+          "style": "white"
+        }
+      ],
+      "punch": "Zoom",
+      "query": "James Webb telescope mirrors",
+      "query2": "space telescope mirrors"
+    },
+    {
+      "role": "fact",
+      "text": "Each mirror is 1.5 meters wide",
+      "chips": [
+        {
+          "t": "1.5m",
+          "on": "wide",
+          "style": "accent"
+        }
+      ],
+      "query": "James Webb telescope mirror size",
+      "query2": "space telescope mirror diameter"
+    },
+    {
+      "role": "reveal",
+      "text": "They form a 6.5 meter wide mirror",
+      "reveal_top": "GIANT MIRROR",
+      "query": "James Webb telescope primary mirror",
+      "query2": "space telescope primary mirror"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "space news",
+      "query2": "astronomy updates"
+    }
+  ],
+  "description": "James Webb's hidden galaxy discovery is a game-changer. Follow for daily science!",
+  "hashtags": [
+    "#JamesWebb",
+    "#SpaceTelescope",
+    "#GalaxyDiscovery",
+    "#Astronomy",
+    "#Science",
+    "#SpaceNews",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

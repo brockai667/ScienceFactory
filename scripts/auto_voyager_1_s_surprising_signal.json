@@ -1,0 +1,65 @@
+{
+  "title": "Voyager 1's Surprising Signal",
+  "thumb": "VOYAGER SIGNAL",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Voyager 1 is 14 billion miles away",
+      "hook_top": "VOYAGER DISTANCE",
+      "query": "Voyager 1 distance",
+      "query2": "spacecraft distance"
+    },
+    {
+      "role": "fact",
+      "text": "It uses 3 radioisotope thermoelectric generators",
+      "chips": [
+        {
+          "t": "3",
+          "on": "generators",
+          "style": "white"
+        }
+      ],
+      "punch": "Power",
+      "query": "Voyager 1 power source",
+      "query2": "spacecraft power source"
+    },
+    {
+      "role": "fact",
+      "text": "Each generator produces 157 watts",
+      "chips": [
+        {
+          "t": "157W",
+          "on": "watts",
+          "style": "accent"
+        }
+      ],
+      "query": "Voyager 1 power output",
+      "query2": "spacecraft power output"
+    },
+    {
+      "role": "reveal",
+      "text": "It still sends signals back to Earth",
+      "reveal_top": "SIGNAL FROM SPACE",
+      "query": "Voyager 1 signal",
+      "query2": "spacecraft signal"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "Voyager news",
+      "query2": "space exploration"
+    }
+  ],
+  "description": "Voyager 1's surprising signal is still being received. Follow for daily science!",
+  "hashtags": [
+    "#Voyager1",
+    "#SpaceExploration",
+    "#Astronomy",
+    "#Science",
+    "#VoyagerNews",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
