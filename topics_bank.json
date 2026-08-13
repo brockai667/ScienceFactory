@@ -8622,5 +8622,169 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mars' Toxic Soil",
+    "thumb": "RED PLANET HAZARDS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's Mars Curiosity finds 3% toxic soil",
+        "hook_top": "TOXIC SOIL ALERT",
+        "query": "Mars Curiosity rover",
+        "query2": "NASA Mars exploration"
+      },
+      {
+        "role": "myth",
+        "text": "Most people believe Mars soil is harmless",
+        "label": "Harmless Soil",
+        "query": "Mars soil sample",
+        "query2": "NASA Mars soil analysis"
+      },
+      {
+        "role": "truth",
+        "text": "Actually, Mars soil contains perchlorates, a toxic chemical",
+        "label": "Toxic Perchlorates",
+        "query": "perchlorate chemical structure",
+        "query2": "toxic chemical warning"
+      },
+      {
+        "role": "callout",
+        "text": "This discovery changes our understanding of Martian soil composition",
+        "label": "Soil Discovery",
+        "sub": "New findings on Mars",
+        "label_on": "Breaking News",
+        "query": "Mars soil composition",
+        "query2": "NASA Mars discovery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "NASA logo",
+        "query2": "space news updates"
+      }
+    ],
+    "description": "NASA's Mars Curiosity rover has found toxic soil on the Red Planet. This changes our understanding of Martian soil composition. Follow for daily science!",
+    "hashtags": [
+      "#MarsExploration",
+      "#SpaceNews",
+      "#NASA",
+      "#ToxicSoil",
+      "#RedPlanet",
+      "#SpaceFacts",
+      "#ScienceDiscovery",
+      "#PlanetaryScience"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "James Webb's New Cosmic Object",
+    "thumb": "COSMIC DISCOVERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "James Webb discovers a cosmic object with 10 times more mass",
+        "hook_top": "COSMIC OBJECT FOUND",
+        "query": "James Webb Space Telescope",
+        "query2": "NASA cosmic discovery"
+      },
+      {
+        "role": "myth",
+        "text": "Most people think black holes are the only cosmic objects with intense gravity",
+        "label": "Black Hole Dominance",
+        "query": "black hole illustration",
+        "query2": "cosmic object comparison"
+      },
+      {
+        "role": "truth",
+        "text": "Actually, James Webb has discovered a new kind of cosmic object, a 'black hole star'",
+        "label": "Black Hole Star",
+        "query": "black hole star illustration",
+        "query2": "cosmic object discovery"
+      },
+      {
+        "role": "callout",
+        "text": "This new discovery is changing our understanding of the universe's formation",
+        "label": "Cosmic Shift",
+        "sub": "New findings in astronomy",
+        "label_on": "Breaking News",
+        "query": "cosmic object formation",
+        "query2": "universe evolution"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "James Webb Space Telescope",
+        "query2": "astronomy news updates"
+      }
+    ],
+    "description": "James Webb has discovered a new cosmic object, a 'black hole star'. This changes our understanding of the universe's formation. Follow for daily science!",
+    "hashtags": [
+      "#JamesWebb",
+      "#CosmicDiscovery",
+      "#AstronomyNews",
+      "#BlackHoleStar",
+      "#SpaceFacts",
+      "#ScienceDiscovery",
+      "#UniverseEvolution"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Titan's Mysterious Lakes",
+    "thumb": "TITAN LAKES MYSTERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's Cassini finds 20 lakes on Titan",
+        "hook_top": "TITAN LAKES DISCOVERY",
+        "query": "Titan lake landscape",
+        "query2": "NASA Titan exploration"
+      },
+      {
+        "role": "myth",
+        "text": "Most people think Titan's lakes are filled with water",
+        "label": "Water Lakes",
+        "query": "lake water sample",
+        "query2": "Titan lake composition"
+      },
+      {
+        "role": "truth",
+        "text": "Actually, Titan's lakes are filled with liquid methane and ethane",
+        "label": "Methane Lakes",
+        "query": "methane molecule structure",
+        "query2": "liquid methane lake"
+      },
+      {
+        "role": "callout",
+        "text": "This discovery has major implications for our understanding of Titan's chemistry",
+        "label": "Lake Chemistry",
+        "sub": "New findings on Titan",
+        "label_on": "Breaking News",
+        "query": "Titan lake chemistry",
+        "query2": "methane lake composition"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "NASA Cassini",
+        "query2": "space exploration news"
+      }
+    ],
+    "description": "NASA's Cassini has discovered lakes on Titan filled with liquid methane and ethane. This changes our understanding of Titan's chemistry. Follow for daily science!",
+    "hashtags": [
+      "#TitanExploration",
+      "#SpaceNews",
+      "#NASA",
+      "#MethaneLakes",
+      "#LiquidMethane",
+      "#SpaceFacts",
+      "#ScienceDiscovery",
+      "#PlanetaryScience"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

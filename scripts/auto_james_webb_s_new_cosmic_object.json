@@ -1,0 +1,54 @@
+{
+  "title": "James Webb's New Cosmic Object",
+  "thumb": "COSMIC DISCOVERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "James Webb discovers a cosmic object with 10 times more mass",
+      "hook_top": "COSMIC OBJECT FOUND",
+      "query": "James Webb Space Telescope",
+      "query2": "NASA cosmic discovery"
+    },
+    {
+      "role": "myth",
+      "text": "Most people think black holes are the only cosmic objects with intense gravity",
+      "label": "Black Hole Dominance",
+      "query": "black hole illustration",
+      "query2": "cosmic object comparison"
+    },
+    {
+      "role": "truth",
+      "text": "Actually, James Webb has discovered a new kind of cosmic object, a 'black hole star'",
+      "label": "Black Hole Star",
+      "query": "black hole star illustration",
+      "query2": "cosmic object discovery"
+    },
+    {
+      "role": "callout",
+      "text": "This new discovery is changing our understanding of the universe's formation",
+      "label": "Cosmic Shift",
+      "sub": "New findings in astronomy",
+      "label_on": "Breaking News",
+      "query": "cosmic object formation",
+      "query2": "universe evolution"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "James Webb Space Telescope",
+      "query2": "astronomy news updates"
+    }
+  ],
+  "description": "James Webb has discovered a new cosmic object, a 'black hole star'. This changes our understanding of the universe's formation. Follow for daily science!",
+  "hashtags": [
+    "#JamesWebb",
+    "#CosmicDiscovery",
+    "#AstronomyNews",
+    "#BlackHoleStar",
+    "#SpaceFacts",
+    "#ScienceDiscovery",
+    "#UniverseEvolution"
+  ],
+  "place": "",
+  "country": ""
+}

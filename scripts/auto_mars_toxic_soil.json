@@ -1,0 +1,55 @@
+{
+  "title": "Mars' Toxic Soil",
+  "thumb": "RED PLANET HAZARDS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's Mars Curiosity finds 3% toxic soil",
+      "hook_top": "TOXIC SOIL ALERT",
+      "query": "Mars Curiosity rover",
+      "query2": "NASA Mars exploration"
+    },
+    {
+      "role": "myth",
+      "text": "Most people believe Mars soil is harmless",
+      "label": "Harmless Soil",
+      "query": "Mars soil sample",
+      "query2": "NASA Mars soil analysis"
+    },
+    {
+      "role": "truth",
+      "text": "Actually, Mars soil contains perchlorates, a toxic chemical",
+      "label": "Toxic Perchlorates",
+      "query": "perchlorate chemical structure",
+      "query2": "toxic chemical warning"
+    },
+    {
+      "role": "callout",
+      "text": "This discovery changes our understanding of Martian soil composition",
+      "label": "Soil Discovery",
+      "sub": "New findings on Mars",
+      "label_on": "Breaking News",
+      "query": "Mars soil composition",
+      "query2": "NASA Mars discovery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "NASA logo",
+      "query2": "space news updates"
+    }
+  ],
+  "description": "NASA's Mars Curiosity rover has found toxic soil on the Red Planet. This changes our understanding of Martian soil composition. Follow for daily science!",
+  "hashtags": [
+    "#MarsExploration",
+    "#SpaceNews",
+    "#NASA",
+    "#ToxicSoil",
+    "#RedPlanet",
+    "#SpaceFacts",
+    "#ScienceDiscovery",
+    "#PlanetaryScience"
+  ],
+  "place": "",
+  "country": ""
+}
