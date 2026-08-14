@@ -1,0 +1,55 @@
+{
+  "title": "Mars' New Organic Molecules",
+  "thumb": "MARS ORGANICS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA found 7 new compounds on Mars",
+      "hook_top": "MARS NEW SECRETS",
+      "query": "Mars rover",
+      "query2": "NASA Mars discovery"
+    },
+    {
+      "role": "fact",
+      "text": "The Curiosity rover discovered organic molecules in Martian rocks",
+      "chips": [
+        {
+          "t": "3.5B",
+          "on": "years",
+          "style": "accent"
+        }
+      ],
+      "punch": "Billion",
+      "query": "Mars Curiosity rover",
+      "query2": "Martian geology"
+    },
+    {
+      "role": "callout",
+      "text": "This finding is a major step towards understanding life on Mars",
+      "label": "Mars Life Clues",
+      "sub": "New discovery",
+      "label_on": "Mars secrets",
+      "query": "Mars life search",
+      "query2": "NASA Mars exploration"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "space news",
+      "query2": "astronomy news"
+    }
+  ],
+  "description": "NASA's Curiosity rover discovered new organic molecules on Mars, a significant step towards understanding life on the Red Planet. Follow for daily space updates",
+  "hashtags": [
+    "#MarsExploration",
+    "#NASA",
+    "#SpaceDiscovery",
+    "#Astronomy",
+    "#Science",
+    "#SpaceNews",
+    "#MarsLife",
+    "#RedPlanet"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Titan's Mysterious Lakes",
+  "thumb": "TITAN LAKES MYSTERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's Cassini finds 20 lakes on Titan",
+      "hook_top": "TITAN LAKES DISCOVERY",
+      "query": "Titan lake landscape",
+      "query2": "NASA Titan exploration"
+    },
+    {
+      "role": "myth",
+      "text": "Most people think Titan's lakes are filled with water",
+      "label": "Water Lakes",
+      "query": "lake water sample",
+      "query2": "Titan lake composition"
+    },
+    {
+      "role": "truth",
+      "text": "Actually, Titan's lakes are filled with liquid methane and ethane",
+      "label": "Methane Lakes",
+      "query": "methane molecule structure",
+      "query2": "liquid methane lake"
+    },
+    {
+      "role": "callout",
+      "text": "This discovery has major implications for our understanding of Titan's chemistry",
+      "label": "Lake Chemistry",
+      "sub": "New findings on Titan",
+      "label_on": "Breaking News",
+      "query": "Titan lake chemistry",
+      "query2": "methane lake composition"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "NASA Cassini",
+      "query2": "space exploration news"
+    }
+  ],
+  "description": "NASA's Cassini has discovered lakes on Titan filled with liquid methane and ethane. This changes our understanding of Titan's chemistry. Follow for daily science!",
+  "hashtags": [
+    "#TitanExploration",
+    "#SpaceNews",
+    "#NASA",
+    "#MethaneLakes",
+    "#LiquidMethane",
+    "#SpaceFacts",
+    "#ScienceDiscovery",
+    "#PlanetaryScience"
+  ],
+  "place": "",
+  "country": ""
+}

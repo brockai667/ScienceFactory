@@ -8786,5 +8786,170 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mars' New Organic Molecules",
+    "thumb": "MARS ORGANICS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA found 7 new compounds on Mars",
+        "hook_top": "MARS NEW SECRETS",
+        "query": "Mars rover",
+        "query2": "NASA Mars discovery"
+      },
+      {
+        "role": "fact",
+        "text": "The Curiosity rover discovered organic molecules in Martian rocks",
+        "chips": [
+          {
+            "t": "3.5B",
+            "on": "years",
+            "style": "accent"
+          }
+        ],
+        "punch": "Billion",
+        "query": "Mars Curiosity rover",
+        "query2": "Martian geology"
+      },
+      {
+        "role": "callout",
+        "text": "This finding is a major step towards understanding life on Mars",
+        "label": "Mars Life Clues",
+        "sub": "New discovery",
+        "label_on": "Mars secrets",
+        "query": "Mars life search",
+        "query2": "NASA Mars exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "space news",
+        "query2": "astronomy news"
+      }
+    ],
+    "description": "NASA's Curiosity rover discovered new organic molecules on Mars, a significant step towards understanding life on the Red Planet. Follow for daily space updates",
+    "hashtags": [
+      "#MarsExploration",
+      "#NASA",
+      "#SpaceDiscovery",
+      "#Astronomy",
+      "#Science",
+      "#SpaceNews",
+      "#MarsLife",
+      "#RedPlanet"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Voyager 2's Daring Maneuver",
+    "thumb": "VOYAGER SURVIVOR",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Voyager 2 survived a 12-hour 'big bang' maneuver",
+        "hook_top": "VOYAGER DARING",
+        "query": "Voyager 2 spacecraft",
+        "query2": "NASA Voyager"
+      },
+      {
+        "role": "fact",
+        "text": "The maneuver allowed Voyager 2 to exit the heliosphere's boundary",
+        "chips": [
+          {
+            "t": "12hr",
+            "on": "maneuver",
+            "style": "accent"
+          }
+        ],
+        "punch": "Hours",
+        "query": "Voyager 2 heliosphere",
+        "query2": "spacecraft maneuver"
+      },
+      {
+        "role": "callout",
+        "text": "This achievement marks a major milestone in interstellar exploration",
+        "label": "Space Exploration",
+        "sub": "New frontier",
+        "label_on": "Interstellar space",
+        "query": "interstellar space",
+        "query2": "space exploration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space news",
+        "query2": "astronomy news"
+      }
+    ],
+    "description": "Voyager 2 survived a daring 12-hour 'big bang' maneuver, marking a major milestone in interstellar exploration. Follow for daily space news and updates",
+    "hashtags": [
+      "#Voyager2",
+      "#NASA",
+      "#SpaceExploration",
+      "#Astronomy",
+      "#InterstellarSpace",
+      "#Heliosphere",
+      "#Spacecraft",
+      "#SpaceNews"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "James Webb's New Cosmic Wonder",
+    "thumb": "JWST DISCOVERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "James Webb spotted a 13.5 billion-year-old galaxy",
+        "hook_top": "JWST NEW FIND",
+        "query": "James Webb Space Telescope",
+        "query2": "NASA JWST"
+      },
+      {
+        "role": "fact",
+        "text": "The galaxy, called GN-z11, is one of the oldest and most distant observed",
+        "chips": [
+          {
+            "t": "13.5B",
+            "on": "years",
+            "style": "white"
+          }
+        ],
+        "punch": "Billion",
+        "query": "GN-z11 galaxy",
+        "query2": "oldest galaxy"
+      },
+      {
+        "role": "callout",
+        "text": "This discovery sheds light on the early universe's formation",
+        "label": "Cosmic Origins",
+        "sub": "New insight",
+        "label_on": "Universe formation",
+        "query": "early universe",
+        "query2": "cosmology"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "James Webb Space Telescope",
+        "query2": "NASA news"
+      }
+    ],
+    "description": "The James Webb Space Telescope spotted a 13.5 billion-year-old galaxy, one of the oldest and most distant observed. Follow for the latest James Webb updates",
+    "hashtags": [
+      "#JamesWebbSpaceTelescope",
+      "#NASA",
+      "#SpaceDiscovery",
+      "#Astronomy",
+      "#Cosmology",
+      "#Galaxy",
+      "#Universe",
+      "#JWST"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
