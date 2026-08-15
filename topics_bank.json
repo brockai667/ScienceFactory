@@ -8951,5 +8951,170 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mars Curiosity Rover Discovers Ancient Lake",
+    "thumb": "MARS LAKE BED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "10 years on Mars",
+        "hook_top": "MARS 10 YEARS",
+        "query": "Mars Curiosity Rover",
+        "query2": "Mars lake bed"
+      },
+      {
+        "role": "fact",
+        "text": "NASA's Curiosity rover found evidence of a 3.5 billion-year-old lake",
+        "chips": [
+          {
+            "t": "3.5B",
+            "on": "billion",
+            "style": "white"
+          }
+        ],
+        "query": "Mars ancient lake",
+        "query2": "Curiosity rover discovery"
+      },
+      {
+        "role": "callout",
+        "text": "This changes our understanding of Mars' past",
+        "label": "Mars Past",
+        "sub": "Lake Bed",
+        "label_on": "past",
+        "query": "Mars lake bed discovery",
+        "query2": "Curiosity rover findings"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "space news",
+        "query2": "astronomy updates"
+      }
+    ],
+    "description": "NASA's Curiosity rover discovered a 3.5 billion-year-old lake on Mars. This finding changes our understanding of Mars' past. Follow for daily space updates",
+    "hashtags": [
+      "#Mars",
+      "#Space",
+      "#NASA",
+      "#CuriosityRover",
+      "#Astronomy",
+      "#SpaceExploration",
+      "#Science",
+      "#Technology",
+      "#SpaceNews"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "James Webb Telescope Detects Water on Distant Planet",
+    "thumb": "WATER IN SPACE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "James Webb sees water",
+        "hook_top": "WATER IN SPACE",
+        "query": "James Webb Space Telescope",
+        "query2": "distant planet water"
+      },
+      {
+        "role": "fact",
+        "text": "The James Webb Space Telescope detected water vapor on K2-18b, a super-Earth 111 light-years away",
+        "chips": [
+          {
+            "t": "111",
+            "on": "light-years",
+            "style": "accent"
+          }
+        ],
+        "query": "K2-18b water detection",
+        "query2": "James Webb Space Telescope discovery"
+      },
+      {
+        "role": "callout",
+        "text": "This discovery could help us find life beyond Earth",
+        "label": "Life Beyond",
+        "sub": "Water Found",
+        "label_on": "life",
+        "query": "distant planet water detection",
+        "query2": "James Webb Space Telescope findings"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "astronomy news",
+        "query2": "space updates"
+      }
+    ],
+    "description": "The James Webb Space Telescope detected water vapor on a distant planet. This discovery could help us find life beyond Earth. Follow for the latest astronomy news",
+    "hashtags": [
+      "#JamesWebb",
+      "#Space",
+      "#Astronomy",
+      "#Exoplanet",
+      "#WaterInSpace",
+      "#SpaceExploration",
+      "#Science",
+      "#Technology",
+      "#SpaceNews"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Astronomers Discover New Type of Black Hole Star",
+    "thumb": "BLACK HOLE STAR",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Astronomers find new black hole",
+        "hook_top": "BLACK HOLE DISCOVERY",
+        "query": "black hole star",
+        "query2": "astronomers discovery"
+      },
+      {
+        "role": "fact",
+        "text": "Astronomers discovered a new type of cosmic object, a black hole 'star' that is the remnants of a star consumed by a black hole",
+        "chips": [
+          {
+            "t": "BH",
+            "on": "black hole",
+            "style": "white"
+          }
+        ],
+        "query": "black hole star discovery",
+        "query2": "astronomers findings"
+      },
+      {
+        "role": "callout",
+        "text": "This changes our understanding of black hole formation",
+        "label": "Black Hole",
+        "sub": "New Type",
+        "label_on": "black hole",
+        "query": "black hole formation discovery",
+        "query2": "astronomers findings"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science and technology news",
+        "query2": "astronomy updates"
+      }
+    ],
+    "description": "Astronomers discovered a new type of black hole star. This changes our understanding of black hole formation. Follow for daily science and technology updates",
+    "hashtags": [
+      "#BlackHole",
+      "#Space",
+      "#Astronomy",
+      "#Science",
+      "#Technology",
+      "#SpaceExploration",
+      "#Astronomers",
+      "#Discovery",
+      "#CosmicObject"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

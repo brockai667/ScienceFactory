@@ -1,0 +1,55 @@
+{
+  "title": "James Webb Telescope Detects Water on Distant Planet",
+  "thumb": "WATER IN SPACE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "James Webb sees water",
+      "hook_top": "WATER IN SPACE",
+      "query": "James Webb Space Telescope",
+      "query2": "distant planet water"
+    },
+    {
+      "role": "fact",
+      "text": "The James Webb Space Telescope detected water vapor on K2-18b, a super-Earth 111 light-years away",
+      "chips": [
+        {
+          "t": "111",
+          "on": "light-years",
+          "style": "accent"
+        }
+      ],
+      "query": "K2-18b water detection",
+      "query2": "James Webb Space Telescope discovery"
+    },
+    {
+      "role": "callout",
+      "text": "This discovery could help us find life beyond Earth",
+      "label": "Life Beyond",
+      "sub": "Water Found",
+      "label_on": "life",
+      "query": "distant planet water detection",
+      "query2": "James Webb Space Telescope findings"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "astronomy news",
+      "query2": "space updates"
+    }
+  ],
+  "description": "The James Webb Space Telescope detected water vapor on a distant planet. This discovery could help us find life beyond Earth. Follow for the latest astronomy news",
+  "hashtags": [
+    "#JamesWebb",
+    "#Space",
+    "#Astronomy",
+    "#Exoplanet",
+    "#WaterInSpace",
+    "#SpaceExploration",
+    "#Science",
+    "#Technology",
+    "#SpaceNews"
+  ],
+  "place": "",
+  "country": ""
+}

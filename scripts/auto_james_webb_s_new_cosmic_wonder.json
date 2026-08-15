@@ -1,0 +1,55 @@
+{
+  "title": "James Webb's New Cosmic Wonder",
+  "thumb": "JWST DISCOVERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "James Webb spotted a 13.5 billion-year-old galaxy",
+      "hook_top": "JWST NEW FIND",
+      "query": "James Webb Space Telescope",
+      "query2": "NASA JWST"
+    },
+    {
+      "role": "fact",
+      "text": "The galaxy, called GN-z11, is one of the oldest and most distant observed",
+      "chips": [
+        {
+          "t": "13.5B",
+          "on": "years",
+          "style": "white"
+        }
+      ],
+      "punch": "Billion",
+      "query": "GN-z11 galaxy",
+      "query2": "oldest galaxy"
+    },
+    {
+      "role": "callout",
+      "text": "This discovery sheds light on the early universe's formation",
+      "label": "Cosmic Origins",
+      "sub": "New insight",
+      "label_on": "Universe formation",
+      "query": "early universe",
+      "query2": "cosmology"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "James Webb Space Telescope",
+      "query2": "NASA news"
+    }
+  ],
+  "description": "The James Webb Space Telescope spotted a 13.5 billion-year-old galaxy, one of the oldest and most distant observed. Follow for the latest James Webb updates",
+  "hashtags": [
+    "#JamesWebbSpaceTelescope",
+    "#NASA",
+    "#SpaceDiscovery",
+    "#Astronomy",
+    "#Cosmology",
+    "#Galaxy",
+    "#Universe",
+    "#JWST"
+  ],
+  "place": "",
+  "country": ""
+}

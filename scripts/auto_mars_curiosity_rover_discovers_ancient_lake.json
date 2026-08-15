@@ -1,0 +1,55 @@
+{
+  "title": "Mars Curiosity Rover Discovers Ancient Lake",
+  "thumb": "MARS LAKE BED",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "10 years on Mars",
+      "hook_top": "MARS 10 YEARS",
+      "query": "Mars Curiosity Rover",
+      "query2": "Mars lake bed"
+    },
+    {
+      "role": "fact",
+      "text": "NASA's Curiosity rover found evidence of a 3.5 billion-year-old lake",
+      "chips": [
+        {
+          "t": "3.5B",
+          "on": "billion",
+          "style": "white"
+        }
+      ],
+      "query": "Mars ancient lake",
+      "query2": "Curiosity rover discovery"
+    },
+    {
+      "role": "callout",
+      "text": "This changes our understanding of Mars' past",
+      "label": "Mars Past",
+      "sub": "Lake Bed",
+      "label_on": "past",
+      "query": "Mars lake bed discovery",
+      "query2": "Curiosity rover findings"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "space news",
+      "query2": "astronomy updates"
+    }
+  ],
+  "description": "NASA's Curiosity rover discovered a 3.5 billion-year-old lake on Mars. This finding changes our understanding of Mars' past. Follow for daily space updates",
+  "hashtags": [
+    "#Mars",
+    "#Space",
+    "#NASA",
+    "#CuriosityRover",
+    "#Astronomy",
+    "#SpaceExploration",
+    "#Science",
+    "#Technology",
+    "#SpaceNews"
+  ],
+  "place": "",
+  "country": ""
+}
