@@ -1,0 +1,55 @@
+{
+  "title": "Astronomers Discover New Type of Black Hole Star",
+  "thumb": "BLACK HOLE STAR",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Astronomers find new black hole",
+      "hook_top": "BLACK HOLE DISCOVERY",
+      "query": "black hole star",
+      "query2": "astronomers discovery"
+    },
+    {
+      "role": "fact",
+      "text": "Astronomers discovered a new type of cosmic object, a black hole 'star' that is the remnants of a star consumed by a black hole",
+      "chips": [
+        {
+          "t": "BH",
+          "on": "black hole",
+          "style": "white"
+        }
+      ],
+      "query": "black hole star discovery",
+      "query2": "astronomers findings"
+    },
+    {
+      "role": "callout",
+      "text": "This changes our understanding of black hole formation",
+      "label": "Black Hole",
+      "sub": "New Type",
+      "label_on": "black hole",
+      "query": "black hole formation discovery",
+      "query2": "astronomers findings"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science and technology news",
+      "query2": "astronomy updates"
+    }
+  ],
+  "description": "Astronomers discovered a new type of black hole star. This changes our understanding of black hole formation. Follow for daily science and technology updates",
+  "hashtags": [
+    "#BlackHole",
+    "#Space",
+    "#Astronomy",
+    "#Science",
+    "#Technology",
+    "#SpaceExploration",
+    "#Astronomers",
+    "#Discovery",
+    "#CosmicObject"
+  ],
+  "place": "",
+  "country": ""
+}
