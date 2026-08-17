@@ -68,5 +68,19 @@
   "pixabay_api_key": "",
   "visual_engine": "motion",
   "motion_bg": "auto",
-  "motion_style": "detailed scientific 3D rendered scene, CGI artwork, dark clean background, dramatic light, single clear subject, no text, no watermark"
+  "motion_style": "detailed scientific 3D rendered scene, CGI artwork, dark clean background, dramatic light, single clear subject, no text, no watermark",
+  "explainer": {
+    "kokoro_voice": "am_michael",
+    "kokoro_speed": 1.0,
+    "chapters_min": 6,
+    "chapters_max": 8,
+    "beats_per_chapter": 13,
+    "yt_publish_hour": 17,
+    "reel_slot_hour": 18,
+    "reels_start_offset_days": 0,
+    "channel_url": "",
+    "cta_footer": "Full video on YouTube: link in bio",
+    "music": "",
+    "music_volume": 0.06
+  }
 }

@@ -49,7 +49,7 @@ jobs:
           MODELS_FALLBACK: openai/gpt-oss-20b
         run: python generate_topics.py
 
-      - name: Generate 3 videos + push to Buffer
+      - name: Generate 2 videos + push to Buffer (3. denny slot = explainer reel-kapitola z weekly.yml)
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
@@ -59,8 +59,8 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # GitHub Release hosting videa
         run: |
-          python generate_batch.py 3
-          python push_to_buffer.py 3
+          python generate_batch.py 2
+          python push_to_buffer.py 2
 
       - name: Retry failed Buffer posts (auto-heal)
         continue-on-error: true

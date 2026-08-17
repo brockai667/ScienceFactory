@@ -1,0 +1,42 @@
+{
+  "series": "Every USB Port Color Explained",
+  "title": "Every USB Port Color Explained (White, Black, Blue & More)",
+  "description": "USB port colors are not a design choice. Each one tells you the speed and the era of the port. In this video we go through every color, one by one.",
+  "hashtags": ["#usb", "#tech", "#explained", "#computers", "#hardware", "#didyouknow"],
+  "hook_say": "You have probably seen a blue USB port sitting right next to a black one and assumed the colors were just a design choice. They are not. Every color means something, and once you know what, you will stop plugging things into the wrong port.",
+  "thumb_text": "Every USB color EXPLAINED",
+  "thumb_image": "a row of colorful USB-A ports: white, black, blue, red, on a metal computer panel",
+  "chapters": [
+    {
+      "name": "White USB ports",
+      "label": "WHITE",
+      "icon": "a single white USB-A port on a metal computer case panel, front view",
+      "hook": "White USB ports are the ones nobody talks about, and they were the first ones ever made.",
+      "beats": [
+        {"say": "White USB ports.", "show": "White USB ports", "type": "title"},
+        {"say": "White ports are USB 1.0 and 1.1 from 1996, and they were the first ones ever made.", "show": "USB 1.0 and 1.1 (1996)", "type": "image_text", "image": "two white USB-A ports stacked on the back panel of an old beige desktop computer"},
+        {"say": "If you have ever seen a white USB port, you were looking at a genuinely old computer.", "show": "A genuinely old computer", "type": "figure_text", "pose": "point_right", "mood": "surprised"},
+        {"say": "Before USB, plugging anything into a computer was a mess. Your printer had one type of port, your mouse a different one, your keyboard something else again.", "show": "Before USB", "type": "three_images", "image": "an old beige inkjet printer from the 1990s", "label": "Printer", "image2": "a beige ball mouse with a round PS/2 connector", "label2": "Mouse", "image3": "a beige mechanical keyboard from the 1990s with a large DIN plug", "label3": "Keyboard"},
+        {"say": "Speed wise, white ports could move about one and a half megabytes per second. A single photo from your phone today is around five megabytes. So this port would need about three seconds just to move one picture.", "show": "3 seconds per photo", "type": "stat", "stat": "1.5 MB/s", "label": "USB 1.1 top speed", "image": "a modern smartphone lying on a table showing a photo gallery"},
+        {"say": "White ports vanished once USB 2.0 arrived, but USB 1.1 never fully died. Car stereos, budget speakers and basic MP3 players still use it. Why pay for a faster chip when the slow one does the job?", "show": "Why pay for a faster chip?", "type": "two_images", "image": "a car stereo head unit with a USB port on the front", "label": "Car stereo", "image2": "a small black portable MP3 player with a tiny screen", "label2": "MP3 player"}
+      ]
+    },
+    {
+      "name": "Black USB ports",
+      "label": "BLACK",
+      "icon": "a single black USB-A port on a metal computer case panel, front view",
+      "hook": "Black is the USB port you have plugged into a thousand times, and it has a speed ceiling you probably hit every day.",
+      "beats": [
+        {"say": "Black USB ports.", "show": "Black USB ports", "type": "title"},
+        {"say": "Black is USB 2.0, released in the year 2000, and for a decade it was the port on everything.", "show": "USB 2.0 (2000)", "type": "image_text", "image": "a black USB-A port on the side of a silver laptop"},
+        {"say": "It moves data at up to 60 megabytes per second, forty times faster than white.", "show": "40x faster than white", "type": "stat", "stat": "60 MB/s", "label": "USB 2.0 top speed"},
+        {"say": "That is fast enough for a keyboard, a mouse, a printer, or a webcam. Which is exactly why they are still everywhere.", "show": "Still everywhere", "type": "figure_text", "pose": "shrug"},
+        {"say": "Where it hurts is big files. Copying a full movie takes minutes, not seconds. If your external drive feels slow, check the color of the port first.", "show": "Check the color first", "type": "image_text", "image": "an external hard drive connected by cable to a laptop"}
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Next time you plug something in, look at the color first. Subscribe, because next Monday we take apart something else you use every day.",
+    "show": "Look at the color first. See you next Monday."
+  }
+}

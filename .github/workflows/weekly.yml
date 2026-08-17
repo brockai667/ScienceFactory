@@ -1,0 +1,105 @@
+name: Curio Explainer Weekly (Monday long video + chapter reels)
+
+on:
+  schedule:
+    - cron: "15 3 * * 1"   # pondelok 03:15 UTC (~05:15 Bratislava): render trva ~40-60 min, YT publikuje o 17:00
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Len vygenerovat + vyrenderovat, NEPUBLIKOVAT (artefakty na stiahnutie)"
+        type: boolean
+        default: false
+      topic:
+        description: "Konkretna seria (napr. 'Every USB Port Color Explained'); prazdne = dalsia z banky"
+        type: string
+        default: ""
+      no_images:
+        description: "Bez AI obrazkov (rychly test)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write          # stav (explainer_used.json, explainer/scripts/) + GitHub Release hosting reels
+
+concurrency:
+  group: explainer-weekly
+  cancel-in-progress: false
+
+jobs:
+  explainer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install Python deps
+        run: pip install requests cloudinary kokoro-onnx soundfile Pillow numpy
+
+      - name: Cache Kokoro model (~340 MB)
+        uses: actions/cache@v4
+        with:
+          path: kokoro
+          key: pro-models-v1
+
+      - name: Cache AI image cache (setri Pollinations pri opakovanom behu)
+        uses: actions/cache@v4
+        with:
+          path: temp/explainer_cache
+          key: explainer-images-${{ github.run_id }}
+          restore-keys: explainer-images-
+
+      - name: Prepare config
+        run: cp config.example.json config.json
+
+      - name: Run weekly explainer
+        env:
+          MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
+          MODELS_BASE_URL: https://api.groq.com/openai/v1
+          MODELS_MODEL: openai/gpt-oss-120b
+          MODELS_FALLBACK: openai/gpt-oss-20b
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}   # volitelne (auth.pollinations.ai): limit 1/15s -> 1/5s
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry"; fi
+          if [ "${{ github.event.inputs.no_images }}" = "true" ]; then ARGS="$ARGS --no-images"; fi
+          if [ -n "${{ github.event.inputs.topic }}" ]; then ARGS="$ARGS --topic \"${{ github.event.inputs.topic }}\""; fi
+          eval python explainer/run_weekly.py $ARGS
+
+      - name: Upload outputs as artifact (dry-run alebo kontrola)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: explainer-output
+          retention-days: 7
+          if-no-files-found: ignore
+          path: |
+            output/explainer/**/long.mp4
+            output/explainer/**/reel_*.mp4
+            output/explainer/**/thumb.jpg
+            output/explainer/**/meta.json
+
+      - name: Persist state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          rm -f config.json
+          git add explainer/explainer_used.json explainer/explainer_bank.json explainer/scripts/ 2>/dev/null || true
+          git commit -m "explainer: weekly run $(date -u +%F)" || echo "no changes"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          git push || echo "nothing to push"
