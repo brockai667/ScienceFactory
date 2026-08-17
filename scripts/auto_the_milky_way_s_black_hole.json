@@ -1,0 +1,58 @@
+{
+  "title": "The Milky Way's Black Hole",
+  "thumb": "MILKY WAY BLACK",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "The Milky Way has a supermassive black hole",
+      "hook_top": "MILKY WAY BLACK",
+      "query": "milky way black hole",
+      "query2": "supermassive black hole"
+    },
+    {
+      "role": "count",
+      "text": "First, it is located at the galaxy's center",
+      "num": 1,
+      "label": "GALAXY CENTER",
+      "label_on": "center",
+      "query": "galaxy center",
+      "query2": "milky way center"
+    },
+    {
+      "role": "count",
+      "text": "Second, it has a mass of approximately 4 million suns",
+      "num": 2,
+      "label": "BLACK HOLE MASS",
+      "label_on": "mass",
+      "query": "black hole mass",
+      "query2": "supermassive black hole mass"
+    },
+    {
+      "role": "count",
+      "text": "Third, its gravity affects the motion of nearby stars",
+      "num": 3,
+      "label": "STELLAR MOTION",
+      "label_on": "stars",
+      "query": "stellar motion",
+      "query2": "star orbits"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "black hole news",
+      "query2": "milky way updates"
+    }
+  ],
+  "description": "The Milky Way's supermassive black hole is a fascinating topic. Follow for the latest black hole updates!",
+  "hashtags": [
+    "#MilkyWay",
+    "#BlackHole",
+    "#Supermassive",
+    "#GalaxyCenter",
+    "#StellarMotion",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}

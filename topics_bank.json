@@ -9116,5 +9116,179 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "3 Cosmic Discoveries from James Webb",
+    "thumb": "JAMES WEBB",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "James Webb detected 100 galaxies",
+        "hook_top": "JAMES WEBB SEES ALL",
+        "query": "james webb telescope",
+        "query2": "space telescope"
+      },
+      {
+        "role": "count",
+        "text": "First, it found water on a distant exoplanet",
+        "num": 1,
+        "label": "WATER FOUND",
+        "label_on": "water",
+        "query": "distant exoplanet",
+        "query2": "exoplanet discovery"
+      },
+      {
+        "role": "count",
+        "text": "Second, it observed the formation of a new star",
+        "num": 2,
+        "label": "STAR BORN",
+        "label_on": "star",
+        "query": "star formation",
+        "query2": "new star born"
+      },
+      {
+        "role": "count",
+        "text": "Third, it captured a stunning image of the Carina Nebula",
+        "num": 3,
+        "label": "CARINA NEBULA",
+        "label_on": "Carina",
+        "query": "carina nebula",
+        "query2": "nebula image"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space news",
+        "query2": "daily space"
+      }
+    ],
+    "description": "James Webb has made several groundbreaking discoveries. Follow for daily space updates!",
+    "hashtags": [
+      "#JamesWebb",
+      "#SpaceDiscoveries",
+      "#Exoplanets",
+      "#StarFormation",
+      "#CarinaNebula",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Titan's Mysteries Revealed",
+    "thumb": "TITAN SECRETS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Cassini revealed Titan's mysteries",
+        "hook_top": "TITAN REVEALED",
+        "query": "titan cassini",
+        "query2": "saturn moon"
+      },
+      {
+        "role": "count",
+        "text": "First, Titan has lakes filled with liquid methane",
+        "num": 1,
+        "label": "TITAN LAKES",
+        "label_on": "lakes",
+        "query": "titan lakes",
+        "query2": "methane lakes"
+      },
+      {
+        "role": "count",
+        "text": "Second, its surface is shaped by methane rain",
+        "num": 2,
+        "label": "TITAN RAIN",
+        "label_on": "rain",
+        "query": "titan rain",
+        "query2": "methane rain"
+      },
+      {
+        "role": "count",
+        "text": "Third, Cassini found evidence of a subsurface ocean",
+        "num": 3,
+        "label": "TITAN OCEAN",
+        "label_on": "ocean",
+        "query": "titan ocean",
+        "query2": "subsurface ocean"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "titan news",
+        "query2": "cassini updates"
+      }
+    ],
+    "description": "Cassini has revealed many of Titan's mysteries. Follow for the latest Titan updates!",
+    "hashtags": [
+      "#Titan",
+      "#Cassini",
+      "#SaturnMoon",
+      "#MethaneLakes",
+      "#SubsurfaceOcean",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Milky Way's Black Hole",
+    "thumb": "MILKY WAY BLACK",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "The Milky Way has a supermassive black hole",
+        "hook_top": "MILKY WAY BLACK",
+        "query": "milky way black hole",
+        "query2": "supermassive black hole"
+      },
+      {
+        "role": "count",
+        "text": "First, it is located at the galaxy's center",
+        "num": 1,
+        "label": "GALAXY CENTER",
+        "label_on": "center",
+        "query": "galaxy center",
+        "query2": "milky way center"
+      },
+      {
+        "role": "count",
+        "text": "Second, it has a mass of approximately 4 million suns",
+        "num": 2,
+        "label": "BLACK HOLE MASS",
+        "label_on": "mass",
+        "query": "black hole mass",
+        "query2": "supermassive black hole mass"
+      },
+      {
+        "role": "count",
+        "text": "Third, its gravity affects the motion of nearby stars",
+        "num": 3,
+        "label": "STELLAR MOTION",
+        "label_on": "stars",
+        "query": "stellar motion",
+        "query2": "star orbits"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "black hole news",
+        "query2": "milky way updates"
+      }
+    ],
+    "description": "The Milky Way's supermassive black hole is a fascinating topic. Follow for the latest black hole updates!",
+    "hashtags": [
+      "#MilkyWay",
+      "#BlackHole",
+      "#Supermassive",
+      "#GalaxyCenter",
+      "#StellarMotion",
+      "#shorts",
+      "#fyp"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

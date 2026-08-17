@@ -1,0 +1,58 @@
+{
+  "title": "Titan's Mysteries Revealed",
+  "thumb": "TITAN SECRETS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Cassini revealed Titan's mysteries",
+      "hook_top": "TITAN REVEALED",
+      "query": "titan cassini",
+      "query2": "saturn moon"
+    },
+    {
+      "role": "count",
+      "text": "First, Titan has lakes filled with liquid methane",
+      "num": 1,
+      "label": "TITAN LAKES",
+      "label_on": "lakes",
+      "query": "titan lakes",
+      "query2": "methane lakes"
+    },
+    {
+      "role": "count",
+      "text": "Second, its surface is shaped by methane rain",
+      "num": 2,
+      "label": "TITAN RAIN",
+      "label_on": "rain",
+      "query": "titan rain",
+      "query2": "methane rain"
+    },
+    {
+      "role": "count",
+      "text": "Third, Cassini found evidence of a subsurface ocean",
+      "num": 3,
+      "label": "TITAN OCEAN",
+      "label_on": "ocean",
+      "query": "titan ocean",
+      "query2": "subsurface ocean"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "titan news",
+      "query2": "cassini updates"
+    }
+  ],
+  "description": "Cassini has revealed many of Titan's mysteries. Follow for the latest Titan updates!",
+  "hashtags": [
+    "#Titan",
+    "#Cassini",
+    "#SaturnMoon",
+    "#MethaneLakes",
+    "#SubsurfaceOcean",
+    "#shorts",
+    "#fyp"
+  ],
+  "place": "",
+  "country": ""
+}
