@@ -77,8 +77,12 @@ def yt_set_thumbnail(tok, video_id, jpg):
     r.raise_for_status()
 
 
+STATE_FILE = os.path.join(common.EXP_DIR, "explainer_state.json")   # commitovany stav: posledny naplanovany pondelok
+
+
 def yt_publish_time(cfg):
-    """Najblizsi pondelok (alebo dnes, ak je pondelok a cas este nenastal) o yt_publish_hour. ISO UTC."""
+    """Najblizsi VOLNY pondelok o yt_publish_hour (Bratislava). Volny = neskorsi nez posledny uz
+    naplanovany (explainer_state.json) -> manualny beh dnes + cron v pondelok sa nebiju, ale radia za seba."""
     e = cfg["explainer"]
     tz = _tz()
     now = datetime.datetime.now(tz)
@@ -88,6 +92,15 @@ def yt_publish_time(cfg):
     while d.weekday() != 0 or d <= now + datetime.timedelta(minutes=20):
         d += datetime.timedelta(days=1)
         d = d.replace(hour=hour, minute=0, second=0, microsecond=0)
+    st = common.load_json(STATE_FILE, {})
+    last = st.get("last_publish_at")
+    if last:
+        try:
+            lt = datetime.datetime.strptime(last, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=datetime.timezone.utc)
+            while d <= lt.astimezone(tz):
+                d += datetime.timedelta(days=7)
+        except ValueError:
+            pass
     return d
 
 
@@ -126,6 +139,10 @@ def publish_youtube(meta, cfg, dry=False):
     print(f"  [yt] OK: {url}")
     meta["yt_url"] = url
     meta["yt_publish_at"] = publish_at
+    st = common.load_json(STATE_FILE, {})
+    st["last_publish_at"] = publish_at
+    st.setdefault("history", []).append({"series": meta.get("series"), "url": url, "publish_at": publish_at})
+    common.save_json(STATE_FILE, st)
     thumb = meta.get("thumb")
     if thumb and os.path.exists(thumb):
         try:

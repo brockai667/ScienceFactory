@@ -99,7 +99,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           rm -f config.json
-          git add explainer/explainer_used.json explainer/explainer_bank.json explainer/scripts/ 2>/dev/null || true
+          git add explainer/explainer_used.json explainer/explainer_bank.json explainer/explainer_state.json explainer/scripts/ 2>/dev/null || true
           git commit -m "explainer: weekly run $(date -u +%F)" || echo "no changes"
           git pull --rebase --autostash origin ${{ github.ref_name }} || true
           git push || echo "nothing to push"
