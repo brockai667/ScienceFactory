@@ -29,7 +29,8 @@ class H(BaseHTTPRequestHandler):
 
 def main():
     spath = os.path.join(ROOT, "settings.json")
-    s = json.load(open(spath, encoding="utf-8")) if os.path.exists(spath) else {}
+    # utf-8-sig: Notepad/PowerShell radi ulozia BOM, json by na nom spadol
+    s = json.load(open(spath, encoding="utf-8-sig")) if os.path.exists(spath) else {}
     cid = s.get("youtube_client_id"); csec = s.get("youtube_client_secret")
     if not cid or not csec:
         print("CHYBA: do settings.json daj youtube_client_id a youtube_client_secret"); return
