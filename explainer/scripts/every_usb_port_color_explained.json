@@ -1,0 +1,867 @@
+{
+  "series": "Every USB Port Color Explained",
+  "title": "Every USB Port Color Explained – What They Really Mean",
+  "description": "USB ports come in a rainbow of colors, but each hue tells you something about speed or power. In this video we decode every standard color so you know what to expect.",
+  "hashtags": [
+    "#tech",
+    "#explained",
+    "#USB",
+    "#colors",
+    "#hardware",
+    "#electronics"
+  ],
+  "hook_say": "You think the color of a USB port only tells you the brand, but that's not true. We'll break down every color and what speed or power it actually guarantees.",
+  "thumb_text": "USB COLORS REVEALED",
+  "thumb_image": "close‑up of a USB port with a bright blue insert, shot on a white background",
+  "chapters": [
+    {
+      "name": "White",
+      "label": "WHITE",
+      "icon": "prompt: a plain white USB‑A connector, front view, no text",
+      "hook": "White ports are the oldest, offering basic data rates.",
+      "beats": [
+        {
+          "say": "White.",
+          "show": "White.",
+          "type": "title"
+        },
+        {
+          "say": "The first white USB‑A ports appeared in 2000 with the launch of USB 2.0, the so‑called Hi‑Speed standard.",
+          "show": "2000 white USB",
+          "type": "image_text",
+          "image": "White USB Type‑A port on a computer motherboard, close‑up"
+        },
+        {
+          "say": "Before white, USB 1.1 used plain black ports that gave no visual cue about speed, confusing users.",
+          "show": "black vs white",
+          "type": "two_images",
+          "image": "Black plastic USB Type‑A port on an old desktop computer",
+          "image2": "White plastic USB Type‑A port on a 2000 laptop"
+        },
+        {
+          "say": "White indicated a guaranteed 480 Mbit/s transfer, so you could instantly tell a cable would handle video or large backups.",
+          "show": "speed cue",
+          "type": "image_text",
+          "image": "Close‑up of a white USB‑A port with a tiny speed‑label sticker"
+        },
+        {
+          "say": "USB 2.0 tops out at 480 megabits per second, roughly 60 megabytes per second, fast enough for full‑HD video streaming without buffering.",
+          "show": "480 Mbit/s",
+          "type": "stat",
+          "label": "HD video per sec",
+          "stat": "480 Mbit/s"
+        },
+        {
+          "say": "A white USB 2.0 port can supply up to 500 mA of current, enough for a basic phone charge.",
+          "show": "500 mA",
+          "type": "stat",
+          "label": "Phone charge",
+          "stat": "500 mA"
+        },
+        {
+          "say": "Modern SSDs and fast external drives need 900 mA or more, so the white port can’t keep up.",
+          "show": "power limit",
+          "type": "image_text",
+          "image": "White USB‑A port with a small digital meter displaying 500 mA"
+        },
+        {
+          "say": "And it tops out at 480 Mbit/s, a fraction of USB 3.0’s 5 gigabit speed, making large file transfers crawl.",
+          "show": "speed gap",
+          "type": "image_text",
+          "image": "Analog speedometer needle pointing at 480 Mbit/s next to a digital readout of 5 Gbps"
+        },
+        {
+          "say": "But most peripherals back then—keyboards, mice, cheap flash drives—never needed more than that, so the limitation was invisible.",
+          "show": "good enough",
+          "type": "image_text",
+          "image": "Wired computer mouse plugged into a white USB port on a desktop"
+        },
+        {
+          "say": "The real catch? White polycarbonate was cheaper to mass‑produce than black or blue, keeping device prices low.",
+          "show": "cost advantage",
+          "type": "figure_text",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "Today you still see white ports on budget USB hubs, cheap mechanical keyboards, and some low‑cost printers.",
+          "show": "budget gear",
+          "type": "two_images",
+          "image": "USB hub with white ports on a desk",
+          "image2": "Budget mechanical keyboard with a white USB connector"
+        },
+        {
+          "say": "Even some car infotainment systems still ship with a single white USB‑A for firmware updates.",
+          "show": "car update",
+          "type": "image_only",
+          "image": "Car dashboard featuring a white USB‑A port beside the gear shift"
+        },
+        {
+          "say": "So next time you spot a white port, does it feel like a nostalgic speed badge?",
+          "show": "final thought",
+          "type": "figure_text",
+          "pose": "idle",
+          "mood": "smile"
+        }
+      ]
+    },
+    {
+      "name": "Black",
+      "label": "BLACK",
+      "icon": "prompt: a black USB‑A connector, front view, no text",
+      "hook": "Black indicates a standard USB‑2.0 with up to 480 Mbps.",
+      "beats": [
+        {
+          "say": "Black.",
+          "show": "Black.",
+          "type": "title"
+        },
+        {
+          "say": "Black USB ports are the standard USB 2.0 connectors that first showed up in 2000.",
+          "show": "USB 2.0 2000",
+          "type": "figure_text",
+          "pose": "point_right",
+          "mood": "neutral"
+        },
+        {
+          "say": "Before black, we had white USB 1.1 limited to 12 Mbps, barely enough for a mouse.",
+          "show": "12 Mbps",
+          "type": "image_text",
+          "image": "white USB 1.1 port",
+          "label": "12 Mbps"
+        },
+        {
+          "say": "Black introduced 480 Mbps, enough for external hard drives and fast photo transfers.",
+          "show": "480 Mbps",
+          "type": "image_text",
+          "image": "black USB 2.0 port",
+          "label": "480 Mbps"
+        },
+        {
+          "say": "That’s about 60 megabytes per second.",
+          "show": "60 MB/s",
+          "type": "stat",
+          "label": "Hi‑Speed",
+          "stat": "60 MB/s",
+          "mood": "neutral"
+        },
+        {
+          "say": "You can copy a 4‑GB HD movie in under a minute—roughly the time it takes to brew a cup of coffee.",
+          "show": "4 GB movie",
+          "type": "image_text",
+          "image": "USB flash drive copying to external HDD",
+          "label": "4 GB movie"
+        },
+        {
+          "say": "But black ports only supply 500 mA power, so they can’t charge tablets quickly.",
+          "show": "500 mA limit",
+          "type": "figure_text",
+          "pose": "think",
+          "mood": "neutral"
+        },
+        {
+          "say": "Their cable length is capped at five meters, unlike newer standards that stretch to ten meters.",
+          "show": "5 m limit",
+          "type": "image_text",
+          "image": "USB cable coiled 5 meters",
+          "label": "5 m limit"
+        },
+        {
+          "say": "The catch? Most peripherals—keyboards, mice, flash drives—never need more than 12 Mbps, so the speed gap rarely shows up.",
+          "show": "Low‑bandwidth devices",
+          "type": "figure_text",
+          "pose": "shrug",
+          "mood": "neutral"
+        },
+        {
+          "say": "Because the ports are cheap to make, you still see them on budget motherboards and cheap laptops.",
+          "show": "budget hardware",
+          "type": "image_text",
+          "image": "budget motherboard with black USB ports",
+          "label": "budget hardware"
+        },
+        {
+          "say": "Raspberry Pi 4 still ships with four black USB 2.0 ports for low‑speed gadgets.",
+          "show": "Raspberry Pi 4",
+          "type": "image_text",
+          "image": "Raspberry Pi 4 motherboard with black USB ports",
+          "label": "Raspberry Pi 4"
+        },
+        {
+          "say": "You’ll also find black ports in cheap laptops and car infotainment heads‑up displays.",
+          "show": "Budget laptop & Car",
+          "type": "two_images",
+          "image": "budget laptop side view showing USB ports",
+          "image2": "car dashboard USB port",
+          "label": "Budget laptop",
+          "label2": "Car infotainment"
+        },
+        {
+          "say": "So does black still have a role, or is it just a nostalgic shade?",
+          "show": "Still useful?",
+          "type": "figure_text",
+          "pose": "idle",
+          "mood": "surprised"
+        }
+      ]
+    },
+    {
+      "name": "Blue",
+      "label": "BLUE",
+      "icon": "prompt: a blue USB‑A connector, front view, no text",
+      "hook": "Blue means USB 3.0, ten times faster than USB 2.0.",
+      "beats": [
+        {
+          "say": "Blue.",
+          "show": "Blue.",
+          "type": "title"
+        },
+        {
+          "say": "This is the USB 3.0 port, introduced in 2008.",
+          "show": "USB 3.0 2008",
+          "type": "figure_text",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "Before blue, we only had the slower white USB 2.0.",
+          "show": "USB 2.0 limit",
+          "type": "image_text",
+          "image": "close-up of a white USB-type-A 2.0 port on a laptop",
+          "label": "White USB 2.0"
+        },
+        {
+          "say": "Blue was added to signal the ten‑times speed jump.",
+          "show": "Speed jump",
+          "type": "two_images",
+          "image": "white USB-type-A 2.0 port",
+          "image2": "blue USB-type-A 3.0 port",
+          "label": "USB 2.0",
+          "label2": "USB 3.0"
+        },
+        {
+          "say": "The spec caps at 5 gigabits per second.",
+          "show": "5 Gbps",
+          "type": "stat",
+          "label": "theoretical max",
+          "stat": "5 Gbps"
+        },
+        {
+          "say": "That’s about 600 megabytes each second – like copying a full‑HD movie in under two seconds.",
+          "show": "600 MB/s",
+          "type": "image_text",
+          "image": "progress bar filling rapidly on a computer screen",
+          "label": "Speed visual"
+        },
+        {
+          "say": "Cable length tops out at three metres, otherwise the signal degrades.",
+          "show": "3 m limit",
+          "type": "image_text",
+          "image": "coiled USB-type-A cable with a ruler showing three meters",
+          "label": "Length ceiling"
+        },
+        {
+          "say": "Older devices often refuse to negotiate, showing a dreaded ‘device not recognized’ error.",
+          "show": "Compatibility issue",
+          "type": "image_text",
+          "image": "error dialog on a desktop screen with a generic USB warning",
+          "label": "Error message"
+        },
+        {
+          "say": "But that barely mattered because most users plug in external SSDs that already speak 3.0.",
+          "show": "SSD usage",
+          "type": "figure_text",
+          "pose": "think",
+          "mood": "neutral"
+        },
+        {
+          "say": "Here’s the catch: the port still uses the same physical shape, so you can’t tell speed by feel.",
+          "show": "Same shape",
+          "type": "figure_text",
+          "pose": "shrug",
+          "mood": "surprised"
+        },
+        {
+          "say": "You’ll still find blue ports on external SSD enclosures, the PlayStation 5, and Wi‑Fi 6 routers.",
+          "show": "Modern devices",
+          "type": "three_images",
+          "image": "compact external SSD with a blue USB-type-A connector",
+          "image2": "PlayStation 5 console front panel showing a blue port",
+          "image3": "home Wi‑Fi 6 router with a blue USB-type-A slot",
+          "label": "SSD",
+          "label2": "PS5",
+          "label3": "Router"
+        },
+        {
+          "say": "Even new laptops keep a blue 3.0 port for backward‑compatible fast transfers.",
+          "show": "Laptop port",
+          "type": "image_only",
+          "image": "open laptop keyboard area highlighting a blue USB-type-A port"
+        },
+        {
+          "say": "So is the blue port just a nostalgic color code, or still the workhorse of speed?",
+          "show": "Speed workhorse?",
+          "type": "figure_text",
+          "pose": "idle",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "name": "Teal",
+      "label": "TEAL",
+      "icon": "prompt: a teal USB‑C port, front view, no text",
+      "hook": "Teal signals USB 3.1/3.2 Gen 2, up to 10 Gbps.",
+      "beats": [
+        {
+          "say": "Teal.",
+          "show": "Teal.",
+          "type": "title"
+        },
+        {
+          "say": "The teal USB port first showed up in 2015 with the USB 3.1 Gen 2 spec, offering 10 Gbps.",
+          "show": "Teal USB 3.1",
+          "type": "image_text",
+          "image": "teal USB 3.1 port on a motherboard, close‑up",
+          "label": "10 Gbps"
+        },
+        {
+          "say": "It replaced the older blue 5 Gbps port, doubling the bandwidth for 4K video and fast SSDs.",
+          "show": "Blue vs Teal",
+          "type": "image_text",
+          "image": "blue USB 3.0 port on a PC",
+          "image2": "teal USB 3.1 Gen 2 port on a PC",
+          "label": "5 Gbps",
+          "label2": "10 Gbps",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "Manufacturers needed a visual cue for the new speed, so they chose teal to stand out from the blue.",
+          "show": "Why teal?",
+          "type": "image_text",
+          "image": "teal USB port sticker on a cable",
+          "image2": "blue USB port sticker on an older cable",
+          "label": "new color",
+          "label2": "old color",
+          "pose": "think",
+          "mood": "neutral"
+        },
+        {
+          "say": "Ten gigabits per second translates to about a 4‑GB movie in three seconds.",
+          "show": "10 Gbps",
+          "type": "stat",
+          "stat": "10 Gbps",
+          "pose": "idle",
+          "mood": "neutral"
+        },
+        {
+          "say": "That’s the speed you need to move a 4‑GB flash drive in the time it takes to sip coffee.",
+          "show": "4 GB",
+          "type": "image_text",
+          "image": "4 GB USB flash drive on a table",
+          "label": "4 GB",
+          "pose": "present",
+          "mood": "smile"
+        },
+        {
+          "say": "The catch? Reliable 10 Gbps drops off after about one meter of passive cable.",
+          "show": "1 m limit",
+          "type": "image_text",
+          "image": "1 meter USB‑C cable measured with a ruler",
+          "label": "1 m",
+          "pose": "shrug",
+          "mood": "surprised"
+        },
+        {
+          "say": "A two‑meter cable will often stall or error when pushing the full speed.",
+          "show": "2 m cable",
+          "type": "image_only",
+          "image": "coiled 2 meter USB‑C cable on a desk",
+          "pose": "idle",
+          "mood": "neutral"
+        },
+        {
+          "say": "But most desktop setups keep the cable short, so the length limit rarely hurts everyday use.",
+          "show": "Short cable",
+          "type": "image_text",
+          "image": "desktop computer with a short teal USB cable to a monitor",
+          "label": "short",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "When longer runs are needed, manufacturers sell active repeaters that keep the teal port at full speed.",
+          "show": "Active cable",
+          "type": "image_text",
+          "image": "USB‑C active repeater cable with teal connector",
+          "label": "active",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "Today you’ll still find teal on premium external SSDs, the Xbox Series X, and many USB‑C laptops.",
+          "show": "SSD, Console, Laptop",
+          "type": "three_images",
+          "image": "external SSD with teal port",
+          "image2": "Xbox Series X front panel showing teal USB port",
+          "image3": "ultrabook laptop with teal USB‑C port",
+          "label": "SSD",
+          "label2": "Console",
+          "label3": "Laptop",
+          "pose": "idle",
+          "mood": "neutral"
+        },
+        {
+          "say": "Manufacturers keep the teal shade as a quick visual shortcut for 10 Gbps, even as the port shape standardizes.",
+          "show": "Teal signal",
+          "type": "figure_text",
+          "pose": "arms_crossed",
+          "mood": "neutral"
+        },
+        {
+          "say": "So next time you spot teal, you’re looking at a speed‑hungry port ready for 4K and beyond.",
+          "show": "Speed‑hungry?",
+          "type": "figure_text",
+          "mood": "smile"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "label": "RED",
+      "icon": "prompt: a red USB‑C connector, front view, no text",
+      "hook": "Red ports deliver high‑power charging, up to 100 W via PD.",
+      "beats": [
+        {
+          "say": "Red. The color that signals a dedicated charging USB port on many devices.",
+          "show": "Red.",
+          "type": "title"
+        },
+        {
+          "say": "The first red USB ports appeared in 2007 with the Battery Charging Specification 1.2.",
+          "show": "2007 debut",
+          "type": "image_text",
+          "image": "laptop chassis showing a red USB port, 2007 model",
+          "label": "Early red port",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "Before red, ports were just black or white and limited to 500 mA, enough for a mouse.",
+          "show": "Black vs Red",
+          "type": "two_images",
+          "image": "black USB 2.0 port on a desktop PC",
+          "image2": "red USB charging port on a 2007 laptop",
+          "label": "500 mA limit",
+          "label2": "1.5 A boost"
+        },
+        {
+          "say": "Red tells you the port can push up to 1.5 amps, three times the original current.",
+          "show": "1.5 A",
+          "type": "figure_text",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "That translates to about 7.5 watts – roughly the power of a dim LED night‑light.",
+          "show": "7.5 W",
+          "type": "stat",
+          "label": "LED night‑light",
+          "stat": "7.5 W"
+        },
+        {
+          "say": "Compare that to a tiny LED lamp; both draw similar power, but the USB can also transfer data.",
+          "show": "Power match",
+          "type": "two_images",
+          "image": "red USB port on a laptop",
+          "image2": "small LED night‑light on a bedside table",
+          "label": "USB power",
+          "label2": "LED lamp"
+        },
+        {
+          "say": "The downside: red ports still cap at 1.5 A, so they can’t fast‑charge the newest phones.",
+          "show": "Speed limit",
+          "type": "image_text",
+          "image": "smartphone plugged into red USB port with charging icon at 5 W",
+          "label": "Slow charge",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "They also don’t support USB‑Power Delivery, meaning you can’t get 20 W or more from them.",
+          "show": "No PD",
+          "type": "image_text",
+          "image": "USB‑C power‑delivery charger labeled 20 W beside a red USB‑A port",
+          "label": "PD missing",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "But that barely mattered for most users back then, because phones only needed 5 W to charge.",
+          "show": "5 W norm",
+          "type": "figure_text",
+          "pose": "shrug",
+          "mood": "neutral"
+        },
+        {
+          "say": "The catch: manufacturers started adding higher‑current yellow or orange ports, making red less distinctive.",
+          "show": "Yellow rise",
+          "type": "figure_text",
+          "pose": "think",
+          "mood": "surprised"
+        },
+        {
+          "say": "Today you still find red ports on budget laptops, Wi‑Fi routers, and car USB chargers.",
+          "show": "Still here",
+          "type": "three_images",
+          "image": "budget laptop with red USB port",
+          "image2": "home Wi‑Fi router with red charging port",
+          "image3": "car interior USB charger with red port",
+          "label": "Laptop",
+          "label2": "Router",
+          "label3": "Car charger"
+        },
+        {
+          "say": "They’re mainly used for simple charging or powering low‑power peripherals like keyboards.",
+          "show": "Low‑power use",
+          "type": "image_text",
+          "image": "USB keyboard plugged into a red port on a desktop",
+          "label": "Keyboard power",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "So is a red USB port still a useful hint, or just a relic of early fast‑charging?",
+          "show": "Red or relic?",
+          "type": "figure_text",
+          "pose": "idle",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "name": "Yellow",
+      "label": "YELLOW",
+      "icon": "prompt: a yellow USB‑A connector, front view, no text",
+      "hook": "Yellow indicates a USB 3.0 port that also supplies extra power.",
+      "beats": [
+        {
+          "say": "Yellow.",
+          "show": "Yellow.",
+          "type": "title"
+        },
+        {
+          "say": "The yellow USB port first appeared in 2007 with the USB Battery Charging specification.",
+          "show": "2007",
+          "type": "image_text",
+          "image": "close-up of a yellow USB Type-A port on a laptop chassis",
+          "label": "Yellow port",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "Before that, regular ports were limited to 500 mA, barely enough for a mouse or keyboard.",
+          "show": "500 mA limit",
+          "type": "image_text",
+          "image": "USB Type-A port colored white on an old desktop, with a tiny mouse plugged in",
+          "label": "500 mA",
+          "pose": "think",
+          "mood": "neutral"
+        },
+        {
+          "say": "The yellow color marks a charging downstream port that can deliver up to 1.5 A—three times the current.",
+          "show": "1.5 A",
+          "type": "image_text",
+          "image": "yellow USB port with a charging cable attached, glowing light indicating power",
+          "label": "1.5 A",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "That translates to roughly 7.5 watts, enough to fill a phone from zero to 50 percent in about half an hour.",
+          "show": "7.5 W",
+          "type": "stat",
+          "label": "fast charge",
+          "stat": "7.5 W",
+          "pose": "idle",
+          "mood": "neutral"
+        },
+        {
+          "say": "In everyday terms, it’s like powering a 60‑milliwatt LED night‑light for two full hours.",
+          "show": "1.5 A",
+          "type": "stat",
+          "label": "quick charge",
+          "stat": "1.5 A",
+          "pose": "idle",
+          "mood": "neutral"
+        },
+        {
+          "say": "The downside? Older devices that only understand the 500 mA spec can’t take advantage of the extra current.",
+          "show": "old devices",
+          "type": "image_text",
+          "image": "vintage smartphone with a standard USB charger, battery icon showing low charge",
+          "label": "no boost",
+          "pose": "shrug",
+          "mood": "neutral"
+        },
+        {
+          "say": "And because the spec sticks to 5 volts, it can’t deliver the higher voltages needed for fast‑charging laptops.",
+          "show": "5 V limit",
+          "type": "image_text",
+          "image": "laptop power brick labeled 20 V, next to a yellow USB port that only shows 5 V",
+          "label": "voltage cap",
+          "pose": "shrug",
+          "mood": "neutral"
+        },
+        {
+          "say": "But that barely mattered because most smartphones and tablets were designed to accept the higher 1.5 A on a 5‑volt line.",
+          "show": "phone adapts",
+          "type": "figure_text",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "The real catch was the color itself—manufacturers sometimes ignore it, so you can’t always trust yellow to mean fast charging.",
+          "show": "color confusion",
+          "type": "figure_text",
+          "pose": "think",
+          "mood": "surprised"
+        },
+        {
+          "say": "You’ll still see yellow ports on things like the Raspberry Pi 4’s power input, Dell’s Latitude laptops, and many car USB chargers.",
+          "show": "still used",
+          "type": "three_images",
+          "image": "Raspberry Pi 4 board with yellow power port highlighted",
+          "image2": "Dell Latitude laptop side view showing a yellow USB-C port",
+          "image3": "car interior USB charger with a yellow socket",
+          "label": "Pi 4",
+          "label2": "Dell laptop",
+          "label3": "Car charger",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "Even modern power banks often keep a yellow USB‑A output for quick 1‑amp to 2‑amp charging of accessories.",
+          "show": "power bank",
+          "type": "image_text",
+          "image": "compact power bank with a yellow USB-A port labeled 2 A",
+          "label": "2 A output",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "So, is the yellow port a reliable fast‑charge flag, or just a nostalgic hint?",
+          "show": "yellow question",
+          "type": "figure_text",
+          "pose": "idle",
+          "mood": "surprised"
+        }
+      ]
+    },
+    {
+      "name": "Orange",
+      "label": "ORANGE",
+      "icon": "prompt: an orange USB‑C connector, front view, no text",
+      "hook": "Orange marks the fastest 20 Gbps USB 3.1 Gen 2x2.",
+      "beats": [
+        {
+          "say": "Orange.",
+          "show": "Orange.",
+          "type": "title"
+        },
+        {
+          "say": "The orange USB‑A port debuted in 2020, part of the USB 3.2 Gen 2×2 specification.",
+          "show": "2020 debut",
+          "type": "image_text",
+          "image": "orange USB‑A port on a modern motherboard, close‑up",
+          "label": "First seen 2020",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "It exists to double the bandwidth that red ports offered, aiming at 20 gigabits per second for heavy data.",
+          "show": "More speed",
+          "type": "image_text",
+          "image": "close‑up of motherboard showing orange USB‑A port with data flow arrows",
+          "label": "Double bandwidth",
+          "pose": "think",
+          "mood": "neutral"
+        },
+        {
+          "say": "Before orange, blue gave 5 Gbps and red gave 10 Gbps—great for phones, but not enough for 8K video or fast external SSDs.",
+          "show": "Before orange",
+          "type": "image_text",
+          "image": "row of USB ports: white, black, blue, red, orange, each labeled with its speed",
+          "label": "Prev limits",
+          "pose": "shrug",
+          "mood": "neutral"
+        },
+        {
+          "say": "USB 3.2 Gen 2×2 pushes 20 Gbps, roughly 2.5 GB per second.",
+          "show": "20 Gbps",
+          "type": "stat",
+          "label": "≈1.5 s per 4 GB",
+          "stat": "20 Gbps"
+        },
+        {
+          "say": "That means a 4‑gigabyte movie could copy in about one and a half seconds—faster than a coffee sip.",
+          "show": "Fast copy",
+          "type": "image_text",
+          "image": "USB flash drive beside a stopwatch on a desk",
+          "label": "1.5 s per 4 GB",
+          "pose": "idle",
+          "mood": "smile"
+        },
+        {
+          "say": "In practice, many orange ports stall at 10 Gbps because the cable or controller can’t handle the extra lane.",
+          "show": "Cable bottleneck",
+          "type": "image_text",
+          "image": "orange USB‑A port with a low‑quality cable plugged in, cable showing frayed wires",
+          "label": "Cable limits",
+          "pose": "present",
+          "mood": "surprised"
+        },
+        {
+          "say": "Even some high‑end laptops list an orange port but only enable it when paired with a certified 20 Gbps cable.",
+          "show": "Conditional support",
+          "type": "figure_text",
+          "pose": "think",
+          "mood": "neutral"
+        },
+        {
+          "say": "But that barely mattered because the industry was already shifting to USB‑C, where the orange color isn’t needed.",
+          "show": "USB‑C shift",
+          "type": "figure_text",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "The catch? If you buy an orange‑colored USB‑A expecting universal speed, you’ll often be limited by the rest of the system.",
+          "show": "Speed trap",
+          "type": "figure_text",
+          "pose": "arms_crossed",
+          "mood": "surprised"
+        },
+        {
+          "say": "Today you still find orange ports on pro external SSDs like the Samsung X5, which truly exploit the 20 Gbps lane.",
+          "show": "Pro SSD",
+          "type": "image_text",
+          "image": "Samsung X5 external SSD with orange USB‑A connector shown on a table",
+          "label": "Uses 20 Gbps",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "Some gaming laptops keep an orange USB‑A for ultra‑fast VR game installs, alongside their USB‑C Thunderbolt ports.",
+          "show": "Gaming laptop",
+          "type": "image_text",
+          "image": "gaming laptop rear view showing an orange USB‑A port next to a USB‑C port",
+          "label": "Fast install",
+          "pose": "present",
+          "mood": "neutral"
+        },
+        {
+          "say": "So, is the orange port a fleeting upgrade or a niche powerhouse for those who need every extra gigabit?",
+          "show": "Rhetorical?",
+          "type": "figure_text",
+          "pose": "idle",
+          "mood": "smile"
+        }
+      ]
+    },
+    {
+      "name": "Green",
+      "label": "GREEN",
+      "icon": "prompt: a green USB‑A connector, front view, no text",
+      "hook": "Green often denotes OTG or low‑speed devices.",
+      "beats": [
+        {
+          "say": "Welcome to the final chapter of our series, where we dive into the green USB port.",
+          "show": "Green.",
+          "type": "title"
+        },
+        {
+          "say": "The green USB Type‑A port first showed up in 2000, when USB 2.0 hit the market.",
+          "show": "First green port",
+          "type": "image_text",
+          "image": "close‑up of a green USB Type‑A port on a motherboard"
+        },
+        {
+          "say": "Before green, manufacturers used black or white to mark USB 1.x and 2.0, but as laptops got crowded, a new hue helped users spot the faster Hi‑Speed port.",
+          "show": "Color cue",
+          "type": "image_text",
+          "image": "black USB Type‑A port beside a green USB Type‑A port on a laptop side panel"
+        },
+        {
+          "say": "Green gave a quick visual cue that the port could handle 480 Mbps, avoiding guesswork when plugging in devices.",
+          "show": "Speed hint",
+          "type": "image_text",
+          "image": "green USB Type‑A port with a small \"USB 2.0\" label on a computer case"
+        },
+        {
+          "say": "USB 2.0 tops out at 480 megabits per second – roughly the speed of a DVD ripping to your hard drive.",
+          "show": "480 Mbps",
+          "type": "stat",
+          "label": "max speed",
+          "stat": "480 Mbps"
+        },
+        {
+          "say": "Each green port can deliver up to 500 mA at 5 volts, about 2.5 watts – just enough to light a small LED lamp.",
+          "show": "2.5 W",
+          "type": "stat",
+          "label": "Power limit",
+          "stat": "2.5 W"
+        },
+        {
+          "say": "When you try to move a 4 GB movie over a green port, it stalls at about 60 MB per second, far slower than modern standards.",
+          "show": "Slow transfer",
+          "type": "image_text",
+          "image": "USB cable connecting a green port to an external hard drive with a lagging progress bar"
+        },
+        {
+          "say": "New ultrabooks have dropped the green jack entirely, replacing it with USB‑C, so you can’t even find a green port to test.",
+          "show": "Port gone",
+          "type": "image_text",
+          "image": "slim laptop side view showing only USB‑C ports, no USB‑A"
+        },
+        {
+          "say": "But that barely mattered because most users never needed the extra speed – they were just charging a mouse or syncing a phone.",
+          "show": "Low demand",
+          "type": "figure_text",
+          "pose": "think",
+          "mood": "neutral"
+        },
+        {
+          "say": "The real advantage was cost: green ports were cheap to implement, letting OEMs meet the USB 2.0 spec without redesigning the whole chassis.",
+          "show": "Cost win",
+          "type": "figure_text",
+          "pose": "idle",
+          "mood": "neutral"
+        },
+        {
+          "say": "Even today, many home routers keep a green USB port for sharing a flash drive or printer over the network.",
+          "show": "Router",
+          "type": "image_text",
+          "image": "back panel of a Wi‑Fi router with a green USB Type‑A port"
+        },
+        {
+          "say": "Some budget external hard drives still ship with a green connector, signaling they’re USB 2.0 rather than the newer 3.x speeds.",
+          "show": "Hard drive",
+          "type": "image_text",
+          "image": "external hard drive front panel showing a green USB port"
+        },
+        {
+          "say": "So the green port may be fading, but it still quietly powers a lot of everyday gear – isn’t that a nice splash of nostalgia?",
+          "show": "Legacy lives",
+          "type": "figure_text",
+          "mood": "surprised"
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Now you can pick the right port for speed or charging, and avoid guessing. Hit subscribe for more tech hacks, and catch our next explainer this Monday.",
+    "show": "Pick the right port today"
+  }
+}
