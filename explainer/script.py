@@ -172,6 +172,13 @@ def generate(series, items=None):
             c["label"] = str(c.get("label") or c["name"]).upper()[:18]
     if len(chapters) < 3:
         raise RuntimeError("Osnova ma menej ako 3 kapitoly.")
+    # HUD stitky musia byt unikatne (LLM rad da dvom kapitolam "BLUE")
+    seen = {}
+    for c in chapters:
+        base = c["label"]
+        seen[base] = seen.get(base, 0) + 1
+        if seen[base] > 1:
+            c["label"] = (base[:14] + " " + str(seen[base]))[:18]
     spec = {
         "series": series,
         "title": str(ol.get("title") or series)[:100],
