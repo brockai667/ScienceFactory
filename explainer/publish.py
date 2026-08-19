@@ -58,13 +58,15 @@ def yt_upload(tok, mp4, title, description, tags, publish_at=None):
         headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8",
                  "X-Upload-Content-Type": "video/*"},
         data=json.dumps(meta).encode("utf-8"), timeout=60)
-    init.raise_for_status()
+    if init.status_code >= 400:
+        raise RuntimeError(f"YouTube upload init {init.status_code}: {init.text[:600]}")
     up_url = init.headers["Location"]
     with open(mp4, "rb") as f:
         body = f.read()
     put = requests.put(up_url, headers={"Content-Type": "video/*", "Content-Length": str(len(body))},
                        data=body, timeout=1800)
-    put.raise_for_status()
+    if put.status_code >= 400:
+        raise RuntimeError(f"YouTube upload {put.status_code}: {put.text[:600]}")
     return put.json()
 
 
