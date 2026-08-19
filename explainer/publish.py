@@ -34,7 +34,7 @@ def _tz():
 
 
 def _env(key, cfg):
-    return os.environ.get(key) or cfg.get(key.lower()) or ""
+    return (os.environ.get(key) or cfg.get(key.lower()) or "").strip()
 
 
 # ---------------------------------------------------------------- YouTube
@@ -131,7 +131,10 @@ def publish_youtube(meta, cfg, dry=False):
     cid, csec, rtok = (_env("YOUTUBE_CLIENT_ID", cfg), _env("YOUTUBE_CLIENT_SECRET", cfg),
                        _env("YOUTUBE_REFRESH_TOKEN", cfg))
     if not (cid and csec and rtok):
-        raise RuntimeError("Chybaju YouTube OAuth udaje (YOUTUBE_CLIENT_ID/SECRET/REFRESH_TOKEN).")
+        missing = [n for n, v in (("YOUTUBE_CLIENT_ID", cid), ("YOUTUBE_CLIENT_SECRET", csec),
+                                  ("YOUTUBE_REFRESH_TOKEN", rtok)) if not v]
+        raise RuntimeError(f"Chybaju/prazdne YouTube OAuth udaje: {', '.join(missing)} "
+                           f"(gh secret set <NAZOV> -R <repo>).")
     tok = yt_access_token(cid, csec, rtok)
     res = yt_upload(tok, mp4, title, desc, tags, publish_at)
     vid = res.get("id")

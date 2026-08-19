@@ -17,6 +17,10 @@ on:
         description: "Bez AI obrazkov (rychly test)"
         type: boolean
         default: false
+      publish_run_id:
+        description: "LEN PUBLIKOVAT hotovy vystup z ineho behu (run id s artefaktom explainer-output) - preskoci generovanie aj render"
+        type: string
+        default: ""
 
 permissions:
   contents: write          # stav (explainer_used.json, explainer/scripts/) + GitHub Release hosting reels
@@ -58,6 +62,15 @@ jobs:
       - name: Prepare config
         run: cp config.example.json config.json
 
+      - name: Publish-only - stiahni hotovy vystup z ineho behu
+        if: github.event.inputs.publish_run_id != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p output/explainer
+          gh run download "${{ github.event.inputs.publish_run_id }}" -n explainer-output -D output/explainer
+          ls -la output/explainer/*/
+
       - name: Run weekly explainer
         env:
           MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
@@ -78,7 +91,13 @@ jobs:
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry"; fi
           if [ "${{ github.event.inputs.no_images }}" = "true" ]; then ARGS="$ARGS --no-images"; fi
           if [ -n "${{ github.event.inputs.topic }}" ]; then ARGS="$ARGS --topic \"${{ github.event.inputs.topic }}\""; fi
-          eval python explainer/run_weekly.py $ARGS
+          if [ -n "${{ github.event.inputs.publish_run_id }}" ]; then
+            META=$(ls output/explainer/*/meta.json | head -1)
+            echo "Publish-only: $META"
+            python explainer/publish.py "$META"
+          else
+            eval python explainer/run_weekly.py $ARGS
+          fi
 
       - name: Upload outputs as artifact (dry-run alebo kontrola)
         if: always()
