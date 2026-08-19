@@ -59,8 +59,11 @@ def main():
     rt = tok.get("refresh_token")
     if not rt:
         print("Nedostal som refresh_token. Odpoved:", tok); return
-    print("\n=== REFRESH TOKEN (uloz ako Actions secret YOUTUBE_REFRESH_TOKEN) ===")
-    print(rt)
+    print("\n=== REFRESH TOKEN ZISKANY ===")
+    # uloz aj do settings.json (gitignored) -> do secretu sa posle prikazom, bez kopirovania z terminalu
+    s["youtube_refresh_token"] = rt
+    json.dump(s, open(spath, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print("Ulozene do settings.json (youtube_refresh_token). Do secretu: pozri navod.")
 
 
 if __name__ == "__main__":
