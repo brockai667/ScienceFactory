@@ -64,7 +64,7 @@ BEATS = [
     {"id": "speed", "tpl": "stat_countup",
      "say": "Top speed? One and a half megabytes per second. A single photo from your phone would take three whole seconds to copy.",
      "num_end": 1.5, "unit": "MB/s", "label": "USB 1.0 top speed",
-     "cues": [("Top speed", "count"), ("whole seconds", "sub")],
+     "cues": [("and a half", "count"), ("whole seconds", "sub")],
      "sub": "3 seconds — one photo", "img": "phone"},
     {"id": "twist", "tpl": "twist_split",
      "say": "But here is the twist. USB one never died. Car stereos and cheap MP3 players still use it today. Why pay for a faster chip, when the slow one does the job?",
@@ -136,9 +136,9 @@ def cue_time(words, t0, t1, phrase):
     flat = [x[0] for x in nw]
     for i in range(len(flat)):
         if flat[i:i + len(target)] == target:
-            s = win[i]["s"]
-            e = win[min(i + len(target) - 1, len(win) - 1)]["e"]
-            return s + 0.6 * (e - s)
+            ws = win[i]["s"]
+            we = win[min(i + len(target) - 1, len(win) - 1)]["e"]
+            return max(t0 + 0.12, ws + 0.12 * (we - ws))
     print(f"   [cue] NENAJDENE '{phrase}' v beate ({t0:.1f}-{t1:.1f}) -> fallback stred")
     return t0 + 0.5 * (t1 - t0)
 
@@ -224,23 +224,28 @@ def beat_shell(c, b, i, inner, style_extra=""):
     c.clip(f'<div id="{bid}_cam" class="cam">{inner}</div>', t0, dur, track=2 + (i % 2),
            style=f"position:absolute;inset:0;{style_extra}", cid=bid)
     if i > 0:
-        c.tw(f'tl.fromTo("#{bid}",{{x:110,opacity:0}},{{x:0,opacity:1,duration:0.55,ease:"power3.out"}},{t0:.3f});')
+        c.tw(f'tl.fromTo("#{bid}",{{x:110,opacity:0}},{{x:0,opacity:1,duration:0.45,ease:"power3.out"}},{t0:.3f});')
         c.sfx.append((t0, "whoosh"))
     ex0 = t1 + OV - 0.45
-    c.tw(f'tl.to("#{bid}",{{x:-110,opacity:0,duration:0.42,ease:"power2.in"}},{ex0:.3f});')
+    c.tw(f'tl.to("#{bid}",{{x:-110,opacity:0,duration:0.36,ease:"power2.in"}},{ex0:.3f});')
     c.tw(f'tl.fromTo("#{bid}_cam",{{scale:1.0}},{{scale:1.045,duration:{t1 - t0:.3f},ease:"power1.inOut"}},{t0:.3f});')
     return bid
 
 
 def reveal_words(c, sel, at, stagger=0.05):
-    c.tw(f'tl.fromTo("{sel}",{{opacity:0,y:26}},{{opacity:1,y:0,duration:0.5,ease:"power3.out",stagger:{stagger}}},{at:.3f});')
+    c.tw(f'tl.fromTo("{sel}",{{opacity:0,y:26}},{{opacity:1,y:0,duration:0.42,ease:"power3.out",stagger:{stagger}}},{at:.3f});')
 
 
 # ---------------------------------------------------------------- templates
 def tpl_hook_kinetic(c, b, i, words, S):
-    rows = "".join(
-        f'<div class="slam" id="slam{k}" style="{"color:" + S["accent2"] if k == 2 else ("color:" + S["accent"] if k >= 3 else "")}">{esc(txt)}</div>'
-        for k, (_, txt) in enumerate(b["slams"]))
+    def _slam(k, txt):
+        st = "color:" + S["accent2"] if k == 2 else ("color:" + S["accent"] if k >= 3 else "")
+        scrib = ('<svg class="scrib" viewBox="0 0 640 120" preserveAspectRatio="none">'
+                 '<path id="hk_scrib" d="M 8 70 C 140 40, 300 92, 632 52" pathLength="100" fill="none" '
+                 f'stroke="{S["accent2"]}" stroke-width="14" stroke-linecap="round" '
+                 'stroke-dasharray="100" stroke-dashoffset="100"/></svg>') if k == 1 else ""
+        return f'<div class="slam" id="slam{k}" style="{st}">{esc(txt)}{scrib}</div>'
+    rows = "".join(_slam(k, txt) for k, (_, txt) in enumerate(b["slams"]))
     inner = (f'<div class="hooksplit"><div class="hookcol">{rows}</div>'
              f'<div class="hookart">{svglib.usb_port(S, "hk", 560, 420)}</div></div>')
     bid = beat_shell(c, b, i, inner)
@@ -254,6 +259,9 @@ def tpl_hook_kinetic(c, b, i, words, S):
         t = b["t0"] + 0.25 if k == 0 else cue_time(words, b["t0"], b["t1"], cue)
         c.tw(f'tl.fromTo("#slam{k}",{{opacity:0,scale:1.28,y:10}},{{opacity:1,scale:1,y:0,duration:0.34,ease:"power3.out"}},{t:.3f});')
         c.sfx.append((t, "tick"))
+    # "CHEAP PLASTIC" sa PRESKRTNE presne na "It is not."
+    t_not = cue_time(words, b["t0"], b["t1"], "It is not.")
+    c.tw(f'tl.fromTo("#hk_scrib",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.45,ease:"power2.inOut"}},{t_not:.3f});')
     return bid
 
 
@@ -280,7 +288,7 @@ def tpl_svg_focus(c, b, i, words, S):
         f'<div class="frame art" id="if_f"><div class="artcenter">{svglib.usb_port(S, "ifp", 560, 420)}</div>'
         f'<div class="plugfly" id="if_pl">{svglib.usb_plug(S, "ifpl", 300, 210)}</div>{bits}'
         f'<div class="stamp" id="if_st">{svglib.stamp_badge(S, "ifstb", "1996", 230, 120)}</div>'
-        f'<svg id="if_svg" viewBox="0 0 760 570"><ellipse id="if_ell" cx="380" cy="270" rx="245" ry="185" pathLength="100"/></svg>'
+        f'<svg id="if_svg" viewBox="0 0 760 570"><ellipse id="if_ell" cx="380" cy="278" rx="238" ry="168" pathLength="100"/></svg>'
         f'<div class="label" id="if_l">{esc(b["label"])}</div></div>'
         '<div class="side"><div class="headline" id="if_h">' + words_spans(b["head"], "tw") + '</div>'
         '<div class="callout" id="if_c1"><span class="cdot" style="background:#c9a227"></span> 4 gold pins</div>'
@@ -294,7 +302,7 @@ def tpl_svg_focus(c, b, i, words, S):
     c.tw(f'tl.to("#if_pl",{{x:-352,duration:0.45,ease:"power2.in"}},{t_plug + 0.65:.3f});')
     # po zasunuti tecu do portu datove bity (2 konecne vlny, zlava do otvoru)
     for k in range(5):
-        d0 = t_plug + 1.25 + 0.14 * k
+        d0 = t_plug + 1.12 + 0.14 * k
         c.tw(f'tl.fromTo("#if_b{k}",{{x:-200,y:{-58 + 16 * k},opacity:0}},'
              f'{{x:52,opacity:1,duration:0.5,ease:"power1.in"}},{d0:.3f});')
         c.tw(f'tl.to("#if_b{k}",{{opacity:0,duration:0.12}},{d0 + 0.5:.3f});')
@@ -305,8 +313,8 @@ def tpl_svg_focus(c, b, i, words, S):
     c.tw(f'tl.fromTo("#if_l",{{opacity:0,y:18}},{{opacity:1,y:0,duration:0.45,ease:"power3.out"}},{t_plug:.3f});')
     # marker kruh + vysvetlujuce popisky s bodkami
     c.tw(f'tl.fromTo("#if_ell",{{strokeDasharray:100,strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.7,ease:"power2.inOut"}},{t_circ:.3f});')
-    c.tw(f'tl.fromTo("#if_c1",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t_circ + 0.5:.3f});')
-    c.tw(f'tl.fromTo("#if_c2",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t_circ + 0.85:.3f});')
+    c.tw(f'tl.fromTo("#if_c1",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t_plug + 0.5:.3f});')
+    c.tw(f'tl.fromTo("#if_c2",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t_plug + 0.95:.3f});')
     c.sfx.append((t_plug + 1.0, "tick"))
     c.sfx.append((t_circ, "tick"))
 
@@ -368,7 +376,7 @@ def tpl_list_build(c, b, i, words, S):
 
 
 def tpl_stat_countup(c, b, i, words, S):
-    t_count = cue_time(words, b["t0"], b["t1"], b["cues"][0][0]) + 0.3
+    t_count = cue_time(words, b["t0"], b["t1"], b["cues"][0][0]) - 0.15
     t_sub = cue_time(words, b["t0"], b["t1"], b["cues"][1][0])
     inner = (
         '<div class="split">'
@@ -434,7 +442,8 @@ def tpl_twist_split(c, b, i, words, S):
 
 
 def tpl_outro_typeon(c, b, i, words, S):
-    t_type = cue_time(words, b["t0"], b["t1"], b["cues"][0][0]) - 1.2
+    t_founder = cue_time(words, b["t0"], b["t1"], b["cues"][0][0])
+    t_type = t_founder - 1.25
     txt = b["type_text"]
     chars = "".join(f'<span class="ch">{esc(ch)}</span>' for ch in txt)
     confetti = "".join(
@@ -455,7 +464,7 @@ def tpl_outro_typeon(c, b, i, words, S):
     for k, rot in enumerate((16, -12, 10, 0)):
         c.tw(f'tl.to("#otsm_arm",{{rotation:{rot},transformOrigin:"12% 8%",duration:0.3,ease:"power2.inOut"}},{b["t0"] + 0.9 + 0.3 * k:.3f});')
     # koruna DOPADNE na port presne na slovo "founder" + konfety
-    t_cr = t_type + 1.2
+    t_cr = t_founder - 0.45
     c.tw(f'tl.fromTo("#ot_cr",{{opacity:0,y:-240,rotation:-14}},{{opacity:1,y:0,rotation:-7,duration:0.5,ease:"power2.in"}},{t_cr:.3f});')
     c.tw(f'tl.to("#ot_port",{{y:8,duration:0.12,ease:"power2.out"}},{t_cr + 0.48:.3f});')
     c.tw(f'tl.to("#ot_port",{{y:0,duration:0.25,ease:"power3.out"}},{t_cr + 0.6:.3f});')
@@ -494,7 +503,8 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 .hooksplit{{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:80px;padding:0 100px}}
 .hookcol{{display:flex;flex-direction:column;gap:30px;align-items:flex-start}}
 .hookart{{flex:none}}
-.slam{{font-size:96px;font-weight:700;letter-spacing:1px}}
+.slam{{font-size:96px;font-weight:700;letter-spacing:1px;position:relative}}
+.scrib{{position:absolute;left:-12px;right:-12px;top:0;bottom:0;width:calc(100% + 24px);height:100%}}
 .titlewrap{{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:26px}}
 .kicker{{font-size:34px;letter-spacing:6px;color:{S['muted']}}}
 .bigtitle{{font-size:150px;font-weight:700;text-align:center}}
@@ -514,7 +524,7 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 .plugrow{{height:100px;display:flex;align-items:center;justify-content:center}}
 .cardart{{display:flex;align-items:center;justify-content:center;height:320px}}
 .outroart{{display:flex;align-items:flex-end;gap:40px;position:relative}}
-.crownbox{{position:absolute;left:118px;top:-88px}}
+.crownbox{{position:absolute;left:114px;top:-58px}}
 .smanbox{{margin-bottom:-16px}}
 .bit{{position:absolute;left:50%;top:50%;width:26px;height:26px;border-radius:6px;background:{S['accent']};opacity:0}}
 .stamp{{position:absolute;right:-40px;top:-46px}}
