@@ -274,52 +274,97 @@ def tpl_svg_focus(c, b, i, words, S):
     t_head = cue_time(words, b["t0"], b["t1"], b["cues"][0][0])
     t_plug = cue_time(words, b["t0"], b["t1"], b["cues"][1][0])
     t_circ = cue_time(words, b["t0"], b["t1"], b["cues"][2][0])
+    bits = "".join(f'<div class="bit" id="if_b{k}"></div>' for k in range(5))
     inner = (
         '<div class="split">'
         f'<div class="frame art" id="if_f"><div class="artcenter">{svglib.usb_port(S, "ifp", 560, 420)}</div>'
-        f'<div class="plugfly" id="if_pl">{svglib.usb_plug(S, "ifpl", 300, 210)}</div>'
-        f'<svg id="if_svg" viewBox="0 0 760 570"><ellipse id="if_ell" cx="380" cy="270" rx="235" ry="175" pathLength="100"/></svg>'
+        f'<div class="plugfly" id="if_pl">{svglib.usb_plug(S, "ifpl", 300, 210)}</div>{bits}'
+        f'<div class="stamp" id="if_st">{svglib.stamp_badge(S, "ifstb", "1996", 230, 120)}</div>'
+        f'<svg id="if_svg" viewBox="0 0 760 570"><ellipse id="if_ell" cx="380" cy="270" rx="245" ry="185" pathLength="100"/></svg>'
         f'<div class="label" id="if_l">{esc(b["label"])}</div></div>'
-        f'<div class="side"><div class="headline" id="if_h">{words_spans(b["head"], "tw")}</div></div>'
-        '</div>')
+        '<div class="side"><div class="headline" id="if_h">' + words_spans(b["head"], "tw") + '</div>'
+        '<div class="callout" id="if_c1"><span class="cdot" style="background:#c9a227"></span> 4 gold pins</div>'
+        '<div class="callout" id="if_c2"><span class="cdot" style="background:' + S["accent"] + '"></span> power + data in one cable</div>'
+        '</div></div>')
     beat_shell(c, b, i, inner)
     c.tw(f'tl.fromTo("#if_f",{{x:-90,opacity:0}},{{x:0,opacity:1,duration:0.6,ease:"power3.out"}},{b["t0"] + 0.05:.3f});')
     reveal_words(c, "#if_h .tw", t_head, 0.09)
-    # zastrcka priletí a zasunie sa do portu (dva kroky: prilet, zasunutie)
-    c.tw(f'tl.fromTo("#if_pl",{{x:430,y:-260,opacity:0,rotation:8}},{{x:96,y:-150,opacity:1,rotation:0,duration:0.55,ease:"power3.out"}},{t_plug:.3f});')
-    c.tw(f'tl.to("#if_pl",{{x:6,duration:0.45,ease:"power2.in"}},{t_plug + 0.65:.3f});')
+    # zastrcka prileti ZLAVA a zasunie sa horizontalne do otvoru (prilet, zasunutie)
+    c.tw(f'tl.fromTo("#if_pl",{{x:-640,y:-65,opacity:0,rotation:-4}},{{x:-430,y:-65,opacity:1,rotation:0,duration:0.55,ease:"power3.out"}},{t_plug:.3f});')
+    c.tw(f'tl.to("#if_pl",{{x:-352,duration:0.45,ease:"power2.in"}},{t_plug + 0.65:.3f});')
+    # po zasunuti tecu do portu datove bity (2 konecne vlny, zlava do otvoru)
+    for k in range(5):
+        d0 = t_plug + 1.25 + 0.14 * k
+        c.tw(f'tl.fromTo("#if_b{k}",{{x:-200,y:{-58 + 16 * k},opacity:0}},'
+             f'{{x:52,opacity:1,duration:0.5,ease:"power1.in"}},{d0:.3f});')
+        c.tw(f'tl.to("#if_b{k}",{{opacity:0,duration:0.12}},{d0 + 0.5:.3f});')
+        c.tw(f'tl.fromTo("#if_b{k}",{{x:-200,opacity:0}},{{x:52,opacity:1,duration:0.5,ease:"power1.in"}},{d0 + 0.9:.3f});')
+        c.tw(f'tl.to("#if_b{k}",{{opacity:0,duration:0.12}},{d0 + 1.4:.3f});')
+    # peciatka roku dopadne
+    c.tw(f'tl.fromTo("#if_st",{{opacity:0,scale:1.8,rotation:-7}},{{opacity:1,scale:1,rotation:0,duration:0.3,ease:"power3.out"}},{t_plug + 0.2:.3f});')
     c.tw(f'tl.fromTo("#if_l",{{opacity:0,y:18}},{{opacity:1,y:0,duration:0.45,ease:"power3.out"}},{t_plug:.3f});')
+    # marker kruh + vysvetlujuce popisky s bodkami
     c.tw(f'tl.fromTo("#if_ell",{{strokeDasharray:100,strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.7,ease:"power2.inOut"}},{t_circ:.3f});')
+    c.tw(f'tl.fromTo("#if_c1",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t_circ + 0.5:.3f});')
+    c.tw(f'tl.fromTo("#if_c2",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t_circ + 0.85:.3f});')
     c.sfx.append((t_plug + 1.0, "tick"))
     c.sfx.append((t_circ, "tick"))
 
 
 def tpl_list_build(c, b, i, words, S):
+    """Chaos pred USB: PC s 3 ROZNYMI portami hore, 3 zariadenia dole, kazdy kabel sa
+    KRIVOLAKO dokresli k svojmu portu - vizualny dokaz 'one plug per device'."""
     draw = {"printer": svglib.printer, "keyboard": svglib.keyboard, "mouse": svglib.mouse}
     plugs = ["db25", "din", "ps2"]
+    # absolutny layout (stage 1920x1080): tower hore v strede, zariadenia dole
+    cxs = [430, 960, 1490]
     cells = "".join(
-        f'<div class="cell" id="lb{k}"><div class="svgbox">{draw[key](S, "lb" + key, 300, 240)}</div>'
-        f'<div class="plugrow" id="lbp{k}">{svglib.old_plug(S, "lbpl" + str(k), plugs[k], 96, 96)}</div>'
+        f'<div class="acell" id="lb{k}" style="left:{cxs[k] - 170}px;top:640px">'
+        f'<div class="svgbox">{draw[key](S, "lb" + key, 300, 230)}</div>'
+        f'<div class="plugrow" id="lbp{k}">{svglib.old_plug(S, "lbpl" + str(k), plugs[k], 88, 88)}</div>'
         f'<div class="cl">{esc(lab)}</div></div>'
         for k, (_, key, lab) in enumerate(b["items"]))
+    # kable: od zastrcky (cxs, ~905) k portom na veznici (tower pri 960, porty ~ y 420-500)
+    cable_d = [
+        "M 430 905 C 430 660, 1120 640, 1005 400",     # db25 -> lichobeznikovy port
+        "M 960 905 C 700 760, 640 520, 921 345",       # din -> kruhovy port (krizuje prvy)
+        "M 1490 905 C 1490 660, 800 700, 982 452",     # ps2 -> stvorcovy port (krizuje oba)
+    ]
+    cables = "".join(
+        f'<path id="lbc{k}" d="{d}" pathLength="100" fill="none" stroke="{S["ink"]}" stroke-width="10" '
+        f'stroke-linecap="round" opacity="0.85" stroke-dasharray="100" stroke-dashoffset="100"/>'
+        for k, d in enumerate(cable_d))
     subc, subt = b.get("sub", (None, ""))
-    subh = f'<div class="sublab" id="lb_s">{esc(subt)}</div>' if subc else ""
-    inner = (f'<div class="listwrap"><div class="headline center" id="lb_h">{words_spans(b["head"], "tw")}</div>'
-             f'{subh}<div class="row">{cells}</div></div>')
+    inner = (
+        f'<div class="stage"><div class="headline center abshead" id="lb_h">{words_spans(b["head"], "tw")}</div>'
+        f'<div class="sublab abssub" id="lb_s">{esc(subt)}</div>'
+        f'<div class="towerbox" id="lb_t">{svglib.computer_tower(S, "lbtw", 250, 320)}</div>'
+        f'<svg class="cablesvg" viewBox="0 0 1920 1080">{cables}</svg>'
+        f'{cells}<div class="mess" id="lb_m">?!</div></div>')
     beat_shell(c, b, i, inner)
     reveal_words(c, "#lb_h .tw", b["t0"] + 0.15, 0.09)
+    c.tw(f'tl.fromTo("#lb_t",{{opacity:0,y:-30}},{{opacity:1,y:0,duration:0.55,ease:"power3.out"}},{b["t0"] + 0.4:.3f});')
     if subc:
         t_s = cue_time(words, b["t0"], b["t1"], subc)
         c.tw(f'tl.fromTo("#lb_s",{{opacity:0,y:16}},{{opacity:1,y:0,duration:0.45,ease:"power3.out"}},{t_s:.3f});')
+    last_t = b["t0"]
     for k, (cue, _, _) in enumerate(b["items"]):
         t = cue_time(words, b["t0"], b["t1"], cue)
+        last_t = max(last_t, t)
         c.tw(f'tl.fromTo("#lb{k}",{{opacity:0,scale:0.82,y:30}},{{opacity:1,scale:1,y:0,duration:0.5,ease:"power3.out"}},{t:.3f});')
-        # kazde zariadenie ma INU zastrcku - dopadne pod zariadenie o chvilu neskor
-        c.tw(f'tl.fromTo("#lbp{k}",{{opacity:0,y:-26,rotation:-10}},{{opacity:1,y:0,rotation:0,duration:0.4,ease:"power3.out"}},{t + 0.35:.3f});')
+        c.tw(f'tl.fromTo("#lbp{k}",{{opacity:0,y:-26,rotation:-10}},{{opacity:1,y:0,rotation:0,duration:0.4,ease:"power3.out"}},{t + 0.3:.3f});')
+        # kabel sa dokresli od zariadenia k SVOJMU portu (krivolako, krizuju sa)
+        c.tw(f'tl.fromTo("#lbc{k}",{{strokeDasharray:100,strokeDashoffset:100}},'
+             f'{{strokeDashoffset:0,duration:0.7,ease:"power2.inOut"}},{t + 0.45:.3f});')
         c.sfx.append((t, "tick"))
-    # tlaciaren "vypluje" papier ked pride jej cue
+    # tlaciaren vypluje papier
     t_pr = cue_time(words, b["t0"], b["t1"], b["items"][0][0])
     c.tw(f'tl.fromTo("#lbprinter_paper",{{y:-46,opacity:0}},{{y:0,opacity:1,duration:0.6,ease:"power2.out"}},{t_pr + 0.3:.3f});')
+    # "?!" nad spletou kablov na zaver + mierne potrasenie vezou
+    c.tw(f'tl.fromTo("#lb_m",{{opacity:0,scale:0.5}},{{opacity:1,scale:1,duration:0.35,ease:"power3.out"}},{last_t + 1.0:.3f});')
+    c.tw(f'tl.to("#lb_t",{{x:6,duration:0.07,yoyo:false}},{last_t + 1.05:.3f});'
+         f'tl.to("#lb_t",{{x:-6,duration:0.07}},{last_t + 1.12:.3f});'
+         f'tl.to("#lb_t",{{x:0,duration:0.08}},{last_t + 1.19:.3f});')
 
 
 def tpl_stat_countup(c, b, i, words, S):
@@ -331,7 +376,9 @@ def tpl_stat_countup(c, b, i, words, S):
         f'<div class="statlab" id="sc_l">{esc(b["label"])}</div>'
         f'<div class="substat" id="sc_s">{esc(b["sub"])}</div></div>'
         f'<div class="artside" id="sc_f">{svglib.smartphone(S, "scp", 300, 520)}'
-        f'<div class="miniport" id="sc_mp">{svglib.usb_port(S, "scpo", 260, 195)}</div></div>'
+        f'<div class="miniport" id="sc_mp">{svglib.usb_port(S, "scpo", 260, 195)}</div>'
+        '<div class="timer"><span class="tick" id="sc_t0">1s</span><span class="tick" id="sc_t1">2s</span>'
+        '<span class="tick" id="sc_t2">3s</span></div></div>'
         '</div>')
     beat_shell(c, b, i, inner)
     dur = 1.3
@@ -344,8 +391,11 @@ def tpl_stat_countup(c, b, i, words, S):
     # fotka POMALY lezie z mobilu do portu pocas "three whole seconds" (vtip = ako dlho to trva)
     c.tw(f'tl.fromTo("#scp_photo",{{x:0,y:0,opacity:1}},{{x:186,y:96,duration:2.6,ease:"none"}},{t_sub:.3f});')
     c.tw(f'tl.fromTo("#sc_mp",{{opacity:0}},{{opacity:1,duration:0.4,ease:"power2.out"}},{t_sub - 0.2:.3f});')
+    # casovac tika popri lezucej fotke: 1s... 2s... 3s
+    for k in range(3):
+        c.tw(f'tl.fromTo("#sc_t{k}",{{opacity:0,scale:0.7}},{{opacity:1,scale:1,duration:0.25,ease:"power3.out"}},{t_sub + 0.4 + 0.85 * k:.3f});')
+        c.sfx.append((t_sub + 0.4 + 0.85 * k, "tick"))
     c.sfx.append((t_count, "riser"))
-    c.sfx.append((t_sub, "tick"))
 
 
 def tpl_twist_split(c, b, i, words, S):
@@ -357,14 +407,25 @@ def tpl_twist_split(c, b, i, words, S):
     inner = (
         f'<div class="listwrap"><div class="headline center" id="tw_h">{words_spans(b["head"], "tw")}</div>'
         '<div class="row tilt">'
-        f'<div class="card lft" id="tw_l"><div class="cardart">{svglib.car_stereo(S, "twcs", 430, 235)}</div><div class="cl">{esc(ll)}</div></div>'
-        f'<div class="card rgt" id="tw_r"><div class="cardart">{svglib.mp3_player(S, "twm3", 210, 300)}</div><div class="cl">{esc(rl)}</div></div>'
+        f'<div class="card lft" id="tw_l"><div class="okbadge" id="tw_okl">✓</div>'
+        f'<div class="cardart">{svglib.car_stereo(S, "twcs", 430, 235)}</div><div class="cl">{esc(ll)}</div></div>'
+        f'<div class="card rgt" id="tw_r"><div class="okbadge" id="tw_okr">✓</div>'
+        f'<div class="notes">{svglib.music_note(S, "tw_n0", 56, 72)}{svglib.music_note(S, "tw_n1", 44, 58)}{svglib.music_note(S, "tw_n2", 50, 64)}</div>'
+        f'<div class="cardart">{svglib.mp3_player(S, "twm3", 210, 300)}</div><div class="cl">{esc(rl)}</div></div>'
         f'</div><div class="punch" id="tw_p">{words_spans(b["line"], "tw")}</div></div>')
     beat_shell(c, b, i, inner)
     reveal_words(c, "#tw_h .tw", b["t0"] + 0.15, 0.09)
     c.tw(f'tl.fromTo("#tw_l",{{x:-160,opacity:0,rotationY:14}},{{x:0,opacity:1,rotationY:7,duration:0.6,ease:"power3.out"}},{t_l:.3f});')
     c.tw(f'tl.fromTo("#tw_r",{{x:160,opacity:0,rotationY:-14}},{{x:0,opacity:1,rotationY:-7,duration:0.6,ease:"power3.out"}},{t_r:.3f});')
     reveal_words(c, "#tw_p .tw", t_line, 0.07)
+    # noty vyleta z MP3 prehravaca (3 konecne stupania)
+    for k in range(3):
+        c.tw(f'tl.fromTo("#tw_n{k}",{{opacity:0,y:20,x:0,rotation:-8}},'
+             f'{{opacity:1,y:-110,x:{18 + 26 * k},rotation:8,duration:0.9,ease:"power1.out"}},{t_r + 0.5 + 0.4 * k:.3f});')
+        c.tw(f'tl.to("#tw_n{k}",{{opacity:0,duration:0.3}},{t_r + 1.2 + 0.4 * k:.3f});')
+    # "still in use" fajky na kartach
+    c.tw(f'tl.fromTo("#tw_okl",{{opacity:0,scale:1.7}},{{opacity:1,scale:1,duration:0.3,ease:"power3.out"}},{t_l + 0.8:.3f});')
+    c.tw(f'tl.fromTo("#tw_okr",{{opacity:0,scale:1.7}},{{opacity:1,scale:1,duration:0.3,ease:"power3.out"}},{t_r + 0.8:.3f});')
     # USB slot na radiu blikne (konecna pulzna dvojica, nie loop)
     c.tw(f'tl.fromTo("#twcs_usb",{{opacity:0.4}},{{opacity:1,duration:0.3,ease:"power2.out"}},{t_l + 0.5:.3f});')
     c.tw(f'tl.fromTo("#twcs_usb",{{opacity:1}},{{opacity:0.55,duration:0.3,yoyo:false}},{t_l + 0.9:.3f});')
@@ -376,7 +437,11 @@ def tpl_outro_typeon(c, b, i, words, S):
     t_type = cue_time(words, b["t0"], b["t1"], b["cues"][0][0]) - 1.2
     txt = b["type_text"]
     chars = "".join(f'<span class="ch">{esc(ch)}</span>' for ch in txt)
-    inner = (f'<div class="titlewrap"><div class="outroart"><div id="ot_port">{svglib.usb_port(S, "otp", 430, 320)}</div>'
+    confetti = "".join(
+        f'<div class="cf" id="ot_cf{k}" style="background:{["#1c4ed8", "#d62828", "#f4a259", "#5b8e7d", "#ffd21f"][k % 5]}"></div>'
+        for k in range(10))
+    inner = (f'<div class="titlewrap"><div class="outroart"><div id="ot_port">{svglib.usb_port(S, "otp", 430, 320)}'
+             f'<div class="confbox">{confetti}</div></div>'
              f'<div class="crownbox" id="ot_cr">{svglib.crown(S, "otcr", 190, 132)}</div>'
              f'<div class="smanbox" id="ot_sm">{svglib.stickman(S, "otsm", 230, 340)}</div></div>'
              f'<div class="typeline" id="ot_t">{chars}<span class="caret" id="ot_c"></span></div></div>')
@@ -386,11 +451,20 @@ def tpl_outro_typeon(c, b, i, words, S):
     n = len(txt)
     per = 0.055
     c.tw(f'tl.fromTo("#ot_t .ch",{{opacity:0}},{{opacity:1,duration:0.01,ease:"none",stagger:{per}}},{t_type:.3f});')
-    # koruna DOPADNE na port presne na slovo "founder"
+    # panacik ZAMAVA (konecne 3 kyvy ramenom)
+    for k, rot in enumerate((16, -12, 10, 0)):
+        c.tw(f'tl.to("#otsm_arm",{{rotation:{rot},transformOrigin:"12% 8%",duration:0.3,ease:"power2.inOut"}},{b["t0"] + 0.9 + 0.3 * k:.3f});')
+    # koruna DOPADNE na port presne na slovo "founder" + konfety
     t_cr = t_type + 1.2
     c.tw(f'tl.fromTo("#ot_cr",{{opacity:0,y:-240,rotation:-14}},{{opacity:1,y:0,rotation:-7,duration:0.5,ease:"power2.in"}},{t_cr:.3f});')
     c.tw(f'tl.to("#ot_port",{{y:8,duration:0.12,ease:"power2.out"}},{t_cr + 0.48:.3f});')
     c.tw(f'tl.to("#ot_port",{{y:0,duration:0.25,ease:"power3.out"}},{t_cr + 0.6:.3f});')
+    conf = [(-150, -190, -40), (-90, -240, 25), (-20, -260, -15), (60, -235, 30), (130, -185, -25),
+            (-120, -140, 40), (100, -150, -35), (20, -210, 15), (-60, -230, -30), (160, -120, 20)]
+    for k, (dx, dy, rot) in enumerate(conf):
+        c.tw(f'tl.fromTo("#ot_cf{k}",{{opacity:0,x:0,y:0,rotation:0}},'
+             f'{{opacity:1,x:{dx},y:{dy},rotation:{rot},duration:0.45,ease:"power2.out"}},{t_cr + 0.5:.3f});')
+        c.tw(f'tl.to("#ot_cf{k}",{{y:{dy + 130},opacity:0,rotation:{rot * 2},duration:0.55,ease:"power1.in"}},{t_cr + 0.95:.3f});')
     c.sfx.append((t_cr + 0.5, "tick"))
     for k in range(6):
         c.tw(f'tl.set("#ot_c",{{opacity:{k % 2}}},{t_type + n * per + 0.25 + 0.4 * k:.3f});')
@@ -442,6 +516,24 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 .outroart{{display:flex;align-items:flex-end;gap:40px;position:relative}}
 .crownbox{{position:absolute;left:118px;top:-88px}}
 .smanbox{{margin-bottom:-16px}}
+.bit{{position:absolute;left:50%;top:50%;width:26px;height:26px;border-radius:6px;background:{S['accent']};opacity:0}}
+.stamp{{position:absolute;right:-40px;top:-46px}}
+.callout{{font-size:46px;color:{S['muted']};display:flex;align-items:center;gap:18px}}
+.cdot{{display:inline-block;width:26px;height:26px;border-radius:50%;flex:none}}
+.stage{{position:absolute;inset:0}}
+.abshead{{position:absolute;left:0;right:0;top:30px}}
+.abssub{{position:absolute;left:0;right:0;top:156px;text-align:center}}
+.towerbox{{position:absolute;left:835px;top:190px}}
+.cablesvg{{position:absolute;inset:0;width:100%;height:100%}}
+.acell{{position:absolute;width:340px;display:flex;flex-direction:column;align-items:center;gap:6px}}
+.mess{{position:absolute;left:700px;top:520px;font-size:96px;font-weight:700;color:{S['accent2']};transform:rotate(-8deg)}}
+.timer{{position:absolute;left:40px;top:-70px;display:flex;gap:26px}}
+.tick{{font-size:52px;font-weight:700;color:{S['accent2']}}}
+.okbadge{{position:absolute;right:22px;top:14px;font-size:64px;color:#2e9e5b;font-weight:700}}
+.notes{{position:absolute;left:60px;top:120px;display:flex;gap:10px}}
+.notes svg{{position:relative}}
+.confbox{{position:absolute;left:50%;top:40%;width:0;height:0}}
+.cf{{position:absolute;width:20px;height:30px;border-radius:4px;opacity:0}}
 #if_svg{{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px)}}
 #if_ell{{fill:none;stroke:{S['accent2']};stroke-width:9;stroke-linecap:round}}
 .label{{position:absolute;left:24px;bottom:-64px;font-size:40px;color:{S['muted']}}}

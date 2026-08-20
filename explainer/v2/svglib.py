@@ -156,3 +156,36 @@ def stickman(S, p="sm", w=260, h=380, wave=True):
 <path d="M 130 250 C 112 290 100 320 92 352" fill="none" stroke="{ink}" stroke-width="12" stroke-linecap="round"/>
 <path d="M 130 250 C 148 290 160 320 168 352" fill="none" stroke="{ink}" stroke-width="12" stroke-linecap="round"/>
 </svg>'''
+
+
+def computer_tower(S, p="tw", w=250, h=320):
+    """Stara PC skrina s TROMI roznymi portami (kruh/lichobeznik/stvorec) - kazdy kabel ma svoj."""
+    ink = _ink(S)
+    return f'''<svg id="{p}" viewBox="0 0 250 320" width="{w}" height="{h}">
+<g id="{p}_body"><rect x="30" y="15" width="190" height="290" rx="18" fill="{S['card']}" stroke="{ink}" stroke-width="11"/>
+<rect x="55" y="40" width="140" height="26" rx="6" fill="#e7e5dc" stroke="{ink}" stroke-width="7"/>
+<rect x="55" y="80" width="140" height="12" rx="6" fill="#d8d6cc"/>
+<circle cx="70" cy="272" r="9" fill="{S['accent2']}"/></g>
+<g id="{p}_ports">
+<circle id="{p}_p1" cx="90" cy="150" r="26" fill="#efede5" stroke="{ink}" stroke-width="8"/>
+<circle cx="90" cy="150" r="10" fill="#15151a"/>
+<path id="{p}_p2" d="M 135 190 L 205 190 L 197 216 L 143 216 Z" fill="#efede5" stroke="{ink}" stroke-width="8"/>
+<rect id="{p}_p3" x="120" y="235" width="46" height="46" rx="8" fill="#efede5" stroke="{ink}" stroke-width="8"/>
+<circle cx="143" cy="258" r="12" fill="#15151a"/>
+</g></svg>'''
+
+
+def music_note(S, p, w=70, h=90):
+    ink = _ink(S)
+    return f'''<svg id="{p}" viewBox="0 0 70 90" width="{w}" height="{h}">
+<ellipse cx="22" cy="70" rx="16" ry="12" fill="{ink}"/>
+<path d="M 36 70 L 36 14 L 60 8 L 60 26 L 40 31" fill="none" stroke="{ink}" stroke-width="9" stroke-linejoin="round"/>
+</svg>'''
+
+
+def stamp_badge(S, p, text, w=210, h=110):
+    return f'''<svg id="{p}" viewBox="0 0 210 110" width="{w}" height="{h}">
+<rect x="10" y="12" width="190" height="86" rx="14" fill="none" stroke="{S['accent2']}" stroke-width="9" transform="rotate(-7 105 55)"/>
+<text x="105" y="72" text-anchor="middle" font-family="Main" font-size="46" font-weight="bold"
+ fill="{S['accent2']}" transform="rotate(-7 105 55)">{text}</text>
+</svg>'''
