@@ -611,7 +611,7 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 .gcell{{display:flex;flex-direction:column;align-items:center;gap:2px}}
 .gl{{font-size:34px;font-weight:700;color:{S['muted']}}}
 .gridmark{{position:absolute;inset:0;width:100%;height:100%}}
-.gridstamp{{position:absolute;left:560px;top:330px}}
+.gridstamp{{position:absolute;left:150px;top:236px}}
 #if_svg{{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px)}}
 #if_ell{{fill:none;stroke:{S['accent2']};stroke-width:9;stroke-linecap:round}}
 .label{{position:absolute;left:24px;bottom:-64px;font-size:40px;color:{S['muted']}}}
@@ -733,7 +733,7 @@ def main():
         if do_render:
             out = os.path.join(PROJ, f"demo_{sk}.mp4")
             print(f"  render {sk} -> {out}")
-            r = subprocess.run(f'npx hyperframes render --output "{out}"',
+            r = subprocess.run(f'npx -y hyperframes@0.8.4 render --workers 2 --protocol-timeout 600000 --output "{out}"',
                                cwd=PROJ, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=1800, shell=True)
             if r.returncode != 0:
                 print((r.stdout or "")[-800:])
