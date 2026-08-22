@@ -12,13 +12,15 @@ def _ink(S):
     return S["ink"]
 
 
-def usb_port(S, p="up", w=520, h=390):
-    """USB-A port celny pohlad: telo, otvor, jazycek so 4 kontaktmi."""
+def usb_port(S, p="up", w=520, h=390, body=None, tongue=None):
+    """USB-A port celny pohlad: telo, otvor, jazycek so 4 kontaktmi. body/tongue = farby (serie farieb portov)."""
     ink = _ink(S)
+    bodyc = body or S['card']
+    tonguec = tongue or "#f6f6f2"
     return f'''<svg id="{p}" viewBox="0 0 520 390" width="{w}" height="{h}">
-<g id="{p}_body"><rect x="20" y="60" width="480" height="270" rx="26" fill="{S['card']}" stroke="{ink}" stroke-width="12"/></g>
+<g id="{p}_body"><rect x="20" y="60" width="480" height="270" rx="26" fill="{bodyc}" stroke="{ink}" stroke-width="12"/></g>
 <g id="{p}_hole"><rect x="70" y="120" width="380" height="150" rx="10" fill="#15151a" stroke="{ink}" stroke-width="10"/></g>
-<g id="{p}_tongue"><rect x="92" y="196" width="336" height="52" rx="6" fill="#f6f6f2" stroke="{ink}" stroke-width="8"/>
+<g id="{p}_tongue"><rect x="92" y="196" width="336" height="52" rx="6" fill="{tonguec}" stroke="{ink}" stroke-width="8"/>
 <rect x="120" y="210" width="52" height="22" rx="4" fill="#c9a227"/><rect x="196" y="210" width="52" height="22" rx="4" fill="#c9a227"/>
 <rect x="272" y="210" width="52" height="22" rx="4" fill="#c9a227"/><rect x="348" y="210" width="52" height="22" rx="4" fill="#c9a227"/></g>
 <path id="{p}_glint" d="M 60 92 L 150 92" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.5"/>

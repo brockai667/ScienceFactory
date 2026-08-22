@@ -44,9 +44,15 @@ IMGS = json.load(open(os.path.join(ROOT, "temp", "demo_images.json"))) if os.pat
 
 # ---------------------------------------------------------------- scenar (cue-shaped)
 BEATS = [
+    {"id": "vhook", "tpl": "intro_ports",
+     "say": "You have probably seen a blue USB port sitting right next to a black one, and assumed the colors were just a design choice. They are not.",
+     "cues": [("blue USB port", "blue"), ("black one", "black"), ("design choice.", "line"), ("They are not.", "strike")]},
+    {"id": "vgrid", "tpl": "intro_grid",
+     "say": "Every color has a meaning. Speed, power, sometimes both. This is every USB port color, explained. Starting with the oldest one of all.",
+     "cues": [("Every color", "grid"), ("explained.", "title"), ("oldest", "mark")]},
     {"id": "hook", "tpl": "hook_kinetic",
-     "say": "You have probably seen a white USB port on an old computer, and assumed it was just cheap plastic. It is not. White is the original. The very first USB ever made.",
-     "slams": [("white USB port", "THE WHITE USB PORT."), ("cheap plastic.", "“CHEAP PLASTIC”"),
+     "say": "The white one. On an old computer it looks like cheap plastic. It is not. White is the original. The very first USB ever made.",
+     "slams": [("The white one.", "THE WHITE USB PORT."), ("cheap plastic.", "“CHEAP PLASTIC”"),
                ("It is not.", "IT'S NOT."), ("the original.", "THE ORIGINAL."),
                ("first USB ever", "THE FIRST USB EVER.")]},
     {"id": "title", "tpl": "titlecard",
@@ -479,7 +485,61 @@ def tpl_outro_typeon(c, b, i, words, S):
         c.tw(f'tl.set("#ot_c",{{opacity:{k % 2}}},{t_type + n * per + 0.25 + 0.4 * k:.3f});')
 
 
-TPLS = {"hook_kinetic": tpl_hook_kinetic, "titlecard": tpl_titlecard, "image_focus": tpl_svg_focus,
+PORT_COLORS = [("WHITE", "#f6f6f2"), ("BLACK", "#26262c"), ("BLUE", "#1c4ed8"), ("TEAL", "#199a8e"),
+               ("RED", "#d62828"), ("YELLOW", "#ffd21f"), ("ORANGE", "#f2842c"), ("GREEN", "#2e9e5b")]
+
+
+def tpl_intro_ports(c, b, i, words, S):
+    """Uvodny hook serie: modry a cierny port vedla seba + otazka + skrt na 'They are not.'"""
+    t_blue = cue_time(words, b["t0"], b["t1"], b["cues"][0][0])
+    t_black = cue_time(words, b["t0"], b["t1"], b["cues"][1][0])
+    t_line = cue_time(words, b["t0"], b["t1"], b["cues"][2][0])
+    t_strike = cue_time(words, b["t0"], b["t1"], b["cues"][3][0])
+    inner = (
+        '<div class="listwrap"><div class="row" style="gap:150px">'
+        + '<div class="cell" id="vh_b1"><div class="svgbox tall">' + svglib.usb_port(S, "vhb", 460, 345, body="#1c4ed8") + '</div><div class="cl">Blue</div></div>'
+        + '<div class="cell" id="vh_b2"><div class="svgbox tall">' + svglib.usb_port(S, "vhc", 460, 345, body="#26262c") + '</div><div class="cl">Black</div></div>'
+        + '</div>'
+        + '<div class="punchline" id="vh_q">' + words_spans("Just a design choice?", "tw")
+        + '<svg class="scrib" viewBox="0 0 640 120" preserveAspectRatio="none">'
+        + '<path id="vh_scrib" d="M 8 66 C 160 38, 340 90, 632 50" pathLength="100" fill="none" stroke="' + S["accent2"] + '" '
+        + 'stroke-width="13" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"/></svg></div></div>')
+    beat_shell(c, b, i, inner)
+    c.tw(f'tl.fromTo("#vh_b1",{{opacity:0,x:-120,rotationY:12}},{{opacity:1,x:0,rotationY:0,duration:0.5,ease:"power3.out"}},{t_blue:.3f});')
+    c.tw(f'tl.fromTo("#vh_b2",{{opacity:0,x:120,rotationY:-12}},{{opacity:1,x:0,rotationY:0,duration:0.5,ease:"power3.out"}},{t_black:.3f});')
+    reveal_words(c, "#vh_q .tw", t_line, 0.07)
+    c.tw(f'tl.fromTo("#vh_scrib",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.45,ease:"power2.inOut"}},{t_strike:.3f});')
+    c.sfx += [(t_blue, "tick"), (t_black, "tick"), (t_strike, "tick")]
+
+
+def tpl_intro_grid(c, b, i, words, S):
+    """Mriezka vsetkych 8 farieb portov + nazov serie + kruzok na WHITE + PART 1."""
+    t_grid = cue_time(words, b["t0"], b["t1"], b["cues"][0][0])
+    t_title = cue_time(words, b["t0"], b["t1"], b["cues"][1][0])
+    t_mark = cue_time(words, b["t0"], b["t1"], b["cues"][2][0])
+    tiles = "".join(
+        '<div class="gcell" id="vg' + str(k) + '"><div class="gport">' + svglib.usb_port(S, "vgp" + str(k), 210, 158, body=col)
+        + '</div><div class="gl">' + lab + '</div></div>'
+        for k, (lab, col) in enumerate(PORT_COLORS))
+    inner = (
+        '<div class="stage"><div class="seriestitle" id="vg_t">' + words_spans("Every USB Port Color, EXPLAINED", "tw") + '</div>'
+        + '<div class="grid8">' + tiles + '</div>'
+        + '<svg class="gridmark" viewBox="0 0 1920 1080">'
+        + '<ellipse id="vg_ell" cx="475" cy="470" rx="150" ry="120" pathLength="100" fill="none" stroke="' + S["accent2"] + '" '
+        + 'stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"/></svg>'
+        + '<div class="gridstamp" id="vg_st">' + svglib.stamp_badge(S, "vgstb", "PART 1", 240, 124) + '</div></div>')
+    beat_shell(c, b, i, inner)
+    for k in range(8):
+        c.tw(f'tl.fromTo("#vg{k}",{{opacity:0,scale:0.8,y:24}},{{opacity:1,scale:1,y:0,duration:0.4,ease:"power3.out"}},{t_grid + 0.11 * k:.3f});')
+        if k % 2 == 0:
+            c.sfx.append((t_grid + 0.11 * k, "tick"))
+    reveal_words(c, "#vg_t .tw", t_title, 0.08)
+    c.tw(f'tl.fromTo("#vg_ell",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"}},{t_mark:.3f});')
+    c.tw(f'tl.fromTo("#vg_st",{{opacity:0,scale:1.8,rotation:-7}},{{opacity:1,scale:1,rotation:0,duration:0.3,ease:"power3.out"}},{t_mark + 0.4:.3f});')
+    c.sfx.append((t_mark, "tick"))
+
+
+TPLS = {"intro_ports": tpl_intro_ports, "intro_grid": tpl_intro_grid, "hook_kinetic": tpl_hook_kinetic, "titlecard": tpl_titlecard, "image_focus": tpl_svg_focus,
         "list_build": tpl_list_build, "stat_countup": tpl_stat_countup, "twist_split": tpl_twist_split,
         "outro_typeon": tpl_outro_typeon}
 
@@ -489,7 +549,7 @@ GRAIN_URI = ("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wi
              "<rect width='240' height='240' filter='url(%23n)' opacity='0.55'/></svg>")
 
 
-def build_html(style_key, total, comp):
+def build_html(style_key, total, comp, hud_start=1.5):
     S = STYLES[style_key]
     css = f"""
 *{{margin:0;padding:0;box-sizing:border-box}}
@@ -544,6 +604,14 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 .notes svg{{position:relative}}
 .confbox{{position:absolute;left:50%;top:40%;width:0;height:0}}
 .cf{{position:absolute;width:20px;height:30px;border-radius:4px;opacity:0}}
+.svgbox.tall{{height:360px}}
+.punchline{{font-size:82px;font-weight:700;position:relative;margin-top:10px}}
+.seriestitle{{position:absolute;left:0;right:0;top:96px;text-align:center;font-size:104px;font-weight:700}}
+.grid8{{position:absolute;left:280px;right:280px;top:320px;display:grid;grid-template-columns:repeat(4,1fr);gap:34px 60px;justify-items:center}}
+.gcell{{display:flex;flex-direction:column;align-items:center;gap:2px}}
+.gl{{font-size:34px;font-weight:700;color:{S['muted']}}}
+.gridmark{{position:absolute;inset:0;width:100%;height:100%}}
+.gridstamp{{position:absolute;left:560px;top:330px}}
 #if_svg{{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px)}}
 #if_ell{{fill:none;stroke:{S['accent2']};stroke-width:9;stroke-linecap:round}}
 .label{{position:absolute;left:24px;bottom:-64px;font-size:40px;color:{S['muted']}}}
@@ -585,7 +653,7 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 <div id="root" data-composition-id="main" data-start="0" data-duration="{total:.3f}" data-width="{W}" data-height="{H}">
 <div class="clip bgfield" data-start="0" data-duration="{total:.3f}" data-track-index="0"></div>
 {html_clips}
-<div class="clip hud" data-start="1.5" data-duration="{total - 1.5:.3f}" data-track-index="8" id="hud">
+<div class="clip hud" data-start="{hud_start:.3f}" data-duration="{total - hud_start:.3f}" data-track-index="8" id="hud">
   <div class="hudbox"><span></span></div><div class="hudlab">WHITE</div></div>
 <div class="clip" data-start="0" data-duration="{total:.3f}" data-track-index="9"><div id="pbar"></div></div>
 <div class="clip grain" data-start="0" data-duration="{total:.3f}" data-track-index="10"></div>
@@ -596,7 +664,7 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 window.__timelines = window.__timelines || {{}};
 const tl = gsap.timeline({{ paused: true }});
 tl.fromTo("#pbar",{{width:0}},{{width:{W},duration:{total:.3f},ease:"none"}},0);
-tl.fromTo("#hud",{{opacity:0}},{{opacity:1,duration:0.5,ease:"power2.out"}},1.5);
+tl.fromTo("#hud",{{opacity:0}},{{opacity:1,duration:0.5,ease:"power2.out"}},{hud_start:.3f});
 {js}
 window.__timelines["main"] = tl;
 </script></body></html>
@@ -657,7 +725,8 @@ def main():
 
     outs = []
     for sk in (["a", "b"] if not style_arg else [style_arg]):
-        html = build_html(sk, total, comp)
+        hud_start = next(b["t0"] for b in BEATS if b["id"] == "hook")
+        html = build_html(sk, total, comp, hud_start)
         with open(os.path.join(PROJ, "index.html"), "w", encoding="utf-8") as f:
             f.write(html)
         shutil.copy(os.path.join(PROJ, "index.html"), os.path.join(PROJ, f"index_{sk}.html"))
@@ -665,10 +734,10 @@ def main():
             out = os.path.join(PROJ, f"demo_{sk}.mp4")
             print(f"  render {sk} -> {out}")
             r = subprocess.run(f'npx hyperframes render --output "{out}"',
-                               cwd=PROJ, capture_output=True, text=True, timeout=1800, shell=True)
+                               cwd=PROJ, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=1800, shell=True)
             if r.returncode != 0:
-                print(r.stdout[-800:])
-                print(r.stderr[-800:])
+                print((r.stdout or "")[-800:])
+                print((r.stderr or "")[-800:])
                 raise SystemExit(f"render {sk} zlyhal")
             outs.append(out)
     print("HOTOVO:", *outs)
