@@ -1,0 +1,57 @@
+{
+  "title": "James Webb Reveals a 1‑Mile‑Wide Alien Moon",
+  "thumb": "ALIEN MOON",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "James Webb spotted a moon larger than Earth’s moon in a distant exoplanet system",
+      "hook_top": "BIG MOON REVEALED",
+      "query": "James Webb telescope alien moon",
+      "query2": "space telescope moon"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "LARGER THAN OUR MOON",
+      "label_on": "Size",
+      "text": "The moon is about 1,000 km across, nearly 2.5 times larger than our Moon",
+      "query": "large exoplanet moon",
+      "query2": "exoplanet moon"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "ROCKY SURFACE",
+      "label_on": "Surface",
+      "text": "Spectral data suggest a rocky composition similar to Earth’s crust",
+      "query": "rocky exoplanet moon surface",
+      "query2": "exoplanet surface"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "PERIODIC ORBITS",
+      "label_on": "Orbit",
+      "text": "It orbits its star every 120 days, staying within the habitable zone",
+      "query": "exoplanet moon orbit",
+      "query2": "exoplanet orbit"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science follow",
+      "query2": "follow science"
+    }
+  ],
+  "description": "James Webb’s latest snapshot shows a massive, rocky moon orbiting a distant planet. This could hint at complex satellite systems beyond our Solar System. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#JamesWebb",
+    "#Exoplanet",
+    "#SpaceDiscovery",
+    "#AstroNews"
+  ],
+  "place": "",
+  "country": ""
+}

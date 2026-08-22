@@ -9290,5 +9290,594 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "James Webb Reveals a 1‑Mile‑Wide Alien Moon",
+    "thumb": "ALIEN MOON",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "James Webb spotted a moon larger than Earth’s moon in a distant exoplanet system",
+        "hook_top": "BIG MOON REVEALED",
+        "query": "James Webb telescope alien moon",
+        "query2": "space telescope moon"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "LARGER THAN OUR MOON",
+        "label_on": "Size",
+        "text": "The moon is about 1,000 km across, nearly 2.5 times larger than our Moon",
+        "query": "large exoplanet moon",
+        "query2": "exoplanet moon"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "ROCKY SURFACE",
+        "label_on": "Surface",
+        "text": "Spectral data suggest a rocky composition similar to Earth’s crust",
+        "query": "rocky exoplanet moon surface",
+        "query2": "exoplanet surface"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "PERIODIC ORBITS",
+        "label_on": "Orbit",
+        "text": "It orbits its star every 120 days, staying within the habitable zone",
+        "query": "exoplanet moon orbit",
+        "query2": "exoplanet orbit"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "science follow",
+        "query2": "follow science"
+      }
+    ],
+    "description": "James Webb’s latest snapshot shows a massive, rocky moon orbiting a distant planet. This could hint at complex satellite systems beyond our Solar System. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#JamesWebb",
+      "#Exoplanet",
+      "#SpaceDiscovery",
+      "#AstroNews"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Mars Has a 5‑Year‑Old Underground River",
+    "thumb": "MARS RIVER",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mars’ latest rover image reveals a 5‑year‑old underground river",
+        "hook_top": "MARS RIVER DISCOVERED",
+        "query": "Mars underground river rover",
+        "query2": "Mars river image"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "WATER FLOWING",
+        "label_on": "Flow",
+        "text": "Infrared imaging shows liquid water seeping through basaltic layers",
+        "query": "Martian subsurface water",
+        "query2": "Mars water"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "3‑MILE LENGTH",
+        "label_on": "Length",
+        "text": "The river stretches roughly 3 miles beneath the surface",
+        "query": "Mars underground river length",
+        "query2": "Mars river length"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "EROSION MARKS",
+        "label_on": "Erosion",
+        "text": "Distinct channels indicate erosion over millions of years",
+        "query": "Mars erosion channels",
+        "query2": "Mars erosion"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "follow science",
+        "query2": "science daily"
+      }
+    ],
+    "description": "A new rover image confirms a flowing underground river on Mars, stretching several miles below the surface. This challenges our understanding of Martian hydrology. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Mars",
+      "#RoverDiscovery",
+      "#SpaceWater",
+      "#MarsRocks"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Solar Eclipse Composite Shows 30‑Second Totality in Spain",
+    "thumb": "ECLIPSE SHOW",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A composite photo captures the 30‑second totality of Spain’s solar eclipse",
+        "hook_top": "ECLIPSE TOTALITY SHARED",
+        "query": "solar eclipse composite Spain",
+        "query2": "solar eclipse photo"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "30‑SECOND TOTALITY",
+        "label_on": "Duration",
+        "text": "The total eclipse phase lasted exactly 30 seconds at the 0.5° latitude line",
+        "query": "solar eclipse duration",
+        "query2": "eclipse totality"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "LERNMA RADIUS",
+        "label_on": "Radius",
+        "text": "The Moon’s apparent diameter was 1.4° during the event, slightly larger than the Sun’s",
+        "query": "solar eclipse apparent diameter",
+        "query2": "eclipse radius"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "NIGHT SKY CHANGES",
+        "label_on": "Night",
+        "text": "Observers noted stars brighten and the sky darkened to twilight within seconds",
+        "query": "solar eclipse night sky",
+        "query2": "eclipse night"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "follow science",
+        "query2": "science daily"
+      }
+    ],
+    "description": "A composite image from Lerma, Spain, showcases the brief 30‑second totality of the solar eclipse, revealing rapid changes in light and temperature. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#SolarEclipse",
+      "#Astronomy",
+      "#SpaceEvents",
+      "#SkyWatching"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "23‑Times‑Earth Mega‑Earth Discovered!",
+    "thumb": "MEGA‑EARTH REVEALED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A planet 23 times heavier than Earth was just found",
+        "hook_top": "23X EARTH PLANET",
+        "query": "mega earth exoplanet",
+        "query2": "massive rocky exoplanet"
+      },
+      {
+        "role": "fact",
+        "text": "It orbits a Sun‑like star 12 light‑years away",
+        "chips": [
+          {
+            "t": "12 LY AWAY",
+            "on": "orbit",
+            "style": "white"
+          }
+        ],
+        "query": "star system 12 light years",
+        "query2": "solar analog exoplanet"
+      },
+      {
+        "role": "fact",
+        "text": "Its density is similar to Earth, meaning it’s rocky, not gas",
+        "chips": [
+          {
+            "t": "ROCKY",
+            "on": "density",
+            "style": "accent"
+          }
+        ],
+        "query": "rocky exoplanet density",
+        "query2": "solid planet composition"
+      },
+      {
+        "role": "reveal",
+        "text": "Scientists call it a “mega‑Earth” – the biggest rocky world we know",
+        "reveal_top": "MEGAEARTH UNVEILED",
+        "query": "mega earth exoplanet illustration",
+        "query2": "large rocky planet artist rendering"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "space channel logo",
+        "query2": "science brand icon"
+      }
+    ],
+    "description": "A newly discovered planet packs 23 Earth masses into a solid rock sphere. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#exoplanet",
+      "#megaearth",
+      "#science",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "How a Backyard Telescope Spotted a Pulsar",
+    "thumb": "CRAB PULSAR SIGHTED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "I saw the Crab Pulsar with a 30‑inch telescope",
+        "hook_top": "CRAB PULSAR SIGHTED",
+        "query": "crab pulsar telescope view",
+        "query2": "crab nebula pulsar amateur"
+      },
+      {
+        "role": "fact",
+        "text": "The pulsar flashes 30 times per second",
+        "chips": [
+          {
+            "t": "30 HZ",
+            "on": "flashes",
+            "style": "white"
+          }
+        ],
+        "query": "crab pulsar 30 hertz",
+        "query2": "pulsar spin rate"
+      },
+      {
+        "role": "fact",
+        "text": "It lies 6,500 light‑years from Earth in Taurus",
+        "chips": [
+          {
+            "t": "6,500 LY",
+            "on": "distance",
+            "style": "accent"
+          }
+        ],
+        "query": "crab nebula distance",
+        "query2": "taurus nebula location"
+      },
+      {
+        "role": "reveal",
+        "text": "Even a modest telescope can catch its rapid blinking light",
+        "reveal_top": "BLAZING WITH A SMALL TELESCOPE",
+        "query": "amateur telescope pulsar",
+        "query2": "home observatory pulsar"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "night sky timelapse",
+        "query2": "astronomy channel logo"
+      }
+    ],
+    "description": "A 30‑inch scope captured the 30 Hz flashes of the Crab Pulsar, 6,500 ly away. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#astronomy",
+      "#pulsar",
+      "#crabnebula",
+      "#telescope",
+      "#space"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Moon Microbes: The Hidden Threat",
+    "thumb": "MOON MICROBE ALERT",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Some Earth microbes can survive on the Moon",
+        "hook_top": "MOON SURVIVING MICROBES",
+        "query": "microbes on moon",
+        "query2": "bacterial spores lunar surface"
+      },
+      {
+        "role": "fact",
+        "text": "Bacillus subtilis spores stay viable after vacuum exposure for months",
+        "chips": [
+          {
+            "t": "VACS SURVIVE",
+            "on": "spores",
+            "style": "white"
+          }
+        ],
+        "query": "bacillus subtilis vacuum survival",
+        "query2": "space hardy bacteria"
+      },
+      {
+        "role": "fact",
+        "text": "NASA’s Apollo samples showed similar resilient bacteria",
+        "chips": [
+          {
+            "t": "APOLLO FINDINGS",
+            "on": "samples",
+            "style": "accent"
+          }
+        ],
+        "query": "apollo lunar sample microbes",
+        "query2": "lunar dust bacteria"
+      },
+      {
+        "role": "reveal",
+        "text": "They could hitch a ride on future landers, contaminating lunar science",
+        "reveal_top": "CONTAMINATION RISK",
+        "query": "lunar lander microbes",
+        "query2": "spacecraft bacterial contamination"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "planetary protection logo",
+        "query2": "space hygiene icon"
+      }
+    ],
+    "description": "Hardy Earth spores survive lunar vacuum and may hitch rides on landers, threatening clean experiments. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#moon",
+      "#microbes",
+      "#space",
+      "#NASA",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "China’s First Land Rocket Recovery",
+    "thumb": "LAND RECOVERY BREAKTHROUGH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "China landed a rocket stage on solid ground for the first time",
+        "hook_top": "GROUND ROCKET RECOVERY",
+        "query": "china rocket stage land recovery",
+        "query2": "landed rocket stage china"
+      },
+      {
+        "role": "fact",
+        "text": "The Long March 8 booster touched down in Inner Mongolia",
+        "chips": [
+          {
+            "t": "INNER MONGOLIA",
+            "on": "location",
+            "style": "white"
+          }
+        ],
+        "query": "long march 8 landing site",
+        "query2": "china rocket inner mongolia"
+      },
+      {
+        "role": "fact",
+        "text": "Its landing legs deployed automatically, slowing the descent to 3 m/s",
+        "chips": [
+          {
+            "t": "3 M/S",
+            "on": "speed",
+            "style": "accent"
+          }
+        ],
+        "query": "rocket landing speed 3 m/s",
+        "query2": "rocket descent control"
+      },
+      {
+        "role": "reveal",
+        "text": "This marks the first time a Chinese booster was recovered on land, not sea",
+        "reveal_top": "FIRST LAND RECOVERY",
+        "query": "china land recovery rocket",
+        "query2": "ground rocket recovery china"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "rocket launch footage",
+        "query2": "space launch logo"
+      }
+    ],
+    "description": "China’s Long March 8 booster landed safely on land in Inner Mongolia at just 3 m/s, a historic first. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#china",
+      "#rocket",
+      "#reusability",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Mega‑Earth That Isn't a Super‑Jupiter",
+    "thumb": "MEGA EARTH MYTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A planet 23 times Earth’s mass was spotted orbiting a nearby star",
+        "hook_top": "23X EARTH FOUND",
+        "query": "mega earth exoplanet artist impression",
+        "query2": "large rocky exoplanet"
+      },
+      {
+        "role": "myth",
+        "text": "People think any world that massive must be a gas giant like Jupiter",
+        "label": "Massive = Gas Giant",
+        "query": "gas giant illustration",
+        "query2": "jupiter like planet"
+      },
+      {
+        "role": "truth",
+        "text": "The newly confirmed ‘mega‑Earth’ is a solid, rocky world—its density shows it’s made mostly of silicate rock, not hydrogen‑helium gas",
+        "label": "Rocky Mega‑Earth",
+        "query": "rocky exoplanet surface rendering",
+        "query2": "dense rocky planet"
+      },
+      {
+        "role": "callout",
+        "text": "Size alone doesn’t decide composition—density does",
+        "label": "SIZE ≠ COMPOSITION",
+        "sub": "Massive rocks can exist",
+        "label_on": "density",
+        "query": "planet density diagram",
+        "query2": "planet composition chart"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space illustration abstract",
+        "query2": "astronomy background"
+      }
+    ],
+    "description": "A newly discovered super‑massive rocky planet shatters the myth that all huge worlds are gas giants. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#exoplanet",
+      "#space",
+      "#science",
+      "#mythbusting",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Why Moon Microbes Aren’t a Sci‑Fi Plot Twist",
+    "thumb": "MOON MICROBE MYTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Recent tests found hardy microbes could survive lunar conditions for weeks",
+        "hook_top": "MICROBES ON MOON",
+        "query": "moon microbial experiment",
+        "query2": "lunar bacteria test"
+      },
+      {
+        "role": "myth",
+        "text": "The common belief is that any Earth life would instantly die on the Moon",
+        "label": "Life Dies Instantly",
+        "query": "dead plant on moon",
+        "query2": "lifeless moon surface"
+      },
+      {
+        "role": "truth",
+        "text": "Certain spores and extremophiles can endure vacuum, radiation and extreme temperature swings, staying viable for extended periods",
+        "label": "Extremophiles Survive",
+        "query": "extremophile spores microscope",
+        "query2": "bacterial spores vacuum"
+      },
+      {
+        "role": "callout",
+        "text": "Planetary protection rules exist for a reason",
+        "label": "PROTECT PLANETS",
+        "sub": "Prevent contaminating other worlds",
+        "label_on": "protect",
+        "query": "planetary protection logo",
+        "query2": "space contamination warning"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space science icons",
+        "query2": "astronomy graphics"
+      }
+    ],
+    "description": "Discover why microbes can actually persist on the Moon and what that means for future missions. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#biology",
+      "#mythbusting",
+      "#science",
+      "#NASA"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Truth About Solar Eclipse Darkness",
+    "thumb": "ECLIPSE DARKNESS MYTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "During the August 12 eclipse over Spain, the sky turned pitch‑black for over two minutes",
+        "hook_top": "ECLIPSE TURNED DARK",
+        "query": "solar eclipse Spain night sky",
+        "query2": "total solar eclipse darkness"
+      },
+      {
+        "role": "myth",
+        "text": "Many think a total eclipse makes the Sun disappear completely",
+        "label": "Sun Vanishes Fully",
+        "query": "sun disappearing eclipse illustration",
+        "query2": "sun eclipse cartoon"
+      },
+      {
+        "role": "truth",
+        "text": "Even at totality a thin solar corona remains visible, and scattered daylight still illuminates the landscape faintly",
+        "label": "Corona Still Glows",
+        "query": "solar corona during total eclipse",
+        "query2": "eclipse corona photo"
+      },
+      {
+        "role": "callout",
+        "text": "The Sun’s outer atmosphere never truly goes dark",
+        "label": "CORONA LIGHT",
+        "sub": "Bright plasma surrounds the Moon",
+        "label_on": "corona",
+        "query": "solar corona closeup",
+        "query2": "sun corona video"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "astronomy icons",
+        "query2": "space background"
+      }
+    ],
+    "description": "Learn why a total solar eclipse never makes the Sun completely vanish and what the glowing corona really looks like. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#eclipse",
+      "#astronomy",
+      "#science",
+      "#mythbusting",
+      "#space"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

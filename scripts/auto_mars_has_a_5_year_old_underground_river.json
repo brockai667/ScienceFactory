@@ -1,0 +1,57 @@
+{
+  "title": "Mars Has a 5‑Year‑Old Underground River",
+  "thumb": "MARS RIVER",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Mars’ latest rover image reveals a 5‑year‑old underground river",
+      "hook_top": "MARS RIVER DISCOVERED",
+      "query": "Mars underground river rover",
+      "query2": "Mars river image"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "WATER FLOWING",
+      "label_on": "Flow",
+      "text": "Infrared imaging shows liquid water seeping through basaltic layers",
+      "query": "Martian subsurface water",
+      "query2": "Mars water"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "3‑MILE LENGTH",
+      "label_on": "Length",
+      "text": "The river stretches roughly 3 miles beneath the surface",
+      "query": "Mars underground river length",
+      "query2": "Mars river length"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "EROSION MARKS",
+      "label_on": "Erosion",
+      "text": "Distinct channels indicate erosion over millions of years",
+      "query": "Mars erosion channels",
+      "query2": "Mars erosion"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "follow science",
+      "query2": "science daily"
+    }
+  ],
+  "description": "A new rover image confirms a flowing underground river on Mars, stretching several miles below the surface. This challenges our understanding of Martian hydrology. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Mars",
+    "#RoverDiscovery",
+    "#SpaceWater",
+    "#MarsRocks"
+  ],
+  "place": "",
+  "country": ""
+}

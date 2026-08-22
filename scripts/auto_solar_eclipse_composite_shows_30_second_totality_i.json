@@ -1,0 +1,57 @@
+{
+  "title": "Solar Eclipse Composite Shows 30‑Second Totality in Spain",
+  "thumb": "ECLIPSE SHOW",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A composite photo captures the 30‑second totality of Spain’s solar eclipse",
+      "hook_top": "ECLIPSE TOTALITY SHARED",
+      "query": "solar eclipse composite Spain",
+      "query2": "solar eclipse photo"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "30‑SECOND TOTALITY",
+      "label_on": "Duration",
+      "text": "The total eclipse phase lasted exactly 30 seconds at the 0.5° latitude line",
+      "query": "solar eclipse duration",
+      "query2": "eclipse totality"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "LERNMA RADIUS",
+      "label_on": "Radius",
+      "text": "The Moon’s apparent diameter was 1.4° during the event, slightly larger than the Sun’s",
+      "query": "solar eclipse apparent diameter",
+      "query2": "eclipse radius"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "NIGHT SKY CHANGES",
+      "label_on": "Night",
+      "text": "Observers noted stars brighten and the sky darkened to twilight within seconds",
+      "query": "solar eclipse night sky",
+      "query2": "eclipse night"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "follow science",
+      "query2": "science daily"
+    }
+  ],
+  "description": "A composite image from Lerma, Spain, showcases the brief 30‑second totality of the solar eclipse, revealing rapid changes in light and temperature. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#SolarEclipse",
+    "#Astronomy",
+    "#SpaceEvents",
+    "#SkyWatching"
+  ],
+  "place": "",
+  "country": ""
+}
