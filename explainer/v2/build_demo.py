@@ -249,7 +249,7 @@ def tpl_hook_kinetic(c, b, i, words, S):
         scrib = ('<svg class="scrib" viewBox="0 0 640 120" preserveAspectRatio="none">'
                  '<path id="hk_scrib" d="M 8 70 C 140 40, 300 92, 632 52" pathLength="100" fill="none" '
                  f'stroke="{S["accent2"]}" stroke-width="14" stroke-linecap="round" '
-                 'stroke-dasharray="100" stroke-dashoffset="100"/></svg>') if k == 1 else ""
+                 'stroke-dasharray="100" stroke-dashoffset="100" opacity="0"/></svg>') if k == 1 else ""
         return f'<div class="slam" id="slam{k}" style="{st}">{esc(txt)}{scrib}</div>'
     rows = "".join(_slam(k, txt) for k, (_, txt) in enumerate(b["slams"]))
     inner = (f'<div class="hooksplit"><div class="hookcol">{rows}</div>'
@@ -267,7 +267,7 @@ def tpl_hook_kinetic(c, b, i, words, S):
         c.sfx.append((t, "tick"))
     # "CHEAP PLASTIC" sa PRESKRTNE presne na "It is not."
     t_not = cue_time(words, b["t0"], b["t1"], "It is not.")
-    c.tw(f'tl.fromTo("#hk_scrib",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.45,ease:"power2.inOut"}},{t_not:.3f});')
+    c.tw(f'tl.set("#hk_scrib",{{opacity:1}},{t_not:.3f});tl.fromTo("#hk_scrib",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.45,ease:"power2.inOut"}},{t_not:.3f});')
     return bid
 
 
@@ -288,13 +288,16 @@ def tpl_svg_focus(c, b, i, words, S):
     t_head = cue_time(words, b["t0"], b["t1"], b["cues"][0][0])
     t_plug = cue_time(words, b["t0"], b["t1"], b["cues"][1][0])
     t_circ = cue_time(words, b["t0"], b["t1"], b["cues"][2][0])
+    t_year = cue_time(words, b["t0"], b["t1"], "1996")
+    if abs(t_year - (b["t0"] + 0.5 * (b["t1"] - b["t0"]))) < 0.01:   # fallback stred = nenajdene
+        t_year = t_plug + 0.2
     bits = "".join(f'<div class="bit" id="if_b{k}"></div>' for k in range(5))
     inner = (
         '<div class="split">'
         f'<div class="frame art" id="if_f"><div class="artcenter">{svglib.usb_port(S, "ifp", 560, 420)}</div>'
         f'<div class="plugfly" id="if_pl">{svglib.usb_plug(S, "ifpl", 300, 210)}</div>{bits}'
         f'<div class="stamp" id="if_st">{svglib.stamp_badge(S, "ifstb", "1996", 230, 120)}</div>'
-        f'<svg id="if_svg" viewBox="0 0 760 570"><ellipse id="if_ell" cx="380" cy="278" rx="238" ry="168" pathLength="100"/></svg>'
+        f'<svg id="if_svg" viewBox="0 0 760 570"><ellipse id="if_ell" cx="380" cy="278" rx="238" ry="168" pathLength="100" opacity="0"/></svg>'
         f'<div class="label" id="if_l">{esc(b["label"])}</div></div>'
         '<div class="side"><div class="headline" id="if_h">' + words_spans(b["head"], "tw") + '</div>'
         '<div class="callout" id="if_c1"><span class="cdot" style="background:#c9a227"></span> 4 gold pins</div>'
@@ -315,10 +318,10 @@ def tpl_svg_focus(c, b, i, words, S):
         c.tw(f'tl.fromTo("#if_b{k}",{{x:-200,opacity:0}},{{x:52,opacity:1,duration:0.5,ease:"power1.in"}},{d0 + 0.9:.3f});')
         c.tw(f'tl.to("#if_b{k}",{{opacity:0,duration:0.12}},{d0 + 1.4:.3f});')
     # peciatka roku dopadne
-    c.tw(f'tl.fromTo("#if_st",{{opacity:0,scale:1.8,rotation:-7}},{{opacity:1,scale:1,rotation:0,duration:0.3,ease:"power3.out"}},{t_plug + 0.2:.3f});')
-    c.tw(f'tl.fromTo("#if_l",{{opacity:0,y:18}},{{opacity:1,y:0,duration:0.45,ease:"power3.out"}},{t_plug:.3f});')
+    c.tw(f'tl.fromTo("#if_st",{{opacity:0,scale:1.8,rotation:-7}},{{opacity:1,scale:1,rotation:0,duration:0.3,ease:"power3.out"}},{t_year:.3f});')
+    c.tw(f'tl.fromTo("#if_l",{{opacity:0,y:18}},{{opacity:1,y:0,duration:0.45,ease:"power3.out"}},{t_year + 0.15:.3f});')
     # marker kruh + vysvetlujuce popisky s bodkami
-    c.tw(f'tl.fromTo("#if_ell",{{strokeDasharray:100,strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.7,ease:"power2.inOut"}},{t_circ:.3f});')
+    c.tw(f'tl.set("#if_ell",{{opacity:1}},{t_circ:.3f});tl.fromTo("#if_ell",{{strokeDasharray:100,strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.7,ease:"power2.inOut"}},{t_circ:.3f});')
     c.tw(f'tl.fromTo("#if_c1",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t_plug + 0.5:.3f});')
     c.tw(f'tl.fromTo("#if_c2",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t_plug + 0.95:.3f});')
     c.sfx.append((t_plug + 1.0, "tick"))
@@ -346,7 +349,7 @@ def tpl_list_build(c, b, i, words, S):
     ]
     cables = "".join(
         f'<path id="lbc{k}" d="{d}" pathLength="100" fill="none" stroke="{S["ink"]}" stroke-width="10" '
-        f'stroke-linecap="round" opacity="0.85" stroke-dasharray="100" stroke-dashoffset="100"/>'
+        f'stroke-linecap="round" opacity="0" stroke-dasharray="100" stroke-dashoffset="100"/>'
         for k, d in enumerate(cable_d))
     subc, subt = b.get("sub", (None, ""))
     inner = (
@@ -368,7 +371,7 @@ def tpl_list_build(c, b, i, words, S):
         c.tw(f'tl.fromTo("#lb{k}",{{opacity:0,scale:0.82,y:30}},{{opacity:1,scale:1,y:0,duration:0.5,ease:"power3.out"}},{t:.3f});')
         c.tw(f'tl.fromTo("#lbp{k}",{{opacity:0,y:-26,rotation:-10}},{{opacity:1,y:0,rotation:0,duration:0.4,ease:"power3.out"}},{t + 0.3:.3f});')
         # kabel sa dokresli od zariadenia k SVOJMU portu (krivolako, krizuju sa)
-        c.tw(f'tl.fromTo("#lbc{k}",{{strokeDasharray:100,strokeDashoffset:100}},'
+        c.tw(f'tl.set("#lbc{k}",{{opacity:0.85}},{t + 0.45:.3f});tl.fromTo("#lbc{k}",{{strokeDasharray:100,strokeDashoffset:100}},'
              f'{{strokeDashoffset:0,duration:0.7,ease:"power2.inOut"}},{t + 0.45:.3f});')
         c.sfx.append((t, "tick"))
     # tlaciaren vypluje papier
@@ -426,9 +429,16 @@ def tpl_twist_split(c, b, i, words, S):
         f'<div class="card rgt" id="tw_r"><div class="okbadge" id="tw_okr">✓</div>'
         f'<div class="notes">{svglib.music_note(S, "tw_n0", 56, 72)}{svglib.music_note(S, "tw_n1", 44, 58)}{svglib.music_note(S, "tw_n2", 50, 64)}</div>'
         f'<div class="cardart">{svglib.mp3_player(S, "twm3", 210, 300)}</div><div class="cl">{esc(rl)}</div></div>'
-        f'</div><div class="punch" id="tw_p">{words_spans(b["line"], "tw")}</div></div>')
+        f'</div><div class="punch" id="tw_p">{words_spans(b["line"], "tw")}</div>'
+        f'<svg class="ekg" viewBox="0 0 900 120"><path id="tw_ekg" d="M 0 60 L 200 60 L 240 60 L 270 18 L 300 104 L 330 40 L 360 70 L 390 60 L 640 60 L 670 22 L 700 100 L 730 60 L 900 60" '
+        f'pathLength="100" fill="none" stroke="{S["accent2"]}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" '
+        f'stroke-dasharray="100" stroke-dashoffset="100" opacity="0"/></svg></div>')
     beat_shell(c, b, i, inner)
     reveal_words(c, "#tw_h .tw", b["t0"] + 0.15, 0.09)
+    t_ekg = cue_time(words, b["t0"], b["t1"], "never died")
+    c.tw(f'tl.set("#tw_ekg",{{opacity:1}},{t_ekg:.3f});tl.fromTo("#tw_ekg",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:1.1,ease:"none"}},{t_ekg:.3f});')
+    c.sfx.append((t_ekg + 0.35, "tick"))
+    c.sfx.append((t_ekg + 0.85, "tick"))
     c.tw(f'tl.fromTo("#tw_l",{{x:-160,opacity:0,rotationY:14}},{{x:0,opacity:1,rotationY:7,duration:0.6,ease:"power3.out"}},{t_l:.3f});')
     c.tw(f'tl.fromTo("#tw_r",{{x:160,opacity:0,rotationY:-14}},{{x:0,opacity:1,rotationY:-7,duration:0.6,ease:"power3.out"}},{t_r:.3f});')
     reveal_words(c, "#tw_p .tw", t_line, 0.07)
@@ -491,7 +501,7 @@ PORT_COLORS = [("WHITE", "#f6f6f2"), ("BLACK", "#26262c"), ("BLUE", "#1c4ed8"), 
 
 def tpl_intro_ports(c, b, i, words, S):
     """Uvodny hook serie: modry a cierny port vedla seba + otazka + skrt na 'They are not.'"""
-    t_blue = cue_time(words, b["t0"], b["t1"], b["cues"][0][0])
+    t_blue = min(b["t0"] + 0.25, cue_time(words, b["t0"], b["t1"], b["cues"][0][0]))
     t_black = cue_time(words, b["t0"], b["t1"], b["cues"][1][0])
     t_line = cue_time(words, b["t0"], b["t1"], b["cues"][2][0])
     t_strike = cue_time(words, b["t0"], b["t1"], b["cues"][3][0])
@@ -503,12 +513,12 @@ def tpl_intro_ports(c, b, i, words, S):
         + '<div class="punchline" id="vh_q">' + words_spans("Just a design choice?", "tw")
         + '<svg class="scrib" viewBox="0 0 640 120" preserveAspectRatio="none">'
         + '<path id="vh_scrib" d="M 8 66 C 160 38, 340 90, 632 50" pathLength="100" fill="none" stroke="' + S["accent2"] + '" '
-        + 'stroke-width="13" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"/></svg></div></div>')
+        + 'stroke-width="13" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100" opacity="0"/></svg></div></div>')
     beat_shell(c, b, i, inner)
     c.tw(f'tl.fromTo("#vh_b1",{{opacity:0,x:-120,rotationY:12}},{{opacity:1,x:0,rotationY:0,duration:0.5,ease:"power3.out"}},{t_blue:.3f});')
     c.tw(f'tl.fromTo("#vh_b2",{{opacity:0,x:120,rotationY:-12}},{{opacity:1,x:0,rotationY:0,duration:0.5,ease:"power3.out"}},{t_black:.3f});')
     reveal_words(c, "#vh_q .tw", t_line, 0.07)
-    c.tw(f'tl.fromTo("#vh_scrib",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.45,ease:"power2.inOut"}},{t_strike:.3f});')
+    c.tw(f'tl.set("#vh_scrib",{{opacity:1}},{t_strike:.3f});tl.fromTo("#vh_scrib",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.45,ease:"power2.inOut"}},{t_strike:.3f});')
     c.sfx += [(t_blue, "tick"), (t_black, "tick"), (t_strike, "tick")]
 
 
@@ -525,8 +535,8 @@ def tpl_intro_grid(c, b, i, words, S):
         '<div class="stage"><div class="seriestitle" id="vg_t">' + words_spans("Every USB Port Color, EXPLAINED", "tw") + '</div>'
         + '<div class="grid8">' + tiles + '</div>'
         + '<svg class="gridmark" viewBox="0 0 1920 1080">'
-        + '<ellipse id="vg_ell" cx="475" cy="470" rx="150" ry="120" pathLength="100" fill="none" stroke="' + S["accent2"] + '" '
-        + 'stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"/></svg>'
+        + '<ellipse id="vg_ell" cx="427" cy="432" rx="168" ry="120" pathLength="100" fill="none" stroke="' + S["accent2"] + '" '
+        + 'stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100" opacity="0"/></svg>'
         + '<div class="gridstamp" id="vg_st">' + svglib.stamp_badge(S, "vgstb", "PART 1", 240, 124) + '</div></div>')
     beat_shell(c, b, i, inner)
     for k in range(8):
@@ -534,7 +544,15 @@ def tpl_intro_grid(c, b, i, words, S):
         if k % 2 == 0:
             c.sfx.append((t_grid + 0.11 * k, "tick"))
     reveal_words(c, "#vg_t .tw", t_title, 0.08)
-    c.tw(f'tl.fromTo("#vg_ell",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"}},{t_mark:.3f});')
+    # "Speed" -> pulznu rychlostne farby, "power" -> nabijacie; kazdy pulz konecny (hore a spat)
+    t_sp = cue_time(words, b["t0"], b["t1"], "Speed")
+    t_pw = cue_time(words, b["t0"], b["t1"], "power")
+    for t_p, idxs in ((t_sp, (2, 3, 4)), (t_pw, (5, 6))):
+        for k in idxs:
+            c.tw(f'tl.to("#vg{k}",{{scale:1.14,duration:0.22,ease:"power2.out"}},{t_p:.3f});'
+                 f'tl.to("#vg{k}",{{scale:1.0,duration:0.35,ease:"power2.inOut"}},{t_p + 0.24:.3f});')
+        c.sfx.append((t_p, "tick"))
+    c.tw(f'tl.set("#vg_ell",{{opacity:1}},{t_mark:.3f});tl.fromTo("#vg_ell",{{strokeDashoffset:100}},{{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"}},{t_mark:.3f});')
     c.tw(f'tl.fromTo("#vg_st",{{opacity:0,scale:1.8,rotation:-7}},{{opacity:1,scale:1,rotation:0,duration:0.3,ease:"power3.out"}},{t_mark + 0.4:.3f});')
     c.sfx.append((t_mark, "tick"))
 
@@ -600,7 +618,8 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 .timer{{position:absolute;left:40px;top:-70px;display:flex;gap:26px}}
 .tick{{font-size:52px;font-weight:700;color:{S['accent2']}}}
 .okbadge{{position:absolute;right:22px;top:14px;font-size:64px;color:#2e9e5b;font-weight:700}}
-.notes{{position:absolute;left:60px;top:120px;display:flex;gap:10px}}
+.ekg{{position:absolute;left:510px;top:262px;width:900px;height:120px}}
+.notes{{position:absolute;left:300px;top:26px;display:flex;gap:10px}}
 .notes svg{{position:relative}}
 .confbox{{position:absolute;left:50%;top:40%;width:0;height:0}}
 .cf{{position:absolute;width:20px;height:30px;border-radius:4px;opacity:0}}
@@ -611,7 +630,7 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden;background:{S['bg']}}}
 .gcell{{display:flex;flex-direction:column;align-items:center;gap:2px}}
 .gl{{font-size:34px;font-weight:700;color:{S['muted']}}}
 .gridmark{{position:absolute;inset:0;width:100%;height:100%}}
-.gridstamp{{position:absolute;left:150px;top:236px}}
+.gridstamp{{position:absolute;left:452px;top:232px}}
 #if_svg{{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px)}}
 #if_ell{{fill:none;stroke:{S['accent2']};stroke-width:9;stroke-linecap:round}}
 .label{{position:absolute;left:24px;bottom:-64px;font-size:40px;color:{S['muted']}}}
