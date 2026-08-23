@@ -188,7 +188,8 @@ def reel_text(meta, reel, i, n, yt_url, cfg):
     tags = " ".join(meta.get("hashtags", [])[:8])
     link = yt_url or e.get("channel_url", "")
     body = (f"{hook}\n\n{series} — part {i + 1}/{n}: {reel.get('name')}.\n\n"
-            f"▶ Full video (all {n} parts): {link}\n\n{tags}")
+            f"▶ Full video (all {n} parts): {link}\n\n{tags}"
+            + (("\n\n" + meta["credits"]) if meta.get("credits") else ""))
     title = f"{reel.get('name')} — {series} ({i + 1}/{n})"
     return title, body
 
