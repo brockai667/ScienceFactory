@@ -24,7 +24,13 @@ import common  # noqa: E402
 
 def contact_sheet(mp4, out_jpg, cols=6, every=3.0, width=320):
     ff = common.load_cfg().get("ffmpeg", "ffmpeg")
-    rows = 10
+    try:
+        dur = float(subprocess.run([common.load_cfg().get("ffprobe", "ffprobe"), "-v", "error", "-show_entries",
+                                    "format=duration", "-of", "csv=p=0", mp4], capture_output=True, text=True, timeout=60).stdout.strip())
+    except Exception:
+        dur = 600.0
+    import math
+    rows = max(1, min(12, math.ceil((dur / every + 1) / cols)))
     subprocess.run([ff, "-y", "-loglevel", "error", "-i", mp4, "-vf",
                     f"fps=1/{every},scale={width}:-1,tile={cols}x{rows}", "-frames:v", "1", out_jpg],
                    capture_output=True, timeout=600)
