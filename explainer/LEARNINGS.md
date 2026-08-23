@@ -97,3 +97,14 @@ emoji → existujuca ikona), `run_v2.py` (tema → spec → render → thumbnail
 **Dalsie kroky:** (a) prvy generovany spec (HDMI) cez engine – skontrolovat OpenMoji ikony a generovane cue;
 (b) dry-run weekly.yml na Actions (node 22 + chromium), zmerat cas renderu 13 min videa + 8 reels;
 (c) thumbnail = snimka z intro gridu; (d) hudobny bed + maskot s lip-syncom = neskor.
+
+### 6.x Poučenia z prvého generovaného videa (HDMI, 23.8.)
+11. **Unikátne ID per beat.** Šablóny používali pevné `id="stat"`, `id="slam1"` – v kapitole 2+ GSAP
+    animoval vždy prvý výskyt (čísla stáli na 0.0, slamy sa ukázali naraz). Riešenie: `_scope_ids`
+    prepisuje každé `id` a selektor na `u<beat>_…` hneď pri skladaní klipu.
+12. **Cue nesmie byť číslo s jednotkou.** Whisper píše „10.2 Gbps“, TTS číta „ten point two gigabits“ –
+    cue sa nenájde. `_norm` mapuje jednotky/číslovky, ale prompt radšej vyžaduje cue zo slov.
+13. **LLM kopíruje placeholdre.** Opis „THE TRUTH, 3-5 WORDS“ v prompte sa objavil ako slam vo videu.
+    Prompt má teraz kompletný few-shot príklad (USB biely port) + validátor placeholdre zahadzuje.
+14. **8 beatov na kapitolu** (hook, title, focus, list, stat, focus, list, compare) → ~1.7 min/kapitola,
+    5 kapitol ≈ 8+ min, čo je pre YT dlhé video minimum.

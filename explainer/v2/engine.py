@@ -62,8 +62,14 @@ _NUMW = {"zero": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five":
          "six": "6", "seven": "7", "eight": "8", "nine": "9", "ten": "10"}
 
 
+import unicodedata
+
+
 def _norm(s):
-    toks = re.sub(r"[^a-z0-9 ]", "", str(s).lower()).split()
+    s = unicodedata.normalize("NFKC", str(s)).replace("‑", "-").replace(" ", " ").replace(" ", " ")
+    s = s.lower().replace("gbps", " gigabits per second ").replace("mbps", " megabits per second ")
+    s = s.replace("mb/s", " megabytes per second ").replace("gb/s", " gigabytes per second ")
+    toks = re.sub(r"[^a-z0-9 ]", " ", s).split()
     return [_NUMW.get(t, t) for t in toks]
 
 
@@ -72,13 +78,28 @@ def rel_cue(words_rel, dur, phrase, default=0.5):
     target = _norm(phrase or "")
     if not target:
         return max(0.12, default * dur)
-    flat = [(_norm(w["w"]) or [""])[0] for w in words_rel]
-    for i in range(len(flat)):
-        if flat[i:i + len(target)] == target:
-            ws = words_rel[i]["s"]
-            we = words_rel[min(i + len(target) - 1, len(words_rel) - 1)]["e"]
-            return max(0.12, ws + 0.12 * (we - ws))
-    return None
+    # slova whispera mozu byt viac-tokenove po normalizacii (napr. "10.2" -> ["10", "2"]); rozbal
+    flat, owner = [], []
+    for wi, w in enumerate(words_rel):
+        for t in (_norm(w["w"]) or [""]):
+            flat.append(t)
+            owner.append(wi)
+
+    def find(tg):
+        for i in range(len(flat)):
+            if flat[i:i + len(tg)] == tg:
+                ws = words_rel[owner[i]]["s"]
+                we = words_rel[owner[min(i + len(tg) - 1, len(flat) - 1)]]["e"]
+                return max(0.12, ws + 0.12 * (we - ws))
+        return None
+    t = find(target)
+    if t is None and len(target) > 1:
+        # fallback: najdlhsi prefix frazy (cisla/jednotky casto prepise whisper inak)
+        for k in range(len(target) - 1, 0, -1):
+            t = find(target[:k])
+            if t is not None:
+                break
+    return t
 
 
 class CueLog:
@@ -852,11 +873,15 @@ def build_long(spec, V):
     i = 0
     if intro.get("compare"):
         seq.add(intro["compare"])
+        n1, n2 = len(c.html), len(c.js)
         tpl_intro_compare(c, intro["compare"], i, V)
+        _scope_ids(c, n1, n2, "uic_")
         i += 1
     if intro.get("grid"):
         seq.add(intro["grid"])
+        n1, n2 = len(c.html), len(c.js)
         tpl_intro_grid(c, intro["grid"], i, V, spec["chapters"], spec.get("series", ""))
+        _scope_ids(c, n1, n2, "uig_")
         i += 1
     hud_start = seq.t
     chs = spec["chapters"]
@@ -866,7 +891,9 @@ def build_long(spec, V):
         if ci > 0:
             card = {"_id": f"card{ci}", "tpl": "card"}
             seq.silence(CARD_T, card)
+            n1, n2 = len(c.html), len(c.js)
             tpl_chapter_card(c, card, i, V, ch, ci, len(chs))
+            _scope_ids(c, n1, n2, f"ucard{ci}_")
             i += 1
         for b in ch["beats"]:
             seq.add(b)
@@ -874,7 +901,9 @@ def build_long(spec, V):
             i += 1
     if spec.get("outro") and spec["outro"].get("_wav"):
         seq.add(spec["outro"])
+        n1, n2 = len(c.html), len(c.js)
         tpl_outro(c, spec["outro"], i, V, hero)
+        _scope_ids(c, n1, n2, "uout_")
     total = seq.t + 0.8
     hud = hud_for(V, chs[0]) if chs else None
     return c, seq, total, marks, hud, hud_start
@@ -893,12 +922,41 @@ def build_reel(spec, V, ci):
         i += 1
     end = {"_id": "endcard", "tpl": "endcard"}
     seq.silence(ENDCARD_T, end)
+    n1, n2 = len(c.html), len(c.js)
     tpl_endcard(c, end, i, V, spec)
+    _scope_ids(c, n1, n2, "uend_")
     total = seq.t + 0.3
     return c, seq, total, hud_for(V, ch), 0.0
 
 
+_ID_RE = re.compile(r'id="([A-Za-z_][\w-]*)"')
+
+
+def _scope_ids(c, n_html, n_js, uid):
+    """Vsetky id="X" v novo pridanych klipoch -> id="<uid>X" a selektory "#X" / getElementById("X") v js."""
+    ids = set()
+    for k in range(n_html, len(c.html)):
+        ids.update(_ID_RE.findall(c.html[k]))
+    if not ids:
+        return
+    pat = re.compile(r'id="(' + "|".join(sorted(map(re.escape, ids), key=len, reverse=True)) + r')"')
+    for k in range(n_html, len(c.html)):
+        c.html[k] = pat.sub(lambda m: f'id="{uid}{m.group(1)}"', c.html[k])
+    sel = re.compile(r'([#"(])(' + "|".join(sorted(map(re.escape, ids), key=len, reverse=True)) + r')(?=["\s.,)\]])')
+    for k in range(n_js, len(c.js)):
+        js = c.js[k]
+        js = re.sub(r'"#(' + "|".join(map(re.escape, ids)) + r')(?=[" .])', lambda m: f'"#{uid}{m.group(1)}', js)
+        js = re.sub(r'getElementById\("(' + "|".join(map(re.escape, ids)) + r')"\)', lambda m: f'getElementById("{uid}{m.group(1)}")', js)
+        c.js[k] = js
+
+
 def run_tpl(c, b, i, V, hero, spec):
+    n_html, n_js = len(c.html), len(c.js)
+    _run_tpl_inner(c, b, i, V, hero, spec)
+    _scope_ids(c, n_html, n_js, f"u{b['_id']}_")
+
+
+def _run_tpl_inner(c, b, i, V, hero, spec):
     t = b.get("tpl")
     if t == "hook":
         tpl_hook(c, b, i, V, hero)

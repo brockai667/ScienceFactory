@@ -59,38 +59,52 @@ Return ONLY this JSON:
      "pulse": [{{"cue": "a word from sentence 1 naming a property", "items": [indexes of items with that property]}}]
    }}
  }},
- "chapters": [ {{"name": "{{item}}", "label": "1-2 WORD UPPERCASE", "emoji": "emoji for this item", "hook": "one spoken sentence hook for this item as a standalone short, under 18 words"}} ],
+ "chapters": [ {{"name": "{{item}}", "label": "1-2 WORD UPPERCASE", "emoji": "ONE concrete OBJECT emoji that fits this item (for versions of the same product use the product emoji; never abstract symbols or faces)", "hook": "one spoken sentence hook for this item as a standalone short, under 18 words"}} ],
  "outro": {{"say": "2 spoken sentences: a practical takeaway, then a final 4-6 word verdict line, plus 'See you next Monday.'", "type_text": "the verdict line verbatim (max 5 words)", "cues": {{"key": "the key word of the verdict"}}}}
 }}
 CUE RULE: every cue must be an EXACT word-for-word substring (2-4 words) of the matching "say". Items in order. Return ONLY the JSON."""
 
 CHAPTER_PROMPT = """Video "{series}", chapter {idx} of {total}: "{name}" (label {label}, emoji {emoji}).
-{prev}Write 6 beats, in THIS order, as a JSON list. Each beat = one animated scene + what the narrator says over it.
-Beat types and their JSON (fill every field; cues are EXACT 2-4 word substrings of that beat's "say"):
+{prev}Write 8 beats for THIS chapter, in this order. A beat = one animated scene + the narrator's words over it.
+Below is a COMPLETE EXAMPLE for a different topic (white USB port). Copy the STRUCTURE and the level of detail,
+NEVER the content. Every value must be written fresh for "{name}".
 
-1. {{"tpl":"hook", "say":"3-4 short spoken sentences opening this item with a misconception or surprise (under 35 words)",
-    "slams":[{{"text":"4-6 WORD UPPERCASE OPENER"}}, {{"text":"“THE MISCONCEPTION”","cue":"words in say","strike":true}},
-             {{"text":"IT'S NOT.","cue":"words in say","color":"red","strike_on":"same words"}},
-             {{"text":"THE TRUTH, 3-5 WORDS","cue":"words in say","color":"blue"}}]}}
-2. {{"tpl":"title", "say":"{name}.", "title":"{name}", "kicker":"{series_short}, PART {idx}"}}
-3. {{"tpl":"focus", "say":"2 sentences: what it is + the real year/era, and one concrete detail (under 32 words)",
-    "head":"2-4 word headline", "label":"short caption with the year", "stamp":"the year (4 digits) or a 1-word stamp",
-    "callouts":[["#c9a227","3-5 word fact"],["#1c4ed8","3-5 word fact"]],
-    "cues":{{"head":"...", "stamp":"the year as spoken in say", "action":"...", "circle":"...", "callouts":"..."}}}}
-4. {{"tpl":"list", "say":"2-3 sentences listing exactly 3 related things, one sentence per thing (under 34 words)",
-    "head":"2-3 word headline", "sub":{{"text":"3-5 word sub-headline","cue":"..."}},
-    "hub":{{"emoji":"emoji of the thing they all connect to, or null"}},
-    "items":[{{"emoji":"...","label":"1-2 words","cue":"word(s) in say naming it"}} x3]}}
-5. {{"tpl":"stat", "say":"2 sentences: a real NUMBER with unit, then an everyday comparison (under 30 words)",
-    "num_end": number, "decimals": 0 or 1, "unit":"unit text", "label":"what the number is (3-5 words)", "sub":"the comparison in 3-6 words",
-    "vis":{{"emoji":"emoji of the comparison object"}}, "travel":{{"to":{{"emoji":"destination emoji"}},"seconds":3}} or null,
-    "cues":{{"count":"words where the number is said","sub":"words where the comparison is said"}}}}
-6. {{"tpl":"compare", "say":"3 sentences: the twist ('but...'), two places/things where it lives today, and a closing rhetorical question (under 36 words)",
-    "head":"2-4 word twist headline", "ekg":"2 words in say where the twist is (or null)",
-    "left":{{"emoji":"...","label":"1-2 words","cue":"..."}}, "right":{{"emoji":"...","label":"1-2 words","cue":"..."}},
-    "line":"the closing question (3-6 words)", "cues":{{"line":"words where the question starts"}}}}
-Rules: real facts only; emojis must be standard Unicode objects (no flags, no faces); every cue EXACT substring; no markdown.
-Return ONLY: {{"beats":[...]}}"""
+[
+ {{"tpl":"hook","say":"The white one. On an old computer it looks like cheap plastic. It is not. White is the original. The very first USB ever made.",
+  "slams":[{{"text":"THE WHITE USB PORT."}},{{"text":"“CHEAP PLASTIC”","cue":"cheap plastic","strike":true}},
+           {{"text":"IT'S NOT.","cue":"It is not","color":"red","strike_on":"It is not"}},{{"text":"THE ORIGINAL.","cue":"the original","color":"blue"}}]}},
+ {{"tpl":"title","say":"{name}.","title":"{name}","kicker":"{series_short}, PART {idx}"}},
+ {{"tpl":"focus","say":"White means USB one point zero, straight from nineteen ninety six. Spot one, and you are looking at a real piece of computer history.",
+  "head":"USB 1.0","label":"1996 — the first generation","stamp":"1996",
+  "callouts":[["#c9a227","4 gold pins"],["#1c4ed8","power + data in one cable"]],
+  "cues":{{"head":"White means","stamp":"ninety six","action":"Spot one","circle":"computer history","callouts":"Spot one"}}}},
+ {{"tpl":"list","say":"Before USB, every device had its own plug. One port for the printer. Another for the keyboard. A third one for the mouse.",
+  "head":"Before USB","sub":{{"text":"one plug per device","cue":"its own plug"}},"hub":{{"emoji":"🖥️"}},
+  "items":[{{"emoji":"🖨️","label":"Printer","cue":"printer"}},{{"emoji":"⌨️","label":"Keyboard","cue":"keyboard"}},{{"emoji":"🖱️","label":"Mouse","cue":"mouse"}}]}},
+ {{"tpl":"stat","say":"Top speed? One and a half megabytes per second. A single photo from your phone would take three whole seconds to copy.",
+  "num_end":1.5,"decimals":1,"unit":"MB/s","label":"USB 1.0 top speed","sub":"3 seconds — one photo",
+  "vis":{{"emoji":"📱"}},"travel":{{"to":{{"emoji":"🔌"}},"seconds":3}},"cues":{{"count":"and a half","sub":"whole seconds"}}}},
+ {{"tpl":"focus","say":"Where it struggled was anything big. Copying a full CD of music took over an hour. But back then nobody moved files that way.",
+  "head":"The weak spot","label":"700 MB — one hour","stamp":"SLOW",
+  "callouts":[["#d62828","one CD = one hour"],["#7a7a7a","files lived on discs"]],
+  "cues":{{"head":"Where it struggled","action":"full CD","circle":"over an hour","callouts":"nobody moved"}}}},
+ {{"tpl":"list","say":"So people used white ports for three things. Keyboards. Mice. And the first digital cameras.",
+  "head":"What it was for","sub":{{"text":"small data, no hurry","cue":"three things"}},"hub":null,
+  "items":[{{"emoji":"⌨️","label":"Keyboards","cue":"Keyboards"}},{{"emoji":"🖱️","label":"Mice","cue":"Mice"}},{{"emoji":"📷","label":"Cameras","cue":"digital cameras"}}]}},
+ {{"tpl":"compare","say":"But here is the twist. USB one never died. Car stereos and cheap MP3 players still use it today. Why pay for a faster chip, when the slow one does the job?",
+  "head":"It never died","ekg":"never died",
+  "left":{{"emoji":"📻","label":"Car stereo","cue":"stereos"}},"right":{{"emoji":"🎧","label":"MP3 player","cue":"players"}},
+  "line":"Why pay for more?","cues":{{"line":"faster chip"}}}}
+]
+
+Rules for "{name}":
+- Real, widely documented facts only (real years, real numbers). If unsure of a number, pick a fact you are sure of.
+- Spoken sentences: short, conversational, second person. Hook under 35 words, others under 34 words.
+- Every "cue" is an EXACT word-for-word substring (2-4 words) of that beat's "say". Cues must be WORDS, never numbers or units
+  (write "and a half", not "1.5 MB/s"). Spell numbers in "say" the way a narrator says them (e.g. "ten point two gigabits").
+- Slam texts are short real phrases in UPPERCASE (3-6 words). Never write placeholders like "THE TRUTH, 3-5 WORDS".
+- emoji: standard Unicode OBJECTS related to the item (no flags, no faces, no abstract symbols).
+- Output ONLY: {{"beats":[ ...8 beats... ]}}"""
 
 
 def collect_beats(data):
@@ -170,7 +184,9 @@ def coerce_beat(b, name):
     if not b["say"]:
         return None
     if tpl == "hook":
-        sl = [s for s in b.get("slams", []) if isinstance(s, dict) and s.get("text")][:5]
+        bad = ("3-5 WORDS", "4-6 WORD", "THE MISCONCEPTION", "THE TRUTH,", "WORDS IN SAY", "UPPERCASE")
+        sl = [s for s in b.get("slams", []) if isinstance(s, dict) and s.get("text")
+              and not any(x in str(s["text"]).upper() for x in bad)][:5]
         if not sl:
             sl = [{"text": name.upper()}]
         b["slams"] = sl
@@ -277,7 +293,7 @@ def generate(series, items=None):
             if not raw:
                 continue
             beats = [x for x in (coerce_beat(b, ch["name"]) for b in raw) if x]
-            if len(beats) >= 4:
+            if len(beats) >= 6:
                 break
             print(f"   [script] kapitola {i + 1}: len {len(beats)} platnych beatov - znova")
         if not beats or len(beats) < 4:
