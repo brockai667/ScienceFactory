@@ -67,3 +67,33 @@ na reveal; subtle grain+vignette; panáčik = SVG s lip-sync (RMS) a gestom, nie
 (B) HF preset (capsule/bold-poster/coral). Hudba: tichý bed (-22 dB) + ducking pod hlas.
 **Kroky:** (1) demo 1 kapitola (~90 s) v HF s 5 šablónami → ukázať; (2) po schválení zvyšok šablón + 9:16;
 (3) nahradiť render.py; (4) dry-run na Actions; (5) až potom publish + reels (publish.py ostáva).
+
+## 6. Engine v2 – STAV 2026-08-22 (postavene, schvalene demo v7)
+**Moduly (`explainer/v2/`):** `engine.py` (spec JSON → HyperFrames kompozicie 16:9 + 9:16 → MP4; Kokoro per beat,
+1 whisper prechod → relativne slova per beat; sablony intro_compare / intro_grid / hook / title / focus / list / stat /
+compare / outro / chapter_card / endcard), `svglib.py` (hero objekty USB + stickman/crown/note/stamp, animovatelne po
+castiach), `icons.py` (OpenMoji 4 495 SVG, emoji → subor, textove hladanie ako zaloha; kredit CC BY-SA do popisu),
+`script_v2.py` (Groq → spec: osnova + 6 beatov/kapitola s cue frazami a emoji; validacia cue = substring say,
+emoji → existujuca ikona), `run_v2.py` (tema → spec → render → thumbnail z intro gridu → kontaktny harok → publish),
+`specs/usb_demo.json` (regresny spec = schvalene demo).
+
+**Co sa naucil engine z 7 demo iteracii (a je zapecene v kode):**
+1. `cue_time` = ZACIATOK slova (+12 %), nie koniec – inak vsetko chodi neskoro.
+2. Prvy prvok beatu vzdy t0+0.25 (nikdy prazdna obrazovka), seam 0.45 s dnu / 0.36 s von, kamera push 1.045.
+3. Dash-kreslene prvky (skrt, kruh, kable, EKG) maju `opacity="0"` v markupu + `tl.set(opacity)` pri kresleni –
+   inak okruhle zakoncenie presvita ako bodka.
+4. Markery (kruh, peciatka) sa POCITAJU z layoutu (grid: stlpec = (W-2*280-3*60)/4, stred 1. = 427), nie od oka.
+5. CSS: `.center` je celoplosny flex kontajner – nadpisy pouzivaju `.tcenter` (text-align). V 16:9 sa chyba
+   neprejavila, v 9:16 nadpis skocil do stredu cez obsah. Kontaktny harok reelu to odhalil.
+6. Kazdy beat ma vizual + nieco sa deje kazde 2–4 s: pulz tiles na vlastnost, peciatka roku na slovo, EKG na „never
+   died", fotka lezie 3 s s casovacom, kable sa kreslia k SVOJMU portu, koruna + konfety na payoff.
+7. Reel 9:16: karta focus max 760x560, zoznam max 3 polozky v rade (330 px rozostup), kompare karty pod sebou.
+8. Lokalny render: `npx -y hyperframes@0.8.4` (0.8.10 sa pyta y/n → -y), 2 workery, protocol-timeout 600000,
+   spustat SKRYTO (Start-Process -WindowStyle Hidden) – chrome-headless-shell okna rusia usera; 1 GB RAM stacilo.
+9. Groq free kluc: gpt-oss musi mat `reasoning_effort: low` + `response_format json_object`, inak minie tokeny na
+   reasoning a vrati prazdny obsah; 429 → cakat 30–90 s. Generovanie 4 kapitol trva ~10+ min.
+10. QA = kontaktny harok (fps=1/2.5, tile 4x8 / 8x3) po KAZDOM renderi; `meta.cue_missing` musi byt [].
+
+**Dalsie kroky:** (a) prvy generovany spec (HDMI) cez engine – skontrolovat OpenMoji ikony a generovane cue;
+(b) dry-run weekly.yml na Actions (node 22 + chromium), zmerat cas renderu 13 min videa + 8 reels;
+(c) thumbnail = snimka z intro gridu; (d) hudobny bed + maskot s lip-syncom = neskor.
