@@ -28,6 +28,10 @@ MODEL = os.environ.get("MODELS_MODEL", "openai/gpt-oss-120b")
 MODEL_FALLBACK = os.environ.get("MODELS_FALLBACK", "openai/gpt-oss-20b")
 BASE = os.environ.get("MODELS_BASE_URL", "https://api.groq.com/openai/v1")
 TOKEN = os.environ.get("MODELS_TOKEN") or os.environ.get("GROQ_API_KEY") or os.environ.get("GITHUB_TOKEN")
+# zalozny provider (OpenAI-kompatibilny), napr. Cerebras (gpt-oss-120b, 1M tokenov/den zadarmo) alebo Gemini
+BASE2 = os.environ.get("MODELS2_BASE_URL", "")
+TOKEN2 = os.environ.get("MODELS2_TOKEN", "")
+MODEL2 = os.environ.get("MODELS2_MODEL", "gpt-oss-120b")
 
 # defaulty explainer sekcie configu (config.json -> "explainer": {...} ich prekryje)
 DEFAULTS = {
@@ -102,18 +106,25 @@ def _extract_json(txt):
     raise ValueError("LLM nevratil validny JSON: " + txt[:200])
 
 
+def _providers():
+    out = [(BASE, TOKEN, MODEL, 4), (BASE, TOKEN, MODEL_FALLBACK, 1)]
+    if BASE2 and TOKEN2:
+        out.insert(1, (BASE2, TOKEN2, MODEL2, 3))   # zaloha hned po hlavnom modeli, pred slabsim 20b
+    return out
+
+
 def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=6):
-    """Zavolaj chat model, vrat parsovany JSON. Hlavny model s trpezlivymi retry (429 = free limit),
-    fallback (mensi model, horsie fakty) az ked hlavny zlyha opakovane."""
+    """Zavolaj chat model, vrat parsovany JSON. Poradie: hlavny model (Groq 120b, trpezlive retry na 429),
+    zalozny provider (MODELS2_*), az nakoniec slabsi 20b (horsie fakty)."""
     if not TOKEN:
         raise RuntimeError("Chyba MODELS_TOKEN (Groq) v prostredi.")
     last = None
-    for model in (MODEL, MODEL_FALLBACK):
-        for att in range(tries if model == MODEL else 2):
+    for base, token, model, n_tries in _providers():
+        for att in range(n_tries):
             try:
                 r = requests.post(
-                    BASE.rstrip("/") + "/chat/completions",
-                    headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
+                    base.rstrip("/") + "/chat/completions",
+                    headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
                     json={"model": model, "temperature": temperature, "max_tokens": max_tokens,
                           "reasoning_effort": "low",            # gpt-oss: inak minie tokeny na reasoning a vrati prazdno
                           "response_format": {"type": "json_object"},
@@ -121,14 +132,19 @@ def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=6):
                                        {"role": "user", "content": prompt}]},
                     timeout=180)
                 if r.status_code == 429:
+                    why = re.sub(r"\s+", " ", r.text)[:140]
+                    # denny limit (TPD) -> cakanie nepomoze, skoc na dalsieho providera
+                    if "per day" in why or "TPD" in why:
+                        print(f"   [llm] 429 DENNY limit ({model}): {why}")
+                        break
                     wait = min(240, 30 + 40 * att)
-                    print(f"   [llm] 429 rate limit ({model}) - cakam {wait}s")
+                    print(f"   [llm] 429 rate limit ({model}) - cakam {wait}s: {why}")
                     time.sleep(wait)
                     continue
                 if r.status_code == 400 and "reasoning_effort" in r.text:
                     # model bez podpory reasoning_effort -> bez neho
-                    r = requests.post(BASE.rstrip("/") + "/chat/completions",
-                                      headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
+                    r = requests.post(base.rstrip("/") + "/chat/completions",
+                                      headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
                                       json={"model": model, "temperature": temperature, "max_tokens": max_tokens,
                                             "response_format": {"type": "json_object"},
                                             "messages": [{"role": "system", "content": system},
@@ -140,7 +156,7 @@ def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=6):
                 return _extract_json(txt)
             except Exception as e:
                 last = e
-                print(f"   [llm] {model} pokus {att + 1}/{tries}: {str(e)[:120]}")
+                print(f"   [llm] {model} pokus {att + 1}/{n_tries}: {str(e)[:120]}")
                 time.sleep(3 + 4 * att)
     raise RuntimeError(f"LLM zlyhalo: {last}")
 
