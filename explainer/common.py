@@ -102,13 +102,14 @@ def _extract_json(txt):
     raise ValueError("LLM nevratil validny JSON: " + txt[:200])
 
 
-def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=3):
-    """Zavolaj chat model, vrat parsovany JSON. Skusa hlavny model, potom fallback."""
+def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=6):
+    """Zavolaj chat model, vrat parsovany JSON. Hlavny model s trpezlivymi retry (429 = free limit),
+    fallback (mensi model, horsie fakty) az ked hlavny zlyha opakovane."""
     if not TOKEN:
         raise RuntimeError("Chyba MODELS_TOKEN (Groq) v prostredi.")
     last = None
     for model in (MODEL, MODEL_FALLBACK):
-        for att in range(tries):
+        for att in range(tries if model == MODEL else 2):
             try:
                 r = requests.post(
                     BASE.rstrip("/") + "/chat/completions",
@@ -120,7 +121,7 @@ def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=3):
                                        {"role": "user", "content": prompt}]},
                     timeout=180)
                 if r.status_code == 429:
-                    wait = 30 + 30 * att
+                    wait = min(240, 30 + 40 * att)
                     print(f"   [llm] 429 rate limit ({model}) - cakam {wait}s")
                     time.sleep(wait)
                     continue

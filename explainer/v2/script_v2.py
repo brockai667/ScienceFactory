@@ -93,6 +93,30 @@ Rules: real facts only; emojis must be standard Unicode objects (no flags, no fa
 Return ONLY: {{"beats":[...]}}"""
 
 
+def collect_beats(data):
+    """Rekurzivne vyzbiera vsetky dict-y s klucom 'tpl' (model obcas vrati pokazenu strukturu)."""
+    out = []
+
+    def walk(x):
+        if isinstance(x, dict):
+            if "tpl" in x and "say" in x:
+                out.append(x)
+            else:
+                for v in x.values():
+                    walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    walk(data)
+    # dedup podla tpl (prvy vyhrava), zachovaj poradie
+    seen, uniq = set(), []
+    for b in out:
+        if b["tpl"] not in seen:
+            seen.add(b["tpl"])
+            uniq.append(b)
+    return uniq
+
+
 def _sub_ok(say, phrase):
     a, b = " ".join(common_norm(say)), " ".join(common_norm(phrase))
     return bool(b) and b in a
@@ -249,10 +273,10 @@ def generate(series, items=None):
             data = common.llm_json(CHAPTER_PROMPT.format(series=series, idx=i + 1, total=len(chapters), name=ch["name"],
                                                          label=ch["label"], emoji=ch.get("emoji") or "", prev=prev,
                                                          series_short=series_short), SYSTEM, temperature=0.75, max_tokens=5000)
-            raw = data.get("beats") if isinstance(data, dict) else data
-            if not isinstance(raw, list):
+            raw = collect_beats(data)
+            if not raw:
                 continue
-            beats = [x for x in (coerce_beat(b, ch["name"]) for b in raw if isinstance(b, dict)) if x]
+            beats = [x for x in (coerce_beat(b, ch["name"]) for b in raw) if x]
             if len(beats) >= 4:
                 break
             print(f"   [script] kapitola {i + 1}: len {len(beats)} platnych beatov - znova")

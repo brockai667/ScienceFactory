@@ -17,6 +17,10 @@ on:
         description: "Len dlhe video, bez reels (rychlejsi test)"
         type: boolean
         default: false
+      spec:
+        description: "Hotovy spec JSON (napr. explainer/v2/specs/usb_demo.json) - preskoci Groq generovanie"
+        type: string
+        default: ""
       publish_run_id:
         description: "LEN PUBLIKOVAT hotovy vystup z ineho behu (run id s artefaktom explainer-output) - preskoci generovanie aj render"
         type: string
@@ -103,6 +107,7 @@ jobs:
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry"; fi
           if [ "${{ github.event.inputs.no_images }}" = "true" ]; then ARGS="$ARGS --long-only"; fi
           if [ -n "${{ github.event.inputs.topic }}" ]; then ARGS="$ARGS --topic \"${{ github.event.inputs.topic }}\""; fi
+          if [ -n "${{ github.event.inputs.spec }}" ]; then ARGS="$ARGS --spec ${{ github.event.inputs.spec }}"; fi
           if [ -n "${{ github.event.inputs.publish_run_id }}" ]; then
             META=$(ls output/explainer/*/meta.json | head -1)
             echo "Publish-only: $META"
