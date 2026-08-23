@@ -14,7 +14,7 @@ on:
         type: string
         default: ""
       no_images:
-        description: "Bez AI obrazkov (rychly test)"
+        description: "Len dlhe video, bez reels (rychlejsi test)"
         type: boolean
         default: false
       publish_run_id:
@@ -32,7 +32,7 @@ concurrency:
 jobs:
   explainer:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
 
@@ -40,11 +40,23 @@ jobs:
         with:
           python-version: "3.12"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
       - name: Install Python deps
-        run: pip install requests cloudinary kokoro-onnx soundfile Pillow numpy
+        run: pip install requests cloudinary kokoro-onnx soundfile Pillow numpy faster-whisper
+
+      - name: Cache HyperFrames Chromium + OpenMoji
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/hyperframes
+            temp/openmoji
+          key: hf-chromium-openmoji-v1
 
       - name: Cache Kokoro model (~340 MB)
         uses: actions/cache@v4
@@ -85,18 +97,18 @@ jobs:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}   # volitelne (auth.pollinations.ai): limit 1/15s -> 1/5s
+          HF_WORKERS: "2"
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry"; fi
-          if [ "${{ github.event.inputs.no_images }}" = "true" ]; then ARGS="$ARGS --no-images"; fi
+          if [ "${{ github.event.inputs.no_images }}" = "true" ]; then ARGS="$ARGS --long-only"; fi
           if [ -n "${{ github.event.inputs.topic }}" ]; then ARGS="$ARGS --topic \"${{ github.event.inputs.topic }}\""; fi
           if [ -n "${{ github.event.inputs.publish_run_id }}" ]; then
             META=$(ls output/explainer/*/meta.json | head -1)
             echo "Publish-only: $META"
             python explainer/publish.py "$META"
           else
-            eval python explainer/run_weekly.py $ARGS
+            eval python explainer/v2/run_v2.py $ARGS
           fi
 
       - name: Upload outputs as artifact (dry-run alebo kontrola)
@@ -110,6 +122,7 @@ jobs:
             output/explainer/**/long.mp4
             output/explainer/**/reel_*.mp4
             output/explainer/**/thumb.jpg
+            output/explainer/**/sheet.jpg
             output/explainer/**/meta.json
 
       - name: Persist state
@@ -118,7 +131,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           rm -f config.json
-          git add explainer/explainer_used.json explainer/explainer_bank.json explainer/explainer_state.json explainer/scripts/ 2>/dev/null || true
+          git add explainer/explainer_used.json explainer/explainer_bank.json explainer/explainer_state.json explainer/scripts/ explainer/v2/specs/ 2>/dev/null || true
           git commit -m "explainer: weekly run $(date -u +%F)" || echo "no changes"
           git pull --rebase --autostash origin ${{ github.ref_name }} || true
           git push || echo "nothing to push"

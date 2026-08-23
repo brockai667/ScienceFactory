@@ -114,16 +114,28 @@ def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=3):
                     BASE.rstrip("/") + "/chat/completions",
                     headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
                     json={"model": model, "temperature": temperature, "max_tokens": max_tokens,
+                          "reasoning_effort": "low",            # gpt-oss: inak minie tokeny na reasoning a vrati prazdno
+                          "response_format": {"type": "json_object"},
                           "messages": [{"role": "system", "content": system},
                                        {"role": "user", "content": prompt}]},
                     timeout=180)
                 if r.status_code == 429:
-                    wait = 20 + 20 * att
+                    wait = 30 + 30 * att
                     print(f"   [llm] 429 rate limit ({model}) - cakam {wait}s")
                     time.sleep(wait)
                     continue
+                if r.status_code == 400 and "reasoning_effort" in r.text:
+                    # model bez podpory reasoning_effort -> bez neho
+                    r = requests.post(BASE.rstrip("/") + "/chat/completions",
+                                      headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
+                                      json={"model": model, "temperature": temperature, "max_tokens": max_tokens,
+                                            "response_format": {"type": "json_object"},
+                                            "messages": [{"role": "system", "content": system},
+                                                         {"role": "user", "content": prompt}]}, timeout=180)
                 r.raise_for_status()
-                txt = r.json()["choices"][0]["message"]["content"]
+                txt = r.json()["choices"][0]["message"]["content"] or ""
+                if not txt.strip():
+                    raise ValueError("prazdny obsah (reasoning zjedol tokeny?)")
                 return _extract_json(txt)
             except Exception as e:
                 last = e

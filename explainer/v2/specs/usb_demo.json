@@ -1,0 +1,57 @@
+{
+  "series": "Every USB Port Color, EXPLAINED",
+  "title": "Every USB Port Color Explained (White, Black, Blue & More)",
+  "description": "USB port colors are not a design choice. Each color tells you the speed and the era of the port.",
+  "hashtags": ["#usb", "#tech", "#explained", "#computers", "#hardware"],
+  "hero": {"kind": "usb_port"},
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "You have probably seen a blue USB port sitting right next to a black one, and assumed the colors were just a design choice. They are not.",
+      "left": {"vis": {"kind": "usb_port", "body": "#1c4ed8"}, "label": "Blue"},
+      "right": {"vis": {"kind": "usb_port", "body": "#26262c"}, "label": "Black"},
+      "line": "Just a design choice?",
+      "cues": {"left": "blue USB port", "right": "black one", "line": "design choice.", "strike": "They are not."}
+    },
+    "grid": {
+      "say": "Every color has a meaning. Speed, power, sometimes both. This is every USB port color, explained. Starting with the oldest one of all.",
+      "cues": {"grid": "Every color", "title": "explained.", "mark": "oldest"},
+      "pulse": [{"cue": "Speed", "items": [2, 3, 4]}, {"cue": "power", "items": [5, 6]}],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {"name": "White", "label": "WHITE", "icon": {"kind": "usb_port", "body": "#f6f6f2"},
+     "hook": "White USB ports are the oldest ones still alive.",
+     "beats": [
+       {"tpl": "hook", "say": "The white one. On an old computer it looks like cheap plastic. It is not. White is the original. The very first USB ever made.",
+        "slams": [{"text": "THE WHITE USB PORT."},
+                  {"text": "“CHEAP PLASTIC”", "cue": "cheap plastic.", "strike": true},
+                  {"text": "IT'S NOT.", "cue": "It is not.", "color": "red", "strike_on": "It is not."},
+                  {"text": "THE ORIGINAL.", "cue": "the original.", "color": "blue"},
+                  {"text": "THE FIRST USB EVER.", "cue": "first USB ever", "color": "blue"}]},
+       {"tpl": "title", "say": "White USB ports.", "title": "White USB ports", "kicker": "EVERY USB COLOR, PART 1"},
+       {"tpl": "focus", "say": "White means USB one point zero, straight from nineteen ninety six. Spot one, and you are looking at a real piece of computer history.",
+        "head": "USB 1.0", "label": "1996 — the first generation", "stamp": "1996",
+        "callouts": [["#c9a227", "4 gold pins"], ["#1c4ed8", "power + data in one cable"]],
+        "cues": {"head": "White means", "stamp": "1996", "action": "Spot one", "circle": "computer history", "callouts": "Spot one"}},
+       {"tpl": "list", "say": "Before USB, every device had its own plug. One port for the printer. Another for the keyboard. A third one for the mouse.",
+        "head": "Before USB", "sub": {"text": "one plug per device", "cue": "its own plug."},
+        "hub": {"kind": "computer_tower"},
+        "items": [{"vis": {"kind": "printer"}, "label": "Printer", "cue": "printer.", "plug": true},
+                  {"vis": {"kind": "keyboard"}, "label": "Keyboard", "cue": "keyboard.", "plug": true},
+                  {"vis": {"kind": "mouse"}, "label": "Mouse", "cue": "mouse.", "plug": true}]},
+       {"tpl": "stat", "say": "Top speed? One and a half megabytes per second. A single photo from your phone would take three whole seconds to copy.",
+        "num_end": 1.5, "unit": "MB/s", "label": "USB 1.0 top speed", "sub": "3 seconds — one photo",
+        "vis": {"kind": "smartphone"}, "travel": {"to": {"kind": "usb_port"}, "seconds": 3},
+        "cues": {"count": "and a half", "sub": "whole seconds"}},
+       {"tpl": "compare", "say": "But here is the twist. USB one never died. Car stereos and cheap MP3 players still use it today. Why pay for a faster chip, when the slow one does the job?",
+        "head": "It never died", "ekg": "never died",
+        "left": {"vis": {"kind": "car_stereo"}, "label": "Car stereo", "cue": "stereos"},
+        "right": {"vis": {"kind": "mp3_player"}, "label": "MP3 player", "cue": "players", "notes": true},
+        "line": "Why pay for more?", "cues": {"line": "faster chip"}}
+     ]}
+  ],
+  "outro": {"say": "So next time you see a white port, remember. That is not cheap plastic. That is the founder.",
+            "type_text": "That's the founder.", "cues": {"key": "founder"}}
+}
