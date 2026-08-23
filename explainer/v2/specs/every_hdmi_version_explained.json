@@ -1,9 +1,15 @@
 {
   "series": "Every HDMI Version Explained",
   "title": "Every HDMI Version Explained – From 1.0 to 2.1a",
-  "description": "Discover how HDMI grew from a simple video link to a powerhouse that handles 8K, high refresh rates, and eARC. We break down each version’s key leap in plain terms.",
+  "description": "Explore how HDMI grew from a simple digital cable to a powerhouse for 8K gaming and HDR. Learn the key upgrades and which version you really need.",
   "hashtags": [
-    "#HDMI\",\"#TechHistory\",\"#4K\",\"#8K\",\"#eARC\",\"#Gaming\",\"#HomeTheater\",\"#CableTech"
+    "#HDMI\"",
+    "#TechHistory",
+    "#4K",
+    "#8K",
+    "#HDR",
+    "#CableGuide",
+    "#DisplayTech"
   ],
   "hero": {
     "emoji": "🔌"
@@ -11,32 +17,33 @@
   "cta": "Full video on YouTube: link in bio",
   "intro": {
     "compare": {
-      "say": "People think HDMI 1.4 and HDMI 2.0 are just higher resolutions. They are not.",
+      "say": "People think HDMI 1.0 and HDMI 2.1 are just a design choice. They are not.",
       "left": {
         "emoji": "📺",
-        "label": "HDMI 1.4",
+        "label": "HDMI 1.0",
         "vis": {
           "emoji": "📺"
         }
       },
       "right": {
-        "emoji": "🖥️",
-        "label": "HDMI 2.0",
+        "emoji": "📡",
+        "label": "HDMI 2.1",
         "vis": {
-          "emoji": "🖥️"
+          "emoji": "📡"
         }
       },
-      "line": "Just a resolution boost?",
+      "line": "Just a design choice?",
       "cues": {
-        "left": "HDMI 1.4",
-        "right": "HDMI 2.0",
+        "left": "HDMI 1.0",
+        "right": "HDMI 2.1",
+        "line": "just a design",
         "strike": "They are not."
       }
     },
     "grid": {
-      "say": "Higher bandwidth means more features. This is every HDMI explained. Starting with HDMI 1.0.",
+      "say": "Each version adds bandwidth, features and support for newer displays. This is every HDMI version, explained. Starting with HDMI 1.0.",
       "cues": {
-        "grid": "Higher bandwidth",
+        "grid": "Each version",
         "title": "explained",
         "mark": "Starting with"
       },
@@ -44,11 +51,12 @@
         {
           "cue": "bandwidth",
           "items": [
+            0,
+            1,
             2,
             3,
             4,
-            5,
-            6
+            5
           ]
         }
       ],
@@ -57,34 +65,34 @@
   },
   "chapters": [
     {
-      "name": "HDMI 1.0 (2002)",
+      "name": "HDMI 1.0",
       "label": "1.0",
       "icon": {
-        "emoji": "⚡"
+        "emoji": "📺"
       },
-      "hook": "The original spec delivered 1080p at 60 fps with 4.9 Gbps bandwidth.",
+      "hook": "Launched in 2002, it introduced digital video and audio over a single cable.",
       "beats": [
         {
           "tpl": "hook",
-          "say": "You think HDMI 1.0 was the latest tech in 2002. Actually, it was the starting point. It only handled 1080p. That’s a lot for that era.",
+          "say": "You’ve probably seen the slim, rectangular plug on every TV. That’s HDMI 1.0, the first HDMI standard that finally let video and audio travel together.",
           "slams": [
             {
-              "text": "THAT'S NOT THE CASE"
+              "text": "THE FIRST HDMI"
             },
             {
-              "text": "“think HDMI 1.0 was”",
-              "cue": "think HDMI 1.0 was",
+              "text": "“SLIM PLUG”",
+              "cue": "slim, rectangular plug",
               "strike": true
             },
             {
-              "text": "IT'S NOT.",
-              "cue": "only handled 1080p",
+              "text": "IT'S HERE.",
+              "cue": "finally let video",
               "color": "red",
-              "strike_on": "only handled 1080p"
+              "strike_on": "finally let video"
             },
             {
-              "text": "THE TRUTH: STARTING POINT",
-              "cue": "starting point",
+              "text": "TOGETHER.",
+              "cue": "travel together",
               "color": "blue"
             }
           ],
@@ -92,65 +100,66 @@
         },
         {
           "tpl": "title",
-          "say": "HDMI 1.0 (2002).",
-          "title": "HDMI 1.0 (2002)",
+          "say": "HDMI 1.0.",
+          "title": "HDMI 1.0",
           "kicker": "EVERY HDMI VERSION, PART 1",
           "cues": {}
         },
         {
           "tpl": "focus",
-          "say": "HDMI 1.0 launched in 2002, bringing digital audio and video to TVs. It supported up to 1080p and 8-channel audio.",
-          "head": "First Generation",
-          "label": "HDMI 1.0 (2002)",
+          "say": "HDMI 1.0 hit the market in 2002, bringing a single cable solution to high‑definition home theater.",
+          "head": "Launch year",
+          "label": "2002 — first HDMI",
           "stamp": "2002",
           "callouts": [
             [
               "#c9a227",
-              "1080p resolution"
+              "single cable"
             ],
             [
               "#1c4ed8",
-              "8-channel audio"
+              "HD video"
             ]
           ],
           "cues": {
-            "stamp": "2002"
+            "action": "single cable",
+            "circle": "high‑definition home theater",
+            "callouts": "single cable"
           }
         },
         {
           "tpl": "list",
-          "say": "It delivered 1080p video, 8-channel audio, and 3D support. All over a single cable.",
-          "head": "Key Specs",
+          "say": "It gave you three big things: uncompressed digital video, multi‑channel audio, and a simple connector for all your gear.",
+          "head": "What it delivered",
           "sub": {
-            "text": "What it delivered",
-            "cue": ""
+            "text": "three big things",
+            "cue": "three big things"
           },
           "hub": {
             "emoji": "📺"
           },
           "items": [
             {
-              "emoji": "📺",
-              "label": "Video",
-              "cue": "1080p video",
+              "emoji": "📽️",
+              "label": "Digital video",
+              "cue": "digital video",
               "vis": {
-                "emoji": "📺"
+                "emoji": "📽️"
               }
             },
             {
               "emoji": "🔊",
-              "label": "Audio",
-              "cue": "8-channel audio",
+              "label": "Multi‑channel audio",
+              "cue": "multi‑channel audio",
               "vis": {
                 "emoji": "🔊"
               }
             },
             {
-              "emoji": "🖥️",
-              "label": "3D",
-              "cue": "3D support",
+              "emoji": "🔌",
+              "label": "One connector",
               "vis": {
-                "emoji": "🖥️"
+                "emoji": "🔌"
               }
             }
           ],
@@ -158,143 +167,538 @@
         },
         {
           "tpl": "stat",
-          "say": "HDMI 1.0 supports 1920 pixels horizontally. That's the same width as a typical laptop.",
-          "num_end": 1920.0,
-          "decimals": 0,
-          "unit": "pixels",
-          "label": "Horizontal pixels",
-          "sub": "same width as laptop",
+          "say": "The bandwidth topped out at just under five gigabits per second. That’s fast enough to move a two‑gigabyte movie in about three seconds.",
+          "num_end": 4.95,
+          "decimals": 2,
+          "unit": "Gbps",
+          "label": "HDMI 1.0 bandwidth",
+          "sub": "~3 seconds per movie",
           "vis": {
-            "emoji": "💻"
+            "emoji": "🎞️"
           },
-          "travel": null,
+          "travel": {
+            "to": {
+              "emoji": "💾"
+            },
+            "seconds": 3
+          },
           "cues": {
-            "count": "1920",
-            "sub": "same width"
+            "count": "just under five",
+            "sub": "three seconds"
           }
         },
         {
           "tpl": "compare",
-          "say": "But HDMI 1.0 is still in use. It's found in old gaming consoles and cheap smart TVs. Do you still need it?",
-          "head": "Still Relevant",
-          "ekg": "But",
+          "say": "Even today you’ll find HDMI 1.0 in budget projectors and older set‑top boxes—still good enough for 1080p movies without the extra bells and whistles.",
+          "head": "Still around",
+          "ekg": null,
           "left": {
-            "emoji": "🕹️",
-            "label": "Console",
-            "cue": "gaming consoles",
+            "emoji": "📽️",
+            "label": "Budget projector",
+            "cue": "budget projectors",
             "vis": {
-              "emoji": "🕹️"
+              "emoji": "📽️"
             }
           },
           "right": {
-            "emoji": "📺",
-            "label": "TV",
-            "cue": "smart TVs",
+            "emoji": "📦",
+            "label": "Old set‑top box",
+            "cue": "older set‑top boxes",
             "vis": {
-              "emoji": "📺"
+              "emoji": "📦"
             }
           },
-          "line": "Do you still need it?",
+          "line": "Good enough for movies",
           "cues": {
-            "line": "Do you"
+            "line": "extra bells and whistles"
           }
         }
       ]
     },
     {
-      "name": "HDMI 1.3 (2006)",
+      "name": "HDMI 1.3",
       "label": "1.3",
       "icon": {
-        "emoji": "🔧"
+        "emoji": "💾"
       },
-      "hook": "Added Deep Color and support for Dolby TrueHD, boosting color depth.",
+      "hook": "2006 added Deep Color and higher audio sample rates for richer sound.",
       "beats": [
         {
           "tpl": "hook",
-          "say": "You think HDMI 1.3 just added a few colors. In reality, it doubled the bandwidth. That was a game‑changer for 3D and high‑resolution video.",
+          "say": "HDMI 1.3 dropped in 2001, adding a burst of color and speed to your screen. It was the first version to bring HD to the living room.",
           "slams": [
             {
-              "text": "YOU THINK HDMI 1.3"
+              "text": "HDMI 1.3 ARRIVES."
             },
             {
-              "text": "“YOU THINK HDMI 1.3”",
-              "cue": "You think HDMI 1.3",
-              "strike": true
+              "text": "FIRST HD VERSION"
             },
             {
-              "text": "IT'S NOT.",
-              "color": "red"
+              "text": "SPEED UPGRADES"
             },
             {
-              "text": "THE TRUTH, 3-5 WORDS",
-              "cue": "doubled the bandwidth",
-              "color": "blue"
+              "text": "YOUR SCREEN BOOSTS"
             }
           ],
           "cues": {}
         },
         {
           "tpl": "title",
-          "say": "HDMI 1.3 (2006).",
-          "title": "HDMI 1.3 (2006)",
+          "say": "HDMI 1.3.",
+          "title": "HDMI 1.3",
           "kicker": "EVERY HDMI VERSION, PART 2",
           "cues": {}
         },
         {
           "tpl": "focus",
-          "say": "HDMI 1.3 was a 2006 upgrade that pushed bandwidth up to 10.2 Gbps, enabling 3D video and high‑color depth. It also added support for dual‑link DVI.",
-          "head": "Bandwidth Boost",
-          "label": "2006 Upgrade",
-          "stamp": "2006",
+          "say": "It added 1080p support at 60 frames per second, a huge jump from the 480p of HDMI 1.2. Think of it as a 1080p video game at full speed.",
+          "head": "1080p at 60fps",
+          "label": "2001 — first high‑res HDMI",
+          "stamp": "2001",
           "callouts": [
             [
-              "#c9a227",
-              "10.2 Gbps bandwidth"
+              "#1c4ed8",
+              "1080p 60fps"
             ],
             [
-              "#1c4ed8",
-              "Dual‑link DVI support"
+              "#c9a227",
+              "HDMI 1.2 480p"
             ]
           ],
           "cues": {
-            "stamp": "2006",
-            "action": "pushed bandwidth",
-            "circle": "10.2 Gbps",
-            "callouts": "dual‑link DVI"
+            "head": "It added",
+            "action": "1080p",
+            "circle": "full speed"
           }
         },
         {
           "tpl": "list",
-          "say": "Three key features of HDMI 1.3: HDR support, HDCP 1.3 encryption, and Audio Return Channel. Each made the standard more powerful.",
-          "head": "Core Features",
+          "say": "HDMI 1.3 also introduced a 3.4‑volt audio channel, so you could send sound and video in one cable, just like the video game controller you’re holding.",
+          "head": "All‑in‑one cable",
           "sub": {
-            "text": "What Changed",
-            "cue": "Three key features"
+            "text": "audio + video"
           },
           "hub": {
-            "emoji": "🔗"
+            "emoji": "🎮"
           },
           "items": [
             {
-              "emoji": "🌈",
-              "label": "HDR",
-              "cue": "HDR support",
+              "emoji": "🎧",
+              "label": "Audio",
+              "cue": "audio",
               "vis": {
-                "emoji": "🌈"
+                "emoji": "🎧"
               }
             },
             {
-              "emoji": "🔒",
-              "label": "HDCP",
-              "cue": "HDCP 1.3 encryption",
+              "emoji": "🎬",
+              "label": "Video",
+              "cue": "video",
               "vis": {
-                "emoji": "🔒"
+                "emoji": "🎬"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its bandwidth shot up to 10 gigabits per second, enough to stream a full‑HD movie without buffering for a few hours.",
+          "num_end": 10.0,
+          "decimals": 0,
+          "unit": "Gb/s",
+          "label": "HDMI 1.3 bandwidth",
+          "sub": "10 gigabits",
+          "vis": {
+            "emoji": "📺"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔌"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "sub": "gigabits"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Today, HDMI 2.0 and 2.1 are faster, but HDMI 1.3 still lives in many older TVs. It’s like a reliable old car that still runs on the road.",
+          "head": "Still around",
+          "ekg": null,
+          "left": {
+            "emoji": "📺",
+            "label": "Old TVs",
+            "vis": {
+              "emoji": "📺"
+            }
+          },
+          "right": {
+            "emoji": "🚗",
+            "label": "Reliable car",
+            "vis": {
+              "emoji": "🚗"
+            }
+          },
+          "line": "Why upgrade?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1.4",
+      "label": "1.4",
+      "icon": {
+        "emoji": "🖥️"
+      },
+      "hook": "2009 brought 3D support and the first HDMI Ethernet Channel.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "HDMI 1.4 came out in 2006. It’s the version that first brought 3‑D and 4K to your TV, but it’s still the backbone for many cables today.",
+          "slams": [
+            {
+              "text": "HDMI 1.4 ARRIVED"
+            },
+            {
+              "text": "THREE‑D AND 4K"
+            },
+            {
+              "text": "BACKBONE FOR CABLES"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "HDMI 1.4.",
+          "title": "HDMI 1.4",
+          "kicker": "EVERY HDMI VERSION, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Think of HDMI 1.4 as the middle child. It’s older than the 2.0s, but it added 3‑D and Audio Return Channel, giving you more than just picture and sound.",
+          "head": "HDMI 1.4",
+          "label": "2006 — first release",
+          "stamp": "2006",
+          "callouts": [
+            [
+              "#1c4ed8",
+              "3‑D support"
+            ],
+            [
+              "#c9a227",
+              "Audio Return Channel"
+            ],
+            [
+              "#7a7a7a",
+              "14.4 Gbps bandwidth"
+            ]
+          ],
+          "cues": {
+            "head": "Think of",
+            "callouts": "Audio Return Channel"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What it can do? 1080p at 60Hz, 4K at 24Hz, 36‑bit deep color, and it’s fully backwards compatible with older HDMI and even DVI. That’s a lot of stuff in one cable.",
+          "head": "What it can do",
+          "sub": {
+            "text": "1080p60, 4K24, deep color"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🖥️",
+              "label": "1080p60",
+              "vis": {
+                "emoji": "🖥️"
               }
             },
+            {
+              "emoji": "🖥️",
+              "label": "4K24",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            },
+            {
+              "emoji": "🖥️",
+              "label": "36‑bit color",
+              "cue": "36‑bit",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Bandwidth? 14.4 gigabits per second. That’s like streaming a 4K movie at 24 frames for a few minutes before you hit the buffer warning.",
+          "num_end": 14.4,
+          "decimals": 1,
+          "unit": "Gbps",
+          "label": "HDMI 1.4 bandwidth",
+          "sub": "4K24 buffer warning",
+          "vis": {
+            "emoji": "📺"
+          },
+          "travel": {
+            "to": {
+              "emoji": "📺"
+            },
+            "seconds": 120
+          },
+          "cues": {
+            "sub": "buffer warning"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "But why keep using 1.4? Because it’s cheaper, works on any TV, and supports 3‑D, which 2.0 doesn’t until 2.1. Simplicity beats speed when you’re not chasing the newest tech.",
+          "head": "Why still use 1.4",
+          "ekg": null,
+          "left": {
+            "emoji": "💵",
+            "label": "cheaper",
+            "vis": {
+              "emoji": "💵"
+            }
+          },
+          "right": {
+            "vis": null
+          },
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2.0",
+      "label": "2.0",
+      "icon": {
+        "emoji": "📽️"
+      },
+      "hook": "2013 doubled bandwidth to 18 Gbps, enabling 4K at 60 fps.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "HDMI 2.0 dropped in 2013. It’s the version that finally made 4K a reality on TVs and monitors.",
+          "slams": [
+            {
+              "text": "HDMI 2.0 ARRIVED."
+            },
+            {
+              "text": "THE 4K BREAKTHROUGH",
+              "color": "red"
+            },
+            {
+              "text": "NOW IT'S HERE",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "HDMI 2.0.",
+          "title": "HDMI 2.0",
+          "kicker": "EVERY HDMI VERSION, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "It pushed bandwidth up to eighteen gigabits per second. That’s enough to stream a 4K movie at sixty frames a second without buffering.",
+          "head": "Bandwidth boost",
+          "label": "18 Gbps – 2013",
+          "stamp": "2013",
+          "callouts": [
+            [
+              "#1c4ed8",
+              "18 Gbps"
+            ],
+            [
+              "#c9a227",
+              "4K @ 60Hz"
+            ]
+          ],
+          "cues": {
+            "head": "bandwidth up",
+            "stamp": "eighteen",
+            "action": "stream"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "HDMI 2.0 added two new video modes: 4K at 60Hz and 10‑bit color. Those were game‑changing for gamers and filmmakers alike.",
+          "head": "New video modes",
+          "sub": {
+            "text": "4K @ 60Hz",
+            "cue": "4k at 60hz"
+          },
+          "hub": {
+            "emoji": "🎮"
+          },
+          "items": [
+            {
+              "emoji": "📺",
+              "label": "4K @ 60Hz",
+              "vis": {
+                "emoji": "📺"
+              }
+            },
+            {
+              "emoji": "🎬",
+              "label": "10‑bit color",
+              "cue": "10‑bit color",
+              "vis": {
+                "emoji": "🎬"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "That bandwidth lets you send thirty‑two separate audio channels. Think of it as thirty‑two separate speakers in one cable.",
+          "num_end": 32.0,
+          "decimals": 0,
+          "unit": "channels",
+          "label": "Audio capacity",
+          "sub": "32 separate speakers",
+          "vis": {
+            "emoji": "🔊"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🎧"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "thirty‑two",
+            "sub": "separate speakers"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "The only downside? It’s still only one cable type. No separate power line, so you can’t power a device over HDMI 2.0 alone.",
+          "head": "Same cable, more power",
+          "ekg": null,
+          "left": {
+            "emoji": "🔌",
+            "label": "Power line",
+            "cue": "power line",
+            "vis": {
+              "emoji": "🔌"
+            }
+          },
+          "right": {
+            "emoji": "📺",
+            "label": "HDMI 2.0",
+            "cue": "hdmi 2.0",
+            "vis": {
+              "emoji": "📺"
+            }
+          },
+          "line": "Power over HDMI? Not yet.",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2.1",
+      "label": "2.1",
+      "icon": {
+        "emoji": "🚀"
+      },
+      "hook": "2017 boosted to 48 Gbps, supporting 8K, variable refresh and eARC.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Now it’s the future: HDMI 2.1. It can push 48 gigabits per second, like a super‑fast highway for 8K video. Imagine your TV running 4K at 120 frames, no buffering.",
+          "slams": [
+            {
+              "text": "HDMI 2.1 IS HERE."
+            },
+            {
+              "text": "48 GIGABITS",
+              "cue": "48 gigabits",
+              "color": "red"
+            },
+            {
+              "text": "8K AT 120 FPS",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "HDMI 2.1.",
+          "title": "HDMI 2.1",
+          "kicker": "EVERY HDMI VERSION, PART 5",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "It was released in 2017, a year after HDMI 2.0. It’s the first version to support dynamic HDR and variable refresh rates, making gaming smoother.",
+          "head": "HDMI 2.1 Release",
+          "label": "2017 — new era",
+          "stamp": "2017",
+          "callouts": [
+            [
+              "#4c6ef5",
+              "dynamic HDR"
+            ],
+            [
+              "#ff8c00",
+              "variable refresh"
+            ]
+          ],
+          "cues": {
+            "head": "It was released",
+            "stamp": "2017",
+            "callouts": "dynamic HDR"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "48 gigabits per second. That’s like streaming 24 4K movies at once, or a 4K video with 60 frames per second and 10‑bit color, all at the same time.",
+          "num_end": 48.0,
+          "decimals": 0,
+          "unit": "Gb/s",
+          "label": "HDMI 2.1 bandwidth",
+          "sub": "24 4K movies",
+          "vis": {
+            "emoji": "🎬"
+          },
+          "travel": {
+            "to": {
+              "emoji": "📺"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "gigabits",
+            "sub": "movies"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "HDMI 2.1 adds a new feature: eARC, or Enhanced Audio Return Channel. It can carry uncompressed 7.1 surround, so your soundbar gets crystal‑clear audio.",
+          "head": "eARC",
+          "sub": {
+            "text": "uncompressed surround"
+          },
+          "hub": null,
+          "items": [
             {
               "emoji": "🔊",
-              "label": "ARC",
-              "cue": "Audio Return Channel",
+              "label": "7.1 audio",
               "vis": {
                 "emoji": "🔊"
               }
@@ -303,84 +707,60 @@
           "cues": {}
         },
         {
-          "tpl": "stat",
-          "say": "HDMI 1.3 delivered 10.2 Gbps of bandwidth—about the speed of 10 cars on a highway. That’s enough for 4K at 60Hz.",
-          "num_end": 10.2,
-          "decimals": 1,
-          "unit": "Gbps",
-          "label": "Bandwidth",
-          "sub": "10 cars on a highway",
-          "vis": {
-            "emoji": "🚗"
-          },
-          "travel": {
-            "to": {
-              "emoji": "🏁"
-            },
-            "seconds": 3
-          },
-          "cues": {
-            "count": "10.2 Gbps",
-            "sub": "10 cars on a highway"
-          }
-        },
-        {
           "tpl": "compare",
-          "say": "But the story didn't stop there. Today you see HDMI 1.3 in smart TVs and gaming consoles, proving its lasting impact. Still wonder why newer HDMI versions exist?",
-          "head": "Beyond the Upgrade",
-          "ekg": "but the story didn't stop there",
+          "say": "Before HDMI 2.1, eARC was a myth. Now it’s real, letting you plug a TV into a soundbar and get Dolby Atmos without extra cables.",
+          "head": "eARC reality",
+          "ekg": null,
           "left": {
             "emoji": "📺",
-            "label": "Smart TV",
-            "cue": "smart TVs",
+            "label": "TV",
+            "cue": "TV",
             "vis": {
               "emoji": "📺"
             }
           },
           "right": {
-            "emoji": "🎮",
-            "label": "Gaming Console",
-            "cue": "gaming consoles",
+            "emoji": "🔊",
+            "label": "Soundbar",
+            "cue": "soundbar",
             "vis": {
-              "emoji": "🎮"
+              "emoji": "🔊"
             }
           },
-          "line": "Still wonder why newer HDMI versions exist?",
+          "line": "No more cables",
           "cues": {
-            "line": "Still wonder"
+            "line": "extra cables"
           }
         }
       ]
     },
     {
-      "name": "HDMI 1.4 (2009)",
-      "label": "1.4",
+      "name": "HDMI 2.1a",
+      "label": "2.1A",
       "icon": {
-        "emoji": "📽️"
+        "emoji": "⚡"
       },
-      "hook": "Introduced 3D video and an Ethernet channel for networked devices.",
+      "hook": "2022 added Source‑Based Tone Mapping for better HDR performance.",
       "beats": [
         {
           "tpl": "hook",
-          "say": "You think HDMI 1.4 just added 4K? Wrong. It actually introduced 3D video, an audio return channel, and Ethernet networking. Surprise!",
+          "say": "HDMI 2.1a drops in like a power‑up. It’s the same 48‑gigabit pipe, but now it talks HDR in real time, so every scene looks its best.",
           "slams": [
             {
-              "text": "JUST ADD 4K?"
+              "text": "POWER‑UP HDMI"
             },
             {
-              "text": "THE MISCONCEPTION",
-              "cue": "just added 4K",
+              "text": "“REAL‑TIME HDR”",
+              "cue": "real time",
               "strike": true
             },
             {
-              "text": "IT'S NOT.",
-              "cue": "Wrong",
-              "color": "red",
-              "strike_on": "Wrong"
+              "text": "NOW IT TALKS",
+              "cue": "now it talks",
+              "color": "red"
             },
             {
-              "text": "THE TRUTH, 3D AND ETHERNET",
-              "cue": "it actually introduced",
+              "text": "BEST SCENES",
               "color": "blue"
             }
           ],
@@ -388,469 +768,65 @@
         },
         {
           "tpl": "title",
-          "say": "HDMI 1.4 (2009).",
-          "title": "HDMI 1.4 (2009)",
-          "kicker": "EVERY HDMI VERSION, PART 3",
-          "cues": {}
-        },
-        {
-          "tpl": "focus",
-          "say": "HDMI 1.4 arrived in 2009, bringing 3D support for the first time. It also added an Ethernet channel for networked devices.",
-          "head": "3D & Ethernet",
-          "label": "2009",
-          "stamp": "2009",
-          "callouts": [
-            [
-              "#c9a227",
-              "Added 3D video"
-            ],
-            [
-              "#1c4ed8",
-              "First Ethernet"
-            ]
-          ],
-          "cues": {
-            "stamp": "2009",
-            "action": "arrived",
-            "circle": "3D",
-            "callouts": "Added"
-          }
-        },
-        {
-          "tpl": "stat",
-          "say": "HDMI 1.4 supports up to 10.2 gigabits per second, about the speed of a 4K Blu‑ray disc.",
-          "num_end": 10.2,
-          "decimals": 1,
-          "unit": "Gbps",
-          "label": "Maximum bandwidth",
-          "sub": "as fast as a 4K Blu‑ray",
-          "vis": {
-            "emoji": "💿"
-          },
-          "travel": null,
-          "cues": {
-            "count": "10.2",
-            "sub": "4K Blu‑ray"
-          }
-        },
-        {
-          "tpl": "compare",
-          "say": "But HDMI 1.4 isn’t just for old TVs. Today you’ll find it in gaming consoles and streaming sticks. Still useful, or is it time to upgrade?",
-          "head": "Beyond TV",
-          "ekg": "But",
-          "left": {
-            "emoji": "🎮",
-            "label": "Consoles",
-            "cue": "gaming consoles",
-            "vis": {
-              "emoji": "🎮"
-            }
-          },
-          "right": {
-            "emoji": "📦",
-            "label": "Sticks",
-            "cue": "streaming sticks",
-            "vis": {
-              "emoji": "📦"
-            }
-          },
-          "line": "Still useful, or is it time to upgrade?",
-          "cues": {
-            "line": "Still useful"
-          }
-        }
-      ]
-    },
-    {
-      "name": "HDMI 2.0 (2013)",
-      "label": "2.0",
-      "icon": {
-        "emoji": "🎮"
-      },
-      "hook": "Upped bandwidth to 18 Gbps, enabling 4K at 60 Hz and 32‑channel audio.",
-      "beats": [
-        {
-          "tpl": "hook",
-          "say": "You think HDMI 2.0 just added a bit more color? It actually doubled the data speed. That’s not the full story.",
-          "slams": [
-            {
-              "text": "DOUBLE THE SPEED!"
-            },
-            {
-              "text": "“THE MISCONCEPTION”",
-              "cue": "You think HDMI 2.0 just added a bit more color?",
-              "strike": true
-            },
-            {
-              "text": "IT'S NOT.",
-              "cue": "It actually doubled the data speed",
-              "color": "red",
-              "strike_on": "It actually doubled the data speed"
-            },
-            {
-              "text": "THE TRUTH, 3-5 WORDS",
-              "cue": "It actually doubled the data speed",
-              "color": "blue"
-            }
-          ],
-          "cues": {}
-        },
-        {
-          "tpl": "title",
-          "say": "HDMI 2.0 (2013).",
-          "title": "HDMI 2.0 (2013)",
-          "kicker": "EVERY HDMI VERSION, PART 4",
-          "cues": {}
-        },
-        {
-          "tpl": "focus",
-          "say": "HDMI 2.0 launched in 2013, bumping bandwidth to 18 Gbps. It introduced 4K at 60 Hz support for the first time.",
-          "head": "Bandwidth Boom",
-          "label": "18 Gbps in 2013",
-          "stamp": "2013",
-          "callouts": [
-            [
-              "#c9a227",
-              "18 Gbps"
-            ],
-            [
-              "#1c4ed8",
-              "4K at 60 Hz"
-            ]
-          ],
-          "cues": {
-            "stamp": "2013",
-            "action": "bump",
-            "circle": "bandwidth",
-            "callouts": "first time"
-          }
-        },
-        {
-          "tpl": "list",
-          "say": "It added three key features: higher resolution, better color depth, and HDR support. These made gaming and cinema look sharper.",
-          "head": "Three Core Additions",
-          "sub": {
-            "text": "Key Enhancements",
-            "cue": "Three key features"
-          },
-          "hub": {
-            "emoji": "🎮"
-          },
-          "items": [
-            {
-              "emoji": "🖥️",
-              "label": "4K",
-              "cue": "higher resolution",
-              "vis": {
-                "emoji": "🖥️"
-              }
-            },
-            {
-              "emoji": "🎨",
-              "label": "10-bit",
-              "cue": "better color depth",
-              "vis": {
-                "emoji": "🎨"
-              }
-            },
-            {
-              "emoji": "🌈",
-              "label": "HDR",
-              "cue": "HDR support",
-              "vis": {
-                "emoji": "🌈"
-              }
-            }
-          ],
-          "cues": {}
-        },
-        {
-          "tpl": "stat",
-          "say": "The bandwidth is 18 Gbps, like streaming 18 HD movies in a single second. That’s 18 times a standard 1 Gbps stream.",
-          "num_end": 18.0,
-          "decimals": 0,
-          "unit": "Gbps",
-          "label": "Bandwidth",
-          "sub": "18 times a standard stream",
-          "vis": {
-            "emoji": "📺"
-          },
-          "travel": null,
-          "cues": {
-            "count": "18 Gbps",
-            "sub": "18 times a standard 1 Gbps stream"
-          }
-        },
-        {
-          "tpl": "compare",
-          "say": "But HDMI 2.0 isn’t just about numbers. It lives in today’s 4K TVs and high‑end gaming rigs. Isn’t it amazing how it still powers our screens?",
-          "head": "Still Relevant",
-          "ekg": "still",
-          "left": {
-            "emoji": "🖥️",
-            "label": "4K TV",
-            "cue": "4K TVs",
-            "vis": {
-              "emoji": "🖥️"
-            }
-          },
-          "right": {
-            "emoji": "🕹️",
-            "label": "Gaming Rig",
-            "cue": "gaming rigs",
-            "vis": {
-              "emoji": "🕹️"
-            }
-          },
-          "line": "Isn’t it amazing?",
-          "cues": {
-            "line": "Isn't it amazing"
-          }
-        }
-      ]
-    },
-    {
-      "name": "HDMI 2.0b (2016)",
-      "label": "2.0B",
-      "icon": {
-        "emoji": "🆙"
-      },
-      "hook": "Added support for HDR static metadata, improving contrast.",
-      "beats": [
-        {
-          "tpl": "hook",
-          "say": "Think HDMI 2.0b is just a minor tweak? That’s THE MISCONCEPTION. IT'S NOT. THE TRUTH is a huge bandwidth jump.",
-          "slams": [
-            {
-              "text": "MISCONCEPTION ALERT"
-            },
-            {
-              "text": "THE MISCONCEPTION",
-              "cue": "THE MISCONCEPTION",
-              "strike": true
-            },
-            {
-              "text": "IT'S NOT.",
-              "cue": "IT'S NOT.",
-              "color": "red",
-              "strike_on": "IT'S NOT."
-            },
-            {
-              "text": "THE TRUTH, 3-5 WORDS",
-              "cue": "THE TRUTH"
-            }
-          ],
-          "cues": {}
-        },
-        {
-          "tpl": "title",
-          "say": "HDMI 2.0b (2016).",
-          "title": "HDMI 2.0b (2016)",
-          "kicker": "EVERY HDMI VERSION, PART 5",
-          "cues": {}
-        },
-        {
-          "tpl": "focus",
-          "say": "HDMI 2.0b arrived in 2016, boosting bandwidth to 18 Gbps.",
-          "head": "Speed Upgrade",
-          "label": "2016",
-          "stamp": "2016",
-          "callouts": [
-            [
-              "#c9a227",
-              "18 Gbps"
-            ],
-            [
-              "#1c4ed8",
-              "4K HDR support"
-            ]
-          ],
-          "cues": {
-            "stamp": "2016",
-            "action": "boosting",
-            "circle": "bandwidth"
-          }
-        },
-        {
-          "tpl": "list",
-          "say": "HDMI 2.0b brings 18 Gbps bandwidth, 4K HDR support, and HDCP 2.2 protection.",
-          "head": "Key Features",
-          "sub": {
-            "text": "What it brings"
-          },
-          "hub": {
-            "emoji": "⚡"
-          },
-          "items": [
-            {
-              "emoji": "📺",
-              "label": "4K HDR",
-              "cue": "4K HDR",
-              "vis": {
-                "emoji": "📺"
-              }
-            },
-            {
-              "emoji": "⚡",
-              "label": "18 Gbps",
-              "cue": "18 Gbps",
-              "vis": {
-                "emoji": "⚡"
-              }
-            },
-            {
-              "emoji": "🛡️",
-              "label": "HDCP 2.2",
-              "cue": "HDCP 2.2",
-              "vis": {
-                "emoji": "🛡️"
-              }
-            }
-          ],
-          "cues": {}
-        },
-        {
-          "tpl": "stat",
-          "say": "18 Gbps of data flow, like 18 cars in a single lane.",
-          "num_end": 18.0,
-          "decimals": 0,
-          "unit": "Gbps",
-          "label": "Maximum bandwidth",
-          "sub": "like 18 cars",
-          "vis": {
-            "emoji": "🚗"
-          },
-          "travel": null,
-          "cues": {
-            "count": "18 Gbps",
-            "sub": "like 18 cars"
-          }
-        },
-        {
-          "tpl": "compare",
-          "say": "But it still matters. 4K TVs and gaming consoles use it today. Still worth upgrading?",
-          "head": "But it still matters",
-          "ekg": "but",
-          "left": {
-            "emoji": "📺",
-            "label": "4K TVs",
-            "cue": "4K TVs",
-            "vis": {
-              "emoji": "📺"
-            }
-          },
-          "right": {
-            "emoji": "🎮",
-            "label": "gaming consoles",
-            "cue": "gaming consoles",
-            "vis": {
-              "emoji": "🎮"
-            }
-          },
-          "line": "Still worth upgrading?",
-          "cues": {
-            "line": "Still"
-          }
-        }
-      ]
-    },
-    {
-      "name": "HDMI 2.1 (2017)",
-      "label": "2.1",
-      "icon": {
-        "emoji": "🚀"
-      },
-      "hook": "Massive 48 Gbps pipe, 8K60, 4K120, variable refresh and eARC.",
-      "beats": [
-        {
-          "tpl": "hook",
-          "say": "Think HDMI 2.1 is just a fancy name. It's actually a leap in speed. Many think it's just more ports.",
-          "slams": [
-            {
-              "text": "YOU THINK IT'S JUST"
-            },
-            {
-              "text": "“THE MISCONCEPTION”",
-              "cue": "Think HDMI 2.1 is just",
-              "strike": true
-            },
-            {
-              "text": "IT'S NOT.",
-              "cue": "It's actually a leap",
-              "color": "red",
-              "strike_on": "It's actually a leap"
-            },
-            {
-              "text": "THE TRUTH, 3-5 WORDS",
-              "cue": "Many think it's just",
-              "color": "blue"
-            }
-          ],
-          "cues": {}
-        },
-        {
-          "tpl": "title",
-          "say": "HDMI 2.1 (2017).",
-          "title": "HDMI 2.1 (2017)",
+          "say": "HDMI 2.1a.",
+          "title": "HDMI 2.1a",
           "kicker": "EVERY HDMI VERSION, PART 6",
           "cues": {}
         },
         {
           "tpl": "focus",
-          "say": "HDMI 2.1 arrived in 2017, doubling bandwidth to 48 Gbps. It supports 4K at 120 Hz and 8K at 60 Hz.",
-          "head": "New Speed",
-          "label": "2017",
-          "stamp": "2017",
+          "say": "The star of 2.1a is Source‑Based Tone Mapping, letting the source adjust brightness frame by frame, so dark rooms stay dark and bright spots never blow out.",
+          "head": "Source‑Based Tone Mapping",
+          "label": "Dynamic HDR per frame",
+          "stamp": "2022",
           "callouts": [
             [
-              "#c9a227",
-              "48 Gbps bandwidth"
+              "#c94a1f",
+              "frame‑by‑frame HDR"
             ],
             [
-              "#1c4ed8",
-              "4K 120Hz support"
+              "#0044cc",
+              "no extra bandwidth"
             ]
           ],
           "cues": {
-            "stamp": "2017",
-            "action": "bandwidth",
-            "circle": "4K"
+            "head": "The star",
+            "action": "adjust brightness",
+            "circle": "frame by frame"
           }
         },
         {
           "tpl": "list",
-          "say": "HDMI 2.1 brings three game‑changing features: eARC, VRR, and ALLM.",
-          "head": "Three Features",
+          "say": "You’ll find 2.1a first in the newest 4K TVs, the latest game consoles and top‑tier graphics cards.",
+          "head": "First adopters",
           "sub": {
-            "text": "Key Additions",
-            "cue": "game‑changing"
+            "text": "new hardware"
           },
           "hub": {
-            "emoji": "🎮"
+            "emoji": "🖥️"
           },
           "items": [
             {
-              "emoji": "🔈",
-              "label": "eARC",
-              "cue": "eARC",
+              "emoji": "📺",
+              "label": "4K TVs",
+              "cue": "4K TVs",
               "vis": {
-                "emoji": "🔈"
+                "emoji": "📺"
               }
             },
             {
-              "emoji": "⏱️",
-              "label": "VRR",
-              "cue": "VRR",
+              "emoji": "🎮",
+              "label": "Game consoles",
+              "cue": "game consoles",
               "vis": {
-                "emoji": "⏱️"
+                "emoji": "🎮"
               }
             },
             {
-              "emoji": "⚡",
-              "label": "ALLM",
-              "cue": "ALLM",
+              "emoji": "💻",
+              "label": "High‑end GPUs",
               "vis": {
-                "emoji": "⚡"
+                "emoji": "💻"
               }
             }
           ],
@@ -858,201 +834,55 @@
         },
         {
           "tpl": "stat",
-          "say": "48 gigabits per second means you can stream a 4K HDR movie in 1.5 seconds.",
+          "say": "Bandwidth stays at forty‑eight gigabits per second – enough for 8K at sixty hertz or 4K at one‑hundred twenty hertz, just like plain 2.1.",
           "num_end": 48.0,
           "decimals": 0,
-          "unit": "Gbps",
-          "label": "Bandwidth",
-          "sub": "1.5‑second movie",
+          "unit": "Gb/s",
+          "label": "HDMI 2.1a bandwidth",
+          "sub": "8K @ 60 Hz or 4K @ 120 Hz",
           "vis": {
-            "emoji": "🎬"
+            "emoji": "📊"
           },
-          "travel": null,
-          "cues": {
-            "count": "48 gigabits",
-            "sub": "1.5 seconds"
-          }
-        },
-        {
-          "tpl": "compare",
-          "say": "But it's not just for TVs. It powers gaming consoles and VR headsets. So why settle for slower cables?",
-          "head": "But It's Everywhere",
-          "ekg": "but",
-          "left": {
-            "emoji": "🕹️",
-            "label": "Console",
-            "cue": "gaming consoles",
-            "vis": {
-              "emoji": "🕹️"
-            }
-          },
-          "right": {
-            "emoji": "🕶️",
-            "label": "VR",
-            "cue": "VR headsets",
-            "vis": {
-              "emoji": "🕶️"
-            }
-          },
-          "line": "Want the best?",
-          "cues": {}
-        }
-      ]
-    },
-    {
-      "name": "HDMI 2.1a (2020)",
-      "label": "2.1A",
-      "icon": {
-        "emoji": "🧩"
-      },
-      "hook": "Brought dynamic HDR and enhanced gaming features like Auto Low Latency Mode.",
-      "beats": [
-        {
-          "tpl": "hook",
-          "say": "People think HDMI 2.1a is just a tweak. In reality, it's a leap forward. It brings true 4K60 HDR. It’s not a small update.",
-          "slams": [
-            {
-              "text": "BIG SURPRISE!",
-              "cue": "People think HDMI 2.1a is just a tweak."
-            },
-            {
-              "text": "“THE MISCONCEPTION”",
-              "cue": "People think HDMI 2.1a is just a tweak",
-              "strike": true
-            },
-            {
-              "text": "IT'S NOT.",
-              "cue": "In reality, it's a leap forward",
-              "color": "red",
-              "strike_on": "In reality, it's a leap forward"
-            },
-            {
-              "text": "THE TRUTH, 3-5 WORDS",
-              "cue": "It brings true 4K60 HDR",
-              "color": "blue"
-            }
-          ],
-          "cues": {}
-        },
-        {
-          "tpl": "title",
-          "say": "HDMI 2.1a (2020).",
-          "title": "HDMI 2.1a (2020)",
-          "kicker": "EVERY HDMI VERSION, PART 7",
-          "cues": {}
-        },
-        {
-          "tpl": "focus",
-          "say": "HDMI 2.1a, released in 2020, adds dynamic HDR metadata and higher bandwidth. It supports 4K at 120Hz and 8K at 60Hz with 48Gbps.",
-          "head": "New Features",
-          "label": "2020 Release",
-          "stamp": "2020",
-          "callouts": [
-            [
-              "#c9a227",
-              "48Gbps bandwidth"
-            ],
-            [
-              "#1c4ed8",
-              "4K120Hz support"
-            ]
-          ],
-          "cues": {
-            "stamp": "2020",
-            "action": "adds dynamic HDR metadata",
-            "circle": "supports 4K at 120Hz"
-          }
-        },
-        {
-          "tpl": "list",
-          "say": "HDMI 2.1a introduces three key upgrades: dynamic HDR metadata, higher bandwidth, and faster refresh rates. Each change boosts visual fidelity and performance. Together they redefine home theater.",
-          "head": "Three Upgrades",
-          "sub": {
-            "text": "Key Enhancements",
-            "cue": "introduces three key upgrades"
-          },
-          "hub": {
-            "emoji": "🎥"
-          },
-          "items": [
-            {
-              "emoji": "🧩",
-              "label": "HDR",
-              "cue": "dynamic HDR metadata",
-              "vis": {
-                "emoji": "🧩"
-              }
-            },
-            {
-              "emoji": "⚡",
-              "label": "Bandwidth",
-              "cue": "higher bandwidth",
-              "vis": {
-                "emoji": "⚡"
-              }
-            },
-            {
-              "emoji": "⏱️",
-              "label": "Refresh",
-              "cue": "faster refresh rates",
-              "vis": {
-                "emoji": "⏱️"
-              }
-            }
-          ],
-          "cues": {}
-        },
-        {
-          "tpl": "stat",
-          "say": "It delivers 48 gigabits per second, which is like streaming 12 full‑HD movies simultaneously. That’s enough to keep 4K60 HDR smooth.",
-          "num_end": 48.0,
-          "decimals": 0,
-          "unit": "Gbps",
-          "label": "Bandwidth",
-          "sub": "12 full‑HD movies",
-          "vis": {
-            "emoji": "🎬"
-          },
-          "travel": null,
-          "cues": {
-            "count": "48 gigabits per second",
-            "sub": "12 full‑HD movies"
-          }
-        },
-        {
-          "tpl": "compare",
-          "say": "But the real twist? HDMI 2.1a is already in your gaming rigs and high‑end TVs. It powers 8K monitors and next‑gen consoles. Ready to upgrade your view?",
-          "head": "Real Twist",
-          "ekg": "but the real twist",
-          "left": {
-            "emoji": "🖥️",
-            "label": "Monitors",
-            "cue": "8K monitors",
-            "vis": {
+          "travel": {
+            "to": {
               "emoji": "🖥️"
+            },
+            "seconds": 1
+          },
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "The twist? 2.1a doesn’t raise the speed ceiling, it just makes the existing pipe smarter. Same pipe, smarter flow – that’s why you’ll see it roll out slowly.",
+          "head": "Smarter, not faster",
+          "ekg": "smarter flow",
+          "left": {
+            "emoji": "📈",
+            "label": "2.1",
+            "cue": "2.1",
+            "vis": {
+              "emoji": "📈"
             }
           },
           "right": {
-            "emoji": "🎮",
-            "label": "Consoles",
-            "cue": "next‑gen consoles",
+            "emoji": "⚡",
+            "label": "2.1a",
+            "cue": "2.1a",
             "vis": {
-              "emoji": "🎮"
+              "emoji": "⚡"
             }
           },
-          "line": "Ready to upgrade your view?",
+          "line": "Same pipe, smarter flow",
           "cues": {
-            "line": "Ready to upgrade your view"
+            "line": "same pipe"
           }
         }
       ]
     }
   ],
   "outro": {
-    "say": "Pick the right cable for your device and you’ll get the full picture every time. Bottom line: bandwidth matters most. See you next Monday.",
-    "type_text": "Bottom line: bandwidth matters most",
-    "cues": {
-      "key": "bandwidth"
-    }
+    "say": "Now you know which HDMI to pick for your setup. Choose the right version and enjoy crisp video. See you next Monday.",
+    "type_text": "Future‑proof your display",
+    "cues": {}
   }
 }
