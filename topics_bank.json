@@ -9879,5 +9879,181 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mars’ Hidden 200‑km‑Wide Subsurface Lake Found by Radar",
+    "thumb": "UNDERWATER MARS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A 200‑km‑wide Lake Buried Beneath Mars",
+        "hook_top": "UNDERWATER MARS",
+        "query": "Mars subsurface lake radar",
+        "query2": "Mars radar"
+      },
+      {
+        "role": "fact",
+        "text": "Mars Reconnaissance Orbiter radar detected a 200‑km‑wide lake beneath the Tharsis region.",
+        "chips": [
+          {
+            "t": "200KM",
+            "on": "lake",
+            "style": "accent"
+          }
+        ],
+        "punch": "BROAD",
+        "query": "Mars subsurface lake",
+        "query2": "Mars lake"
+      },
+      {
+        "role": "fact",
+        "text": "Lake depth is estimated at 1 km, covering a volume of about 100 billion cubic meters.",
+        "chips": [
+          {
+            "t": "1KM",
+            "on": "depth",
+            "style": "white"
+          }
+        ],
+        "punch": "VOLUME",
+        "query": "Mars lake depth",
+        "query2": "Mars lake"
+      },
+      {
+        "role": "callout",
+        "text": "This underground reservoir could be a relic of ancient Mars, holding clues to past habitability.",
+        "label": "MARS’ SECRETS",
+        "sub": "Past water reservoir",
+        "label_on": "SECRETS",
+        "query": "Mars water reservoir",
+        "query2": "Mars water"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science follow",
+        "query2": "science"
+      }
+    ],
+    "description": "Radar from Mars Reconnaissance Orbiter revealed a 200‑km‑wide, 1‑km‑deep lake hidden beneath the planet’s surface—an unexpected find that reshapes our view of Mars’ past. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Mars",
+      "#SubsurfaceLake",
+      "#PlanetaryScience",
+      "#AstroFacts",
+      "#SpaceExploration"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "How a 30‑inch Telescope Caught the Crab Pulsar’s Blink",
+    "thumb": "CRAB PULSAR",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A 30‑inch telescope captured a star that blinks 30 times a second",
+        "hook_top": "30INCH STAR BLINK",
+        "query": "30 inch telescope night sky",
+        "query2": "large amateur telescope"
+      },
+      {
+        "role": "fact",
+        "text": "The Crab Pulsar spins about 30 times per second, emitting a rapid pulse of light",
+        "chips": [
+          {
+            "t": "30 Hz SPIN",
+            "on": "spins",
+            "style": "accent"
+          }
+        ],
+        "punch": "rapid",
+        "query": "Crab Pulsar close‑up",
+        "query2": "Crab Nebula pulsar"
+      },
+      {
+        "role": "callout",
+        "text": "Pulsar timing lets astronomers measure extreme physics",
+        "label": "PULSAR TIMING",
+        "sub": "A natural cosmic clock",
+        "label_on": "timing",
+        "query": "pulsar timing graphic",
+        "query2": "astronomy animation"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "follow button animation",
+        "query2": "social media follow icon"
+      }
+    ],
+    "description": "A 30‑inch backyard telescope can reveal the ultra‑fast heartbeat of the Crab Pulsar. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#astronomy",
+      "#pulsar",
+      "#telescope",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Moon Microbes Could Hijack Future Lunar Bases",
+    "thumb": "MOON MICROBE THREAT",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Apollo 12 soil samples contained hardy Bacillus spores that survived lunar vacuum",
+        "hook_top": "APOLLO 12 SPORES",
+        "query": "Apollo 12 lunar soil sample",
+        "query2": "moon soil microbes"
+      },
+      {
+        "role": "fact",
+        "text": "Bacillus subtilis formed resilient endospores that stayed viable after 3 days of exposure to space vacuum and UV",
+        "chips": [
+          {
+            "t": "ENDOSPORE SURVIVAL",
+            "on": "survived",
+            "style": "white"
+          }
+        ],
+        "punch": "resilient",
+        "query": "Bacillus subtilis spores microscope",
+        "query2": "space microbe experiment"
+      },
+      {
+        "role": "callout",
+        "text": "These microbes could contaminate habitats and affect life‑support systems",
+        "label": "CONTAMINATION RISK",
+        "sub": "Protecting lunar habitats",
+        "label_on": "contaminate",
+        "query": "lunar habitat interior",
+        "query2": "moon base concept art"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "follow button animation",
+        "query2": "social media follow icon"
+      }
+    ],
+    "description": "Real spores survived the Moon’s harsh environment, raising safety concerns for future colonies. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#biology",
+      "#moon",
+      "#microbes",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

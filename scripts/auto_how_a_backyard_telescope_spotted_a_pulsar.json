@@ -1,0 +1,64 @@
+{
+  "title": "How a Backyard Telescope Spotted a Pulsar",
+  "thumb": "CRAB PULSAR SIGHTED",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "I saw the Crab Pulsar with a 30‑inch telescope",
+      "hook_top": "CRAB PULSAR SIGHTED",
+      "query": "crab pulsar telescope view",
+      "query2": "crab nebula pulsar amateur"
+    },
+    {
+      "role": "fact",
+      "text": "The pulsar flashes 30 times per second",
+      "chips": [
+        {
+          "t": "30 HZ",
+          "on": "flashes",
+          "style": "white"
+        }
+      ],
+      "query": "crab pulsar 30 hertz",
+      "query2": "pulsar spin rate"
+    },
+    {
+      "role": "fact",
+      "text": "It lies 6,500 light‑years from Earth in Taurus",
+      "chips": [
+        {
+          "t": "6,500 LY",
+          "on": "distance",
+          "style": "accent"
+        }
+      ],
+      "query": "crab nebula distance",
+      "query2": "taurus nebula location"
+    },
+    {
+      "role": "reveal",
+      "text": "Even a modest telescope can catch its rapid blinking light",
+      "reveal_top": "BLAZING WITH A SMALL TELESCOPE",
+      "query": "amateur telescope pulsar",
+      "query2": "home observatory pulsar"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "night sky timelapse",
+      "query2": "astronomy channel logo"
+    }
+  ],
+  "description": "A 30‑inch scope captured the 30 Hz flashes of the Crab Pulsar, 6,500 ly away. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#astronomy",
+    "#pulsar",
+    "#crabnebula",
+    "#telescope",
+    "#space"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Moon Microbes: The Hidden Threat",
+  "thumb": "MOON MICROBE ALERT",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Some Earth microbes can survive on the Moon",
+      "hook_top": "MOON SURVIVING MICROBES",
+      "query": "microbes on moon",
+      "query2": "bacterial spores lunar surface"
+    },
+    {
+      "role": "fact",
+      "text": "Bacillus subtilis spores stay viable after vacuum exposure for months",
+      "chips": [
+        {
+          "t": "VACS SURVIVE",
+          "on": "spores",
+          "style": "white"
+        }
+      ],
+      "query": "bacillus subtilis vacuum survival",
+      "query2": "space hardy bacteria"
+    },
+    {
+      "role": "fact",
+      "text": "NASA’s Apollo samples showed similar resilient bacteria",
+      "chips": [
+        {
+          "t": "APOLLO FINDINGS",
+          "on": "samples",
+          "style": "accent"
+        }
+      ],
+      "query": "apollo lunar sample microbes",
+      "query2": "lunar dust bacteria"
+    },
+    {
+      "role": "reveal",
+      "text": "They could hitch a ride on future landers, contaminating lunar science",
+      "reveal_top": "CONTAMINATION RISK",
+      "query": "lunar lander microbes",
+      "query2": "spacecraft bacterial contamination"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "planetary protection logo",
+      "query2": "space hygiene icon"
+    }
+  ],
+  "description": "Hardy Earth spores survive lunar vacuum and may hitch rides on landers, threatening clean experiments. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#moon",
+    "#microbes",
+    "#space",
+    "#NASA",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}

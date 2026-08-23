@@ -1,0 +1,64 @@
+{
+  "title": "23‑Times‑Earth Mega‑Earth Discovered!",
+  "thumb": "MEGA‑EARTH REVEALED",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A planet 23 times heavier than Earth was just found",
+      "hook_top": "23X EARTH PLANET",
+      "query": "mega earth exoplanet",
+      "query2": "massive rocky exoplanet"
+    },
+    {
+      "role": "fact",
+      "text": "It orbits a Sun‑like star 12 light‑years away",
+      "chips": [
+        {
+          "t": "12 LY AWAY",
+          "on": "orbit",
+          "style": "white"
+        }
+      ],
+      "query": "star system 12 light years",
+      "query2": "solar analog exoplanet"
+    },
+    {
+      "role": "fact",
+      "text": "Its density is similar to Earth, meaning it’s rocky, not gas",
+      "chips": [
+        {
+          "t": "ROCKY",
+          "on": "density",
+          "style": "accent"
+        }
+      ],
+      "query": "rocky exoplanet density",
+      "query2": "solid planet composition"
+    },
+    {
+      "role": "reveal",
+      "text": "Scientists call it a “mega‑Earth” – the biggest rocky world we know",
+      "reveal_top": "MEGAEARTH UNVEILED",
+      "query": "mega earth exoplanet illustration",
+      "query2": "large rocky planet artist rendering"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "space channel logo",
+      "query2": "science brand icon"
+    }
+  ],
+  "description": "A newly discovered planet packs 23 Earth masses into a solid rock sphere. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#exoplanet",
+    "#megaearth",
+    "#science",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}
