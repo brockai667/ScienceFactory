@@ -1,0 +1,54 @@
+{
+  "title": "Why Moon Microbes Aren’t a Sci‑Fi Plot Twist",
+  "thumb": "MOON MICROBE MYTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Recent tests found hardy microbes could survive lunar conditions for weeks",
+      "hook_top": "MICROBES ON MOON",
+      "query": "moon microbial experiment",
+      "query2": "lunar bacteria test"
+    },
+    {
+      "role": "myth",
+      "text": "The common belief is that any Earth life would instantly die on the Moon",
+      "label": "Life Dies Instantly",
+      "query": "dead plant on moon",
+      "query2": "lifeless moon surface"
+    },
+    {
+      "role": "truth",
+      "text": "Certain spores and extremophiles can endure vacuum, radiation and extreme temperature swings, staying viable for extended periods",
+      "label": "Extremophiles Survive",
+      "query": "extremophile spores microscope",
+      "query2": "bacterial spores vacuum"
+    },
+    {
+      "role": "callout",
+      "text": "Planetary protection rules exist for a reason",
+      "label": "PROTECT PLANETS",
+      "sub": "Prevent contaminating other worlds",
+      "label_on": "protect",
+      "query": "planetary protection logo",
+      "query2": "space contamination warning"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "space science icons",
+      "query2": "astronomy graphics"
+    }
+  ],
+  "description": "Discover why microbes can actually persist on the Moon and what that means for future missions. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#biology",
+    "#mythbusting",
+    "#science",
+    "#NASA"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -1,0 +1,54 @@
+{
+  "title": "The Mega‑Earth That Isn't a Super‑Jupiter",
+  "thumb": "MEGA EARTH MYTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A planet 23 times Earth’s mass was spotted orbiting a nearby star",
+      "hook_top": "23X EARTH FOUND",
+      "query": "mega earth exoplanet artist impression",
+      "query2": "large rocky exoplanet"
+    },
+    {
+      "role": "myth",
+      "text": "People think any world that massive must be a gas giant like Jupiter",
+      "label": "Massive = Gas Giant",
+      "query": "gas giant illustration",
+      "query2": "jupiter like planet"
+    },
+    {
+      "role": "truth",
+      "text": "The newly confirmed ‘mega‑Earth’ is a solid, rocky world—its density shows it’s made mostly of silicate rock, not hydrogen‑helium gas",
+      "label": "Rocky Mega‑Earth",
+      "query": "rocky exoplanet surface rendering",
+      "query2": "dense rocky planet"
+    },
+    {
+      "role": "callout",
+      "text": "Size alone doesn’t decide composition—density does",
+      "label": "SIZE ≠ COMPOSITION",
+      "sub": "Massive rocks can exist",
+      "label_on": "density",
+      "query": "planet density diagram",
+      "query2": "planet composition chart"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "space illustration abstract",
+      "query2": "astronomy background"
+    }
+  ],
+  "description": "A newly discovered super‑massive rocky planet shatters the myth that all huge worlds are gas giants. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#exoplanet",
+    "#space",
+    "#science",
+    "#mythbusting",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}

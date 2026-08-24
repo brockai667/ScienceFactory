@@ -1,0 +1,64 @@
+{
+  "title": "China’s First Land Rocket Recovery",
+  "thumb": "LAND RECOVERY BREAKTHROUGH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "China landed a rocket stage on solid ground for the first time",
+      "hook_top": "GROUND ROCKET RECOVERY",
+      "query": "china rocket stage land recovery",
+      "query2": "landed rocket stage china"
+    },
+    {
+      "role": "fact",
+      "text": "The Long March 8 booster touched down in Inner Mongolia",
+      "chips": [
+        {
+          "t": "INNER MONGOLIA",
+          "on": "location",
+          "style": "white"
+        }
+      ],
+      "query": "long march 8 landing site",
+      "query2": "china rocket inner mongolia"
+    },
+    {
+      "role": "fact",
+      "text": "Its landing legs deployed automatically, slowing the descent to 3 m/s",
+      "chips": [
+        {
+          "t": "3 M/S",
+          "on": "speed",
+          "style": "accent"
+        }
+      ],
+      "query": "rocket landing speed 3 m/s",
+      "query2": "rocket descent control"
+    },
+    {
+      "role": "reveal",
+      "text": "This marks the first time a Chinese booster was recovered on land, not sea",
+      "reveal_top": "FIRST LAND RECOVERY",
+      "query": "china land recovery rocket",
+      "query2": "ground rocket recovery china"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "rocket launch footage",
+      "query2": "space launch logo"
+    }
+  ],
+  "description": "China’s Long March 8 booster landed safely on land in Inner Mongolia at just 3 m/s, a historic first. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#china",
+    "#rocket",
+    "#reusability",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}
