@@ -10366,5 +10366,328 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Titan's 120‑km Methane River Unveiled by Cassini",
+    "thumb": "METHANE RIVER DISCOVERY",
+    "description": "Cassini’s radar revealed a river‑like channel of liquid methane on Titan, showing real‑world alien hydrology. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Titan",
+      "#Cassini",
+      "#SpaceScience",
+      "#PlanetaryGeology",
+      "#Methane"
+    ],
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Titan's 120‑km methane river was spotted by Cassini",
+        "hook_top": "TITAN'S 120KM METHANE RIVER",
+        "query": "Titan methane river Cassini",
+        "query2": "Titan river satellite images"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "Radar imaging showed a narrow, winding channel near Titan’s north pole",
+        "label": "NARROW POLAR CHANNEL",
+        "label_on": "Channel",
+        "query": "Cassini radar north pole Titan",
+        "query2": "Titan polar channel radar"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "The feature stretches roughly 120 kilometers, comparable to the length of Manhattan",
+        "label": "120‑KM LENGTH",
+        "label_on": "Length",
+        "query": "Titan river length measurement",
+        "query2": "Titan methane channel size"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "Seasonal changes cause the river to dry and refill, indicating a dynamic methane cycle",
+        "label": "SEASONAL FLOW VARIATIO",
+        "label_on": "Flow",
+        "query": "Titan seasonal methane flow",
+        "query2": "Titan river seasonal changes"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space science illustration",
+        "query2": "astronomy background"
+      }
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Lunar Soil Harbors Microbes That Survive Vacuum",
+    "thumb": "MOON MICROBE SURVIVAL",
+    "description": "Scientists discovered hardy microbes can stay alive in simulated lunar vacuum, raising planetary‑protection concerns. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Moon",
+      "#Microbes",
+      "#NASA",
+      "#SpaceResearch",
+      "#Astrobiology"
+    ],
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Microbes survived 30 minutes in a lunar‑like vacuum experiment",
+        "hook_top": "MICROBES SURVIVE LUNAR VACUUM",
+        "query": "lunar vacuum microbe experiment",
+        "query2": "moon soil bacteria survival"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "Bacillus spores remained viable after exposure to near‑total vacuum and extreme cold",
+        "label": "SPORING SURVIVAL",
+        "label_on": "Spore",
+        "query": "Bacillus spores lunar vacuum",
+        "query2": "microbe vacuum survival experiment"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "Mineral dust particles shielded the microbes, acting like natural protection",
+        "label": "MINERAL SHIELDING",
+        "label_on": "Shield",
+        "query": "lunar soil mineral shielding microbes",
+        "query2": "moon dust microbial protection"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "Findings force stricter cleaning of spacecraft to avoid contaminating the Moon",
+        "label": "CONTAMINATION RISK",
+        "label_on": "Risk",
+        "query": "spacecraft cleaning lunar contamination",
+        "query2": "planetary protection lunar microbes"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science follow animation",
+        "query2": "science channel logo"
+      }
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "A 23‑Earth‑Mass Mega‑Earth Challenges Planet Theory",
+    "thumb": "MEGA‑EARTH SHOCK",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "23‑Earth‑mass planet orbits the star 61 Virginis",
+        "hook_top": "23EARTH MASS PLANET",
+        "query": "61 Virginis star system",
+        "query2": "61 Virginis exoplanet",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The planet, named HD 219134 b, has a minimum mass 23 times that of Earth",
+        "chips": [
+          {
+            "t": "23 × Earth",
+            "on": "mass",
+            "style": "white"
+          },
+          {
+            "t": "HD 219134 b",
+            "on": "planet",
+            "style": "accent"
+          }
+        ],
+        "query": "HD 219134 b illustration",
+        "query2": "HD 219134 exoplanet",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Its radius is about 1.7 × Earth’s, making it far denser than a gas giant",
+        "chips": [
+          {
+            "t": "1.7 × Earth radius",
+            "on": "size",
+            "style": "white"
+          }
+        ],
+        "query": "HD 219134 b size comparison",
+        "query2": "mega earth radius",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Despite its size, it’s a solid, rocky world – not a mini‑Jupiter",
+        "reveal_top": "ROCKY NOT GAS",
+        "query": "rocky exoplanet illustration",
+        "query2": "solid planet interior",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space science icon",
+        "query2": "science follow button",
+        "role": "cta"
+      }
+    ],
+    "description": "A massive planet twice the size of Neptune turns out to be a dense, rocky world. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#exoplanet",
+      "#megafarith",
+      "#science",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Moon Microbes Survived 30‑Day Vacuum Test",
+    "thumb": "MOON MICROBES SURVIVE",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Moon microbes survived a 30‑day vacuum exposure experiment",
+        "hook_top": "30DAY MOON TEST",
+        "query": "moon vacuum experiment microbes",
+        "query2": "lunar surface bacteria test",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "NASA’s Ames lab found Bacillus subtilis spores remained viable after 30 days in a simulated lunar vacuum",
+        "chips": [
+          {
+            "t": "30 days",
+            "on": "duration",
+            "style": "white"
+          },
+          {
+            "t": "Bacillus subtilis",
+            "on": "spores",
+            "style": "accent"
+          }
+        ],
+        "query": "Bacillus subtilis spores microscope",
+        "query2": "microbe vacuum survival",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "These spores also endured lunar‑level UV radiation and could germinate when re‑hydrated",
+        "chips": [
+          {
+            "t": "lunar UV",
+            "on": "radiation",
+            "style": "white"
+          }
+        ],
+        "query": "UV radiation lunar simulation",
+        "query2": "microbe UV exposure",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "If not sterilized, they could hitchhike on equipment and contaminate future lunar bases",
+        "reveal_top": "CONTAMINATION RISK",
+        "query": "lunar base contamination illustration",
+        "query2": "moon microbes risk",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "science follow icon",
+        "query2": "science subscribe button",
+        "role": "cta"
+      }
+    ],
+    "description": "Real microbes can survive the harsh lunar environment, raising planetary protection concerns. Follow for daily science updates!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#moon",
+      "#biology",
+      "#space",
+      "#planetaryprotection",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Moon microbes myth – can life really survive there?",
+    "thumb": "MOON MICROBE SURVIVAL",
+    "scenes": [
+      {
+        "text": "NASA found that Bacillus spores can endure lunar surface conditions",
+        "hook_top": "MOON MICROBE SURVIVAL",
+        "query": "Bacillus spores lunar experiment",
+        "query2": "moon microbes experiment",
+        "role": "hook"
+      },
+      {
+        "text": "Many believe no life can survive the Moon’s vacuum and radiation.",
+        "label": "Life impossible on Moon",
+        "query": "moon vacuum life myth",
+        "query2": "moon radiation life",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Studies show hardy bacterial spores remain viable after exposure to vacuum, extreme temperature swings, and UV.",
+        "label": "Spore survival proven",
+        "query": "bacterial spores lunar vacuum study",
+        "query2": "moon bacteria experiment",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Survival time recorded up to 30 days in lab simulations.",
+        "label": "30‑day survival",
+        "sub": "Implications for planetary protection",
+        "label_on": "Survival",
+        "query": "bacterial spores lunar simulation duration",
+        "query2": "moon microbes survival time",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Follow to feed your curious mind daily.",
+        "query": "science channel logo",
+        "query2": "science short",
+        "role": "cta"
+      }
+    ],
+    "description": "Debunk the myth that nothing can live on the Moon—real experiments prove some microbes survive. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#moon",
+      "#microbes",
+      "#mythbusting",
+      "#spacebiology",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

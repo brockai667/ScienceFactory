@@ -1,0 +1,54 @@
+{
+  "title": "How a 30‑inch Telescope Caught the Crab Pulsar’s Blink",
+  "thumb": "CRAB PULSAR",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A 30‑inch telescope captured a star that blinks 30 times a second",
+      "hook_top": "30INCH STAR BLINK",
+      "query": "30 inch telescope night sky",
+      "query2": "large amateur telescope"
+    },
+    {
+      "role": "fact",
+      "text": "The Crab Pulsar spins about 30 times per second, emitting a rapid pulse of light",
+      "chips": [
+        {
+          "t": "30 Hz SPIN",
+          "on": "spins",
+          "style": "accent"
+        }
+      ],
+      "punch": "rapid",
+      "query": "Crab Pulsar close‑up",
+      "query2": "Crab Nebula pulsar"
+    },
+    {
+      "role": "callout",
+      "text": "Pulsar timing lets astronomers measure extreme physics",
+      "label": "PULSAR TIMING",
+      "sub": "A natural cosmic clock",
+      "label_on": "timing",
+      "query": "pulsar timing graphic",
+      "query2": "astronomy animation"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "follow button animation",
+      "query2": "social media follow icon"
+    }
+  ],
+  "description": "A 30‑inch backyard telescope can reveal the ultra‑fast heartbeat of the Crab Pulsar. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#astronomy",
+    "#pulsar",
+    "#telescope",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}

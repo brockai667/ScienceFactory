@@ -1,0 +1,54 @@
+{
+  "title": "The Truth About Solar Eclipse Darkness",
+  "thumb": "ECLIPSE DARKNESS MYTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "During the August 12 eclipse over Spain, the sky turned pitch‑black for over two minutes",
+      "hook_top": "ECLIPSE TURNED DARK",
+      "query": "solar eclipse Spain night sky",
+      "query2": "total solar eclipse darkness"
+    },
+    {
+      "role": "myth",
+      "text": "Many think a total eclipse makes the Sun disappear completely",
+      "label": "Sun Vanishes Fully",
+      "query": "sun disappearing eclipse illustration",
+      "query2": "sun eclipse cartoon"
+    },
+    {
+      "role": "truth",
+      "text": "Even at totality a thin solar corona remains visible, and scattered daylight still illuminates the landscape faintly",
+      "label": "Corona Still Glows",
+      "query": "solar corona during total eclipse",
+      "query2": "eclipse corona photo"
+    },
+    {
+      "role": "callout",
+      "text": "The Sun’s outer atmosphere never truly goes dark",
+      "label": "CORONA LIGHT",
+      "sub": "Bright plasma surrounds the Moon",
+      "label_on": "corona",
+      "query": "solar corona closeup",
+      "query2": "sun corona video"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "astronomy icons",
+      "query2": "space background"
+    }
+  ],
+  "description": "Learn why a total solar eclipse never makes the Sun completely vanish and what the glowing corona really looks like. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#eclipse",
+    "#astronomy",
+    "#science",
+    "#mythbusting",
+    "#space"
+  ],
+  "place": "",
+  "country": ""
+}
