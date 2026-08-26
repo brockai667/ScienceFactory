@@ -1,0 +1,63 @@
+{
+  "title": "WASP‑96b's Water Vapor Surprise",
+  "thumb": "WATER IN SPACE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "WASP‑96b holds water vapor in its cloud tops",
+      "hook_top": "WATER IN SPACE",
+      "query": "exoplanet atmosphere",
+      "query2": "space telescope"
+    },
+    {
+      "role": "fact",
+      "text": "James Webb Telescope detected H₂O absorption lines in the planet’s spectrum.",
+      "chips": [
+        {
+          "t": "H₂O",
+          "on": "water",
+          "style": "accent"
+        }
+      ],
+      "query": "jwst spectrum",
+      "query2": "exoplanet data"
+    },
+    {
+      "role": "fact",
+      "text": "The same spectrum also shows methane, a key greenhouse gas.",
+      "chips": [
+        {
+          "t": "CH₄",
+          "on": "methane",
+          "style": "accent"
+        }
+      ],
+      "query": "methane exoplanet",
+      "query2": "planetary atmosphere"
+    },
+    {
+      "role": "reveal",
+      "text": "Despite being a hot Jupiter, WASP‑96b’s clouds are like Earth’s rain‑clouds!",
+      "reveal_top": "EARTHLIKE CLOUDS",
+      "query": "hot jupiter clouds",
+      "query2": "planetary clouds"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science follow",
+      "query2": "daily science"
+    }
+  ],
+  "description": "WASP‑96b, a gas giant 3.5 AU from its star, surprisingly shows Earth‑like water clouds in its upper atmosphere. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#JamesWebb",
+    "#exoplanet",
+    "#watervapor",
+    "#space"
+  ],
+  "place": "",
+  "country": ""
+}

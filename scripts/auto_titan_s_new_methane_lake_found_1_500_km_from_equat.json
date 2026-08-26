@@ -1,0 +1,58 @@
+{
+  "title": "Titan’s New Methane Lake Found 1,500 km From Equator",
+  "thumb": "METHANE MYSTERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Cassini spotted a fresh methane lake 1,500 km from Titan’s equator",
+      "hook_top": "METHANE LAGUNE REVEALED",
+      "query": "Cassini Titan methane lake",
+      "query2": "Titan surface"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "FIRST NEW LAKE SINCE 2",
+      "label_on": "first",
+      "text": "The lake, named Ligeia, is the first new surface lake discovered since 2011.",
+      "query": "Ligeia Mare Titan",
+      "query2": "Titan lake"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "SECOND LAYER OF METHAN",
+      "label_on": "second",
+      "text": "Radar data shows a second, deeper methane layer beneath the surface.",
+      "query": "Titan methane layer",
+      "query2": "Titan surface"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "THIRD WITH SHALLOW MOU",
+      "label_on": "third",
+      "text": "The surrounding terrain includes shallow dunes and small mountains, unique among Titan lakes.",
+      "query": "Titan dunes",
+      "query2": "Titan landscape"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "follow",
+      "query2": "science"
+    }
+  ],
+  "description": "Cassini’s final flyby revealed a new methane lake on Titan, 1,500 km from the equator, adding fresh detail to this icy moon’s complex hydrology. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Titan",
+    "#Cassini",
+    "#methane",
+    "#space",
+    "#sciencefacts"
+  ],
+  "place": "",
+  "country": ""
+}

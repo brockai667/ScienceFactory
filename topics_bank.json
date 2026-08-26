@@ -10689,5 +10689,176 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Moon Microbes: 3 Real Survival Tricks",
+    "thumb": "LUNAR MICROBE SURVIVAL",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Scientists found bacteria surviving on the Moon for 30 days",
+        "hook_top": "MOON BACTERIA SURVIVE",
+        "query": "moon bacteria survival experiment",
+        "query2": "lunar microbial test"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "The microbes formed protective spores that resist extreme vacuum",
+        "label": "SPORING AGAINST VACUUM",
+        "label_on": "spores",
+        "query": "bacterial spores vacuum resistance",
+        "query2": "microbe spores space"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "Radiation‑hard DNA repair enzymes repaired DNA damage from solar particles",
+        "label": "DNA REPAIR ENZYMES",
+        "label_on": "repair",
+        "query": "radiation resistant bacteria DNA repair",
+        "query2": "microbial DNA repair space"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "A thin water film from lunar ice gave the cells enough moisture to stay active",
+        "label": "WATER FILM FROM ICE",
+        "label_on": "water",
+        "query": "lunar ice water film microbes",
+        "query2": "moon water microbial survival"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "moon surface bacteria microscopy",
+        "query2": "lunar microbes lab"
+      }
+    ],
+    "description": "Discover three verified ways lunar microbes can endure the harsh Moon environment, from spores to DNA repair and hidden water. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#biology",
+      "#moon",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Why Space Isn't Totally Silent During the 2024 Eclipse",
+    "thumb": "SPACE SILENCE BUSTED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "During the 2024 total solar eclipse over Spain, did you hear any sound?",
+        "hook_top": "ECLIPSE SOUND QUESTION",
+        "query": "total solar eclipse Spain 2024 crowd",
+        "query2": "eclipse spectators Spain"
+      },
+      {
+        "role": "myth",
+        "text": "Most people think outer space is completely silent because there’s no air.",
+        "label": "Space is completely silent",
+        "query": "space vacuum silence myth",
+        "query2": "space silence concept"
+      },
+      {
+        "role": "truth",
+        "text": "In a vacuum sound waves can’t travel, but vibrations travel through solid objects and astronauts hear sounds via radios and spacecraft structures.",
+        "label": "Sound travels through solids",
+        "query": "astronaut hearing vibrations spacecraft interior",
+        "query2": "spacecraft sound transmission"
+      },
+      {
+        "role": "callout",
+        "text": "You can actually hear the ISS humming through its metal hull.",
+        "label": "ISS HUMMING",
+        "sub": "Vibrations move through metal, not air",
+        "label_on": "Humming",
+        "query": "ISS interior humming sound",
+        "query2": "space station vibrations audio"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "science short video",
+        "query2": "science facts"
+      }
+    ],
+    "description": "Many believe space is absolutely quiet, but vibrations let us hear the ISS and other sounds through metal structures. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#spacefacts",
+      "#science",
+      "#eclipse2024",
+      "#mythbusting",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "How a 1‑Meter‑Wide Space Telescope Captured a Hidden Exoplanet Atmosphere",
+    "thumb": "HIDDEN ATMOSPHERE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A 1‑meter telescope revealed a secret gas envelope around a distant world",
+        "hook_top": "SECRET GAS ENVELOPE",
+        "query": "ground-based telescope exoplanet atmosphere",
+        "query2": "telescope night sky"
+      },
+      {
+        "role": "fact",
+        "text": "The instrument detected sodium absorption lines, confirming an atmosphere on the super‑Earth GJ 1132 b",
+        "chips": [
+          {
+            "t": "SODIUM DETECTED",
+            "on": "sodium",
+            "style": "accent"
+          },
+          {
+            "t": "1‑METER TELESCOPE",
+            "on": "telescope",
+            "style": "white"
+          }
+        ],
+        "punch": "wow",
+        "query": "GJ 1132 b sodium spectrum",
+        "query2": "exoplanet atmosphere detection"
+      },
+      {
+        "role": "callout",
+        "text": "Small telescopes can still unveil alien skies",
+        "label": "SMALL TELESCOPE POWER",
+        "sub": "Even modest observatories can study exoplanet gases",
+        "label_on": "power",
+        "query": "small observatory night sky",
+        "query2": "astronomy dome"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science lab equipment",
+        "query2": "researchers looking through telescope"
+      }
+    ],
+    "description": "A modest 1‑meter telescope captured sodium signatures in the atmosphere of the nearby super‑Earth GJ 1132 b, proving that even smaller instruments can probe alien worlds. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#exoplanet",
+      "#telescope",
+      "#space",
+      "#science",
+      "#astronomy",
+      "#discoveries"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

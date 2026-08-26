@@ -1,0 +1,54 @@
+{
+  "title": "Moon Microbes Could Hijack Future Lunar Bases",
+  "thumb": "MOON MICROBE THREAT",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Apollo 12 soil samples contained hardy Bacillus spores that survived lunar vacuum",
+      "hook_top": "APOLLO 12 SPORES",
+      "query": "Apollo 12 lunar soil sample",
+      "query2": "moon soil microbes"
+    },
+    {
+      "role": "fact",
+      "text": "Bacillus subtilis formed resilient endospores that stayed viable after 3 days of exposure to space vacuum and UV",
+      "chips": [
+        {
+          "t": "ENDOSPORE SURVIVAL",
+          "on": "survived",
+          "style": "white"
+        }
+      ],
+      "punch": "resilient",
+      "query": "Bacillus subtilis spores microscope",
+      "query2": "space microbe experiment"
+    },
+    {
+      "role": "callout",
+      "text": "These microbes could contaminate habitats and affect life‑support systems",
+      "label": "CONTAMINATION RISK",
+      "sub": "Protecting lunar habitats",
+      "label_on": "contaminate",
+      "query": "lunar habitat interior",
+      "query2": "moon base concept art"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "follow button animation",
+      "query2": "social media follow icon"
+    }
+  ],
+  "description": "Real spores survived the Moon’s harsh environment, raising safety concerns for future colonies. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#biology",
+    "#moon",
+    "#microbes",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}
