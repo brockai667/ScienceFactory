@@ -10860,5 +10860,295 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "The Giant Tube Worms of the Mariana Trench",
+    "thumb": "DEEP SEA GIANTS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "At 10,900 m depth, scientists filmed the largest tube worms ever seen",
+        "hook_top": "DEEPEST OCEAN WONDERS",
+        "query": "Mariana Trench tube worms",
+        "query2": "deep sea vent organisms"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "These worms can grow over 2 meters long, far bigger than the typical 30‑cm species",
+        "label": "OVER 2 METERS LONG",
+        "label_on": "size",
+        "query": "giant tube worm size",
+        "query2": "deep sea worm length"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "They thrive at temperatures above 350 °C, using chemosynthesis instead of sunlight",
+        "label": "THRIVE AT 350°C",
+        "label_on": "temperature",
+        "query": "hydrothermal vent chemosynthesis",
+        "query2": "deep sea vent temperature"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "The species was named *Riftia pachyptila* II after DNA analysis linked it to known Riftia relatives",
+        "label": "NEW RIFTIA SPECIES",
+        "label_on": "discovery",
+        "query": "Riftia pachyptila II",
+        "query2": "new tube worm species"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science short video thumbnail",
+        "query2": "science countdown graphic"
+      }
+    ],
+    "description": "Explore three mind‑blowing facts about the newly filmed giant tube worms deep in the Mariana Trench. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#science",
+      "#deepsea",
+      "#biology",
+      "#ocean"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Lucy’s Twin Asteroids Reveal Earth’s Early Building Blocks",
+    "thumb": "ASTEROID TWINS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA’s Lucy probe just photographed twin asteroids in the Trojan swarm",
+        "hook_top": "LUCKY TWIN ASTEROIDS",
+        "query": "Lucy spacecraft twin asteroids",
+        "query2": "Trojan asteroids Lucy"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "Both bodies share the same carbon‑rich composition, hinting they formed together 4 billion years ago",
+        "label": "CARBON‑RICH COMP",
+        "label_on": "composition",
+        "query": "carbon rich Trojan asteroids",
+        "query2": "asteroid composition Lucy"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "Their surfaces are covered in cratered regolith similar to that of ancient Earth’s building blocks",
+        "label": "CRATERED REGOLITH",
+        "label_on": "surface",
+        "query": "asteroid regolith Lucy images",
+        "query2": "cratered asteroid surface"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "Scientists estimate each is about 30 km across, making them some of the largest pristine planetesimals observed",
+        "label": "~30 KM DIAMETER",
+        "label_on": "size",
+        "query": "Lucy twin asteroid size",
+        "query2": "Trojan asteroid dimensions"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "science short video thumbnail",
+        "query2": "space countdown graphic"
+      }
+    ],
+    "description": "Three stunning facts about Lucy’s newly spotted twin asteroids that could hold clues to Earth’s formation. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#NASA",
+      "#Lucy",
+      "#asteroids"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Louisiana's Starbase Could Flood the Sky with Starships",
+    "thumb": "LAUNCH PAD EXPANSION",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Louisiana's new Starbase will host ten launch pads",
+        "hook_top": "LAUNCH PAD COUNT REVEALED",
+        "query": "SpaceX Starbase Louisiana",
+        "query2": "SpaceX launch site Louisiana"
+      },
+      {
+        "role": "fact",
+        "text": "SpaceX filed a plan in 2023 to build up to ten launch sites at the new Starbase in Louisiana.",
+        "chips": [
+          {
+            "t": "10 LAUNCH PADS",
+            "on": "launch",
+            "style": "accent"
+          }
+        ],
+        "query": "SpaceX Starbase Louisiana plan",
+        "query2": "SpaceX launch pads Louisiana"
+      },
+      {
+        "role": "fact",
+        "text": "The complex will also house a large factory to mass‑produce Starship rockets, aiming for weekly flights.",
+        "chips": [
+          {
+            "t": "WEEKLY FLIGHTS",
+            "on": "weekly",
+            "style": "accent"
+          }
+        ],
+        "query": "Starship factory Louisiana",
+        "query2": "SpaceX manufacturing Louisiana"
+      },
+      {
+        "role": "reveal",
+        "text": "That could boost US launch capacity to over 100 missions a year.",
+        "reveal_top": "CAPACITY OVER 100",
+        "query": "US launch capacity 2024",
+        "query2": "SpaceX launch rate America"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space channel",
+        "query2": "science short videos"
+      }
+    ],
+    "description": "Louisiana may become the busiest launch hub on Earth with SpaceX's massive Starbase plan. Follow for daily space breakthroughs!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#SpaceX",
+      "#Starship",
+      "#Louisiana",
+      "#SpaceLaunch",
+      "#Science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Does Mars Really Have a Global Magnetic Field?",
+    "thumb": "MAGNETIC MARS MYTH",
+    "description": "Many think Mars still protects itself with a planet‑wide magnetic shield, but the reality is very different. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#science",
+      "#space",
+      "#Mars",
+      "#mythbusting",
+      "#fyp"
+    ],
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mars' 30‑year‑old magnetic mystery finally solved",
+        "hook_top": "MARS MAGNETIC MYSTERY",
+        "query": "Mars magnetic field data",
+        "query2": "Mars magnetometer"
+      },
+      {
+        "role": "myth",
+        "text": "People often believe the Red Planet still has a global magnetic field like Earth’s.",
+        "label": "Mars has global field",
+        "query": "Mars magnetic field illustration",
+        "query2": "planetary magnetism diagram"
+      },
+      {
+        "role": "truth",
+        "text": "In fact, Mars lost its global dynamo billions of years ago; only isolated crustal magnetic patches remain.",
+        "label": "Only crustal fields remain",
+        "query": "Mars crustal magnetic anomalies",
+        "query2": "Mars magnetometer readings"
+      },
+      {
+        "role": "callout",
+        "text": "No planet‑wide shield means solar wind strips the atmosphere directly.",
+        "label": "Atmosphere Erosion",
+        "sub": "Solar wind reaches the surface",
+        "label_on": "Erosion",
+        "query": "Mars solar wind interaction",
+        "query2": "Mars atmosphere loss"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "space telescope view",
+        "query2": "astronomy background"
+      }
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Why 4,000 Starlink Satellites Are Brightening Our Night Sky",
+    "thumb": "BRIGHT SKY SATS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "4,000 Starlink satellites now glitter over Earth",
+        "hook_top": "4K STARLINK SATS GLITTER",
+        "query": "Starlink satellites night sky",
+        "query2": "satellite constellation night"
+      },
+      {
+        "role": "fact",
+        "text": "Over 4,000 operational Starlink satellites reflect sunlight, creating visible streaks after sunset",
+        "chips": [
+          {
+            "t": "4,000 SATS",
+            "on": "satellites",
+            "style": "white"
+          },
+          {
+            "t": "VISIBLE STREAKS",
+            "on": "streaks",
+            "style": "accent"
+          }
+        ],
+        "punch": "bright",
+        "query": "Starlink satellite reflecting sunlight",
+        "query2": "satellite light trails"
+      },
+      {
+        "role": "callout",
+        "text": "Satellite light pollution is growing fast",
+        "label": "LIGHT POLLUTION",
+        "sub": "Night sky gets brighter as constellations multiply",
+        "label_on": "pollution",
+        "query": "night sky light pollution satellites",
+        "query2": "astronomy light pollution"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "space facts short video",
+        "query2": "science short clip"
+      }
+    ],
+    "description": "Starlink's massive constellation is changing how we see the stars. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#Starlink",
+      "#astronomy",
+      "#science",
+      "#nightphotography"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

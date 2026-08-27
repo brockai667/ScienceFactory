@@ -1,0 +1,73 @@
+{
+  "title": "Titan’s Hidden Lakes: A Cryogenic Puzzle",
+  "thumb": "TITAN LIKES ICE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Titan’s lakes cover 2% of its surface.",
+      "hook_top": "TITAN 2 LAKES",
+      "query": "Titan lakes",
+      "query2": "Titan planet"
+    },
+    {
+      "role": "fact",
+      "text": "Methane and ethane make up the lake liquids.",
+      "chips": [
+        {
+          "t": "CH4",
+          "on": "methane",
+          "style": "accent"
+        },
+        {
+          "t": "C2H6",
+          "on": "ethane",
+          "style": "accent"
+        }
+      ],
+      "punch": "liquids",
+      "query": "methane liquid",
+      "query2": "hydrocarbon"
+    },
+    {
+      "role": "fact",
+      "text": "Cassini’s radar measured a lake depth of up to 10 m.",
+      "chips": [
+        {
+          "t": "10 m",
+          "on": "depth",
+          "style": "white"
+        }
+      ],
+      "query": "Cassini radar",
+      "query2": "radar imaging"
+    },
+    {
+      "role": "callout",
+      "text": "These cold seas might host exotic life forms.",
+      "label": "EXOTIC LIFE?",
+      "sub": "Titan seas",
+      "label_on": "life",
+      "query": "Titan sea",
+      "query2": "sea"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space probe",
+      "query2": "probe"
+    }
+  ],
+  "description": "Titan’s methane seas are the only liquid bodies outside Earth—could they harbor life? Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Titan",
+    "#Cassini",
+    "#MethaneLakes",
+    "#Cryogenic",
+    "#Astrobiology",
+    "#Space"
+  ],
+  "place": "",
+  "country": ""
+}

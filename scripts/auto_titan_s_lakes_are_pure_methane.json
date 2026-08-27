@@ -1,0 +1,63 @@
+{
+  "title": "Titan’s Lakes Are Pure Methane",
+  "thumb": "METHANE SEAS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Titan’s largest lake is liquid methane, not water",
+      "hook_top": "METHANE SEAS",
+      "query": "titan lake",
+      "query2": "titan moons"
+    },
+    {
+      "role": "fact",
+      "text": "Cassini’s radar mapped Ontario Lacus as a 200‑km‑wide methane basin.",
+      "chips": [
+        {
+          "t": "200‑km",
+          "on": "200",
+          "style": "white"
+        }
+      ],
+      "query": "cassini radar lake",
+      "query2": "titan surface"
+    },
+    {
+      "role": "fact",
+      "text": "Temperature near –179 °C keeps the liquid in a stable state.",
+      "chips": [
+        {
+          "t": "-179°C",
+          "on": "cold",
+          "style": "accent"
+        }
+      ],
+      "query": "titan temperature",
+      "query2": "cold moon"
+    },
+    {
+      "role": "reveal",
+      "text": "These methane seas could host liquid‑methane oceans if the moon warmed up.",
+      "reveal_top": "CHILL OCEANS",
+      "query": "methane oceans",
+      "query2": "titan climate"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science follow",
+      "query2": "daily science"
+    }
+  ],
+  "description": "Titan, Saturn’s largest moon, carries vast lakes of liquid methane. Imagine oceans of frozen gas under a blue sky. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Titan",
+    "#methane",
+    "#Cassini",
+    "#space"
+  ],
+  "place": "",
+  "country": ""
+}

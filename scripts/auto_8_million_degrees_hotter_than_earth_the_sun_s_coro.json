@@ -1,0 +1,54 @@
+{
+  "title": "8 Million Degrees Hotter Than Earth? The Sun’s Corona Myth Busted",
+  "thumb": "HOTTER THAN SUN",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "8 million degrees hotter than Earth's surface, yet people think the Sun’s corona is cooler.",
+      "hook_top": "HOT CORONA MYTH",
+      "query": "sun corona 8 million degrees",
+      "query2": "sun corona image"
+    },
+    {
+      "role": "myth",
+      "text": "People often believe the Sun’s outer atmosphere, the corona, is cooler than the surface.",
+      "label": "Corona Cooler Myth",
+      "query": "sun corona misconception",
+      "query2": "sun surface temperature"
+    },
+    {
+      "role": "truth",
+      "text": "In fact, the corona reaches temperatures over 1 million Kelvin, far hotter than the Sun’s visible surface at about 5,800 K.",
+      "label": "Corona is Hotter",
+      "query": "sun corona temperature 1 million kelvin",
+      "query2": "sun surface temperature 5800 kelvin"
+    },
+    {
+      "role": "callout",
+      "text": "The Sun’s outer layer is a million degrees hotter than its surface because of magnetic heating.",
+      "label": "Magnetic Heating",
+      "sub": "Solar corona mystery explained",
+      "label_on": "COOLING",
+      "query": "solar corona magnetic heating",
+      "query2": "sun corona explanation"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "follow science channel",
+      "query2": "science content"
+    }
+  ],
+  "description": "The Sun’s corona is actually millions of degrees hotter than its surface, defying common belief. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#sun",
+    "#corona",
+    "#space",
+    "#science",
+    "#physics"
+  ],
+  "place": "",
+  "country": ""
+}
