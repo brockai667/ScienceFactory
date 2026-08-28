@@ -1,0 +1,75 @@
+{
+  "title": "A 23‑Earth‑Mass Mega‑Earth Challenges Planet Theory",
+  "thumb": "MEGA‑EARTH SHOCK",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "23‑Earth‑mass planet orbits the star 61 Virginis",
+      "hook_top": "23EARTH MASS PLANET",
+      "query": "61 Virginis star system",
+      "query2": "61 Virginis exoplanet",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The planet, named HD 219134 b, has a minimum mass 23 times that of Earth",
+      "chips": [
+        {
+          "t": "23 × Earth",
+          "on": "mass",
+          "style": "white"
+        },
+        {
+          "t": "HD 219134 b",
+          "on": "planet",
+          "style": "accent"
+        }
+      ],
+      "query": "HD 219134 b illustration",
+      "query2": "HD 219134 exoplanet",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Its radius is about 1.7 × Earth’s, making it far denser than a gas giant",
+      "chips": [
+        {
+          "t": "1.7 × Earth radius",
+          "on": "size",
+          "style": "white"
+        }
+      ],
+      "query": "HD 219134 b size comparison",
+      "query2": "mega earth radius",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Despite its size, it’s a solid, rocky world – not a mini‑Jupiter",
+      "reveal_top": "ROCKY NOT GAS",
+      "query": "rocky exoplanet illustration",
+      "query2": "solid planet interior",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "space science icon",
+      "query2": "science follow button",
+      "role": "cta"
+    }
+  ],
+  "description": "A massive planet twice the size of Neptune turns out to be a dense, rocky world. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#exoplanet",
+    "#megafarith",
+    "#science",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Titan's 120‑km Methane River Unveiled by Cassini",
+  "thumb": "METHANE RIVER DISCOVERY",
+  "description": "Cassini’s radar revealed a river‑like channel of liquid methane on Titan, showing real‑world alien hydrology. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Titan",
+    "#Cassini",
+    "#SpaceScience",
+    "#PlanetaryGeology",
+    "#Methane"
+  ],
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Titan's 120‑km methane river was spotted by Cassini",
+      "hook_top": "TITAN'S 120KM METHANE RIVER",
+      "query": "Titan methane river Cassini",
+      "query2": "Titan river satellite images"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "Radar imaging showed a narrow, winding channel near Titan’s north pole",
+      "label": "NARROW POLAR CHANNEL",
+      "label_on": "Channel",
+      "query": "Cassini radar north pole Titan",
+      "query2": "Titan polar channel radar"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "The feature stretches roughly 120 kilometers, comparable to the length of Manhattan",
+      "label": "120‑KM LENGTH",
+      "label_on": "Length",
+      "query": "Titan river length measurement",
+      "query2": "Titan methane channel size"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "Seasonal changes cause the river to dry and refill, indicating a dynamic methane cycle",
+      "label": "SEASONAL FLOW VARIATIO",
+      "label_on": "Flow",
+      "query": "Titan seasonal methane flow",
+      "query2": "Titan river seasonal changes"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "space science illustration",
+      "query2": "astronomy background"
+    }
+  ],
+  "place": "",
+  "country": ""
+}

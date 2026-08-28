@@ -1,0 +1,58 @@
+{
+  "title": "Lunar Soil Harbors Microbes That Survive Vacuum",
+  "thumb": "MOON MICROBE SURVIVAL",
+  "description": "Scientists discovered hardy microbes can stay alive in simulated lunar vacuum, raising planetary‑protection concerns. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Moon",
+    "#Microbes",
+    "#NASA",
+    "#SpaceResearch",
+    "#Astrobiology"
+  ],
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Microbes survived 30 minutes in a lunar‑like vacuum experiment",
+      "hook_top": "MICROBES SURVIVE LUNAR VACUUM",
+      "query": "lunar vacuum microbe experiment",
+      "query2": "moon soil bacteria survival"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "Bacillus spores remained viable after exposure to near‑total vacuum and extreme cold",
+      "label": "SPORING SURVIVAL",
+      "label_on": "Spore",
+      "query": "Bacillus spores lunar vacuum",
+      "query2": "microbe vacuum survival experiment"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "Mineral dust particles shielded the microbes, acting like natural protection",
+      "label": "MINERAL SHIELDING",
+      "label_on": "Shield",
+      "query": "lunar soil mineral shielding microbes",
+      "query2": "moon dust microbial protection"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "Findings force stricter cleaning of spacecraft to avoid contaminating the Moon",
+      "label": "CONTAMINATION RISK",
+      "label_on": "Risk",
+      "query": "spacecraft cleaning lunar contamination",
+      "query2": "planetary protection lunar microbes"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "science follow animation",
+      "query2": "science channel logo"
+    }
+  ],
+  "place": "",
+  "country": ""
+}
