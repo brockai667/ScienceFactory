@@ -1,0 +1,75 @@
+{
+  "title": "Moon Microbes Survived 30‑Day Vacuum Test",
+  "thumb": "MOON MICROBES SURVIVE",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Moon microbes survived a 30‑day vacuum exposure experiment",
+      "hook_top": "30DAY MOON TEST",
+      "query": "moon vacuum experiment microbes",
+      "query2": "lunar surface bacteria test",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "NASA’s Ames lab found Bacillus subtilis spores remained viable after 30 days in a simulated lunar vacuum",
+      "chips": [
+        {
+          "t": "30 days",
+          "on": "duration",
+          "style": "white"
+        },
+        {
+          "t": "Bacillus subtilis",
+          "on": "spores",
+          "style": "accent"
+        }
+      ],
+      "query": "Bacillus subtilis spores microscope",
+      "query2": "microbe vacuum survival",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "These spores also endured lunar‑level UV radiation and could germinate when re‑hydrated",
+      "chips": [
+        {
+          "t": "lunar UV",
+          "on": "radiation",
+          "style": "white"
+        }
+      ],
+      "query": "UV radiation lunar simulation",
+      "query2": "microbe UV exposure",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "If not sterilized, they could hitchhike on equipment and contaminate future lunar bases",
+      "reveal_top": "CONTAMINATION RISK",
+      "query": "lunar base contamination illustration",
+      "query2": "moon microbes risk",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "science follow icon",
+      "query2": "science subscribe button",
+      "role": "cta"
+    }
+  ],
+  "description": "Real microbes can survive the harsh lunar environment, raising planetary protection concerns. Follow for daily science updates!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#moon",
+    "#biology",
+    "#space",
+    "#planetaryprotection",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}

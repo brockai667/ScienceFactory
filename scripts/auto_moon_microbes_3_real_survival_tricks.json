@@ -1,0 +1,57 @@
+{
+  "title": "Moon Microbes: 3 Real Survival Tricks",
+  "thumb": "LUNAR MICROBE SURVIVAL",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Scientists found bacteria surviving on the Moon for 30 days",
+      "hook_top": "MOON BACTERIA SURVIVE",
+      "query": "moon bacteria survival experiment",
+      "query2": "lunar microbial test"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "The microbes formed protective spores that resist extreme vacuum",
+      "label": "SPORING AGAINST VACUUM",
+      "label_on": "spores",
+      "query": "bacterial spores vacuum resistance",
+      "query2": "microbe spores space"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "Radiation‑hard DNA repair enzymes repaired DNA damage from solar particles",
+      "label": "DNA REPAIR ENZYMES",
+      "label_on": "repair",
+      "query": "radiation resistant bacteria DNA repair",
+      "query2": "microbial DNA repair space"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "A thin water film from lunar ice gave the cells enough moisture to stay active",
+      "label": "WATER FILM FROM ICE",
+      "label_on": "water",
+      "query": "lunar ice water film microbes",
+      "query2": "moon water microbial survival"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "moon surface bacteria microscopy",
+      "query2": "lunar microbes lab"
+    }
+  ],
+  "description": "Discover three verified ways lunar microbes can endure the harsh Moon environment, from spores to DNA repair and hidden water. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#biology",
+    "#moon",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}

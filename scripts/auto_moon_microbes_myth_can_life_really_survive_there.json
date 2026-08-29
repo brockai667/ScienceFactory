@@ -1,0 +1,57 @@
+{
+  "title": "Moon microbes myth – can life really survive there?",
+  "thumb": "MOON MICROBE SURVIVAL",
+  "scenes": [
+    {
+      "text": "NASA found that Bacillus spores can endure lunar surface conditions",
+      "hook_top": "MOON MICROBE SURVIVAL",
+      "query": "Bacillus spores lunar experiment",
+      "query2": "moon microbes experiment",
+      "role": "hook"
+    },
+    {
+      "text": "Many believe no life can survive the Moon’s vacuum and radiation.",
+      "label": "Life impossible on Moon",
+      "query": "moon vacuum life myth",
+      "query2": "moon radiation life",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Studies show hardy bacterial spores remain viable after exposure to vacuum, extreme temperature swings, and UV.",
+      "label": "Spore survival proven",
+      "query": "bacterial spores lunar vacuum study",
+      "query2": "moon bacteria experiment",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Survival time recorded up to 30 days in lab simulations.",
+      "label": "30‑day survival",
+      "sub": "Implications for planetary protection",
+      "label_on": "Survival",
+      "query": "bacterial spores lunar simulation duration",
+      "query2": "moon microbes survival time",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science channel logo",
+      "query2": "science short",
+      "role": "cta"
+    }
+  ],
+  "description": "Debunk the myth that nothing can live on the Moon—real experiments prove some microbes survive. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#moon",
+    "#microbes",
+    "#mythbusting",
+    "#spacebiology",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}
