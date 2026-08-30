@@ -1,0 +1,60 @@
+{
+  "title": "How a 1‑Meter‑Wide Space Telescope Captured a Hidden Exoplanet Atmosphere",
+  "thumb": "HIDDEN ATMOSPHERE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A 1‑meter telescope revealed a secret gas envelope around a distant world",
+      "hook_top": "SECRET GAS ENVELOPE",
+      "query": "ground-based telescope exoplanet atmosphere",
+      "query2": "telescope night sky"
+    },
+    {
+      "role": "fact",
+      "text": "The instrument detected sodium absorption lines, confirming an atmosphere on the super‑Earth GJ 1132 b",
+      "chips": [
+        {
+          "t": "SODIUM DETECTED",
+          "on": "sodium",
+          "style": "accent"
+        },
+        {
+          "t": "1‑METER TELESCOPE",
+          "on": "telescope",
+          "style": "white"
+        }
+      ],
+      "punch": "wow",
+      "query": "GJ 1132 b sodium spectrum",
+      "query2": "exoplanet atmosphere detection"
+    },
+    {
+      "role": "callout",
+      "text": "Small telescopes can still unveil alien skies",
+      "label": "SMALL TELESCOPE POWER",
+      "sub": "Even modest observatories can study exoplanet gases",
+      "label_on": "power",
+      "query": "small observatory night sky",
+      "query2": "astronomy dome"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science lab equipment",
+      "query2": "researchers looking through telescope"
+    }
+  ],
+  "description": "A modest 1‑meter telescope captured sodium signatures in the atmosphere of the nearby super‑Earth GJ 1132 b, proving that even smaller instruments can probe alien worlds. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#exoplanet",
+    "#telescope",
+    "#space",
+    "#science",
+    "#astronomy",
+    "#discoveries"
+  ],
+  "place": "",
+  "country": ""
+}

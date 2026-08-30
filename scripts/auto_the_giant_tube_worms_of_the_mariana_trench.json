@@ -1,0 +1,57 @@
+{
+  "title": "The Giant Tube Worms of the Mariana Trench",
+  "thumb": "DEEP SEA GIANTS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "At 10,900 m depth, scientists filmed the largest tube worms ever seen",
+      "hook_top": "DEEPEST OCEAN WONDERS",
+      "query": "Mariana Trench tube worms",
+      "query2": "deep sea vent organisms"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "These worms can grow over 2 meters long, far bigger than the typical 30‑cm species",
+      "label": "OVER 2 METERS LONG",
+      "label_on": "size",
+      "query": "giant tube worm size",
+      "query2": "deep sea worm length"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "They thrive at temperatures above 350 °C, using chemosynthesis instead of sunlight",
+      "label": "THRIVE AT 350°C",
+      "label_on": "temperature",
+      "query": "hydrothermal vent chemosynthesis",
+      "query2": "deep sea vent temperature"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "The species was named *Riftia pachyptila* II after DNA analysis linked it to known Riftia relatives",
+      "label": "NEW RIFTIA SPECIES",
+      "label_on": "discovery",
+      "query": "Riftia pachyptila II",
+      "query2": "new tube worm species"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science short video thumbnail",
+      "query2": "science countdown graphic"
+    }
+  ],
+  "description": "Explore three mind‑blowing facts about the newly filmed giant tube worms deep in the Mariana Trench. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#science",
+    "#deepsea",
+    "#biology",
+    "#ocean"
+  ],
+  "place": "",
+  "country": ""
+}

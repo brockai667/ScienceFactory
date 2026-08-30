@@ -1,0 +1,54 @@
+{
+  "title": "Why Space Isn't Totally Silent During the 2024 Eclipse",
+  "thumb": "SPACE SILENCE BUSTED",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "During the 2024 total solar eclipse over Spain, did you hear any sound?",
+      "hook_top": "ECLIPSE SOUND QUESTION",
+      "query": "total solar eclipse Spain 2024 crowd",
+      "query2": "eclipse spectators Spain"
+    },
+    {
+      "role": "myth",
+      "text": "Most people think outer space is completely silent because there’s no air.",
+      "label": "Space is completely silent",
+      "query": "space vacuum silence myth",
+      "query2": "space silence concept"
+    },
+    {
+      "role": "truth",
+      "text": "In a vacuum sound waves can’t travel, but vibrations travel through solid objects and astronauts hear sounds via radios and spacecraft structures.",
+      "label": "Sound travels through solids",
+      "query": "astronaut hearing vibrations spacecraft interior",
+      "query2": "spacecraft sound transmission"
+    },
+    {
+      "role": "callout",
+      "text": "You can actually hear the ISS humming through its metal hull.",
+      "label": "ISS HUMMING",
+      "sub": "Vibrations move through metal, not air",
+      "label_on": "Humming",
+      "query": "ISS interior humming sound",
+      "query2": "space station vibrations audio"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science short video",
+      "query2": "science facts"
+    }
+  ],
+  "description": "Many believe space is absolutely quiet, but vibrations let us hear the ISS and other sounds through metal structures. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#spacefacts",
+    "#science",
+    "#eclipse2024",
+    "#mythbusting",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}

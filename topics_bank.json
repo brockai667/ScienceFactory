@@ -11270,5 +11270,247 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Pluto's Latest Surface Liquid Flow Revealed",
+    "thumb": "PLUTO LIQUID SHOW",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Pluto’s surface just flashed with fresh liquid!",
+        "hook_top": "PLUTO'S SURFACE FLUSH",
+        "query": "pluto surface",
+        "query2": "pluto",
+        "type": "hook"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "FIRST DETECTED LIQUID",
+        "label_on": "first",
+        "text": "Scientists captured the first evidence of liquid flowing on Pluto’s surface in 2024.",
+        "query": "pluto liquid flow",
+        "query2": "pluto",
+        "type": "count"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "RAIN OF ICE DRIPS",
+        "label_on": "rain",
+        "text": "The flow appears as a thin sheet of water‑ice, similar to methane rain on Titan.",
+        "query": "pluto ice rain",
+        "query2": "pluto",
+        "type": "count"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "SPEED OF 1 KM/H",
+        "label_on": "speed",
+        "text": "The liquid moves at about 1 km/h, enough to reshape the terrain over millennia.",
+        "query": "pluto surface flow speed",
+        "query2": "pluto",
+        "type": "count"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "pluto",
+        "query2": "pluto",
+        "type": "cta"
+      }
+    ],
+    "description": "Pluto’s icy surface is not as static as once thought—fresh liquid flows have been observed. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#pluto",
+      "#solarSystem",
+      "#science",
+      "#space"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Cloud‑9: The First Known Failed Galaxy",
+    "thumb": "FAILED GALAXY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Astronomers named a new failed galaxy—Cloud‑9.",
+        "hook_top": "FAILED GALAXY DISCOVERED",
+        "query": "cloud-9 galaxy",
+        "query2": "cloud 9",
+        "type": "hook"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "LACK OF STARS",
+        "label_on": "lack",
+        "text": "Cloud‑9 contains dark matter but almost no stars, making it a ‘failed’ galaxy.",
+        "query": "cloud-9 dark matter",
+        "query2": "cloud 9",
+        "type": "count"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "UNUSUAL SPECTRA",
+        "label_on": "unusual",
+        "text": "Its spectral lines show high gas temperatures but no star‑forming regions.",
+        "query": "cloud-9 spectra",
+        "query2": "cloud 9",
+        "type": "count"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "MEASURED SIZE 30 KPC",
+        "label_on": "size",
+        "text": "The galaxy spans roughly 30 kpc, comparable to the Milky Way, yet it lacks visible light.",
+        "query": "cloud-9 size",
+        "query2": "cloud 9",
+        "type": "count"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "cloud-9",
+        "query2": "cloud 9",
+        "type": "cta"
+      }
+    ],
+    "description": "Cloud‑9 challenges our definition of galaxies—massive yet starless. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#cloud9",
+      "#galaxy",
+      "#astronomy",
+      "#space"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Pluto’s 1,200‑km‑Long Channel Revealed",
+    "thumb": "PLUTO'S RIVER",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Pluto’s 1,200‑km‑long channel revealed by New Horizons.",
+        "hook_top": "PLUTO'S MYSTERIOUS RIVER",
+        "query": "pluto ice channel",
+        "query2": "pluto surface"
+      },
+      {
+        "role": "fact",
+        "text": "The channel is 1,200 km long, the longest known on a dwarf planet.",
+        "chips": [
+          {
+            "t": "1200 KM",
+            "on": "longest",
+            "style": "accent"
+          }
+        ],
+        "query": "pluto channel length",
+        "query2": "pluto surface feature"
+      },
+      {
+        "role": "fact",
+        "text": "Spectroscopy shows nitrogen ice moving like a slow glacier.",
+        "chips": [
+          {
+            "t": "nitrogen ice",
+            "on": "glacier",
+            "style": "white"
+          }
+        ],
+        "query": "pluto nitrogen ice",
+        "query2": "pluto ice movement"
+      },
+      {
+        "role": "reveal",
+        "text": "It’s actually a glacier‑like river of frozen nitrogen flowing across ice.",
+        "reveal_top": "GLACIER RIVER ON PLUTO",
+        "query": "pluto frozen nitrogen glacier",
+        "query2": "pluto ice flow"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "pluto science",
+        "query2": "science fact"
+      }
+    ],
+    "description": "A 1,200‑km channel on Pluto looks like a glacier of frozen nitrogen, not a liquid water river. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#pluto",
+      "#space",
+      "#science",
+      "#nasa",
+      "#newhorizons"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Venus' Atmosphere Isn’t Breathable – Here’s Why!",
+    "thumb": "VENUS AIR DEATH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Venus' surface pressure equals 90 atmospheres.",
+        "hook_top": "90 ATMOSPHERES ON VENUS",
+        "query": "venus surface pressure",
+        "query2": "venus pressure"
+      },
+      {
+        "role": "myth",
+        "text": "Many think Venus has a breathable atmosphere for humans.",
+        "label": "Breathable Atmosphere Myth",
+        "query": "venus atmosphere composition",
+        "query2": "venus atmosphere"
+      },
+      {
+        "role": "truth",
+        "text": "Venus' air is thick CO₂, with trace nitrogen, and toxic sulfur dioxide, making it lethal to breathe.",
+        "label": "CO₂ Toxic Fact",
+        "query": "venus atmosphere CO2",
+        "query2": "venus gases"
+      },
+      {
+        "role": "callout",
+        "text": "The planet’s sky is a toxic, crushing furnace.",
+        "label": "Venus Furnace",
+        "sub": "CO₂ & SO₂",
+        "label_on": "toxic",
+        "query": "venus planet surface",
+        "query2": "venus surface"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "Venus' Atmosphere Isn’t Breathable – Here’s Why!",
+        "query2": "cinematic nature landscape"
+      }
+    ],
+    "description": "Venus' atmosphere is deadly, not breathable, packed with CO₂ and sulfur dioxide. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#venus",
+      "#science",
+      "#space",
+      "#planetary",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
