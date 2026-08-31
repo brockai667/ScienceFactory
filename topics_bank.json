@@ -11512,5 +11512,190 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Why the Cloud‑9 Galaxy Disappeared Overnight",
+    "thumb": "MISSING GALAXY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "The mysterious Cloud‑9 galaxy vanished without a single star",
+        "hook_top": "MISSING CLOUD9 GALAXY",
+        "query": "Cloud-9 failed galaxy",
+        "query2": "failed galaxy space"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "It contains virtually no stars, making it the first confirmed ‘failed’ galaxy",
+        "label": "STARLESS GALAXY",
+        "label_on": "Starless",
+        "query": "starless galaxy Cloud-9",
+        "query2": "failed galaxy astronomy"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "Scientists think it formed in a low‑density region where dark matter couldn’t pull gas together",
+        "label": "DARK MATTER SCARCITY",
+        "label_on": "DarkMatter",
+        "query": "dark matter scarcity galaxy formation",
+        "query2": "low density region galaxy"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "Its discovery was confirmed using the Hubble Space Telescope’s deep‑field imaging in 2023",
+        "label": "HUBBLE CONFIRMATION",
+        "label_on": "Hubble",
+        "query": "Hubble deep field Cloud-9 galaxy",
+        "query2": "Hubble telescope failed galaxy"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space facts illustration",
+        "query2": "science short video"
+      }
+    ],
+    "description": "A rare look at the only galaxy discovered without stars, shedding light on how dark matter shapes the cosmos. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#astronomy",
+      "#galaxy",
+      "#science",
+      "#Hubble"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "What Turns the Moon Blood‑Red During a Partial Eclipse?",
+    "thumb": "RED MOON ECLIPSE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Tonight’s partial eclipse will paint the Moon a deep crimson over Spain",
+        "hook_top": "CRIMSON MOON OVER SPAIN",
+        "query": "partial lunar eclipse Spain red moon",
+        "query2": "lunar eclipse red hue"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "The red color comes from Earth’s atmosphere filtering sunlight, a phenomenon called Rayleigh scattering",
+        "label": "RAYLEIGH SCATTERING",
+        "label_on": "Rayleigh",
+        "query": "Rayleigh scattering lunar eclipse",
+        "query2": "atmospheric scattering eclipse"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "During a partial eclipse only a slice of the Moon enters Earth’s umbra, creating a dramatic gradient",
+        "label": "PARTIAL UMBRA SHADE",
+        "label_on": "Umbra",
+        "query": "partial eclipse umbra gradient",
+        "query2": "lunar eclipse shadow slice"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "The next total eclipse won’t happen until August 2027, making tonight’s view a rare treat",
+        "label": "NEXT TOTAL 2027",
+        "label_on": "2027",
+        "query": "2027 total solar eclipse map",
+        "query2": "next total eclipse 2027"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science short video thumbnail",
+        "query2": "educational video icon"
+      }
+    ],
+    "description": "Discover why the Moon glows scarlet during a partial eclipse and why this night’s spectacle is unique. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#eclipse",
+      "#moon",
+      "#space",
+      "#science",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "The Zero‑Star Galaxy That Defies Theory",
+    "thumb": "ZERO‑STAR GALAXY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A galaxy with 0 stars was spotted by astronomers",
+        "hook_top": "ZEROSTAR GALAXY",
+        "query": "failed galaxy Hubble image",
+        "query2": "cloud‑9 galaxy telescope"
+      },
+      {
+        "role": "fact",
+        "text": "In 2024 researchers confirmed Cloud‑9 as the first known starless galaxy",
+        "chips": [
+          {
+            "t": "2024",
+            "on": "year",
+            "style": "white"
+          },
+          {
+            "t": "first starless",
+            "on": "discovery",
+            "style": "accent"
+          }
+        ],
+        "query": "Cloud‑9 galaxy discovery news",
+        "query2": "starless galaxy announcement"
+      },
+      {
+        "role": "fact",
+        "text": "Cloud‑9 contains almost no dark matter, unlike typical galaxies",
+        "chips": [
+          {
+            "t": "no dark matter",
+            "on": "surprise",
+            "style": "accent"
+          }
+        ],
+        "query": "Cloud‑9 dark matter image",
+        "query2": "failed galaxy dark matter"
+      },
+      {
+        "role": "reveal",
+        "text": "It’s actually a massive gas cloud that never ignited any stars",
+        "reveal_top": "GAS CLOUD ONLY",
+        "query": "Cloud‑9 gas cloud illustration",
+        "query2": "failed galaxy structure"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "space science subscribe",
+        "query2": "astronomy short video"
+      }
+    ],
+    "description": "Scientists uncovered a galaxy that never formed a single star, shaking up galaxy formation models. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#astronomy",
+      "#galaxy",
+      "#science",
+      "#cloud9"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

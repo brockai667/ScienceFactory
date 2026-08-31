@@ -1,0 +1,57 @@
+{
+  "title": "Lucy’s Twin Asteroids Reveal Earth’s Early Building Blocks",
+  "thumb": "ASTEROID TWINS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA’s Lucy probe just photographed twin asteroids in the Trojan swarm",
+      "hook_top": "LUCKY TWIN ASTEROIDS",
+      "query": "Lucy spacecraft twin asteroids",
+      "query2": "Trojan asteroids Lucy"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "Both bodies share the same carbon‑rich composition, hinting they formed together 4 billion years ago",
+      "label": "CARBON‑RICH COMP",
+      "label_on": "composition",
+      "query": "carbon rich Trojan asteroids",
+      "query2": "asteroid composition Lucy"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "Their surfaces are covered in cratered regolith similar to that of ancient Earth’s building blocks",
+      "label": "CRATERED REGOLITH",
+      "label_on": "surface",
+      "query": "asteroid regolith Lucy images",
+      "query2": "cratered asteroid surface"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "Scientists estimate each is about 30 km across, making them some of the largest pristine planetesimals observed",
+      "label": "~30 KM DIAMETER",
+      "label_on": "size",
+      "query": "Lucy twin asteroid size",
+      "query2": "Trojan asteroid dimensions"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science short video thumbnail",
+      "query2": "space countdown graphic"
+    }
+  ],
+  "description": "Three stunning facts about Lucy’s newly spotted twin asteroids that could hold clues to Earth’s formation. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#NASA",
+    "#Lucy",
+    "#asteroids"
+  ],
+  "place": "",
+  "country": ""
+}

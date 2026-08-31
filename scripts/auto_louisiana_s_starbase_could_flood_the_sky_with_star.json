@@ -1,0 +1,64 @@
+{
+  "title": "Louisiana's Starbase Could Flood the Sky with Starships",
+  "thumb": "LAUNCH PAD EXPANSION",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Louisiana's new Starbase will host ten launch pads",
+      "hook_top": "LAUNCH PAD COUNT REVEALED",
+      "query": "SpaceX Starbase Louisiana",
+      "query2": "SpaceX launch site Louisiana"
+    },
+    {
+      "role": "fact",
+      "text": "SpaceX filed a plan in 2023 to build up to ten launch sites at the new Starbase in Louisiana.",
+      "chips": [
+        {
+          "t": "10 LAUNCH PADS",
+          "on": "launch",
+          "style": "accent"
+        }
+      ],
+      "query": "SpaceX Starbase Louisiana plan",
+      "query2": "SpaceX launch pads Louisiana"
+    },
+    {
+      "role": "fact",
+      "text": "The complex will also house a large factory to mass‑produce Starship rockets, aiming for weekly flights.",
+      "chips": [
+        {
+          "t": "WEEKLY FLIGHTS",
+          "on": "weekly",
+          "style": "accent"
+        }
+      ],
+      "query": "Starship factory Louisiana",
+      "query2": "SpaceX manufacturing Louisiana"
+    },
+    {
+      "role": "reveal",
+      "text": "That could boost US launch capacity to over 100 missions a year.",
+      "reveal_top": "CAPACITY OVER 100",
+      "query": "US launch capacity 2024",
+      "query2": "SpaceX launch rate America"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "space channel",
+      "query2": "science short videos"
+    }
+  ],
+  "description": "Louisiana may become the busiest launch hub on Earth with SpaceX's massive Starbase plan. Follow for daily space breakthroughs!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#SpaceX",
+    "#Starship",
+    "#Louisiana",
+    "#SpaceLaunch",
+    "#Science"
+  ],
+  "place": "",
+  "country": ""
+}

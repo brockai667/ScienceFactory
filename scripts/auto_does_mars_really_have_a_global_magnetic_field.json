@@ -1,0 +1,53 @@
+{
+  "title": "Does Mars Really Have a Global Magnetic Field?",
+  "thumb": "MAGNETIC MARS MYTH",
+  "description": "Many think Mars still protects itself with a planet‑wide magnetic shield, but the reality is very different. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#science",
+    "#space",
+    "#Mars",
+    "#mythbusting",
+    "#fyp"
+  ],
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Mars' 30‑year‑old magnetic mystery finally solved",
+      "hook_top": "MARS MAGNETIC MYSTERY",
+      "query": "Mars magnetic field data",
+      "query2": "Mars magnetometer"
+    },
+    {
+      "role": "myth",
+      "text": "People often believe the Red Planet still has a global magnetic field like Earth’s.",
+      "label": "Mars has global field",
+      "query": "Mars magnetic field illustration",
+      "query2": "planetary magnetism diagram"
+    },
+    {
+      "role": "truth",
+      "text": "In fact, Mars lost its global dynamo billions of years ago; only isolated crustal magnetic patches remain.",
+      "label": "Only crustal fields remain",
+      "query": "Mars crustal magnetic anomalies",
+      "query2": "Mars magnetometer readings"
+    },
+    {
+      "role": "callout",
+      "text": "No planet‑wide shield means solar wind strips the atmosphere directly.",
+      "label": "Atmosphere Erosion",
+      "sub": "Solar wind reaches the surface",
+      "label_on": "Erosion",
+      "query": "Mars solar wind interaction",
+      "query2": "Mars atmosphere loss"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "space telescope view",
+      "query2": "astronomy background"
+    }
+  ],
+  "place": "",
+  "country": ""
+}
