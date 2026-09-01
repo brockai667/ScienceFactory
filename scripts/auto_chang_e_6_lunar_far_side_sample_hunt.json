@@ -1,0 +1,66 @@
+{
+  "title": "Chang'e 6: Lunar Far‑Side Sample Hunt",
+  "thumb": "FAR‑SIDE ROCKS",
+  "description": "China's Chang'e 6 mission is set to retrieve the first samples from the Moon's far side, a historic step for lunar science. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#lunar",
+    "#space",
+    "#china",
+    "#moonmission",
+    "#science"
+  ],
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Chang'e 6 will bring back rocks from the Moon's hidden side",
+      "hook_top": "LUNAR FARSIDE SAMPLE",
+      "query": "Chang'e 6 lunar landing",
+      "query2": "Chinese moon rover",
+      "role": "hook"
+    },
+    {
+      "type": "count",
+      "num": 1,
+      "text": "It will be the first mission to collect material from the Moon’s far side",
+      "label": "FIRST FAR‑SIDE SAMPLE",
+      "label_on": "first",
+      "query": "far side lunar sample collection",
+      "query2": "Moon far side mission",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "count",
+      "num": 2,
+      "text": "The spacecraft carries a robotic arm with a core‑drilling sampler",
+      "label": "ROBOTIC DRILL ARM",
+      "label_on": "drill",
+      "query": "Chang'e 6 robotic arm drill",
+      "query2": "lunar sample drill",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "count",
+      "num": 3,
+      "text": "It aims to return up to two kilograms of lunar material to Earth",
+      "label": "UP TO 2 KG RETURN",
+      "label_on": "return",
+      "query": "Chang'e 6 sample mass",
+      "query2": "lunar sample return weight",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space mission celebration",
+      "query2": "astronomy celebration",
+      "role": "cta"
+    }
+  ],
+  "place": "",
+  "country": ""
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Do Heat Shields Really Melt During Re‑Entry?",
+  "thumb": "MELTING SHIELDS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "The Apollo capsule endured 11,000 °C during re‑entry!",
+      "hook_top": "APOLLO 11K REENTRY",
+      "query": "Apollo capsule reentry heat",
+      "query2": "spacecraft heat shield blazing"
+    },
+    {
+      "role": "myth",
+      "text": "People think the heat shield burns away completely, leaving the capsule exposed.",
+      "label": "Heat shield fully burns",
+      "query": "heat shield burning up",
+      "query2": "spacecraft ablative shield flames"
+    },
+    {
+      "role": "truth",
+      "text": "In reality, ablative shields slowly char and erode, carrying heat away while keeping the interior below 200 °C.",
+      "label": "Ablative shields erode safel",
+      "query": "ablative heat shield erosion",
+      "query2": "spacecraft reentry temperature interior"
+    },
+    {
+      "role": "callout",
+      "text": "Your capsule stays cool thanks to controlled erosion.",
+      "label": "Controlled Erosion",
+      "sub": "The shield sacrificially chars, protecting the crew.",
+      "label_on": "Erosion",
+      "query": "spacecraft heat shield cross‑section",
+      "query2": "reentry shield diagram"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space science short video",
+      "query2": "science myth busting"
+    }
+  ],
+  "description": "The myth that heat shields melt away is wrong—ablative materials erode in a controlled way, keeping spacecraft safe. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#science",
+    "#mythbusting",
+    "#NASA",
+    "#reentry"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -11697,5 +11697,59 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Titan’s Clouds Are More Than Just Methane",
+    "thumb": "TITAN CLOUDS EXPOSED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Titan’s sky hides a chemical secret unseen on Earth.",
+        "hook_top": "TITANS SKY SECRET",
+        "query": "titan planet sky",
+        "query2": "titan planet atmosphere"
+      },
+      {
+        "role": "myth",
+        "text": "People think Titan’s clouds are only simple methane haze.",
+        "label": "Methane‑Only Clouds",
+        "query": "titan methane haze",
+        "query2": "titan cloud"
+      },
+      {
+        "role": "truth",
+        "text": "Cassini‑Huygens revealed that Titan’s clouds also contain complex hydrocarbons like acetylene and ethane, forming dense, layered storms.",
+        "label": "Complex Hydrocarbon Clouds",
+        "query": "titan hydrocarbons clouds",
+        "query2": "titan haze"
+      },
+      {
+        "role": "callout",
+        "text": "So when you see Titan’s purple veil, you’re looking at a chemical factory in motion.",
+        "label": "Chemical Factory",
+        "sub": "Titan’s layered storms",
+        "label_on": "Factory",
+        "query": "titan layered storms",
+        "query2": "titan clouds"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science follow",
+        "query2": "science"
+      }
+    ],
+    "description": "Titan’s clouds are a complex mix of hydrocarbons, not just methane haze. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#titan",
+      "#hydrocarbons",
+      "#space",
+      "#science",
+      "#mars"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

@@ -1,0 +1,59 @@
+{
+  "title": "Why 4,000 Starlink Satellites Are Brightening Our Night Sky",
+  "thumb": "BRIGHT SKY SATS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "4,000 Starlink satellites now glitter over Earth",
+      "hook_top": "4K STARLINK SATS GLITTER",
+      "query": "Starlink satellites night sky",
+      "query2": "satellite constellation night"
+    },
+    {
+      "role": "fact",
+      "text": "Over 4,000 operational Starlink satellites reflect sunlight, creating visible streaks after sunset",
+      "chips": [
+        {
+          "t": "4,000 SATS",
+          "on": "satellites",
+          "style": "white"
+        },
+        {
+          "t": "VISIBLE STREAKS",
+          "on": "streaks",
+          "style": "accent"
+        }
+      ],
+      "punch": "bright",
+      "query": "Starlink satellite reflecting sunlight",
+      "query2": "satellite light trails"
+    },
+    {
+      "role": "callout",
+      "text": "Satellite light pollution is growing fast",
+      "label": "LIGHT POLLUTION",
+      "sub": "Night sky gets brighter as constellations multiply",
+      "label_on": "pollution",
+      "query": "night sky light pollution satellites",
+      "query2": "astronomy light pollution"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space facts short video",
+      "query2": "science short clip"
+    }
+  ],
+  "description": "Starlink's massive constellation is changing how we see the stars. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#Starlink",
+    "#astronomy",
+    "#science",
+    "#nightphotography"
+  ],
+  "place": "",
+  "country": ""
+}
