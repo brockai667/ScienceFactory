@@ -43,7 +43,7 @@ Return ONLY this JSON:
  "title": "YouTube title, max 70 chars, curiosity + clarity",
  "description": "2-3 sentences",
  "hashtags": ["#...", 6-8 tags],
- "hero_emoji": "ONE standard emoji that represents the whole topic (an object, not a face)",
+ "hero_emoji": "ONE emoji of the PHYSICAL OBJECT the video is about (the plug/cable/device itself, e.g. 🔌 for HDMI or USB, 💾 for storage, 🔋 for batteries; never a face, rocket, satellite or abstract symbol)",
  "intro": {{
    "compare": {{
      "say": "2 spoken sentences: name a common wrong assumption about two of the items, then 'They are not.' style denial. Under 40 words.",
@@ -64,8 +64,16 @@ Return ONLY this JSON:
 }}
 CUE RULE: every cue must be an EXACT word-for-word substring (2-4 words) of the matching "say". Items in order. Return ONLY the JSON."""
 
+FACTS_PROMPT = """Fact sheet for the video "{series}". Items, in order: {items}.
+For EACH item return only facts you are highly confident are true and widely documented (Wikipedia-level).
+Return ONLY this JSON:
+{{"facts":[{{"name":"item","year":"release year or era","key_number":"the one headline number WITH unit (e.g. 10.2 Gbit/s, 480 Mbit/s)",
+  "new":["up to 3 things it introduced"],"lacked":"one thing it could not do","still_used":"where it is still used today",
+  "compare":"one sentence vs the previous item, with numbers only if certain"}}]}}
+Never guess a number. If you are not sure, write "unknown"."""
+
 CHAPTER_PROMPT = """Video "{series}", chapter {idx} of {total}: "{name}" (label {label}, emoji {emoji}).
-{prev}Write 8 beats for THIS chapter, in this order. A beat = one animated scene + the narrator's words over it.
+{facts}{prev}Write 8 beats for THIS chapter, in this order. A beat = one animated scene + the narrator's words over it.
 Below is a COMPLETE EXAMPLE for a different topic (white USB port). Copy the STRUCTURE and the level of detail,
 NEVER the content. Every value must be written fresh for "{name}".
 
@@ -98,13 +106,14 @@ NEVER the content. Every value must be written fresh for "{name}".
 ]
 
 Rules for "{name}":
-- Real, widely documented facts only (real years, real numbers). If unsure of a number, pick a fact you are sure of.
+- Use the FACT SHEET above as ground truth: its numbers and years EXACTLY. Never contradict it, never add numbers not in it unless certain.
 - When you mention ANOTHER version/item for comparison, cite its numbers only if you are certain; otherwise compare in words.
 - Spoken sentences: short, conversational, second person. Hook under 35 words, others under 34 words.
 - Every "cue" is an EXACT word-for-word substring (2-4 words) of that beat's "say". Cues must be WORDS, never numbers or units
   (write "and a half", not "1.5 MB/s"). Spell numbers in "say" the way a narrator says them (e.g. "ten point two gigabits").
 - Slam texts are short real phrases in UPPERCASE (3-6 words). Never write placeholders like "THE TRUTH, 3-5 WORDS".
 - emoji: standard Unicode OBJECTS related to the item (no flags, no faces, no abstract symbols).
+- Exactly ONE hook (first) and ONE title (second). Never add another hook at the end.
 - Output ONLY: {{"beats":[ ...8 beats... ]}}"""
 
 
@@ -282,6 +291,24 @@ def generate(series, items=None):
         "outro": None,
     }
     series_short = re.sub(r",?\s*explained\.?$", "", series, flags=re.I).upper()
+    # Verzie toho isteho produktu (HDMI 1.0, HDMI 1.3...) -> jedna ikona (hero) pre vsetky kapitoly, lisia sa labelom
+    words0 = [c["name"].split()[0].lower() for c in chapters if c["name"].split()]
+    if len(chapters) >= 3 and len(set(words0)) == 1 and spec["hero"]:
+        for c in chapters:
+            c["icon"] = spec["hero"]
+    # Fact sheet = ground truth pre vsetky kapitoly (jedno volanie, konzistentne cisla)
+    facts_txt = ""
+    try:
+        fx = common.llm_json(FACTS_PROMPT.format(series=series, items=", ".join(c["name"] for c in chapters)), SYSTEM,
+                             temperature=0.2, max_tokens=2500)
+        fl = [f for f in (fx.get("facts") or []) if isinstance(f, dict) and f.get("name")]
+        if fl:
+            facts_txt = "FACT SHEET (ground truth):\n" + "\n".join(
+                f"- {f.get('name')}: year {f.get('year')}; key number {f.get('key_number')}; new: {', '.join(map(str, f.get('new') or []))}; "
+                f"lacked: {f.get('lacked')}; still used: {f.get('still_used')}; vs previous: {f.get('compare')}" for f in fl) + "\n"
+            spec["facts"] = fl
+    except Exception as ex:  # noqa: BLE001
+        print(f"   [script] fact sheet zlyhal: {ex}")
     names = []
     for i, ch in enumerate(chapters):
         print(f"   kapitola {i + 1}/{len(chapters)}: {ch['name']}")
@@ -289,7 +316,7 @@ def generate(series, items=None):
         beats = None
         for att in range(3):
             data = common.llm_json(CHAPTER_PROMPT.format(series=series, idx=i + 1, total=len(chapters), name=ch["name"],
-                                                         label=ch["label"], emoji=ch.get("emoji") or "", prev=prev,
+                                                         label=ch["label"], emoji=ch.get("emoji") or "", prev=prev, facts=facts_txt,
                                                          series_short=series_short), SYSTEM, temperature=0.75, max_tokens=5000)
             raw = collect_beats(data)
             if not raw:
@@ -300,6 +327,16 @@ def generate(series, items=None):
             print(f"   [script] kapitola {i + 1}: len {len(beats)} platnych beatov - znova")
         if not beats or len(beats) < 4:
             raise RuntimeError(f"Kapitola '{ch['name']}' sa nepodarila.")
+        # len prvy hook a jeden title; dalsie (model obcas prida hook na koniec) von
+        seen_one = set()
+        kept = []
+        for b in beats:
+            if b["tpl"] in ("hook", "title"):
+                if b["tpl"] in seen_one:
+                    continue
+                seen_one.add(b["tpl"])
+            kept.append(b)
+        beats = kept
         # title beat vzdy s kickerom; ak chyba, vloz
         if not any(b["tpl"] == "title" for b in beats):
             beats.insert(1, {"tpl": "title", "say": ch["name"] + ".", "title": ch["name"], "kicker": f"{series_short}, PART {i + 1}"})

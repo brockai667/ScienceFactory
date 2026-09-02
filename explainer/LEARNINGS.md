@@ -108,3 +108,11 @@ emoji → existujuca ikona), `run_v2.py` (tema → spec → render → thumbnail
     Prompt má teraz kompletný few-shot príklad (USB biely port) + validátor placeholdre zahadzuje.
 14. **8 beatov na kapitolu** (hook, title, focus, list, stat, focus, list, compare) → ~1.7 min/kapitola,
     5 kapitol ≈ 8+ min, čo je pre YT dlhé video minimum.
+15. **Nikdy prázdna scéna.** Karty porovnania a prvá položka zoznamu čakali na cue aj 9 s → headline sám na
+    papieri. Vstup prvku je teraz ohraničený (karty ≤1.3/2.1 s, 1. položka ≤1.6 s), cue spúšťa len badge/pulz.
+16. **Fact sheet pred kapitolami.** Groq 120b si per-kapitolu vymýšľal čísla (HDMI 1.3 „4.8 Gb/s, 600 MHz, 3D“).
+    Jedno volanie s nízkou teplotou pre všetky položky naraz dáva presné, konzistentné čísla → ground truth v prompte.
+17. **Verzie jedného produktu = jedna ikona.** Model dával HDMI 2.1 raketu a 2.1a puzzle; keď majú kapitoly
+    spoločné prvé slovo, všetky dostanú hero ikonu (fyzický objekt), líšia sa labelom – ako farebné USB porty.
+18. **Dedup beatov podľa tpl zjedol 8-beatovú štruktúru** (2. focus/list) → dedup len presných duplikátov,
+    plus len prvý hook/title (model rád pridá hook na koniec).

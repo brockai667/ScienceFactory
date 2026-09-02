@@ -505,6 +505,9 @@ def tpl_list(c, b, i, V, hero):
     last = b["_t0"]
     for k, it in enumerate(items):
         t = cue_ph(b, it.get("cue"), (k + 1) / (n + 1))
+        if k == 0:
+            t = min(t, b["_t0"] + 1.6)          # headline sam na scene max 1.6 s
+        t = max(t, last + 0.25)                 # nikdy pred predoslou polozkou
         last = max(last, t)
         c.tw(f'tl.fromTo("#lb{k}",{{opacity:0,scale:0.82,y:30}},{{opacity:1,scale:1,y:0,duration:0.5,ease:"power3.out"}},{t:.3f});')
         if it.get("plug"):
@@ -563,8 +566,11 @@ def tpl_stat(c, b, i, V, hero):
 def tpl_compare(c, b, i, V, hero):
     long = c.long
     L, R = b["left"], b["right"]
-    t_l = cue_ph(b, L.get("cue"), 0.3)
-    t_r = cue_ph(b, R.get("cue"), 0.55)
+    c_l = cue_ph(b, L.get("cue"), 0.3)
+    c_r = cue_ph(b, R.get("cue"), 0.55)
+    # karty nikdy necakaju na cue dlhsie ako ~1.3/2.1 s (prazdna scena = smrt); cue spusti badge + pulz
+    t_l = min(c_l, b["_t0"] + 1.3)
+    t_r = min(c_r, b["_t0"] + 2.1)
     t_line = cue(b, "line", 0.8)
     cw, chh = (520, 340) if long else (440, 300)
     ekg = ""
@@ -593,8 +599,10 @@ def tpl_compare(c, b, i, V, hero):
         c.tick(t_e + 0.85)
     c.tw(f'tl.fromTo("#cp_l",{{x:-160,opacity:0,rotationY:14}},{{x:0,opacity:1,rotationY:{7 if long else 0},duration:0.6,ease:"power3.out"}},{t_l:.3f});')
     c.tw(f'tl.fromTo("#cp_r",{{x:160,opacity:0,rotationY:-14}},{{x:0,opacity:1,rotationY:{-7 if long else 0},duration:0.6,ease:"power3.out"}},{t_r:.3f});')
-    c.tw(f'tl.fromTo("#cp_okl",{{opacity:0,scale:1.7}},{{opacity:1,scale:1,duration:0.3,ease:"power3.out"}},{t_l + 0.8:.3f});')
-    c.tw(f'tl.fromTo("#cp_okr",{{opacity:0,scale:1.7}},{{opacity:1,scale:1,duration:0.3,ease:"power3.out"}},{t_r + 0.8:.3f});')
+    for cid, okid, tc, tin in (("#cp_l", "#cp_okl", c_l, t_l), ("#cp_r", "#cp_okr", c_r, t_r)):
+        tb = max(tc, tin + 0.7)
+        c.tw(f'tl.fromTo("{okid}",{{opacity:0,scale:1.7}},{{opacity:1,scale:1,duration:0.3,ease:"power3.out"}},{tb:.3f});')
+        c.tw(f'tl.to("{cid}",{{scale:1.06,duration:0.18,ease:"power2.out"}},{tb:.3f});tl.to("{cid}",{{scale:1,duration:0.3,ease:"power3.out"}},{tb + 0.18:.3f});')
     if R.get("notes"):
         for k in range(3):
             c.tw(f'tl.fromTo("#cp_n{k}",{{opacity:0,y:20,x:0,rotation:-8}},{{opacity:1,y:-110,x:{18 + 26 * k},rotation:8,duration:0.9,ease:"power1.out"}},{t_r + 0.5 + 0.4 * k:.3f});'
