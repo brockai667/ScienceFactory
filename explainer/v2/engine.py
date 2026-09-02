@@ -904,9 +904,10 @@ def build_long(spec, V):
             tpl_chapter_card(c, card, i, V, ch, ci, len(chs))
             _scope_ids(c, n1, n2, f"ucard{ci}_")
             i += 1
+        ch_hero = ch.get("icon") or hero      # kazda kapitola = vlastna ikona (pri verziach produktu je icon == hero)
         for b in ch["beats"]:
             seq.add(b)
-            run_tpl(c, b, i, V, hero, spec)
+            run_tpl(c, b, i, V, ch_hero, spec)
             i += 1
     if spec.get("outro") and spec["outro"].get("_wav"):
         seq.add(spec["outro"])
@@ -923,7 +924,7 @@ def build_reel(spec, V, ci):
     c = Comp("reel", W, H)
     seq = Seq()
     ch = spec["chapters"][ci]
-    hero = spec.get("hero")
+    hero = ch.get("icon") or spec.get("hero")
     i = 0
     for b in ch["beats"]:
         seq.add(b)

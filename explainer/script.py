@@ -93,8 +93,8 @@ def chapter_prompt(series, ch, idx, total, n_beats, prev_names):
 
 
 TOPUP_PROMPT = (
-    "Give me 12 NEW topics for 'Every X Explained' YouTube videos about technology, science, engineering, "
-    "or everyday objects. Each topic must be a LIST of 6-8 concrete items that can each be explained in "
+    "Give me 12 NEW topics for 'Every X Explained' YouTube videos. Mix domains widely: technology, science, engineering, "
+    "vehicles (cars, trains, planes, ships), nature (clouds, rocks, trees), food and drink, home and everyday objects, sport gear, the human body. Each topic must be a LIST of 6-8 concrete items that can each be explained in "
     "about 90 seconds with real facts, years and numbers (like 'Every USB Port Color Explained' with items "
     "White, Black, Blue...). Avoid these already used: {used}.\n"
     'Return ONLY JSON: {"topics": [{"series": "Every ... Explained", "items": ["...", "..."]}]}'
