@@ -1,0 +1,62 @@
+{
+  "title": "Pluto's Latest Surface Liquid Flow Revealed",
+  "thumb": "PLUTO LIQUID SHOW",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Pluto’s surface just flashed with fresh liquid!",
+      "hook_top": "PLUTO'S SURFACE FLUSH",
+      "query": "pluto surface",
+      "query2": "pluto",
+      "type": "hook"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "FIRST DETECTED LIQUID",
+      "label_on": "first",
+      "text": "Scientists captured the first evidence of liquid flowing on Pluto’s surface in 2024.",
+      "query": "pluto liquid flow",
+      "query2": "pluto",
+      "type": "count"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "RAIN OF ICE DRIPS",
+      "label_on": "rain",
+      "text": "The flow appears as a thin sheet of water‑ice, similar to methane rain on Titan.",
+      "query": "pluto ice rain",
+      "query2": "pluto",
+      "type": "count"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "SPEED OF 1 KM/H",
+      "label_on": "speed",
+      "text": "The liquid moves at about 1 km/h, enough to reshape the terrain over millennia.",
+      "query": "pluto surface flow speed",
+      "query2": "pluto",
+      "type": "count"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "pluto",
+      "query2": "pluto",
+      "type": "cta"
+    }
+  ],
+  "description": "Pluto’s icy surface is not as static as once thought—fresh liquid flows have been observed. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#pluto",
+    "#solarSystem",
+    "#science",
+    "#space"
+  ],
+  "place": "",
+  "country": ""
+}

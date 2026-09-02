@@ -11751,5 +11751,296 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Artemis II Honored by Congress",
+    "thumb": "ARTEMIS II MEDAL",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Artemis II crew receive the Congressional Medal of Honor.",
+        "hook_top": "ARTEMIS II MEDAL",
+        "query": "artemis ii crew medal",
+        "query2": "artemis ii"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "label": "FIRST MOON ORBITERS",
+        "label_on": "first",
+        "text": "Artemis II was the first crewed mission to orbit the Moon since 1972.",
+        "query": "artemis ii moon orbit",
+        "query2": "artemis ii mission"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "label": "CONGRESS AWARD",
+        "label_on": "congress",
+        "text": "The mission’s crew were awarded the Congressional Medal of Honor for their historic accomplishment.",
+        "query": "congressional medal honor artemis ii",
+        "query2": "congress medal"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "label": "WHITE HOUSE CEREMONY",
+        "label_on": "ceremony",
+        "text": "The award ceremony took place at the White House, highlighting national pride in space exploration.",
+        "query": "artemis ii white house ceremony",
+        "query2": "white house ceremony"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "artemis ii science",
+        "query2": "science"
+      }
+    ],
+    "description": "Artemis II’s crew earned the Congressional Medal of Honor after becoming the first astronauts to orbit the Moon in decades. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#artemis",
+      "#space",
+      "#science",
+      "#NASA",
+      "#exploration"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Pluto Reveals 1,200 km Liquid Channel",
+    "thumb": "PLUTO’S LIQUID RIVER",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "1,200‑km channel found on Pluto",
+        "hook_top": "PLUTOS LONG CHANNEL",
+        "query": "pluto surface channel",
+        "query2": "pluto surface"
+      },
+      {
+        "role": "fact",
+        "text": "Recent images show liquid flowing",
+        "chips": [
+          {
+            "t": "1,200 km",
+            "on": "flowing",
+            "style": "accent"
+          }
+        ],
+        "query": "pluto liquid flow",
+        "query2": "pluto liquid"
+      },
+      {
+        "role": "fact",
+        "text": "The channel stretches over 1,200 km",
+        "chips": [
+          {
+            "t": "1,200 km",
+            "on": "length",
+            "style": "accent"
+          }
+        ],
+        "query": "pluto channel length",
+        "query2": "pluto channel"
+      },
+      {
+        "role": "reveal",
+        "text": "Pluto has a river of liquid",
+        "reveal_top": "LIQUID RIVER ON PLUTO",
+        "query": "pluto liquid river",
+        "query2": "pluto liquid"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "pluto science",
+        "query2": "pluto"
+      }
+    ],
+    "description": "A 1,200‑km channel on Pluto shows liquid flowing across its icy surface. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Pluto",
+      "#Space",
+      "#NASA",
+      "#Science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Artemis II Crew Earn Space Medal",
+    "thumb": "ARTHEMIS HONOR",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Artemis II crew receive Congressional Medal",
+        "hook_top": "ARTHEMIS II HONOR",
+        "query": "Artemis II medal",
+        "query2": "Artemis II"
+      },
+      {
+        "role": "fact",
+        "text": "They were awarded the Space Medal",
+        "chips": [
+          {
+            "t": "Space Medal",
+            "on": "awarded",
+            "style": "white"
+          }
+        ],
+        "query": "Artemis II Space Medal",
+        "query2": "Artemis II medal"
+      },
+      {
+        "role": "fact",
+        "text": "The medal honors their historic lunar orbit",
+        "chips": [
+          {
+            "t": "historic orbit",
+            "on": "orbit",
+            "style": "accent"
+          }
+        ],
+        "query": "Artemis II lunar orbit",
+        "query2": "Artemis II orbit"
+      },
+      {
+        "role": "reveal",
+        "text": "They were the first to orbit the Moon",
+        "reveal_top": "FIRST MOON ORBIT",
+        "query": "Artemis II first moon orbit",
+        "query2": "Artemis II orbit"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "Artemis II science",
+        "query2": "Artemis II"
+      }
+    ],
+    "description": "The Artemis II crew received the Congressional Space Medal of Honor for their historic lunar orbit. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#ArtemisII",
+      "#Space",
+      "#NASA",
+      "#Science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Sound Vanishes During Spacewalks",
+    "thumb": "SILENT SPACE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "At 100 km above Earth, sound disappears in a vacuum.",
+        "hook_top": "NO SOUND ABOVE EARTH",
+        "query": "astronaut spacewalk",
+        "query2": "spacewalk"
+      },
+      {
+        "role": "myth",
+        "text": "People think astronauts hear nothing when walking outside the ISS.",
+        "label": "Zero‑Sound Walk",
+        "query": "spacewalk silent",
+        "query2": "astronaut outside"
+      },
+      {
+        "role": "truth",
+        "text": "In a vacuum sound cannot travel, but astronauts hear radio chatter and equipment noises transmitted through their suits.",
+        "label": "Radio‑Only Sound",
+        "query": "astronaut helmet communication",
+        "query2": "spacewalk audio"
+      },
+      {
+        "role": "callout",
+        "text": "The silence you feel is just the vacuum; sound comes from your own suit and mission control.",
+        "label": "Sound Source",
+        "sub": "Vacuum blocks air sound",
+        "label_on": "vacuum",
+        "query": "space helmet headset",
+        "query2": "astronaut communication"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "Sound Vanishes During Spacewalks",
+        "query2": "cinematic nature landscape"
+      }
+    ],
+    "description": "Spacewalks aren’t completely silent – the vacuum blocks air sound, but radio chatter keeps astronauts connected. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#science",
+      "#spacewalk",
+      "#mythbuster",
+      "#vacuum",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Deep Sea Tube Worms Reveal Ocean Secrets",
+    "thumb": "SURPRISE OCEAN WORM",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "The Mariana Trench shelters 15‑meter long tube worms.",
+        "hook_top": "TINY 15METER WONKS",
+        "query": "mariana trench tube worm",
+        "query2": "deep sea worm"
+      },
+      {
+        "role": "fact",
+        "text": "They create calcium carbonate tubes that strengthen the trench floor.",
+        "chips": [
+          {
+            "t": "CALCITE TUBE",
+            "on": "calcium",
+            "style": "accent"
+          }
+        ],
+        "query": "tube worm calcium tube",
+        "query2": "calcium carbonate worm"
+      },
+      {
+        "role": "callout",
+        "text": "Their tubes help stabilize the seafloor against earthquakes.",
+        "label": "Seafloor Stabilizer",
+        "sub": "Protects deep‑sea vents",
+        "label_on": "stabilize",
+        "query": "tube worm seafloor",
+        "query2": "deep sea vent"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science follow",
+        "query2": "daily science"
+      }
+    ],
+    "description": "Tube worms in the Mariana Trench build calcium carbonate tubes that help stabilize the seafloor. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#deepsea",
+      "#ocean",
+      "#science",
+      "#marianatrench",
+      "#tubeworm"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

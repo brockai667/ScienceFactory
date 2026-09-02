@@ -1,0 +1,64 @@
+{
+  "title": "Pluto’s 1,200‑km‑Long Channel Revealed",
+  "thumb": "PLUTO'S RIVER",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Pluto’s 1,200‑km‑long channel revealed by New Horizons.",
+      "hook_top": "PLUTO'S MYSTERIOUS RIVER",
+      "query": "pluto ice channel",
+      "query2": "pluto surface"
+    },
+    {
+      "role": "fact",
+      "text": "The channel is 1,200 km long, the longest known on a dwarf planet.",
+      "chips": [
+        {
+          "t": "1200 KM",
+          "on": "longest",
+          "style": "accent"
+        }
+      ],
+      "query": "pluto channel length",
+      "query2": "pluto surface feature"
+    },
+    {
+      "role": "fact",
+      "text": "Spectroscopy shows nitrogen ice moving like a slow glacier.",
+      "chips": [
+        {
+          "t": "nitrogen ice",
+          "on": "glacier",
+          "style": "white"
+        }
+      ],
+      "query": "pluto nitrogen ice",
+      "query2": "pluto ice movement"
+    },
+    {
+      "role": "reveal",
+      "text": "It’s actually a glacier‑like river of frozen nitrogen flowing across ice.",
+      "reveal_top": "GLACIER RIVER ON PLUTO",
+      "query": "pluto frozen nitrogen glacier",
+      "query2": "pluto ice flow"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "pluto science",
+      "query2": "science fact"
+    }
+  ],
+  "description": "A 1,200‑km channel on Pluto looks like a glacier of frozen nitrogen, not a liquid water river. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#pluto",
+    "#space",
+    "#science",
+    "#nasa",
+    "#newhorizons"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Cloud‑9: The First Known Failed Galaxy",
+  "thumb": "FAILED GALAXY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Astronomers named a new failed galaxy—Cloud‑9.",
+      "hook_top": "FAILED GALAXY DISCOVERED",
+      "query": "cloud-9 galaxy",
+      "query2": "cloud 9",
+      "type": "hook"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "LACK OF STARS",
+      "label_on": "lack",
+      "text": "Cloud‑9 contains dark matter but almost no stars, making it a ‘failed’ galaxy.",
+      "query": "cloud-9 dark matter",
+      "query2": "cloud 9",
+      "type": "count"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "UNUSUAL SPECTRA",
+      "label_on": "unusual",
+      "text": "Its spectral lines show high gas temperatures but no star‑forming regions.",
+      "query": "cloud-9 spectra",
+      "query2": "cloud 9",
+      "type": "count"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "MEASURED SIZE 30 KPC",
+      "label_on": "size",
+      "text": "The galaxy spans roughly 30 kpc, comparable to the Milky Way, yet it lacks visible light.",
+      "query": "cloud-9 size",
+      "query2": "cloud 9",
+      "type": "count"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "cloud-9",
+      "query2": "cloud 9",
+      "type": "cta"
+    }
+  ],
+  "description": "Cloud‑9 challenges our definition of galaxies—massive yet starless. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#cloud9",
+    "#galaxy",
+    "#astronomy",
+    "#space"
+  ],
+  "place": "",
+  "country": ""
+}
