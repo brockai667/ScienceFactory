@@ -543,7 +543,8 @@ def tpl_stat(c, b, i, V, hero):
     else:
         inner = f'<div class="col" style="position:absolute;inset:0;justify-content:center;gap:60px;padding:0 90px">{side}{artside}</div>'
     beat_shell(c, b, i, inner)
-    dec = int(b.get("decimals", 1))
+    ne = float(b["num_end"])
+    dec = int(b["decimals"]) if b.get("decimals") is not None else (2 if abs(ne * 10 - round(ne * 10)) > 1e-6 else (1 if abs(ne - round(ne)) > 1e-6 else 0))
     c.tw(f'var o{b["_id"]}={{v:{float(b.get("num_from", 0))}}};tl.to(o{b["_id"]},{{v:{float(b["num_end"])},duration:1.3,ease:"power2.out",onUpdate:function(){{'
          f'document.getElementById("sc_n").childNodes[0].nodeValue=o{b["_id"]}.v.toFixed({dec})+" ";}}}},{t_count:.3f});')
     c.tw(f'tl.fromTo("#sc_n",{{opacity:0,scale:0.8}},{{opacity:1,scale:1,duration:1.3,ease:"power2.out"}},{t_count:.3f});')
