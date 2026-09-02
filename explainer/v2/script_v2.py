@@ -99,6 +99,7 @@ NEVER the content. Every value must be written fresh for "{name}".
 
 Rules for "{name}":
 - Real, widely documented facts only (real years, real numbers). If unsure of a number, pick a fact you are sure of.
+- When you mention ANOTHER version/item for comparison, cite its numbers only if you are certain; otherwise compare in words.
 - Spoken sentences: short, conversational, second person. Hook under 35 words, others under 34 words.
 - Every "cue" is an EXACT word-for-word substring (2-4 words) of that beat's "say". Cues must be WORDS, never numbers or units
   (write "and a half", not "1.5 MB/s"). Spell numbers in "say" the way a narrator says them (e.g. "ten point two gigabits").
@@ -122,11 +123,12 @@ def collect_beats(data):
             for v in x:
                 walk(v)
     walk(data)
-    # dedup podla tpl (prvy vyhrava), zachovaj poradie
+    # dedup len presnych duplikatov (tpl + say); druhy focus/list je v 8-beatovej kapitole ziadany
     seen, uniq = set(), []
     for b in out:
-        if b["tpl"] not in seen:
-            seen.add(b["tpl"])
+        key = (str(b["tpl"]).lower(), str(b["say"]).strip().lower())
+        if key not in seen:
+            seen.add(key)
             uniq.append(b)
     return uniq
 
@@ -293,7 +295,7 @@ def generate(series, items=None):
             if not raw:
                 continue
             beats = [x for x in (coerce_beat(b, ch["name"]) for b in raw) if x]
-            if len(beats) >= 6:
+            if len(beats) >= 7:
                 break
             print(f"   [script] kapitola {i + 1}: len {len(beats)} platnych beatov - znova")
         if not beats or len(beats) < 4:
