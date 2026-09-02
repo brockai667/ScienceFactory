@@ -198,9 +198,27 @@ def coerce_beat(b, name):
         bad = ("3-5 WORDS", "4-6 WORD", "THE MISCONCEPTION", "THE TRUTH,", "WORDS IN SAY", "UPPERCASE")
         sl = [s for s in b.get("slams", []) if isinstance(s, dict) and s.get("text")
               and not any(x in str(s["text"]).upper() for x in bad)][:5]
+        if len(sl) < 3:
+            # malo slamov = dlho staticky text; doplnit z kratkych viet hovoreneho textu (cue = prve 2 slova)
+            have = {str(x["text"]).strip().upper().rstrip(".!?") for x in sl}
+            for sent in re.split(r"(?<=[.!?])\s+", b["say"]):
+                w = sent.strip().rstrip(".!?").split()
+                if 2 <= len(w) <= 6 and " ".join(w).upper() not in have:
+                    sl.append({"text": " ".join(w).upper() + ".", "cue": " ".join(w[:2])})
+                    have.add(" ".join(w).upper())
+                if len(sl) >= 4:
+                    break
         if not sl:
             sl = [{"text": name.upper()}]
-        b["slams"] = sl
+        # poradie slamov podla miesta cue v texte (doplnene z viet mozu patrit na zaciatok)
+        say_l = b["say"].lower()
+        n_sl = max(1, len(sl))
+        def _pos(k_x):
+            k, x = k_x
+            pos = say_l.find(str(x.get("cue", "")).lower()) if x.get("cue") else -1
+            return pos if pos >= 0 else k * len(say_l) / n_sl
+        sl = [x for _, x in sorted(enumerate(sl), key=_pos)]
+        b["slams"] = sl[:5]
     elif tpl == "list":
         items = []
         for it in b.get("items", [])[:4]:
