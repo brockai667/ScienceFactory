@@ -107,13 +107,13 @@ def _extract_json(txt):
 
 
 def _providers():
-    out = [(BASE, TOKEN, MODEL, 4), (BASE, TOKEN, MODEL_FALLBACK, 1)]
+    out = [(BASE, TOKEN, MODEL, 8), (BASE, TOKEN, MODEL_FALLBACK, 1)]
     if BASE2 and TOKEN2:
         out.insert(1, (BASE2, TOKEN2, MODEL2, 3))   # zaloha hned po hlavnom modeli, pred slabsim 20b
     return out
 
 
-def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=6):
+def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=10):
     """Zavolaj chat model, vrat parsovany JSON. Poradie: hlavny model (Groq 120b, trpezlive retry na 429),
     zalozny provider (MODELS2_*), az nakoniec slabsi 20b (horsie fakty)."""
     if not TOKEN:
@@ -137,10 +137,19 @@ def llm_json(prompt, system, temperature=0.7, max_tokens=6000, tries=6):
                     if "per day" in why or "TPD" in why:
                         print(f"   [llm] 429 DENNY limit ({model}): {why}")
                         break
-                    wait = min(240, 30 + 40 * att)
-                    print(f"   [llm] 429 rate limit ({model}) - cakam {wait}s: {why}")
+                    ra = r.headers.get("retry-after")
+                    try:
+                        wait = min(300, max(5, float(ra) + 3)) if ra else min(240, 30 + 40 * att)
+                    except ValueError:
+                        wait = min(240, 30 + 40 * att)
+                    print(f"   [llm] 429 rate limit ({model}) - cakam {wait:.0f}s (retry-after={ra}): {why}")
                     time.sleep(wait)
                     continue
+                if r.status_code in (401, 402, 403):
+                    print(f"   [llm] {model} @ {base}: HTTP {r.status_code} - provider nepouzitelny, preskakujem: {r.text[:160]}")
+                    break
+                if r.status_code >= 400 and "reasoning_effort" not in r.text:
+                    print(f"   [llm] {model} HTTP {r.status_code}: {re.sub(r'\s+', ' ', r.text)[:200]}")
                 if r.status_code == 400 and "reasoning_effort" in r.text:
                     # model bez podpory reasoning_effort -> bez neho
                     r = requests.post(base.rstrip("/") + "/chat/completions",

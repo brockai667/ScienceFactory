@@ -300,7 +300,7 @@ def generate(series, items=None):
     facts_txt = ""
     try:
         fx = common.llm_json(FACTS_PROMPT.format(series=series, items=", ".join(c["name"] for c in chapters)), SYSTEM,
-                             temperature=0.2, max_tokens=2500)
+                             temperature=0.2, max_tokens=1800)
         fl = [f for f in (fx.get("facts") or []) if isinstance(f, dict) and f.get("name")]
         if fl:
             facts_txt = "FACT SHEET (ground truth):\n" + "\n".join(
@@ -317,13 +317,14 @@ def generate(series, items=None):
         for att in range(3):
             data = common.llm_json(CHAPTER_PROMPT.format(series=series, idx=i + 1, total=len(chapters), name=ch["name"],
                                                          label=ch["label"], emoji=ch.get("emoji") or "", prev=prev, facts=facts_txt,
-                                                         series_short=series_short), SYSTEM, temperature=0.75, max_tokens=5000)
+                                                         series_short=series_short), SYSTEM, temperature=0.75, max_tokens=3600)
             raw = collect_beats(data)
             if not raw:
                 continue
             beats = [x for x in (coerce_beat(b, ch["name"]) for b in raw) if x]
             if len(beats) >= 7:
                 break
+            print(f"   [script] raw tpl: {[str(b.get('tpl')) for b in raw]} -> platne: {[b['tpl'] for b in beats]}")
             print(f"   [script] kapitola {i + 1}: len {len(beats)} platnych beatov - znova")
         if not beats or len(beats) < 4:
             raise RuntimeError(f"Kapitola '{ch['name']}' sa nepodarila.")

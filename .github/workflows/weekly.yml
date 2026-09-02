@@ -93,9 +93,6 @@ jobs:
           MODELS_BASE_URL: https://api.groq.com/openai/v1
           MODELS_MODEL: openai/gpt-oss-120b
           MODELS_FALLBACK: openai/gpt-oss-20b
-          MODELS2_BASE_URL: https://api.cerebras.ai/v1      # zaloha ked Groq minie denny limit (secret MODELS2_TOKEN = Cerebras key, zadarmo 1M tok/den)
-          MODELS2_MODEL: gpt-oss-120b
-          MODELS2_TOKEN: ${{ secrets.MODELS2_TOKEN }}
           BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
