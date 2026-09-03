@@ -1,0 +1,58 @@
+{
+  "title": "Why the Cloud‑9 Galaxy Disappeared Overnight",
+  "thumb": "MISSING GALAXY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "The mysterious Cloud‑9 galaxy vanished without a single star",
+      "hook_top": "MISSING CLOUD9 GALAXY",
+      "query": "Cloud-9 failed galaxy",
+      "query2": "failed galaxy space"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "It contains virtually no stars, making it the first confirmed ‘failed’ galaxy",
+      "label": "STARLESS GALAXY",
+      "label_on": "Starless",
+      "query": "starless galaxy Cloud-9",
+      "query2": "failed galaxy astronomy"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "Scientists think it formed in a low‑density region where dark matter couldn’t pull gas together",
+      "label": "DARK MATTER SCARCITY",
+      "label_on": "DarkMatter",
+      "query": "dark matter scarcity galaxy formation",
+      "query2": "low density region galaxy"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "Its discovery was confirmed using the Hubble Space Telescope’s deep‑field imaging in 2023",
+      "label": "HUBBLE CONFIRMATION",
+      "label_on": "Hubble",
+      "query": "Hubble deep field Cloud-9 galaxy",
+      "query2": "Hubble telescope failed galaxy"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "space facts illustration",
+      "query2": "science short video"
+    }
+  ],
+  "description": "A rare look at the only galaxy discovered without stars, shedding light on how dark matter shapes the cosmos. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#astronomy",
+    "#galaxy",
+    "#science",
+    "#Hubble"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -12042,5 +12042,382 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Chile Telescope Finds Alien Signal",
+    "thumb": "ALIEN SIGNAL",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Chile's 39‑meter ELT spots a potential alien biosignature",
+        "hook_top": "ELT SPOTS ALIEN",
+        "query": "Extremely Large Telescope Chile night sky",
+        "query2": "ELT telescope Chile"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "The ELT can collect 15 times more light than current 8‑meter telescopes",
+        "label": "15X MORE LIGHT",
+        "label_on": "light",
+        "query": "Extremely Large Telescope mirror",
+        "query2": "ELT telescope closeup"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "It captured a faint infrared line that matches phosphine, a potential biosignature gas",
+        "label": "PHOSPHINE LINE DETECTE",
+        "label_on": "phosphine",
+        "query": "phosphine infrared spectrum",
+        "query2": "biosignature gas detection"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "The target planet orbits a red dwarf 40 light‑years away, inside its habitable zone",
+        "label": "PLANET IN HABITABLE ZO",
+        "label_on": "habitable",
+        "query": "red dwarf exoplanet habitable zone",
+        "query2": "exoplanet orbiting red dwarf"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "space discovery graphics",
+        "query2": "science short video"
+      }
+    ],
+    "description": "The European Southern Observatory's ELT has just recorded a possible biosignature on a nearby world. Could this be the first hint of life beyond Earth? Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#telescope",
+      "#exoplanet",
+      "#biosignature",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Roman Telescope Maps Dark Matter",
+    "thumb": "DARK MATTER MAP",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "NASA's Roman telescope will chart dark matter across the Milky Way",
+        "hook_top": "ROMAN MAPS DARK",
+        "query": "Nancy Grace Roman Space Telescope launch",
+        "query2": "Roman telescope NASA"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "Its wide‑field infrared camera can image 100 times more sky than Hubble each night",
+        "label": "100X SKY COVERAGE",
+        "label_on": "coverage",
+        "query": "Roman telescope infrared camera",
+        "query2": "Roman space telescope wide field"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "Gravitational lensing data will reveal the invisible distribution of dark matter clusters",
+        "label": "GRAVITATIONAL LENSING",
+        "label_on": "lensing",
+        "query": "gravitational lensing illustration",
+        "query2": "dark matter lensing effect"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "The mission aims to test theories about dark energy accelerating the universe’s expansion",
+        "label": "TESTING DARK ENERGY",
+        "label_on": "energy",
+        "query": "dark energy expansion illustration",
+        "query2": "cosmic acceleration graphic"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "space mission celebration",
+        "query2": "science short ending"
+      }
+    ],
+    "description": "Launching soon, the Roman Space Telescope will use powerful imaging to map the hidden scaffolding of dark matter and probe dark energy. Stay tuned for the cosmos revealed. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#NASA",
+      "#darkmatter",
+      "#darkenergy",
+      "#astronomy",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Water Vapor Found on Distant World",
+    "thumb": "WATER VAPOR DISCOVERY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A planet 110 light‑years away hides a familiar gas",
+        "hook_top": "PLANET HIDES GAS",
+        "query": "K2-18b exoplanet telescope",
+        "query2": "exoplanet water vapor"
+      },
+      {
+        "role": "fact",
+        "text": "In 2020 the James Webb Space Telescope detected water vapor in the atmosphere of K2‑18b",
+        "chips": [
+          {
+            "t": "2020 detection",
+            "on": "detected",
+            "style": "white"
+          },
+          {
+            "t": "James Webb",
+            "on": "James",
+            "style": "accent"
+          }
+        ],
+        "query": "James Webb Space Telescope K2-18b",
+        "query2": "water vapor exoplanet"
+      },
+      {
+        "role": "fact",
+        "text": "K2‑18b is about 2.6 times Earth's radius and orbits a red dwarf star",
+        "chips": [
+          {
+            "t": "2.6 × Earth",
+            "on": "2.6",
+            "style": "white"
+          },
+          {
+            "t": "red dwarf",
+            "on": "dwarf",
+            "style": "accent"
+          }
+        ],
+        "query": "K2-18b size illustration",
+        "query2": "red dwarf planet"
+      },
+      {
+        "role": "reveal",
+        "text": "The same planet may have a temperate surface, raising real chances for habitability",
+        "reveal_top": "POTENTIAL HABITABLE WORLD",
+        "query": "habitable exoplanet concept art",
+        "query2": "K2-18b habitability"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science channel logo",
+        "query2": "science short"
+      }
+    ],
+    "description": "James Webb's discovery of water vapor on K2‑18b hints at a world that could host life. Follow for daily science breakthroughs!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#exoplanet",
+      "#JamesWebb",
+      "#water",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Titan’s Hidden Ocean Depth",
+    "thumb": "TITAN OCEAN DEPTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Saturn’s moon Titan holds a sea beneath its icy crust",
+        "hook_top": "TITAN SEES SEA",
+        "query": "Titan subsurface ocean model",
+        "query2": "Titan underground ocean"
+      },
+      {
+        "role": "fact",
+        "text": "Cassini’s radar data in 2012 suggested a liquid layer up to 100 km deep beneath Titan’s surface",
+        "chips": [
+          {
+            "t": "100 km deep",
+            "on": "100",
+            "style": "white"
+          },
+          {
+            "t": "Cassini radar",
+            "on": "Cassini",
+            "style": "accent"
+          }
+        ],
+        "query": "Cassini radar Titan ocean",
+        "query2": "Titan subsurface depth"
+      },
+      {
+        "role": "fact",
+        "text": "The ocean is likely composed of water mixed with ammonia, keeping it liquid at Titan’s frigid temperatures",
+        "chips": [
+          {
+            "t": "water‑ammonia mix",
+            "on": "ammonia",
+            "style": "white"
+          },
+          {
+            "t": "−180 °C",
+            "on": "−180",
+            "style": "accent"
+          }
+        ],
+        "query": "Titan ammonia water mixture",
+        "query2": "Titan ocean composition"
+      },
+      {
+        "role": "reveal",
+        "text": "Scientists think this hidden ocean could host life, making Titan the most promising ocean world beyond Earth",
+        "reveal_top": "LIFE POSSIBLE",
+        "query": "hypothetical life Titan ocean",
+        "query2": "Titan life possibility"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science channel logo",
+        "query2": "science short"
+      }
+    ],
+    "description": "Cassini revealed a deep, ammonia‑rich ocean under Titan’s icy shell, sparking hopes of alien life. Follow for daily science wonders!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Titan",
+      "#Saturn",
+      "#Cassini",
+      "#OceanWorld",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Failed Galaxy Myth Busted",
+    "thumb": "DARK GALAXY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "The Cloud‑9 galaxy stretches over several million light‑years, yet appears empty.",
+        "hook_top": "EMPTY GALAXY REVEALED",
+        "query": "Cloud‑9 galaxy image",
+        "query2": "dark galaxy telescope"
+      },
+      {
+        "role": "myth",
+        "text": "People think every galaxy glows with stars.",
+        "label": "All Galaxies Have Stars",
+        "query": "galaxy with stars illustration",
+        "query2": "spiral galaxy"
+      },
+      {
+        "role": "truth",
+        "text": "Cloud‑9 is a dark, star‑less galaxy discovered by astronomers in 2023.",
+        "label": "Star‑less Dark Galaxy",
+        "query": "Cloud‑9 dark galaxy observation",
+        "query2": "starless galaxy"
+      },
+      {
+        "role": "callout",
+        "text": "Dark galaxy confirmed",
+        "label": "Dark Galaxy",
+        "sub": "No stars, just dark matter and gas",
+        "label_on": "BUST",
+        "query": "dark galaxy diagram",
+        "query2": "galaxy without stars"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "science follow animation",
+        "query2": "shorts subscribe"
+      }
+    ],
+    "description": "Many think all galaxies shine, but Cloud‑9 proves otherwise. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#astronomy",
+      "#galaxies",
+      "#darkmatter",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Hidden Life in Deep Sea Vents",
+    "thumb": "DEEP VENT LIFE",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Beneath the Pacific, 2,000‑meter vents host giant shrimp",
+        "hook_top": "PACIFIC VENT GIANTS",
+        "query": "hydrothermal vent Pacific ocean",
+        "query2": "deep sea vent Pacific"
+      },
+      {
+        "role": "fact",
+        "text": "Vent shrimp thrive in water hotter than 400 °C",
+        "chips": [
+          {
+            "t": "400 °C WATER",
+            "on": "hotter",
+            "style": "accent"
+          },
+          {
+            "t": "VENT SHRIMP",
+            "on": "shrimp",
+            "style": "white"
+          }
+        ],
+        "punch": "survive",
+        "query": "vent shrimp near hydrothermal vent",
+        "query2": "deep sea shrimp hot water"
+      },
+      {
+        "role": "callout",
+        "text": "Extreme organisms adapt with unique proteins",
+        "label": "EXTREMOPHILE ADAPTATION",
+        "sub": "Special proteins keep cells stable at boiling temps",
+        "label_on": "adaptation",
+        "query": "extremophile organisms hydrothermal vent",
+        "query2": "deep sea extremophile proteins"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science short video",
+        "query2": "short science clips"
+      }
+    ],
+    "description": "Explore how shrimp survive the scalding waters of Pacific hydrothermal vents. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#science",
+      "#ocean",
+      "#biology",
+      "#deepsea",
+      "#extremophiles"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

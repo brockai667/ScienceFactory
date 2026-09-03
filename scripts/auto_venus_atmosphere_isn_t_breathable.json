@@ -1,0 +1,54 @@
+{
+  "title": "Venus' Atmosphere Isn’t Breathable",
+  "thumb": "VENUS AIR DEATH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Venus' surface pressure equals 90 atmospheres.",
+      "hook_top": "90 ATMOSPHERES ON VENUS",
+      "query": "venus surface pressure",
+      "query2": "venus pressure"
+    },
+    {
+      "role": "myth",
+      "text": "Many think Venus has a breathable atmosphere for humans.",
+      "label": "Breathable Atmosphere Myth",
+      "query": "venus atmosphere composition",
+      "query2": "venus atmosphere"
+    },
+    {
+      "role": "truth",
+      "text": "Venus' air is thick CO₂, with trace nitrogen, and toxic sulfur dioxide, making it lethal to breathe.",
+      "label": "CO₂ Toxic Fact",
+      "query": "venus atmosphere CO2",
+      "query2": "venus gases"
+    },
+    {
+      "role": "callout",
+      "text": "The planet’s sky is a toxic, crushing furnace.",
+      "label": "Venus Furnace",
+      "sub": "CO₂ & SO₂",
+      "label_on": "toxic",
+      "query": "venus planet surface",
+      "query2": "venus surface"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "Venus' Atmosphere Isn’t Breathable – Here’s Why!",
+      "query2": "cinematic nature landscape"
+    }
+  ],
+  "description": "Venus' atmosphere is deadly, not breathable, packed with CO₂ and sulfur dioxide. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#venus",
+    "#science",
+    "#space",
+    "#planetary",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}
