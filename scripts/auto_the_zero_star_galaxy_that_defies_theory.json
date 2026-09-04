@@ -1,0 +1,69 @@
+{
+  "title": "The Zero‑Star Galaxy That Defies Theory",
+  "thumb": "ZERO‑STAR GALAXY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A galaxy with 0 stars was spotted by astronomers",
+      "hook_top": "ZEROSTAR GALAXY",
+      "query": "failed galaxy Hubble image",
+      "query2": "cloud‑9 galaxy telescope"
+    },
+    {
+      "role": "fact",
+      "text": "In 2024 researchers confirmed Cloud‑9 as the first known starless galaxy",
+      "chips": [
+        {
+          "t": "2024",
+          "on": "year",
+          "style": "white"
+        },
+        {
+          "t": "first starless",
+          "on": "discovery",
+          "style": "accent"
+        }
+      ],
+      "query": "Cloud‑9 galaxy discovery news",
+      "query2": "starless galaxy announcement"
+    },
+    {
+      "role": "fact",
+      "text": "Cloud‑9 contains almost no dark matter, unlike typical galaxies",
+      "chips": [
+        {
+          "t": "no dark matter",
+          "on": "surprise",
+          "style": "accent"
+        }
+      ],
+      "query": "Cloud‑9 dark matter image",
+      "query2": "failed galaxy dark matter"
+    },
+    {
+      "role": "reveal",
+      "text": "It’s actually a massive gas cloud that never ignited any stars",
+      "reveal_top": "GAS CLOUD ONLY",
+      "query": "Cloud‑9 gas cloud illustration",
+      "query2": "failed galaxy structure"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "space science subscribe",
+      "query2": "astronomy short video"
+    }
+  ],
+  "description": "Scientists uncovered a galaxy that never formed a single star, shaking up galaxy formation models. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#astronomy",
+    "#galaxy",
+    "#science",
+    "#cloud9"
+  ],
+  "place": "",
+  "country": ""
+}

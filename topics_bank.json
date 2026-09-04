@@ -12419,5 +12419,136 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "The Mystery of Cloud Nine",
+    "thumb": "ZERO STAR GALAXY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A galaxy discovered with zero stars shocked astronomers",
+        "hook_top": "ZEROSTAR GALAXY SHOCK",
+        "query": "failed galaxy empty",
+        "query2": "dark galaxy"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "It contains no visible stars, only dark matter and gas",
+        "label": "NO VISIBLE STARS",
+        "label_on": "Stars",
+        "query": "dark galaxy stars missing",
+        "query2": "galaxy without stars"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "Its dark‑matter halo is roughly the size of the Milky Way’s",
+        "label": "MILKY WAY‑SIZED HALO",
+        "label_on": "Halo",
+        "query": "dark matter halo galaxy",
+        "query2": "galaxy halo size"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "Astronomers identified it using data from the Dark Energy Survey",
+        "label": "DISCOVERED BY DES",
+        "label_on": "Discover",
+        "query": "Dark Energy Survey telescope",
+        "query2": "DES galaxy discovery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "science short video",
+        "query2": "educational science"
+      }
+    ],
+    "description": "The Cloud‑9 galaxy is a real, star‑less system that challenges our view of how galaxies form. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#astronomy",
+      "#galaxies",
+      "#darkmatter",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Saturn’s Mysterious Polar Hexagon",
+    "thumb": "HEXAGON MYSTERY",
+    "description": "Saturn's north‑pole storm forms a perfect ten‑sided shape, baffling scientists for decades. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#science",
+      "#space",
+      "#saturn",
+      "#planetaryscience",
+      "#fyp"
+    ],
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Saturn's south pole hides a perfect ten‑sided storm",
+        "hook_top": "TENSIDED STORM",
+        "query": "Saturn hexagon",
+        "query2": "Saturn polar storm"
+      },
+      {
+        "role": "fact",
+        "text": "The hexagon stretches about 30,000 km across, larger than Earth’s diameter",
+        "chips": [
+          {
+            "t": "30,000 km",
+            "on": "size",
+            "style": "white"
+          },
+          {
+            "t": "Earth sized",
+            "on": "scale",
+            "style": "accent"
+          }
+        ],
+        "query": "Saturn hexagon size",
+        "query2": "Saturn polar hexagon measurement"
+      },
+      {
+        "role": "fact",
+        "text": "Winds inside the shape roar up to 200 m/s, faster than a Category 5 hurricane",
+        "chips": [
+          {
+            "t": "200 m/s",
+            "on": "speed",
+            "style": "white"
+          },
+          {
+            "t": "hurricane",
+            "on": "compare",
+            "style": "accent"
+          }
+        ],
+        "query": "Saturn hexagon wind speed",
+        "query2": "Saturn polar storm winds"
+      },
+      {
+        "role": "reveal",
+        "text": "It's not a solid edge at all – the hexagon is a standing wave trapped by the planet’s jet streams",
+        "reveal_top": "IT'S A WAVING TRAP",
+        "query": "Saturn hexagon standing wave",
+        "query2": "Saturn polar hexagon explanation"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space science illustration",
+        "query2": "astronomy graphics"
+      }
+    ],
+    "place": "",
+    "country": ""
   }
 ]

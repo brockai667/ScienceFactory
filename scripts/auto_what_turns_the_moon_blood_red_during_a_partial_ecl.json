@@ -1,0 +1,58 @@
+{
+  "title": "What Turns the Moon Blood‑Red During a Partial Eclipse?",
+  "thumb": "RED MOON ECLIPSE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Tonight’s partial eclipse will paint the Moon a deep crimson over Spain",
+      "hook_top": "CRIMSON MOON OVER SPAIN",
+      "query": "partial lunar eclipse Spain red moon",
+      "query2": "lunar eclipse red hue"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "The red color comes from Earth’s atmosphere filtering sunlight, a phenomenon called Rayleigh scattering",
+      "label": "RAYLEIGH SCATTERING",
+      "label_on": "Rayleigh",
+      "query": "Rayleigh scattering lunar eclipse",
+      "query2": "atmospheric scattering eclipse"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "During a partial eclipse only a slice of the Moon enters Earth’s umbra, creating a dramatic gradient",
+      "label": "PARTIAL UMBRA SHADE",
+      "label_on": "Umbra",
+      "query": "partial eclipse umbra gradient",
+      "query2": "lunar eclipse shadow slice"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "The next total eclipse won’t happen until August 2027, making tonight’s view a rare treat",
+      "label": "NEXT TOTAL 2027",
+      "label_on": "2027",
+      "query": "2027 total solar eclipse map",
+      "query2": "next total eclipse 2027"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science short video thumbnail",
+      "query2": "educational video icon"
+    }
+  ],
+  "description": "Discover why the Moon glows scarlet during a partial eclipse and why this night’s spectacle is unique. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#eclipse",
+    "#moon",
+    "#space",
+    "#science",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}
