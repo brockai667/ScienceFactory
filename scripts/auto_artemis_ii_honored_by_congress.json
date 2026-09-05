@@ -1,0 +1,58 @@
+{
+  "title": "Artemis II Honored by Congress",
+  "thumb": "ARTEMIS II MEDAL",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Artemis II crew receive the Congressional Medal of Honor.",
+      "hook_top": "ARTEMIS II MEDAL",
+      "query": "artemis ii crew medal",
+      "query2": "artemis ii"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "label": "FIRST MOON ORBITERS",
+      "label_on": "first",
+      "text": "Artemis II was the first crewed mission to orbit the Moon since 1972.",
+      "query": "artemis ii moon orbit",
+      "query2": "artemis ii mission"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "label": "CONGRESS AWARD",
+      "label_on": "congress",
+      "text": "The mission’s crew were awarded the Congressional Medal of Honor for their historic accomplishment.",
+      "query": "congressional medal honor artemis ii",
+      "query2": "congress medal"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "label": "WHITE HOUSE CEREMONY",
+      "label_on": "ceremony",
+      "text": "The award ceremony took place at the White House, highlighting national pride in space exploration.",
+      "query": "artemis ii white house ceremony",
+      "query2": "white house ceremony"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "artemis ii science",
+      "query2": "science"
+    }
+  ],
+  "description": "Artemis II’s crew earned the Congressional Medal of Honor after becoming the first astronauts to orbit the Moon in decades. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#artemis",
+    "#space",
+    "#science",
+    "#NASA",
+    "#exploration"
+  ],
+  "place": "",
+  "country": ""
+}

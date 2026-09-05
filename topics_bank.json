@@ -12550,5 +12550,59 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Hidden Truth About Saturn Hexagon",
+    "thumb": "HEXAGON SECRET",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Saturn’s north pole features a perfect ten‑sided cloud formation",
+        "hook_top": "TENSIDED CLOUD",
+        "query": "Saturn north pole hexagon",
+        "query2": "Saturn hexagon clouds"
+      },
+      {
+        "role": "myth",
+        "text": "People think the hexagon is a solid barrier that traps storms",
+        "label": "HEXAGON IS SOLID",
+        "query": "Saturn hexagon illustration",
+        "query2": "Saturn storm barrier"
+      },
+      {
+        "role": "truth",
+        "text": "It’s actually a fast‑moving jet stream that shapes clouds into a hexagon",
+        "label": "JET STREAM SHAPE",
+        "query": "Saturn jet stream animation",
+        "query2": "Saturn atmosphere winds"
+      },
+      {
+        "role": "callout",
+        "text": "Jet streams can create stable geometric patterns",
+        "label": "GEOMETRIC JET",
+        "sub": "Fast winds sculpt the hexagon",
+        "label_on": "jet",
+        "query": "Saturn cloud patterns",
+        "query2": "Saturn atmosphere"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "space graphics",
+        "query2": "space icons"
+      }
+    ],
+    "description": "The iconic hexagon on Saturn isn’t a solid wall but a high‑speed jet stream that molds clouds into a perfect shape. Discover why this mesmerizing pattern persists. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Saturn",
+      "#Space",
+      "#Science",
+      "#Astronomy",
+      "#MythBuster"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
