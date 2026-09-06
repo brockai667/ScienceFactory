@@ -1,0 +1,63 @@
+{
+  "title": "Artemis II Crew Earn Space Medal",
+  "thumb": "ARTHEMIS HONOR",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Artemis II crew receive Congressional Medal",
+      "hook_top": "ARTHEMIS II HONOR",
+      "query": "Artemis II medal",
+      "query2": "Artemis II"
+    },
+    {
+      "role": "fact",
+      "text": "They were awarded the Space Medal",
+      "chips": [
+        {
+          "t": "Space Medal",
+          "on": "awarded",
+          "style": "white"
+        }
+      ],
+      "query": "Artemis II Space Medal",
+      "query2": "Artemis II medal"
+    },
+    {
+      "role": "fact",
+      "text": "The medal honors their historic lunar orbit",
+      "chips": [
+        {
+          "t": "historic orbit",
+          "on": "orbit",
+          "style": "accent"
+        }
+      ],
+      "query": "Artemis II lunar orbit",
+      "query2": "Artemis II orbit"
+    },
+    {
+      "role": "reveal",
+      "text": "They were the first to orbit the Moon",
+      "reveal_top": "FIRST MOON ORBIT",
+      "query": "Artemis II first moon orbit",
+      "query2": "Artemis II orbit"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "Artemis II science",
+      "query2": "Artemis II"
+    }
+  ],
+  "description": "The Artemis II crew received the Congressional Space Medal of Honor for their historic lunar orbit. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#ArtemisII",
+    "#Space",
+    "#NASA",
+    "#Science"
+  ],
+  "place": "",
+  "country": ""
+}

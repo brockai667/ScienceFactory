@@ -1,0 +1,63 @@
+{
+  "title": "Pluto Reveals 1,200 km Liquid Channel",
+  "thumb": "PLUTO’S LIQUID RIVER",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "1,200‑km channel found on Pluto",
+      "hook_top": "PLUTOS LONG CHANNEL",
+      "query": "pluto surface channel",
+      "query2": "pluto surface"
+    },
+    {
+      "role": "fact",
+      "text": "Recent images show liquid flowing",
+      "chips": [
+        {
+          "t": "1,200 km",
+          "on": "flowing",
+          "style": "accent"
+        }
+      ],
+      "query": "pluto liquid flow",
+      "query2": "pluto liquid"
+    },
+    {
+      "role": "fact",
+      "text": "The channel stretches over 1,200 km",
+      "chips": [
+        {
+          "t": "1,200 km",
+          "on": "length",
+          "style": "accent"
+        }
+      ],
+      "query": "pluto channel length",
+      "query2": "pluto channel"
+    },
+    {
+      "role": "reveal",
+      "text": "Pluto has a river of liquid",
+      "reveal_top": "LIQUID RIVER ON PLUTO",
+      "query": "pluto liquid river",
+      "query2": "pluto liquid"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if curiosity runs your brain.",
+      "query": "pluto science",
+      "query2": "pluto"
+    }
+  ],
+  "description": "A 1,200‑km channel on Pluto shows liquid flowing across its icy surface. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Pluto",
+    "#Space",
+    "#NASA",
+    "#Science"
+  ],
+  "place": "",
+  "country": ""
+}
