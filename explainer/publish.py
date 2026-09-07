@@ -9,6 +9,7 @@ Pouzitie:
   python explainer/publish.py output/explainer/<slug>/meta.json --yt-only
   python explainer/publish.py output/explainer/<slug>/meta.json --reels-only
   python explainer/publish.py ... --dry-run                                # nic neposle, len vypise plan
+  python explainer/publish.py --drain                                       # doplanuje cakajuce reels (denny beh)
 Stav: output/explainer/<slug>/meta.json (yt_url, reels[i].pushed) -> opakovane spustenie neduplikuje.
 """
 import datetime
@@ -236,6 +237,12 @@ def publish_reels(meta, cfg, dry=False, yt_url=None):
                 print(f"     [{svc}] OK")
             else:
                 print(f"     [{svc}] CHYBA: {msg[:200]}")
+                # Buffer free = max 10 naplanovanych/kanal -> odloz, denny beh (--drain) doplanuje 1 den dopredu
+                import reels_pending
+                reels_pending.add({"series": meta.get("series"), "name": reel.get("name"), "label": reel.get("label"),
+                                   "title": title, "yt_title": yt_title, "body": body, "hosted_url": url,
+                                   "due": due, "services": [svc]})
+                print(f"     [{svc}] odlozene do reels_pending.json")
     fully = sum(1 for r in reels if set(r.get("pushed", [])) >= set(services))
     print(f"  [reels] plne naplanovane: {fully}/{n}")
 
@@ -262,6 +269,10 @@ def publish(meta_path, do_yt=True, do_reels=True, dry=False):
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    if "--drain" in sys.argv:
+        import reels_pending
+        reels_pending.drain(common.load_cfg(), dry="--dry-run" in sys.argv)
+        sys.exit(0)
     if not args:
         print(__doc__)
         sys.exit(1)
