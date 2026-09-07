@@ -1,0 +1,54 @@
+{
+  "title": "Sound Vanishes During Spacewalks",
+  "thumb": "SILENT SPACE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "At 100 km above Earth, sound disappears in a vacuum.",
+      "hook_top": "NO SOUND ABOVE EARTH",
+      "query": "astronaut spacewalk",
+      "query2": "spacewalk"
+    },
+    {
+      "role": "myth",
+      "text": "People think astronauts hear nothing when walking outside the ISS.",
+      "label": "Zero‑Sound Walk",
+      "query": "spacewalk silent",
+      "query2": "astronaut outside"
+    },
+    {
+      "role": "truth",
+      "text": "In a vacuum sound cannot travel, but astronauts hear radio chatter and equipment noises transmitted through their suits.",
+      "label": "Radio‑Only Sound",
+      "query": "astronaut helmet communication",
+      "query2": "spacewalk audio"
+    },
+    {
+      "role": "callout",
+      "text": "The silence you feel is just the vacuum; sound comes from your own suit and mission control.",
+      "label": "Sound Source",
+      "sub": "Vacuum blocks air sound",
+      "label_on": "vacuum",
+      "query": "space helmet headset",
+      "query2": "astronaut communication"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "Sound Vanishes During Spacewalks",
+      "query2": "cinematic nature landscape"
+    }
+  ],
+  "description": "Spacewalks aren’t completely silent – the vacuum blocks air sound, but radio chatter keeps astronauts connected. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#science",
+    "#spacewalk",
+    "#mythbuster",
+    "#vacuum",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}

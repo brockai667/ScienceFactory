@@ -12658,5 +12658,63 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Saturn’s Polygonal Cloud Mystery",
+    "thumb": "DECAGON CLOUD",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Saturn’s south pole hides a ten‑sided cloud",
+        "hook_top": "TENSIDED CLOUD PUZZLE",
+        "query": "Saturn south pole cloud",
+        "query2": "Saturn pole atmospheric feature"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "Cassini captured a perfect decagonal cloud in 2023",
+        "label": "DECAGON CLOUD",
+        "label_on": "decagon",
+        "query": "Saturn decagonal cloud",
+        "query2": "Saturn ten‑sided storm"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "It forms from a standing atmospheric wave, similar to the hexagon but with a different wave number",
+        "label": "ATMOSPHERIC WAVE",
+        "label_on": "wave",
+        "query": "Saturn atmospheric wave pattern",
+        "query2": "Saturn polar wave animation"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "Scientists say the decagon challenges existing models that only predicted a single hexagonal jet",
+        "label": "MODEL CHALLENGE",
+        "label_on": "challenge",
+        "query": "Saturn storm model challenge",
+        "query2": "Saturn atmospheric model research"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if curiosity runs your brain.",
+        "query": "space science illustration",
+        "query2": "astronomy graphics"
+      }
+    ],
+    "description": "Cassini revealed a rare ten‑sided cloud over Saturn’s south pole, a shape never seen before. This discovery forces scientists to rethink atmospheric wave models. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Saturn",
+      "#SpaceScience",
+      "#Astronomy",
+      "#Cassini",
+      "#PlanetaryScience"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
