@@ -1,0 +1,1737 @@
+{
+  "series": "Every Car Body Type Explained",
+  "title": "Every Car Body Type Explained: Which One Fits Your Life?",
+  "description": "Discover the differences between the main car body styles and why they matter to you. From sleek coupes to roomy SUVs, we break down each type in plain terms.",
+  "hashtags": [
+    "#CarTypes",
+    "#Sedan",
+    "#SUV",
+    "#Convertible",
+    "#Pickup",
+    "#Minivan",
+    "#AutoExplained"
+  ],
+  "hero": {
+    "emoji": "🚗"
+  },
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "People think sedans are just small SUVs. They are not.",
+      "left": {
+        "emoji": "🚗",
+        "label": "Sedan",
+        "vis": {
+          "emoji": "🚗"
+        }
+      },
+      "right": {
+        "emoji": "🚙",
+        "label": "SUV",
+        "vis": {
+          "emoji": "🚙"
+        }
+      },
+      "line": "Just a small SUV?",
+      "cues": {
+        "left": "sedans are",
+        "right": "small SUVs",
+        "strike": "They are not."
+      }
+    },
+    "grid": {
+      "say": "Body types change space, style, and utility. This is every car body type, explained. Starting with the sedan.",
+      "cues": {
+        "grid": "Body types",
+        "title": "explained",
+        "mark": "the sedan"
+      },
+      "pulse": [
+        {
+          "cue": "space",
+          "items": [
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {
+      "name": "Sedan",
+      "label": "SEDAN",
+      "icon": {
+        "emoji": "🚗"
+      },
+      "hook": "The classic four‑door that balances comfort and efficiency.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "The sedan. It’s the classic four‑door car that’s been hauling families since the roaring twenties.",
+          "slams": [
+            {
+              "text": "THE CLASSIC SEDAN"
+            },
+            {
+              "text": "“FOUR‑DOOR CAR”",
+              "cue": "four‑door car",
+              "strike": true
+            },
+            {
+              "text": "EVER SINCE THE 1920S",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Sedan.",
+          "title": "Sedan",
+          "kicker": "EVERY CAR BODY TYPE, PART 1",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in the 1920s, the sedan measures about four point eight meters long—roughly the length of a school bus. It introduced an enclosed trunk and four doors, keeping passengers and cargo separate.",
+          "head": "Sedan origins",
+          "label": "1920s — the birth",
+          "stamp": "1920s",
+          "callouts": [
+            [
+              "#4a90e2",
+              "enclosed trunk"
+            ],
+            [
+              "#f5a623",
+              "four doors"
+            ]
+          ],
+          "cues": {
+            "action": "enclosed trunk",
+            "circle": "four doors"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What made the sedan stand out? An enclosed trunk, four doors, and distinct passenger and cargo spaces.",
+          "head": "Key features",
+          "sub": {
+            "text": "trunk, doors, compartments",
+            "cue": "distinct passenger"
+          },
+          "hub": {
+            "emoji": "🚗"
+          },
+          "items": [
+            {
+              "emoji": "🧳",
+              "label": "Enclosed trunk",
+              "cue": "enclosed trunk",
+              "vis": {
+                "emoji": "🧳"
+              }
+            },
+            {
+              "emoji": "🚪",
+              "label": "Four doors",
+              "cue": "four doors",
+              "vis": {
+                "emoji": "🚪"
+              }
+            },
+            {
+              "emoji": "📦",
+              "label": "Separate cargo",
+              "cue": "cargo spaces",
+              "vis": {
+                "emoji": "📦"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "At four point eight meters, a sedan is about the same length as a typical school bus, giving you plenty of room inside.",
+          "num_end": 4.8,
+          "decimals": 1,
+          "unit": "m",
+          "label": "Sedan length",
+          "sub": "as long as a school bus",
+          "vis": {
+            "emoji": "🚌"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚗"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "four point eight",
+            "sub": "school bus"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "It didn’t have a removable roof, so you couldn’t drop the top for open‑air cruising. That’s the one thing it lacks.",
+          "head": "Missing roof",
+          "label": "No removable roof",
+          "stamp": "NO ROOF",
+          "callouts": [
+            [
+              "#d62828",
+              "no open air"
+            ],
+            [
+              "#7a7a7a",
+              "fixed roof"
+            ]
+          ],
+          "cues": {
+            "action": "removable roof",
+            "circle": "open‑air cruising"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you still see sedans everywhere—personal family cars driving streets across the globe.",
+          "head": "Still used today",
+          "sub": {
+            "text": "family cars worldwide",
+            "cue": "personal family"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🌍",
+              "label": "Worldwide",
+              "cue": "across the globe",
+              "vis": {
+                "emoji": "🌍"
+              }
+            },
+            {
+              "emoji": "👨‍👩‍👧‍👦",
+              "label": "Family cars",
+              "cue": "family cars",
+              "vis": {
+                "emoji": "👨‍👩‍👧‍👦"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to a coupe, the sedan’s roof is about ten degrees flatter, giving you a more upright cabin and extra headroom.",
+          "head": "Sedan vs Coupe",
+          "ekg": null,
+          "left": {
+            "emoji": "🚙",
+            "label": "Sedan",
+            "cue": "Sedan’s roof",
+            "vis": {
+              "emoji": "🚙"
+            }
+          },
+          "right": {
+            "emoji": "🏎️",
+            "label": "Coupe",
+            "vis": {
+              "emoji": "🏎️"
+            }
+          },
+          "line": "More headroom, less angle",
+          "cues": {
+            "line": "extra headroom"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hatchback",
+      "label": "HATCHBACK",
+      "icon": {
+        "emoji": "🚘"
+      },
+      "hook": "Compact rear door gives you extra cargo flexibility.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "You think a hatchback is just a tiny car? It flipped the script in the seventies, giving you a door that opens up the whole back.",
+          "slams": [
+            {
+              "text": "THE HATCHBACK REVOLUTION"
+            },
+            {
+              "text": "IT'S NOT JUST SMALL",
+              "cue": "just a tiny",
+              "color": "red",
+              "strike_on": "just a tiny"
+            },
+            {
+              "text": "“FLIPPED THE SCRIPT”",
+              "cue": "flipped the script",
+              "strike": true
+            },
+            {
+              "text": "ONE DOOR WONDER"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Hatchback.",
+          "title": "Hatchback",
+          "kicker": "EVERY CAR BODY TYPE, PART 2",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "The hatchback burst onto the scene in the 1970s, packing a whopping 350 liters of cargo space behind a single lift‑up door.",
+          "head": "1970s debut",
+          "label": "350 L cargo volume",
+          "stamp": "1970s",
+          "callouts": [
+            [
+              "#4a90e2",
+              "rear hatch"
+            ],
+            [
+              "#f5a623",
+              "fold‑down seats"
+            ]
+          ],
+          "cues": {
+            "stamp": "1970s",
+            "action": "lift‑up door",
+            "circle": "350 liters"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes it special? A rear hatch door, seats that fold flat, and a footprint that fits into tight city streets.",
+          "head": "Key features",
+          "sub": {
+            "text": "compact and clever"
+          },
+          "hub": {
+            "emoji": "🚘"
+          },
+          "items": [
+            {
+              "emoji": "🚪",
+              "label": "Rear hatch",
+              "cue": "rear hatch",
+              "vis": {
+                "emoji": "🚪"
+              }
+            },
+            {
+              "emoji": "🪑",
+              "label": "Fold‑flat seats",
+              "cue": "fold flat",
+              "vis": {
+                "emoji": "🪑"
+              }
+            },
+            {
+              "emoji": "🏙️",
+              "label": "Small footprint",
+              "vis": {
+                "emoji": "🏙️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "That 350 liters is like loading a medium suitcase and a grocery bag together—enough for a weekend trip without a separate trunk.",
+          "num_end": 350.0,
+          "decimals": 0,
+          "unit": "L",
+          "label": "Hatchback cargo volume",
+          "sub": "suitcase + grocery bag",
+          "vis": {
+            "emoji": "🧳"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚗"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "350 liters",
+            "sub": "weekend trip"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But it gives up a dedicated trunk compartment, merging passenger and cargo space into one flexible area.",
+          "head": "The trade‑off",
+          "label": "no separate trunk",
+          "stamp": "ONE SPAC",
+          "callouts": [
+            [
+              "#d62828",
+              "no trunk"
+            ],
+            [
+              "#7a7a7a",
+              "shared space"
+            ]
+          ],
+          "cues": {
+            "action": "dedicated trunk",
+            "circle": "one flexible area"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find hatchbacks ruling city roads and subcompact segments worldwide, from budget rides to sporty hatchy hot rods.",
+          "head": "Who uses them?",
+          "sub": {
+            "text": "city and subcompact lovers"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🏙️",
+              "label": "City drivers",
+              "vis": {
+                "emoji": "🏙️"
+              }
+            },
+            {
+              "emoji": "🚙",
+              "label": "Subcompact fans",
+              "vis": {
+                "emoji": "🚙"
+              }
+            },
+            {
+              "emoji": "⚡",
+              "label": "Sporty hatchy",
+              "cue": "sporty hatchy",
+              "vis": {
+                "emoji": "⚡"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to a sedan, a hatchback is about half a meter shorter, letting you park tighter and zip through narrow alleys with ease.",
+          "head": "Size advantage",
+          "ekg": "shorter",
+          "left": {
+            "emoji": "🚗",
+            "label": "Sedan",
+            "cue": "a sedan",
+            "vis": {
+              "emoji": "🚗"
+            }
+          },
+          "right": {
+            "emoji": "🚘",
+            "label": "Hatchback",
+            "cue": "a hatchback",
+            "vis": {
+              "emoji": "🚘"
+            }
+          },
+          "line": "Why squeeze into a bigger box?",
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "And while a sedan keeps cargo separate, the hatchback’s open plan means you can load a bike or a stroller without folding seats down first.",
+          "head": "Flexibility win",
+          "ekg": "open plan",
+          "left": {
+            "emoji": "🚗",
+            "label": "Sedan trunk",
+            "cue": "sedan keeps",
+            "vis": {
+              "emoji": "🚗"
+            }
+          },
+          "right": {
+            "emoji": "🚘",
+            "label": "Open hatch",
+            "cue": "open plan",
+            "vis": {
+              "emoji": "🚘"
+            }
+          },
+          "line": "Load more, hassle less",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Station wagon",
+      "label": "WAGON",
+      "icon": {
+        "emoji": "🚎"
+      },
+      "hook": "Long roofline adds cargo room without a van’s height.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Think of a car that’s part sedan, part cargo hauler. It’s the station wagon, the family’s hidden superhero from the 1940s.",
+          "slams": [
+            {
+              "text": "THE FAMILY'S HERO"
+            },
+            {
+              "text": "HIDDEN CARGO"
+            },
+            {
+              "text": "FROM THE 1940S"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Station wagon.",
+          "title": "Station wagon",
+          "kicker": "EVERY CAR BODY TYPE, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in the 1940s, the wagon added an extended roofline and a rear hatch, giving you about two meters of cargo length.",
+          "head": "Wagon roots",
+          "label": "2.0 m cargo length",
+          "stamp": "1940s",
+          "callouts": [
+            [
+              "#c9a227",
+              "extended roofline"
+            ],
+            [
+              "#1c4ed8",
+              "rear hatch"
+            ]
+          ],
+          "cues": {
+            "stamp": "1940s",
+            "action": "extended roofline",
+            "circle": "rear hatch",
+            "callouts": "extended roofline"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What the wagon gave you: an extended roof, a rear hatch, and a bigger cargo area for everything from groceries to gear.",
+          "head": "New wagon perks",
+          "sub": {
+            "text": "bigger cargo area",
+            "cue": "bigger cargo"
+          },
+          "hub": {
+            "emoji": "🚎"
+          },
+          "items": [
+            {
+              "emoji": "📦",
+              "label": "Extended roof",
+              "cue": "Extended roof",
+              "vis": {
+                "emoji": "📦"
+              }
+            },
+            {
+              "emoji": "🪟",
+              "label": "Rear hatch",
+              "cue": "Rear hatch",
+              "vis": {
+                "emoji": "🪟"
+              }
+            },
+            {
+              "emoji": "🚚",
+              "label": "Larger cargo",
+              "vis": {
+                "emoji": "🚚"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Two meters of cargo length means you can fit a surfboard or a full grocery run without folding seats.",
+          "num_end": 2.0,
+          "decimals": 1,
+          "unit": "m",
+          "label": "Cargo length",
+          "sub": "0.5 m longer than a hatchback",
+          "vis": {
+            "emoji": "📏"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚎"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "two meters"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The trade‑off? Wagons skipped sporty styling, focusing instead on family‑friendly space that lives on today in many SUVs and crossovers.",
+          "head": "Style trade‑off",
+          "label": "Family‑first design",
+          "stamp": "SPOILERS",
+          "callouts": [
+            [
+              "#d62828",
+              "no sporty flair"
+            ],
+            [
+              "#7a7a7a",
+              "SUV heritage"
+            ]
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "list",
+          "say": "People still love wagons for road trips, weekend gear, and hauling kids to soccer practice.",
+          "head": "Why you still need it",
+          "sub": {
+            "text": "family trips"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚗",
+              "label": "Road trips",
+              "cue": "Road trips",
+              "vis": {
+                "emoji": "🚗"
+              }
+            },
+            {
+              "emoji": "⚽",
+              "label": "Kids’ gear",
+              "vis": {
+                "emoji": "⚽"
+              }
+            },
+            {
+              "emoji": "🛶",
+              "label": "Weekend gear",
+              "cue": "Weekend gear",
+              "vis": {
+                "emoji": "🛶"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Here’s the twist: a wagon’s cargo length beats a hatchback’s by half a meter, yet both feel like a normal car to drive.",
+          "head": "More room, same ride",
+          "ekg": null,
+          "left": {
+            "emoji": "🚎",
+            "label": "Wagon",
+            "cue": "Wagon",
+            "vis": {
+              "emoji": "🚎"
+            }
+          },
+          "right": {
+            "emoji": "🚗",
+            "label": "Hatchback",
+            "cue": "Hatchback",
+            "vis": {
+              "emoji": "🚗"
+            }
+          },
+          "line": "Why settle for less?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Coupe",
+      "label": "COUPE",
+      "icon": {
+        "emoji": "🏎️"
+      },
+      "hook": "Two‑door sportiness with a sleek, low profile.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "🏎️ The coupe. Two doors, a swooping roof, pure driving fun since the thirties. It’s the sports‑car’s sleek sibling, built for speed and style.",
+          "slams": [
+            {
+              "text": "THE COUPE REVEALED"
+            },
+            {
+              "text": "“TWO DOORS”",
+              "cue": "two doors",
+              "strike": true
+            },
+            {
+              "text": "SLIPPING ROOF",
+              "cue": "swooping roof",
+              "color": "red"
+            },
+            {
+              "text": "PURE DRIVING FUN",
+              "cue": "driving fun",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Coupe.",
+          "title": "Coupe",
+          "kicker": "EVERY CAR BODY TYPE, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in the 1930s, the coupe sports a 30° roofline angle, giving it that aggressive silhouette you love.",
+          "head": "Roof angle",
+          "label": "1930s — birth of the coupe",
+          "stamp": "1930s",
+          "callouts": [
+            [
+              "#ff4500",
+              "30° roofline"
+            ],
+            [
+              "#2e8b57",
+              "sporty silhouette"
+            ]
+          ],
+          "cues": {
+            "stamp": "1930s",
+            "action": "aggressive silhouette"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes a coupe stand out? Two doors, a sloping roof, and tighter handling that feels like a road‑racer.",
+          "head": "Coupe DNA",
+          "sub": {
+            "text": "key traits",
+            "cue": "stand out"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚗",
+              "label": "Two doors",
+              "cue": "Two doors",
+              "vis": {
+                "emoji": "🚗"
+              }
+            },
+            {
+              "emoji": "🏎️",
+              "label": "Sloping roof",
+              "cue": "sloping roof",
+              "vis": {
+                "emoji": "🏎️"
+              }
+            },
+            {
+              "emoji": "⚙️",
+              "label": "Sporty handling",
+              "cue": "tighter handling",
+              "vis": {
+                "emoji": "⚙️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "That roof leans at thirty degrees—roughly the angle of a steep hill you’d see on a mountain road.",
+          "num_end": 30.0,
+          "decimals": 0,
+          "unit": "°",
+          "label": "Coupe roof angle",
+          "sub": "steep as a mountain road",
+          "vis": {
+            "emoji": "⛰️"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚙"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "thirty degrees",
+            "sub": "steep hill"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The trade‑off? You lose rear‑seat space, so it’s not the best family hauler.",
+          "head": "The downside",
+          "label": "Rear seat sacrifice",
+          "stamp": "LIMITED ",
+          "callouts": [
+            [
+              "#d2691e",
+              "no rear seats"
+            ],
+            [
+              "#708090",
+              "compact cabin"
+            ]
+          ],
+          "cues": {
+            "action": "lose rear‑seat",
+            "circle": "not the best"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find coupes in sport‑compact and luxury lines, delivering excitement without the bulk.",
+          "head": "Still popular",
+          "sub": {
+            "text": "where you see them",
+            "cue": "today you’ll find"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚙",
+              "label": "Sport‑compact",
+              "cue": "sport‑compact",
+              "vis": {
+                "emoji": "🚙"
+              }
+            },
+            {
+              "emoji": "🚘",
+              "label": "Luxury models",
+              "cue": "luxury lines",
+              "vis": {
+                "emoji": "🚘"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to a sedan, the coupe’s roof is about ten degrees steeper, giving it that aggressive look you associate with performance.",
+          "head": "Steeper than a sedan",
+          "ekg": null,
+          "left": {
+            "emoji": "🚗",
+            "label": "Sedan",
+            "cue": "sedan",
+            "vis": {
+              "emoji": "🚗"
+            }
+          },
+          "right": {
+            "emoji": "🏎️",
+            "label": "Coupe",
+            "cue": "coupe",
+            "vis": {
+              "emoji": "🏎️"
+            }
+          },
+          "line": "Ten degrees more tilt",
+          "cues": {
+            "line": "ten degrees"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Convertible",
+      "label": "CONVERTIBLE",
+      "icon": {
+        "emoji": "🚘"
+      },
+      "hook": "Drop the roof for open‑air driving thrills.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Picture this: wind in your hair, the road stretching ahead, and a roof that folds away in just twenty seconds. That's the magic of a convertible.",
+          "slams": [
+            {
+              "text": "THE CONVERTIBLE EXPERIENCE"
+            },
+            {
+              "text": "“WIND IN YOUR HAIR”",
+              "cue": "wind in your hair",
+              "strike": true
+            },
+            {
+              "text": "TWENTY SECONDS",
+              "cue": "twenty seconds",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Convertible.",
+          "title": "Convertible",
+          "kicker": "EVERY CAR BODY TYPE, PART 5",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "The convertible first rolled out in the 1910s, giving drivers a way to ditch the roof and feel the open air.",
+          "head": "1910s debut",
+          "label": "First open‑air cars",
+          "stamp": "1910s",
+          "callouts": [
+            [
+              "#c9a227",
+              "removable roof"
+            ],
+            [
+              "#1c4ed8",
+              "reinforced chassis"
+            ]
+          ],
+          "cues": {
+            "stamp": "first rolled out",
+            "action": "ditch the roof"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What made it special? A retractable top, a chassis built to stay rigid, and the promise of pure, unfiltered driving.",
+          "head": "Key features",
+          "sub": {
+            "text": "open‑air freedom"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚗",
+              "label": "Removable roof",
+              "vis": {
+                "emoji": "🚗"
+              }
+            },
+            {
+              "emoji": "🔧",
+              "label": "Reinforced chassis",
+              "vis": {
+                "emoji": "🔧"
+              }
+            },
+            {
+              "emoji": "🌬️",
+              "label": "Open‑air driving",
+              "vis": {
+                "emoji": "🌬️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "It pulls the roof back in just twenty seconds, faster than you can finish a coffee.",
+          "num_end": 20.0,
+          "decimals": 0,
+          "unit": "seconds",
+          "label": "Roof retract time",
+          "sub": "faster than a coffee",
+          "vis": {
+            "emoji": "☕"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚗"
+            },
+            "seconds": 20
+          },
+          "cues": {
+            "count": "twenty seconds",
+            "sub": "finish a coffee"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Today you’ll find convertibles mostly in luxury and sports models, where the thrill outweighs the lack of full weather protection.",
+          "head": "Modern usage",
+          "label": "Luxury & sports",
+          "stamp": "Today",
+          "callouts": [
+            [
+              "#d62828",
+              "luxury market"
+            ],
+            [
+              "#7a7a7a",
+              "sports performance"
+            ]
+          ],
+          "cues": {
+            "action": "thrill outweighs"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "So who loves them? Drivers craving style, enthusiasts chasing wind‑kissed speed, and anyone who wants a weekend road‑trip vibe.",
+          "head": "Who drives them",
+          "sub": {
+            "text": "style seekers",
+            "cue": "style"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🕶️",
+              "label": "Style seekers",
+              "vis": {
+                "emoji": "🕶️"
+              }
+            },
+            {
+              "emoji": "🏎️",
+              "label": "Performance fans",
+              "vis": {
+                "emoji": "🏎️"
+              }
+            },
+            {
+              "emoji": "🛣️",
+              "label": "Road‑trip lovers",
+              "vis": {
+                "emoji": "🛣️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Think of a coupe, but add a roof that folds away. Same sleek silhouette, just more freedom when the sun shines.",
+          "head": "Coupe vs Convertible",
+          "ekg": null,
+          "left": {
+            "emoji": "🚙",
+            "label": "Coupe",
+            "cue": "coupe",
+            "vis": {
+              "emoji": "🚙"
+            }
+          },
+          "right": {
+            "emoji": "🚘",
+            "label": "Convertible",
+            "vis": {
+              "emoji": "🚘"
+            }
+          },
+          "line": "More freedom when the sun shines",
+          "cues": {
+            "line": "more freedom"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SUV",
+      "label": "SUV",
+      "icon": {
+        "emoji": "🚙"
+      },
+      "hook": "Higher ride height and ample space for families and gear.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "SUVs took the road by storm in the eighties. Big wheels, higher stance, and room for everything you need. They changed how we think about everyday driving.",
+          "slams": [
+            {
+              "text": "THE SUV REVOLUTION"
+            },
+            {
+              "text": "HIGH RIDE HEIGHT",
+              "strike": true
+            },
+            {
+              "text": "ALL‑WHEEL DRIVE",
+              "color": "blue"
+            },
+            {
+              "text": "SPACIOUS INTERIOR",
+              "color": "green"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "SUV.",
+          "title": "SUV",
+          "kicker": "EVERY CAR BODY TYPE, PART 6",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in the eighties, the SUV rides 200 mm off the ground, giving you that commanding view and confidence on any surface.",
+          "head": "1980s debut",
+          "label": "200 mm ground clearance",
+          "stamp": "1980s",
+          "callouts": [
+            [
+              "#2e8b57",
+              "high ride height"
+            ],
+            [
+              "#1e90ff",
+              "all‑wheel drive"
+            ]
+          ],
+          "cues": {
+            "head": "Born in the eighties",
+            "action": "commanding view"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "Its ground clearance is about 200 mm, roughly 150 mm higher than a typical sedan, putting you well above the traffic.",
+          "num_end": 200.0,
+          "decimals": 0,
+          "unit": "mm",
+          "label": "SUV ground clearance",
+          "sub": "150 mm higher than a sedan",
+          "vis": {
+            "emoji": "🚙"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚗"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "count": "200"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The trade‑off? Fuel efficiency takes a hit, so you’ll sip more at the pump compared to smaller cars.",
+          "head": "The downside",
+          "label": "Lower fuel efficiency",
+          "stamp": "EFFICIEN",
+          "callouts": [
+            [
+              "#b22222",
+              "more fuel used"
+            ],
+            [
+              "#555555",
+              "less miles per gallon"
+            ]
+          ],
+          "cues": {
+            "head": "The trade‑off",
+            "action": "fuel efficiency"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today SUVs dominate globally, from city commuters to weekend adventurers, becoming the go‑to segment for many drivers.",
+          "head": "Global dominance",
+          "sub": {
+            "text": "every road, every driver"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🏙️",
+              "label": "City commuters",
+              "cue": "City commuters",
+              "vis": {
+                "emoji": "🏙️"
+              }
+            },
+            {
+              "emoji": "🏞️",
+              "label": "Weekend adventurers",
+              "cue": "Weekend adventurers",
+              "vis": {
+                "emoji": "🏞️"
+              }
+            },
+            {
+              "emoji": "🛣️",
+              "label": "All‑road families",
+              "vis": {
+                "emoji": "🛣️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "But pickups still win on payload. An SUV carries about a thousand kilograms, while a pickup hauls roughly 1,500 kg—half a ton more.",
+          "head": "Payload battle",
+          "ekg": null,
+          "left": {
+            "emoji": "🚙",
+            "label": "SUV",
+            "cue": "SUV",
+            "vis": {
+              "emoji": "🚙"
+            }
+          },
+          "right": {
+            "emoji": "🚚",
+            "label": "Pickup",
+            "cue": "Pickup",
+            "vis": {
+              "emoji": "🚚"
+            }
+          },
+          "line": "Half a ton more power",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Pickup truck",
+      "label": "PICKUP",
+      "icon": {
+        "emoji": "🚚"
+      },
+      "hook": "Open bed for hauling heavy loads and work tasks.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Think big, haul more. The pickup truck rolled out in the roaring twenties, built to carry a ton and pull the weight of a small house.",
+          "slams": [
+            {
+              "text": "THE PICKUP TRUCK"
+            },
+            {
+              "text": "“HAUL MORE”",
+              "cue": "haul more",
+              "strike": true
+            },
+            {
+              "text": "1920S ORIGIN",
+              "cue": "roaring twenties",
+              "color": "blue"
+            },
+            {
+              "text": "BUILD TO CARRY",
+              "cue": "built to carry",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Pickup truck.",
+          "title": "Pickup truck",
+          "kicker": "EVERY CAR BODY TYPE, PART 7",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "1925 marked the debut. A sturdy cab, open cargo bed, and a payload of one thousand kilograms – that’s about the weight of ten average adults.",
+          "head": "First pickup",
+          "label": "1925 — the workhorse",
+          "stamp": "1925",
+          "callouts": [
+            [
+              "#c9a227",
+              "open cargo bed"
+            ],
+            [
+              "#1c4ed8",
+              "1,000 kg payload"
+            ]
+          ],
+          "cues": {
+            "stamp": "1925",
+            "action": "open cargo bed",
+            "circle": "one thousand kilograms"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What set it apart? Heavy‑duty suspension, a rugged frame, and a bed that opens up like a toolbox for tools, lumber, or a horse trailer.",
+          "head": "Key features",
+          "sub": {
+            "text": "tough and versatile"
+          },
+          "hub": {
+            "emoji": "🚚"
+          },
+          "items": [
+            {
+              "emoji": "🛠️",
+              "label": "Heavy‑duty suspension",
+              "cue": "heavy‑duty suspension",
+              "vis": {
+                "emoji": "🛠️"
+              }
+            },
+            {
+              "emoji": "📦",
+              "label": "Open cargo bed",
+              "vis": {
+                "emoji": "📦"
+              }
+            },
+            {
+              "emoji": "🪚",
+              "label": "Tool‑ready design",
+              "vis": {
+                "emoji": "🪚"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "One thousand kilograms is roughly the mass of ten grown‑up people or a small car’s full fuel tank. That’s serious hauling power.",
+          "num_end": 1000.0,
+          "decimals": 0,
+          "unit": "kg",
+          "label": "Pickup payload",
+          "sub": "ten adults — big haul",
+          "vis": {
+            "emoji": "🏋️"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚛"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "one thousand"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But it gave up cabin space. The cabin is simple, no extra doors, just two seats and a short roof – perfect for work, not luxury.",
+          "head": "The trade‑off",
+          "label": "Spartan interior",
+          "stamp": "NO LUXUR",
+          "callouts": [
+            [
+              "#d62828",
+              "two‑seat cabin"
+            ],
+            [
+              "#7a7a7a",
+              "no extra doors"
+            ]
+          ],
+          "cues": {
+            "circle": "no extra doors"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Who still loves it? Farmers, contractors, and anyone needing a reliable workhorse across North America’s roads and farms.",
+          "head": "Still used today",
+          "sub": {
+            "text": "work and utility"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚜",
+              "label": "Farmers",
+              "cue": "farmers",
+              "vis": {
+                "emoji": "🚜"
+              }
+            },
+            {
+              "emoji": "🏗️",
+              "label": "Contractors",
+              "cue": "contractors",
+              "vis": {
+                "emoji": "🏗️"
+              }
+            },
+            {
+              "emoji": "🛣️",
+              "label": "Road workers",
+              "vis": {
+                "emoji": "🛣️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to an SUV, the pickup carries about five hundred kilograms more – that’s like adding a small refrigerator to the back.",
+          "head": "More than an SUV",
+          "ekg": null,
+          "left": {
+            "emoji": "🚙",
+            "label": "SUV",
+            "cue": "SUV",
+            "vis": {
+              "emoji": "🚙"
+            }
+          },
+          "right": {
+            "emoji": "🚚",
+            "label": "Pickup",
+            "cue": "Pickup",
+            "vis": {
+              "emoji": "🚚"
+            }
+          },
+          "line": "Why settle for less?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Minivan",
+      "label": "MINIVAN",
+      "icon": {
+        "emoji": "🚐"
+      },
+      "hook": "Sliding doors and three rows of seats for maximum passenger capacity.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Think of a family road trip, kids shouting, doors sliding open. That’s the minivan – the ultimate car for hauling a crew without breaking a sweat.",
+          "slams": [
+            {
+              "text": "THE FAMILY SHUTTLER"
+            },
+            {
+              "text": "SLIDING DOORS",
+              "strike": true
+            },
+            {
+              "text": "NO OFF‑ROAD",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Minivan.",
+          "title": "Minivan",
+          "kicker": "EVERY CAR BODY TYPE, PART 8",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in 1984, the minivan gave us sliding side doors, three rows of seats, and a low floor that makes loading groceries a breeze.",
+          "head": "Minivan debut",
+          "label": "1984 — family breakthrough",
+          "stamp": "1984",
+          "callouts": [
+            [
+              "#2a9d8f",
+              "sliding side doors"
+            ],
+            [
+              "#e9c46a",
+              "three rows"
+            ]
+          ],
+          "cues": {
+            "stamp": "1984",
+            "action": "sliding side doors"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes it special? Sliding doors, a low floor, and space for seven passengers – perfect for school runs or weekend getaways.",
+          "head": "Key features",
+          "sub": {
+            "text": "space for seven",
+            "cue": "space for seven"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚪",
+              "label": "Sliding doors",
+              "cue": "Sliding doors",
+              "vis": {
+                "emoji": "🚪"
+              }
+            },
+            {
+              "emoji": "🪑",
+              "label": "7 seats",
+              "cue": "seven passengers",
+              "vis": {
+                "emoji": "🪑"
+              }
+            },
+            {
+              "emoji": "📦",
+              "label": "Low floor",
+              "cue": "low floor",
+              "vis": {
+                "emoji": "📦"
+              }
+            }
+          ],
+          "cues": {
+            "sub": "space for seven"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "Seven seats means you can pack two extra kids compared to a typical five‑seat SUV, turning a simple drive into a full‑house adventure.",
+          "num_end": 7.0,
+          "decimals": 0,
+          "unit": "seats",
+          "label": "Minivan capacity",
+          "sub": "2 more than SUV",
+          "vis": {
+            "emoji": "🚐"
+          },
+          "travel": {
+            "to": {
+              "emoji": "👨‍👩‍👧‍👦"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "num_end": "seven seats"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "What it doesn’t do is tackle rough terrain. No high ground clearance, no serious off‑road chops – it stays on the pavement where families need it.",
+          "head": "Missing off‑road",
+          "label": "Pavement‑only",
+          "stamp": "NO OFF‑R",
+          "callouts": [
+            [
+              "#d62828",
+              "low clearance"
+            ],
+            [
+              "#7a7a7a",
+              "family focus"
+            ]
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "list",
+          "say": "Today you still see minivans cruising suburbs, school zones, and airport lots, especially in the United States where they dominate family transport.",
+          "head": "Still used",
+          "sub": {
+            "text": "family transport",
+            "cue": "family transport"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🏡",
+              "label": "Suburbs",
+              "cue": "suburbs",
+              "vis": {
+                "emoji": "🏡"
+              }
+            },
+            {
+              "emoji": "🚌",
+              "label": "School zones",
+              "cue": "school zones",
+              "vis": {
+                "emoji": "🚌"
+              }
+            },
+            {
+              "emoji": "✈️",
+              "label": "Airport lots",
+              "cue": "airport lots",
+              "vis": {
+                "emoji": "✈️"
+              }
+            }
+          ],
+          "cues": {
+            "sub": "family transport"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to an SUV, the minivan gives you two extra seats without the bulk, making every trip feel like a car‑pool with room to spare.",
+          "head": "Seat advantage",
+          "ekg": "extra seats",
+          "left": {
+            "emoji": "🚙",
+            "label": "SUV",
+            "cue": "SUV",
+            "vis": {
+              "emoji": "🚙"
+            }
+          },
+          "right": {
+            "emoji": "🚐",
+            "label": "Minivan",
+            "cue": "Minivan",
+            "vis": {
+              "emoji": "🚐"
+            }
+          },
+          "line": "More seats, same size",
+          "cues": {
+            "line": "extra seats"
+          }
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Pick the body that matches your daily needs. Bottom line: Choose wisely. See you next Monday.",
+    "type_text": "Choose wisely",
+    "cues": {
+      "key": "wisely"
+    }
+  },
+  "facts": [
+    {
+      "name": "Sedan",
+      "year": "1920s",
+      "key_number": "4.8 m length",
+      "new": [
+        "enclosed trunk",
+        "four doors",
+        "separate passenger and cargo compartments"
+      ],
+      "lacked": "removable roof",
+      "still_used": "personal family cars worldwide",
+      "compare": "N/A"
+    },
+    {
+      "name": "Hatchback",
+      "year": "1970s",
+      "key_number": "350 L cargo volume",
+      "new": [
+        "rear hatch door",
+        "foldable rear seats",
+        "compact footprint"
+      ],
+      "lacked": "separate trunk compartment",
+      "still_used": "city and subcompact cars",
+      "compare": "about 0.5 m shorter than a sedan"
+    },
+    {
+      "name": "Station wagon",
+      "year": "1940s",
+      "key_number": "2.0 m cargo length",
+      "new": [
+        "extended roofline",
+        "rear hatch",
+        "larger cargo area"
+      ],
+      "lacked": "sporty styling",
+      "still_used": "family-oriented SUVs and crossovers",
+      "compare": "cargo length roughly 0.5 m longer than a hatchback"
+    },
+    {
+      "name": "Coupe",
+      "year": "1930s",
+      "key_number": "30° roofline angle",
+      "new": [
+        "two doors",
+        "sloping roof",
+        "sportier handling"
+      ],
+      "lacked": "rear seat space",
+      "still_used": "sport compact and luxury models",
+      "compare": "roof angle about 10° steeper than a sedan"
+    },
+    {
+      "name": "Convertible",
+      "year": "1910s",
+      "key_number": "20 s roof retract time",
+      "new": [
+        "removable roof",
+        "open‑air driving",
+        "reinforced chassis"
+      ],
+      "lacked": "full weather protection",
+      "still_used": "luxury and sports cars",
+      "compare": "same body style as a coupe but with a retractable roof"
+    },
+    {
+      "name": "SUV",
+      "year": "1980s",
+      "key_number": "200 mm ground clearance",
+      "new": [
+        "high ride height",
+        "all‑wheel drive",
+        "spacious interior"
+      ],
+      "lacked": "fuel efficiency",
+      "still_used": "global dominant vehicle segment",
+      "compare": "ground clearance about 150 mm higher than a sedan"
+    },
+    {
+      "name": "Pickup truck",
+      "year": "1925",
+      "key_number": "1,000 kg payload capacity",
+      "new": [
+        "open cargo bed",
+        "heavy‑duty suspension",
+        "towing capability"
+      ],
+      "lacked": "enclosed cabin space",
+      "still_used": "work and utility vehicles in North America",
+      "compare": "payload roughly 500 kg greater than an SUV"
+    },
+    {
+      "name": "Minivan",
+      "year": "1984",
+      "key_number": "7 seats capacity",
+      "new": [
+        "sliding side doors",
+        "three rows of seating",
+        "low floor entry"
+      ],
+      "lacked": "off‑road capability",
+      "still_used": "family transport especially in the US",
+      "compare": "seats about 2 more passengers than a typical SUV"
+    }
+  ]
+}
