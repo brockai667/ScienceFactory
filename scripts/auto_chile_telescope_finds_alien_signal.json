@@ -1,0 +1,58 @@
+{
+  "title": "Chile Telescope Finds Alien Signal",
+  "thumb": "ALIEN SIGNAL",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Chile's 39‑meter ELT spots a potential alien biosignature",
+      "hook_top": "ELT SPOTS ALIEN",
+      "query": "Extremely Large Telescope Chile night sky",
+      "query2": "ELT telescope Chile"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "The ELT can collect 15 times more light than current 8‑meter telescopes",
+      "label": "15X MORE LIGHT",
+      "label_on": "light",
+      "query": "Extremely Large Telescope mirror",
+      "query2": "ELT telescope closeup"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "It captured a faint infrared line that matches phosphine, a potential biosignature gas",
+      "label": "PHOSPHINE LINE DETECTE",
+      "label_on": "phosphine",
+      "query": "phosphine infrared spectrum",
+      "query2": "biosignature gas detection"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "The target planet orbits a red dwarf 40 light‑years away, inside its habitable zone",
+      "label": "PLANET IN HABITABLE ZO",
+      "label_on": "habitable",
+      "query": "red dwarf exoplanet habitable zone",
+      "query2": "exoplanet orbiting red dwarf"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "space discovery graphics",
+      "query2": "science short video"
+    }
+  ],
+  "description": "The European Southern Observatory's ELT has just recorded a possible biosignature on a nearby world. Could this be the first hint of life beyond Earth? Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#telescope",
+    "#exoplanet",
+    "#biosignature",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}

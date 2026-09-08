@@ -1,0 +1,58 @@
+{
+  "title": "Roman Telescope Maps Dark Matter",
+  "thumb": "DARK MATTER MAP",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "NASA's Roman telescope will chart dark matter across the Milky Way",
+      "hook_top": "ROMAN MAPS DARK",
+      "query": "Nancy Grace Roman Space Telescope launch",
+      "query2": "Roman telescope NASA"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "Its wide‑field infrared camera can image 100 times more sky than Hubble each night",
+      "label": "100X SKY COVERAGE",
+      "label_on": "coverage",
+      "query": "Roman telescope infrared camera",
+      "query2": "Roman space telescope wide field"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "Gravitational lensing data will reveal the invisible distribution of dark matter clusters",
+      "label": "GRAVITATIONAL LENSING",
+      "label_on": "lensing",
+      "query": "gravitational lensing illustration",
+      "query2": "dark matter lensing effect"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "The mission aims to test theories about dark energy accelerating the universe’s expansion",
+      "label": "TESTING DARK ENERGY",
+      "label_on": "energy",
+      "query": "dark energy expansion illustration",
+      "query2": "cosmic acceleration graphic"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "space mission celebration",
+      "query2": "science short ending"
+    }
+  ],
+  "description": "Launching soon, the Roman Space Telescope will use powerful imaging to map the hidden scaffolding of dark matter and probe dark energy. Stay tuned for the cosmos revealed. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#NASA",
+    "#darkmatter",
+    "#darkenergy",
+    "#astronomy",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}

@@ -12716,5 +12716,242 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Japan's Martian Moon Sample Probe",
+    "thumb": "PHOBOS ROCKS",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Phobos will soon hand us its first moon rocks",
+        "hook_top": "PHOBOS FIRST MOON ROCKS",
+        "query": "Phobos surface",
+        "query2": "Martian moon"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "The MMX mission lifts off in 2024",
+        "label": "MMX LAUNCH 2024",
+        "label_on": "launch",
+        "query": "MMX launch",
+        "query2": "Japanese space launch"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "It aims to bring back up to 10 grams of Phobos soil",
+        "label": "SAMPLE COLLECTION",
+        "label_on": "sample",
+        "query": "Phobos soil sample",
+        "query2": "space sample return"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "Phobos gravity is only about 0.005 m/s², making landing tricky",
+        "label": "MICROGRAVITY SURFACE",
+        "label_on": "gravity",
+        "query": "Phobos gravity",
+        "query2": "low gravity moon"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "science follow",
+        "query2": "science short"
+      }
+    ],
+    "description": "Japan's MMX mission will be the first to return material from a Martian moon. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#science",
+      "#phobos",
+      "#japan",
+      "#exploration"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Largest Dark Matter Map Revealed",
+    "thumb": "BIGGEST DARK MAP",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Astronomers just completed the biggest dark matter map",
+        "hook_top": "BIGGEST DARK MATTER MAP",
+        "query": "dark matter map",
+        "query2": "cosmic map"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "The map combines data from the DESI and Euclid surveys",
+        "label": "ALL‑SKY SURVEY",
+        "label_on": "survey",
+        "query": "DESI survey",
+        "query2": "Euclid data"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "It charts the distribution of over a billion galaxies",
+        "label": "OVER ONE BILLION GALAX",
+        "label_on": "galaxies",
+        "query": "galaxy distribution",
+        "query2": "cosmic web"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "The map reveals filamentary structures shaping dark matter",
+        "label": "NEW CLUES ON COSMIC ST",
+        "label_on": "filaments",
+        "query": "cosmic filaments",
+        "query2": "dark matter web"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "science follow",
+        "query2": "science short"
+      }
+    ],
+    "description": "The new all‑sky dark matter map visualizes the hidden scaffolding of the universe. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#astronomy",
+      "#darkmatter",
+      "#cosmology",
+      "#science"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Moon Dust Cutting Myths",
+    "thumb": "MOON DUST MYTH",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Apollo 17 brought back 110 kilograms of lunar dust for study.",
+        "hook_top": "LUNAR DUST REVEALED",
+        "query": "Apollo 17 lunar dust sample",
+        "query2": "lunar regolith laboratory"
+      },
+      {
+        "role": "myth",
+        "text": "People think moon dust is sharp enough to slice steel like a knife.",
+        "label": "Moon dust cuts steel",
+        "query": "moon dust closeup",
+        "query2": "lunar regolith texture"
+      },
+      {
+        "role": "truth",
+        "text": "Lunar regolith is made of tiny glassy shards, but its hardness is similar to sand and it cannot cut metal.",
+        "label": "Regolith can’t cut metal",
+        "query": "lunar regolith microscope",
+        "query2": "moon soil particles"
+      },
+      {
+        "role": "callout",
+        "text": "Sharp but not lethal – the dust is abrasive, not a blade.",
+        "label": "Abrasive, not cutting",
+        "sub": "It can wear tools but won’t slice steel.",
+        "label_on": "Abrasive",
+        "query": "astronauts cleaning moon dust",
+        "query2": "lunar dust equipment wear"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space fact overlay",
+        "query2": "science short background"
+      }
+    ],
+    "description": "The myth that moon dust can cut through steel is busted – it’s abrasive, not a cutting tool. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#moon",
+      "#science",
+      "#mythbusting",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Hidden Ocean Beneath Europa",
+    "thumb": "GIANT ICE OCEAN",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Europa hides a sea twice Earth's size beneath its icy crust",
+        "hook_top": "EUROPA HIDES GIANT SEA",
+        "query": "Europa ice surface",
+        "query2": "Jupiter moon Europa"
+      },
+      {
+        "role": "fact",
+        "text": "The ice shell is estimated to be about 20 km thick",
+        "chips": [
+          {
+            "t": "20 km THICK",
+            "on": "thick",
+            "style": "accent"
+          }
+        ],
+        "punch": "thick",
+        "query": "Europa ice thickness diagram",
+        "query2": "Europa ice shell measurement"
+      },
+      {
+        "role": "fact",
+        "text": "Scientists believe the hidden ocean holds more water than all of Earth's oceans combined",
+        "chips": [
+          {
+            "t": "MORE WATER",
+            "on": "water",
+            "style": "white"
+          }
+        ],
+        "punch": "water",
+        "query": "Europa subsurface ocean illustration",
+        "query2": "Europa ocean volume comparison"
+      },
+      {
+        "role": "callout",
+        "text": "A massive ocean lies beneath Europa's ice, waiting to be explored",
+        "label": "UNDER‑ICE OCEAN",
+        "sub": "A giant sea hidden below",
+        "label_on": "ocean",
+        "query": "Europa ocean concept art",
+        "query2": "Europa water beneath ice"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science short video overlay",
+        "query2": "science channel subscribe graphic"
+      }
+    ],
+    "description": "Europa's icy crust hides a vast ocean that could dwarf all of Earth's water. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#Europa",
+      "#ocean",
+      "#science",
+      "#exploration"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
