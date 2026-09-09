@@ -1,0 +1,74 @@
+{
+  "title": "Water Vapor Found on Distant World",
+  "thumb": "WATER VAPOR DISCOVERY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A planet 110 light‑years away hides a familiar gas",
+      "hook_top": "PLANET HIDES GAS",
+      "query": "K2-18b exoplanet telescope",
+      "query2": "exoplanet water vapor"
+    },
+    {
+      "role": "fact",
+      "text": "In 2020 the James Webb Space Telescope detected water vapor in the atmosphere of K2‑18b",
+      "chips": [
+        {
+          "t": "2020 detection",
+          "on": "detected",
+          "style": "white"
+        },
+        {
+          "t": "James Webb",
+          "on": "James",
+          "style": "accent"
+        }
+      ],
+      "query": "James Webb Space Telescope K2-18b",
+      "query2": "water vapor exoplanet"
+    },
+    {
+      "role": "fact",
+      "text": "K2‑18b is about 2.6 times Earth's radius and orbits a red dwarf star",
+      "chips": [
+        {
+          "t": "2.6 × Earth",
+          "on": "2.6",
+          "style": "white"
+        },
+        {
+          "t": "red dwarf",
+          "on": "dwarf",
+          "style": "accent"
+        }
+      ],
+      "query": "K2-18b size illustration",
+      "query2": "red dwarf planet"
+    },
+    {
+      "role": "reveal",
+      "text": "The same planet may have a temperate surface, raising real chances for habitability",
+      "reveal_top": "POTENTIAL HABITABLE WORLD",
+      "query": "habitable exoplanet concept art",
+      "query2": "K2-18b habitability"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "science channel logo",
+      "query2": "science short"
+    }
+  ],
+  "description": "James Webb's discovery of water vapor on K2‑18b hints at a world that could host life. Follow for daily science breakthroughs!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#exoplanet",
+    "#JamesWebb",
+    "#water",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}

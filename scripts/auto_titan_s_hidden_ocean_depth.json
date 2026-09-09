@@ -1,0 +1,74 @@
+{
+  "title": "Titan’s Hidden Ocean Depth",
+  "thumb": "TITAN OCEAN DEPTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Saturn’s moon Titan holds a sea beneath its icy crust",
+      "hook_top": "TITAN SEES SEA",
+      "query": "Titan subsurface ocean model",
+      "query2": "Titan underground ocean"
+    },
+    {
+      "role": "fact",
+      "text": "Cassini’s radar data in 2012 suggested a liquid layer up to 100 km deep beneath Titan’s surface",
+      "chips": [
+        {
+          "t": "100 km deep",
+          "on": "100",
+          "style": "white"
+        },
+        {
+          "t": "Cassini radar",
+          "on": "Cassini",
+          "style": "accent"
+        }
+      ],
+      "query": "Cassini radar Titan ocean",
+      "query2": "Titan subsurface depth"
+    },
+    {
+      "role": "fact",
+      "text": "The ocean is likely composed of water mixed with ammonia, keeping it liquid at Titan’s frigid temperatures",
+      "chips": [
+        {
+          "t": "water‑ammonia mix",
+          "on": "ammonia",
+          "style": "white"
+        },
+        {
+          "t": "−180 °C",
+          "on": "−180",
+          "style": "accent"
+        }
+      ],
+      "query": "Titan ammonia water mixture",
+      "query2": "Titan ocean composition"
+    },
+    {
+      "role": "reveal",
+      "text": "Scientists think this hidden ocean could host life, making Titan the most promising ocean world beyond Earth",
+      "reveal_top": "LIFE POSSIBLE",
+      "query": "hypothetical life Titan ocean",
+      "query2": "Titan life possibility"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new science fact every day.",
+      "query": "science channel logo",
+      "query2": "science short"
+    }
+  ],
+  "description": "Cassini revealed a deep, ammonia‑rich ocean under Titan’s icy shell, sparking hopes of alien life. Follow for daily science wonders!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Titan",
+    "#Saturn",
+    "#Cassini",
+    "#OceanWorld",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}
