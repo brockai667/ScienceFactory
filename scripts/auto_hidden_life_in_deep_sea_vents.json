@@ -1,0 +1,59 @@
+{
+  "title": "Hidden Life in Deep Sea Vents",
+  "thumb": "DEEP VENT LIFE",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Beneath the Pacific, 2,000‑meter vents host giant shrimp",
+      "hook_top": "PACIFIC VENT GIANTS",
+      "query": "hydrothermal vent Pacific ocean",
+      "query2": "deep sea vent Pacific"
+    },
+    {
+      "role": "fact",
+      "text": "Vent shrimp thrive in water hotter than 400 °C",
+      "chips": [
+        {
+          "t": "400 °C WATER",
+          "on": "hotter",
+          "style": "accent"
+        },
+        {
+          "t": "VENT SHRIMP",
+          "on": "shrimp",
+          "style": "white"
+        }
+      ],
+      "punch": "survive",
+      "query": "vent shrimp near hydrothermal vent",
+      "query2": "deep sea shrimp hot water"
+    },
+    {
+      "role": "callout",
+      "text": "Extreme organisms adapt with unique proteins",
+      "label": "EXTREMOPHILE ADAPTATION",
+      "sub": "Special proteins keep cells stable at boiling temps",
+      "label_on": "adaptation",
+      "query": "extremophile organisms hydrothermal vent",
+      "query2": "deep sea extremophile proteins"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "science short video",
+      "query2": "short science clips"
+    }
+  ],
+  "description": "Explore how shrimp survive the scalding waters of Pacific hydrothermal vents. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#science",
+    "#ocean",
+    "#biology",
+    "#deepsea",
+    "#extremophiles"
+  ],
+  "place": "",
+  "country": ""
+}

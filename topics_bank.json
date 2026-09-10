@@ -12953,5 +12953,71 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Japan Probe Targets Phobos Secrets",
+    "thumb": "PHOBOS MISSION REVEALED",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Japan will launch a probe to Phobos in 2024",
+        "hook_top": "PHOBOS MISSION LAUNCH",
+        "query": "Phobos surface",
+        "query2": "Mars moon Phobos"
+      },
+      {
+        "role": "fact",
+        "text": "Phobos circles Mars every 7 hours and 39 minutes, the fastest lunar orbit in the solar system.",
+        "chips": [
+          {
+            "t": "7h 39m ORBIT",
+            "on": "orbit",
+            "style": "accent"
+          }
+        ],
+        "punch": "fast",
+        "query": "Phobos orbit animation",
+        "query2": "Mars moon orbit speed"
+      },
+      {
+        "role": "fact",
+        "text": "The MMX spacecraft will collect dust and rock samples from Phobos' surface and return them to Earth.",
+        "chips": [
+          {
+            "t": "SAMPLE RETURN",
+            "on": "sample",
+            "style": "white"
+          }
+        ],
+        "punch": "collect",
+        "query": "MMX spacecraft",
+        "query2": "Mars moon sample mission"
+      },
+      {
+        "role": "reveal",
+        "text": "Scientists suspect Phobos is actually a captured asteroid, not a true moon.",
+        "reveal_top": "CAPTURED ASTEROID",
+        "query": "Phobos asteroid theory",
+        "query2": "Phobos origin"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space channel logo",
+        "query2": "science short intro"
+      }
+    ],
+    "description": "Japan's upcoming MMX mission will land on Phobos, collect samples, and test whether this tiny Mars companion is a captured asteroid. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#phobos",
+      "#japan",
+      "#science",
+      "#exploration"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

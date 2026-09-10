@@ -1,0 +1,54 @@
+{
+  "title": "Failed Galaxy Myth Busted",
+  "thumb": "DARK GALAXY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "The Cloud‑9 galaxy stretches over several million light‑years, yet appears empty.",
+      "hook_top": "EMPTY GALAXY REVEALED",
+      "query": "Cloud‑9 galaxy image",
+      "query2": "dark galaxy telescope"
+    },
+    {
+      "role": "myth",
+      "text": "People think every galaxy glows with stars.",
+      "label": "All Galaxies Have Stars",
+      "query": "galaxy with stars illustration",
+      "query2": "spiral galaxy"
+    },
+    {
+      "role": "truth",
+      "text": "Cloud‑9 is a dark, star‑less galaxy discovered by astronomers in 2023.",
+      "label": "Star‑less Dark Galaxy",
+      "query": "Cloud‑9 dark galaxy observation",
+      "query2": "starless galaxy"
+    },
+    {
+      "role": "callout",
+      "text": "Dark galaxy confirmed",
+      "label": "Dark Galaxy",
+      "sub": "No stars, just dark matter and gas",
+      "label_on": "BUST",
+      "query": "dark galaxy diagram",
+      "query2": "galaxy without stars"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science follow animation",
+      "query2": "shorts subscribe"
+    }
+  ],
+  "description": "Many think all galaxies shine, but Cloud‑9 proves otherwise. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#astronomy",
+    "#galaxies",
+    "#darkmatter",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}
