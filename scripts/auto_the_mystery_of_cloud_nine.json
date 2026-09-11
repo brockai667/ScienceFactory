@@ -1,0 +1,58 @@
+{
+  "title": "The Mystery of Cloud Nine",
+  "thumb": "ZERO STAR GALAXY",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A galaxy discovered with zero stars shocked astronomers",
+      "hook_top": "ZEROSTAR GALAXY SHOCK",
+      "query": "failed galaxy empty",
+      "query2": "dark galaxy"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "It contains no visible stars, only dark matter and gas",
+      "label": "NO VISIBLE STARS",
+      "label_on": "Stars",
+      "query": "dark galaxy stars missing",
+      "query2": "galaxy without stars"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "Its dark‑matter halo is roughly the size of the Milky Way’s",
+      "label": "MILKY WAY‑SIZED HALO",
+      "label_on": "Halo",
+      "query": "dark matter halo galaxy",
+      "query2": "galaxy halo size"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "Astronomers identified it using data from the Dark Energy Survey",
+      "label": "DISCOVERED BY DES",
+      "label_on": "Discover",
+      "query": "Dark Energy Survey telescope",
+      "query2": "DES galaxy discovery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science short video",
+      "query2": "educational science"
+    }
+  ],
+  "description": "The Cloud‑9 galaxy is a real, star‑less system that challenges our view of how galaxies form. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#astronomy",
+    "#galaxies",
+    "#darkmatter",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}

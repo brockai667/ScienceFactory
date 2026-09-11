@@ -13019,5 +13019,117 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "China's Mars Sample Return Plan",
+    "thumb": "MARS SAMPLE MISSION",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "China targets a Mars sample‑return launch in 2028 after its successful rover mission",
+        "hook_top": "CHINA MARS RETURN",
+        "query": "China Tianwen-1 rover",
+        "query2": "China Mars mission"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "The Tianwen‑1 rover collected over 10 grams of rock and soil, the first from a foreign mission",
+        "label": "ROVER SAMPLE COLLECTIO",
+        "label_on": "one",
+        "query": "Tianwen-1 rover samples",
+        "query2": "Mars rover rock collection"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "A dedicated ascent vehicle will launch from the Martian surface to rendezvous with an orbiting return capsule",
+        "label": "ASCENT VEHICLE DESIGN",
+        "label_on": "two",
+        "query": "Mars ascent vehicle concept",
+        "query2": "Mars sample return ascent module"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "China plans to use a laser communication link for high‑speed data transfer during the return cruise",
+        "label": "LASER COMM LINK",
+        "label_on": "three",
+        "query": "laser communication Mars spacecraft",
+        "query2": "Mars laser data link"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "space exploration icons",
+        "query2": "science background"
+      }
+    ],
+    "description": "Discover how China’s ambitious mission will bring Martian rocks back to Earth, using new ascent and laser technologies. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#science",
+      "#space",
+      "#Mars",
+      "#China",
+      "#exploration"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Octopus Ink Is Supercoolant Myth",
+    "thumb": "COOL INK",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Scientists measured octopus ink cooling water by eight degrees.",
+        "hook_top": "OCTOPUS INK COOLS WATER",
+        "query": "octopus releasing ink",
+        "query2": "octopus underwater"
+      },
+      {
+        "role": "myth",
+        "text": "People think octopus ink is just a black cloud for hiding.",
+        "label": "Ink is just black",
+        "query": "octopus ink cloud",
+        "query2": "octopus ink"
+      },
+      {
+        "role": "truth",
+        "text": "In reality, the ink contains proteins that absorb heat, lowering water temperature.",
+        "label": "Ink cools water",
+        "query": "octopus ink temperature",
+        "query2": "octopus ink cooling"
+      },
+      {
+        "role": "callout",
+        "text": "Cool Ink Fact: Octopus ink can drop water temperature.",
+        "label": "Cool Ink Fact",
+        "sub": "Ink can lower water temperature",
+        "label_on": "Fact",
+        "query": "octopus ink closeup",
+        "query2": "octopus marine"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science short video",
+        "query2": "science shorts"
+      }
+    ],
+    "description": "Octopus ink isn’t just a smokescreen—it actually cools the surrounding water. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#science",
+      "#biology",
+      "#ocean",
+      "#mythbusting",
+      "#octopus"
+    ],
+    "place": "",
+    "country": ""
   }
 ]
