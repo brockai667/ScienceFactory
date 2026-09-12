@@ -13131,5 +13131,69 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Europa’s Secret Water Plumes",
+    "thumb": "ICE WATER PLUMES",
+    "description": "Europa’s icy cracks have been spraying water vapor into space, hinting at an ocean below. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#science",
+      "#space",
+      "#europa",
+      "#oceans",
+      "#hubble"
+    ],
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Europa's cracks let water escape, Hubble captured it",
+        "hook_top": "ICE CRACKS RELEASE WATER",
+        "query": "Europa ice cracks Hubble",
+        "query2": "Europa surface fissures"
+      },
+      {
+        "role": "fact",
+        "text": "In 2013 Hubble detected water vapor plumes above Europa’s southern hemisphere",
+        "chips": [
+          {
+            "t": "2013 Hubble detection",
+            "on": "detected",
+            "style": "white"
+          }
+        ],
+        "query": "Hubble Europa plumes 2013",
+        "query2": "space telescope water vapor Europa"
+      },
+      {
+        "role": "fact",
+        "text": "Galileo measured Europa’s ice shell to be roughly ten to thirty kilometers thick",
+        "chips": [
+          {
+            "t": "10‑30 km ice shell",
+            "on": "measured",
+            "style": "accent"
+          }
+        ],
+        "query": "Galileo Europa ice thickness",
+        "query2": "Europa ice shell measurement"
+      },
+      {
+        "role": "reveal",
+        "text": "Those plumes could give spacecraft direct access to the hidden ocean below",
+        "reveal_top": "DIRECT OCEAN ACCESS",
+        "query": "Europa plume sampling concept",
+        "query2": "Europa ocean access mission"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space science short video",
+        "query2": "science short clip"
+      }
+    ],
+    "place": "",
+    "country": ""
   }
 ]

@@ -1,0 +1,54 @@
+{
+  "title": "Saturn Hexagon Mystery Explained",
+  "thumb": "HEXAGON SHOCK",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Saturn's six‑sided storm spans 30,000 km around the pole.",
+      "hook_top": "SATURN HEXAGON SIZE",
+      "query": "Saturn north pole hexagon",
+      "query2": "Saturn storm aerial view"
+    },
+    {
+      "role": "myth",
+      "text": "Many believe the hexagon is a solid, floating wall of ice.",
+      "label": "Hexagon is a solid wall",
+      "query": "hexagon ice wall illustration",
+      "query2": "Saturn hexagon cartoon"
+    },
+    {
+      "role": "truth",
+      "text": "In reality, it's a persistent jet stream—fast winds creating a stable hexagonal wave pattern.",
+      "label": "Jet stream creates shape",
+      "query": "Saturn jet stream hexagon",
+      "query2": "Saturn atmospheric flow hexagon"
+    },
+    {
+      "role": "callout",
+      "text": "Fast winds, not solid matter, shape Saturn’s hexagon.",
+      "label": "Wind‑shaped pattern",
+      "sub": "A planetary jet stream can lock into a six‑sided vortex.",
+      "label_on": "Wind",
+      "query": "Saturn wind pattern hexagon",
+      "query2": "planetary jet stream illustration"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science short video background",
+      "query2": "technology short background"
+    }
+  ],
+  "description": "The iconic hexagon around Saturn’s pole isn’t a solid structure—it’s a massive, stable jet stream. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Saturn",
+    "#space",
+    "#science",
+    "#mythbust",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}
