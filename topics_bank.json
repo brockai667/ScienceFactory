@@ -13195,5 +13195,191 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mercury Shrinking Faster Than Expected",
+    "thumb": "SHRINKING MERCURY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mercury is losing about 1 meter of radius each year",
+        "hook_top": "MERCURY LOSS REVEALED",
+        "query": "Mercury surface shrinkage",
+        "query2": "Mercury radius change"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "Planetary cooling causes the core to contract, pulling the crust inward",
+        "label": "COOLING CORE CONTRACTI",
+        "label_on": "cooling",
+        "query": "Mercury core cooling illustration",
+        "query2": "planet core contraction animation"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "Missions like MESSENGER measured tiny shifts in surface landmarks over a decade",
+        "label": "MESSENGER LANDMARK SHI",
+        "label_on": "messenger",
+        "query": "MESSENGER Mercury surface data",
+        "query2": "Mercury landmark movement"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "The shrinking may eventually trigger global tectonic activity, reshaping the planet’s scarps",
+        "label": "FUTURE TECTONIC ACTIVI",
+        "label_on": "tectonics",
+        "query": "Mercury tectonic scarps formation",
+        "query2": "Mercury surface deformation"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "science short video thumbnail",
+        "query2": "science countdown graphics"
+      }
+    ],
+    "description": "Three surprising facts about why Mercury is shrinking faster than scientists first thought. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Mercury",
+      "#space",
+      "#science",
+      "#planetology",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Mercury's Rapid Shrink Explained",
+    "thumb": "MERCURY SHRINK",
+    "description": "New radar data shows Mercury is losing radius mainly at its poles, not uniformly. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#planetaryscience",
+      "#Mercury",
+      "#mythbusting",
+      "#science"
+    ],
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Mercury's surface is shrinking faster than expected",
+        "hook_top": "MERCURY SHRINKING FAST",
+        "query": "Mercury surface telescope",
+        "query2": "planet Mercury close-up",
+        "role": "hook"
+      },
+      {
+        "type": "myth",
+        "text": "People think Mercury is getting smaller because it cools uniformly.",
+        "label": "Uniform cooling shrinks Mercury",
+        "query": "Mercury cooling illustration",
+        "query2": "planet temperature map",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "truth",
+        "text": "Measurements show the planet's radius is decreasing mainly at the poles due to loss of mantle material.",
+        "label": "Pole‑side loss drives shrink",
+        "query": "Mercury pole measurements",
+        "query2": "planetary radar data Mercury",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Focus on the poles, not the whole planet.",
+        "label": "Pole loss",
+        "sub": "Shrinkage happens at the poles",
+        "label_on": "shrink",
+        "query": "Mercury pole region",
+        "query2": "planetary pole close-up",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for daily science that blows your mind.",
+        "query": "science short video",
+        "query2": "educational clip",
+        "role": "cta"
+      }
+    ],
+    "place": "",
+    "country": ""
+  },
+  {
+    "title": "Mercury's Rapid Shrinkage Mystery",
+    "thumb": "SHRINKING MERCURY",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mercury is losing about 15 mm of its radius each year",
+        "hook_top": "MERCURY LOSES RADIUS",
+        "query": "Mercury planet surface",
+        "query2": "Mercury planet close up"
+      },
+      {
+        "role": "fact",
+        "text": "Laser altimeter data from MESSENGER shows the planet’s radius is decreasing roughly 1.5 meters per century",
+        "chips": [
+          {
+            "t": "1.5 M PER CENTURY",
+            "on": "radius",
+            "style": "accent"
+          }
+        ],
+        "query": "MESSENGER spacecraft Mercury",
+        "query2": "Mercury laser altimeter"
+      },
+      {
+        "role": "fact",
+        "text": "Scientists attribute the shrinkage to cooling of Mercury’s large iron core, which contracts as it loses heat",
+        "chips": [
+          {
+            "t": "COOLING CORE",
+            "on": "core",
+            "style": "white"
+          }
+        ],
+        "query": "Mercury interior diagram",
+        "query2": "planetary core cooling"
+      },
+      {
+        "role": "callout",
+        "text": "A planet can physically shrink over time",
+        "label": "SHRINKING PLANET",
+        "sub": "Mercury’s crust is tightening around a cooling core",
+        "label_on": "shrink",
+        "query": "Mercury surface cracks",
+        "query2": "planet contraction illustration"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new science fact every day.",
+        "query": "science short video icon",
+        "query2": "science short thumbnail"
+      }
+    ],
+    "description": "Mercury’s size is slowly decreasing as its core cools, a rare glimpse of planetary evolution in action. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#planetology",
+      "#Mercury",
+      "#science",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

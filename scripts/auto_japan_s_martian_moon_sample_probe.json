@@ -1,0 +1,58 @@
+{
+  "title": "Japan's Martian Moon Sample Probe",
+  "thumb": "PHOBOS ROCKS",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Phobos will soon hand us its first moon rocks",
+      "hook_top": "PHOBOS FIRST MOON ROCKS",
+      "query": "Phobos surface",
+      "query2": "Martian moon"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "The MMX mission lifts off in 2024",
+      "label": "MMX LAUNCH 2024",
+      "label_on": "launch",
+      "query": "MMX launch",
+      "query2": "Japanese space launch"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "It aims to bring back up to 10 grams of Phobos soil",
+      "label": "SAMPLE COLLECTION",
+      "label_on": "sample",
+      "query": "Phobos soil sample",
+      "query2": "space sample return"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "Phobos gravity is only about 0.005 m/s², making landing tricky",
+      "label": "MICROGRAVITY SURFACE",
+      "label_on": "gravity",
+      "query": "Phobos gravity",
+      "query2": "low gravity moon"
+    },
+    {
+      "role": "cta",
+      "text": "Follow to feed your curious mind daily.",
+      "query": "science follow",
+      "query2": "science short"
+    }
+  ],
+  "description": "Japan's MMX mission will be the first to return material from a Martian moon. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#science",
+    "#phobos",
+    "#japan",
+    "#exploration"
+  ],
+  "place": "",
+  "country": ""
+}
