@@ -1,0 +1,54 @@
+{
+  "title": "Moon Dust Cutting Myths",
+  "thumb": "MOON DUST MYTH",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Apollo 17 brought back 110 kilograms of lunar dust for study.",
+      "hook_top": "LUNAR DUST REVEALED",
+      "query": "Apollo 17 lunar dust sample",
+      "query2": "lunar regolith laboratory"
+    },
+    {
+      "role": "myth",
+      "text": "People think moon dust is sharp enough to slice steel like a knife.",
+      "label": "Moon dust cuts steel",
+      "query": "moon dust closeup",
+      "query2": "lunar regolith texture"
+    },
+    {
+      "role": "truth",
+      "text": "Lunar regolith is made of tiny glassy shards, but its hardness is similar to sand and it cannot cut metal.",
+      "label": "Regolith can’t cut metal",
+      "query": "lunar regolith microscope",
+      "query2": "moon soil particles"
+    },
+    {
+      "role": "callout",
+      "text": "Sharp but not lethal – the dust is abrasive, not a blade.",
+      "label": "Abrasive, not cutting",
+      "sub": "It can wear tools but won’t slice steel.",
+      "label_on": "Abrasive",
+      "query": "astronauts cleaning moon dust",
+      "query2": "lunar dust equipment wear"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "space fact overlay",
+      "query2": "science short background"
+    }
+  ],
+  "description": "The myth that moon dust can cut through steel is busted – it’s abrasive, not a cutting tool. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#moon",
+    "#science",
+    "#mythbusting",
+    "#astronomy"
+  ],
+  "place": "",
+  "country": ""
+}

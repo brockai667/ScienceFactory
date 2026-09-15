@@ -13381,5 +13381,63 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Saturn Hexagon Wind Secrets",
+    "thumb": "HEXAGON WIND",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "At Saturn’s north pole, a 30‑kilometer‑wide hexagon swirls.",
+        "hook_top": "SATURN HEXAGON SWIRLS",
+        "query": "Saturn north pole hexagon",
+        "query2": "Saturn hexagon"
+      },
+      {
+        "role": "count",
+        "num": 1,
+        "text": "Wind speeds inside the hexagon reach up to 400 mph.",
+        "label": "WIND 400 MPH",
+        "label_on": "Wind",
+        "query": "Saturn hexagon wind speed",
+        "query2": "Saturn hexagon wind"
+      },
+      {
+        "role": "count",
+        "num": 2,
+        "text": "The hexagon sits 20 km above the cloud tops, staying stable for decades.",
+        "label": "20 KM ALTITUDE",
+        "label_on": "Altitude",
+        "query": "Saturn hexagon altitude",
+        "query2": "Saturn hexagon height"
+      },
+      {
+        "role": "count",
+        "num": 3,
+        "text": "During southern summer, the hexagon’s color shifts from golden to bluish.",
+        "label": "COLOR SHIFT",
+        "label_on": "Color",
+        "query": "Saturn hexagon color change",
+        "query2": "Saturn hexagon color"
+      },
+      {
+        "role": "cta",
+        "text": "Follow to feed your curious mind daily.",
+        "query": "space animation",
+        "query2": "planet graphics"
+      }
+    ],
+    "description": "Explore three mind‑blowing facts about Saturn’s mysterious hexagonal jet stream. Follow for daily science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Saturn",
+      "#space",
+      "#science",
+      "#weather",
+      "#planet"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

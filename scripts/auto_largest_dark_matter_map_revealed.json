@@ -1,0 +1,57 @@
+{
+  "title": "Largest Dark Matter Map Revealed",
+  "thumb": "BIGGEST DARK MAP",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Astronomers just completed the biggest dark matter map",
+      "hook_top": "BIGGEST DARK MATTER MAP",
+      "query": "dark matter map",
+      "query2": "cosmic map"
+    },
+    {
+      "role": "count",
+      "num": 1,
+      "text": "The map combines data from the DESI and Euclid surveys",
+      "label": "ALL‑SKY SURVEY",
+      "label_on": "survey",
+      "query": "DESI survey",
+      "query2": "Euclid data"
+    },
+    {
+      "role": "count",
+      "num": 2,
+      "text": "It charts the distribution of over a billion galaxies",
+      "label": "OVER ONE BILLION GALAX",
+      "label_on": "galaxies",
+      "query": "galaxy distribution",
+      "query2": "cosmic web"
+    },
+    {
+      "role": "count",
+      "num": 3,
+      "text": "The map reveals filamentary structures shaping dark matter",
+      "label": "NEW CLUES ON COSMIC ST",
+      "label_on": "filaments",
+      "query": "cosmic filaments",
+      "query2": "dark matter web"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the science they never taught you.",
+      "query": "science follow",
+      "query2": "science short"
+    }
+  ],
+  "description": "The new all‑sky dark matter map visualizes the hidden scaffolding of the universe. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#astronomy",
+    "#darkmatter",
+    "#cosmology",
+    "#science"
+  ],
+  "place": "",
+  "country": ""
+}
