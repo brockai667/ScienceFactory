@@ -13439,5 +13439,71 @@
     ],
     "place": "",
     "country": ""
+  },
+  {
+    "title": "Mercury Shrinking Secrets",
+    "thumb": "FAST MERCURY SHRINK",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mercury’s surface is losing inches every year",
+        "hook_top": "MERCURY LOST INCHES",
+        "query": "Mercury surface cracks",
+        "query2": "Mercury planet"
+      },
+      {
+        "role": "fact",
+        "text": "NASA MESSENGER measured a global contraction of about 1‑2 meters since its arrival in 2011",
+        "chips": [
+          {
+            "t": "1‑2 METERS",
+            "on": "contraction",
+            "style": "accent"
+          }
+        ],
+        "punch": "shrink",
+        "query": "MESSENGER spacecraft Mercury",
+        "query2": "Mercury planet data"
+      },
+      {
+        "role": "fact",
+        "text": "The cooling core causes the planet’s mantle to pull inward, forming scarps up to 300 meters high",
+        "chips": [
+          {
+            "t": "300‑METER SCARPS",
+            "on": "scarps",
+            "style": "white"
+          }
+        ],
+        "punch": "crack",
+        "query": "Mercury lobate scarps",
+        "query2": "Mercury geology"
+      },
+      {
+        "role": "reveal",
+        "text": "Those scarps are actually ancient tectonic plates sliding together, making Mercury the most tectonically active planet after Earth",
+        "reveal_top": "ACTIVE PLANET SURPRISE",
+        "query": "Mercury tectonics",
+        "query2": "Mercury surface"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the science they never taught you.",
+        "query": "space science illustration",
+        "query2": "astronomy graphics"
+      }
+    ],
+    "description": "Mercury’s crust is constantly shrinking, revealing a hidden world of tectonic activity. Follow for daily space science!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#space",
+      "#mercury",
+      "#planetology",
+      "#science",
+      "#astronomy"
+    ],
+    "place": "",
+    "country": ""
   }
 ]

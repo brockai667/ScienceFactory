@@ -1,0 +1,68 @@
+{
+  "title": "Hidden Ocean Beneath Europa",
+  "thumb": "GIANT ICE OCEAN",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Europa hides a sea twice Earth's size beneath its icy crust",
+      "hook_top": "EUROPA HIDES GIANT SEA",
+      "query": "Europa ice surface",
+      "query2": "Jupiter moon Europa"
+    },
+    {
+      "role": "fact",
+      "text": "The ice shell is estimated to be about 20 km thick",
+      "chips": [
+        {
+          "t": "20 km THICK",
+          "on": "thick",
+          "style": "accent"
+        }
+      ],
+      "punch": "thick",
+      "query": "Europa ice thickness diagram",
+      "query2": "Europa ice shell measurement"
+    },
+    {
+      "role": "fact",
+      "text": "Scientists believe the hidden ocean holds more water than all of Earth's oceans combined",
+      "chips": [
+        {
+          "t": "MORE WATER",
+          "on": "water",
+          "style": "white"
+        }
+      ],
+      "punch": "water",
+      "query": "Europa subsurface ocean illustration",
+      "query2": "Europa ocean volume comparison"
+    },
+    {
+      "role": "callout",
+      "text": "A massive ocean lies beneath Europa's ice, waiting to be explored",
+      "label": "UNDER‑ICE OCEAN",
+      "sub": "A giant sea hidden below",
+      "label_on": "ocean",
+      "query": "Europa ocean concept art",
+      "query2": "Europa water beneath ice"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily science that blows your mind.",
+      "query": "science short video overlay",
+      "query2": "science channel subscribe graphic"
+    }
+  ],
+  "description": "Europa's icy crust hides a vast ocean that could dwarf all of Earth's water. Follow for daily science!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#space",
+    "#Europa",
+    "#ocean",
+    "#science",
+    "#exploration"
+  ],
+  "place": "",
+  "country": ""
+}
