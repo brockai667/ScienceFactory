@@ -39,6 +39,7 @@ GAP = 0.35
 OV = 0.5
 CARD_T = 1.4           # karta kapitoly (bez reci)
 ENDCARD_T = 2.8        # reel koncovka
+REEL_MAX = 48.0        # max dlzka reelu bez endcardu (user 16.9.: 45-50 s; shorts >35 s maju malo views, cele kapitoly 75 s = 0-5 views)
 HF_CMD = "npx -y hyperframes@0.8.4 render --workers {workers} --protocol-timeout 600000 --output \"{out}\""
 
 STYLE = {  # paper (schvaleny)
@@ -926,10 +927,16 @@ def build_reel(spec, V, ci):
     ch = spec["chapters"][ci]
     hero = ch.get("icon") or spec.get("hero")
     i = 0
+    used = 0.0
     for b in ch["beats"]:
+        d = float(b.get("_dur", 0)) + GAP
+        # reel = zaciatok kapitoly po ~48 s (hook + title + prve beaty), nie cela kapitola
+        if i >= 2 and used + d > REEL_MAX:
+            break
         seq.add(b)
         run_tpl(c, b, i, V, hero, spec)
         i += 1
+        used += d
     end = {"_id": "endcard", "tpl": "endcard"}
     seq.silence(ENDCARD_T, end)
     n1, n2 = len(c.html), len(c.js)
