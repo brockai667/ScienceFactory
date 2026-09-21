@@ -1,5 +1,5 @@
 {
-  "last_publish_at": "2026-09-14T15:00:00Z",
+  "last_publish_at": "2026-09-21T15:00:00Z",
   "history": [
     {
       "series": "Every USB Port Color Explained",
@@ -10,6 +10,11 @@
       "series": "Every Car Body Type Explained",
       "url": "https://www.youtube.com/watch?v=tDqCKG9N8tk",
       "publish_at": "2026-09-14T15:00:00Z"
+    },
+    {
+      "series": "Every Type Of Train Explained",
+      "url": "https://www.youtube.com/watch?v=QpLUjUzupNo",
+      "publish_at": "2026-09-21T15:00:00Z"
     }
   ]
 }

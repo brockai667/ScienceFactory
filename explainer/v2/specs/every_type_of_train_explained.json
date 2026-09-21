@@ -1,0 +1,1792 @@
+{
+  "series": "Every Type Of Train Explained",
+  "title": "Every Type Of Train Explained: From Steam To Maglev",
+  "description": "Explore how steam, diesel, electric, tram, metro, high‑speed, maglev and freight trains differ. Learn the tech, speed and purpose behind each. You'll never look at a train the same way again.",
+  "hashtags": [
+    "#Trains",
+    "#Railway",
+    "#Steam",
+    "#Diesel",
+    "#Electric",
+    "#Maglev",
+    "#Freight",
+    "#Transport"
+  ],
+  "hero": {
+    "emoji": "🚂"
+  },
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "People think steam trains are just old relics and diesel locomotives are noisy monsters. They are not.",
+      "left": {
+        "emoji": "🚂",
+        "label": "Steam",
+        "vis": {
+          "emoji": "🚂"
+        }
+      },
+      "right": {
+        "emoji": "🚛",
+        "label": "Diesel",
+        "vis": {
+          "emoji": "🚛"
+        }
+      },
+      "line": "Just nostalgic relics?",
+      "cues": {
+        "left": "steam trains",
+        "right": "diesel locomotives",
+        "strike": "They are not."
+      }
+    },
+    "grid": {
+      "say": "Different power, tracks, speed define each train. This is every train, explained. Starting with steam.",
+      "cues": {
+        "grid": "Different power",
+        "title": "explained",
+        "mark": "Starting with"
+      },
+      "pulse": [
+        {
+          "cue": "power",
+          "items": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {
+      "name": "Steam",
+      "label": "STEAM",
+      "icon": {
+        "emoji": "🚂"
+      },
+      "hook": "Steam engines turned water into raw power, churning at 30 mph on iron rails.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Steam trains roared onto the scene in the early 1800s, turning coal into raw power that stretched railways across continents.",
+          "slams": [
+            {
+              "text": "COAL POWER"
+            },
+            {
+              "text": "“ROARING STEAM”",
+              "strike": true
+            },
+            {
+              "text": "IT CHANGED EVERYTHING",
+              "color": "red"
+            },
+            {
+              "text": "THE ORIGINAL ENGINE",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Steam.",
+          "title": "Steam",
+          "kicker": "EVERY TYPE OF TRAIN, PART 1",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Early 1800s saw the first locomotive harness coal’s heat, delivering about four thousand horsepower to pull heavy loads.",
+          "head": "First locomotive",
+          "label": "Early 1800s — power breakthrough",
+          "stamp": "1800s",
+          "callouts": [
+            [
+              "#c9a227",
+              "4,000 hp"
+            ],
+            [
+              "#1c4ed8",
+              "coal‑fired"
+            ]
+          ],
+          "cues": {
+            "head": "First locomotive",
+            "action": "harness coal",
+            "circle": "four thousand horsepower"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Before steam, you relied on horses, canals and early road wagons to move goods.",
+          "head": "Pre‑steam transport",
+          "sub": {
+            "text": "horse, canal, wagon"
+          },
+          "hub": {
+            "emoji": "🚂"
+          },
+          "items": [
+            {
+              "emoji": "🐎",
+              "label": "Horse‑drawn wagons",
+              "vis": {
+                "emoji": "🐎"
+              }
+            },
+            {
+              "emoji": "🛶",
+              "label": "Canal boats",
+              "vis": {
+                "emoji": "🛶"
+              }
+            },
+            {
+              "emoji": "🚚",
+              "label": "Road wagons",
+              "cue": "road wagons",
+              "vis": {
+                "emoji": "🚚"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "A typical steam engine pushed out four thousand horsepower – enough to haul a full freight train up a steep grade.",
+          "num_end": 4000.0,
+          "decimals": 0,
+          "unit": "hp",
+          "label": "Steam locomotive power",
+          "sub": "moves a full freight train",
+          "vis": {
+            "emoji": "🚂"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🛤️"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "four thousand",
+            "sub": "full freight"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Its downside? Low efficiency and thick smoke, meaning you burned a lot of coal for each mile traveled.",
+          "head": "The weak spot",
+          "label": "Low efficiency, high smoke",
+          "stamp": "SMOKE",
+          "callouts": [
+            [
+              "#d62828",
+              "inefficient"
+            ],
+            [
+              "#7a7a7a",
+              "smoke clouds"
+            ]
+          ],
+          "cues": {
+            "action": "burned a lot",
+            "circle": "each mile",
+            "callouts": "low efficiency"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you still see steam on heritage railways and tourist lines, where history chugs along for fun.",
+          "head": "Still alive today",
+          "sub": {
+            "text": "heritage and tourism",
+            "cue": "heritage railways"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚂",
+              "label": "Heritage railways",
+              "cue": "heritage railways",
+              "vis": {
+                "emoji": "🚂"
+              }
+            },
+            {
+              "emoji": "🎡",
+              "label": "Tourist lines",
+              "cue": "tourist lines",
+              "vis": {
+                "emoji": "🎡"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to diesel’s three thousand horsepower, steam gives you a raw four‑thousand, but diesel runs cleaner and needs far fewer water stops.",
+          "head": "Steam vs Diesel",
+          "ekg": null,
+          "left": {
+            "emoji": "🚂",
+            "label": "Steam",
+            "cue": "steam gives",
+            "vis": {
+              "emoji": "🚂"
+            }
+          },
+          "right": {
+            "emoji": "🚛",
+            "label": "Diesel",
+            "cue": "diesel runs",
+            "vis": {
+              "emoji": "🚛"
+            }
+          },
+          "line": "More power, more smoke",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Diesel",
+      "label": "DIESEL",
+      "icon": {
+        "emoji": "🚛"
+      },
+      "hook": "Diesel locomotives sparked the mid‑20th century, hauling freight at 50 mph with diesel fuel.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Diesel engines changed railroads. They gave you more power, longer runs, and less water hassle. No steam clouds, just a steady roar.",
+          "slams": [
+            {
+              "text": "DIESEL POWER REDEFINED"
+            },
+            {
+              "text": "LONGER RUNS",
+              "cue": "longer runs",
+              "color": "red"
+            },
+            {
+              "text": "NO STEAM CLOUDS",
+              "cue": "No steam clouds",
+              "strike": true
+            },
+            {
+              "text": "STEADY ROAR",
+              "cue": "steady roar",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Diesel.",
+          "title": "Diesel",
+          "kicker": "EVERY TYPE OF TRAIN, PART 2",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "First rolled out in 1925, a diesel locomotive packed three thousand horsepower, a solid boost over steam’s four thousand horse‑power output.",
+          "head": "Birth of diesel",
+          "label": "1925 — first diesel locomotive",
+          "stamp": "1925",
+          "callouts": [
+            [
+              "#c9a227",
+              "3,000 hp"
+            ],
+            [
+              "#1c4ed8",
+              "higher thermal efficiency"
+            ]
+          ],
+          "cues": {
+            "head": "First rolled out",
+            "stamp": "1925",
+            "action": "packed three thousand horsepower",
+            "circle": "solid boost"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What diesel brought to the rails? Simpler fueling, no water stops, and better fuel mileage.",
+          "head": "Diesel advantages",
+          "sub": {
+            "text": "simpler fueling, no water stops",
+            "cue": "simpler fueling"
+          },
+          "hub": {
+            "emoji": "🚛"
+          },
+          "items": [
+            {
+              "emoji": "⛽",
+              "label": "Fueling simplicity",
+              "vis": {
+                "emoji": "⛽"
+              }
+            },
+            {
+              "emoji": "💧",
+              "label": "No water stops",
+              "cue": "No water stops",
+              "vis": {
+                "emoji": "💧"
+              }
+            },
+            {
+              "emoji": "⚙️",
+              "label": "Higher efficiency",
+              "vis": {
+                "emoji": "⚙️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its fuel efficiency is about twenty‑five percent better than steam, turning every gallon into more miles, like getting an extra quarter‑mile for each mile you drive.",
+          "num_end": 25.0,
+          "decimals": 0,
+          "unit": "%",
+          "label": "Diesel vs steam efficiency",
+          "sub": "extra quarter‑mile per mile",
+          "vis": {
+            "emoji": "🚂"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⛽"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "twenty‑five percent",
+            "sub": "extra quarter‑mile"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But diesel isn’t perfect. It still emits exhaust, so it’s not a zero‑emission solution.",
+          "head": "The weak spot",
+          "label": "Emissions remain",
+          "stamp": "EXHAUST",
+          "callouts": [
+            [
+              "#d62828",
+              "still emits exhaust"
+            ],
+            [
+              "#7a7a7a",
+              "not zero emissions"
+            ]
+          ],
+          "cues": {
+            "head": "But diesel isn’t perfect",
+            "action": "still emits"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find diesel engines pulling freight trains, regional passenger services, and even some commuter lines across the globe.",
+          "head": "Where you see diesel",
+          "sub": {
+            "text": "freight and regional passenger"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚚",
+              "label": "Freight locomotives",
+              "vis": {
+                "emoji": "🚚"
+              }
+            },
+            {
+              "emoji": "🚆",
+              "label": "Regional passenger",
+              "cue": "Regional passenger",
+              "vis": {
+                "emoji": "🚆"
+              }
+            },
+            {
+              "emoji": "🛤️",
+              "label": "Commuter lines",
+              "cue": "Commuter lines",
+              "vis": {
+                "emoji": "🛤️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to steam, diesel gives you similar raw power but with a cleaner, longer‑range engine—think of swapping a coal furnace for a modern diesel truck.",
+          "head": "Diesel vs steam",
+          "ekg": "cleaner longer‑range",
+          "left": {
+            "emoji": "🚂",
+            "label": "Steam",
+            "cue": "Steam",
+            "vis": {
+              "emoji": "🚂"
+            }
+          },
+          "right": {
+            "emoji": "🚛",
+            "label": "Diesel",
+            "cue": "Diesel",
+            "vis": {
+              "emoji": "🚛"
+            }
+          },
+          "line": "Same power, cleaner ride",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Electric",
+      "label": "ELECTRIC",
+      "icon": {
+        "emoji": "⚡"
+      },
+      "hook": "Electric trains glide silently, drawing power from overhead lines or third rails.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Electric trains sparked a quiet revolution. No smoke, just humming wires and instant power. They changed how you ride the rails forever.",
+          "slams": [
+            {
+              "text": "THE QUIET REVOLUTION"
+            },
+            {
+              "text": "NO SMOKE",
+              "cue": "no smoke",
+              "strike": true
+            },
+            {
+              "text": "JUST HUMMING WIRES",
+              "cue": "just humming wires",
+              "color": "blue"
+            },
+            {
+              "text": "INSTANT POWER",
+              "cue": "instant power",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Electric.",
+          "title": "Electric",
+          "kicker": "EVERY TYPE OF TRAIN, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "In 1837 the first electric locomotive appeared, delivering a whopping six thousand kilowatts. That’s double the diesel’s power and zero exhaust at the track.",
+          "head": "First electric locomotive",
+          "label": "1837 — the breakthrough",
+          "stamp": "1837",
+          "callouts": [
+            [
+              "#0066cc",
+              "6,000 kW"
+            ],
+            [
+              "#ff6600",
+              "zero emissions"
+            ]
+          ],
+          "cues": {
+            "head": "first electric",
+            "stamp": "1837",
+            "action": "delivering a",
+            "circle": "zero exhaust"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes it tick? Overhead catenary, a transformer, traction motors, and regenerative braking that sends energy back to the grid.",
+          "head": "Key components",
+          "sub": {
+            "text": "the electric stack"
+          },
+          "hub": {
+            "emoji": "⚡"
+          },
+          "items": [
+            {
+              "emoji": "🪙",
+              "label": "Catenary",
+              "cue": "catenary",
+              "vis": {
+                "emoji": "🪙"
+              }
+            },
+            {
+              "emoji": "🔌",
+              "label": "Transformer",
+              "cue": "transformer",
+              "vis": {
+                "emoji": "🔌"
+              }
+            },
+            {
+              "emoji": "🚂",
+              "label": "Traction motor",
+              "cue": "traction motor",
+              "vis": {
+                "emoji": "🚂"
+              }
+            },
+            {
+              "emoji": "🔄",
+              "label": "Regenerative brake",
+              "cue": "regenerative braking",
+              "vis": {
+                "emoji": "🔄"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Six thousand kilowatts can light up about thirty average homes for a day, or pull a freight train up a steep grade without breaking a sweat.",
+          "num_end": 6000.0,
+          "decimals": 0,
+          "unit": "kW",
+          "label": "Electric power output",
+          "sub": "30 homes – one day",
+          "vis": {
+            "emoji": "🏠"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚂"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "six thousand",
+            "sub": "thirty average"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? You need a network of wires or a third rail, a costly skeleton that stretches for miles before the train can run.",
+          "head": "Infrastructure demand",
+          "label": "Wired up",
+          "stamp": "INFRA",
+          "callouts": [
+            [
+              "#aa0000",
+              "overhead lines"
+            ],
+            [
+              "#555555",
+              "expensive build"
+            ]
+          ],
+          "cues": {
+            "head": "the downside",
+            "action": "need a network"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Where you’ll find them today: high‑speed corridors, commuter rails slicing through suburbs, and urban transit loops that never stop moving.",
+          "head": "Modern uses",
+          "sub": {
+            "text": "electric everywhere"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚅",
+              "label": "High‑speed rail",
+              "cue": "high‑speed",
+              "vis": {
+                "emoji": "🚅"
+              }
+            },
+            {
+              "emoji": "🚇",
+              "label": "Commuter rail",
+              "cue": "commuter rail",
+              "vis": {
+                "emoji": "🚇"
+              }
+            },
+            {
+              "emoji": "🚊",
+              "label": "Urban transit",
+              "cue": "urban transit",
+              "vis": {
+                "emoji": "🚊"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to diesel’s three thousand horsepower, electric delivers double the punch and none of the exhaust—pure power without the puff.",
+          "head": "Power showdown",
+          "ekg": "double the punch",
+          "left": {
+            "emoji": "⚙️",
+            "label": "Diesel",
+            "cue": "diesel’s three",
+            "vis": {
+              "emoji": "⚙️"
+            }
+          },
+          "right": {
+            "emoji": "⚡",
+            "label": "Electric",
+            "cue": "electric delivers",
+            "vis": {
+              "emoji": "⚡"
+            }
+          },
+          "line": "Why settle for less?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Tram",
+      "label": "TRAM",
+      "icon": {
+        "emoji": "🚋"
+      },
+      "hook": "City trams share streets with cars, delivering commuters at 15 mph.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Trams glide through city streets, a century‑old idea that still feels fresh today. Imagine riding a moving sidewalk on rails.",
+          "slams": [
+            {
+              "text": "CITY STREET RAIL"
+            },
+            {
+              "text": "“GLIDE THROUGH”",
+              "cue": "glide through",
+              "strike": true
+            },
+            {
+              "text": "STILL FEELS FRESH",
+              "cue": "still feels fresh",
+              "color": "blue"
+            },
+            {
+              "text": "CENTURY‑OLD IDEA",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Tram, the urban rail that rides the road.",
+          "title": "Tram",
+          "kicker": "EVERY TYPE OF TRAIN, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "First rolled out in 1832, the tram runs on city streets, weaving between cars and pedestrians.",
+          "head": "First tram",
+          "label": "1832 — street‑level rail",
+          "stamp": "1832",
+          "callouts": [
+            [
+              "#4a7c9b",
+              "street‑level operation"
+            ],
+            [
+              "#b33c12",
+              "tight turning radius"
+            ]
+          ],
+          "cues": {
+            "stamp": "1832",
+            "action": "runs on city",
+            "circle": "city streets"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes a tram special? Low‑profile wheels, electric overhead wires, and a compact driver cabin.",
+          "head": "Tram basics",
+          "sub": {
+            "text": "compact and city‑friendly"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚋",
+              "label": "Low‑profile wheels",
+              "vis": {
+                "emoji": "🚋"
+              }
+            },
+            {
+              "emoji": "⚡",
+              "label": "Overhead wires",
+              "cue": "overhead wires",
+              "vis": {
+                "emoji": "⚡"
+              }
+            },
+            {
+              "emoji": "👤",
+              "label": "Compact cabin",
+              "vis": {
+                "emoji": "👤"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its power sits at two‑and‑a‑half thousand kilowatts, enough to pull a full city line without breaking a sweat.",
+          "num_end": 2500.0,
+          "decimals": 0,
+          "unit": "kW",
+          "label": "Tram power",
+          "sub": "city line strength",
+          "vis": {
+            "emoji": "🚋"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🏙️"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "sub": "full city line"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But speed isn’t its game. Trams excel at short hops, not sprinting across continents.",
+          "head": "Speed limits",
+          "label": "Urban hops",
+          "stamp": "SLOW",
+          "callouts": [
+            [
+              "#d9534f",
+              "short hops"
+            ],
+            [
+              "#5bc0de",
+              "not for long hauls"
+            ]
+          ],
+          "cues": {
+            "action": "excel at",
+            "circle": "short hops",
+            "callouts": "not sprinting"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Where you’ll find trams today: historic cores of Europe, bustling Asian megacities, and select North‑American downtowns.",
+          "head": "Where they run",
+          "sub": {
+            "text": "city centers worldwide"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🇪🇺",
+              "label": "Europe",
+              "cue": "Europe",
+              "vis": {
+                "emoji": "🇪🇺"
+              }
+            },
+            {
+              "emoji": "🇯🇵",
+              "label": "Asia",
+              "cue": "Asia",
+              "vis": {
+                "emoji": "🇯🇵"
+              }
+            },
+            {
+              "emoji": "🇺🇸",
+              "label": "North America",
+              "vis": {
+                "emoji": "🇺🇸"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to a mainline electric train, a tram uses about half the power but trades speed for street‑level access.",
+          "head": "Power trade‑off",
+          "ekg": null,
+          "left": {
+            "emoji": "🚋",
+            "label": "Tram",
+            "cue": "Tram",
+            "vis": {
+              "emoji": "🚋"
+            }
+          },
+          "right": {
+            "emoji": "🚆",
+            "label": "Electric train",
+            "cue": "Electric train",
+            "vis": {
+              "emoji": "🚆"
+            }
+          },
+          "line": "Half the power, double the city reach",
+          "cues": {
+            "line": "half the power"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Metro",
+      "label": "METRO",
+      "icon": {
+        "emoji": "🚇"
+      },
+      "hook": "Underground metros zip through tunnels, moving millions daily at 30 mph.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "You step into a tunnel, the train whooshes past, and you realize this is the heart of the city—Metro, the underground lifeline since the 1860s.",
+          "slams": [
+            {
+              "text": "UNDERGROUND LIFELINE"
+            },
+            {
+              "text": "“CITY HEART”",
+              "strike": true
+            },
+            {
+              "text": "IT'S HERE.",
+              "color": "red"
+            },
+            {
+              "text": "SINCE 1863",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Metro.",
+          "title": "Metro",
+          "kicker": "EVERY TYPE OF TRAIN, PART 5",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in 1863, the Metro runs on 8,000 kilowatts, powering tunnels that can swallow whole city blocks.",
+          "head": "First underground",
+          "label": "1863 — the birth year",
+          "stamp": "1863",
+          "callouts": [
+            [
+              "#0044cc",
+              "8,000 kW"
+            ],
+            [
+              "#ff6600",
+              "dedicated tunnels"
+            ]
+          ],
+          "cues": {
+            "stamp": "1863",
+            "action": "powering tunnels",
+            "circle": "city blocks"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes a Metro tick? Massive passenger capacity, automated signaling, and nonstop service every few minutes.",
+          "head": "Metro essentials",
+          "sub": {
+            "text": "high‑capacity, nonstop"
+          },
+          "hub": {
+            "emoji": "🚇"
+          },
+          "items": [
+            {
+              "emoji": "🧍‍♀️🧍‍♂️",
+              "label": "Capacity",
+              "cue": "capacity",
+              "vis": {
+                "emoji": "🧍‍♀️🧍‍♂️"
+              }
+            },
+            {
+              "emoji": "⚙️",
+              "label": "Automation",
+              "vis": {
+                "emoji": "⚙️"
+              }
+            },
+            {
+              "emoji": "⏱️",
+              "label": "Frequency",
+              "vis": {
+                "emoji": "⏱️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its power is eight thousand kilowatts—enough to run a small town’s lights for a day.",
+          "num_end": 8000.0,
+          "decimals": 0,
+          "unit": "kW",
+          "label": "Metro power",
+          "sub": "lights for a day",
+          "vis": {
+            "emoji": "💡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚇"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "eight thousand",
+            "sub": "for a day"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "What it can’t do is zip you between cities. Metro lines stay within the urban core, not the countryside.",
+          "head": "The weak spot",
+          "label": "Urban only",
+          "stamp": "INTERCIT",
+          "callouts": [
+            [
+              "#d62828",
+              "no intercity range"
+            ],
+            [
+              "#7a7a7a",
+              "stays in city"
+            ]
+          ],
+          "cues": {
+            "action": "zip you",
+            "circle": "urban core"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find Metro systems everywhere—from London’s deep lines to Tokyo’s sleek loops—each serving millions daily.",
+          "head": "Where you’ll see them",
+          "sub": {
+            "text": "global urban networks"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🇬🇧",
+              "label": "London",
+              "cue": "London",
+              "vis": {
+                "emoji": "🇬🇧"
+              }
+            },
+            {
+              "emoji": "🇯🇵",
+              "label": "Tokyo",
+              "cue": "Tokyo",
+              "vis": {
+                "emoji": "🇯🇵"
+              }
+            },
+            {
+              "emoji": "🇫🇷",
+              "label": "Paris",
+              "vis": {
+                "emoji": "🇫🇷"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to a tram’s 2,500 kW, a Metro packs three times the power, delivering faster rides and far more riders per hour.",
+          "head": "Power punch",
+          "ekg": "three times",
+          "left": {
+            "emoji": "🚋",
+            "label": "Tram",
+            "cue": "tram",
+            "vis": {
+              "emoji": "🚋"
+            }
+          },
+          "right": {
+            "emoji": "🚇",
+            "label": "Metro",
+            "cue": "metro",
+            "vis": {
+              "emoji": "🚇"
+            }
+          },
+          "line": "Why settle for less?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "High-speed",
+      "label": "HIGH‑SPEED",
+      "icon": {
+        "emoji": "🚄"
+      },
+      "hook": "High‑speed rails cut coast‑to‑coast trips to under 3 hours, cruising above 200 mph.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Zooming past the landscape, high‑speed trains break the sound barrier of rail travel. Since the mid‑sixties they’ve turned journeys into blur rides.",
+          "slams": [
+            {
+              "text": "HIGH‑SPEED TRAINS"
+            },
+            {
+              "text": "FASTEST ON RAIL",
+              "color": "red"
+            },
+            {
+              "text": "SPEED REVOLUTION",
+              "color": "blue"
+            },
+            {
+              "text": "“BLUR RIDES”",
+              "cue": "blur rides",
+              "strike": true
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "High‑speed rail, the bullet on tracks.",
+          "title": "High‑speed",
+          "kicker": "EVERY TYPE OF TRAIN, PART 6",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in 1964, these beasts pack 12,000 kW, whipping you past 250 km/h with sleek aerodynamics and welded rails.",
+          "head": "First high‑speed line",
+          "label": "1964 — the breakthrough",
+          "stamp": "1964",
+          "callouts": [
+            [
+              "#0044cc",
+              "12,000 kW power"
+            ],
+            [
+              "#ff6600",
+              "250 km/h speed"
+            ]
+          ],
+          "cues": {
+            "stamp": "1964",
+            "action": "whipping you",
+            "circle": "sleek aerodynamics",
+            "callouts": "12,000 kW"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes them tick? Aerodynamic noses, continuous welded track, and dedicated corridors that never share space with freight.",
+          "head": "Key ingredients",
+          "sub": {
+            "text": "design and infrastructure"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚄",
+              "label": "Aerodynamic nose",
+              "cue": "Aerodynamic nose",
+              "vis": {
+                "emoji": "🚄"
+              }
+            },
+            {
+              "emoji": "🛤️",
+              "label": "Welded track",
+              "cue": "Welded track",
+              "vis": {
+                "emoji": "🛤️"
+              }
+            },
+            {
+              "emoji": "🟦",
+              "label": "Dedicated line",
+              "vis": {
+                "emoji": "🟦"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Power? Twelve thousand kilowatts—enough to run a small town, and that pushes you past two‑hundred‑fifty kilometres every hour.",
+          "num_end": 12.0,
+          "decimals": 0,
+          "unit": "kW",
+          "label": "High‑speed power",
+          "sub": "runs a small town",
+          "vis": {
+            "emoji": "⚡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🏙️"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "twelve thousand",
+            "sub": "every hour"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Their downside? They can’t mingle with ordinary freight tracks, so you need a whole new rail network just for them.",
+          "head": "The limitation",
+          "label": "No freight sharing",
+          "stamp": "EXCLUSIV",
+          "callouts": [
+            [
+              "#aa0000",
+              "requires new tracks"
+            ],
+            [
+              "#555555",
+              "isolated corridors"
+            ]
+          ],
+          "cues": {
+            "action": "mingle with",
+            "circle": "new rail network"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Where you’ll find them today: France’s TGV, Japan’s Shinkansen, China’s CRH, and the U.S. Acela corridor.",
+          "head": "Global routes",
+          "sub": {
+            "text": "high‑speed corridors worldwide"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🇫🇷",
+              "label": "TGV France",
+              "vis": {
+                "emoji": "🇫🇷"
+              }
+            },
+            {
+              "emoji": "🇯🇵",
+              "label": "Shinkansen Japan",
+              "vis": {
+                "emoji": "🇯🇵"
+              }
+            },
+            {
+              "emoji": "🇨🇳",
+              "label": "CRH China",
+              "vis": {
+                "emoji": "🇨🇳"
+              }
+            },
+            {
+              "emoji": "🇺🇸",
+              "label": "Acela USA",
+              "vis": {
+                "emoji": "🇺🇸"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to metros, high‑speed trains need 50 % more power to hit those speeds, but they trade city stop‑and‑go for straight‑line sprint.",
+          "head": "Power jump",
+          "ekg": "more power",
+          "left": {
+            "emoji": "🚇",
+            "label": "Metro",
+            "cue": "Metro",
+            "vis": {
+              "emoji": "🚇"
+            }
+          },
+          "right": {
+            "emoji": "🚄",
+            "label": "High‑speed",
+            "cue": "High‑speed",
+            "vis": {
+              "emoji": "🚄"
+            }
+          },
+          "line": "Why trade stops for speed?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Maglev",
+      "label": "MAGLEV",
+      "icon": {
+        "emoji": "🧲"
+      },
+      "hook": "Maglev trains float on magnetic fields, reaching 300 mph without wheels.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Imagine a train that floats, gliding silently at breakneck speed, no wheels, no tracks, just magnetic force pulling you forward.",
+          "slams": [
+            {
+              "text": "FLOATING TRAIN"
+            },
+            {
+              "text": "SILENT SPEED"
+            },
+            {
+              "text": "MAGNETIC FORCE"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Maglev.",
+          "title": "Maglev",
+          "kicker": "EVERY TYPE OF TRAIN, PART 7",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "The first maglev debuted in 1984, packing 16,000 kilowatts of power. It levitates on magnets, erasing friction and delivering whisper‑quiet rides.",
+          "head": "First maglev",
+          "label": "1984 — magnetic levitation",
+          "stamp": "1984",
+          "callouts": [
+            [
+              "#0066ff",
+              "16,000 kW"
+            ],
+            [
+              "#ff6600",
+              "magnetic levitation"
+            ]
+          ],
+          "cues": {
+            "head": "First maglev",
+            "stamp": "1984",
+            "action": "levitates on magnets"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Compared to high‑speed rail, maglev trades wheel‑track contact for pure lift, but needs brand‑new guideways.",
+          "head": "What changes",
+          "sub": {
+            "text": "no wheels, new tracks",
+            "cue": "new guideways"
+          },
+          "hub": {
+            "emoji": "🚄"
+          },
+          "items": [
+            {
+              "emoji": "🚅",
+              "label": "High‑speed rail",
+              "cue": "high‑speed rail",
+              "vis": {
+                "emoji": "🚅"
+              }
+            },
+            {
+              "emoji": "🛤️",
+              "label": "Guideway",
+              "cue": "new guideways",
+              "vis": {
+                "emoji": "🛤️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Sixteen thousand kilowatts pushes the train forward, enough to power a small town for a day.",
+          "num_end": 16.0,
+          "decimals": 0,
+          "unit": "kW",
+          "label": "Maglev power",
+          "sub": "powers a small town",
+          "vis": {
+            "emoji": "⚡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚄"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "sixteen thousand",
+            "sub": "small town"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Its biggest drawback? It won’t run on existing rails, so you need a whole new magnetic track system.",
+          "head": "The drawback",
+          "label": "Compatibility issue",
+          "stamp": "NEW TRAC",
+          "callouts": [
+            [
+              "#aa0000",
+              "no existing rails"
+            ],
+            [
+              "#004400",
+              "new track cost"
+            ]
+          ],
+          "cues": {
+            "action": "run on existing rails"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you can ride it on Shanghai’s line, or see test runs in Japan and Germany.",
+          "head": "Where you’ll find it",
+          "sub": {
+            "text": "limited real‑world lines"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🗺️",
+              "label": "Shanghai Line",
+              "cue": "Shanghai",
+              "vis": {
+                "emoji": "🗺️"
+              }
+            },
+            {
+              "emoji": "🇯🇵",
+              "label": "Japan tests",
+              "cue": "Japan",
+              "vis": {
+                "emoji": "🇯🇵"
+              }
+            },
+            {
+              "emoji": "🇩🇪",
+              "label": "Germany tests",
+              "cue": "Germany",
+              "vis": {
+                "emoji": "🇩🇪"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Maglev’s power tops high‑speed rail by about a third, yet it eliminates every wheel‑track friction point.",
+          "head": "Power edge",
+          "ekg": null,
+          "left": {
+            "emoji": "🚅",
+            "label": "High‑speed rail",
+            "cue": "high‑speed rail",
+            "vis": {
+              "emoji": "🚅"
+            }
+          },
+          "right": {
+            "emoji": "🚄",
+            "label": "Maglev",
+            "cue": "Maglev",
+            "vis": {
+              "emoji": "🚄"
+            }
+          },
+          "line": "No wheels, no friction",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Freight",
+      "label": "FREIGHT",
+      "icon": {
+        "emoji": "🚚"
+      },
+      "hook": "Freight trains haul containers, moving the equivalent of 10,000 trucks in one run.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Freight trains are the workhorses of the rails, hauling everything from corn to containers across continents.",
+          "slams": [
+            {
+              "text": "RAIL WORKHORSES"
+            },
+            {
+              "text": "EVERYTHING FROM CORN",
+              "cue": "everything from corn",
+              "strike": true
+            },
+            {
+              "text": "CROSS CONTINENTS",
+              "cue": "cross continents",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Freight.",
+          "title": "Freight",
+          "kicker": "EVERY TYPE OF TRAIN, PART 8",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Late 1800s saw the birth of the heavy‑duty freight locomotive, packing five thousand horsepower for massive loads.",
+          "head": "Heavy‑duty power",
+          "label": "Late 1800s — freight rise",
+          "stamp": "1800s",
+          "callouts": [
+            [
+              "#4b8b3b",
+              "5,000 hp"
+            ],
+            [
+              "#2a5d9f",
+              "longer trains"
+            ]
+          ],
+          "cues": {
+            "stamp": "late 1800s",
+            "action": "massive loads"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What freight pulls is a world of goods: bulk coal, intermodal containers, refrigerated produce, and oversized machinery.",
+          "head": "What it hauls",
+          "sub": {
+            "text": "massive variety of cargo"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "⛏️",
+              "label": "Coal",
+              "cue": "coal",
+              "vis": {
+                "emoji": "⛏️"
+              }
+            },
+            {
+              "emoji": "📦",
+              "label": "Containers",
+              "cue": "containers",
+              "vis": {
+                "emoji": "📦"
+              }
+            },
+            {
+              "emoji": "🥶",
+              "label": "Refrigerated",
+              "cue": "refrigerated produce",
+              "vis": {
+                "emoji": "🥶"
+              }
+            },
+            {
+              "emoji": "🚧",
+              "label": "Machinery",
+              "cue": "oversized machinery",
+              "vis": {
+                "emoji": "🚧"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Five thousand horsepower means a freight locomotive can pull the weight of about thirty fully loaded semi‑trucks.",
+          "num_end": 5000.0,
+          "decimals": 0,
+          "unit": "hp",
+          "label": "Freight power",
+          "sub": "30 semi‑trucks",
+          "vis": {
+            "emoji": "🚚"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚂"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "five thousand",
+            "sub": "fully loaded"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Unlike passenger trains, freight cars lack comfy seats, windows, or Wi‑Fi—just steel frames built for strength.",
+          "head": "No passenger perks",
+          "label": "Designed for cargo",
+          "stamp": "STRENGTH",
+          "callouts": [
+            [
+              "#c0392b",
+              "steel frames"
+            ],
+            [
+              "#7f8c8d",
+              "no seats"
+            ]
+          ],
+          "cues": {
+            "action": "built for strength"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Freight routes dominate the globe: dedicated corridors in North America, Europe’s intermodal hubs, and Asia’s massive coal lines.",
+          "head": "Where it runs",
+          "sub": {
+            "text": "global freight corridors"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🇺🇸",
+              "label": "North America",
+              "cue": "North America",
+              "vis": {
+                "emoji": "🇺🇸"
+              }
+            },
+            {
+              "emoji": "🇪🇺",
+              "label": "Europe",
+              "cue": "Europe",
+              "vis": {
+                "emoji": "🇪🇺"
+              }
+            },
+            {
+              "emoji": "🇨🇳",
+              "label": "Asia",
+              "cue": "Asia",
+              "vis": {
+                "emoji": "🇨🇳"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to steam’s four thousand horsepower, freight matches that output but focuses on pulling power rather than speed.",
+          "head": "Power match, purpose shift",
+          "ekg": null,
+          "left": {
+            "emoji": "🚂",
+            "label": "Steam",
+            "cue": "steam’s four thousand",
+            "vis": {
+              "emoji": "🚂"
+            }
+          },
+          "right": {
+            "emoji": "🚚",
+            "label": "Freight",
+            "cue": "freight matches",
+            "vis": {
+              "emoji": "🚚"
+            }
+          },
+          "line": "More pull, less speed",
+          "cues": {}
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Pick the right train for speed or cargo. Match purpose to power. See you next Monday.",
+    "type_text": "Match purpose to power",
+    "cues": {
+      "key": "purpose"
+    }
+  },
+  "facts": [
+    {
+      "name": "Steam",
+      "year": "early 1800s",
+      "key_number": "4,000 hp",
+      "new": [
+        "first locomotive power source",
+        "enabled long-distance rail travel",
+        "pioneered rail network expansion"
+      ],
+      "lacked": "high efficiency and low emissions",
+      "still_used": "heritage railways and tourist lines",
+      "compare": ""
+    },
+    {
+      "name": "Diesel",
+      "year": "1925",
+      "key_number": "3,000 hp",
+      "new": [
+        "higher thermal efficiency than steam",
+        "simpler fueling infrastructure",
+        "greater range without water stops"
+      ],
+      "lacked": "zero emissions",
+      "still_used": "freight locomotives and regional passenger services in many countries",
+      "compare": "Diesel offers ~25% better fuel efficiency than steam's 4,000 hp output"
+    },
+    {
+      "name": "Electric",
+      "year": "1837",
+      "key_number": "6,000 kW",
+      "new": [
+        "no local emissions",
+        "instant torque for rapid acceleration",
+        "compatible with regenerative braking"
+      ],
+      "lacked": "need for overhead lines or third rail",
+      "still_used": "high‑speed passenger lines, commuter rail, urban transit",
+      "compare": "Electric delivers double the power of diesel's 3,000 hp while eliminating exhaust"
+    },
+    {
+      "name": "Tram",
+      "year": "1832",
+      "key_number": "2,500 kW",
+      "new": [
+        "street‑level operation",
+        "tight turning radius",
+        "integrated with city traffic"
+      ],
+      "lacked": "high speed over long distances",
+      "still_used": "city centers in Europe, Asia, and North America",
+      "compare": "Trams use about half the power of electric mainline trains but run on city streets"
+    },
+    {
+      "name": "Metro",
+      "year": "1863",
+      "key_number": "8,000 kW",
+      "new": [
+        "dedicated underground tunnels",
+        "high passenger capacity",
+        "automated signaling"
+      ],
+      "lacked": "intercity range",
+      "still_used": "urban rapid transit systems worldwide",
+      "compare": "Metro power is roughly three times a tram's 2,500 kW, enabling faster, higher‑capacity service"
+    },
+    {
+      "name": "High-speed",
+      "year": "1964",
+      "key_number": "12,000 kW",
+      "new": [
+        "speeds above 250 km/h",
+        "aerodynamic trainsets",
+        "continuous welded track"
+      ],
+      "lacked": "ability to run on conventional freight lines",
+      "still_used": "dedicated high‑speed corridors in Europe, Asia, and the US",
+      "compare": "High‑speed trains use 50% more power than metros to achieve over 250 km/h"
+    },
+    {
+      "name": "Maglev",
+      "year": "1984",
+      "key_number": "16,000 kW",
+      "new": [
+        "magnetic levitation",
+        "near‑zero friction",
+        "silence at high speed"
+      ],
+      "lacked": "compatibility with existing rail infrastructure",
+      "still_used": "Shanghai Maglev Line and limited test tracks in Japan and Germany",
+      "compare": "Maglev's power exceeds high‑speed rail by about 33% while eliminating wheel‑track contact"
+    },
+    {
+      "name": "Freight",
+      "year": "late 1800s",
+      "key_number": "5,000 hp",
+      "new": [
+        "heavy load capacity",
+        "specialized couplers",
+        "longer train lengths"
+      ],
+      "lacked": "passenger comfort features",
+      "still_used": "dedicated freight corridors worldwide",
+      "compare": "Freight locomotives match steam's power but focus on pulling capacity rather than speed"
+    }
+  ]
+}
