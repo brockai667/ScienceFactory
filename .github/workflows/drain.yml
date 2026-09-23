@@ -1,0 +1,48 @@
+name: Curio Explainer Reels Drain (denne doplani cakajuce reels)
+
+# Denna fabrika je vypnuta (stop-all 16.9.), ale reels z tyzdenneho explainera
+# cakaju v explainer/reels_pending.json, kym sa v Bufferi uvolni slot (free = 10/kanal).
+# Tento maly beh ich doplanuje - nic negeneruje, nic nerendruje.
+
+on:
+  schedule:
+    - cron: "40 6 * * *"   # denne 06:40 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: drain
+  cancel-in-progress: false
+
+jobs:
+  drain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python deps
+        run: pip install requests cloudinary
+
+      - name: Prepare config
+        run: cp config.example.json config.json
+
+      - name: Doplanuj cakajuce reels
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python explainer/publish.py --drain
+
+      - name: Commit stav fronty
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add explainer/reels_pending.json 2>/dev/null || true
+          git commit -m "explainer: reels drain $(date -u +%F)" || echo "no changes"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          git push || echo "nothing to push"
