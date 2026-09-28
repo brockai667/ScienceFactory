@@ -1,0 +1,1767 @@
+{
+  "series": "Every Wi-Fi Generation Explained",
+  "title": "Every Wi‑Fi Generation Explained: From 802.11b to Wi‑Fi 7",
+  "description": "We break down each Wi‑Fi standard, from the first clunky waves to the ultra‑fast Wi‑Fi 7. You’ll see why the numbers matter and how they shape everyday internet.",
+  "hashtags": [
+    "#WiFi",
+    "#TechHistory",
+    "#Networking",
+    "#InternetSpeed",
+    "#WiFi6E",
+    "#WiFi7",
+    "#Explained"
+  ],
+  "hero": {
+    "emoji": "📶"
+  },
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "People think Wi‑Fi 4 is just faster Wi‑Fi 3, and that Wi‑Fi 5 is just a new name. They are not.",
+      "left": {
+        "emoji": "📡",
+        "label": "Wi‑Fi 4",
+        "vis": {
+          "emoji": "📡"
+        }
+      },
+      "right": {
+        "emoji": "📶",
+        "label": "Wi‑Fi 5",
+        "vis": {
+          "emoji": "📶"
+        }
+      },
+      "line": "Just a faster version?",
+      "cues": {
+        "left": "Wi‑Fi 4 is",
+        "right": "Wi‑Fi 5 is",
+        "line": "just a new name",
+        "strike": "They are not."
+      }
+    },
+    "grid": {
+      "say": "Each Wi‑Fi standard adds speed, capacity, and new tech. This is every Wi‑Fi generation explained. Starting with Wi‑Fi 1.",
+      "cues": {
+        "grid": "Each Wi‑Fi",
+        "title": "explained",
+        "mark": "Starting with"
+      },
+      "pulse": [
+        {
+          "cue": "speed",
+          "items": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {
+      "name": "Wi-Fi 1",
+      "label": "LEGACY",
+      "icon": {
+        "emoji": "📶"
+      },
+      "hook": "The original 1997 standard barely topped 2 Mbps, slower than a dial‑up modem.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Wi‑Fi 1 dropped in 1999, bringing wireless to your coffee shop and dorm rooms. It was slow, but it opened the door to a world without cables.",
+          "slams": [
+            {
+              "text": "THE FIRST WIRELESS"
+            },
+            {
+              "text": "“1999”",
+              "cue": "1999",
+              "strike": true
+            },
+            {
+              "text": "IT WAS SLOW",
+              "cue": "it was slow",
+              "color": "red"
+            },
+            {
+              "text": "OPENED THE DOOR",
+              "cue": "opened the door",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Wi‑Fi 1.",
+          "title": "Wi‑Fi 1",
+          "kicker": "EVERY WI‑FI GENERATION, PART 1",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "1999 marked the birth of Wi‑Fi 1, the first 2.4 GHz wireless LAN. It used DSS‑S and topped out at eleven megabits per second.",
+          "head": "Wi‑Fi 1 debut",
+          "label": "1999 — first generation",
+          "stamp": "1999",
+          "callouts": [
+            [
+              "#c9a227",
+              "2.4 GHz band"
+            ],
+            [
+              "#1c4ed8",
+              "DSSS modulation"
+            ]
+          ],
+          "cues": {
+            "stamp": "1999",
+            "action": "birth of",
+            "circle": "first 2.4 GHz",
+            "callouts": "DSS‑S"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Back then you needed a router, a laptop with a wireless card, and a simple antenna to get online.",
+          "head": "What you needed",
+          "sub": {
+            "text": "basic gear",
+            "cue": "simple antenna"
+          },
+          "hub": {
+            "emoji": "📶"
+          },
+          "items": [
+            {
+              "emoji": "🖥️",
+              "label": "Router",
+              "cue": "router",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Laptop",
+              "cue": "laptop",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "📡",
+              "label": "Antenna",
+              "cue": "antenna",
+              "vis": {
+                "emoji": "📡"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Eleven megabits per second meant a tiny photo took about two seconds to download.",
+          "num_end": 11.0,
+          "decimals": 0,
+          "unit": "Mbit/s",
+          "label": "Wi‑Fi 1 top speed",
+          "sub": "2‑second photo",
+          "vis": {
+            "emoji": "📷"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⏳"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "count": "eleven megabits",
+            "sub": "two seconds"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "It never got a 5 GHz band, so range was good but congestion grew as more devices joined the air.",
+          "head": "The weak spot",
+          "label": "No 5 GHz",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#d62828",
+              "no 5 GHz"
+            ],
+            [
+              "#7a7a7a",
+              "range good"
+            ]
+          ],
+          "cues": {
+            "action": "never got",
+            "circle": "congestion grew"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Even today you’ll find Wi‑Fi 1 humming in legacy IoT gadgets and ancient laptops that never upgraded.",
+          "head": "Still around in",
+          "sub": {
+            "text": "old gear",
+            "cue": "legacy IoT"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🔧",
+              "label": "Legacy IoT",
+              "cue": "legacy IoT",
+              "vis": {
+                "emoji": "🔧"
+              }
+            },
+            {
+              "emoji": "🖥️",
+              "label": "Old laptops",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "But the real twist? Wi‑Fi 1 still works for tiny sensors, even though modern routers blaze past it at gigabit speeds.",
+          "head": "It still works",
+          "ekg": "still works",
+          "left": {
+            "emoji": "📡",
+            "label": "Sensor",
+            "cue": "sensors",
+            "vis": {
+              "emoji": "📡"
+            }
+          },
+          "right": {
+            "emoji": "🚀",
+            "label": "Gigabit router",
+            "vis": {
+              "emoji": "🚀"
+            }
+          },
+          "line": "Why upgrade for tiny data?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Wi-Fi 2",
+      "label": "BASIC",
+      "icon": {
+        "emoji": "📶"
+      },
+      "hook": "1999’s upgrade doubled speed, still only enough for simple web browsing.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Wi‑Fi 2 burst onto the scene in nineteen ninety‑nine, unlocking the 5 GHz band and blasting speeds up to fifty‑four megabits per second. It changed the game forever.",
+          "slams": [
+            {
+              "text": "THE 5 GHZ BREAKTHROUGH"
+            },
+            {
+              "text": "“FIFTY‑FOUR MBIT/S”",
+              "cue": "fifty‑four megabits",
+              "strike": true
+            },
+            {
+              "text": "IT CHANGED THE GAME FOREVER.",
+              "cue": "It changed"
+            }
+          ],
+          "cue": "Wi‑Fi 2",
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Wi‑Fi 2.",
+          "title": "Wi‑Fi 2",
+          "kicker": "EVERY WI‑FI GENERATION, PART 2",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in nineteen ninety‑nine, Wi‑Fi 2 introduced the 5 GHz band and OFDM modulation, delivering a peak rate of fifty‑four megabits per second.",
+          "head": "Wi‑Fi 2 debut",
+          "label": "1999 — the second generation",
+          "stamp": "1999",
+          "callouts": [
+            [
+              "#1a73e8",
+              "5 GHz band"
+            ],
+            [
+              "#34a853",
+              "OFDM tech"
+            ]
+          ],
+          "cues": {
+            "stamp": "nineteen ninety‑nine",
+            "action": "introduced the",
+            "circle": "peak rate",
+            "callouts": "5 GHz"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "At fifty‑four megabits, you could download a full‑HD movie in under three minutes.",
+          "num_end": 54.0,
+          "decimals": 0,
+          "unit": "Mbps",
+          "label": "Wi‑Fi 2 peak speed",
+          "sub": "Full‑HD in <3 min",
+          "vis": {
+            "emoji": "🎬"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💻"
+            },
+            "seconds": 180
+          },
+          "cues": {
+            "count": "fifty‑four megabits",
+            "sub": "under three minutes"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Its downside? The higher frequency meant a shorter range, so walls ate the signal faster than before.",
+          "head": "Range trade‑off",
+          "label": "Limited range",
+          "stamp": "SHORTER",
+          "callouts": [
+            [
+              "#d62828",
+              "higher frequency"
+            ],
+            [
+              "#7a7a7a",
+              "walls block"
+            ]
+          ],
+          "cues": {
+            "action": "higher frequency",
+            "circle": "shorter range",
+            "callouts": "walls ate"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Even today, you’ll find Wi‑Fi 2 powering some enterprise backhaul links and older routers still hanging around.",
+          "head": "Still in use",
+          "sub": {
+            "text": "legacy backhaul",
+            "cue": "enterprise backhaul"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🏢",
+              "label": "Enterprise backhaul",
+              "cue": "enterprise backhaul",
+              "vis": {
+                "emoji": "🏢"
+              }
+            },
+            {
+              "emoji": "🛠️",
+              "label": "Older routers",
+              "cue": "older routers",
+              "vis": {
+                "emoji": "🛠️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Surprisingly, Wi‑Fi 2 never vanished; many legacy IoT devices still cling to it because it’s cheap and works well enough.",
+          "head": "It never died",
+          "ekg": null,
+          "left": {
+            "emoji": "📡",
+            "label": "Legacy IoT",
+            "cue": "legacy IoT",
+            "vis": {
+              "emoji": "📡"
+            }
+          },
+          "right": {
+            "emoji": "🖥️",
+            "label": "Old routers",
+            "vis": {
+              "emoji": "🖥️"
+            }
+          },
+          "line": "Why upgrade?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Wi-Fi 3",
+      "label": "GROWTH",
+      "icon": {
+        "emoji": "📶"
+      },
+      "hook": "2003’s 802.11g reached 54 Mbps, like streaming low‑quality video.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Wi‑Fi 3 hit the scene in 2003, bringing the same 54 Mbps speed but on the crowded 2.4 GHz band. It was the bridge you didn’t see coming.",
+          "slams": [
+            {
+              "text": "THE SAME SPEED"
+            },
+            {
+              "text": "ON 2.4 GHZ"
+            },
+            {
+              "text": "BRIDGE YOU DIDN'T SEE"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Wi‑Fi 3.",
+          "title": "Wi‑Fi 3",
+          "kicker": "EVERY WI‑FI GENERATION, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "2003 rolled out Wi‑Fi 3, adding OFDM to 2.4 GHz and keeping backward compatibility with 802.11b.",
+          "head": "Wi‑Fi 3",
+          "label": "2003 — the third generation",
+          "stamp": "2003",
+          "callouts": [
+            [
+              "#1a73e8",
+              "OFDM on 2.4 GHz"
+            ],
+            [
+              "#34a853",
+              "802.11b compatible"
+            ]
+          ],
+          "cues": {
+            "head": "Wi‑Fi 3",
+            "stamp": "2003",
+            "action": "adding OFDM",
+            "circle": "backward compatibility"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What Wi‑Fi 3 actually gave you: OFDM on the 2.4 GHz band, full 802.11b compatibility, and the same 54 Mbps ceiling.",
+          "head": "What it gave",
+          "sub": {
+            "text": "no speed bump"
+          },
+          "hub": {
+            "emoji": "📶"
+          },
+          "items": [
+            {
+              "emoji": "📡",
+              "label": "OFDM on 2.4 GHz",
+              "cue": "OFDM on",
+              "vis": {
+                "emoji": "📡"
+              }
+            },
+            {
+              "emoji": "🔄",
+              "label": "802.11b compatible",
+              "vis": {
+                "emoji": "🔄"
+              }
+            },
+            {
+              "emoji": "🚀",
+              "label": "54 Mbps peak",
+              "vis": {
+                "emoji": "🚀"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Peak speed stayed at fifty‑four megabits per second – about the bandwidth of a standard HD video stream, or a ten‑megabyte file in two seconds.",
+          "num_end": 54.0,
+          "decimals": 0,
+          "unit": "Mbps",
+          "label": "Wi‑Fi 3 top speed",
+          "sub": "HD video stream",
+          "vis": {
+            "emoji": "📺"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💾"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "count": "fifty‑four",
+            "sub": "standard HD"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? No speed boost over Wi‑Fi 2. It was a re‑packaging, not a power‑up.",
+          "head": "The weak spot",
+          "label": "No speed boost",
+          "stamp": "SAME SPE",
+          "callouts": [
+            [
+              "#d62828",
+              "no gain over Wi‑Fi 2"
+            ],
+            [
+              "#7a7a7a",
+              "just repackaged"
+            ]
+          ],
+          "cues": {
+            "head": "The downside",
+            "action": "no speed boost",
+            "circle": "re‑packaging"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Where you still find Wi‑Fi 3 today: older home routers, legacy IoT gadgets, and some vintage laptops still clinging to the old band.",
+          "head": "Still around",
+          "sub": {
+            "text": "legacy devices"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🏠",
+              "label": "Older routers",
+              "cue": "older home routers",
+              "vis": {
+                "emoji": "🏠"
+              }
+            },
+            {
+              "emoji": "📡",
+              "label": "Legacy IoT gadgets",
+              "cue": "legacy IoT",
+              "vis": {
+                "emoji": "📡"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Vintage laptops",
+              "cue": "vintage laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Even though newer standards arrived, Wi‑Fi 3 lives on in the background, powering devices that never needed a faster upgrade.",
+          "head": "It lives on",
+          "ekg": null,
+          "left": {
+            "emoji": "📱",
+            "label": "Legacy phones",
+            "vis": {
+              "emoji": "📱"
+            }
+          },
+          "right": {
+            "emoji": "🖥️",
+            "label": "Old laptops",
+            "vis": {
+              "emoji": "🖥️"
+            }
+          },
+          "line": "Why upgrade?",
+          "cues": {
+            "line": "faster upgrade"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wi-Fi 4",
+      "label": "FAST",
+      "icon": {
+        "emoji": "📶"
+      },
+      "hook": "2009 introduced 802.11n, up to 600 Mbps—comparable to a fast home fiber line.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "2009 brought Wi‑Fi 4, the first real jump. Six hundred megabits, MIMO antennas, and dual‑band freedom. Your home suddenly felt faster than ever before.",
+          "slams": [
+            {
+              "text": "THE BIG JUMP"
+            },
+            {
+              "text": "IT'S FAST.",
+              "color": "red"
+            },
+            {
+              "text": "“DUAL‑BAND FREEDOM”",
+              "cue": "dual‑band freedom",
+              "strike": true
+            },
+            {
+              "text": "600 Mbps POWER"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Wi‑Fi 4, the speed boost you needed.",
+          "title": "Wi‑Fi 4",
+          "kicker": "EVERY WI‑FI GENERATION, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in 2009, Wi‑Fi 4 added MIMO and 40 MHz channel bonding, unlocking the new 5 GHz playground while keeping 2.4 GHz alive.",
+          "head": "2009 – a new era",
+          "label": "MIMO, 40 MHz, dual‑band",
+          "stamp": "2009",
+          "callouts": [
+            [
+              "#4a90e2",
+              "MIMO antennas"
+            ],
+            [
+              "#f5a623",
+              "40 MHz channels"
+            ]
+          ],
+          "cues": {
+            "head": "Born in 2009",
+            "stamp": "new 5 GHz"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find Wi‑Fi 4 in most home routers, many smartphones, and even some laptops that still run older chipsets.",
+          "head": "Where you see it",
+          "sub": {
+            "text": "still common today"
+          },
+          "hub": {
+            "emoji": "🖥️"
+          },
+          "items": [
+            {
+              "emoji": "📶",
+              "label": "Home routers",
+              "cue": "home routers",
+              "vis": {
+                "emoji": "📶"
+              }
+            },
+            {
+              "emoji": "📱",
+              "label": "Smartphones",
+              "cue": "smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Laptops",
+              "cue": "laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Six hundred megabits per second tops the chart. That’s enough to stream four 4K movies at once without a hiccup.",
+          "num_end": 600.0,
+          "decimals": 0,
+          "unit": "Mbps",
+          "label": "Wi‑Fi 4 peak speed",
+          "sub": "four 4K streams",
+          "vis": {
+            "emoji": "📺"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚀"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "six hundred",
+            "sub": "four 4K"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "In real life, walls and interference keep you far from that magic number, but you still get a solid, reliable connection.",
+          "head": "The real‑world gap",
+          "label": "Speed drops",
+          "stamp": "REAL WOR",
+          "callouts": [
+            [
+              "#d62828",
+              "walls and interference"
+            ],
+            [
+              "#7a7a7a",
+              "lower speeds"
+            ]
+          ],
+          "cues": {
+            "head": "In real life",
+            "action": "keep you"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Wi‑Fi 4 shines for streaming HD video, online gaming, and video calls that need low lag and stable bandwidth.",
+          "head": "What it’s great for",
+          "sub": {
+            "text": "high‑bandwidth tasks"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🎬",
+              "label": "HD streaming",
+              "vis": {
+                "emoji": "🎬"
+              }
+            },
+            {
+              "emoji": "🎮",
+              "label": "Online gaming",
+              "cue": "online gaming",
+              "vis": {
+                "emoji": "🎮"
+              }
+            },
+            {
+              "emoji": "📞",
+              "label": "Video calls",
+              "cue": "video calls",
+              "vis": {
+                "emoji": "📞"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to Wi‑Fi 3’s fifty‑four megabits, Wi‑Fi 4 is roughly ten times faster, turning a slow download into an instant one.",
+          "head": "Speed jump",
+          "ekg": null,
+          "left": {
+            "emoji": "📶",
+            "label": "Wi‑Fi 3",
+            "cue": "Wi‑Fi 3",
+            "vis": {
+              "emoji": "📶"
+            }
+          },
+          "right": {
+            "emoji": "🚀",
+            "label": "Wi‑Fi 4",
+            "cue": "Wi‑Fi 4",
+            "vis": {
+              "emoji": "🚀"
+            }
+          },
+          "line": "Ten times the speed!",
+          "cues": {
+            "line": "ten times"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wi-Fi 5",
+      "label": "ULTRA",
+      "icon": {
+        "emoji": "📶"
+      },
+      "hook": "2013’s 802.11ac pushed gigabit speeds, enough for 4K streaming.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Wi‑Fi 5 hit the scene in 2013, blasting data at three point five gigabits. It was the first to drop the 2.4 GHz band entirely, focusing on speed.",
+          "slams": [
+            {
+              "text": "WI‑FI 5 ARRIVES"
+            },
+            {
+              "text": "THREE POINT FIVE GIGABITS",
+              "cue": "three point five gigabits",
+              "strike": true
+            },
+            {
+              "text": "NO 2.4 GHZ",
+              "color": "red"
+            },
+            {
+              "text": "FASTEST YET",
+              "color": "blue"
+            }
+          ],
+          "cues": {
+            "say": "Wi‑Fi 5 hit the scene",
+            "band": "2.4 GHz",
+            "speed": "three point five gigabits"
+          }
+        },
+        {
+          "tpl": "title",
+          "say": "Wi‑Fi 5.",
+          "title": "Wi‑Fi 5",
+          "kicker": "EVERY WI‑FI GENERATION, PART 5",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "2013 brought the 5 GHz‑only wave, with 80 MHz channels and MU‑MIMO that lets multiple devices talk at once.",
+          "head": "Wi‑Fi 5 debut",
+          "label": "2013 — the fifth generation",
+          "stamp": "2013",
+          "callouts": [
+            [
+              "#1a73e8",
+              "80 MHz channels"
+            ],
+            [
+              "#34a853",
+              "MU‑MIMO"
+            ]
+          ],
+          "cues": {
+            "stamp": "2013",
+            "action": "talk at once"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "New tricks included wider 80 MHz lanes, beamforming for stronger signals, and multi‑user MIMO to share the pipe.",
+          "head": "What changed",
+          "sub": {
+            "text": "wider lanes, smarter sharing",
+            "cue": "new tricks"
+          },
+          "hub": {
+            "emoji": "📶"
+          },
+          "items": [
+            {
+              "emoji": "📡",
+              "label": "80 MHz lanes",
+              "cue": "80 MHz lanes",
+              "vis": {
+                "emoji": "📡"
+              }
+            },
+            {
+              "emoji": "🔦",
+              "label": "Beamforming",
+              "cue": "beamforming",
+              "vis": {
+                "emoji": "🔦"
+              }
+            },
+            {
+              "emoji": "👥",
+              "label": "MU‑MIMO",
+              "cue": "multi‑user MIMO",
+              "vis": {
+                "emoji": "👥"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Peak speed jumped to three point five gigabits, about six times faster than the six hundred megabit Wi‑Fi 4 you’d been using.",
+          "num_end": 3.5,
+          "decimals": 1,
+          "unit": "Gbps",
+          "label": "Wi‑Fi 5 peak speed",
+          "sub": "six‑fold jump",
+          "vis": {
+            "emoji": "🚀"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💻"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "six times"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? Dropping the 2.4 GHz band meant older gadgets lost their Wi‑Fi home, and range could suffer in crowded homes.",
+          "head": "The weak spot",
+          "label": "No 2.4 GHz",
+          "stamp": "LIMITED ",
+          "callouts": [
+            [
+              "#d62828",
+              "old devices lose"
+            ],
+            [
+              "#7a7a7a",
+              "range drops"
+            ]
+          ],
+          "cues": {
+            "action": "lost their Wi‑Fi home",
+            "circle": "range could suffer"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Still, it powers modern laptops, streaming sticks, and most new routers you see in stores today.",
+          "head": "Who uses it",
+          "sub": {
+            "text": "modern gear"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "💻",
+              "label": "Laptops",
+              "cue": "laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "📺",
+              "label": "Streaming sticks",
+              "cue": "streaming sticks",
+              "vis": {
+                "emoji": "📺"
+              }
+            },
+            {
+              "emoji": "📡",
+              "label": "New routers",
+              "cue": "new routers",
+              "vis": {
+                "emoji": "📡"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to Wi‑Fi 4’s six hundred megabits, Wi‑Fi 5 feels like swapping a bike for a sports car—same road, way more power.",
+          "head": "Speed boost",
+          "ekg": null,
+          "left": {
+            "emoji": "🚲",
+            "label": "Wi‑Fi 4",
+            "cue": "Wi‑Fi 4",
+            "vis": {
+              "emoji": "🚲"
+            }
+          },
+          "right": {
+            "emoji": "🏎️",
+            "label": "Wi‑Fi 5",
+            "cue": "Wi‑Fi 5",
+            "vis": {
+              "emoji": "🏎️"
+            }
+          },
+          "line": "Why settle for slower?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Wi-Fi 6",
+      "label": "SMART",
+      "icon": {
+        "emoji": "📶"
+      },
+      "hook": "2019 added efficiency for crowded homes, 9.6 Gbps peak, like a highway with many lanes.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Wi‑Fi 6 landed in 2019, pushing speeds to nine point six gigabits. It’s the speed‑boost you didn’t know you needed for every device at home.",
+          "slams": [
+            {
+              "text": "WIFI 6 ARRIVES"
+            },
+            {
+              "text": "9.6 GBPS",
+              "cue": "nine point six gigabits",
+              "strike": true
+            },
+            {
+              "text": "POWER SAVING",
+              "color": "red"
+            },
+            {
+              "text": "NEXT‑GEN WIFI",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Wi‑Fi 6.",
+          "title": "Wi‑Fi 6",
+          "kicker": "EVERY WI‑FI GENERATION, PART 6",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "2019 brought Wi‑Fi 6 with OFDMA, uplink MU‑MIMO and Target Wake Time, letting dozens of devices share the air without choking each other.",
+          "head": "Wi‑Fi 6 debut",
+          "label": "2019 — the sixth generation",
+          "stamp": "2019",
+          "callouts": [
+            [
+              "#0066cc",
+              "OFDMA"
+            ],
+            [
+              "#ff6600",
+              "Target Wake Time"
+            ]
+          ],
+          "cues": {
+            "stamp": "2019",
+            "action": "share the air",
+            "circle": "dozens of devices",
+            "callouts": "OFDMA"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Key upgrades include OFDMA for smarter scheduling, uplink MU‑MIMO for faster uploads, and Target Wake Time to save battery life.",
+          "head": "What’s new",
+          "sub": {
+            "text": "smarter, faster, greener",
+            "cue": "key upgrades"
+          },
+          "hub": {
+            "emoji": "📶"
+          },
+          "items": [
+            {
+              "emoji": "📡",
+              "label": "OFDMA",
+              "cue": "OFDMA",
+              "vis": {
+                "emoji": "📡"
+              }
+            },
+            {
+              "emoji": "⬆️",
+              "label": "Uplink MU‑MIMO",
+              "cue": "uplink MU‑MIMO",
+              "vis": {
+                "emoji": "⬆️"
+              }
+            },
+            {
+              "emoji": "🔋",
+              "label": "Target Wake Time",
+              "cue": "Target Wake Time",
+              "vis": {
+                "emoji": "🔋"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Top speed hits nine point six gigabits, enough to stream four 4K movies at once without a hiccup.",
+          "num_end": 9.6,
+          "decimals": 1,
+          "unit": "Gbps",
+          "label": "Wi‑Fi 6 peak speed",
+          "sub": "four 4K streams",
+          "vis": {
+            "emoji": "📺"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💻"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "nine point six",
+            "sub": "four 4K"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Its downside? No access to the brand‑new 6 GHz band, so it still competes on the crowded 2.4 GHz and 5 GHz spectrums.",
+          "head": "The weak spot",
+          "label": "No 6 GHz",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#d62828",
+              "no 6 GHz"
+            ],
+            [
+              "#7a7a7a",
+              "crowded bands"
+            ]
+          ],
+          "cues": {
+            "action": "no access",
+            "circle": "6 GHz band",
+            "callouts": "crowded"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find Wi‑Fi 6 in today’s flagship smartphones, laptops, and the newest routers that promise smoother gaming and video calls.",
+          "head": "Where you’ll see it",
+          "sub": {
+            "text": "modern devices",
+            "cue": "today’s flagship"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Smartphones",
+              "cue": "smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Laptops",
+              "cue": "laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "📡",
+              "label": "Routers",
+              "cue": "routers",
+              "vis": {
+                "emoji": "📡"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to Wi‑Fi 5’s three point five gigabits, Wi‑Fi 6 is roughly three times faster, yet it still holds the same peak speed as Wi‑Fi 6E, just without the extra 6 GHz band.",
+          "head": "Speed jump",
+          "ekg": null,
+          "left": {
+            "emoji": "📶",
+            "label": "Wi‑Fi 5",
+            "cue": "Wi‑Fi 5",
+            "vis": {
+              "emoji": "📶"
+            }
+          },
+          "right": {
+            "emoji": "📶",
+            "label": "Wi‑Fi 6",
+            "cue": "Wi‑Fi 6",
+            "vis": {
+              "emoji": "📶"
+            }
+          },
+          "line": "More speed, same spectrum",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Wi-Fi 6E",
+      "label": "EXPANDED",
+      "icon": {
+        "emoji": "📶"
+      },
+      "hook": "2020 opened the 6 GHz band, reducing interference like moving to a quieter street.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "The new 6 GHz wave. It’s like opening a fresh highway for your internet, no traffic, just speed.",
+          "slams": [
+            {
+              "text": "THE NEW 6 GHZ WAVE"
+            },
+            {
+              "text": "OPENING A FRESH HIGHWAY",
+              "cue": "fresh highway",
+              "strike": true
+            },
+            {
+              "text": "JUST SPEED",
+              "cue": "just speed",
+              "color": "red"
+            }
+          ],
+          "cues": {
+            "new 6 GHz": "new 6 GHz",
+            "fresh highway": "fresh highway",
+            "just speed": "just speed"
+          }
+        },
+        {
+          "tpl": "title",
+          "say": "Wi‑Fi 6E.",
+          "title": "Wi‑Fi 6E",
+          "kicker": "EVERY WI‑FI GENERATION, PART 7",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "2020 brought Wi‑Fi 6E, adding a 6 GHz band with up to fourteen extra 80 MHz channels, keeping the nine point six gigabits peak.",
+          "head": "Wi‑Fi 6E launch",
+          "label": "2020 — the new spectrum",
+          "stamp": "2020",
+          "callouts": [
+            [
+              "#4a90e2",
+              "14 extra 80 MHz channels"
+            ],
+            [
+              "#d35400",
+              "6 GHz band"
+            ]
+          ],
+          "cues": {
+            "2020 brought": "2020 brought",
+            "6 GHz band": "6 GHz band",
+            "nine point six": "nine point six"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What the new band gives you: more room for data, lower latency, and less interference.",
+          "head": "Benefits of 6 GHz",
+          "sub": {
+            "text": "more room, lower latency, less interference",
+            "cue": "more room"
+          },
+          "hub": {
+            "emoji": "📡"
+          },
+          "items": [
+            {
+              "emoji": "📶",
+              "label": "More room for data",
+              "cue": "more room",
+              "vis": {
+                "emoji": "📶"
+              }
+            },
+            {
+              "emoji": "⏱️",
+              "label": "Lower latency",
+              "cue": "lower latency",
+              "vis": {
+                "emoji": "⏱️"
+              }
+            },
+            {
+              "emoji": "🚫",
+              "label": "Less interference",
+              "cue": "less interference",
+              "vis": {
+                "emoji": "🚫"
+              }
+            }
+          ],
+          "cues": {
+            "more room": "more room",
+            "lower latency": "lower latency",
+            "less interference": "less interference"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "At nine point six gigabits, you could download a two‑hour movie in under a minute.",
+          "num_end": 9.6,
+          "decimals": 1,
+          "unit": "Gbps",
+          "label": "Wi‑Fi 6E peak speed",
+          "sub": "under a minute — two‑hour movie",
+          "vis": {
+            "emoji": "🎬"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💾"
+            },
+            "seconds": 60
+          },
+          "cues": {
+            "nine point six": "nine point six",
+            "two‑hour movie": "two‑hour movie",
+            "under a minute": "under a minute"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The catch? You need devices that speak 6 GHz, older gear stays stuck on older bands.",
+          "head": "Hardware requirement",
+          "label": "New radios needed",
+          "stamp": "CATCH",
+          "callouts": [
+            [
+              "#c0392b",
+              "6 GHz‑only devices"
+            ],
+            [
+              "#7f8c8d",
+              "Legacy gear limited"
+            ]
+          ],
+          "cues": {
+            "the catch": "the catch",
+            "devices that speak": "devices that speak",
+            "older gear": "older gear"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Who’s using it now? High‑end routers, the newest smartphones, and premium laptops.",
+          "head": "Current adopters",
+          "sub": {
+            "text": "high‑end routers, newest smartphones, premium laptops",
+            "cue": "high‑end routers"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📡",
+              "label": "High‑end routers",
+              "cue": "high‑end routers",
+              "vis": {
+                "emoji": "📡"
+              }
+            },
+            {
+              "emoji": "📱",
+              "label": "Newest smartphones",
+              "cue": "newest smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Premium laptops",
+              "cue": "premium laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            }
+          ],
+          "cues": {
+            "high‑end routers": "high‑end routers",
+            "newest smartphones": "newest smartphones",
+            "premium laptops": "premium laptops"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to Wi‑Fi 6, speed stays the same, but the extra spectrum clears the road, so you feel faster.",
+          "head": "Same speed, more space",
+          "ekg": "extra spectrum",
+          "left": {
+            "emoji": "📶",
+            "label": "Wi‑Fi 6",
+            "cue": "Wi‑Fi 6",
+            "vis": {
+              "emoji": "📶"
+            }
+          },
+          "right": {
+            "emoji": "📶",
+            "label": "Wi‑Fi 6E",
+            "vis": {
+              "emoji": "📶"
+            }
+          },
+          "line": "Why wait?",
+          "cues": {
+            "compared to Wi‑Fi 6": "compared to Wi‑Fi 6",
+            "extra spectrum": "extra spectrum",
+            "feel faster": "feel faster"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wi-Fi 7",
+      "label": "FUTURE",
+      "icon": {
+        "emoji": "📶"
+      },
+      "hook": "2024’s 802.11be promises up to 30 Gbps, as fast as a local data‑center link.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Wi‑Fi 7 is here, and it’s a speed monster. Think of a highway that went from ten lanes to fifty, all at once.",
+          "slams": [
+            {
+              "text": "THE SPEED MONSTER"
+            },
+            {
+              "text": "“FIFTY LANE HIGHWAY”",
+              "strike": true
+            },
+            {
+              "text": "IT'S HERE",
+              "color": "red"
+            },
+            {
+              "text": "NEXT‑GEN WIFI",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Wi‑Fi 7.",
+          "title": "Wi‑Fi 7",
+          "kicker": "EVERY WI‑FI GENERATION, PART 8",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Released in 2024, Wi‑Fi 7 pushes the ceiling to forty‑six gigabits per second, a leap that feels like swapping a bicycle for a race car.",
+          "head": "Wi‑Fi 7",
+          "label": "2024 — the latest generation",
+          "stamp": "2024",
+          "callouts": [
+            [
+              "#ff6600",
+              "320 MHz channels"
+            ],
+            [
+              "#0066ff",
+              "4096‑QAM modulation"
+            ]
+          ],
+          "cues": {
+            "head": "Wi‑Fi 7",
+            "stamp": "2024",
+            "action": "pushes the ceiling",
+            "circle": "race car"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes it tick? 320 MHz bandwidth, 4096‑QAM, and Multi‑Link Operation that hops across bands like a pro gamer switching servers.",
+          "head": "New tricks",
+          "sub": {
+            "text": "bandwidth, modulation, links"
+          },
+          "hub": {
+            "emoji": "📶"
+          },
+          "items": [
+            {
+              "emoji": "📡",
+              "label": "320 MHz bandwidth",
+              "cue": "320 MHz bandwidth",
+              "vis": {
+                "emoji": "📡"
+              }
+            },
+            {
+              "emoji": "🔢",
+              "label": "4096‑QAM",
+              "cue": "4096‑QAM",
+              "vis": {
+                "emoji": "🔢"
+              }
+            },
+            {
+              "emoji": "🔀",
+              "label": "Multi‑Link Operation",
+              "cue": "Multi‑Link Operation",
+              "vis": {
+                "emoji": "🔀"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "That’s about five times faster than Wi‑Fi 6E’s nine‑point‑six gigabits. Imagine moving a house in the time it used to take a city block.",
+          "num_end": 46.0,
+          "decimals": 0,
+          "unit": "Gbps",
+          "label": "Wi‑Fi 7 peak speed",
+          "sub": "5× faster than Wi‑Fi 6E",
+          "vis": {
+            "emoji": "🏎️"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🏠"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "five times",
+            "sub": "city block"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The catch? Early rollout. Only flagship phones, gaming rigs, and a handful of routers can tap this power right now.",
+          "head": "The catch",
+          "label": "Limited rollout",
+          "stamp": "EARLY",
+          "callouts": [
+            [
+              "#aa0000",
+              "flagship devices only"
+            ],
+            [
+              "#004400",
+              "early‑adopter routers"
+            ]
+          ],
+          "cues": {
+            "head": "The catch",
+            "action": "tap this power",
+            "circle": "only flagship"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Who’s already using it? High‑end smartphones, next‑gen gaming PCs, and the first routers that support the new 6 GHz plus the old bands.",
+          "head": "Early adopters",
+          "sub": {
+            "text": "devices that need speed"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Flagship smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Gaming PCs",
+              "cue": "gaming PCs",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "🛜",
+              "label": "New routers",
+              "vis": {
+                "emoji": "🛜"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "But here’s the twist: Wi‑Fi 7 will soon flood every home, just like Wi‑Fi 6 did, turning today’s premium speed into tomorrow’s baseline.",
+          "head": "Coming soon",
+          "ekg": null,
+          "left": {
+            "emoji": "🏠",
+            "label": "Today's homes",
+            "vis": {
+              "emoji": "🏠"
+            }
+          },
+          "right": {
+            "emoji": "🚀",
+            "label": "Tomorrow's norm",
+            "vis": {
+              "emoji": "🚀"
+            }
+          },
+          "line": "Premium today, baseline tomorrow",
+          "cues": {}
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Use the right generation for your device to keep the connection smooth. Bottom line: Upgrade when you need speed. See you next Monday.",
+    "type_text": "Bottom line: Upgrade",
+    "cues": {
+      "key": "Upgrade"
+    }
+  },
+  "facts": [
+    {
+      "name": "Wi-Fi 1",
+      "year": "1999",
+      "key_number": "11 Mbit/s",
+      "new": [
+        "2.4 GHz band",
+        "Direct Sequence Spread Spectrum (DSSS)",
+        "Maximum 11 Mbps data rate"
+      ],
+      "lacked": "5 GHz operation",
+      "still_used": "Legacy IoT devices and very old laptops",
+      "compare": "baseline generation"
+    },
+    {
+      "name": "Wi-Fi 2",
+      "year": "1999",
+      "key_number": "54 Mbit/s",
+      "new": [
+        "5 GHz band",
+        "Orthogonal Frequency Division Multiplexing (OFDM)",
+        "Higher 54 Mbps peak rate"
+      ],
+      "lacked": "limited range compared to 2.4 GHz",
+      "still_used": "Some enterprise backhaul links and older routers",
+      "compare": "5 × faster than Wi‑Fi 1 (11 → 54 Mbps)"
+    },
+    {
+      "name": "Wi‑Fi 3",
+      "year": "2003",
+      "key_number": "54 Mbit/s",
+      "new": [
+        "2.4 GHz with OFDM",
+        "Backward compatibility with 802.11b",
+        "Same 54 Mbps peak as Wi‑Fi 2"
+      ],
+      "lacked": "no speed gain over Wi‑Fi 2",
+      "still_used": "Older home routers and legacy devices",
+      "compare": "same speed as Wi‑Fi 2 but on 2.4 GHz"
+    },
+    {
+      "name": "Wi‑Fi 4",
+      "year": "2009",
+      "key_number": "600 Mbit/s",
+      "new": [
+        "Multiple‑Input Multiple‑Output (MIMO)",
+        "40 MHz channel bonding",
+        "Dual‑band (2.4 GHz + 5 GHz) support"
+      ],
+      "lacked": "real‑world speeds rarely reach theoretical max",
+      "still_used": "Most current home routers and many smartphones",
+      "compare": "~10 × faster than Wi‑Fi 3 (54 → 600 Mbps)"
+    },
+    {
+      "name": "Wi‑Fi 5",
+      "year": "2013",
+      "key_number": "3.5 Gbit/s",
+      "new": [
+        "5 GHz‑only operation with wider 80 MHz channels",
+        "Multi‑User MIMO (MU‑MIMO)",
+        "Beamforming for better range"
+      ],
+      "lacked": "no 2.4 GHz band support",
+      "still_used": "Modern laptops, streaming devices, and most new routers",
+      "compare": "~6 × faster than Wi‑Fi 4 (600 Mbps → 3.5 Gbps)"
+    },
+    {
+      "name": "Wi‑Fi 6",
+      "year": "2019",
+      "key_number": "9.6 Gbit/s",
+      "new": [
+        "Orthogonal Frequency Division Multiple Access (OFDMA)",
+        "Uplink MU‑MIMO",
+        "Target Wake Time for power saving"
+      ],
+      "lacked": "does not use the newly opened 6 GHz spectrum",
+      "still_used": "Current‑generation smartphones, laptops, and routers",
+      "compare": "~3 × faster than Wi‑Fi 5 (3.5 Gbps → 9.6 Gbps)"
+    },
+    {
+      "name": "Wi‑Fi 6E",
+      "year": "2020",
+      "key_number": "9.6 Gbit/s",
+      "new": [
+        "Additional 6 GHz band with up to 14 extra 80 MHz channels",
+        "Reduced congestion and latency",
+        "Same high‑speed features as Wi‑Fi 6"
+      ],
+      "lacked": "requires new 6 GHz‑capable hardware",
+      "still_used": "High‑end routers and newest devices supporting 6 GHz",
+      "compare": "adds new spectrum to Wi‑Fi 6 while keeping similar peak speed"
+    },
+    {
+      "name": "Wi‑Fi 7",
+      "year": "2024",
+      "key_number": "46 Gbit/s",
+      "new": [
+        "320 MHz channel bandwidth",
+        "4096‑QAM modulation",
+        "Multi‑Link Operation (MLO) across bands"
+      ],
+      "lacked": "wide commercial availability (still early rollout)",
+      "still_used": "Flagship smartphones, gaming PCs, and early‑adopter routers",
+      "compare": "~5 × faster than Wi‑Fi 6E (9.6 Gbps → 46 Gbps)"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "last_publish_at": "2026-09-21T15:00:00Z",
+  "last_publish_at": "2026-09-28T15:00:00Z",
   "history": [
     {
       "series": "Every USB Port Color Explained",
@@ -15,6 +15,11 @@
       "series": "Every Type Of Train Explained",
       "url": "https://www.youtube.com/watch?v=QpLUjUzupNo",
       "publish_at": "2026-09-21T15:00:00Z"
+    },
+    {
+      "series": "Every Wi-Fi Generation Explained",
+      "url": "https://www.youtube.com/watch?v=xNQPL8OmO0M",
+      "publish_at": "2026-09-28T15:00:00Z"
     }
   ]
 }
