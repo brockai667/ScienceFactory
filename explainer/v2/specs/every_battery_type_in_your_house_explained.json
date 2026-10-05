@@ -1,0 +1,1562 @@
+{
+  "series": "Every Battery Type In Your House Explained",
+  "title": "Every Battery Type In Your House Explained – Which One Powers What?",
+  "description": "We break down the seven common household batteries, from cheap AA cells to heavy‑duty car batteries. Learn their voltages, lifespans, and best uses so you never pick the wrong one again.",
+  "hashtags": [
+    "#batteries",
+    "#DIY",
+    "#homeelectronics",
+    "#techexplained",
+    "#energy",
+    "#gadgets",
+    "#power"
+  ],
+  "hero": {
+    "emoji": "🔋"
+  },
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "People think AA alkaline and lithium‑ion are the same size. Just a design choice? They are not.",
+      "left": {
+        "emoji": "🔋",
+        "label": "Alkaline",
+        "vis": {
+          "emoji": "🔋"
+        }
+      },
+      "right": {
+        "emoji": "⚡",
+        "label": "Lithium‑ion",
+        "vis": {
+          "emoji": "⚡"
+        }
+      },
+      "line": "Just a design choice?",
+      "cues": {
+        "left": "AA alkaline",
+        "right": "lithium‑ion",
+        "line": "Just a design",
+        "strike": "They are not."
+      }
+    },
+    "grid": {
+      "say": "Different chemistries mean different voltage and lifespan. This is every battery type in your house, explained. Starting with alkaline.",
+      "cues": {
+        "grid": "Different chemistries",
+        "title": "explained",
+        "mark": "Starting with alkaline"
+      },
+      "pulse": [
+        {
+          "cue": "voltage",
+          "items": [
+            3,
+            4
+          ]
+        }
+      ],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {
+      "name": "Alkaline",
+      "label": "ALKALINE",
+      "icon": {
+        "emoji": "🔋"
+      },
+      "hook": "Cheap, reliable power for toys and remotes.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Alkaline batteries. They’ve been powering your remotes and toys since the mid‑fifties, and they still outlast the cheap zinc‑carbon ones.",
+          "slams": [
+            {
+              "text": "ALKA LINE POWER"
+            },
+            {
+              "text": "“MID‑FIFTIES”",
+              "strike": true
+            },
+            {
+              "text": "STILL OUTLASTS",
+              "color": "red"
+            },
+            {
+              "text": "YOUR TOYS",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Alkaline.",
+          "title": "Alkaline",
+          "kicker": "EVERY BATTERY TYPE IN YOUR HOUSE, PART 1",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "First hit the market in 1955, delivering about one point five volts per cell, a solid jump over the old zinc‑carbon chemistry.",
+          "head": "First alkaline",
+          "label": "1955 — the breakthrough",
+          "stamp": "1955",
+          "callouts": [
+            [
+              "#c9a227",
+              "1.5 V per cell"
+            ],
+            [
+              "#1c4ed8",
+              "double capacity"
+            ]
+          ],
+          "cues": {
+            "action": "delivering about one point five volts",
+            "circle": "old zinc‑carbon"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Back then you’d find them in flashlights, radios, and the first portable game consoles.",
+          "head": "Early uses",
+          "sub": {
+            "text": "light, sound, play",
+            "cue": "portable game consoles"
+          },
+          "hub": {
+            "emoji": "🔦"
+          },
+          "items": [
+            {
+              "emoji": "🔦",
+              "label": "Flashlights",
+              "cue": "flashlights",
+              "vis": {
+                "emoji": "🔦"
+              }
+            },
+            {
+              "emoji": "📻",
+              "label": "Radios",
+              "cue": "radios",
+              "vis": {
+                "emoji": "📻"
+              }
+            },
+            {
+              "emoji": "🎮",
+              "label": "Game consoles",
+              "cue": "game consoles",
+              "vis": {
+                "emoji": "🎮"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "One cell packs one point five volts, roughly the energy of two AA zinc‑carbon cells combined.",
+          "num_end": 1.5,
+          "decimals": 1,
+          "unit": "V",
+          "label": "Alkaline cell voltage",
+          "sub": "double the old capacity",
+          "vis": {
+            "emoji": "🔋"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "one point five"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "What it can’t do is recharge – once the chemistry is spent, the cell is dead, unlike today’s rechargeable packs.",
+          "head": "The downside",
+          "label": "Non‑rechargeable",
+          "stamp": "NO RECHA",
+          "callouts": [
+            [
+              "#d62828",
+              "single‑use only"
+            ],
+            [
+              "#7a7a7a",
+              "no memory effect"
+            ]
+          ],
+          "cues": {
+            "action": "recharge",
+            "circle": "once the chemistry is spent"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You still reach for alkaline in remote controls, household flashlights, and kids’ toys because they’re cheap and reliable.",
+          "head": "Still common",
+          "sub": {
+            "text": "budget power sources",
+            "cue": "cheap and reliable"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📺",
+              "label": "Remote controls",
+              "cue": "remote controls",
+              "vis": {
+                "emoji": "📺"
+              }
+            },
+            {
+              "emoji": "🔦",
+              "label": "Flashlights",
+              "cue": "flashlights",
+              "vis": {
+                "emoji": "🔦"
+              }
+            },
+            {
+              "emoji": "🧸",
+              "label": "Toys",
+              "cue": "toys",
+              "vis": {
+                "emoji": "🧸"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to zinc‑carbon, alkaline gives you about twice the capacity, so your remote lasts twice as long before the batteries die.",
+          "head": "Capacity boost",
+          "ekg": null,
+          "left": {
+            "emoji": "🪙",
+            "label": "Zinc‑carbon",
+            "vis": {
+              "emoji": "🪙"
+            }
+          },
+          "right": {
+            "emoji": "🔋",
+            "label": "Alkaline",
+            "cue": "alkaline",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "line": "Twice the life, same size",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Lithium coin",
+      "label": "COIN",
+      "icon": {
+        "emoji": "🪙"
+      },
+      "hook": "Tiny cells that keep watches ticking for years.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Tiny disc, big power. Since nineteen ninety‑one, these coin‑shaped cells run your watch, car keys and medical gadgets with three volts of steady juice.",
+          "slams": [
+            {
+              "text": "TINY DISC, BIG POWER"
+            },
+            {
+              "text": "“NINETEEN NINETY‑ONE”",
+              "cue": "nineteen ninety‑one",
+              "strike": true
+            },
+            {
+              "text": "THREE VOLTS",
+              "cue": "three volts",
+              "color": "red"
+            },
+            {
+              "text": "STABLE JUICE",
+              "cue": "steady juice",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Lithium coin, the pocket powerhouse.",
+          "title": "Lithium coin",
+          "kicker": "EVERY BATTERY TYPE IN YOUR HOUSE, PART 2",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "First hit the market in nineteen ninety‑one, delivering three volts per cell—double what alkaline gives you.",
+          "head": "1991 debut",
+          "label": "3 V per cell — double alkaline",
+          "stamp": "1991",
+          "callouts": [
+            [
+              "#ffcc00",
+              "3 V output"
+            ],
+            [
+              "#0066ff",
+              "tiny disc shape"
+            ]
+          ],
+          "cues": {
+            "head": "First hit",
+            "stamp": "nineteen ninety‑one",
+            "action": "double what",
+            "circle": "alkaline gives"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find them in three everyday places: wristwatches, key fob remotes and implantable medical devices.",
+          "head": "Where they live",
+          "sub": {
+            "text": "three everyday places",
+            "cue": "three everyday places"
+          },
+          "hub": {
+            "emoji": "🔋"
+          },
+          "items": [
+            {
+              "emoji": "⌚",
+              "label": "Wristwatch",
+              "cue": "wristwatch",
+              "vis": {
+                "emoji": "⌚"
+              }
+            },
+            {
+              "emoji": "🔑",
+              "label": "Key fob",
+              "cue": "key fob",
+              "vis": {
+                "emoji": "🔑"
+              }
+            },
+            {
+              "emoji": "💉",
+              "label": "Medical implant",
+              "cue": "medical devices",
+              "vis": {
+                "emoji": "💉"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Three volts—twice the alkaline voltage, enough to light a tiny LED for hours.",
+          "num_end": 3.0,
+          "decimals": 0,
+          "unit": "V",
+          "label": "Lithium coin voltage",
+          "sub": "twice alkaline",
+          "vis": {
+            "emoji": "💡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔋"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "three volts",
+            "sub": "twice the alkaline"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? They can’t dump a big burst of current, so they’re not great for flashlights or high‑drain toys.",
+          "head": "Weak spot",
+          "label": "Low current bursts",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#d62828",
+              "cannot supply high current"
+            ],
+            [
+              "#7a7a7a",
+              "good for low‑drain"
+            ]
+          ],
+          "cues": {
+            "head": "The downside",
+            "action": "big burst",
+            "circle": "high‑drain toys"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "So they stick to three jobs: keeping time, unlocking doors and powering tiny medical sensors.",
+          "head": "What they’re used for",
+          "sub": {
+            "text": "three low‑drain jobs"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "⌚",
+              "label": "Timekeeping",
+              "cue": "keeping time",
+              "vis": {
+                "emoji": "⌚"
+              }
+            },
+            {
+              "emoji": "🔑",
+              "label": "Keyless entry",
+              "cue": "unlocking doors",
+              "vis": {
+                "emoji": "🔑"
+              }
+            },
+            {
+              "emoji": "🩺",
+              "label": "Medical sensors",
+              "cue": "medical sensors",
+              "vis": {
+                "emoji": "🩺"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to alkaline, they give double the voltage but you can’t recharge them—still the go‑to for tiny, long‑life gadgets.",
+          "head": "Double voltage, no recharge",
+          "ekg": null,
+          "left": {
+            "emoji": "🔋",
+            "label": "Alkaline",
+            "cue": "alkaline",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "right": {
+            "emoji": "🪙",
+            "label": "Lithium coin",
+            "vis": {
+              "emoji": "🪙"
+            }
+          },
+          "line": "Why pay for recharge?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "NiMH",
+      "label": "NI MH",
+      "icon": {
+        "emoji": "🔄"
+      },
+      "hook": "Rechargeable AA’s that hold charge longer than old NiCd.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "NiMH batteries popped up in the nineties, giving you a rechargeable AA that lasts longer than alkaline and forgets the memory thing of older tech.",
+          "slams": [
+            {
+              "text": "RECHARGEABLE POWER"
+            },
+            {
+              "text": "“NINETIES REVOLUTION”",
+              "cue": "nineties",
+              "strike": true
+            },
+            {
+              "text": "LONGER THAN ALKALINE",
+              "cue": "longer than alkaline",
+              "color": "red"
+            },
+            {
+              "text": "NO MEMORY EFFECT",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "NiMH explained.",
+          "title": "NiMH",
+          "kicker": "EVERY BATTERY TYPE IN YOUR HOUSE, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "1990 brought the nickel‑metal hydride cell, a 1.2‑volt rechargeable that beats nickel‑cadmium in capacity and cuts down on memory loss.",
+          "head": "NiMH debut",
+          "label": "1990 — rechargeable breakthrough",
+          "stamp": "1990",
+          "callouts": [
+            [
+              "#c9a227",
+              "1.2 V per cell"
+            ],
+            [
+              "#1c4ed8",
+              "higher capacity"
+            ]
+          ],
+          "cues": {
+            "action": "brought the nickel‑metal hydride",
+            "callouts": "beats nickel‑cadmium"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find NiMH packs in digital cameras, cordless phones, and those handy AA/AAA rechargeable sets you keep in a drawer.",
+          "head": "Common uses",
+          "sub": {
+            "text": "everyday gadgets",
+            "cue": "handy AA/AAA"
+          },
+          "hub": {
+            "emoji": "🔋"
+          },
+          "items": [
+            {
+              "emoji": "📷",
+              "label": "Digital cameras",
+              "cue": "digital cameras",
+              "vis": {
+                "emoji": "📷"
+              }
+            },
+            {
+              "emoji": "📞",
+              "label": "Cordless phones",
+              "cue": "cordless phones",
+              "vis": {
+                "emoji": "📞"
+              }
+            },
+            {
+              "emoji": "🔋",
+              "label": "AA/AAA sets",
+              "vis": {
+                "emoji": "🔋"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Each cell holds about a thousand milliamp‑hours, roughly the energy of three AA alkaline cells that would run a remote for a week.",
+          "num_end": 1000.0,
+          "decimals": 0,
+          "unit": "mAh",
+          "label": "NiMH capacity",
+          "sub": "three alkalines for a week",
+          "vis": {
+            "emoji": "⏳"
+          },
+          "travel": {
+            "to": {
+              "emoji": "📺"
+            },
+            "seconds": 7
+          },
+          "cues": {
+            "count": "a thousand",
+            "sub": "for a week"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? NiMH leaks more self‑discharge than alkaline, so if you leave them on the shelf, they’ll lose charge faster than your old remotes.",
+          "head": "The trade‑off",
+          "label": "Higher self‑discharge",
+          "stamp": "DISCHARG",
+          "callouts": [
+            [
+              "#d62828",
+              "faster drain"
+            ],
+            [
+              "#7a7a7a",
+              "shelf life matters"
+            ]
+          ],
+          "cues": {
+            "head": "The downside",
+            "action": "leaks more self‑discharge"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Still, they dominate three main spots: high‑drain cameras, cordless phones, and rechargeable AA/AAA kits you swap out daily.",
+          "head": "Why they stick",
+          "sub": {
+            "text": "high‑drain power",
+            "cue": "high‑drain"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📸",
+              "label": "Cameras",
+              "cue": "cameras",
+              "vis": {
+                "emoji": "📸"
+              }
+            },
+            {
+              "emoji": "📱",
+              "label": "Phones",
+              "cue": "phones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "🔁",
+              "label": "Recharge kits",
+              "vis": {
+                "emoji": "🔁"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to alkaline’s 1.5 volt, NiMH’s 1.2 volt is lower, but you can recharge it hundreds of times, saving you money and waste.",
+          "head": "Voltage vs. reuse",
+          "ekg": null,
+          "left": {
+            "emoji": "🔋",
+            "label": "Alkaline",
+            "cue": "Alkaline",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "right": {
+            "emoji": "🔄",
+            "label": "NiMH",
+            "cue": "NiMH",
+            "vis": {
+              "emoji": "🔄"
+            }
+          },
+          "line": "Lower voltage, higher reuse",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Lithium-ion",
+      "label": "LI‑ION",
+      "icon": {
+        "emoji": "⚡"
+      },
+      "hook": "High energy density for phones and laptops.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "⚡ Lithium‑ion batteries power your phone, laptop, even power tools. Since ninety‑six they’ve been the energy workhorse you barely notice, but they changed everything.",
+          "slams": [
+            {
+              "text": "POWER YOUR LIFE"
+            },
+            {
+              "text": "SINCE NINETY‑SIX",
+              "cue": "since ninety‑six",
+              "color": "red"
+            },
+            {
+              "text": "“ENERGY WORKHORSE”",
+              "cue": "energy workhorse",
+              "strike": true
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Lithium‑ion.",
+          "title": "Lithium‑ion",
+          "kicker": "EVERY BATTERY TYPE IN YOUR HOUSE, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "1996 brought the first lithium‑ion cell, a flat‑top powerhouse at three point seven volts nominal. Spot it and you’ve found the modern battery standard.",
+          "head": "First Li‑ion",
+          "label": "1996 — breakthrough",
+          "stamp": "1996",
+          "callouts": [
+            [
+              "#ff9900",
+              "3.7 V nominal"
+            ],
+            [
+              "#0066cc",
+              "high energy density"
+            ]
+          ],
+          "cues": {
+            "action": "Spot it",
+            "circle": "modern battery"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll see them in smartphones, laptops, and cordless power tools—everywhere you need long run time without the bulk.",
+          "head": "Where you find them",
+          "sub": {
+            "text": "long run time",
+            "cue": "long run time"
+          },
+          "hub": {
+            "emoji": "🔋"
+          },
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Smartphones",
+              "cue": "smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Laptops",
+              "cue": "laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "🔧",
+              "label": "Power tools",
+              "cue": "power tools",
+              "vis": {
+                "emoji": "🔧"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Nominal voltage? Three point seven volts. That’s about double what an alkaline cell gives you.",
+          "num_end": 3.7,
+          "decimals": 1,
+          "unit": "V",
+          "label": "Li‑ion nominal voltage",
+          "sub": "double alkaline",
+          "vis": {
+            "emoji": "⚡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔌"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "count": "three point seven",
+            "sub": "double what"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The catch? Li‑ion cells need a protection circuit, otherwise they can overheat and become dangerous.",
+          "head": "Safety requirement",
+          "label": "Protection needed",
+          "stamp": "CIRCUIT",
+          "callouts": [
+            [
+              "#d62828",
+              "needs protection"
+            ],
+            [
+              "#7a7a7a",
+              "prevents overheating"
+            ]
+          ],
+          "cues": {
+            "circle": "become dangerous"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Because they’re rechargeable, you’ll also find them in electric bikes, drones, and high‑end flashlights.",
+          "head": "Other uses",
+          "sub": {
+            "text": "rechargeable power"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚲",
+              "label": "E‑bikes",
+              "vis": {
+                "emoji": "🚲"
+              }
+            },
+            {
+              "emoji": "🛸",
+              "label": "Drones",
+              "cue": "drones",
+              "vis": {
+                "emoji": "🛸"
+              }
+            },
+            {
+              "emoji": "🔦",
+              "label": "Flashlights",
+              "cue": "flashlights",
+              "vis": {
+                "emoji": "🔦"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to LiFePO4, Li‑ion gives you higher voltage but a bit less safety. You trade a little fire risk for more punch.",
+          "head": "Trade‑off",
+          "ekg": null,
+          "left": {
+            "emoji": "🔋",
+            "label": "Li‑ion",
+            "cue": "li‑ion",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "right": {
+            "emoji": "🔋",
+            "label": "LiFePO4",
+            "cue": "lifepo4",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "line": "More punch, less safety",
+          "cues": {
+            "line": "more punch"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lithium polymer",
+      "label": "LI‑PO",
+      "icon": {
+        "emoji": "🔌"
+      },
+      "hook": "Flexible shape, light weight, perfect for drones.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Think flexible, light power that bends to your gadgets. That’s the polymer battery, the sleek kid on the block since two thousand.",
+          "slams": [
+            {
+              "text": "FLEXIBLE POWER"
+            },
+            {
+              "text": "LIGHTWEIGHT ENERGY",
+              "cue": "light power",
+              "strike": true
+            },
+            {
+              "text": "THE SLIM KID",
+              "cue": "sleek kid",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Lithium polymer.",
+          "title": "Lithium polymer",
+          "kicker": "EVERY BATTERY TYPE IN YOUR HOUSE, PART 5",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "2000 marked the debut of a battery that could be as thin as a credit card and still pack 3.7 volts.",
+          "head": "Year of debut",
+          "label": "2000 — flexible start",
+          "stamp": "2000",
+          "callouts": [
+            [
+              "#4a90e2",
+              "thin form factor"
+            ],
+            [
+              "#d35400",
+              "3.7 V nominal"
+            ]
+          ],
+          "cues": {
+            "stamp": "2000",
+            "action": "thin as a credit card"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find them inside drones that hover, wearables that track your steps, and slim laptops that travel light.",
+          "head": "Where it lives",
+          "sub": {
+            "text": "thin tech everywhere"
+          },
+          "hub": {
+            "emoji": "🔋"
+          },
+          "items": [
+            {
+              "emoji": "🚁",
+              "label": "Drones",
+              "cue": "drones",
+              "vis": {
+                "emoji": "🚁"
+              }
+            },
+            {
+              "emoji": "⌚",
+              "label": "Wearables",
+              "cue": "wearables",
+              "vis": {
+                "emoji": "⌚"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Slim laptops",
+              "cue": "slim laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Same voltage as a regular lithium‑ion cell, but you can slice it down to a fraction of the thickness.",
+          "num_end": 3.7,
+          "decimals": 1,
+          "unit": "V",
+          "label": "Lithium‑polymer voltage",
+          "sub": "same as Li‑ion",
+          "vis": {
+            "emoji": "📏"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔧"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "count": "same voltage",
+            "sub": "fraction of the thickness"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The trade‑off? They cost more than the chunky cylindrical cousins, so you pay a premium for the slim look.",
+          "head": "Higher cost",
+          "label": "Price premium",
+          "stamp": "COST",
+          "callouts": [
+            [
+              "#c0392b",
+              "more expensive"
+            ],
+            [
+              "#7f8c8d",
+              "than cylindrical cells"
+            ]
+          ],
+          "cues": {
+            "head": "The trade‑off",
+            "action": "pay a premium"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to classic lithium‑ion, they’re lighter and can bend, but you lose a bit of energy per gram.",
+          "head": "Thin vs. heavy",
+          "ekg": null,
+          "left": {
+            "emoji": "🔋",
+            "label": "Li‑ion",
+            "cue": "classic lithium‑ion",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "right": {
+            "emoji": "🪙",
+            "label": "Li‑poly",
+            "vis": {
+              "emoji": "🪙"
+            }
+          },
+          "line": "Lightweight wins, cost pays",
+          "cues": {}
+        },
+        {
+          "tpl": "list",
+          "say": "Because they’re cheap on weight, they power the next generation of drones, fitness trackers, and ultra‑slim notebooks.",
+          "head": "Why you care",
+          "sub": {
+            "text": "lightweight power"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚁",
+              "label": "Drones",
+              "cue": "drones",
+              "vis": {
+                "emoji": "🚁"
+              }
+            },
+            {
+              "emoji": "⌚",
+              "label": "Fitness trackers",
+              "cue": "fitness trackers",
+              "vis": {
+                "emoji": "⌚"
+              }
+            },
+            {
+              "emoji": "📚",
+              "label": "Ultra‑slim notebooks",
+              "cue": "ultra‑slim notebooks",
+              "vis": {
+                "emoji": "📚"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "And as battery tech keeps flattening, the polymer shape will let your future gadgets fit in places you never imagined.",
+          "head": "Future shape",
+          "ekg": null,
+          "left": {
+            "emoji": "📱",
+            "label": "Current phones",
+            "vis": {
+              "emoji": "📱"
+            }
+          },
+          "right": {
+            "emoji": "🕶️",
+            "label": "Future wearables",
+            "cue": "future gadgets",
+            "vis": {
+              "emoji": "🕶️"
+            }
+          },
+          "line": "Fit everywhere",
+          "cues": {
+            "line": "future gadgets"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lead-acid",
+      "label": "LEAD‑ACID",
+      "icon": {
+        "emoji": "🛢️"
+      },
+      "hook": "Heavy, robust power for UPS and car starters.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "You see that big, black box in a garage? It’s the original powerhouse, born in 1859 and still kicking today.",
+          "slams": [
+            {
+              "text": "THE ORIGINAL POWERHOUSE"
+            },
+            {
+              "text": "“BIG BLACK BOX”",
+              "cue": "big black box",
+              "strike": true
+            },
+            {
+              "text": "STILL KICKING TODAY",
+              "cue": "still kicking today",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Lead‑acid.",
+          "title": "Lead‑acid",
+          "kicker": "EVERY BATTERY TYPE IN YOUR HOUSE, PART 6",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Each cell gives two volts, stack twelve of them and you get the twelve‑volt standard that starts cars and backs up homes.",
+          "head": "2 V per cell",
+          "label": "1859 — the original",
+          "stamp": "1859",
+          "callouts": [
+            [
+              "#4a7c59",
+              "12 V typical"
+            ],
+            [
+              "#c0392b",
+              "heavy but cheap"
+            ]
+          ],
+          "cues": {
+            "action": "starts cars",
+            "circle": "backs up homes"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find them in three places: car starter batteries, UPS units for computers, and solar backup banks.",
+          "head": "Where they live",
+          "sub": {
+            "text": "three main spots",
+            "cue": "three places"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚗",
+              "label": "Car starter",
+              "cue": "car starter",
+              "vis": {
+                "emoji": "🚗"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "UPS",
+              "cue": "UPS units",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "☀️",
+              "label": "Solar backup",
+              "cue": "solar backup",
+              "vis": {
+                "emoji": "☀️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "They can blast out hundreds of amps, like a short sprint of power that a car needs to roar to life.",
+          "num_end": 200.0,
+          "decimals": 0,
+          "unit": "A",
+          "label": "Surge current",
+          "sub": "hundreds of amps—like a sprint",
+          "vis": {
+            "emoji": "⚡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚀"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "hundreds of amps",
+            "sub": "short sprint"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The trade‑off? They’re as heavy as a brick and store far less energy than modern cells.",
+          "head": "The downside",
+          "label": "Heavy and low energy",
+          "stamp": "HEAVY",
+          "callouts": [
+            [
+              "#7f8c8d",
+              "brick‑weight"
+            ],
+            [
+              "#d35400",
+              "low energy density"
+            ]
+          ],
+          "cues": {
+            "action": "brick"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Compared to lithium‑ion, they give less voltage per cell and weigh a ton more, but they cost pennies per watt‑hour.",
+          "head": "How they stack up",
+          "sub": {
+            "text": "lower voltage, higher weight",
+            "cue": "compared to lithium‑ion"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🔋",
+              "label": "Li‑ion",
+              "cue": "lithium‑ion",
+              "vis": {
+                "emoji": "🔋"
+              }
+            },
+            {
+              "emoji": "🪨",
+              "label": "Lead‑acid",
+              "vis": {
+                "emoji": "🪨"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "The secret? Their price is tiny and you can recycle them almost forever, so the cheap, heavy box still wins in many homes.",
+          "head": "Why they survive",
+          "ekg": null,
+          "left": {
+            "emoji": "💰",
+            "label": "Low cost",
+            "vis": {
+              "emoji": "💰"
+            }
+          },
+          "right": {
+            "emoji": "♻️",
+            "label": "Recyclable",
+            "vis": {
+              "emoji": "♻️"
+            }
+          },
+          "line": "Cheap, heavy, but still useful",
+          "cues": {
+            "line": "cheap, heavy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LiFePO4",
+      "label": "LIFEPO4",
+      "icon": {
+        "emoji": "🟢"
+      },
+      "hook": "Stable, safe cells for solar storage and RVs.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Ever wonder why your solar backup lasts longer than a phone charger? Meet the battery that’s built like a tank and still fits in a box.",
+          "slams": [
+            {
+              "text": "BATTERY BUILT LIKE A TANK"
+            },
+            {
+              "text": "LONGER THAN",
+              "cue": "longer than",
+              "strike": true
+            },
+            {
+              "text": "STILL FITS IN A BOX",
+              "cue": "still fits",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "LiFePO4.",
+          "title": "LiFePO4",
+          "kicker": "EVERY BATTERY TYPE IN YOUR HOUSE, PART 7",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in nineteen ninety‑six, this cell runs at three point two volts – a shade lower than Li‑ion but far safer.",
+          "head": "1996 debut",
+          "label": "3.2 V nominal",
+          "stamp": "1996",
+          "callouts": [
+            [
+              "#2e7d32",
+              "thermal stability"
+            ],
+            [
+              "#ff9800",
+              "low fire risk"
+            ]
+          ],
+          "cues": {
+            "stamp": "nineteen ninety‑six",
+            "action": "runs at",
+            "circle": "far safer"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find LiFePO4 powering solar storage racks, electric car packs, and even marine boat systems.",
+          "head": "Where it lives",
+          "sub": {
+            "text": "solar, EVs, marine",
+            "cue": "solar storage"
+          },
+          "hub": {
+            "emoji": "🔋"
+          },
+          "items": [
+            {
+              "emoji": "☀️",
+              "label": "Solar storage",
+              "cue": "solar storage",
+              "vis": {
+                "emoji": "☀️"
+              }
+            },
+            {
+              "emoji": "🚗",
+              "label": "EV packs",
+              "vis": {
+                "emoji": "🚗"
+              }
+            },
+            {
+              "emoji": "⛵",
+              "label": "Marine",
+              "cue": "marine",
+              "vis": {
+                "emoji": "⛵"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "It can survive over two thousand charge cycles – that’s like drinking a coffee every day for more than five years without losing juice.",
+          "num_end": 2000.0,
+          "decimals": 0,
+          "unit": "cycles",
+          "label": "LiFePO4 cycle life",
+          "sub": "5‑year coffee habit",
+          "vis": {
+            "emoji": "☕"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔁"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "over two thousand",
+            "sub": "five years"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Compared to standard Li‑ion, LiFePO4 gives you a bit less voltage but gains safety and a lifespan that outlasts most gadgets.",
+          "head": "LiFePO4 vs Li‑ion",
+          "sub": {
+            "text": "safer, longer lasting"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "⚡",
+              "label": "3.2 V",
+              "vis": {
+                "emoji": "⚡"
+              }
+            },
+            {
+              "emoji": "🔒",
+              "label": "Safer",
+              "vis": {
+                "emoji": "🔒"
+              }
+            },
+            {
+              "emoji": "⏳",
+              "label": "2000+ cycles",
+              "vis": {
+                "emoji": "⏳"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "So if you value safety and longevity over a tiny voltage boost, LiFePO4 is the quiet workhorse you want in your home energy kit.",
+          "head": "Choose wisely",
+          "ekg": null,
+          "left": {
+            "emoji": "🔋",
+            "label": "LiFePO4",
+            "cue": "LiFePO4",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "right": {
+            "emoji": "🔋",
+            "label": "Li‑ion",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "line": "Safety beats a few volts",
+          "cues": {}
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Keep the right battery for each device to avoid leaks and dead power. Bottom line: Choose wisely, stay powered. See you next Monday.",
+    "type_text": "Choose wisely, stay powered",
+    "cues": {
+      "key": "Choose"
+    }
+  },
+  "facts": [
+    {
+      "name": "Alkaline",
+      "year": "1955",
+      "key_number": "1.5 V per cell",
+      "new": [
+        "longer shelf life",
+        "higher energy density than zinc‑carbon",
+        "better performance in high‑drain devices"
+      ],
+      "lacked": "not rechargeable",
+      "still_used": "remote controls, flashlights, toys",
+      "compare": "double the capacity of zinc‑carbon cells"
+    },
+    {
+      "name": "Lithium coin",
+      "year": "1991",
+      "key_number": "3 V per cell",
+      "new": [
+        "very high energy density",
+        "low self‑discharge rate",
+        "wide operating temperature range"
+      ],
+      "lacked": "cannot supply high current bursts",
+      "still_used": "watch batteries, key fobs, medical devices",
+      "compare": "twice the voltage of alkaline cells"
+    },
+    {
+      "name": "NiMH",
+      "year": "1990",
+      "key_number": "1.2 V per cell",
+      "new": [
+        "rechargeable",
+        "higher capacity than NiCd",
+        "reduced memory effect"
+      ],
+      "lacked": "higher self‑discharge than alkaline",
+      "still_used": "digital cameras, cordless phones, rechargeable AA/AAA sets",
+      "compare": "lower voltage than lithium coin but rechargeable unlike alkaline"
+    },
+    {
+      "name": "Lithium‑ion",
+      "year": "1996",
+      "key_number": "3.7 V nominal",
+      "new": [
+        "high energy density",
+        "low self‑discharge",
+        "no memory effect"
+      ],
+      "lacked": "requires protection circuit to prevent overheating",
+      "still_used": "smartphones, laptops, power tools",
+      "compare": "higher voltage than NiMH and much greater energy density"
+    },
+    {
+      "name": "Lithium polymer",
+      "year": "2000",
+      "key_number": "3.7 V nominal",
+      "new": [
+        "flexible form factor",
+        "lightweight",
+        "can be made very thin"
+      ],
+      "lacked": "higher cost than standard Li‑ion cylindrical cells",
+      "still_used": "drones, wearables, slim laptops",
+      "compare": "same voltage as Li‑ion but thinner and lighter"
+    },
+    {
+      "name": "Lead‑acid",
+      "year": "1859",
+      "key_number": "2 V per cell (12 V typical)",
+      "new": [
+        "high surge current capability",
+        "very low cost per watt‑hour",
+        "easily recyclable"
+      ],
+      "lacked": "heavy weight and low energy density",
+      "still_used": "automotive starter batteries, UPS systems, solar backup",
+      "compare": "lower voltage per cell than Li‑ion and far heavier"
+    },
+    {
+      "name": "LiFePO4",
+      "year": "1996",
+      "key_number": "3.2 V nominal",
+      "new": [
+        "excellent thermal stability",
+        "long cycle life (over 2000 cycles)",
+        "safer chemistry with low fire risk"
+      ],
+      "lacked": "lower energy density than conventional Li‑ion",
+      "still_used": "solar energy storage, electric vehicles, marine applications",
+      "compare": "slightly lower voltage than Li‑ion but much safer and longer lasting"
+    }
+  ]
+}
