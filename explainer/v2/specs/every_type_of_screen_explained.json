@@ -1,0 +1,1683 @@
+{
+  "series": "Every Type Of Screen Explained",
+  "title": "Every Type Of Screen Explained: From CRT to MicroLED",
+  "description": "Explore how each screen technology works, from bulky CRTs to paper‑thin e‑ink. Learn the core differences that shape your viewing experience.",
+  "hashtags": [
+    "#ScreenTech",
+    "#CRT",
+    "#OLED",
+    "#LED",
+    "#MicroLED",
+    "#Eink",
+    "#TechExplained"
+  ],
+  "hero": {
+    "emoji": "📺"
+  },
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "People think CRTs are just old TVs, and OLEDs are just fancy phones. They are not.",
+      "left": {
+        "emoji": "🖥️",
+        "label": "CRT",
+        "vis": {
+          "emoji": "🖥️"
+        }
+      },
+      "right": {
+        "emoji": "📱",
+        "label": "OLED",
+        "vis": {
+          "emoji": "📱"
+        }
+      },
+      "line": "just old TVs?",
+      "cues": {
+        "left": "CRTs are",
+        "right": "OLEDs are",
+        "line": "just old TVs",
+        "strike": "They are not."
+      }
+    },
+    "grid": {
+      "say": "Screen tech differs in how they create light, color and depth. This is every screen type, explained. Starting with CRT.",
+      "cues": {
+        "grid": "Screen tech",
+        "title": "explained",
+        "mark": "Starting with"
+      },
+      "pulse": [
+        {
+          "cue": "light",
+          "items": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {
+      "name": "CRT",
+      "label": "CRT",
+      "icon": {
+        "emoji": "🖥️"
+      },
+      "hook": "Bulky glass tubes that fire electrons.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Old school TV vibes. You see a big box, a glow, and a satisfying hum. That’s the CRT, the granddad of screens.",
+          "slams": [
+            {
+              "text": "THE ORIGINAL SCREEN"
+            },
+            {
+              "text": "“BIG BOX”",
+              "cue": "big box",
+              "strike": true
+            },
+            {
+              "text": "IT HUMS.",
+              "color": "red"
+            },
+            {
+              "text": "GLORIOUS GLOW",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "CRT.",
+          "title": "CRT",
+          "kicker": "EVERY TYPE OF SCREEN, PART 1",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "First electronic display, born in the 1930s. It painted pictures with phosphor and shot out 525 lines of detail.",
+          "head": "First generation",
+          "label": "1930s — the birth",
+          "stamp": "1930s",
+          "callouts": [
+            [
+              "#c9a227",
+              "phosphor glow"
+            ],
+            [
+              "#1c4ed8",
+              "525 lines"
+            ]
+          ],
+          "cues": {
+            "stamp": "1930s",
+            "action": "painted pictures",
+            "circle": "phosphor",
+            "callouts": "525 lines"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Before CRT, you had mechanical scanners and neon signs. Nothing could actually render moving images with color.",
+          "head": "Pre‑CRT era",
+          "sub": {
+            "text": "mechanical and neon",
+            "cue": "mechanical scanners"
+          },
+          "hub": {
+            "emoji": "🖥️"
+          },
+          "items": [
+            {
+              "emoji": "📽️",
+              "label": "Mechanical scanner",
+              "cue": "mechanical scanner",
+              "vis": {
+                "emoji": "📽️"
+              }
+            },
+            {
+              "emoji": "🔆",
+              "label": "Neon sign",
+              "cue": "neon signs",
+              "vis": {
+                "emoji": "🔆"
+              }
+            },
+            {
+              "emoji": "📡",
+              "label": "Cathode tubes",
+              "vis": {
+                "emoji": "📡"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "It showed 525 lines, about the same as a vintage TV you’d watch a sitcom on, each line like a row of tiny bricks.",
+          "num_end": 525.0,
+          "decimals": 0,
+          "unit": "lines",
+          "label": "CRT resolution",
+          "sub": "like a brick wall",
+          "vis": {
+            "emoji": "📺"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🧱"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "525 lines",
+            "sub": "tiny bricks"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? It was a heavyweight. A typical unit weighed as much as a small refrigerator, making desks wobble.",
+          "head": "The weak spot",
+          "label": "Heavy as a fridge",
+          "stamp": "BULKY",
+          "callouts": [
+            [
+              "#d62828",
+              "weighty bulk"
+            ],
+            [
+              "#7a7a7a",
+              "desk wobble"
+            ]
+          ],
+          "cues": {
+            "action": "weighed",
+            "circle": "small refrigerator"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Still alive today in retro gaming rigs and vintage monitor collections, where the glow adds authentic nostalgia.",
+          "head": "Still used",
+          "sub": {
+            "text": "retro gaming, vintage monitors",
+            "cue": "retro gaming"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🎮",
+              "label": "Retro consoles",
+              "vis": {
+                "emoji": "🎮"
+              }
+            },
+            {
+              "emoji": "🖥️",
+              "label": "Vintage monitors",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            },
+            {
+              "emoji": "📼",
+              "label": "Arcade cabinets",
+              "vis": {
+                "emoji": "📼"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Then came plasma in 1997, offering true blacks and thinner panels, but the CRT’s 525 lines still held its own against early flat screens.",
+          "head": "From CRT to plasma",
+          "ekg": null,
+          "left": {
+            "emoji": "🖥️",
+            "label": "CRT",
+            "cue": "CRT",
+            "vis": {
+              "emoji": "🖥️"
+            }
+          },
+          "right": {
+            "emoji": "📺",
+            "label": "Plasma",
+            "cue": "plasma",
+            "vis": {
+              "emoji": "📺"
+            }
+          },
+          "line": "True blacks vs bulky glow",
+          "cues": {
+            "line": "True blacks"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Plasma",
+      "label": "PLASMA",
+      "icon": {
+        "emoji": "🟢"
+      },
+      "hook": "Gas cells glow with tiny lightning.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Plasma screens lit up homes in the late nineties, giving you movie‑theater blacks on a flat panel. They were the glow‑up after bulky CRTs.",
+          "slams": [
+            {
+              "text": "PLASMA SCREEN REVOLUTION"
+            },
+            {
+              "text": "MOVIE‑THEATER BLACKS",
+              "cue": "movie‑theater blacks",
+              "color": "blue"
+            },
+            {
+              "text": "“FLAT PANEL”",
+              "cue": "flat panel",
+              "strike": true
+            },
+            {
+              "text": "THE GLOW‑UP",
+              "cue": "glow‑up",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Plasma.",
+          "title": "Plasma",
+          "kicker": "EVERY TYPE OF SCREEN, PART 2",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "1997 brought the first plasma TV, delivering 720p self‑emissive pixels that showed true blacks and wide angles.",
+          "head": "Plasma debut",
+          "label": "1997 — the breakthrough",
+          "stamp": "1997",
+          "callouts": [
+            [
+              "#4a90e2",
+              "self‑emissive pixels"
+            ],
+            [
+              "#ff7f50",
+              "wide viewing angles"
+            ]
+          ],
+          "cues": {
+            "stamp": "1997",
+            "action": "first plasma",
+            "circle": "true blacks",
+            "callouts": "wide angles"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Before plasma, you were stuck with CRTs—bulky, heavy, and limited in contrast.",
+          "head": "What came before",
+          "sub": {
+            "text": "bulky CRTs"
+          },
+          "hub": {
+            "emoji": "📺"
+          },
+          "items": [
+            {
+              "emoji": "📺",
+              "label": "CRT",
+              "cue": "CRT",
+              "vis": {
+                "emoji": "📺"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "720p means twelve hundred and eighty lines of vertical detail—about the height of a standard kitchen counter.",
+          "num_end": 720.0,
+          "decimals": 0,
+          "unit": "p",
+          "label": "Plasma resolution",
+          "sub": "kitchen‑counter height",
+          "vis": {
+            "emoji": "📏"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🖥️"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "twelve hundred and eighty",
+            "sub": "kitchen counter"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? Plasma panels guzzled power like a fridge on max, making them less energy‑friendly than later screens.",
+          "head": "The weak spot",
+          "label": "Energy hungry",
+          "stamp": "POWER",
+          "callouts": [
+            [
+              "#d62828",
+              "high power draw"
+            ],
+            [
+              "#7a7a7a",
+              "less efficient"
+            ]
+          ],
+          "cues": {
+            "action": "guzzled power",
+            "circle": "less energy‑friendly"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you still find plasma tech in high‑end home theater projectors, where deep blacks still matter.",
+          "head": "Where it lives now",
+          "sub": {
+            "text": "high‑end projectors"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📽️",
+              "label": "Projectors",
+              "cue": "Projectors",
+              "vis": {
+                "emoji": "📽️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to CRTs, plasma gave you true black levels, but it drank more juice than the LCDs that followed.",
+          "head": "True blacks vs. power",
+          "ekg": null,
+          "left": {
+            "emoji": "📺",
+            "label": "CRT",
+            "cue": "CRT",
+            "vis": {
+              "emoji": "📺"
+            }
+          },
+          "right": {
+            "emoji": "📱",
+            "label": "LCD",
+            "cue": "LCD",
+            "vis": {
+              "emoji": "📱"
+            }
+          },
+          "line": "Deeper blacks, higher bill",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "LCD",
+      "label": "LCD",
+      "icon": {
+        "emoji": "📺"
+      },
+      "hook": "Liquid crystals twist to block or let light.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Flat, bright, and everywhere you look – that’s LCD, the screen that turned glass into a window for your world, starting back in the early seventies.",
+          "slams": [
+            {
+              "text": "FLAT BRIGHT EVERYWHERE"
+            },
+            {
+              "text": "“SCREEN THAT TURNED GLASS”",
+              "cue": "screen that turned glass",
+              "strike": true
+            },
+            {
+              "text": "STARTING SEVENTIES",
+              "cue": "early seventies",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "LCD.",
+          "title": "LCD",
+          "kicker": "EVERY TYPE OF SCREEN, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "1971 brought liquid crystals to the stage, letting light pass through thin glass and saving power like never before.",
+          "head": "The breakthrough",
+          "label": "1971 — liquid crystal debut",
+          "stamp": "1971",
+          "callouts": [
+            [
+              "#1a73e8",
+              "thin glass panels"
+            ],
+            [
+              "#34a853",
+              "low power"
+            ]
+          ],
+          "cues": {
+            "stamp": "1971",
+            "action": "liquid crystals",
+            "circle": "thin glass",
+            "callouts": "saving power"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Before LCD, you had bulky plasma panels that ate up space and energy.",
+          "head": "What came before",
+          "sub": {
+            "text": "bulky and power‑hungry",
+            "cue": "bulky plasma panels"
+          },
+          "hub": {
+            "emoji": "📺"
+          },
+          "items": [
+            {
+              "emoji": "📺",
+              "label": "Plasma",
+              "cue": "Plasma",
+              "vis": {
+                "emoji": "📺"
+              }
+            },
+            {
+              "emoji": "⚙️",
+              "label": "CRT",
+              "vis": {
+                "emoji": "⚙️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its sweet spot? Full HD – 1,920 by 1,080 pixels, the same crispness as a 1080p movie on your phone.",
+          "num_end": 1920.0,
+          "decimals": 0,
+          "unit": "pixels",
+          "label": "LCD resolution",
+          "sub": "Full HD clarity",
+          "vis": {
+            "emoji": "📱"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🖥️"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "count": "1,920",
+            "sub": "1080p movie"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But LCD can’t glow on its own; it needs a backlight, so blacks never get truly black.",
+          "head": "The weak spot",
+          "label": "No self‑emissive light",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#d62828",
+              "needs backlight"
+            ],
+            [
+              "#7a7a7a",
+              "blacks aren’t true black"
+            ]
+          ],
+          "cues": {
+            "action": "needs a backlight",
+            "circle": "truly black"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find LCD in smartphones, laptops, and most TVs, lighting up daily life.",
+          "head": "Where you see it",
+          "sub": {
+            "text": "everyday devices",
+            "cue": "smartphones, laptops"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Smartphones",
+              "cue": "Smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Laptops",
+              "cue": "Laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "📺",
+              "label": "TVs",
+              "cue": "TVs",
+              "vis": {
+                "emoji": "📺"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to plasma’s bulk, LCD is a thin, backlit sheet – lighter, cheaper, and ready for any wall.",
+          "head": "Thin vs. bulky",
+          "ekg": null,
+          "left": {
+            "emoji": "📺",
+            "label": "Plasma",
+            "cue": "Plasma",
+            "vis": {
+              "emoji": "📺"
+            }
+          },
+          "right": {
+            "emoji": "💡",
+            "label": "LCD",
+            "cue": "LCD",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "line": "Why carry weight?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "LED",
+      "label": "LED",
+      "icon": {
+        "emoji": "💡"
+      },
+      "hook": "LEDs backlight the LCD for brighter colors.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "LED screens lit up homes around 2000, swapping bulky tubes for sleek light panels. Bright, efficient, and everywhere you look now.",
+          "slams": [
+            {
+              "text": "LED SCREENS LIGHTED"
+            },
+            {
+              "text": "“SWAPPING TUBES”",
+              "strike": true
+            },
+            {
+              "text": "EVERYWHERE NOW",
+              "cue": "everywhere you look",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "LED.",
+          "title": "LED",
+          "kicker": "EVERY TYPE OF SCREEN, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "The year 2000 brought LED backlighting, pushing brightness to four hundred nits and cutting power use dramatically.",
+          "head": "LED backlight",
+          "label": "2000 — bright shift",
+          "stamp": "2000",
+          "callouts": [
+            [
+              "#ffcc00",
+              "400 nits"
+            ],
+            [
+              "#00aa44",
+              "energy savings"
+            ]
+          ],
+          "cues": {
+            "head": "LED backlight",
+            "action": "pushing brightness",
+            "circle": "cutting power"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "Four hundred nits means your screen shines like a sunny window, easily visible in a bright room.",
+          "num_end": 400.0,
+          "decimals": 0,
+          "unit": "nits",
+          "label": "LED brightness",
+          "sub": "like a sunny window",
+          "vis": {
+            "emoji": "☀️"
+          },
+          "travel": {
+            "to": {
+              "emoji": "👀"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "count": "four hundred",
+            "sub": "sunny window"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But LED still can’t hit the true black levels OLED offers, leaving dark scenes a shade lighter.",
+          "head": "The black gap",
+          "label": "LED vs OLED",
+          "stamp": "DARKER",
+          "callouts": [
+            [
+              "#222222",
+              "lighter blacks"
+            ],
+            [
+              "#555555",
+              "OLED perfect blacks"
+            ]
+          ],
+          "cues": {
+            "action": "hit the true",
+            "circle": "a shade lighter"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find LED panels in almost every TV, monitor, and laptop you buy today.",
+          "head": "LED everywhere",
+          "sub": {
+            "text": "in every screen",
+            "cue": "almost every"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📺",
+              "label": "TVs",
+              "vis": {
+                "emoji": "📺"
+              }
+            },
+            {
+              "emoji": "🖥️",
+              "label": "Monitors",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to LCD’s old CCFL glow, LED shines brighter, uses less power, and stays cooler—so why stick with the dim old tech?",
+          "head": "LED beats LCD",
+          "ekg": null,
+          "left": {
+            "emoji": "🔆",
+            "label": "LCD CCFL",
+            "cue": "old CCFL",
+            "vis": {
+              "emoji": "🔆"
+            }
+          },
+          "right": {
+            "emoji": "💡",
+            "label": "LED backlight",
+            "cue": "LED shines",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "line": "Why stick with dim old tech?",
+          "cues": {
+            "line": "dim old tech"
+          }
+        }
+      ]
+    },
+    {
+      "name": "OLED",
+      "label": "OLED",
+      "icon": {
+        "emoji": "📱"
+      },
+      "hook": "Each pixel lights itself, no backlight needed.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "OLED screens light up your world, pixel by pixel, like tiny lamps that turn on and off on demand. They’re the future in your pocket and on your wall.",
+          "slams": [
+            {
+              "text": "PIXEL BY PIXEL"
+            },
+            {
+              "text": "TINY LAMPS",
+              "cue": "tiny lamps",
+              "strike": true
+            },
+            {
+              "text": "THE FUTURE",
+              "cue": "future",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "OLED.",
+          "title": "OLED",
+          "kicker": "EVERY TYPE OF SCREEN, PART 5",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "First appeared in two thousand seven, OLED gave you ten thousand to one contrast, meaning true black looks like a midnight sky.",
+          "head": "First generation",
+          "label": "2007 — OLED debut",
+          "stamp": "2007",
+          "callouts": [
+            [
+              "#0b3d91",
+              "ten thousand to one contrast"
+            ],
+            [
+              "#5a9c6b",
+              "pixel illumination"
+            ]
+          ],
+          "cues": {
+            "head": "First appeared",
+            "stamp": "two thousand seven",
+            "action": "true black",
+            "circle": "midnight sky",
+            "callouts": "contrast"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today OLED powers the sleek phone in your hand, the cinema‑quality TV on your wall, and the immersive VR headset on your head.",
+          "head": "What OLED powers",
+          "sub": {
+            "text": "premium devices everywhere"
+          },
+          "hub": {
+            "emoji": "📱"
+          },
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Smartphones",
+              "cue": "phone",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "📺",
+              "label": "TVs",
+              "cue": "TV",
+              "vis": {
+                "emoji": "📺"
+              }
+            },
+            {
+              "emoji": "🕶️",
+              "label": "VR headsets",
+              "cue": "VR headset",
+              "vis": {
+                "emoji": "🕶️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its contrast ratio hits ten thousand to one, so black looks as deep as a cave at night.",
+          "num_end": 10000.0,
+          "decimals": 0,
+          "unit": ":1",
+          "label": "OLED contrast ratio",
+          "sub": "as deep as a cave",
+          "vis": {
+            "emoji": "📱"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔦"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "ten thousand",
+            "sub": "deep as a cave"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But OLED isn’t the brightest kid in class; its peak brightness falls short of LED panels that blaze like midday sun.",
+          "head": "The weak spot",
+          "label": "Brightness lower than LED",
+          "stamp": "DIM",
+          "callouts": [
+            [
+              "#d62828",
+              "peak brightness lower"
+            ],
+            [
+              "#7a7a7a",
+              "LED outshines"
+            ]
+          ],
+          "cues": {
+            "head": "But OLED",
+            "action": "peak brightness",
+            "circle": "midday sun"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Unlike LED‑backlit LCDs, OLED gives you true blacks without a backlight, but it can’t shine as brightly as those LED screens.",
+          "head": "OLED vs LED‑backlit LCD",
+          "ekg": null,
+          "left": {
+            "emoji": "📱",
+            "label": "OLED",
+            "cue": "OLED",
+            "vis": {
+              "emoji": "📱"
+            }
+          },
+          "right": {
+            "emoji": "📺",
+            "label": "LED‑LCD",
+            "cue": "LED‑backlit LCD",
+            "vis": {
+              "emoji": "📺"
+            }
+          },
+          "line": "True blacks versus bright glare",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "QLED",
+      "label": "QLED",
+      "icon": {
+        "emoji": "🟡"
+      },
+      "hook": "Quantum dots boost LED brightness and hue.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "QLED TVs shine like a sun. Samsung’s 2017 breakthrough turned colors into fireworks, and you’ll see why it matters for every living room.",
+          "slams": [
+            {
+              "text": "QLED TV"
+            },
+            {
+              "text": "SUNLIGHT BRIGHTNESS",
+              "strike": true
+            },
+            {
+              "text": "COLOR FIREWORKS",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "QLED.",
+          "title": "QLED",
+          "kicker": "EVERY TYPE OF SCREEN, PART 6",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "2017 introduced quantum dots, pushing peak brightness to two thousand nits—so bright it rivals daylight on a clear summer day.",
+          "head": "Quantum Dot Boost",
+          "label": "2017 — quantum dots debut",
+          "stamp": "2017",
+          "callouts": [
+            [
+              "#ffcc00",
+              "2000 nits peak"
+            ],
+            [
+              "#0066ff",
+              "wider color gamut"
+            ]
+          ],
+          "cues": {
+            "stamp": "two thousand",
+            "action": "pushing peak",
+            "circle": "clear summer day",
+            "callouts": "quantum dots"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What quantum dots give you is three things: richer reds, deeper blues, and a color volume that fills the whole rainbow.",
+          "head": "Quantum Dot Benefits",
+          "sub": {
+            "text": "richer reds, deeper blues",
+            "cue": "three things"
+          },
+          "hub": {
+            "emoji": "📺"
+          },
+          "items": [
+            {
+              "emoji": "🔴",
+              "label": "Richer Reds",
+              "cue": "richer reds",
+              "vis": {
+                "emoji": "🔴"
+              }
+            },
+            {
+              "emoji": "🔵",
+              "label": "Deeper Blues",
+              "cue": "deeper blues",
+              "vis": {
+                "emoji": "🔵"
+              }
+            },
+            {
+              "emoji": "🌈",
+              "label": "Full Rainbow",
+              "cue": "color volume",
+              "vis": {
+                "emoji": "🌈"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Two thousand nits means you could read a book on the screen in bright sunlight without squinting.",
+          "num_end": 2000.0,
+          "decimals": 0,
+          "unit": "nits",
+          "label": "QLED peak brightness",
+          "sub": "read a book outdoors",
+          "vis": {
+            "emoji": "📖"
+          },
+          "travel": {
+            "to": {
+              "emoji": "☀️"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "two thousand",
+            "sub": "bright sunlight"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? QLED still relies on a backlight, so it can’t turn each pixel off for true blacks like OLED can.",
+          "head": "Backlight Limitation",
+          "label": "No pixel‑level lighting",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#222222",
+              "still a backlight"
+            ],
+            [
+              "#888888",
+              "no true blacks"
+            ]
+          ],
+          "cues": {
+            "action": "turn each pixel off",
+            "circle": "true blacks like OLED"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find QLED in Samsung’s flagship TVs, premium home‑theater rigs, and some high‑end monitors for creators.",
+          "head": "Where QLED Lives",
+          "sub": {
+            "text": "flagship TVs, creators"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🖥️",
+              "label": "Flagship TVs",
+              "cue": "Flagship TVs",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Creator Monitors",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "🏠",
+              "label": "Home‑theater rigs",
+              "cue": "home‑theater rigs",
+              "vis": {
+                "emoji": "🏠"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to OLED, QLED shines brighter but still can’t match OLED’s perfect blacks—so you choose between dazzling daylight or cinema‑dark shadows.",
+          "head": "Bright vs. Black",
+          "ekg": null,
+          "left": {
+            "emoji": "💡",
+            "label": "QLED Bright",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "right": {
+            "emoji": "⚫",
+            "label": "OLED Black",
+            "vis": {
+              "emoji": "⚫"
+            }
+          },
+          "line": "Bright daylight or cinema darkness?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "MicroLED",
+      "label": "MICROLED",
+      "icon": {
+        "emoji": "🔆"
+      },
+      "hook": "Tiny LEDs form each pixel for perfect blacks.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Imagine a screen that’s as bright as a sunny rooftop and never burns in. That’s MicroLED, the future of displays, already lighting up premium panels.",
+          "slams": [
+            {
+              "text": "BRIGHT AS SUN"
+            },
+            {
+              "text": "NO BURN‑IN RISK",
+              "strike": true
+            },
+            {
+              "text": "THE FUTURE DISPLAY",
+              "cue": "future of displays",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "MicroLED.",
+          "title": "MicroLED",
+          "kicker": "EVERY TYPE OF SCREEN, PART 7",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "2018 brought MicroLED, tiny self‑emissive LEDs packed together, delivering up to ten thousand nits of brightness.",
+          "head": "MicroLED debut",
+          "label": "2018 — the breakthrough",
+          "stamp": "2018",
+          "callouts": [
+            [
+              "#ff9900",
+              "10 000 nits"
+            ],
+            [
+              "#0066cc",
+              "modular tiles"
+            ]
+          ],
+          "cues": {
+            "stamp": "2018",
+            "action": "tiny self‑emissive",
+            "circle": "ten thousand nits"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find MicroLED in high‑end billboards, luxury retail windows, and experimental home theater rigs.",
+          "head": "Where you see it",
+          "sub": {
+            "text": "premium and prototype",
+            "cue": "high‑end billboards"
+          },
+          "hub": {
+            "emoji": "🖥️"
+          },
+          "items": [
+            {
+              "emoji": "🏙️",
+              "label": "Billboards",
+              "cue": "billboards",
+              "vis": {
+                "emoji": "🏙️"
+              }
+            },
+            {
+              "emoji": "🏬",
+              "label": "Retail windows",
+              "cue": "retail windows",
+              "vis": {
+                "emoji": "🏬"
+              }
+            },
+            {
+              "emoji": "🏠",
+              "label": "Home theater rigs",
+              "cue": "home theater",
+              "vis": {
+                "emoji": "🏠"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Ten thousand nits means you could read this script on a screen in direct noon sunlight without squinting.",
+          "num_end": 10000.0,
+          "decimals": 0,
+          "unit": "nits",
+          "label": "MicroLED peak brightness",
+          "sub": "readable in noon sun",
+          "vis": {
+            "emoji": "☀️"
+          },
+          "travel": {
+            "to": {
+              "emoji": "📺"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "ten thousand",
+            "sub": "noon sunlight"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? It’s still a premium tech, priced far above consumer OLED panels, so you won’t find it in a budget phone.",
+          "head": "The weak spot",
+          "label": "high cost",
+          "stamp": "EXPENSIV",
+          "callouts": [
+            [
+              "#d62828",
+              "premium price"
+            ],
+            [
+              "#7a7a7a",
+              "not for phones"
+            ]
+          ],
+          "cues": {
+            "action": "premium tech",
+            "circle": "budget phone"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What MicroLED currently powers: stadium scoreboards, flagship retail displays, and cutting‑edge VR prototypes.",
+          "head": "Current power users",
+          "sub": {
+            "text": "large‑scale and experimental",
+            "cue": "stadium scoreboards"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🏟️",
+              "label": "Stadium scoreboards",
+              "cue": "scoreboards",
+              "vis": {
+                "emoji": "🏟️"
+              }
+            },
+            {
+              "emoji": "🛍️",
+              "label": "Retail displays",
+              "cue": "retail displays",
+              "vis": {
+                "emoji": "🛍️"
+              }
+            },
+            {
+              "emoji": "🕶️",
+              "label": "VR prototypes",
+              "cue": "VR prototypes",
+              "vis": {
+                "emoji": "🕶️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to OLED, MicroLED matches its perfect blacks but shines brighter, like a lighthouse versus a candle.",
+          "head": "Brighter than OLED",
+          "ekg": null,
+          "left": {
+            "emoji": "💡",
+            "label": "OLED",
+            "cue": "OLED",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "right": {
+            "emoji": "🔆",
+            "label": "MicroLED",
+            "cue": "MicroLED",
+            "vis": {
+              "emoji": "🔆"
+            }
+          },
+          "line": "Lighthouse over candle",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "E-ink",
+      "label": "E‑INK",
+      "icon": {
+        "emoji": "📖"
+      },
+      "hook": "Electrophoretic particles mimic ink on paper.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "E‑ink changed reading forever. Imagine a screen that looks like paper, but you can swipe pages without draining a battery.",
+          "slams": [
+            {
+              "text": "PAPER‑LIKE SCREEN"
+            },
+            {
+              "text": "\"NO BATTERY DRAIN\"",
+              "strike": true
+            },
+            {
+              "text": "IT'S REAL",
+              "color": "red"
+            },
+            {
+              "text": "REVOLUTIONARY",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "E‑ink.",
+          "title": "E‑ink",
+          "kicker": "EVERY TYPE OF SCREEN, PART 8",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in nineteen ninety‑seven, this tech uses bistable electrophoretic ink that stays static until you flip a page.",
+          "head": "1997 — first generation",
+          "label": "E‑ink debut",
+          "stamp": "1997",
+          "callouts": [
+            [
+              "#4a7c59",
+              "bistable ink"
+            ],
+            [
+              "#c94f1f",
+              "paper‑like readability"
+            ]
+          ],
+          "cues": {
+            "head": "nineteen ninety‑seven",
+            "action": "flip a page",
+            "circle": "bistable electrophoretic ink"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find it in three main places: e‑readers, digital signage, and some smart watches.",
+          "head": "Where it lives",
+          "sub": {
+            "text": "three main places",
+            "cue": "three main places"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📚",
+              "label": "E‑readers",
+              "cue": "e‑readers",
+              "vis": {
+                "emoji": "📚"
+              }
+            },
+            {
+              "emoji": "📺",
+              "label": "Digital signage",
+              "cue": "digital signage",
+              "vis": {
+                "emoji": "📺"
+              }
+            },
+            {
+              "emoji": "⌚",
+              "label": "Smart watches",
+              "cue": "smart watches",
+              "vis": {
+                "emoji": "⌚"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its power draw is just half a milliwatt per square centimetre – about the energy of a single LED blinking once a second.",
+          "num_end": 0.5,
+          "decimals": 1,
+          "unit": "mW/cm²",
+          "label": "E‑ink power use",
+          "sub": "LED blink per second",
+          "vis": {
+            "emoji": "💡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "📖"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "half a milliwatt",
+            "sub": "LED blinking"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? Color and video are sluggish – a full‑color page takes seconds to appear, so movies feel like a slideshow.",
+          "head": "The weak spot",
+          "label": "Slow colour refresh",
+          "stamp": "SLUGGISH",
+          "callouts": [
+            [
+              "#d62828",
+              "seconds per page"
+            ],
+            [
+              "#7a7a7a",
+              "no video"
+            ]
+          ],
+          "cues": {
+            "head": "The downside",
+            "action": "full‑color page",
+            "circle": "seconds to appear",
+            "callouts": "movies feel"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Still, it powers the most popular e‑readers, bright storefront displays, and even some fitness trackers.",
+          "head": "What it powers",
+          "sub": {
+            "text": "popular devices today"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📖",
+              "label": "E‑readers",
+              "cue": "e‑readers",
+              "vis": {
+                "emoji": "📖"
+              }
+            },
+            {
+              "emoji": "🛍️",
+              "label": "Store displays",
+              "cue": "storefront displays",
+              "vis": {
+                "emoji": "🛍️"
+              }
+            },
+            {
+              "emoji": "🏃",
+              "label": "Fitness trackers",
+              "cue": "fitness trackers",
+              "vis": {
+                "emoji": "🏃"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to any emissive screen, E‑ink sips power like a candle versus a floodlight – you could read a whole book on a single charge.",
+          "head": "Power contrast",
+          "ekg": null,
+          "left": {
+            "emoji": "📘",
+            "label": "E‑ink",
+            "cue": "E‑ink",
+            "vis": {
+              "emoji": "📘"
+            }
+          },
+          "right": {
+            "emoji": "📺",
+            "label": "LED screen",
+            "vis": {
+              "emoji": "📺"
+            }
+          },
+          "line": "Why waste energy?",
+          "cues": {}
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Pick the screen that fits your needs, whether you crave deep blacks or paper‑like reading. Bottom line: Choose wisely. See you next Monday.",
+    "type_text": "Bottom line: Choose wisely",
+    "cues": {
+      "key": "Choose wisely"
+    }
+  },
+  "facts": [
+    {
+      "name": "CRT",
+      "year": "1930s",
+      "key_number": "525 lines",
+      "new": [
+        "first electronic display",
+        "color reproduction via phosphor",
+        "high refresh rates"
+      ],
+      "lacked": "thin form factor",
+      "still_used": "retro gaming consoles and vintage monitors",
+      "compare": "first generation, bulky and heavy compared to later flat panels"
+    },
+    {
+      "name": "Plasma",
+      "year": "1997",
+      "key_number": "720p",
+      "new": [
+        "self-emissive pixels",
+        "deep blacks",
+        "wide viewing angles"
+      ],
+      "lacked": "energy efficiency",
+      "still_used": "high-end home theater projectors (as a legacy tech)",
+      "compare": "offered true blacks versus CRT's limited contrast"
+    },
+    {
+      "name": "LCD",
+      "year": "1971",
+      "key_number": "1920x1080",
+      "new": [
+        "liquid crystal light modulation",
+        "thin glass panels",
+        "low power consumption"
+      ],
+      "lacked": "self-emissive light source",
+      "still_used": "smartphone screens, laptops, TVs",
+      "compare": "replaced plasma's bulk with a thin, backlit design"
+    },
+    {
+      "name": "LED",
+      "year": "2000",
+      "key_number": "400 nits",
+      "new": [
+        "LED backlighting",
+        "improved brightness",
+        "energy savings"
+      ],
+      "lacked": "true black levels of OLED",
+      "still_used": "most modern TVs and monitors",
+      "compare": "brighter and more efficient than LCD's CCFL backlight"
+    },
+    {
+      "name": "OLED",
+      "year": "2007",
+      "key_number": "10,000:1 contrast",
+      "new": [
+        "individual pixel illumination",
+        "perfect blacks",
+        "flexible panels"
+      ],
+      "lacked": "peak brightness compared to LED",
+      "still_used": "premium smartphones, high-end TVs, VR headsets",
+      "compare": "provides deeper blacks than LED backlit LCDs"
+    },
+    {
+      "name": "QLED",
+      "year": "2017",
+      "key_number": "2000 nits",
+      "new": [
+        "quantum dot color enhancement",
+        "higher brightness",
+        "wide color gamut"
+      ],
+      "lacked": "true pixel-level lighting",
+      "still_used": "Samsung flagship TVs",
+      "compare": "brighter than OLED but still uses LED backlight"
+    },
+    {
+      "name": "MicroLED",
+      "year": "2018",
+      "key_number": "10,000 nits",
+      "new": [
+        "microscale self-emissive LEDs",
+        "modular design",
+        "no burn‑in risk"
+      ],
+      "lacked": "mass‑market affordability",
+      "still_used": "high‑end commercial displays and prototypes",
+      "compare": "matches OLED's black levels with far higher brightness"
+    },
+    {
+      "name": "E-ink",
+      "year": "1997",
+      "key_number": "0.5 mW/cm²",
+      "new": [
+        "bistable electrophoretic ink",
+        "paper‑like readability",
+        "ultra‑low power"
+      ],
+      "lacked": "color video refresh speed",
+      "still_used": "e‑readers, digital signage, smart watches",
+      "compare": "consumes far less power than any emissive screen"
+    }
+  ]
+}
