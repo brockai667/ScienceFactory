@@ -1,0 +1,1586 @@
+{
+  "series": "Every Memory Card Type Explained",
+  "title": "Every Memory Card Type Explained: From CF to SDUC",
+  "description": "We break down every major memory card, from the bulky CompactFlash to the tiny microSD and the newest SDUC. Learn what each one means for speed, capacity, and compatibility.",
+  "hashtags": [
+    "#MemoryCards",
+    "#TechExplained",
+    "#CF",
+    "#SD",
+    "#microSD",
+    "#CFexpress",
+    "#SDUC"
+  ],
+  "hero": {
+    "emoji": "💾"
+  },
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "People think CompactFlash and SD are the same size. They are not.",
+      "left": {
+        "emoji": "📷",
+        "label": "CompactFlash",
+        "vis": {
+          "emoji": "📷"
+        }
+      },
+      "right": {
+        "emoji": "💽",
+        "label": "SD",
+        "vis": {
+          "emoji": "💽"
+        }
+      },
+      "line": "Same size?",
+      "cues": {
+        "left": "CompactFlash",
+        "right": "SD",
+        "line": "same size",
+        "strike": "They are not."
+      }
+    },
+    "grid": {
+      "say": "Different formats mean different speeds, capacities, and device compatibility. This is every memory card type, explained. Starting with CompactFlash.",
+      "cues": {
+        "grid": "Different formats",
+        "title": "explained",
+        "mark": "Starting with CompactFlash"
+      },
+      "pulse": [
+        {
+          "cue": "speeds",
+          "items": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {
+      "name": "CompactFlash",
+      "label": "COMPACTFLASH",
+      "icon": {
+        "emoji": "📷"
+      },
+      "hook": "The original pro photographer’s workhorse, big and rugged.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Think big, heavy, and built like a tank. That’s CompactFlash, the original heavyweight champion of removable storage, debuting in the mid‑90s.",
+          "slams": [
+            {
+              "text": "THE HEAVYWEIGHT CHAMPION"
+            },
+            {
+              "text": "“BUILT LIKE A TANK”",
+              "cue": "built like a tank",
+              "strike": true
+            },
+            {
+              "text": "IT'S NOT SMALL",
+              "color": "red"
+            },
+            {
+              "text": "OR LIGHT",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "CompactFlash.",
+          "title": "CompactFlash",
+          "kicker": "EVERY MEMORY CARD TYPE, PART 1",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "1994 saw the birth of CompactFlash, a card the size of a postage stamp but with a full IDE interface, reaching 160 megabytes per second in theory.",
+          "head": "Birth of CF",
+          "label": "1994 — the first generation",
+          "stamp": "1994",
+          "callouts": [
+            [
+              "#c9a227",
+              "IDE interface"
+            ],
+            [
+              "#1c4ed8",
+              "160 MB/s"
+            ]
+          ],
+          "cues": {
+            "stamp": "1994",
+            "action": "full IDE"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Before CF, you were shuffling floppy disks, Zip drives, and tiny PCMCIA cards, each with its own quirks and limits.",
+          "head": "What came before",
+          "sub": {
+            "text": "multiple legacy media"
+          },
+          "hub": {
+            "emoji": "💾"
+          },
+          "items": [
+            {
+              "emoji": "🗂️",
+              "label": "Floppy Disk",
+              "cue": "Floppy Disk",
+              "vis": {
+                "emoji": "🗂️"
+              }
+            },
+            {
+              "emoji": "📀",
+              "label": "Zip Drive",
+              "cue": "Zip Drive",
+              "vis": {
+                "emoji": "📀"
+              }
+            },
+            {
+              "emoji": "💽",
+              "label": "PCMCIA",
+              "cue": "PCMCIA",
+              "vis": {
+                "emoji": "💽"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its top speed—160 megabytes per second—means you could move a full‑HD movie in under a second, faster than a blink of an eye.",
+          "num_end": 160.0,
+          "decimals": 0,
+          "unit": "MB/s",
+          "label": "CompactFlash top speed",
+          "sub": "full‑HD in under a second",
+          "vis": {
+            "emoji": "🎞️"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🚀"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "top speed",
+            "sub": "full‑HD"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But it missed the mark for high‑speed video. The interface couldn’t keep up with the frame rates that modern shooters demand.",
+          "head": "The weak spot",
+          "label": "high‑speed video",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#d62828",
+              "no native video"
+            ],
+            [
+              "#7a7a7a",
+              "limited frame rates"
+            ]
+          ],
+          "cues": {
+            "action": "high‑speed video",
+            "circle": "modern shooters"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you still find CompactFlash in pro DSLR bodies, industrial vision rigs, and some legacy broadcast gear that value durability above size.",
+          "head": "Still in use",
+          "sub": {
+            "text": "durability wins"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📷",
+              "label": "Pro DSLRs",
+              "vis": {
+                "emoji": "📷"
+              }
+            },
+            {
+              "emoji": "🏭",
+              "label": "Industrial cameras",
+              "vis": {
+                "emoji": "🏭"
+              }
+            },
+            {
+              "emoji": "📺",
+              "label": "Broadcast gear",
+              "cue": "Broadcast gear",
+              "vis": {
+                "emoji": "📺"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to the tiny SD card that arrived five years later, CF is massive and slower, yet its rugged build keeps it alive in niche pro markets.",
+          "head": "Size vs. durability",
+          "ekg": null,
+          "left": {
+            "emoji": "💾",
+            "label": "CompactFlash",
+            "vis": {
+              "emoji": "💾"
+            }
+          },
+          "right": {
+            "emoji": "💽",
+            "label": "SD card",
+            "cue": "SD card",
+            "vis": {
+              "emoji": "💽"
+            }
+          },
+          "line": "Big isn’t always better",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "label": "SD",
+      "icon": {
+        "emoji": "💽"
+      },
+      "hook": "The universal card you find in phones, cameras, and drones.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Tiny card, big impact. You’ve probably slipped one into your phone without noticing. That little square changed how we store photos, videos, and apps forever.",
+          "slams": [
+            {
+              "text": "TINY CARD, BIG IMPACT"
+            },
+            {
+              "text": "YOU'VE PROBABLY",
+              "cue": "you've probably",
+              "strike": true
+            },
+            {
+              "text": "CHANGED HOW WE STORE",
+              "cue": "how we store",
+              "color": "red"
+            },
+            {
+              "text": "FOREVER",
+              "cue": "forever",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "SD.",
+          "title": "SD",
+          "kicker": "EVERY MEMORY CARD TYPE, PART 2",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "1999 brought the first Secure Digital card. It was tiny, hot‑swappable, and used a new SD bus interface. A game‑changer for consumer cameras.",
+          "head": "SD debut",
+          "label": "1999 — first generation",
+          "stamp": "1999",
+          "callouts": [
+            [
+              "#c9a227",
+              "tiny form factor"
+            ],
+            [
+              "#1c4ed8",
+              "hot‑swap"
+            ]
+          ],
+          "cues": {
+            "stamp": "1999",
+            "action": "tiny",
+            "circle": "consumer cameras",
+            "callouts": "new SD bus"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Before SD, photographers relied on bulky CompactFlash cards. Those were big, heavy, and slower, but they could handle professional workloads.",
+          "head": "Before SD",
+          "sub": {
+            "text": "big, heavy, slower",
+            "cue": "big heavy"
+          },
+          "hub": {
+            "emoji": "📷"
+          },
+          "items": [
+            {
+              "emoji": "💾",
+              "label": "CompactFlash",
+              "cue": "CompactFlash",
+              "vis": {
+                "emoji": "💾"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its top speed was twenty‑five megabytes per second – about the time it takes to download a short song on a slow connection.",
+          "num_end": 25.0,
+          "decimals": 0,
+          "unit": "MB/s",
+          "label": "SD top speed",
+          "sub": "one short song",
+          "vis": {
+            "emoji": "🎵"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💽"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "sub": "short song"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "But the original SD capped at two gigabytes. That’s like fitting a few hundred photos on a thumb‑drive you could lose in a couch cushion.",
+          "head": "Capacity limit",
+          "label": "2 GB — early SD",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#d62828",
+              "only a few hundred photos"
+            ],
+            [
+              "#7a7a7a",
+              "lost in couch"
+            ]
+          ],
+          "cues": {
+            "action": "few hundred photos",
+            "circle": "couch cushion"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find SD cards in point‑and‑shoot cameras, adapters for smartphones, drones, and even some older laptops.",
+          "head": "Where you see SD",
+          "sub": {
+            "text": "cameras, adapters, drones"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📸",
+              "label": "Cameras",
+              "cue": "cameras",
+              "vis": {
+                "emoji": "📸"
+              }
+            },
+            {
+              "emoji": "📱",
+              "label": "Smartphone adapters",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "🚁",
+              "label": "Drones",
+              "cue": "drones",
+              "vis": {
+                "emoji": "🚁"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "MiniSD tried to bridge the gap, but microSD stole the show. Same twenty‑five megabytes per second, yet microSD is the tiniest card you can hold between your fingers.",
+          "head": "Size showdown",
+          "ekg": null,
+          "left": {
+            "emoji": "💾",
+            "label": "MiniSD",
+            "cue": "MiniSD",
+            "vis": {
+              "emoji": "💾"
+            }
+          },
+          "right": {
+            "emoji": "💽",
+            "label": "microSD",
+            "cue": "microSD",
+            "vis": {
+              "emoji": "💽"
+            }
+          },
+          "line": "Why size matters?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "miniSD",
+      "label": "MINISD",
+      "icon": {
+        "emoji": "📀"
+      },
+      "hook": "A smaller sibling of SD, popular in older MP3 players.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "MiniSD arrived in 2003, the Goldilocks of cards—smaller than SD, bigger than microSD, perfect for the phones of its day.",
+          "slams": [
+            {
+              "text": "THE GOLDILOCKS CARD"
+            },
+            {
+              "text": "“SMALLER THAN SD”",
+              "cue": "smaller than sd",
+              "strike": true
+            },
+            {
+              "text": "“BIGGER THAN MICROSD”",
+              "cue": "bigger than micro",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "miniSD.",
+          "title": "miniSD",
+          "kicker": "EVERY MEMORY CARD TYPE, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "2003 saw miniSD debut, offering the same 25 megabytes per second speed as SD but in a tighter footprint.",
+          "head": "miniSD debut",
+          "label": "2003 — the middle child",
+          "stamp": "2003",
+          "callouts": [
+            [
+              "#4a90e2",
+              "same speed as SD"
+            ],
+            [
+              "#7b7b7b",
+              "smaller size"
+            ]
+          ],
+          "cues": {
+            "head": "miniSD debut",
+            "stamp": "2003",
+            "action": "tighter footprint"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "It fit between SD and microSD, letting you drop a tiny adapter into a regular SD slot.",
+          "head": "Form factor bridge",
+          "sub": {
+            "text": "between SD and microSD",
+            "cue": "between sd and"
+          },
+          "hub": {
+            "emoji": "📦"
+          },
+          "items": [
+            {
+              "emoji": "💾",
+              "label": "SD slot",
+              "cue": "sd slot",
+              "vis": {
+                "emoji": "💾"
+              }
+            },
+            {
+              "emoji": "📱",
+              "label": "Micro slot",
+              "vis": {
+                "emoji": "📱"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Speed? Still twenty‑five megabytes per second, enough to move a high‑def photo in a flash.",
+          "num_end": 25.0,
+          "decimals": 0,
+          "unit": "MB/s",
+          "label": "miniSD speed",
+          "sub": "photo in a flash",
+          "vis": {
+            "emoji": "📸"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "twenty‑five",
+            "sub": "high‑def photo"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "What it missed was phone love—manufacturers chose microSD, leaving miniSD to linger in legacy players.",
+          "head": "Missing phone love",
+          "label": "adoption gap",
+          "stamp": "LAG",
+          "callouts": [
+            [
+              "#d62828",
+              "phones chose microSD"
+            ],
+            [
+              "#7a7a7a",
+              "legacy devices"
+            ]
+          ],
+          "cues": {
+            "circle": "legacy players"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You still find miniSD in old MP3 players, some early smartphones, and niche audio gadgets.",
+          "head": "Where it lives today",
+          "sub": {
+            "text": "legacy devices only"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🎧",
+              "label": "MP3 player",
+              "cue": "mp3 player",
+              "vis": {
+                "emoji": "🎧"
+              }
+            },
+            {
+              "emoji": "📞",
+              "label": "Early phone",
+              "vis": {
+                "emoji": "📞"
+              }
+            },
+            {
+              "emoji": "🔊",
+              "label": "Audio gadget",
+              "cue": "audio gadget",
+              "vis": {
+                "emoji": "🔊"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "But microSD stole the spotlight—same speed, far smaller, now in almost every pocket device.",
+          "head": "MicroSD dominance",
+          "ekg": null,
+          "left": {
+            "emoji": "💽",
+            "label": "miniSD",
+            "vis": {
+              "emoji": "💽"
+            }
+          },
+          "right": {
+            "emoji": "💾",
+            "label": "microSD",
+            "cue": "microSD",
+            "vis": {
+              "emoji": "💾"
+            }
+          },
+          "line": "Same speed, smaller size",
+          "cues": {
+            "line": "same speed"
+          }
+        }
+      ]
+    },
+    {
+      "name": "microSD",
+      "label": "MICROSD",
+      "icon": {
+        "emoji": "🔹"
+      },
+      "hook": "Tiny powerhouse that fits in smartphones and action cams.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "The tiny hero. It fits on the tip of a finger, yet powers your phone, drone, and action cam. That’s the microSD card, the smallest memory marvel.",
+          "slams": [
+            {
+              "text": "THE TINY HERO"
+            },
+            {
+              "text": "FIT ON FINGER",
+              "cue": "fits on the tip",
+              "strike": true
+            },
+            {
+              "text": "POWER YOUR GADGETS",
+              "cue": "powers your phone",
+              "color": "red"
+            },
+            {
+              "text": "SMALLEST MEMORY",
+              "cue": "smallest memory marvel",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "microSD.",
+          "title": "microSD",
+          "kicker": "EVERY MEMORY CARD TYPE, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Launched in 2005, microSD brought a 25 MB/s speed to a card smaller than a grain of rice, with an adapter to full‑size SD and SDHC/SDXC support.",
+          "head": "2005 debut",
+          "label": "tinyest consumer card",
+          "stamp": "2005",
+          "callouts": [
+            [
+              "#4a90e2",
+              "25 MB/s speed"
+            ],
+            [
+              "#d9534f",
+              "adapter to SD"
+            ]
+          ],
+          "cues": {
+            "stamp": "2005",
+            "action": "brought a",
+            "circle": "full‑size SD"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find it in smartphones, tablets, drones, and action cameras, keeping your media ready on the go.",
+          "head": "Where it lives",
+          "sub": {
+            "text": "mobile devices everywhere",
+            "cue": "smartphones, tablets"
+          },
+          "hub": {
+            "emoji": "📱"
+          },
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Smartphones",
+              "cue": "Smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Tablets",
+              "cue": "Tablets",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "🛸",
+              "label": "Drones",
+              "cue": "Drones",
+              "vis": {
+                "emoji": "🛸"
+              }
+            },
+            {
+              "emoji": "🏂",
+              "label": "Action cams",
+              "vis": {
+                "emoji": "🏂"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its top speed, twenty‑five megabytes per second, means a 2‑minute 1080p clip moves in just five seconds.",
+          "num_end": 25.0,
+          "decimals": 0,
+          "unit": "MB/s",
+          "label": "microSD top speed",
+          "sub": "5 seconds — 1080p clip",
+          "vis": {
+            "emoji": "🎥"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "twenty‑five megabytes",
+            "sub": "just five seconds"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "At first it could only hold up to two gigabytes, so you needed several cards for a full‑day shoot.",
+          "head": "Capacity limit",
+          "label": "2 GB max",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#f0ad4e",
+              "2 GB max"
+            ],
+            [
+              "#5bc0de",
+              "multiple cards needed"
+            ]
+          ],
+          "cues": {
+            "action": "could only hold",
+            "circle": "full‑day shoot"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Now it powers everything from pocket‑size phones to 4K drones, thanks to SDHC and SDXC extensions.",
+          "head": "Modern power",
+          "sub": {
+            "text": "expanded capacity",
+            "cue": "SDHC and SDXC"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📸",
+              "label": "Phones",
+              "cue": "Phones",
+              "vis": {
+                "emoji": "📸"
+              }
+            },
+            {
+              "emoji": "🛩️",
+              "label": "4K drones",
+              "cue": "4K drones",
+              "vis": {
+                "emoji": "🛩️"
+              }
+            },
+            {
+              "emoji": "🎮",
+              "label": "Tablets",
+              "vis": {
+                "emoji": "🎮"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to its bigger sibling miniSD, microSD kept the same 25 MB/s speed but shrank the size dramatically, becoming the dominant mobile format.",
+          "head": "Size wins",
+          "ekg": null,
+          "left": {
+            "emoji": "📏",
+            "label": "miniSD",
+            "cue": "bigger sibling",
+            "vis": {
+              "emoji": "📏"
+            }
+          },
+          "right": {
+            "emoji": "🔹",
+            "label": "microSD",
+            "cue": "dominant mobile format",
+            "vis": {
+              "emoji": "🔹"
+            }
+          },
+          "line": "Why stay bigger?",
+          "cues": {
+            "line": "shrank the size"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Memory Stick",
+      "label": "MEMORY STICK",
+      "icon": {
+        "query": "MEMORY STICK"
+      },
+      "hook": "Sony’s proprietary format that once ruled its cameras.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Memory Stick. Sony’s answer to the flash craze, a sleek little card that promised speed and DRM, but kept you locked into their ecosystem.",
+          "slams": [
+            {
+              "text": "SONY'S FLASH CARD"
+            },
+            {
+              "text": "“PROPRIETARY SPEED”",
+              "strike": true
+            },
+            {
+              "text": "SLEEK AND SMALL",
+              "cue": "sleek little card",
+              "color": "blue"
+            },
+            {
+              "text": "LOCKED IN",
+              "cue": "locked into their",
+              "color": "red"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Memory Stick.",
+          "title": "Memory Stick",
+          "kicker": "EVERY MEMORY CARD TYPE, PART 5",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in 2003, it hit the market at sixty megabytes per second, faster than early SD cards and built right into Sony gear.",
+          "head": "2003 debut",
+          "label": "60 MB/s — Sony’s speed",
+          "stamp": "2003",
+          "callouts": [
+            [
+              "#c9a227",
+              "Proprietary format"
+            ],
+            [
+              "#1c4ed8",
+              "DRM support"
+            ]
+          ],
+          "cues": {
+            "head": "Born in",
+            "stamp": "2003",
+            "action": "hit the market",
+            "circle": "sixty megabytes",
+            "callouts": "Sony gear"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "It showed up in three main places: Sony camcorders, PlayStation devices and some of their early digital cameras.",
+          "head": "Where it lived",
+          "sub": {
+            "text": "Sony’s own devices"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📹",
+              "label": "Camcorders",
+              "cue": "Camcorders",
+              "vis": {
+                "emoji": "📹"
+              }
+            },
+            {
+              "emoji": "🎮",
+              "label": "PlayStation",
+              "cue": "PlayStation devices",
+              "vis": {
+                "emoji": "🎮"
+              }
+            },
+            {
+              "emoji": "📷",
+              "label": "Digital cameras",
+              "cue": "digital cameras",
+              "vis": {
+                "emoji": "📷"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "At sixty megabytes per second, moving a ten‑megabyte photo took just a sixth of a second – faster than a blink.",
+          "num_end": 60.0,
+          "decimals": 0,
+          "unit": "MB/s",
+          "label": "Memory Stick speed",
+          "sub": "0.16 s — one photo",
+          "vis": {
+            "emoji": "📸"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "sixty megabytes",
+            "sub": "just a sixth"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? Only Sony cared. Other manufacturers ignored it, leaving the card stuck in a narrow market.",
+          "head": "The weak spot",
+          "label": "Limited adoption",
+          "stamp": "PROPRIET",
+          "callouts": [
+            [
+              "#d62828",
+              "Only Sony"
+            ],
+            [
+              "#7a7a7a",
+              "No industry support"
+            ]
+          ],
+          "cues": {
+            "head": "The downside",
+            "action": "ignored it",
+            "circle": "narrow market",
+            "callouts": "Only Sony"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You still find Memory Sticks in four corners: legacy camcorders, old PlayStation Portable units, vintage Sony cameras and some archival kits.",
+          "head": "Still around in",
+          "sub": {
+            "text": "legacy gear"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📹",
+              "label": "Legacy camcorders",
+              "cue": "Legacy camcorders",
+              "vis": {
+                "emoji": "📹"
+              }
+            },
+            {
+              "emoji": "🕹️",
+              "label": "PSP units",
+              "cue": "PlayStation Portable",
+              "vis": {
+                "emoji": "🕹️"
+              }
+            },
+            {
+              "emoji": "📷",
+              "label": "Vintage cameras",
+              "cue": "Vintage Sony",
+              "vis": {
+                "emoji": "📷"
+              }
+            },
+            {
+              "emoji": "📦",
+              "label": "Archival kits",
+              "cue": "archival kits",
+              "vis": {
+                "emoji": "📦"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to early SD cards at twenty‑five megabytes per second, Memory Stick was more than twice as fast, but its closed world kept it from winning the race.",
+          "head": "Speed vs openness",
+          "ekg": null,
+          "left": {
+            "emoji": "💾",
+            "label": "Memory Stick",
+            "cue": "Memory Stick",
+            "vis": {
+              "emoji": "💾"
+            }
+          },
+          "right": {
+            "emoji": "💽",
+            "label": "Early SD",
+            "cue": "early SD cards",
+            "vis": {
+              "emoji": "💽"
+            }
+          },
+          "line": "Fast speed, closed ecosystem",
+          "cues": {
+            "line": "closed world"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CFexpress",
+      "label": "CFEXPRESS",
+      "icon": {
+        "emoji": "⚡"
+      },
+      "hook": "Lightning‑fast, high‑capacity card for 4K video pros.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Lightning fast, tiny, and built for 8K video. CFexpress isn’t just a card, it’s a speed monster that changed pro shooting forever.",
+          "slams": [
+            {
+              "text": "LIGHTNING FAST"
+            },
+            {
+              "text": "8K VIDEO"
+            },
+            {
+              "text": "SPEED MONSTER"
+            }
+          ],
+          "cues": {
+            "lightning": "Lightning fast",
+            "tiny": "tiny",
+            "speed monster": "speed monster"
+          }
+        },
+        {
+          "tpl": "title",
+          "say": "CFexpress.",
+          "title": "CFexpress",
+          "kicker": "EVERY MEMORY CARD TYPE, PART 6",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in 2017, it rides on PCIe 3.0 and NVMe, delivering a jaw‑dropping two gigabytes per second.",
+          "head": "CFexpress debut",
+          "label": "2017 — the breakthrough",
+          "stamp": "2017",
+          "callouts": [
+            [
+              "#ff6600",
+              "PCIe 3.0"
+            ],
+            [
+              "#0066ff",
+              "NVMe protocol"
+            ]
+          ],
+          "cues": {
+            "born": "Born in 2017",
+            "PCIe 3.0": "PCIe 3.0"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find it in high‑end mirrorless bodies, professional video rigs, and the newest cinema cameras.",
+          "head": "Where it lives",
+          "sub": {
+            "text": "pro gear only",
+            "cue": "high‑end mirrorless"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📸",
+              "label": "Mirrorless cameras",
+              "cue": "mirrorless bodies",
+              "vis": {
+                "emoji": "📸"
+              }
+            },
+            {
+              "emoji": "🎥",
+              "label": "Video rigs",
+              "cue": "video rigs",
+              "vis": {
+                "emoji": "🎥"
+              }
+            },
+            {
+              "emoji": "🎬",
+              "label": "Cinema cameras",
+              "cue": "cinema cameras",
+              "vis": {
+                "emoji": "🎬"
+              }
+            }
+          ],
+          "cues": {
+            "high‑end": "high‑end mirrorless"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "Two thousand megabytes per second means a four‑minute 8K clip moves in less than a second.",
+          "num_end": 2000.0,
+          "decimals": 0,
+          "unit": "MB/s",
+          "label": "CFexpress top speed",
+          "sub": "4‑minute 8K < 1 s",
+          "vis": {
+            "emoji": "📹"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "two thousand": "Two thousand megabytes",
+            "less than": "less than a second"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "It doesn’t play nice with old CompactFlash slots, so you need a fresh bay to use it.",
+          "head": "Compatibility gap",
+          "label": "No legacy slot",
+          "stamp": "INCOMPAT",
+          "callouts": [
+            [
+              "#aa0000",
+              "no CF slot"
+            ],
+            [
+              "#004400",
+              "new bay required"
+            ]
+          ],
+          "cues": {
+            "doesn’t play": "It doesn’t play nice",
+            "old CompactFlash": "old CompactFlash slots",
+            "fresh bay": "fresh bay"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "The pros love it for raw 8K, 4K‑120p, and massive burst shooting without breaking a sweat.",
+          "head": "Why pros choose it",
+          "sub": {
+            "text": "speed and stamina",
+            "cue": "massive burst"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🖼️",
+              "label": "8K video",
+              "cue": "raw 8K",
+              "vis": {
+                "emoji": "🖼️"
+              }
+            },
+            {
+              "emoji": "🎞️",
+              "label": "4K‑120p",
+              "cue": "4K‑120p",
+              "vis": {
+                "emoji": "🎞️"
+              }
+            },
+            {
+              "emoji": "📷",
+              "label": "Burst mode",
+              "cue": "massive burst",
+              "vis": {
+                "emoji": "📷"
+              }
+            }
+          ],
+          "cues": {
+            "raw 8K": "raw 8K",
+            "massive burst": "massive burst"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to the old Memory Stick’s 60 megabytes per second, CFexpress is over thirty times faster—enough to outrun any 4K workflow.",
+          "head": "Speed gap",
+          "ekg": null,
+          "left": {
+            "emoji": "💾",
+            "label": "Memory Stick",
+            "cue": "Memory Stick",
+            "vis": {
+              "emoji": "💾"
+            }
+          },
+          "right": {
+            "emoji": "⚡",
+            "label": "CFexpress",
+            "cue": "CFexpress",
+            "vis": {
+              "emoji": "⚡"
+            }
+          },
+          "line": "Why settle for slow?",
+          "cues": {
+            "over thirty": "over thirty times",
+            "4K workflow": "4K workflow"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SDXC vs SDUC",
+      "label": "SDXC/SDUC",
+      "icon": {
+        "emoji": "🗄️"
+      },
+      "hook": "Next‑gen SD cards: massive storage, ultra‑high speeds.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Think you’ve hit the storage ceiling? SDXC and SDUC smash it, giving you room for years of 4K footage on a card that fits in your pocket.",
+          "slams": [
+            {
+              "text": "SMASH THE CEILING"
+            },
+            {
+              "text": "4K FOOTAGE",
+              "cue": "4K footage",
+              "strike": true
+            },
+            {
+              "text": "POCKET SIZE",
+              "cue": "fits in your pocket",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "SDXC vs SDUC – the ultimate showdown.",
+          "title": "SDXC vs SDUC",
+          "kicker": "EVERY MEMORY CARD TYPE, PART 7",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "SDXC landed in 2009, offering 64 GB up to 2 TB and speeds that made full‑HD video a breeze.",
+          "head": "SDXC debut",
+          "label": "2009 — big jump",
+          "stamp": "2009",
+          "callouts": [
+            [
+              "#4a90e2",
+              "64 GB‑2 TB"
+            ],
+            [
+              "#f5a623",
+              "UHS‑II/III"
+            ]
+          ],
+          "cues": {
+            "action": "full‑HD video"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find SDXC in drones, action cams, and the newest smartphones, powering nonstop recording.",
+          "head": "Where it lives",
+          "sub": {
+            "text": "high‑speed gear"
+          },
+          "hub": {
+            "emoji": "📸"
+          },
+          "items": [
+            {
+              "emoji": "🚁",
+              "label": "Drones",
+              "cue": "Drones",
+              "vis": {
+                "emoji": "🚁"
+              }
+            },
+            {
+              "emoji": "🏂",
+              "label": "Action cams",
+              "cue": "Action cams",
+              "vis": {
+                "emoji": "🏂"
+              }
+            },
+            {
+              "emoji": "📱",
+              "label": "Smartphones",
+              "cue": "Smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Typical read speed hits about three hundred megabytes per second – that’s like moving a full‑HD movie in a single blink.",
+          "num_end": 300.0,
+          "decimals": 0,
+          "unit": "MB/s",
+          "label": "SDXC top speed",
+          "sub": "full‑HD in a blink",
+          "vis": {
+            "emoji": "🎬"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "three hundred",
+            "sub": "single blink"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Fast forward to 2018 and SDUC arrives, pushing capacity up to a staggering 128 TB and speeds near a gigabyte per second.",
+          "head": "SDUC arrival",
+          "label": "2018 — massive leap",
+          "stamp": "2018",
+          "callouts": [
+            [
+              "#d0021b",
+              "128 TB"
+            ],
+            [
+              "#7ed321",
+              "985 MB/s"
+            ]
+          ],
+          "cues": {
+            "action": "gigabyte per second"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "SDUC is already in flagship phones, professional 8K video rigs, and future‑proof storage bays.",
+          "head": "Who’s using it",
+          "sub": {
+            "text": "future‑proof gear"
+          },
+          "hub": {
+            "emoji": "💾"
+          },
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Flagship phones",
+              "cue": "Flagship phones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "🎥",
+              "label": "8K rigs",
+              "cue": "8K video rigs",
+              "vis": {
+                "emoji": "🎥"
+              }
+            },
+            {
+              "emoji": "🗄️",
+              "label": "Storage bays",
+              "cue": "storage bays",
+              "vis": {
+                "emoji": "🗄️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "So SDXC gives you terabytes, but SDUC leaps to hundreds of terabytes – still slower than CFexpress, yet it fits where a tiny card is required.",
+          "head": "The bottom line",
+          "ekg": null,
+          "left": {
+            "emoji": "🗂️",
+            "label": "SDXC",
+            "cue": "SDXC",
+            "vis": {
+              "emoji": "🗂️"
+            }
+          },
+          "right": {
+            "emoji": "🗄️",
+            "label": "SDUC",
+            "cue": "SDUC",
+            "vis": {
+              "emoji": "🗄️"
+            }
+          },
+          "line": "More space, same size",
+          "cues": {}
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Pick the right card for your camera and never lose a shot. Choose wisely, shoot freely. See you next Monday.",
+    "type_text": "Choose wisely, shoot freely",
+    "cues": {
+      "key": "wisely"
+    }
+  },
+  "facts": [
+    {
+      "name": "CompactFlash",
+      "year": "1994",
+      "key_number": "160 MB/s",
+      "new": [
+        "large physical size",
+        "removable IDE interface",
+        "high durability"
+      ],
+      "lacked": "native support for high‑speed video recording",
+      "still_used": "professional DSLR and industrial cameras",
+      "compare": "first major removable flash card, far larger and slower than later SD formats"
+    },
+    {
+      "name": "SD",
+      "year": "1999",
+      "key_number": "25 MB/s",
+      "new": [
+        "tiny form factor",
+        "SD bus interface",
+        "hot‑swap capability"
+      ],
+      "lacked": "capacity beyond 2 GB (SDHC later added)",
+      "still_used": "consumer cameras, smartphones (via adapters)",
+      "compare": "much smaller and faster than CompactFlash, but limited to 2 GB initially"
+    },
+    {
+      "name": "miniSD",
+      "year": "2003",
+      "key_number": "25 MB/s",
+      "new": [
+        "intermediate size between SD and microSD",
+        "compatible slot adapters",
+        "same speed class as SD"
+      ],
+      "lacked": "widespread adoption in phones",
+      "still_used": "legacy mobile devices and some MP3 players",
+      "compare": "same speed as SD but a smaller footprint, later eclipsed by microSD"
+    },
+    {
+      "name": "microSD",
+      "year": "2005",
+      "key_number": "25 MB/s",
+      "new": [
+        "tinyest consumer card",
+        "adapter to full‑size SD",
+        "supports high‑capacity SDHC/SDXC"
+      ],
+      "lacked": "initially low maximum capacity (2 GB)",
+      "still_used": "smartphones, tablets, drones, action cams",
+      "compare": "same speed as miniSD but dramatically smaller, becoming the dominant mobile format"
+    },
+    {
+      "name": "Memory Stick",
+      "year": "2003",
+      "key_number": "60 MB/s",
+      "new": [
+        "Sony proprietary format",
+        "integrated DRM support",
+        "later Memory Stick Pro for higher speed"
+      ],
+      "lacked": "broad industry support outside Sony",
+      "still_used": "some Sony camcorders and older PlayStation devices",
+      "compare": "faster than early SD cards but limited by proprietary ecosystem"
+    },
+    {
+      "name": "CFexpress",
+      "year": "2017",
+      "key_number": "2000 MB/s",
+      "new": [
+        "PCIe 3.0 interface",
+        "NVMe protocol",
+        "four form‑factor types"
+      ],
+      "lacked": "backward compatibility with legacy CompactFlash slots",
+      "still_used": "high‑end mirrorless cameras, professional video rigs",
+      "compare": "orders of magnitude faster than Memory Stick and earlier CompactFlash, targeting 4K/8K workflows"
+    },
+    {
+      "name": "SDXC vs SDUC",
+      "year": "2009/2018",
+      "key_number": "312 MB/s / 985 MB/s",
+      "new": [
+        "SDXC introduced 64 GB‑2 TB capacity range",
+        "SDUC added up to 128 TB capacity",
+        "both support UHS‑II/UHS‑III speeds"
+      ],
+      "lacked": "full backward compatibility with original SD (max 2 GB)",
+      "still_used": "latest smartphones, drones, 4K video cameras",
+      "compare": "vastly larger capacities and higher speeds than CFexpress's earlier generations, though CFexpress still leads in raw throughput"
+    }
+  ]
+}
