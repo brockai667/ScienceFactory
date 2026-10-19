@@ -1,0 +1,1578 @@
+{
+  "series": "Every Charging Cable Explained",
+  "title": "Every Charging Cable Explained – Which One Is Right?",
+  "description": "Discover the story behind every charging cable type, from Mini USB to Barrel jack. Learn how design choices affect compatibility and performance.",
+  "hashtags": [
+    "#ChargingCables",
+    "#TechExplained",
+    "#USB",
+    "#Lightning",
+    "#MagSafe",
+    "#QiWireless",
+    "#BarrelJack"
+  ],
+  "hero": {
+    "emoji": "🔌"
+  },
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "People think Mini USB and Micro USB are just smaller versions. They are not.",
+      "left": {
+        "emoji": "🔌",
+        "label": "Mini USB",
+        "vis": {
+          "emoji": "🔌"
+        }
+      },
+      "right": {
+        "emoji": "🔌",
+        "label": "Micro USB",
+        "vis": {
+          "emoji": "🔌"
+        }
+      },
+      "line": "Just a smaller version?",
+      "cues": {
+        "left": "Mini USB",
+        "right": "Micro USB",
+        "line": "just smaller",
+        "strike": "They are not."
+      }
+    },
+    "grid": {
+      "say": "Different shapes mean different uses. This is every charging cable, explained. Starting with Mini USB.",
+      "cues": {
+        "grid": "Different shapes",
+        "title": "explained",
+        "mark": "Starting with"
+      },
+      "pulse": [
+        {
+          "cue": "shapes",
+          "items": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {
+      "name": "Mini USB",
+      "label": "MINI USB",
+      "icon": {
+        "emoji": "🔌"
+      },
+      "hook": "The original compact connector, used before smartphones took over.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Mini USB. Small, fast, and a pioneer of portable data. It made a splash in the early 2000s.",
+          "slams": [
+            {
+              "text": "MINI USB."
+            },
+            {
+              "text": "SMALL, FAST"
+            },
+            {
+              "text": "A PIONEER"
+            },
+            {
+              "text": "EARLY 2000S"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Mini USB.",
+          "title": "Mini USB",
+          "kicker": "EVERY CHARGING CABLE, PART 1",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "It debuted in the year 2000. Think of it as a smaller cousin of the big USB‑A but with the same 480 megabits per second speed.",
+          "head": "2000 — Mini USB launched",
+          "label": "Mini USB 2000",
+          "stamp": "2000",
+          "callouts": [
+            [
+              "#1c4ed8",
+              "480 Mbit/s"
+            ],
+            [
+              "#c9a227",
+              "smaller than USB‑A"
+            ]
+          ],
+          "cues": {
+            "stamp": "2000"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "People used it for tiny gadgets. Cameras, MP3 players, and even some handheld consoles carried this connector.",
+          "head": "What it powered",
+          "sub": {
+            "text": "tiny gadgets",
+            "cue": "tiny gadgets"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📷",
+              "label": "Digital cameras",
+              "vis": {
+                "emoji": "📷"
+              }
+            },
+            {
+              "emoji": "🎵",
+              "label": "MP3 players",
+              "cue": "MP3 players",
+              "vis": {
+                "emoji": "🎵"
+              }
+            },
+            {
+              "emoji": "🎮",
+              "label": "Handheld consoles",
+              "cue": "Handheld consoles",
+              "vis": {
+                "emoji": "🎮"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Its speed? 480 megabits per second. That’s about the same as the older USB‑2.0, but in a much smaller package.",
+          "num_end": 480.0,
+          "decimals": 0,
+          "unit": "Mbit/s",
+          "label": "Mini USB speed",
+          "sub": "Same as USB‑2.0",
+          "vis": {
+            "emoji": "📡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔌"
+            },
+            "seconds": 0
+          },
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "But it couldn’t push power. It’s great for data, not for charging high‑power devices like laptops.",
+          "head": "Power limits",
+          "label": "No high power",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#d62828",
+              "no high power"
+            ],
+            [
+              "#7a7a7a",
+              "good for data only"
+            ]
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "list",
+          "say": "Later, it was replaced by Micro USB, which was even smaller and added OTG support. But Mini USB still lives in older gear.",
+          "head": "Later evolution",
+          "sub": {
+            "text": "replaced by Micro USB",
+            "cue": "replaced by Micro USB"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🔋",
+              "label": "Micro USB",
+              "cue": "Micro USB",
+              "vis": {
+                "emoji": "🔋"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to its predecessor, Mini USB kept the same 480 megabits speed but shrank the size. It was the first step toward truly portable data.",
+          "head": "A step forward",
+          "ekg": null,
+          "left": {
+            "emoji": "🔌",
+            "label": "USB‑A",
+            "vis": {
+              "emoji": "🔌"
+            }
+          },
+          "right": {
+            "emoji": "🔋",
+            "label": "Mini USB",
+            "cue": "Mini USB",
+            "vis": {
+              "emoji": "🔋"
+            }
+          },
+          "line": "Same speed, smaller size",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Micro USB",
+      "label": "MICRO USB",
+      "icon": {
+        "emoji": "🔌"
+      },
+      "hook": "A tiny upgrade that became the standard for Android phones for years.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "The tiny one. It’s the little connector that kept your phone alive for years. Small, but it did a lot.",
+          "slams": [
+            {
+              "text": "THE TINY ONE."
+            },
+            {
+              "text": "“KEEP YOUR PHONE ALIVE.”",
+              "cue": "kept your phone alive",
+              "color": "green"
+            },
+            {
+              "text": "SMALL, BUT BIG."
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Micro USB.",
+          "title": "Micro USB",
+          "kicker": "EVERY CHARGING CABLE, PART 2",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "It launched in 2007. Same 480 megabits per second as its cousin, but it fit in phones and tiny gadgets.",
+          "head": "2007 — the year it arrived",
+          "label": "Micro USB debut",
+          "stamp": "2007",
+          "callouts": [
+            [
+              "#1c4ed8",
+              "480 Mbit/s"
+            ],
+            [
+              "#ff6f00",
+              "tiny form"
+            ]
+          ],
+          "cues": {
+            "head": "2007"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "Speed? 480 megabits per second. That’s like streaming a 2‑minute video in a blink.",
+          "num_end": 480.0,
+          "decimals": 0,
+          "unit": "Mbit/s",
+          "label": "Micro USB speed",
+          "sub": "2‑minute video in a blink",
+          "vis": {
+            "emoji": "📺"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔌"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "480"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "What it brought? USB On‑The‑Go. Your phone could become a host, read SD cards, or talk to a mouse. No more dongles.",
+          "head": "USB OTG",
+          "label": "Host mode",
+          "stamp": "OTG",
+          "callouts": [
+            [
+              "#4caf50",
+              "host mode"
+            ],
+            [
+              "#ff9800",
+              "no dongles"
+            ]
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "list",
+          "say": "Still, it had limits. It wasn’t reversible. You had to line up the plug, or you’d end up with a sad face.",
+          "head": "Not reversible",
+          "sub": {
+            "text": "plug in the right way"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🔌",
+              "label": "Plug in the right way",
+              "vis": {
+                "emoji": "🔌"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to Mini USB, Micro USB was even smaller but kept the same 480 megabits speed. It was the perfect fit for phones.",
+          "head": "Smaller, same speed",
+          "ekg": null,
+          "left": {
+            "emoji": "📱",
+            "label": "Phone",
+            "cue": "phone",
+            "vis": {
+              "emoji": "📱"
+            }
+          },
+          "right": {
+            "emoji": "🔌",
+            "label": "Mini USB",
+            "cue": "mini usb",
+            "vis": {
+              "emoji": "🔌"
+            }
+          },
+          "line": "Same speed, smaller size",
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Power? Only about 2.5 watts. That’s enough for a phone, but not a laptop. Think of a tiny light bulb, not a fridge.",
+          "num_end": 2.5,
+          "decimals": 1,
+          "unit": "W",
+          "label": "Micro USB power",
+          "sub": "tiny light bulb",
+          "vis": {
+            "emoji": "💡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔌"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "sub": "tiny light bulb"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "It’s still in use today. Pre‑2016 Android phones, Bluetooth speakers, and some IoT gadgets keep that little plug alive.",
+          "head": "Still used",
+          "label": "Legacy devices",
+          "stamp": "2016",
+          "callouts": [
+            [
+              "#9c27b0",
+              "pre‑2016 phones"
+            ],
+            [
+              "#3f51b5",
+              "Bluetooth speakers"
+            ]
+          ],
+          "cues": {
+            "stamp": "pre‑2016"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "When USB‑C hit the scene, Micro USB fell behind. USB‑C offers up to 10 gigabits, 100 watts, and a reversible plug. Micro USB stuck to its 480 megabits and 2.5 watts.",
+          "head": "USB‑C vs Micro USB",
+          "ekg": null,
+          "left": {
+            "emoji": "🔌",
+            "label": "USB‑C",
+            "cue": "usb‑c",
+            "vis": {
+              "emoji": "🔌"
+            }
+          },
+          "right": {
+            "emoji": "🔌",
+            "label": "Micro USB",
+            "cue": "micro usb",
+            "vis": {
+              "emoji": "🔌"
+            }
+          },
+          "line": "USB‑C is faster and more power",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Lightning",
+      "label": "LIGHTNING",
+      "icon": {
+        "emoji": "🍎"
+      },
+      "hook": "Apple’s reversible plug, designed for thin devices and fast data.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Apple’s Lightning cable looks sleek, but it’s more than a pretty connector. It changed how you charge and sync iPhones starting in 2012.",
+          "slams": [
+            {
+              "text": "LIGHTNING CABLE"
+            },
+            {
+              "text": "“SLEEK BUT POWERFUL”",
+              "cue": "sleek but",
+              "strike": true
+            },
+            {
+              "text": "MORE THAN A CONNECTOR",
+              "cue": "more than a",
+              "color": "red"
+            },
+            {
+              "text": "STARTED IN 2012",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Lightning.",
+          "title": "Lightning",
+          "kicker": "EVERY CHARGING CABLE, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Lightning debuted in 2012 with 480 megabits per second speed, a reversible eight‑pin design, and Apple’s authentication chip.",
+          "head": "Lightning 2012",
+          "label": "2012 — Apple’s entry",
+          "stamp": "2012",
+          "callouts": [
+            [
+              "#ffcc00",
+              "reversible 8‑pin"
+            ],
+            [
+              "#0070c0",
+              "480 Mbit/s"
+            ]
+          ],
+          "cues": {
+            "stamp": "2012",
+            "action": "reversible eight‑pin",
+            "circle": "authentication chip",
+            "callouts": "480 megabits"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "It powered iPhone 5 through iPhone 14, plus a host of accessories like earbuds and docks.",
+          "head": "What it powered",
+          "sub": {
+            "text": "iPhones and gear",
+            "cue": "iPhone 5"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "iPhone 5‑14",
+              "cue": "iPhone 5",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "🎧",
+              "label": "Earbuds",
+              "cue": "earbuds",
+              "vis": {
+                "emoji": "🎧"
+              }
+            },
+            {
+              "emoji": "🔌",
+              "label": "Docks",
+              "cue": "docks",
+              "vis": {
+                "emoji": "🔌"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "480 megabits per second—that’s enough to move a high‑resolution photo in under a second.",
+          "num_end": 480.0,
+          "decimals": 0,
+          "unit": "Mbit/s",
+          "label": "Lightning speed",
+          "sub": "photo in under a second",
+          "vis": {
+            "emoji": "📸"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "480 megabits",
+            "sub": "under a second"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Its downside? It locked you into Apple’s ecosystem, so you couldn’t use it with most other devices.",
+          "head": "The lock‑in",
+          "label": "Apple‑only",
+          "stamp": "LIMITED",
+          "callouts": [
+            [
+              "#d62828",
+              "Apple‑only"
+            ],
+            [
+              "#7a7a7a",
+              "no universal use"
+            ]
+          ],
+          "cues": {
+            "action": "locked you",
+            "circle": "Apple’s ecosystem"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Even after 2023, many accessories still rely on Lightning—like older AirPods, Lightning‑to‑HDMI adapters, and car mounts.",
+          "head": "Still in use",
+          "sub": {
+            "text": "Legacy accessories",
+            "cue": "older AirPods"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🎧",
+              "label": "AirPods",
+              "cue": "AirPods",
+              "vis": {
+                "emoji": "🎧"
+              }
+            },
+            {
+              "emoji": "📺",
+              "label": "HDMI adapters",
+              "cue": "HDMI adapters",
+              "vis": {
+                "emoji": "📺"
+              }
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car mounts",
+              "cue": "car mounts",
+              "vis": {
+                "emoji": "🚗"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to USB‑C’s ten gigabits per second, Lightning is slower, but both are reversible. USB‑C also delivers up to 100 watts of power.",
+          "head": "Speed & power gap",
+          "ekg": "slower",
+          "left": {
+            "emoji": "⚡",
+            "label": "Lightning",
+            "cue": "Lightning",
+            "vis": {
+              "emoji": "⚡"
+            }
+          },
+          "right": {
+            "emoji": "🔌",
+            "label": "USB‑C",
+            "cue": "USB‑C",
+            "vis": {
+              "emoji": "🔌"
+            }
+          },
+          "line": "Reversible, but USB‑C wins on speed and power",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "USB-C",
+      "label": "USB-C",
+      "icon": {
+        "emoji": "🔌"
+      },
+      "hook": "The universal, reversible connector that handles power, video, and data.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "USB‑C is the future‑proof connector. It flips, it powers, it streams video. One tiny port for everything you need.",
+          "slams": [
+            {
+              "text": "ONE PORT FOR ALL"
+            },
+            {
+              "text": "FUTURE‑PROOF",
+              "cue": "future‑proof connector",
+              "color": "blue"
+            },
+            {
+              "text": "FLIPPABLE POWER",
+              "cue": "flips, it powers",
+              "strike": true
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "USB‑C.",
+          "title": "USB‑C",
+          "kicker": "EVERY CHARGING CABLE, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in 2014, USB‑C gave us a reversible plug that can move data at ten gigabits per second.",
+          "head": "USB‑C debut",
+          "label": "2014 — the turning point",
+          "stamp": "2014",
+          "callouts": [
+            [
+              "#0a84ff",
+              "reversible"
+            ],
+            [
+              "#ff9500",
+              "10 Gb/s"
+            ]
+          ],
+          "cues": {
+            "head": "Born in 2014",
+            "stamp": "ten gigabits",
+            "action": "reversible plug"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes it special? Reversible shape, up to a hundred watts of power, and alternate modes like DisplayPort and Thunderbolt.",
+          "head": "Key features",
+          "sub": {
+            "text": "more than just a plug",
+            "cue": "what makes it"
+          },
+          "hub": {
+            "emoji": "🔌"
+          },
+          "items": [
+            {
+              "emoji": "🔁",
+              "label": "Reversible",
+              "cue": "Reversible shape",
+              "vis": {
+                "emoji": "🔁"
+              }
+            },
+            {
+              "emoji": "⚡",
+              "label": "100 W PD",
+              "cue": "hundred watts",
+              "vis": {
+                "emoji": "⚡"
+              }
+            },
+            {
+              "emoji": "🖥️",
+              "label": "Alt‑modes",
+              "cue": "DisplayPort and Thunderbolt",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Ten gigabits per second means a full‑HD movie downloads in seconds, not minutes.",
+          "num_end": 10.0,
+          "decimals": 0,
+          "unit": "Gb/s",
+          "label": "USB‑C top speed",
+          "sub": "full‑HD in seconds",
+          "vis": {
+            "emoji": "🎞️"
+          },
+          "travel": {
+            "to": {
+              "emoji": "📱"
+            },
+            "seconds": 5
+          },
+          "cues": {
+            "count": "ten gigabits",
+            "sub": "full‑HD movie"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "It also pushes up to one hundred watts, enough to charge a laptop as fast as a wall outlet.",
+          "head": "Power delivery",
+          "label": "100 W — laptop charge",
+          "stamp": "POWER",
+          "callouts": [
+            [
+              "#28a745",
+              "100 W"
+            ],
+            [
+              "#6c757d",
+              "laptop power"
+            ]
+          ],
+          "cues": {
+            "head": "It also pushes",
+            "stamp": "hundred watts"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you’ll find USB‑C in smartphones, laptops, tablets, and even external monitors.",
+          "head": "Where you see it",
+          "sub": {
+            "text": "every modern device",
+            "cue": "today you’ll find"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Smartphones",
+              "cue": "Smartphones",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Laptops",
+              "cue": "Laptops",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "🖥️",
+              "label": "Monitors",
+              "cue": "external monitors",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to Lightning’s half‑gigabit speed, USB‑C is twenty‑one times faster and still reversible, but it works across all brands.",
+          "head": "Speed showdown",
+          "ekg": "twenty‑one times faster",
+          "left": {
+            "emoji": "⚡",
+            "label": "Lightning",
+            "cue": "Lightning’s half‑gigabit",
+            "vis": {
+              "emoji": "⚡"
+            }
+          },
+          "right": {
+            "vis": null
+          },
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "MagSafe",
+      "label": "MAGSAFE",
+      "icon": {
+        "emoji": "🔋"
+      },
+      "hook": "Apple’s magnetic charger that snaps into place for easy alignment.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "MagSafe snaps onto your iPhone like a magnet, charging fast without fiddling with plugs. It feels like magic, but it’s just clever engineering.",
+          "slams": [
+            {
+              "text": "MAGSAFE SNAP CHARGING"
+            },
+            {
+              "text": "\"MAGNETIC ALIGNMENT\"",
+              "strike": true
+            },
+            {
+              "text": "NO PLUGS NEEDED",
+              "color": "red"
+            },
+            {
+              "text": "FAST WIRELESS POWER",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "MagSafe.",
+          "title": "MagSafe",
+          "kicker": "EVERY CHARGING CABLE, PART 5",
+          "cues": {
+            "MagSafe": "MagSafe"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "Introduced in 2020, MagSafe gives you a magnetic snap and up to fifteen watts of wireless power. It’s the iPhone’s answer to cable hassle.",
+          "head": "2020 — magnetic snap",
+          "label": "MagSafe launch",
+          "stamp": "2020",
+          "callouts": [
+            [
+              "#ffcc00",
+              "magnetic alignment"
+            ],
+            [
+              "#0066ff",
+              "15 W power"
+            ]
+          ],
+          "cues": {
+            "magnetic snap": "magnetic snap"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find MagSafe on iPhone 12 through 15, plus a growing line of accessories that click right into place.",
+          "head": "Where it lives",
+          "sub": {
+            "text": "iPhone 12‑15 series",
+            "cue": "iPhone 12 through 15"
+          },
+          "hub": {
+            "emoji": "📱"
+          },
+          "items": [
+            {
+              "emoji": "🔋",
+              "label": "iPhone 12‑15",
+              "cue": "iPhone 12 through 15",
+              "vis": {
+                "emoji": "🔋"
+              }
+            },
+            {
+              "emoji": "🧲",
+              "label": "MagSafe cases",
+              "vis": {
+                "emoji": "🧲"
+              }
+            },
+            {
+              "emoji": "🔌",
+              "label": "MagSafe charger",
+              "vis": {
+                "emoji": "🔌"
+              }
+            }
+          ],
+          "cues": {
+            "iPhone 12 through 15": "iPhone 12 through 15"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "Fifteen watts means a phone that used to take an hour now tops up in about half that time. Think of it as charging a coffee maker while you sip.",
+          "num_end": 15.0,
+          "decimals": 0,
+          "unit": "W",
+          "label": "MagSafe power",
+          "sub": "half‑hour charge",
+          "vis": {
+            "emoji": "⚡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "📱"
+            },
+            "seconds": 30
+          },
+          "cues": {
+            "coffee maker": "coffee maker"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared with USB‑C’s ten gigabits of data speed, MagSafe trades raw speed for convenience. It’s slower than a wired charger, but you never miss the plug.",
+          "head": "Speed vs convenience",
+          "ekg": null,
+          "left": {
+            "emoji": "🔌",
+            "label": "USB‑C",
+            "cue": "USB‑C",
+            "vis": {
+              "emoji": "🔌"
+            }
+          },
+          "right": {
+            "emoji": "🧲",
+            "label": "MagSafe",
+            "cue": "MagSafe",
+            "vis": {
+              "emoji": "🧲"
+            }
+          },
+          "line": "No plug, just snap",
+          "cues": {
+            "USB‑C": "USB‑C",
+            "MagSafe": "MagSafe"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The magnetic ring also houses an NFC chip, so accessories like wallets or car mounts are instantly recognized. It’s like a handshake for your phone.",
+          "head": "NFC integration",
+          "label": "Smart detection",
+          "stamp": "NFC",
+          "callouts": [
+            [
+              "#22aa22",
+              "instant accessory detection"
+            ]
+          ],
+          "cues": {
+            "magnetic ring": "magnetic ring"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "MagSafe accessories include wallets, car mounts, and battery packs, all clicking into place without tools.",
+          "head": "Snap‑on accessories",
+          "sub": {
+            "text": "click‑and‑go gear"
+          },
+          "hub": {
+            "emoji": "🧲"
+          },
+          "items": [
+            {
+              "emoji": "💼",
+              "label": "Wallet",
+              "cue": "wallet",
+              "vis": {
+                "emoji": "💼"
+              }
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car mount",
+              "cue": "car mount",
+              "vis": {
+                "emoji": "🚗"
+              }
+            },
+            {
+              "emoji": "🔋",
+              "label": "Battery pack",
+              "cue": "battery pack",
+              "vis": {
+                "emoji": "🔋"
+              }
+            }
+          ],
+          "cues": {
+            "wallet": "wallet",
+            "car mount": "car mount",
+            "battery pack": "battery pack"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Qi wireless charging arrived in 2008 with the same fifteen‑watt ceiling, but MagSafe adds magnetic alignment, so you don’t have to hunt for the sweet spot.",
+          "head": "MagSafe vs Qi",
+          "ekg": null,
+          "left": {
+            "emoji": "📡",
+            "label": "Qi wireless",
+            "cue": "Qi wireless",
+            "vis": {
+              "emoji": "📡"
+            }
+          },
+          "right": {
+            "emoji": "🧲",
+            "label": "MagSafe",
+            "cue": "MagSafe",
+            "vis": {
+              "emoji": "🧲"
+            }
+          },
+          "line": "Find the spot? No more.",
+          "cues": {
+            "Qi wireless": "Qi wireless",
+            "MagSafe": "MagSafe"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Qi wireless",
+      "label": "QI WIRELESS",
+      "icon": {
+        "emoji": "📡"
+      },
+      "hook": "Charging without a plug, using electromagnetic induction.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "You think wireless is magic? It’s just a pad that zaps power through the air, no cords needed.",
+          "slams": [
+            {
+              "text": "WIRELESS IS MAGIC"
+            },
+            {
+              "text": "YOU THINK WIRELESS IS MAGIC.",
+              "cue": "You think"
+            },
+            {
+              "text": "NO CORDS NEEDED",
+              "cue": "no cords needed",
+              "strike": true
+            }
+          ],
+          "cues": {
+            "magic": "wireless is magic",
+            "no cords": "no cords needed"
+          }
+        },
+        {
+          "tpl": "title",
+          "say": "Qi wireless.",
+          "title": "Qi wireless",
+          "kicker": "EVERY CHARGING CABLE, PART 6",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Qi launched in 2008, delivering up to fifteen watts of power without a plug, and it works for phones, earbuds, and watches alike.",
+          "head": "Qi wireless",
+          "label": "2008 — the first inductive charger",
+          "stamp": "2008",
+          "callouts": [
+            [
+              "#ff9800",
+              "15 W max"
+            ],
+            [
+              "#4caf50",
+              "universal standard"
+            ]
+          ],
+          "cues": {
+            "year": "2008",
+            "power": "fifteen watts",
+            "devices": "phones, earbuds"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Before Qi, you needed a separate charger for each gadget—phone bricks, earbud docks, and watch bases all cluttered your nightstand.",
+          "head": "Before Qi",
+          "sub": {
+            "text": "one charger per device",
+            "cue": "each gadget"
+          },
+          "hub": {
+            "emoji": "📱"
+          },
+          "items": [
+            {
+              "emoji": "📱",
+              "label": "Phone",
+              "cue": "phone bricks",
+              "vis": {
+                "emoji": "📱"
+              }
+            },
+            {
+              "emoji": "🎧",
+              "label": "Earbuds",
+              "cue": "earbud docks",
+              "vis": {
+                "emoji": "🎧"
+              }
+            },
+            {
+              "emoji": "⌚",
+              "label": "Watch",
+              "cue": "watch bases",
+              "vis": {
+                "emoji": "⌚"
+              }
+            }
+          ],
+          "cues": {
+            "each": "each gadget",
+            "clutter": "nightstand"
+          }
+        },
+        {
+          "tpl": "stat",
+          "say": "Fifteen watts means a phone fills up in about an hour, roughly the time it takes to brew a cup of coffee.",
+          "num_end": 15.0,
+          "decimals": 0,
+          "unit": "W",
+          "label": "Qi max power",
+          "sub": "1 hour – coffee time",
+          "vis": {
+            "emoji": "☕"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔋"
+            },
+            "seconds": 3600
+          },
+          "cues": {
+            "power": "fifteen watts",
+            "time": "brew a cup"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? You have to line the device up just right, otherwise the pad can’t grab the power and charging stalls.",
+          "head": "The weak spot",
+          "label": "Precise placement needed",
+          "stamp": "ALIGNMEN",
+          "callouts": [
+            [
+              "#d32f2f",
+              "must align"
+            ],
+            [
+              "#757575",
+              "slow if misaligned"
+            ]
+          ],
+          "cues": {
+            "downside": "the downside",
+            "line up": "line the device up"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today Qi powers most Android phones, wireless earbuds, and even smartwatches, all from a single flat surface.",
+          "head": "What it powers",
+          "sub": {
+            "text": "one pad, many devices",
+            "cue": "single flat surface"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🤖",
+              "label": "Android phones",
+              "cue": "android phones",
+              "vis": {
+                "emoji": "🤖"
+              }
+            },
+            {
+              "emoji": "🎧",
+              "label": "Earbuds",
+              "cue": "wireless earbuds",
+              "vis": {
+                "emoji": "🎧"
+              }
+            },
+            {
+              "emoji": "⌚",
+              "label": "Smartwatch",
+              "cue": "smartwatches",
+              "vis": {
+                "emoji": "⌚"
+              }
+            }
+          ],
+          "cues": {
+            "single": "single flat surface",
+            "pads": "single flat"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to Apple’s MagSafe, Qi is older but lacks magnetic snapping, so you’ll juggle placement, yet it still charges any brand at the same fifteen watts.",
+          "head": "Old but open",
+          "ekg": null,
+          "left": {
+            "emoji": "📡",
+            "label": "Qi",
+            "cue": "Qi",
+            "vis": {
+              "emoji": "📡"
+            }
+          },
+          "right": {
+            "emoji": "📱",
+            "label": "MagSafe",
+            "cue": "MagSafe",
+            "vis": {
+              "emoji": "📱"
+            }
+          },
+          "line": "No magnets, same power",
+          "cues": {
+            "older": "older but lacks",
+            "same": "same fifteen watts"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Barrel jack",
+      "label": "BARREL JACK",
+      "icon": {
+        "emoji": "🔌"
+      },
+      "hook": "The old-school power plug still found in many gadgets.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Barrel jack. The old-school power plug that still lives in laptops, routers, and your favorite headphones.",
+          "slams": [
+            {
+              "text": "BARREL JACK."
+            },
+            {
+              "text": "OLD SCHOOL POWER",
+              "cue": "old-school power",
+              "color": "red"
+            },
+            {
+              "text": "STILL IN USE",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Barrel jack.",
+          "title": "Barrel jack",
+          "kicker": "EVERY CHARGING CABLE, PART 7",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "It’s been around since the 1970s. A simple, cheap, and rugged design that gives up to thirty watts of power to devices that need it.",
+          "head": "1970s origin",
+          "label": "1970s — first generation",
+          "stamp": "1970s",
+          "callouts": [
+            [
+              "#c9a227",
+              "simple design"
+            ],
+            [
+              "#1c4ed8",
+              "30 watts power"
+            ]
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll see it on laptops, routers, and even some industrial gear. It’s the go-to for devices that just need power, no data.",
+          "head": "Where it lives",
+          "sub": {
+            "text": "power only, no data",
+            "cue": "just need power"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "💻",
+              "label": "Laptop",
+              "cue": "Laptop",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "📶",
+              "label": "Router",
+              "cue": "Router",
+              "vis": {
+                "emoji": "📶"
+              }
+            },
+            {
+              "emoji": "🏭",
+              "label": "Industrial gear",
+              "cue": "Industrial gear",
+              "vis": {
+                "emoji": "🏭"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "It can push up to thirty watts. That’s enough to power a laptop or a small router. Think of it as a sturdy, no-frills power supply.",
+          "num_end": 30.0,
+          "decimals": 0,
+          "unit": "watts",
+          "label": "Maximum power",
+          "sub": "30 watts",
+          "vis": {
+            "emoji": "🔋"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔌"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "up to",
+            "sub": "power supply"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The trick? It’s polarity-based. One pin is positive, the other negative. Flip it wrong, and nothing happens. That’s why it’s so reliable.",
+          "head": "Polarity-based",
+          "label": "Positive vs negative",
+          "stamp": "RELIABLE",
+          "callouts": [
+            [
+              "#d62828",
+              "one pin positive"
+            ],
+            [
+              "#7a7a7a",
+              "one pin negative"
+            ]
+          ],
+          "cues": {
+            "head": "Polarity-based",
+            "action": "flip it wrong",
+            "circle": "reliable"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Because it only carries power, there’s no data lane. That’s why you can’t plug a USB cable into a barrel jack and expect it to work.",
+          "head": "No data lane",
+          "sub": {
+            "text": "only power"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🔌",
+              "label": "Barrel jack",
+              "cue": "Barrel jack",
+              "vis": {
+                "emoji": "🔌"
+              }
+            },
+            {
+              "emoji": "📶",
+              "label": "USB cable",
+              "cue": "USB cable",
+              "vis": {
+                "emoji": "📶"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Other connectors like USB-C can do data, video, and up to a hundred watts. But barrel jack keeps it simple, low cost, and still works in harsh environments.",
+          "head": "Still simple",
+          "ekg": null,
+          "left": {
+            "emoji": "⚡",
+            "label": "USB-C",
+            "cue": "USB-C",
+            "vis": {
+              "emoji": "⚡"
+            }
+          },
+          "right": {
+            "emoji": "🔌",
+            "label": "Barrel jack",
+            "cue": "Barrel jack",
+            "vis": {
+              "emoji": "🔌"
+            }
+          },
+          "line": "Simplicity wins",
+          "cues": {}
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Now you know which cable fits which device. Choose the right one and charge smarter. See you next Monday.",
+    "type_text": "Pick the right plug",
+    "cues": {
+      "key": "right"
+    }
+  },
+  "facts": [
+    {
+      "name": "Mini USB",
+      "year": "2000",
+      "key_number": "480 Mbit/s",
+      "new": [
+        "smaller than standard USB-A",
+        "supports USB 2.0 high‑speed data",
+        "hot‑swappable design"
+      ],
+      "lacked": "cannot deliver high power like newer standards",
+      "still_used": "old digital cameras, MP3 players, some handheld consoles",
+      "compare": "smaller than standard USB‑A but same 480 Mbit/s speed"
+    },
+    {
+      "name": "Micro USB",
+      "year": "2007",
+      "key_number": "480 Mbit/s",
+      "new": [
+        "even smaller form factor",
+        "supports USB On‑The‑Go (OTG)",
+        "more durable connector"
+      ],
+      "lacked": "not reversible and limited to ~2.5 W power",
+      "still_used": "pre‑2016 Android phones, Bluetooth speakers, some IoT devices",
+      "compare": "smaller than Mini USB with same 480 Mbit/s speed"
+    },
+    {
+      "name": "Lightning",
+      "year": "2012",
+      "key_number": "480 Mbit/s",
+      "new": [
+        "reversible 8‑pin design",
+        "Apple‑specific digital authentication chip",
+        "supports audio and video output via adapters"
+      ],
+      "lacked": "incompatible with universal USB‑C ecosystem",
+      "still_used": "iPhone 5 through iPhone 14 (until 2023) and many accessories",
+      "compare": "same 480 Mbit/s speed as Micro USB but reversible and Apple‑only"
+    },
+    {
+      "name": "USB‑C",
+      "year": "2014",
+      "key_number": "10 Gbit/s",
+      "new": [
+        "reversible connector",
+        "up to 100 W power delivery",
+        "supports alternate modes like DisplayPort and Thunderbolt"
+      ],
+      "lacked": "early devices required adapters for older ports",
+      "still_used": "most modern smartphones, laptops, tablets, peripherals",
+      "compare": "faster than Lightning (10 Gbit/s vs 480 Mbit/s) and also reversible"
+    },
+    {
+      "name": "MagSafe",
+      "year": "2020",
+      "key_number": "15 W",
+      "new": [
+        "magnetic alignment for easy attachment",
+        "fast wireless charging up to 15 W",
+        "integrated NFC for accessory detection"
+      ],
+      "lacked": "slower than wired USB‑C charging and not a universal standard",
+      "still_used": "iPhone 12‑15 series and compatible accessories",
+      "compare": "wireless version of Lightning with magnetic snap and higher power"
+    },
+    {
+      "name": "Qi wireless",
+      "year": "2008",
+      "key_number": "15 W",
+      "new": [
+        "universal inductive charging standard",
+        "no cables needed for power transfer",
+        "supports multiple devices on one pad"
+      ],
+      "lacked": "generally slower than wired charging and requires precise placement",
+      "still_used": "most Android phones, earbuds, smartwatches, public charging stations",
+      "compare": "earlier than MagSafe but lacks magnetic alignment, same max 15 W"
+    },
+    {
+      "name": "Barrel jack",
+      "year": "1970s",
+      "key_number": "30 W",
+      "new": [
+        "simple polarity‑based power input",
+        "robust mechanical design",
+        "very low cost"
+      ],
+      "lacked": "cannot transfer data",
+      "still_used": "laptops, routers, audio equipment, some industrial gear",
+      "compare": "oldest of all, provides power only versus data‑capable connectors"
+    }
+  ]
+}
