@@ -155,6 +155,20 @@ def fix_cues(b):
     """Odstrani cue, ktore nie su v say (engine spravi fallback); vizualy emoji -> overi existenciu ikony."""
     say = b.get("say", "")
     cues = b.get("cues") or {}
+    if isinstance(cues, list):
+        # model obcas vrati zoznam namiesto slovnika: [["vis", "fraza"], ...] alebo [{"key": "vis", "cue": "fraza"}, ...]
+        d = {}
+        for it in cues:
+            if isinstance(it, (list, tuple)) and len(it) == 2:
+                d[str(it[0])] = it[1]
+            elif isinstance(it, dict):
+                k = it.get("key") or it.get("name") or it.get("id") or it.get("target")
+                v = it.get("cue") or it.get("value") or it.get("phrase") or it.get("on")
+                if k and v:
+                    d[str(k)] = v
+        cues = d
+    if not isinstance(cues, dict):
+        cues = {}
     b["cues"] = {k: v for k, v in cues.items() if isinstance(v, str) and _sub_ok(say, v)}
     for key in ("slams", "items"):
         for it in b.get(key, []) or []:
