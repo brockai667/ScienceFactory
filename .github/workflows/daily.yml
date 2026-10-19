@@ -27,7 +27,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
 
       - name: Install Python deps
-        run: pip install edge-tts requests cloudinary kokoro-onnx soundfile Pillow faster-whisper scipy numpy
+        run: pip install edge-tts requests cloudinary kokoro-onnx soundfile Pillow faster-whisper scipy numpy "av<19"   # av 19 zrusil metadata_errors (faster-whisper 1.2.1)
 
       - name: Cache TTS/STT modely (setri ~340MB kokoro + whisper kazdy beh)
         uses: actions/cache@v4

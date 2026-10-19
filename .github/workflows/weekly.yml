@@ -52,7 +52,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
       - name: Install Python deps
-        run: pip install requests cloudinary kokoro-onnx soundfile Pillow numpy faster-whisper
+        run: pip install requests cloudinary kokoro-onnx soundfile Pillow numpy faster-whisper "av<19"   # av 19.0.1 (10/2026) zrusil metadata_errors, faster-whisper 1.2.1 ho posiela
 
       - name: Cache HyperFrames Chromium + OpenMoji
         uses: actions/cache@v4
