@@ -110,5 +110,103 @@
       "instagram",
       "youtube"
     ]
+  },
+  {
+    "series": "Every Type Of Light Bulb Explained",
+    "name": "Incandescent",
+    "label": "INCANDESCENT",
+    "title": "Incandescent — Every Type Of Light Bulb Explained (1/7)",
+    "yt_title": "Incandescent — Every Type Of Light Bulb Explained (1/7) #shorts",
+    "body": "Warm glow, high heat, short life – the original light source.\n\nEvery Type Of Light Bulb Explained — part 1/7: Incandescent.\n\n▶ Full video (all 7 parts): https://www.youtube.com/watch?v=rtKqrNXJdJ0\n\n#LightBulbs #LED #Incandescent #OLED #EnergySaving #HomeDIY #TechExplained\n\nIcons: OpenMoji (openmoji.org), CC BY-SA 4.0",
+    "hosted_url": "https://github.com/brockai667/ScienceFactory/releases/download/media/reel_01_incandescent.mp4",
+    "due": "2026-10-26T17:09:50.000Z",
+    "services": [
+      "instagram",
+      "youtube"
+    ]
+  },
+  {
+    "series": "Every Type Of Light Bulb Explained",
+    "name": "Halogen",
+    "label": "HALOGEN",
+    "title": "Halogen — Every Type Of Light Bulb Explained (2/7)",
+    "yt_title": "Halogen — Every Type Of Light Bulb Explained (2/7) #shorts",
+    "body": "A brighter, hotter cousin of incandescent that still burns fast.\n\nEvery Type Of Light Bulb Explained — part 2/7: Halogen.\n\n▶ Full video (all 7 parts): https://www.youtube.com/watch?v=rtKqrNXJdJ0\n\n#LightBulbs #LED #Incandescent #OLED #EnergySaving #HomeDIY #TechExplained\n\nIcons: OpenMoji (openmoji.org), CC BY-SA 4.0",
+    "hosted_url": "https://github.com/brockai667/ScienceFactory/releases/download/media/reel_02_halogen.mp4",
+    "due": "2026-10-27T17:09:06.000Z",
+    "services": [
+      "instagram",
+      "youtube"
+    ]
+  },
+  {
+    "series": "Every Type Of Light Bulb Explained",
+    "name": "Fluorescent tube",
+    "label": "FLUORESCENT",
+    "title": "Fluorescent tube — Every Type Of Light Bulb Explained (3/7)",
+    "yt_title": "Fluorescent tube — Every Type Of Light Bulb Explained (3/7) #shorts",
+    "body": "Long tubes that use gas and phosphor to save power.\n\nEvery Type Of Light Bulb Explained — part 3/7: Fluorescent tube.\n\n▶ Full video (all 7 parts): https://www.youtube.com/watch?v=rtKqrNXJdJ0\n\n#LightBulbs #LED #Incandescent #OLED #EnergySaving #HomeDIY #TechExplained\n\nIcons: OpenMoji (openmoji.org), CC BY-SA 4.0",
+    "hosted_url": "https://github.com/brockai667/ScienceFactory/releases/download/media/reel_03_fluorescent.mp4",
+    "due": "2026-10-28T17:00:44.000Z",
+    "services": [
+      "instagram",
+      "youtube"
+    ]
+  },
+  {
+    "series": "Every Type Of Light Bulb Explained",
+    "name": "CFL",
+    "label": "CFL",
+    "title": "CFL — Every Type Of Light Bulb Explained (4/7)",
+    "yt_title": "CFL — Every Type Of Light Bulb Explained (4/7) #shorts",
+    "body": "Compact spirals that cut energy use but need a warm‑up.\n\nEvery Type Of Light Bulb Explained — part 4/7: CFL.\n\n▶ Full video (all 7 parts): https://www.youtube.com/watch?v=rtKqrNXJdJ0\n\n#LightBulbs #LED #Incandescent #OLED #EnergySaving #HomeDIY #TechExplained\n\nIcons: OpenMoji (openmoji.org), CC BY-SA 4.0",
+    "hosted_url": "https://github.com/brockai667/ScienceFactory/releases/download/media/reel_04_cfl.mp4",
+    "due": "2026-10-29T17:23:42.000Z",
+    "services": [
+      "instagram",
+      "youtube"
+    ]
+  },
+  {
+    "series": "Every Type Of Light Bulb Explained",
+    "name": "LED",
+    "label": "LED",
+    "title": "LED — Every Type Of Light Bulb Explained (5/7)",
+    "yt_title": "LED — Every Type Of Light Bulb Explained (5/7) #shorts",
+    "body": "Solid‑state lights that last decades with minimal heat.\n\nEvery Type Of Light Bulb Explained — part 5/7: LED.\n\n▶ Full video (all 7 parts): https://www.youtube.com/watch?v=rtKqrNXJdJ0\n\n#LightBulbs #LED #Incandescent #OLED #EnergySaving #HomeDIY #TechExplained\n\nIcons: OpenMoji (openmoji.org), CC BY-SA 4.0",
+    "hosted_url": "https://github.com/brockai667/ScienceFactory/releases/download/media/reel_05_led.mp4",
+    "due": "2026-10-30T17:05:45.000Z",
+    "services": [
+      "instagram",
+      "youtube"
+    ]
+  },
+  {
+    "series": "Every Type Of Light Bulb Explained",
+    "name": "Smart LED",
+    "label": "SMART LED",
+    "title": "Smart LED — Every Type Of Light Bulb Explained (6/7)",
+    "yt_title": "Smart LED — Every Type Of Light Bulb Explained (6/7) #shorts",
+    "body": "Wi‑fi enabled bulbs you can control from your phone.\n\nEvery Type Of Light Bulb Explained — part 6/7: Smart LED.\n\n▶ Full video (all 7 parts): https://www.youtube.com/watch?v=rtKqrNXJdJ0\n\n#LightBulbs #LED #Incandescent #OLED #EnergySaving #HomeDIY #TechExplained\n\nIcons: OpenMoji (openmoji.org), CC BY-SA 4.0",
+    "hosted_url": "https://github.com/brockai667/ScienceFactory/releases/download/media/reel_06_smart_led.mp4",
+    "due": "2026-10-31T17:18:38.000Z",
+    "services": [
+      "instagram",
+      "youtube"
+    ]
+  },
+  {
+    "series": "Every Type Of Light Bulb Explained",
+    "name": "OLED panel",
+    "label": "OLED",
+    "title": "OLED panel — Every Type Of Light Bulb Explained (7/7)",
+    "yt_title": "OLED panel — Every Type Of Light Bulb Explained (7/7) #shorts",
+    "body": "Ultra‑thin panels that emit light directly from each pixel.\n\nEvery Type Of Light Bulb Explained — part 7/7: OLED panel.\n\n▶ Full video (all 7 parts): https://www.youtube.com/watch?v=rtKqrNXJdJ0\n\n#LightBulbs #LED #Incandescent #OLED #EnergySaving #HomeDIY #TechExplained\n\nIcons: OpenMoji (openmoji.org), CC BY-SA 4.0",
+    "hosted_url": "https://github.com/brockai667/ScienceFactory/releases/download/media/reel_07_oled.mp4",
+    "due": "2026-11-01T17:03:53.000Z",
+    "services": [
+      "instagram",
+      "youtube"
+    ]
   }
 ]

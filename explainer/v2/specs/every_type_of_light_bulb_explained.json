@@ -1,0 +1,1585 @@
+{
+  "series": "Every Type Of Light Bulb Explained",
+  "title": "Every Type Of Light Bulb Explained: From Incandescent to OLED",
+  "description": "We break down the seven main light bulb families, from the classic glow of incandescents to the sleek panels of OLED. Learn what really matters – efficiency, lifespan, and light quality – in plain terms.",
+  "hashtags": [
+    "#LightBulbs",
+    "#LED",
+    "#Incandescent",
+    "#OLED",
+    "#EnergySaving",
+    "#HomeDIY",
+    "#TechExplained"
+  ],
+  "hero": {
+    "emoji": "💡"
+  },
+  "cta": "Full video on YouTube: link in bio",
+  "intro": {
+    "compare": {
+      "say": "You might think incandescent bulbs are just old-fashioned and LEDs are just fancy gadgets. They are not.",
+      "left": {
+        "emoji": "🕯️",
+        "label": "Incandescent",
+        "vis": {
+          "emoji": "🕯️"
+        }
+      },
+      "right": {
+        "emoji": "💡",
+        "label": "LED",
+        "vis": {
+          "emoji": "💡"
+        }
+      },
+      "line": "Just a design choice?",
+      "cues": {
+        "left": "incandescent bulbs",
+        "right": "LEDs are",
+        "strike": "They are not."
+      }
+    },
+    "grid": {
+      "say": "Each bulb type trades off energy use, lifespan, and light quality. This is every light bulb type, explained. Starting with incandescent.",
+      "cues": {
+        "grid": "Each bulb",
+        "title": "explained",
+        "mark": "Starting with"
+      },
+      "pulse": [
+        {
+          "cue": "energy",
+          "items": [
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "stamp": "PART 1"
+    }
+  },
+  "chapters": [
+    {
+      "name": "Incandescent",
+      "label": "INCANDESCENT",
+      "icon": {
+        "emoji": "🕯️"
+      },
+      "hook": "Warm glow, high heat, short life – the original light source.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "The first light you ever saw in a modern home, warm and cheap, came from a tiny wire that glowed like a tiny sun.",
+          "slams": [
+            {
+              "text": "THE ORIGINAL GLOW"
+            },
+            {
+              "text": "“CHEAP AND WARM”",
+              "strike": true
+            },
+            {
+              "text": "IT'S STILL HERE",
+              "color": "red"
+            },
+            {
+              "text": "EVERY LIGHT STARTED HERE"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Incandescent.",
+          "title": "Incandescent",
+          "kicker": "EVERY TYPE OF LIGHT BULB, PART 1",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Invented in 1879, the simple filament design turned electricity into a cozy amber glow, cheap to make and easy to replace.",
+          "head": "First bulb",
+          "label": "1879 — the birth",
+          "stamp": "1879",
+          "callouts": [
+            [
+              "#c9a227",
+              "filament glow"
+            ],
+            [
+              "#1c4ed8",
+              "inexpensive"
+            ]
+          ],
+          "cues": {
+            "stamp": "1879",
+            "action": "turned electricity",
+            "circle": "cozy amber"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Before the filament, homes relied on candles, oil lamps and gas chandeliers, each with its own flame and fuss.",
+          "head": "Before incandescent",
+          "sub": {
+            "text": "flame‑based lighting"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🕯️",
+              "label": "Candles",
+              "cue": "Candles",
+              "vis": {
+                "emoji": "🕯️"
+              }
+            },
+            {
+              "emoji": "🛢️",
+              "label": "Oil lamp",
+              "cue": "Oil lamp",
+              "vis": {
+                "emoji": "🛢️"
+              }
+            },
+            {
+              "emoji": "🕎",
+              "label": "Gas chandelier",
+              "cue": "Gas chandeliers",
+              "vis": {
+                "emoji": "🕎"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "It puts out about fifteen lumens for every watt you feed it – roughly the light of a single kitchen night‑light per watt.",
+          "num_end": 15.0,
+          "decimals": 0,
+          "unit": "lm/W",
+          "label": "Incandescent efficiency",
+          "sub": "one night‑light per watt",
+          "vis": {
+            "emoji": "💡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "fifteen lumens",
+            "sub": "single kitchen"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? Most of that power turns into heat, so you waste energy and heat up the room.",
+          "head": "The weak spot",
+          "label": "Heat waste",
+          "stamp": "INEFFICI",
+          "callouts": [
+            [
+              "#d62828",
+              "energy to heat"
+            ],
+            [
+              "#7a7a7a",
+              "wasted power"
+            ]
+          ],
+          "cues": {
+            "action": "turns into heat",
+            "circle": "waste energy"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you still find it in decorative fixtures, vintage lamps and budget bulbs where cheap glow matters more than efficiency.",
+          "head": "Still used",
+          "sub": {
+            "text": "budget and décor"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🕯️",
+              "label": "Decorative fixtures",
+              "cue": "Decorative fixtures",
+              "vis": {
+                "emoji": "🕯️"
+              }
+            },
+            {
+              "emoji": "💡",
+              "label": "Low‑cost bulbs",
+              "vis": {
+                "emoji": "💡"
+              }
+            },
+            {
+              "emoji": "🏮",
+              "label": "Vintage lamps",
+              "cue": "Vintage lamps",
+              "vis": {
+                "emoji": "🏮"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "But a halogen from 1962 gives about twenty lumens per watt – a third more light for the same power, yet many still love the classic glow.",
+          "head": "A brighter cousin",
+          "ekg": null,
+          "left": {
+            "emoji": "💡",
+            "label": "Incandescent",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "right": {
+            "emoji": "🔆",
+            "label": "Halogen",
+            "cue": "Halogen",
+            "vis": {
+              "emoji": "🔆"
+            }
+          },
+          "line": "Why pay more?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Halogen",
+      "label": "HALOGEN",
+      "icon": {
+        "emoji": "🔆"
+      },
+      "hook": "A brighter, hotter cousin of incandescent that still burns fast.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Halogen bulbs shine brighter, hotter, and fit into tighter spots. They changed the game back in the sixties with a simple gas trick.",
+          "slams": [
+            {
+              "text": "BRIGHTER, HOTTER, TIGHTER"
+            },
+            {
+              "text": "THE SIXTIES REVOLUTION",
+              "cue": "sixties",
+              "color": "blue"
+            },
+            {
+              "text": "“GAS TRICK”",
+              "cue": "gas trick",
+              "strike": true
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Halogen.",
+          "title": "Halogen",
+          "kicker": "EVERY TYPE OF LIGHT BULB, PART 2",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "First appeared in 1962, the halogen added a tiny amount of halogen gas to the filament chamber, letting it run hotter without burning out fast.",
+          "head": "1962 breakthrough",
+          "label": "1962 — halogen debut",
+          "stamp": "1962",
+          "callouts": [
+            [
+              "#c96b00",
+              "halogen gas"
+            ],
+            [
+              "#2a5d9f",
+              "hotter filament"
+            ]
+          ],
+          "cues": {
+            "head": "First appeared",
+            "stamp": "1962",
+            "action": "added a tiny amount",
+            "circle": "run hotter",
+            "callouts": "halogen gas"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What the halogen gave you was more light per watt, a smaller bulb for the same output, and a whiter glow than the old incandescent.",
+          "head": "What it gave you",
+          "sub": {
+            "text": "more light, smaller size",
+            "cue": "more light"
+          },
+          "hub": {
+            "emoji": "💡"
+          },
+          "items": [
+            {
+              "emoji": "🔆",
+              "label": "Higher efficiency",
+              "vis": {
+                "emoji": "🔆"
+              }
+            },
+            {
+              "emoji": "📏",
+              "label": "Smaller size",
+              "cue": "smaller bulb",
+              "vis": {
+                "emoji": "📏"
+              }
+            },
+            {
+              "emoji": "🟡",
+              "label": "Whiter glow",
+              "cue": "whiter glow",
+              "vis": {
+                "emoji": "🟡"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "It pushes out about twenty lumens for every watt you feed it – roughly a third more light than the classic bulb.",
+          "num_end": 20.0,
+          "decimals": 0,
+          "unit": "lm/W",
+          "label": "Halogen efficiency",
+          "sub": "33% more than incandescent",
+          "vis": {
+            "emoji": "🔆"
+          },
+          "travel": {
+            "to": {
+              "emoji": "⚡"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "twenty lumens",
+            "sub": "a third more"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The trade‑off? Halogen’s hotter filament means a shorter lifespan than the newer LEDs that followed.",
+          "head": "The trade‑off",
+          "label": "Shorter life",
+          "stamp": "HOTTER",
+          "callouts": [
+            [
+              "#d9534f",
+              "hot filament"
+            ],
+            [
+              "#6c757d",
+              "shorter lifespan"
+            ]
+          ],
+          "cues": {
+            "head": "The trade‑off",
+            "action": "hotter filament",
+            "circle": "shorter lifespan"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Today you still see halogen in track lighting, spotlights, and those bright under‑cabinet lamps that need a focused beam.",
+          "head": "Where you still find them",
+          "sub": {
+            "text": "focused lighting spots",
+            "cue": "focused beam"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🔦",
+              "label": "Track lighting",
+              "cue": "track lighting",
+              "vis": {
+                "emoji": "🔦"
+              }
+            },
+            {
+              "emoji": "💡",
+              "label": "Spotlights",
+              "cue": "spotlights",
+              "vis": {
+                "emoji": "💡"
+              }
+            },
+            {
+              "emoji": "🏠",
+              "label": "Under‑cabinet lamps",
+              "cue": "under‑cabinet",
+              "vis": {
+                "emoji": "🏠"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "But remember, halogen sits between the dim incandescent and the super efficient LED – bright enough for today, but not the future’s favorite.",
+          "head": "Between incandescent and LED",
+          "ekg": null,
+          "left": {
+            "emoji": "🕯️",
+            "label": "Incandescent",
+            "cue": "incandescent",
+            "vis": {
+              "emoji": "🕯️"
+            }
+          },
+          "right": {
+            "emoji": "💡",
+            "label": "LED",
+            "cue": "LED",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "line": "Bright enough for today",
+          "cues": {
+            "line": "future’s favorite"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fluorescent tube",
+      "label": "FLUORESCENT",
+      "icon": {
+        "emoji": "🧪"
+      },
+      "hook": "Long tubes that use gas and phosphor to save power.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Those long glass tubes buzzing in old offices? They're the 20th‑century workhorse, lighting factories since the late 1930s.",
+          "slams": [
+            {
+              "text": "LONG GLASS TUBES"
+            },
+            {
+              "text": "WORKHORSE OF LIGHTING",
+              "strike": true
+            }
+          ],
+          "cues": {
+            "buzzing": "buzzing",
+            "workhorse": "workhorse"
+          }
+        },
+        {
+          "tpl": "title",
+          "say": "Fluorescent tube.",
+          "title": "Fluorescent tube",
+          "kicker": "EVERY TYPE OF LIGHT BULB, PART 3",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Invented in 1938, these gas‑discharge tubes push out 60 lumens per watt, but they need a ballast and hide a drop of mercury inside.",
+          "head": "1938 debut",
+          "label": "Gas‑discharge tube",
+          "stamp": "1938",
+          "callouts": [
+            [
+              "#4caf50",
+              "60 lm/W"
+            ],
+            [
+              "#ff9800",
+              "requires ballast"
+            ]
+          ],
+          "cues": {
+            "1938": "1938",
+            "gas‑discharge": "gas‑discharge"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You still find them lighting commercial offices, industrial plants, and school gyms—places that need bright, even light over large areas.",
+          "head": "Where they shine",
+          "sub": {
+            "text": "big spaces, bright light"
+          },
+          "hub": {
+            "emoji": "💡"
+          },
+          "items": [
+            {
+              "emoji": "🏢",
+              "label": "Offices",
+              "cue": "offices",
+              "vis": {
+                "emoji": "🏢"
+              }
+            },
+            {
+              "emoji": "🏭",
+              "label": "Factories",
+              "cue": "industrial",
+              "vis": {
+                "emoji": "🏭"
+              }
+            },
+            {
+              "emoji": "🏫",
+              "label": "Schools",
+              "cue": "school gyms",
+              "vis": {
+                "emoji": "🏫"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "At 60 lumens per watt they are roughly three times as efficient as a halogen lamp, meaning you get the same brightness with a third of the power.",
+          "num_end": 60.0,
+          "decimals": 0,
+          "unit": "lm/W",
+          "label": "Fluorescent efficiency",
+          "sub": "three‑times halogen",
+          "vis": {
+            "emoji": "🔆"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔌"
+            },
+            "seconds": 3
+          },
+          "cues": {
+            "three times": "three times",
+            "same brightness": "same brightness"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? They contain mercury, so you must recycle them carefully to avoid polluting the environment.",
+          "head": "The downside",
+          "label": "Mercury content",
+          "stamp": "CAUTION",
+          "callouts": [
+            [
+              "#d32f2f",
+              "mercury inside"
+            ],
+            [
+              "#757575",
+              "requires recycling"
+            ]
+          ],
+          "cues": {
+            "downside": "downside"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Typical uses include backlit signage, grocery‑store aisles, and warehouse shelving—anywhere you need long, uniform light strips.",
+          "head": "Common applications",
+          "sub": {
+            "text": "long uniform strips",
+            "cue": "uniform light"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🚧",
+              "label": "Signage",
+              "cue": "signage",
+              "vis": {
+                "emoji": "🚧"
+              }
+            },
+            {
+              "emoji": "🛒",
+              "label": "Grocery aisles",
+              "vis": {
+                "emoji": "🛒"
+              }
+            },
+            {
+              "emoji": "📦",
+              "label": "Warehouses",
+              "vis": {
+                "emoji": "📦"
+              }
+            }
+          ],
+          "cues": {
+            "uniform light": "uniform light"
+          }
+        },
+        {
+          "tpl": "compare",
+          "say": "But LEDs now give 100 lumens per watt, almost double the tube’s output, with no mercury and no ballast needed. The future is brighter and cleaner.",
+          "head": "The bright future",
+          "ekg": null,
+          "left": {
+            "emoji": "💡",
+            "label": "Fluorescent tube",
+            "cue": "tube",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "right": {
+            "emoji": "💡",
+            "label": "LED",
+            "cue": "LED",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "line": "Why stick with tubes?",
+          "cues": {
+            "double efficiency": "double the tube’s output",
+            "future is brighter": "future is brighter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CFL",
+      "label": "CFL",
+      "icon": {
+        "emoji": "🔁"
+      },
+      "hook": "Compact spirals that cut energy use but need a warm‑up.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Compact, spiraled, and a bit shy. The CFL sneaks into any socket, saving power while taking its time to glow.",
+          "slams": [
+            {
+              "text": "COMPACT SPIRAL LIGHT"
+            },
+            {
+              "text": "FIT ANY SOCKET",
+              "cue": "any socket",
+              "color": "blue"
+            },
+            {
+              "text": "IT'S SLOW TO START",
+              "color": "red"
+            },
+            {
+              "text": "\"SAVING POWER\"",
+              "cue": "saving power",
+              "strike": true
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "CFL.",
+          "title": "CFL",
+          "kicker": "EVERY TYPE OF LIGHT BULB, PART 4",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in the 1970s, the compact fluorescent lamp reshaped the bulb shape, fitting standard bases while using half the wattage of an incandescent.",
+          "head": "1970s breakthrough",
+          "label": "1970s — compact design",
+          "stamp": "1970s",
+          "callouts": [
+            [
+              "#4caf50",
+              "spiral coil"
+            ],
+            [
+              "#ff9800",
+              "standard base"
+            ]
+          ],
+          "cues": {
+            "head": "Born in the 1970s",
+            "stamp": "1970s",
+            "action": "reshaped the bulb",
+            "circle": "standard bases"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes a CFL different? A twisted tube, a built‑in ballast, and a phosphor coating that turns UV into visible light.",
+          "head": "CFL anatomy",
+          "sub": {
+            "text": "twisted tube, ballast, phosphor",
+            "cue": "different"
+          },
+          "hub": {
+            "emoji": "💡"
+          },
+          "items": [
+            {
+              "emoji": "🌀",
+              "label": "Spiral tube",
+              "cue": "twisted tube",
+              "vis": {
+                "emoji": "🌀"
+              }
+            },
+            {
+              "emoji": "⚡",
+              "label": "Ballast inside",
+              "cue": "built‑in ballast",
+              "vis": {
+                "emoji": "⚡"
+              }
+            },
+            {
+              "emoji": "🔆",
+              "label": "Phosphor coating",
+              "cue": "phosphor coating",
+              "vis": {
+                "emoji": "🔆"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Efficiency hits sixty lumens per watt. That’s like getting the light of a 60‑watt incandescent while only using a 15‑watt bulb.",
+          "num_end": 60.0,
+          "decimals": 0,
+          "unit": "lm/W",
+          "label": "CFL efficiency",
+          "sub": "60‑watt glow, 15‑watt use",
+          "vis": {
+            "emoji": "💡"
+          },
+          "travel": {
+            "to": {
+              "emoji": "🔋"
+            },
+            "seconds": 0
+          },
+          "cues": {
+            "count": "sixty lumens",
+            "sub": "only using"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? Warm‑up time. It can take a minute or two before reaching full brightness, unlike the instant pop of an LED.",
+          "head": "Warm‑up lag",
+          "label": "1‑2 minutes",
+          "stamp": "SLOW STA",
+          "callouts": [
+            [
+              "#d32f2f",
+              "takes a minute"
+            ],
+            [
+              "#757575",
+              "not instant"
+            ]
+          ],
+          "cues": {
+            "head": "The downside",
+            "action": "warm‑up time",
+            "circle": "minute or two"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Where you still see them: some homes, especially where cheap replacements matter, and legacy fixtures that need a drop‑in bulb.",
+          "head": "Where they live",
+          "sub": {
+            "text": "budget homes, legacy fixtures",
+            "cue": "still see"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🏠",
+              "label": "Budget homes",
+              "cue": "cheap replacements",
+              "vis": {
+                "emoji": "🏠"
+              }
+            },
+            {
+              "emoji": "🛠️",
+              "label": "Legacy fixtures",
+              "cue": "legacy fixtures",
+              "vis": {
+                "emoji": "🛠️"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to older fluorescents, the CFL packs the same efficiency into a bulb shape, but it can’t match LEDs that double the output per watt.",
+          "head": "Shape vs. efficiency",
+          "ekg": null,
+          "left": {
+            "emoji": "💡",
+            "label": "Fluorescent tube",
+            "cue": "older fluorescents",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "right": {
+            "emoji": "🔆",
+            "label": "LED bulb",
+            "cue": "LEDs that double",
+            "vis": {
+              "emoji": "🔆"
+            }
+          },
+          "line": "Twist the shape, not the power",
+          "cues": {
+            "line": "double the output"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LED",
+      "label": "LED",
+      "icon": {
+        "emoji": "💡"
+      },
+      "hook": "Solid‑state lights that last decades with minimal heat.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "LEDs lit the future. A tiny chip that glows instantly, lasts forever, and saves you money on the electric bill. It changed how we light everything.",
+          "slams": [
+            {
+              "text": "LED LIGHTS THE FUTURE"
+            },
+            {
+              "text": "\"TINY CHIP\"",
+              "cue": "tiny chip",
+              "strike": true
+            },
+            {
+              "text": "IT CHANGES EVERYTHING",
+              "cue": "changed how we",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "LED.",
+          "title": "LED",
+          "kicker": "EVERY TYPE OF LIGHT BULB, PART 5",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "The LED burst onto the scene in the 1990s, a semiconductor that turns electricity straight into light, no filament needed.",
+          "head": "LED debut",
+          "label": "1990s — semiconductor light",
+          "stamp": "1990s",
+          "callouts": [
+            [
+              "#ff9900",
+              "instant on"
+            ],
+            [
+              "#0066ff",
+              "no filament"
+            ]
+          ],
+          "cues": {
+            "head": "LED burst",
+            "stamp": "1990s",
+            "action": "turns electricity",
+            "circle": "no filament"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "What makes LEDs special? They’re tiny, they turn on instantly, and they last for decades without dimming.",
+          "head": "LED advantages",
+          "sub": {
+            "text": "instant, long‑life, tiny",
+            "cue": "what makes"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "💡",
+              "label": "Tiny size",
+              "cue": "tiny",
+              "vis": {
+                "emoji": "💡"
+              }
+            },
+            {
+              "emoji": "⚡",
+              "label": "Instant on",
+              "cue": "turn on instantly",
+              "vis": {
+                "emoji": "⚡"
+              }
+            },
+            {
+              "emoji": "⏳",
+              "label": "Decades long",
+              "cue": "last for decades",
+              "vis": {
+                "emoji": "⏳"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Efficiency hits a hundred lumens per watt – that’s like getting the light of ten 100‑watt bulbs from just one LED bulb.",
+          "num_end": 100.0,
+          "decimals": 0,
+          "unit": "lm/W",
+          "label": "LED efficiency",
+          "sub": "ten 100‑watt bulbs",
+          "vis": {
+            "emoji": "🔆"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💡"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "hundred lumens",
+            "sub": "ten 100‑watt bulbs"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? You pay more upfront, but the savings over years outweigh that initial hit.",
+          "head": "Higher cost",
+          "label": "Up‑front price",
+          "stamp": "COST",
+          "callouts": [
+            [
+              "#d9534f",
+              "higher upfront"
+            ],
+            [
+              "#5cb85c",
+              "savings over years"
+            ]
+          ],
+          "cues": {
+            "head": "The downside",
+            "action": "pay more",
+            "circle": "savings over years"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Where do you see LEDs today? Everywhere – from homes to offices, streetlights to car headlights.",
+          "head": "LED everywhere",
+          "sub": {
+            "text": "homes, offices, streets, cars",
+            "cue": "where do you"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🏠",
+              "label": "Homes",
+              "cue": "homes",
+              "vis": {
+                "emoji": "🏠"
+              }
+            },
+            {
+              "emoji": "🏢",
+              "label": "Offices",
+              "cue": "offices",
+              "vis": {
+                "emoji": "🏢"
+              }
+            },
+            {
+              "emoji": "🚦",
+              "label": "Streetlights",
+              "cue": "streetlights",
+              "vis": {
+                "emoji": "🚦"
+              }
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car headlights",
+              "cue": "car headlights",
+              "vis": {
+                "emoji": "🚗"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Compared to the old CFL, LEDs give almost double the light for the same power – 100 versus 60 lumens per watt. Twice the punch.",
+          "head": "Double the punch",
+          "ekg": "double",
+          "left": {
+            "emoji": "💡",
+            "label": "CFL",
+            "cue": "old CFL",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "right": {
+            "emoji": "💡",
+            "label": "LED",
+            "cue": "LEDs give",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "line": "Why settle for less?",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "Smart LED",
+      "label": "SMART LED",
+      "icon": {
+        "emoji": "📱"
+      },
+      "hook": "Wi‑fi enabled bulbs you can control from your phone.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Smart LEDs are the cool kids of lighting—wireless, colorful, and you control them from your phone. They’re the future in a tiny bulb.",
+          "slams": [
+            {
+              "text": "WIRELESS LIGHTING"
+            },
+            {
+              "text": "COLOR CHANGING",
+              "strike": true
+            },
+            {
+              "text": "CONTROLLED FROM PHONE",
+              "cue": "from your phone",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "Smart LED.",
+          "title": "Smart LED",
+          "kicker": "EVERY TYPE OF LIGHT BULB, PART 6",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "They hit the market in the 2010s, adding Wi‑Fi and Bluetooth to the classic LED. No new efficiency, but endless possibilities.",
+          "head": "Connectivity era",
+          "label": "2010s — smart revolution",
+          "stamp": "2010s",
+          "callouts": [
+            [
+              "#4a90e2",
+              "wireless control"
+            ],
+            [
+              "#e94e77",
+              "color palettes"
+            ]
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "list",
+          "say": "What you can do with a smart LED? Dim it, change hue, set schedules, and sync with music. All from an app.",
+          "head": "Features at a glance",
+          "sub": {
+            "text": "control, color, schedule"
+          },
+          "hub": {
+            "emoji": "📱"
+          },
+          "items": [
+            {
+              "emoji": "💡",
+              "label": "Dim & brighten",
+              "vis": {
+                "emoji": "💡"
+              }
+            },
+            {
+              "emoji": "🌈",
+              "label": "Color shift",
+              "vis": {
+                "emoji": "🌈"
+              }
+            },
+            {
+              "emoji": "⏰",
+              "label": "Timers",
+              "vis": {
+                "emoji": "⏰"
+              }
+            },
+            {
+              "emoji": "🎶",
+              "label": "Music sync",
+              "vis": {
+                "emoji": "🎶"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Efficiency stays at a hundred lumens per watt—just like regular LEDs. That’s like getting the same brightness from a 10‑watt bulb as a 100‑watt incandescent.",
+          "num_end": 100.0,
+          "decimals": 0,
+          "unit": "lm/W",
+          "label": "Smart LED efficiency",
+          "sub": "same as classic LED",
+          "vis": {
+            "emoji": "📱"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💡"
+            },
+            "seconds": 1
+          },
+          "cues": {
+            "count": "hundred lumens"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? You need Wi‑Fi, an app, and a bit of tech know‑how. No app, no smart features.",
+          "head": "The catch",
+          "label": "Network required",
+          "stamp": "NEED WIF",
+          "callouts": [
+            [
+              "#d62828",
+              "app needed"
+            ],
+            [
+              "#7a7a7a",
+              "Wi‑Fi only"
+            ]
+          ],
+          "cues": {
+            "action": "no app",
+            "circle": "no smart features"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Where you’ll find them today: living rooms, kitchens, home offices, and smart‑home hubs. Anywhere you want mood lighting on command.",
+          "head": "Where they live",
+          "sub": {
+            "text": "home automation spots"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "🛋️",
+              "label": "Living room",
+              "cue": "Living room",
+              "vis": {
+                "emoji": "🛋️"
+              }
+            },
+            {
+              "emoji": "🍽️",
+              "label": "Kitchen",
+              "cue": "Kitchen",
+              "vis": {
+                "emoji": "🍽️"
+              }
+            },
+            {
+              "emoji": "💻",
+              "label": "Home office",
+              "cue": "Home office",
+              "vis": {
+                "emoji": "💻"
+              }
+            },
+            {
+              "emoji": "🏠",
+              "label": "Smart hub",
+              "vis": {
+                "emoji": "🏠"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "Regular LEDs give you light. Smart LEDs give you light plus control. You pay a bit more, but you get a bulb that listens to you.",
+          "head": "Light vs. smart light",
+          "ekg": null,
+          "left": {
+            "emoji": "💡",
+            "label": "LED",
+            "cue": "Regular LED",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "right": {
+            "emoji": "📱",
+            "label": "Smart LED",
+            "cue": "Smart LED",
+            "vis": {
+              "emoji": "📱"
+            }
+          },
+          "line": "More than just brightness",
+          "cues": {}
+        }
+      ]
+    },
+    {
+      "name": "OLED panel",
+      "label": "OLED",
+      "icon": {
+        "emoji": "📺"
+      },
+      "hook": "Ultra‑thin panels that emit light directly from each pixel.",
+      "beats": [
+        {
+          "tpl": "hook",
+          "say": "Imagine a TV that’s also a light source, glowing evenly across every inch. That’s the OLED panel, a sleek sheet of pure illumination.",
+          "slams": [
+            {
+              "text": "UNIFORM LIGHT SHEET"
+            },
+            {
+              "text": "“TV THAT GLOWS”",
+              "cue": "TV that",
+              "strike": true
+            },
+            {
+              "text": "SLEEK AND THIN",
+              "cue": "sleek sheet",
+              "color": "blue"
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "title",
+          "say": "OLED panel.",
+          "title": "OLED panel",
+          "kicker": "EVERY TYPE OF LIGHT BULB, PART 7",
+          "cues": {}
+        },
+        {
+          "tpl": "focus",
+          "say": "Born in 2009, OLED panels deliver 80 lumens per watt using organic layers that emit light across a flat, flexible surface.",
+          "head": "OLED panel",
+          "label": "2009 — organic breakthrough",
+          "stamp": "2009",
+          "callouts": [
+            [
+              "#4a90e2",
+              "organic electroluminescent layers"
+            ],
+            [
+              "#7ed321",
+              "thin flexible panels"
+            ]
+          ],
+          "cues": {
+            "head": "OLED panel",
+            "stamp": "2009",
+            "action": "organic layers"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "You’ll find OLED panels in high‑end displays, sleek architectural lighting, and futuristic car interiors.",
+          "head": "Where they shine",
+          "sub": {
+            "text": "premium visual tech",
+            "cue": "high‑end displays"
+          },
+          "hub": {
+            "emoji": "📺"
+          },
+          "items": [
+            {
+              "emoji": "🖥️",
+              "label": "Premium displays",
+              "vis": {
+                "emoji": "🖥️"
+              }
+            },
+            {
+              "emoji": "🏢",
+              "label": "Architectural lighting",
+              "cue": "architectural lighting",
+              "vis": {
+                "emoji": "🏢"
+              }
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car interiors",
+              "cue": "car interiors",
+              "vis": {
+                "emoji": "🚗"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "stat",
+          "say": "Their efficiency sits at eighty lumens per watt, a bit shy of LED’s hundred lumens per watt.",
+          "num_end": 80.0,
+          "decimals": 0,
+          "unit": "lm/W",
+          "label": "OLED efficiency",
+          "sub": "LED hits a hundred",
+          "vis": {
+            "emoji": "📺"
+          },
+          "travel": {
+            "to": {
+              "emoji": "💡"
+            },
+            "seconds": 2
+          },
+          "cues": {
+            "count": "eighty lumens"
+          }
+        },
+        {
+          "tpl": "focus",
+          "say": "The downside? They’re pricey and not as efficient as LEDs, so you pay more for that flawless glow.",
+          "head": "The trade‑off",
+          "label": "Cost vs efficiency",
+          "stamp": "HIGH",
+          "callouts": [
+            [
+              "#d62828",
+              "high cost"
+            ],
+            [
+              "#7a7a7a",
+              "lower efficiency"
+            ]
+          ],
+          "cues": {
+            "head": "The downside",
+            "action": "pay more",
+            "circle": "flawless glow"
+          }
+        },
+        {
+          "tpl": "list",
+          "say": "Still, they dominate where uniform light matters: digital signage, art installations, and premium televisions.",
+          "head": "Niche uses",
+          "sub": {
+            "text": "uniform lighting needs",
+            "cue": "uniform light"
+          },
+          "hub": null,
+          "items": [
+            {
+              "emoji": "📊",
+              "label": "Digital signage",
+              "cue": "digital signage",
+              "vis": {
+                "emoji": "📊"
+              }
+            },
+            {
+              "emoji": "🎨",
+              "label": "Art installations",
+              "cue": "art installations",
+              "vis": {
+                "emoji": "🎨"
+              }
+            },
+            {
+              "emoji": "📺",
+              "label": "Premium TVs",
+              "vis": {
+                "emoji": "📺"
+              }
+            }
+          ],
+          "cues": {}
+        },
+        {
+          "tpl": "compare",
+          "say": "So OLED gives you a perfect sheet of light, but LED gives you more bang for your buck. Choose glow or efficiency?",
+          "head": "Glow vs efficiency",
+          "ekg": null,
+          "left": {
+            "emoji": "💡",
+            "label": "LED",
+            "cue": "LED",
+            "vis": {
+              "emoji": "💡"
+            }
+          },
+          "right": {
+            "emoji": "📺",
+            "label": "OLED",
+            "cue": "OLED",
+            "vis": {
+              "emoji": "📺"
+            }
+          },
+          "line": "Choose glow or efficiency?",
+          "cues": {
+            "line": "bang for your buck"
+          }
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "say": "Pick the bulb that fits your room and budget, then enjoy lower bills. Bright choice, smart living. See you next Monday.",
+    "type_text": "Bright choice, smart living",
+    "cues": {
+      "key": "Bright choice"
+    }
+  },
+  "facts": [
+    {
+      "name": "Incandescent",
+      "year": "1879",
+      "key_number": "15 lumens per watt",
+      "new": [
+        "simple filament design",
+        "inexpensive manufacturing",
+        "warm color temperature"
+      ],
+      "lacked": "energy efficiency",
+      "still_used": "decorative fixtures and low‑cost lamps",
+      "compare": "N/A"
+    },
+    {
+      "name": "Halogen",
+      "year": "1962",
+      "key_number": "20 lumens per watt",
+      "new": [
+        "halogen gas cycle",
+        "higher temperature filament",
+        "smaller size for same output"
+      ],
+      "lacked": "shorter lifespan than newer technologies",
+      "still_used": "track lighting and spotlights",
+      "compare": "about 33% more efficient than incandescent (15→20 lm/W)"
+    },
+    {
+      "name": "Fluorescent tube",
+      "year": "1938",
+      "key_number": "60 lumens per watt",
+      "new": [
+        "gas discharge lighting",
+        "long tubes for high output",
+        "requires a ballast"
+      ],
+      "lacked": "contains mercury",
+      "still_used": "commercial offices and industrial lighting",
+      "compare": "roughly three times the efficiency of halogen (20→60 lm/W)"
+    },
+    {
+      "name": "CFL",
+      "year": "1970s",
+      "key_number": "60 lumens per watt",
+      "new": [
+        "compact spiral shape",
+        "fits standard sockets",
+        "uses less power than incandescent"
+      ],
+      "lacked": "slow warm‑up time",
+      "still_used": "some residential lamps, though declining",
+      "compare": "matches fluorescent efficiency while fitting a bulb form factor"
+    },
+    {
+      "name": "LED",
+      "year": "1990s",
+      "key_number": "100 lumens per watt",
+      "new": [
+        "semiconductor light source",
+        "instant on",
+        "long lifespan"
+      ],
+      "lacked": "higher upfront cost",
+      "still_used": "most new residential and commercial lighting",
+      "compare": "almost double the efficiency of CFL (60→100 lm/W)"
+    },
+    {
+      "name": "Smart LED",
+      "year": "2010s",
+      "key_number": "100 lumens per watt",
+      "new": [
+        "wireless control",
+        "color changing",
+        "IoT integration"
+      ],
+      "lacked": "requires network and app to use features",
+      "still_used": "home automation and smart‑bulb markets",
+      "compare": "adds connectivity to LED without changing efficiency"
+    },
+    {
+      "name": "OLED panel",
+      "year": "2009",
+      "key_number": "80 lumens per watt",
+      "new": [
+        "organic electroluminescent layers",
+        "thin flexible panels",
+        "uniform surface lighting"
+      ],
+      "lacked": "high cost and lower efficiency than LED",
+      "still_used": "high‑end displays and architectural lighting",
+      "compare": "provides uniform light but lower efficiency than LED (100→80 lm/W)"
+    }
+  ]
+}
