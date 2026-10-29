@@ -1,125 +1,134 @@
 {
- "title": "Manicouagan Reservoir – The Eye of Quebec",
+ "title": "Manicouagan Reservoir – the eye of Quebec",
  "coords": "51.1272 N, 68.7472 W",
  "voice": "am_michael",
  "speed": 1.0,
  "music": "cine_616.mp3",
  "start": {
-  "lat": 51.12722222,
-  "lon": -68.74722222
+  "lat": 51.1272,
+  "lon": -68.7472
  },
  "source": "https://en.wikipedia.org/wiki/Manicouagan_Reservoir",
  "feature_km": 70.0,
  "beats": [
   {
-   "text": "Type these coordinates into a satellite map, and you'll find a massive ring-shaped lake in Quebec.",
+   "text": "Type these coordinates into a satellite map, and you'll find something strange in central Quebec.",
    "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
-    "z": 8.24
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "z": 10.24
    },
    "globe": true
   },
   {
-   "text": "A perfect circle, about seventy kilometers across, visible from orbit.",
+   "text": "From orbit it looks like a giant eye, a perfect circle about seventy kilometers across.",
    "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
-    "z": 10.24
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "z": 8.24
    },
    "ruler": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
+    "lat": 51.1272,
+    "lon": -68.7472,
     "km": 70.0,
     "label": "70 KM",
     "on": "seventy"
+   }
+  },
+  {
+   "text": "The blue ring surrounds a solitary island plateau, a quiet landlocked mountain rising in the middle.",
+   "cam": {
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "z": 11.24
    },
    "photo": {
     "file": "photos/manicouagan_reservoir/p0.jpg",
-    "label": "ISS VIEW",
+    "label": "VIEW FROM SPACE",
     "credit": "NASA",
-    "on": "circle",
+    "on": "island",
     "dur": 2.8
    }
   },
   {
-   "text": "It looks like an eye, the famous eye of Quebec.",
+   "text": "People call it the eye of Quebec, but what could have carved such a massive ring?",
    "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
-    "z": 11.24
-   },
-   "tag": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
-    "label": "EYE",
-    "on": "eye"
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "z": 8.24
    }
   },
   {
-   "text": "Some wonder if it hides an alien base-what could make a crater this big?",
+   "text": "The impact happened two hundred fourteen million years ago.",
    "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
-    "z": 8.24
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "z": 10.44
+   },
+   "stamp": {
+    "label": "214 MILLION",
+    "on": "impact"
    },
    "react": {
     "expr": "surprised",
-    "on": "crater",
+    "on": "impact",
     "dur": 1.4
    }
   },
   {
-   "text": "Two hundred fourteen million years ago, a meteor five kilometers wide struck here.",
+   "text": "A five kilometer meteor created a crater about one hundred kilometers wide.",
    "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
+    "lat": 51.1272,
+    "lon": -68.7472,
     "z": 11.24
-   },
-   "stamp": {
-    "label": "214 MYA",
-    "on": "Two"
    }
   },
   {
-   "text": "The impact left a multiple-ring basin, the outer rim about one hundred kilometers wide.",
+   "text": "Water later filled the inner ring, leaving the island plateau high above the lake.",
    "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
+    "lat": 51.1272,
+    "lon": -68.7472,
     "z": 8.24
    }
   },
   {
-   "text": "The inner basin filled, forming a reservoir that holds about one hundred thirty eight cubic kilometres.",
+   "text": "So that mysterious eye is really a giant impact crater turned lake.",
    "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
-    "z": 10.44
-   }
-  },
-  {
-   "text": "So that strange ring you saw is really an ancient impact crater.",
-   "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
-    "z": 11.24
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "z": 10.64
+   },
+   "rings": {
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "km": [
+     9.1,
+     18.2,
+     27.3
+    ],
+    "on": "eye"
+   },
+   "react": {
+    "expr": "happy",
+    "on": "eye",
+    "dur": 1.4
    }
   },
   {
    "text": "Follow for more places you can see from space.",
    "cam": {
-    "lat": 51.12722222,
-    "lon": -68.74722222,
+    "lat": 51.1272,
+    "lon": -68.7472,
     "z": 5.24
    }
   }
  ],
- "description": "Manicouagan Reservoir in Quebec is a seventy‑kilometer‑diameter annular lake formed by a meteor impact two hundred fourteen million years ago. The crater’s outer rim spans about one hundred kilometers and the lake holds roughly one hundred thirty eight cubic kilometres of water. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA, Wikimedia Commons. Source: Wikipedia.",
+ "description": "Manicouagan Reservoir is a seventy kilometer diameter annular lake formed by a meteor impact two hundred fourteen million years ago. The crater's outer ring spans about one hundred kilometers and encloses Rene-Levasseur Island. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA, Wikimedia Commons. Source: Wikipedia.",
  "hashtags": [
-  "#Manicouagan",
-  "#ImpactCrater",
-  "#SpaceView",
-  "#Quebec",
-  "#Satellite"
+  "#Space",
+  "#Geology",
+  "#MeteorImpact",
+  "#Canada",
+  "#SatelliteView"
  ]
 }
