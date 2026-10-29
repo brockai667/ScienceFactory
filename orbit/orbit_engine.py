@@ -277,7 +277,7 @@ def camera_track(spec, beats, total):
         c = b["cam"]
         if i == 0:
             t_fly0 = GLOBE_T - 0.3
-            keys.append(("fly", t_fly0, b["t0"] + min(5.0, max(3.2, (b["t1"] - b["t0"]) * 0.7)),
+            keys.append(("fly", t_fly0, t_fly0 + 1.5,           # miesto musi byt na obrazovke do ~3 s (hook)
                          (c["lat"], c["lon"], GLOBE_ZEND), (c["lat"], c["lon"], c["z"])))
         else:
             mv = min(1.7, max(0.9, 0.4 * (b["t1"] - b["t0"]))) if abs(c["z"] - prev["z"]) > 0.5 else 1.0

@@ -102,7 +102,8 @@ Structure:
 Hook rules (beat 1):
 - One spoken sentence, 14 words max. It must work with sound on and eyes off the screen.
 - Name one concrete thing the viewer sees (ring, island, crater, color, shape) in the first 6 words.
-- Add tension with a specific number from the article (size, age, cause) or an impossibility. Never a vague adjective.
+- Add tension with a specific number from the article (size, age) or an impossibility. Never a vague adjective.
+- Never give away the answer or cause in the hook or the title (no "meteor", "volcano", "erosion" there). It is revealed in beats 5-7; the hook only makes people want it.
 - Banned: "something strange", "weird", "mysterious", "you won't believe", "secret", "scientists are baffled", "Did you know", "Today we", any claim not in the article.
 - Never say the coordinate numbers (they are typed on screen). "Search [name] on a satellite map and look at [feature]" is fine only with a specific feature.
 - Patterns: "This [shape] is [size] wide, and [process] shouldn't make [shape]." / "A [size] [object] hit [place], and the scar is still there." / "Why is this [place] a perfect [shape]?" / "This [feature] is [age] old, and you can still see it from space." / "[Ordinary setting], and in the middle, [unexpected thing]."
@@ -126,7 +127,7 @@ Facts:
 
 Visual cues (each "on" is ONE word copied exactly from that beat's text, where the cue appears):
 - shot per beat: "feature" (whole place fills the screen), "close" (zoomed in on detail), "wide" (zoomed out to see the surroundings), "space" (far away, only for the last beat).
-- overlay (at most one per beat, use 3 or 4 in total; labels in plain words, no abbreviations like MYA or KM2): {"type":"ruler","on":word,"label":"40 KM"} for the size (label must match feature_km), {"type":"rings","on":word} only if the place is round, {"type":"tag","on":word,"label":"SHORT WORDS?"} to pin a myth or name, {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"}.
+- overlay (at most one per beat, none in beat 1, use 3 or 4 in total; labels in plain words, no abbreviations like MYA or KM2): {"type":"ruler","on":word,"label":"40 KM"} for the size (label must match feature_km), {"type":"rings","on":word} only if the place is round, {"type":"tag","on":word,"label":"SHORT WORDS?"} to pin a myth or name, {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"}.
 - react (2 or 3 in the whole video, the robot's face reacts): {"expr":"surprised" or "happy","on":word}. Surprised on the most shocking fact, happy on the payoff or the last beat.
 - photo (use 1 or 2 if the list has photos that clearly show this place, never in beat 1 or the last beat): {"index":N,"label":"SHORT CAPTION","on":word} using a photo from the list.
 
@@ -147,7 +148,7 @@ Return JSON: {"problems": [str]}, one short line per false or invented fact. Emp
 JUDGE = """You pick the strongest opening line (hook) for a 45 second vertical video about a place seen on a satellite map.
 Score each candidate 0-2 on each point:
 1. Picture: names a concrete visual in the first 6 words.
-2. Tension: a number, scale or impossibility that makes you ask a question.
+2. Tension: a number, scale or impossibility that makes you ask a question, WITHOUT revealing the cause or answer (hook or title naming the cause scores 0 here).
 3. Speed and sound: 14 words or fewer, clear without seeing the screen, no hype phrases, no coordinate numbers.
 4. Truth and fit: every claim is in the article; the title adds a new fact and does not repeat the hook's words.
 Highest total wins; a tie goes to the shorter one.
@@ -170,8 +171,8 @@ def validate(s, photos):
             errs.append(f"beat {i + 1} is not written for the ear ({', '.join(bad)}): spell numbers and units as words")
     if sum(1 for b in bs if b.get("react")) < 2:
         errs.append("use 2 or 3 react cues")
-    if sum(1 for b in bs if b.get("overlay")) < 3:
-        errs.append("use 3 or 4 overlays")
+    if sum(1 for b in bs[1:] if b.get("overlay")) < 3:
+        errs.append("use 3 or 4 overlays, none in beat 1")
     if photos and not any(b.get("photo") for b in bs):
         errs.append("use at least 1 photo from the list")
     hooks = [h for h in s.get("hooks") or [] if isinstance(h, dict)]
@@ -232,7 +233,8 @@ def write(fact, photos):
                             f"{i}: \"{h['text']}\" / title: {h['title']}" for i, h in enumerate(hooks))}], temp=0.1)
             best = pick.get("best") if isinstance(pick.get("best"), int) and 0 <= pick["best"] < len(hooks) else 0
             b0 = s["beats"][0]
-            b0["text"], s["hook_title"] = hooks[best]["text"].strip(), hooks[best]["title"].strip()
+            b0["text"], s["hook_title"] = [re.sub(r"[‐-―]", "-", hooks[best][k]).translate(
+                {0x2018: "'", 0x2019: "'", 0x201c: '"', 0x201d: '"'}).strip() for k in ("text", "title")]
             toks = [re.sub(r"[^a-z0-9']", "", t.lower()) for t in b0["text"].split()]
             for k in ("overlay", "react", "photo"):              # cue na slove, ktore vo vitaznom hooku nie je, zahodit
                 if b0.get(k) and re.sub(r"[^a-z0-9']", "", str(b0[k].get("on", "")).lower()) not in toks:
@@ -401,7 +403,7 @@ def build(fact, s, photos):
         nb = {"text": b["text"], "cam": {"lat": lat, "lon": lon, "z": round(min(Z_MAX, z), 2)}}
         if i == 0:
             nb["globe"] = True
-        o = b.get("overlay")
+        o = b.get("overlay") if i else None                  # v 1. zabere leti kamera z globusu, overlay by bol mrnavy
         if o and o.get("type") == "ruler":
             nb["ruler"] = {"lat": lat, "lon": lon, "km": km, "label": o.get("label") or f"{km:g} KM", "on": o["on"]}
         elif o and o.get("type") == "rings":
