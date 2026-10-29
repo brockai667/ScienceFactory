@@ -44,10 +44,10 @@
  {
   "slug": "manicouagan_reservoir",
   "title": "Manicouagan Reservoir",
-  "lat": 51.1272,
-  "lon": -68.7472,
+  "lat": 51.3697,
+  "lon": -68.6587,
   "status": "written",
-  "located": false
+  "located": true
  },
  {
   "slug": "racetrack_playa",
