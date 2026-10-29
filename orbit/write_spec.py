@@ -113,12 +113,13 @@ Written for the ear (a voice reads it):
 
 Facts:
 - Use ONLY facts written in the article. Every number, date, name and claim must be in the article. No guessing, no rounding up to sound bigger.
+- Never invent a myth, rumor or what "some people" say, think or wonder. If the article has no myth, use a question instead.
 
 Visual cues (each "on" is ONE word copied exactly from that beat's text, where the cue appears):
 - shot per beat: "feature" (whole place fills the screen), "close" (zoomed in on detail), "wide" (zoomed out to see the surroundings), "space" (far away, only for the last beat).
-- overlay (optional, at most one per beat, use 2 to 4 in total): {"type":"ruler","on":word,"label":"40 KM"} for the size (label must match feature_km), {"type":"rings","on":word} only if the place is round, {"type":"tag","on":word,"label":"SHORT WORDS?"} to pin a myth or name, {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"}.
-- react (optional, 2 or 3 in the whole video): {"expr":"surprised" or "happy","on":word}.
-- photo (optional, at most 2 in the video, never in beat 1 or the last beat): {"index":N,"label":"SHORT CAPTION","on":word} using a photo from the list.
+- overlay (at most one per beat, use 3 or 4 in total; labels in plain words, no abbreviations like MYA or KM2): {"type":"ruler","on":word,"label":"40 KM"} for the size (label must match feature_km), {"type":"rings","on":word} only if the place is round, {"type":"tag","on":word,"label":"SHORT WORDS?"} to pin a myth or name, {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"}.
+- react (2 or 3 in the whole video, the robot's face reacts): {"expr":"surprised" or "happy","on":word}. Surprised on the most shocking fact, happy on the payoff or the last beat.
+- photo (use 1 or 2 if the list has photos that clearly show this place, never in beat 1 or the last beat): {"index":N,"label":"SHORT CAPTION","on":word} using a photo from the list.
 
 Return JSON: {"title": str, "feature_km": number (size of the main thing visible from above, in km, from the article),
 "beats": [{"text": str, "shot": str, "overlay": obj or null, "react": obj or null, "photo": obj or null}],
@@ -127,6 +128,7 @@ Return JSON: {"title": str, "feature_km": number (size of the main thing visible
 CHECK = """You are a strict fact checker for a short narrated video. Compare the concrete facts in the narration with the article.
 Flag only concrete facts that are wrong or missing from the article: numbers, sizes, dates, ages, names, causes, records, claims about what people believe.
 Numbers written as words and rounded with "about" or "almost" are fine if they match the article.
+Always flag any sentence about what people say, think, wonder, fear or believe (myths, rumors, theories) unless the article says it.
 Do NOT flag: telling viewers to type coordinates into a map, describing what it looks like from above, questions, the closing "Follow for more" line.
 Return JSON: {"problems": [str]}. Empty list if everything is supported."""
 
@@ -143,6 +145,12 @@ def validate(s, photos):
         bad = re.findall(r"[0-9]+[.,][0-9]+|[%~()²³]|\bkm\b|[0-9] ?m\b", b.get("text", ""))
         if bad:
             errs.append(f"beat {i + 1} is not written for the ear ({', '.join(bad)}): spell numbers and units as words")
+    if sum(1 for b in bs if b.get("react")) < 2:
+        errs.append("use 2 or 3 react cues")
+    if sum(1 for b in bs if b.get("overlay")) < 3:
+        errs.append("use 3 or 4 overlays")
+    if photos and not any(b.get("photo") for b in bs):
+        errs.append("use at least 1 photo from the list")
     if bs and bs[-1].get("text", "").strip() != CTA:
         errs.append("last beat must be exactly the CTA")
     try:
@@ -184,6 +192,77 @@ def write(fact, photos):
         msgs = msgs[:2] + [{"role": "assistant", "content": json.dumps(s)},   # len posledny navrh (Groq 8000 tok/min)
                            {"role": "user", "content": "Fix these problems and return the full JSON again:\n- " + "\n- ".join(errs)}]
     sys.exit("scenar neprešiel kontrolou ani na 4. pokus")
+
+
+# ---------------------------------------------------------------- dorovnanie suradnic (vizualny model)
+VISION = ("meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct")
+COLS = "ABCDEFGH"
+
+
+def snapshot(lat, lon, z, n):
+    """stvorcovy satelitny zaber 1080x1080 (sever hore) s mriezkou n x n, z = cela uroven."""
+    import cv2
+    import orbit_engine as E
+    tx0, ty0, tx1, ty1, *_ = E.level_window(lat, lon, z, z)
+    for ty in range(max(0, ty0), min(2 ** z - 1, ty1) + 1):
+        for tx in range(tx0, tx1 + 1):
+            E.fetch((z, tx % 2 ** z, ty))
+    im = E.render_level(lat, lon, z, z)[420:1500]
+    c = 1080 / n
+    for k in range(1, n):
+        cv2.line(im, (int(k * c), 0), (int(k * c), 1080), (255, 255, 255), 2)
+        cv2.line(im, (0, int(k * c)), (1080, int(k * c)), (255, 255, 255), 2)
+    for r in range(n):
+        for q in range(n):
+            cv2.putText(im, f"{COLS[q]}{r + 1}", (int(q * c) + 6, int(r * c) + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2)
+    return cv2.imencode(".jpg", cv2.resize(im, (768, 768)), [cv2.IMWRITE_JPEG_QUALITY, 85])[1].tobytes()
+
+
+def vision(prompt, jpg):
+    import base64
+    base = os.environ.get("MODELS_BASE_URL", "https://api.groq.com/openai/v1").rstrip("/")
+    url = "data:image/jpeg;base64," + base64.b64encode(jpg).decode()
+    for model in VISION:
+        for a in range(3):
+            try:
+                r = requests.post(base + "/chat/completions", headers={"Authorization": "Bearer " + os.environ["MODELS_TOKEN"]},
+                                  json={"model": model, "temperature": 0.1, "messages": [{"role": "user", "content": [
+                                      {"type": "text", "text": prompt}, {"type": "image_url", "image_url": {"url": url}}]}]},
+                                  timeout=120)
+                if r.status_code == 200:
+                    m = re.search(r"\{.*\}", r.json()["choices"][0]["message"]["content"], re.S)
+                    return json.loads(m.group(0)) if m else None
+                log(f"   vision {model} {r.status_code}")
+                if r.status_code in (400, 404):
+                    break
+            except (requests.RequestException, ValueError, KeyError) as e:
+                log(f"   vision {model} chyba: {e}")
+            time.sleep(10 * (a + 1))
+    return None
+
+
+def locate(fact, lat, lon, km):
+    """Wikipedia casto dava stred oblasti, nie utvaru. Dva prechody: siroky zaber 6x6, potom blizsi 8x8."""
+    import orbit_engine as E
+    zf = z_for(lat, km)
+    for z, n in ((int(math.floor(zf - 1.3)), 6), (int(math.floor(zf - 0.3)), 8)):
+        z = max(3, min(16, z))
+        prompt = (f"Satellite image, north is up, with a labeled {n}x{n} grid (columns {COLS[0]}-{COLS[n - 1]}, rows 1-{n}). "
+                  f"Find {fact['title']}: {fact['extract'][:300]}\nIt is about {km:g} km across; the image is about "
+                  f"{1080 * E.m_per_px(lat, z) / 1000:.0f} km wide. Which grid cell contains the CENTER of it? "
+                  'Answer only JSON: {"cell": "C4", "visible": true, "confidence": 0.0-1.0}. If you cannot see it, "visible": false.')
+        a = vision(prompt, snapshot(lat, lon, z, n))
+        log(f"   poloha z{z}: {a}")
+        cell = str((a or {}).get("cell", "")).upper().strip()
+        if not a or not a.get("visible") or float(a.get("confidence", 0)) < 0.5 or not re.fullmatch(f"[{COLS[:n]}][1-{n}]", cell):
+            continue
+        q, r = COLS.index(cell[0]), int(cell[1]) - 1
+        dx, dy = (q + 0.5) * 1080 / n - 540, (r + 0.5) * 1080 / n - 540     # px od stredu na urovni z
+        cx, cy = E.merc(lat, lon, z)
+        wz = 256 * 2 ** z
+        lon = (cx + dx) / wz * 360 - 180
+        lat = math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * (cy + dy) / wz))))
+    return round(lat, 4), round(lon, 4)
 
 
 # ---------------------------------------------------------------- spec pre engine
@@ -248,6 +327,11 @@ def main():
     photos = commons_photos(fact["title"], q["lat"], q["lon"])
     log(f"   fotky z Commons: {len(photos)}")
     s = write(fact, photos)
+    if not q.get("located"):
+        lat, lon = locate(fact, q["lat"], q["lon"], float(s["feature_km"]))
+        log(f"   stred utvaru: {lat}, {lon} (Wikipedia {q['lat']}, {q['lon']})")
+        fact["lat"], fact["lon"] = q["lat"], q["lon"] = lat, lon
+        q["located"] = True
     download(photos, slug, {b["photo"]["index"] for b in s["beats"] if b.get("photo")})
     spec = build(fact, s, photos)
     json.dump(spec, open(os.path.join(HERE, "specs", slug + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
