@@ -47,7 +47,7 @@
   "lat": 51.1272,
   "lon": -68.7472,
   "status": "written",
-  "located": true
+  "located": false
  },
  {
   "slug": "racetrack_playa",

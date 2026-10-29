@@ -218,11 +218,27 @@ def snapshot(lat, lon, z, n):
     return cv2.imencode(".jpg", cv2.resize(im, (768, 768)), [cv2.IMWRITE_JPEG_QUALITY, 85])[1].tobytes()
 
 
+_VM = []
+def vision_models(base):
+    """Groq meni ponuku modelov: vezmi pevny zoznam + vsetko, co v /models vyzera ako model s obrazkami."""
+    if not _VM:
+        ids = []
+        try:
+            r = requests.get(base + "/models", headers={"Authorization": "Bearer " + os.environ["MODELS_TOKEN"]}, timeout=30)
+            ids = [m["id"] for m in r.json().get("data", [])]
+        except (requests.RequestException, ValueError, KeyError):
+            pass
+        found = [i for i in ids if re.search(r"llama-4|scout|maverick|vision|[-_]vl|gemma-3|pixtral", i, re.I)]
+        log(f"   vision kandidati: {found or 'ziadny'} (z {len(ids)} modelov)")
+        _VM.extend(dict.fromkeys([v for v in VISION if v in ids] + found))
+    return _VM
+
+
 def vision(prompt, jpg):
     import base64
     base = os.environ.get("MODELS_BASE_URL", "https://api.groq.com/openai/v1").rstrip("/")
     url = "data:image/jpeg;base64," + base64.b64encode(jpg).decode()
-    for model in VISION:
+    for model in vision_models(base):
         for a in range(3):
             try:
                 r = requests.post(base + "/chat/completions", headers={"Authorization": "Bearer " + os.environ["MODELS_TOKEN"]},
@@ -245,6 +261,7 @@ def locate(fact, lat, lon, km):
     """Wikipedia casto dava stred oblasti, nie utvaru. Dva prechody: siroky zaber 6x6, potom blizsi 8x8."""
     import orbit_engine as E
     zf = z_for(lat, km)
+    ok = False
     for z, n in ((int(math.floor(zf - 1.3)), 6), (int(math.floor(zf - 0.3)), 8)):
         z = max(3, min(16, z))
         prompt = (f"Satellite image, north is up, with a labeled {n}x{n} grid (columns {COLS[0]}-{COLS[n - 1]}, rows 1-{n}). "
@@ -262,7 +279,8 @@ def locate(fact, lat, lon, km):
         wz = 256 * 2 ** z
         lon = (cx + dx) / wz * 360 - 180
         lat = math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * (cy + dy) / wz))))
-    return round(lat, 4), round(lon, 4)
+        ok = True
+    return round(lat, 4), round(lon, 4), ok
 
 
 # ---------------------------------------------------------------- spec pre engine
@@ -328,10 +346,10 @@ def main():
     log(f"   fotky z Commons: {len(photos)}")
     s = write(fact, photos)
     if not q.get("located"):
-        lat, lon = locate(fact, q["lat"], q["lon"], float(s["feature_km"]))
-        log(f"   stred utvaru: {lat}, {lon} (Wikipedia {q['lat']}, {q['lon']})")
+        lat, lon, ok = locate(fact, q["lat"], q["lon"], float(s["feature_km"]))
+        log(f"   stred utvaru: {lat}, {lon} (Wikipedia {q['lat']}, {q['lon']}){'' if ok else ' - NEDOROVNANE'}")
         fact["lat"], fact["lon"] = q["lat"], q["lon"] = lat, lon
-        q["located"] = True
+        q["located"] = ok
     download(photos, slug, {b["photo"]["index"] for b in s["beats"] if b.get("photo")})
     spec = build(fact, s, photos)
     json.dump(spec, open(os.path.join(HERE, "specs", slug + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
