@@ -11,6 +11,10 @@ on:
         description: "Aj vyrenderovat video (inak len scenar)"
         type: boolean
         default: true
+      rebuild:
+        description: "Nepisat znova: vziat ulozeny navrh (orbit/drafts) a len prepocitat kameru + render"
+        type: boolean
+        default: false
 
 permissions:
   contents: write          # ulozi scenar (orbit/specs), fotky a stav fronty
@@ -59,6 +63,7 @@ jobs:
           MODELS_BASE_URL: https://api.groq.com/openai/v1
           MODELS_MODEL: openai/gpt-oss-120b
           MODELS_FALLBACK: openai/gpt-oss-20b
+          ORBIT_REBUILD: ${{ github.event.inputs.rebuild == 'true' && '1' || '0' }}
         run: python orbit/write_spec.py "${{ github.event.inputs.topic }}"
 
       - name: Render

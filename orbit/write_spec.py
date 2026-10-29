@@ -344,9 +344,12 @@ def build(fact, s, photos):
             shot = "space"
         elif shot == "space" or (shot == "wide" and (wide_used or i == 0)):
             shot = "feature"                                 # dalekych zaberov max 1, inak kamera "pumpuje"
+        measured = (b.get("overlay") or {}).get("type") in ("ruler", "rings")
+        if measured:
+            shot = "feature"                                 # pravitko/prstence sedia len na celom utvare
         wide_used |= shot == "wide"
         z = zs[shot]
-        if shot == "feature":
+        if shot == "feature" and not measured:
             z += min(0.3, 0.1 * nfeat); nfeat += 1           # pomaly najazd, nie skoky
         nb = {"text": b["text"], "cam": {"lat": lat, "lon": lon, "z": round(min(Z_MAX, z), 2)}}
         if i == 0:
@@ -355,7 +358,7 @@ def build(fact, s, photos):
         if o and o.get("type") == "ruler":
             nb["ruler"] = {"lat": lat, "lon": lon, "km": km, "label": o.get("label") or f"{km:g} KM", "on": o["on"]}
         elif o and o.get("type") == "rings":
-            nb["rings"] = {"lat": lat, "lon": lon, "km": [round(km * f, 2) for f in (0.13, 0.26, 0.39)], "on": o["on"]}
+            nb["rings"] = {"lat": lat, "lon": lon, "km": [round(km / 2 * f, 2) for f in (0.3, 0.6, 0.9)], "on": o["on"]}
         elif o and o.get("type") == "tag":
             nb["tag"] = {"lat": lat, "lon": lon, "label": o.get("label", "")[:18].upper(), "on": o["on"]}
         elif o and o.get("type") == "stamp":
@@ -389,9 +392,15 @@ def main():
     fact = json.load(open(os.path.join(TOP, "facts", slug + ".json"), encoding="utf-8"))
     fact["lat"], fact["lon"] = q["lat"], q["lon"]          # queue ma aj rucne opravene suradnice
     log(f"tema: {fact['title']} ({q['lat']:.4f}, {q['lon']:.4f})")
-    photos = commons_photos(fact["title"], q["lat"], q["lon"])
-    log(f"   fotky z Commons: {len(photos)}")
-    s = write(fact, photos)
+    dp = os.path.join(HERE, "drafts", slug + ".json")
+    if os.environ.get("ORBIT_REBUILD") == "1" and os.path.exists(dp):   # len prepocitat kameru/overlaye, text ostava
+        d = json.load(open(dp, encoding="utf-8"))
+        s, photos = d["draft"], d["photos"]
+        log("   prerender z ulozeneho navrhu")
+    else:
+        photos = commons_photos(fact["title"], q["lat"], q["lon"])
+        log(f"   fotky z Commons: {len(photos)}")
+        s = write(fact, photos)
     if not q.get("located"):
         lat, lon, ok = locate_osm(fact["title"], q["lat"], q["lon"])
         if not ok:
