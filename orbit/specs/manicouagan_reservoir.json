@@ -1,5 +1,5 @@
 {
- "title": "Manicouagan Reservoir – The Eye of Quebec",
+ "title": "MANICOUAGAN EYE",
  "coords": "51.3697 N, 68.6587 W",
  "voice": "am_michael",
  "speed": 1.0,
@@ -12,38 +12,23 @@
  "feature_km": 70.0,
  "beats": [
   {
-   "text": "Type these coordinates into a satellite map, and you'll find something strange in central Quebec.",
+   "text": "This circular lake is seventy kilometers wide, and a five‑kilometer meteor created it.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
     "z": 9.89
    },
-   "globe": true
-  },
-  {
-   "text": "A giant circular lake, about seventy kilometers across, looks like a huge eye from space.",
-   "cam": {
-    "lat": 51.3697,
-    "lon": -68.6587,
-    "z": 9.89
-   },
+   "globe": true,
    "ruler": {
     "lat": 51.3697,
     "lon": -68.6587,
     "km": 70.0,
     "label": "70 KM",
     "on": "seventy"
-   },
-   "photo": {
-    "file": "photos/manicouagan_reservoir/p0.jpg",
-    "label": "ANNULAR LAKE FROM SPAC",
-    "credit": "NASA",
-    "on": "circular",
-    "dur": 2.8
    }
   },
   {
-   "text": "The whole crater spans roughly one hundred kilometers, with the inner water ring at seventy kilometers.",
+   "text": "From orbit it looks like a bright blue eye surrounded by dark rings.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -57,67 +42,91 @@
      21.0,
      31.5
     ],
-    "on": "ring"
-   }
-  },
-  {
-   "text": "What could have carved such a massive ring so perfectly?",
-   "cam": {
-    "lat": 51.3697,
-    "lon": -68.6587,
-    "z": 9.99
-   }
-  },
-  {
-   "text": "A meteorite struck here about two hundred fourteen million years ago.",
-   "cam": {
-    "lat": 51.3697,
-    "lon": -68.6587,
-    "z": 10.09
+    "on": "rings"
    },
-   "stamp": {
-    "label": "214 MILLION YEARS",
-    "on": "years"
-   },
-   "react": {
-    "expr": "surprised",
-    "on": "meteorite",
-    "dur": 1.4
+   "photo": {
+    "file": "photos/manicouagan_reservoir/p0.jpg",
+    "label": "MANICOUAGAN RESERVOIR",
+    "credit": "NASA",
+    "on": "eye",
+    "dur": 2.8
    }
   },
   {
-   "text": "The impactor was about five kilometers in diameter, then the walls collapsed into a multi-ring basin.",
+   "text": "The inner water ring spans seventy kilometers, while the whole crater reaches about one hundred kilometers.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
-    "z": 10.19
+    "z": 10.79
    }
   },
   {
-   "text": "Later the basin filled with water, forming the annular lake that hides René-Levasseur Island.",
+   "text": "So what caused this perfect circular lake to form?",
+   "cam": {
+    "lat": 51.3697,
+    "lon": -68.6587,
+    "z": 8.09
+   }
+  },
+  {
+   "text": "A five-kilometer meteor slammed here two hundred fourteen million years ago.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
     "z": 10.79
    },
-   "photo": {
-    "file": "photos/manicouagan_reservoir/p1.jpg",
-    "label": "RENÉ‑LEVASSEUR ISLAND ",
-    "credit": "J-A Béland, CC BY-SA 4.0",
-    "on": "Island",
-    "dur": 2.8
+   "stamp": {
+    "label": "214 MY",
+    "on": "two"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "meteor",
+    "dur": 1.4
    }
   },
   {
-   "text": "So that eye you saw is really a giant ancient impact scar.",
+   "text": "The impact carved a huge crater, then the rim filled with water, creating the annular lake.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
-    "z": 10.19
+    "z": 9.89
+   },
+   "rings": {
+    "lat": 51.3697,
+    "lon": -68.6587,
+    "km": [
+     10.5,
+     21.0,
+     31.5
+    ],
+    "on": "annular"
+   }
+  },
+  {
+   "text": "Inside lies René-Levasseur Island, rising almost a kilometer high with Mount Babel on its summit.",
+   "cam": {
+    "lat": 51.3697,
+    "lon": -68.6587,
+    "z": 10.79
+   },
+   "tag": {
+    "lat": 51.3697,
+    "lon": -68.6587,
+    "label": "ISLAND",
+    "on": "René‑Levasseur"
+   }
+  },
+  {
+   "text": "That bright eye you saw is really a scar from a giant space rock.",
+   "cam": {
+    "lat": 51.3697,
+    "lon": -68.6587,
+    "z": 9.89
    },
    "react": {
     "expr": "happy",
-    "on": "scar",
+    "on": "eye",
     "dur": 1.4
    }
   },
@@ -130,12 +139,13 @@
    }
   }
  ],
- "description": "Manicouagan Reservoir is an annular lake in central Quebec covering about one thousand nine hundred forty two square kilometers. It formed from a meteorite impact two hundred fourteen million years ago, leaving a crater about one hundred kilometers across. Imagery: Esri, Maxar, Earthstar Geographics. Photos: J-A Béland, CC BY-SA 4.0; NASA, Wikimedia Commons. Source: Wikipedia.",
+ "hook": "IMPACT ORIGIN",
+ "description": "Manicouagan Reservoir is a seventy‑kilometer‑wide annular lake formed by a five‑kilometer meteor impact two hundred fourteen million years ago. The crater’s outer ring spans about one hundred kilometers and encloses René‑Levasseur Island, topped by Mount Babel. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA, Wikimedia Commons. Source: Wikipedia.",
  "hashtags": [
   "#Manicouagan",
   "#ImpactCrater",
-  "#SpaceViews",
+  "#SatelliteView",
   "#Quebec",
-  "#SatelliteMap"
+  "#SpaceGeology"
  ]
 }
