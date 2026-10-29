@@ -86,8 +86,44 @@ def get_tile(z, x, y):
         im = cv2.imread(p) if os.path.exists(p) and os.path.getsize(p) > 0 else None
         if len(_tiles) > 3000:
             _tiles.clear()
-        _tiles[k] = im
+        _tiles[k] = grade_tile(im)
     return _tiles[k]
+
+
+# farebna korekcia: satelit byva tmavy (cierna voda, tmavy les) -> jedna LUT pre cele video,
+# aplikovana na dlazdicu pri nacitani (lacne, rovnake vo vsetkych snimkoch, ziadne svy medzi dlazdicami)
+GRADE = {}
+def grade_tile(im):
+    if im is None or "lut" not in GRADE:
+        return im
+    lab = cv2.cvtColor(im, cv2.COLOR_BGR2LAB)
+    lab[..., 0] = cv2.LUT(lab[..., 0], GRADE["lut"])
+    lab = lab.astype(np.float32)
+    lab[..., 1:] = (lab[..., 1:] - 128) * GRADE["sat"] + 128
+    if GRADE["deep"] > 0:                                     # takmer cierna voda -> tmavomodra (nie diera)
+        w = np.clip(1 - lab[..., 0] / 50, 0, 1) ** 1.5 * GRADE["deep"]
+        lab[..., 0] += 22 * w; lab[..., 2] -= 20 * w; lab[..., 1] += 2 * w
+    return cv2.cvtColor(np.clip(lab + 0.5, 0, 255).astype(np.uint8), cv2.COLOR_LAB2BGR)
+
+
+def setup_grade(cams):
+    GRADE.clear(); _tiles.clear()
+    idx = [i for i in range(len(cams)) if i / FPS >= GLOBE_T]
+    ls = []
+    for i in idx[::max(1, len(idx) // 10)]:
+        im = np.clip(render_flat(*cams[i]), 0, 255).astype(np.uint8)[::4, ::4]
+        ls.append(cv2.cvtColor(im, cv2.COLOR_BGR2LAB)[..., 0])
+    m = float(np.mean(ls)) / 255 if ls else 0.42
+    g = min(1.0, max(0.55, math.log(0.42) / math.log(min(0.95, max(m, 0.05)))))   # svetle puste = bez zmeny
+    x = np.arange(256) / 255.0
+    y = x ** g
+    k = 0.22 * (1 - g) / 0.45 + 0.08                          # jemna S-krivka (kontrast), konce drzi
+    y = y - k * np.sin(2 * math.pi * y) / (2 * math.pi)
+    GRADE["lut"] = np.clip(y * 255 + 0.5, 0, 255).astype(np.uint8)
+    GRADE["sat"] = 1.08 + 0.22 * (1 - g) / 0.45
+    GRADE["deep"] = (1 - g) / 0.45
+    _tiles.clear()
+    print(f"   grade: L {m:.2f} -> gamma {g:.2f}, sat {GRADE['sat']:.2f}")
 
 
 def level_window(lat, lon, z, L):
@@ -243,6 +279,47 @@ def ass_time(t):
     return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
 
 
+NUMW = set("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen "
+           "seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand "
+           "million billion trillion".split())
+UNITW = set("kilometers kilometres kilometer kilometre km meters metres meter metre m miles mile feet foot yards "
+            "centimeters millimeters inches years year degrees degree percent tons tonnes kilograms kg hectares acres "
+            "lightyears people times days hours minutes seconds celsius fahrenheit kmh mph".split())
+
+
+def is_num(w):
+    p = re.sub(r"[^a-z0-9\-]", "", w["t"].lower()).split("-")[0]
+    return p.isdigit() or p in NUMW
+
+
+def cap_units(words):
+    """Slova do nedelitelnych jednotiek: cisla slovom (two hundred fourteen million) + nasledujuca jednotka."""
+    stop = lambda w: re.search(r"[.,?!;:]$", w["t"])
+    same = lambda i, j: j < len(words) and words[j]["b"] is words[i]["b"]
+    out, i = [], 0
+    while i < len(words):
+        j = i
+        if is_num(words[i]):
+            while same(i, j + 1) and not stop(words[j]) and (is_num(words[j + 1]) or (
+                    words[j + 1]["k"] in ("and", "point") and same(i, j + 2) and is_num(words[j + 2]))):
+                j += 1
+            k = j
+            if not stop(words[k]) and same(i, k + 1):
+                if words[k + 1]["k"] in ("cubic", "square") and not stop(words[k + 1]) and same(i, k + 2) \
+                        and words[k + 2]["k"] in UNITW:
+                    k += 2
+                elif words[k + 1]["k"] in UNITW:
+                    k += 1
+            j = k
+        u = words[i:j + 1]
+        while len(u) > 5:                        # dlhe cislo: rez za thousand/million/billion
+            c = max([a + 1 for a in range(4) if u[a]["k"] in ("thousand", "million", "billion")] or [5])
+            out.append(u[:c]); u = u[c:]
+        out.append(u)
+        i = j + 1
+    return out
+
+
 def build_ass(words, keys, work):
     # titulky nad Orbim (ako bublina, hovori on): spodok tesne nad antenou, zarovnane vlavo od x=60
     st = "Style: C,Poppins SemiBold,94,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,7,2,1,60,60,0,1"
@@ -250,10 +327,11 @@ def build_ass(words, keys, work):
              "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
              st, "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"]
     chunks, cur = [], []
-    for w in words:
-        if cur and (len(cur) == 3 or cur[-1]["b"] is not w["b"] or re.search(r"[.,?!]$", cur[-1]["t"])):
+    for u in cap_units(words):                   # max 3 slova; cislo slovom (+ jednotka) je nedelitelne, az 5 slov
+        mx = 4 if len(cur) == 1 and len(u) > 1 else 3          # osamele "about" sa prilepi ku kratkemu cislu
+        if cur and (len(cur) + len(u) > mx or cur[-1]["b"] is not u[0]["b"] or re.search(r"[.,?!]$", cur[-1]["t"])):
             chunks.append(cur); cur = []
-        cur.append(w)
+        cur += u
     if cur:
         chunks.append(cur)
     for i, ch in enumerate(chunks):
@@ -382,6 +460,10 @@ def draw_overlays(fr, t, cam, spec, beats, words):
         k = int(len(s) * min(1.0, max(0.0, (t - 0.15) / 1.25)))
         a = 1.0 if t < b0["t1"] - 0.1 else max(0.0, 1 - (t - b0["t1"] + 0.1) / 0.4)
         paste_rgba(fr, search_bar(s[:k], (int(t * 2.2) % 2 == 0) or k < len(s)), 60, 130, a)
+        if spec.get("series_no") is not None:                 # odznak serie nad pravym koncom vyhladavaca
+            bd = badge(int(spec["series_no"]))
+            paste_rgba(fr, bd, 60 + 955 - (bd.shape[1] - 8), 130 + 8 - 12 - (bd.shape[0] - 8),
+                       a * ease(min(1.0, max(0.0, (t - 0.2) / 0.3))))
         # titulok hooku: velky text od prvej sekundy, aby bolo hned jasne, preco pozerat
         if spec.get("hook"):
             hw = spec["hook"].split()
@@ -434,6 +516,99 @@ def draw_overlays(fr, t, cam, spec, beats, words):
                 u = ease((t - ts) / 0.3)
                 lab = text_rgba(r["label"], 70, fill=(255, 255, 255, 255), box=(0, 0, 0, 170))
                 paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 330 - int(30 * (1 - u)), u)
+        if "scale" in b and b["scale"].get("poly_km") and t < b["t1"]:
+            # porovnanie velkosti: obrys mesta/krajiny v skutocnej mierke, vycentrovany na miesto
+            r = b["scale"]; ts = word_at(words, b, r.get("on"), 0.4)
+            if t >= ts:
+                st = spec.get("start") or b["cam"]
+                x0, y0 = screen_xy(st["lat"], st["lon"], cam); s = 1000 / m_per_px(st["lat"], cam[2])
+                pts = np.array([[x0 + p[0] * s, y0 - p[1] * s] for p in r["poly_km"]], np.float32)
+                part = poly_part(pts, ease((t - ts) / 0.8))
+                soft_shadow(fr, part, 12, 0.55)
+                cv2.polylines(fr, [np.round(part * 4).astype(np.int32)], False, YEL, 6, cv2.LINE_AA, 2)
+                u = (t - ts - 0.5) / 0.3
+                if u > 0 and r.get("name"):
+                    lab = text_rgba(r["name"], 52, fill=(20, 20, 20, 255), box=(255, 214, 40, 240), pad=14)
+                    ly = max(240, int(pts[:, 1].min() - (lab.shape[0] - 8) / 2))
+                    paste_rgba(fr, lab, int(pts[:, 0].mean() - lab.shape[1] / 2), ly, min(1.0, u))
+
+
+def badge(no):
+    k = ("badge", no)
+    if k not in _sb:
+        _sb[k] = text_rgba(f"ORBIT #{no:03d}", 34, fill=(255, 214, 40, 255), box=(0, 0, 0, 190), pad=12)
+    return _sb[k]
+
+
+def poly_part(pts, u):
+    """Uzavrety obrys nakresleny do podielu u (0..1) obvodu - animacia kreslenia ciary."""
+    pts = np.vstack([pts, pts[:1]])
+    seg = np.hypot(*np.diff(pts, axis=0).T); cum = np.concatenate([[0], np.cumsum(seg)])
+    L = cum[-1] * min(1.0, max(0.0, u))
+    i = int(np.searchsorted(cum, L, side="right")) - 1
+    if i >= len(seg):
+        return pts
+    f = (L - cum[i]) / max(seg[i], 1e-6)
+    return np.vstack([pts[:i + 1], pts[i] + (pts[i + 1] - pts[i]) * f])
+
+
+def roi(pts, pad):
+    x0, y0 = np.floor(pts.min(0) - pad).astype(int); x1, y1 = np.ceil(pts.max(0) + pad).astype(int)
+    x0, y0, x1, y1 = max(0, x0), max(0, y0), min(W, x1), min(H, y1)
+    return (x0, y0, x1, y1) if x1 > x0 + 2 and y1 > y0 + 2 else None
+
+
+def soft_shadow(fr, pts, thick, strength):
+    bb = roi(pts, 30)
+    if bb is None or len(pts) < 2:
+        return
+    x0, y0, x1, y1 = bb
+    lay = np.zeros((y1 - y0, x1 - x0), np.float32)
+    cv2.polylines(lay, [np.round((pts + (2 - x0, 4 - y0)) * 4).astype(np.int32)], False, 1.0, thick, cv2.LINE_AA, 2)
+    lay = cv2.GaussianBlur(lay, (0, 0), 4)
+    fr[y0:y1, x0:x1] *= (1 - strength * np.clip(lay, 0, 1))[..., None]
+
+
+def feature_px(spec, cam):
+    """Obrys samotneho miesta (spec["shape"] = [[lat, lon], ...]) v pixeloch; inak kruh feature_km/2."""
+    if spec.get("shape") and len(spec["shape"]) >= 3:
+        return np.array([screen_xy(la, lo, cam) for la, lo in spec["shape"]], np.float32)
+    st = spec.get("start") or spec["beats"][0]["cam"]
+    x0, y0 = screen_xy(st["lat"], st["lon"], cam)
+    R = float(spec.get("feature_km") or 20) / 2 * 1.05 * 1000 / m_per_px(st["lat"], cam[2])
+    a = np.linspace(0, 2 * math.pi, 72, endpoint=False) - math.pi / 2
+    return np.stack([x0 + R * np.cos(a), y0 + R * np.sin(a)], 1).astype(np.float32)
+
+
+def draw_highlight(fr, t, cam, spec, beats, words):
+    # zvyraznenie miesta: okolie stmavene na ~45 % s makkym okrajom + svietiaci azurovy obrys
+    for b in beats:
+        r = b.get("highlight")
+        if not r or not (b["t0"] - 0.1 <= t < b["t1"]):
+            continue
+        ts = word_at(words, b, r.get("on"), 0.3)
+        if t < ts:
+            continue
+        al = max(0.0, min(1.0, (t - ts) / 0.3, (b["t1"] - t) / 0.3))
+        pts = feature_px(spec, cam)
+        c = pts.mean(0); pp = c + (pts - c) * 1.06
+        q = 4
+        m = np.zeros((H // q, W // q), np.uint8)
+        cv2.fillPoly(m, [np.round(pp / q * 16).astype(np.int32)], 255, cv2.LINE_AA, 4)
+        m = cv2.GaussianBlur(m.astype(np.float32) / 255, (0, 0), 5)
+        m = cv2.resize(m, (W, H), interpolation=cv2.INTER_LINEAR)
+        fr *= (1 - 0.55 * al * (1 - m))[..., None]
+        part = poly_part(pts, ease((t - ts) / 1.0))
+        bb = roi(part, 40)
+        if bb is None:
+            continue
+        x0, y0, x1, y1 = bb
+        lay = np.zeros((y1 - y0, x1 - x0, 3), np.float32)
+        pi = [np.round((part - (x0, y0)) * 4).astype(np.int32)]
+        cv2.polylines(lay, pi, False, CYAN, 12, cv2.LINE_AA, 2)
+        lay = cv2.GaussianBlur(lay, (0, 0), 6) * 1.3
+        cv2.polylines(lay, pi, False, (255, 250, 215), 4, cv2.LINE_AA, 2)
+        fr[y0:y1, x0:x1] += lay * al
 
 
 # ---------------------------------------------------------------- Orbi (rozpravac) + foto karty
@@ -469,6 +644,11 @@ def prep_orbi(spec, beats, words, work):
             if k in b:
                 t0 = word_at(words, b, b[k].get("on"), 0.4)
                 ev.append((t0, t0 + 1.0, "point", (b[k]["lat"], b[k]["lon"])))
+        st = spec.get("start") or b["cam"]
+        for k in ("scale", "highlight"):                     # luc na stred miesta
+            if k in b:
+                t0 = word_at(words, b, b[k].get("on"), 0.4)
+                ev.append((t0, t0 + 1.0, "point", (st["lat"], st["lon"])))
     ORBI["events"] = ev
     cards = []
     for b in beats:
@@ -583,24 +763,45 @@ def sfx_whoosh(dur, rng):
     return out / (np.abs(out).max() + 1e-9) * env * 0.16
 
 
-def mix_audio(spec, voice, total, beats, work):
+def mix_audio(spec, voice, total, beats, work, words=()):
+    import sfx
     rng = np.random.default_rng(5)
     n = int(total * SR)
     v = np.pad(voice.astype(np.float64), (0, max(0, n - len(voice))))[:n]
     v = v / (np.sqrt(np.mean(v[np.abs(v) > 0.01] ** 2)) + 1e-9) * 0.16
-    fx = np.zeros(n)
+    fx = np.zeros(n); ev = np.zeros(n)                      # ev = efekty k overlayom (podla nich sa duckuje hudba)
     s = spec["coords"]
     for i in range(len(s)):
         t = 0.15 + 1.25 * i / len(s)
         c = sfx_click(rng) * rng.uniform(0.6, 1.0); a = int(t * SR); fx[a:a + len(c)] += c[:max(0, n - a)]
-    def put(t, x):
-        a = int(t * SR); fx[a:a + len(x)] += x[:max(0, n - a)]
-    put(GLOBE_T - 1.0, sfx_whoosh(1.8, rng) * 1.2)
+    def put(t, x, arr=fx):
+        a = max(0, int(t * SR)); arr[a:a + len(x)] += x[:max(0, n - a)]
+    vp = float(np.percentile(np.abs(v), 99.9))              # spicka hlasu; efekty -18 az -12 dB pod nou
+    db = lambda d: vp * 10 ** (d / 20)
+    put(GLOBE_T - 1.0, sfx_whoosh(1.8, rng) * 1.2)          # ponor z glóbusu
     prev = beats[0]["cam"]
     for b in beats[1:]:
-        if abs(b["cam"]["z"] - prev["z"]) > 1.2:
+        c = b["cam"]
+        px = math.hypot(*np.subtract(merc(c["lat"], c["lon"], prev["z"]), merc(prev["lat"], prev["lon"], prev["z"])))
+        if abs(c["z"] - prev["z"]) > 1.2 or px > 0.6 * W:   # velky zoom alebo presun kamery
             put(b["t0"] - 0.35, sfx_whoosh(1.2, rng))
-        prev = b["cam"]
+        prev = c
+    stamps = []
+    for b in beats:
+        for k, d0, f0 in (("ruler", 0.4, 900), ("rings", 0.3, 700), ("tag", 0.5, 820), ("stamp", 0.5, 620),
+                          ("scale", 0.4, 760), ("highlight", 0.3, 980), ("photo", 0.3, 860)):
+            if k in b:
+                ts = word_at(words, b, b[k].get("on"), d0)
+                put(ts, sfx.pop(SR, rng, f0=f0 * rng.uniform(0.95, 1.05)) * db(-14), ev)
+                if k in ("ruler", "scale", "highlight"):
+                    put(ts + 0.09, sfx.tick(SR, rng) * db(-20), ev)
+                if k == "stamp":
+                    stamps.append(ts)
+                    put(ts - 0.1 - 0.9, sfx.riser(SR, rng, 0.9) * db(-13), ev)
+        r = b.get("react")
+        if r:
+            put(word_at(words, b, r.get("on"), 0.3) + 0.05, sfx.chirp(SR, rng) * db(-15), ev)
+    fx += ev
     msrc = os.path.join(ROOT, "assets", "music", spec.get("music", "cine_616.mp3"))
     subprocess.run([FF, "-y", "-i", msrc, "-t", str(total + 3), "-ar", str(SR), "-ac", "1", "m.wav"],
                    cwd=work, check=True, capture_output=True)
@@ -608,6 +809,13 @@ def mix_audio(spec, voice, total, beats, work):
     m = np.pad(m, (0, max(0, n - len(m))))[:n]
     m = m / (np.sqrt(np.mean(m ** 2)) + 1e-9) * 0.03
     fo = int(1.2 * SR); m[-fo:] *= np.linspace(1, 0, fo)
+    k = int(0.08 * SR)                                      # hudba mierne ustupi efektom
+    g = 1 - 0.35 * np.clip(np.convolve(np.abs(ev), np.ones(k) / k, "same") / (db(-14) * 0.25), 0, 1)
+    for ts in stamps:                                       # 0,3 s ticho hudby pred peciatkou
+        a, b2 = int((ts - 0.3) * SR), int(ts * SR)
+        g[max(0, a):max(0, b2)] *= 0.3
+    g = np.convolve(g, np.ones(int(0.04 * SR)) / int(0.04 * SR), "same")
+    m = m * g
     mix = np.tanh((v + m + fx) * 1.5) / 1.5
     sf.write(os.path.join(work, "mix.wav"), mix.astype(np.float32), SR)
     # TikTok verzia bez hudby: hudbu a jej hlasitost vyberie v appke ten, kto nahrava (user 29.10.)
@@ -655,6 +863,7 @@ def render(spec, beats, words, cams, total, work, out):
         fr = fr * vig
         ocam = cam if t >= GLOBE_T - 0.3 else (globe_params(spec, t)[0], globe_params(spec, t)[1],
                                                math.log2(2 * math.pi * globe_params(spec, t)[2] / 256))
+        draw_highlight(fr, t, ocam, spec, beats, words)
         draw_overlays(fr, t, ocam, spec, beats, words)
         draw_cards(fr, t)
         draw_orbi(fr, t, ocam)
@@ -683,13 +892,13 @@ def main():
     print("2) casy slov"); words = word_times(beats, work)
     keys = set()
     for b in beats:
-        for k in ("ruler", "rings", "tag", "stamp"):
+        for k in ("ruler", "rings", "tag", "stamp", "scale", "highlight"):
             if k in b and b[k].get("on"):
                 keys.add(re.sub(r"[^a-z0-9]", "", b[k]["on"].lower()))
     build_ass(words, keys, work)
     prep_orbi(spec, beats, words, work)
-    print("3) kamera + dlazdice"); cams = camera_track(spec, beats, total); prefetch(spec, cams)
-    print("4) zvuk"); mix_audio(spec, voice, total, beats, work)
+    print("3) kamera + dlazdice"); cams = camera_track(spec, beats, total); prefetch(spec, cams); setup_grade(cams)
+    print("4) zvuk"); mix_audio(spec, voice, total, beats, work, words)
     print("5) render"); render(spec, beats, words, cams, total, work, out)
     out_tt = os.path.splitext(out)[0] + "_tiktok.mp4"          # rovnaky obraz, zvuk bez hudby
     subprocess.run([FF, "-y", "-i", out, "-i", "mix_tt.wav", "-map", "0:v", "-map", "1:a", "-c:v", "copy",
