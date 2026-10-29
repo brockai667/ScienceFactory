@@ -125,12 +125,14 @@ Return JSON: {"title": str, "feature_km": number (size of the main thing visible
 "beats": [{"text": str, "shot": str, "overlay": obj or null, "react": obj or null, "photo": obj or null}],
 "description": str (2 sentences, facts only), "hashtags": [5 strings starting with #]}""" % CTA
 
-CHECK = """You are a strict fact checker for a short narrated video. Compare the concrete facts in the narration with the article.
-Flag only concrete facts that are wrong or missing from the article: numbers, sizes, dates, ages, names, causes, records, claims about what people believe.
-Numbers written as words and rounded with "about" or "almost" are fine if they match the article.
-Always flag any sentence about what people say, think, wonder, fear or believe (myths, rumors, theories) unless the article says it.
-Do NOT flag: telling viewers to type coordinates into a map, describing what it looks like from above, questions, the closing "Follow for more" line.
-Return JSON: {"problems": [str]}. Empty list if everything is supported."""
+CHECK = """You are a fact checker for a short narrated video about a place seen on a satellite map.
+Flag a sentence only if it states a FACT that is false or not in the article:
+- a number, size, height, depth, date or age that differs from the article (rounding with "about"/"almost" is fine),
+- a name, nickname, cause, record or event the article does not give,
+- anything about what people or scientists say, call it, think, wonder or believe, unless the article says it.
+Never flag: describing how it looks on the satellite image (shapes, colors, "looks like an eye", "from space"), telling viewers to type coordinates,
+questions, simple plain-language wording of what the article says, the closing "Follow for more" line.
+Return JSON: {"problems": [str]}, one short line per false or invented fact. Empty list if there are none."""
 
 
 def validate(s, photos):
@@ -174,12 +176,23 @@ def write(fact, photos):
     plist = "\n".join(f"{i}: {p['desc']}" for i, p in enumerate(photos)) or "(no photos)"
     user = f"Place: {fact['title']}\nCoordinates: {fact['lat']:.4f}, {fact['lon']:.4f}\n\nPhotos:\n{plist}\n\nArticle:\n{fact['extract']}"
     msgs = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
-    for att in range(4):
+    for att in range(6):
         s = llm(msgs)
         for b in s.get("beats") or []:                       # typograficke znaky -> ASCII (TTS ich cita zle)
             b["text"] = re.sub(r"[‐-―]", "-", b.get("text", "")).translate(
                 {0x2018: "'", 0x2019: "'", 0x201c: '"', 0x201d: '"', 0x2026: "..."}).strip()
+            toks = [re.sub(r"[^a-z0-9']", "", t.lower()) for t in b["text"].split()]
+            for k in ("overlay", "react", "photo"):          # "on" s viac slovami -> prve slovo, ktore v zabere je
+                o = b.get(k)
+                if isinstance(o, dict) and len(str(o.get("on", "")).split()) > 1:
+                    hit = [w for w in str(o["on"]).split() if re.sub(r"[^a-z0-9']", "", w.lower()) in toks]
+                    if hit:
+                        o["on"] = hit[0]
         errs = validate(s, photos)
+        if len(s.get("beats") or []) < 6:                    # rozbity navrh: neopravovat, zacat odznova
+            log(f"   pokus {att + 1}: rozbity navrh, odznova")
+            msgs = msgs[:2]
+            continue
         if not errs:
             narr = "\n".join(b["text"] for b in s["beats"])
             errs = llm([{"role": "system", "content": CHECK},
@@ -191,7 +204,7 @@ def write(fact, photos):
         log(f"   pokus {att + 1}: " + " | ".join(errs)[:400])
         msgs = msgs[:2] + [{"role": "assistant", "content": json.dumps(s)},   # len posledny navrh (Groq 8000 tok/min)
                            {"role": "user", "content": "Fix these problems and return the full JSON again:\n- " + "\n- ".join(errs)}]
-    sys.exit("scenar neprešiel kontrolou ani na 4. pokus")
+    sys.exit("scenar neprešiel kontrolou ani na 6. pokus")
 
 
 # ---------------------------------------------------------------- dorovnanie suradnic
