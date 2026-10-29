@@ -630,7 +630,9 @@ def render(spec, beats, words, cams, total, work, out):
            "-i", "mix.wav", "-vf", "subtitles=caps.ass:fontsdir=fonts", "-c:v", "libx264", "-preset", "medium",
            "-crf", "21", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
            "-shortest", "-movflags", "+faststart", out]
-    p = subprocess.Popen(cmd, stdin=subprocess.PIPE, cwd=work, stderr=subprocess.DEVNULL)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    elog = open(os.path.join(work, "ffmpeg.log"), "wb")
+    p = subprocess.Popen(cmd, stdin=subprocess.PIPE, cwd=work, stderr=elog)
     yy, xx = _yy, _xx
     vig = np.clip(1.12 - (((xx - W / 2) / W) ** 2 + ((yy - H / 2) / H) ** 2) * 1.1, 0.55, 1)[..., None]
     for f, cam in enumerate(cams):
@@ -652,9 +654,9 @@ def render(spec, beats, words, cams, total, work, out):
         p.stdin.write(np.clip(fr, 0, 255).astype(np.uint8).tobytes())
         if f % 150 == 0:
             print(f"   {f}/{len(cams)}")
-    p.stdin.close(); p.wait()
+    p.stdin.close(); p.wait(); elog.close()
     if p.returncode:
-        sys.exit("ffmpeg zlyhal")
+        sys.exit("ffmpeg zlyhal: " + open(os.path.join(work, "ffmpeg.log"), encoding="utf-8", errors="replace").read()[-1500:])
 
 
 def main():

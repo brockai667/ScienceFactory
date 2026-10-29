@@ -20,17 +20,21 @@ def llm(messages, temp=0.7):
     base = os.environ.get("MODELS_BASE_URL", "https://api.groq.com/openai/v1").rstrip("/")
     tok = os.environ["MODELS_TOKEN"]
     for model in (os.environ.get("MODELS_MODEL", "openai/gpt-oss-120b"), os.environ.get("MODELS_FALLBACK", "openai/gpt-oss-20b")):
-        for a in range(3):
+        for a in range(5):
+            wait = 8 * (a + 1)
             try:
                 r = requests.post(base + "/chat/completions", headers={"Authorization": "Bearer " + tok},
                                   json={"model": model, "messages": messages, "temperature": temp,
                                         "response_format": {"type": "json_object"}}, timeout=180)
                 if r.status_code == 200:
                     return json.loads(r.json()["choices"][0]["message"]["content"])
-                log(f"   llm {model} {r.status_code}: {r.text[:200]}")
+                m = re.search(r"try again in ([0-9.]+)s", r.text)     # Groq free: 8000 tokenov/min
+                if r.status_code == 429 and m:
+                    wait = float(m.group(1)) + 2
+                log(f"   llm {model} {r.status_code}, cakam {wait:.0f} s")
             except (requests.RequestException, ValueError, KeyError) as e:
                 log(f"   llm {model} chyba: {e}")
-            time.sleep(8 * (a + 1))
+            time.sleep(wait)
     sys.exit("LLM nedostupny")
 
 
@@ -88,10 +92,24 @@ SYSTEM = """You write narration for a 35-45 second vertical video about a place 
 A cute satellite robot narrates while the camera flies from a globe down to the place.
 
 Structure:
-- 7 to 9 beats, 85 to 120 words in total. Short spoken sentences, plain English, no em dashes.
-- Beat 1 is the hook: tell viewers to type the coordinates into a satellite map, say what they will find and where, and make them curious.
-- Then: what it looks like and how big it is, then the popular myth or the obvious wrong guess (if the article has one), then the real explanation, then one surprising detail, then a short payoff line.
+- 8 or 9 beats, 95 to 120 words in total. Short spoken sentences (max 16 words), plain English.
+- Beat 1 is the hook: tell viewers to type these coordinates into a satellite map and what strange thing they will find, and where. Never say the coordinate numbers (they are typed on screen).
+- Beats 2-4 build curiosity: what it looks like, how big it is, the popular myth or wild guess (only if the article mentions one; otherwise ask the question the viewer is thinking, like "So what could make a ring this big?").
+- Beats 5-7 give the real answer step by step, then one surprising detail.
+- Then one short payoff line that ties back to the hook. Do not repeat a sentence, name or nickname you already used.
 - The last beat is exactly: "%s"
+
+Example of the tone (a different place):
+1 "Type these coordinates into a satellite map, and you'll find something strange in the middle of the Sahara."
+2 "A giant eye, forty kilometers wide. Astronauts use it as a landmark from space."
+3 "Perfect rings, one inside another."
+4 "Some people say this is the lost city of Atlantis."
+5 "But the truth is way older. About a hundred million years ago, molten rock pushed the ground up into a giant dome."
+6 "Then wind and rain wore it down, layer by layer, until only these rings were left."
+7 "The Eye of the Sahara isn't a lost city. It's the inside of an ancient dome, laid open by the wind."
+
+Written for the ear (a voice reads it):
+- Numbers as people say them: "about seventy kilometers", "two hundred fourteen million years ago", "almost a kilometer high". No decimals, no symbols or unit signs (no km, m, %%, ³, ~), no brackets, no em dashes. Plain ASCII quotes and hyphens.
 
 Facts:
 - Use ONLY facts written in the article. Every number, date, name and claim must be in the article. No guessing, no rounding up to sound bigger.
@@ -106,19 +124,25 @@ Return JSON: {"title": str, "feature_km": number (size of the main thing visible
 "beats": [{"text": str, "shot": str, "overlay": obj or null, "react": obj or null, "photo": obj or null}],
 "description": str (2 sentences, facts only), "hashtags": [5 strings starting with #]}""" % CTA
 
-CHECK = """You are a strict fact checker. Compare every claim in the narration with the article.
-List each claim that is not clearly supported by the article (wrong number, wrong date, invented detail, exaggeration).
+CHECK = """You are a strict fact checker for a short narrated video. Compare the concrete facts in the narration with the article.
+Flag only concrete facts that are wrong or missing from the article: numbers, sizes, dates, ages, names, causes, records, claims about what people believe.
+Numbers written as words and rounded with "about" or "almost" are fine if they match the article.
+Do NOT flag: telling viewers to type coordinates into a map, describing what it looks like from above, questions, the closing "Follow for more" line.
 Return JSON: {"problems": [str]}. Empty list if everything is supported."""
 
 
 def validate(s, photos):
     errs = []
     bs = s.get("beats") or []
-    if not 7 <= len(bs) <= 9:
-        errs.append(f"need 7-9 beats, got {len(bs)}")
+    if not 8 <= len(bs) <= 9:
+        errs.append(f"need 8 or 9 beats, got {len(bs)}")
     words = sum(len(b.get("text", "").split()) for b in bs)
-    if not 80 <= words <= 130:
-        errs.append(f"need 85-120 words, got {words}")
+    if not 90 <= words <= 125:
+        errs.append(f"need 95-120 words, got {words}")
+    for i, b in enumerate(bs):
+        bad = re.findall(r"[0-9]+[.,][0-9]+|[%~()²³]|\bkm\b|[0-9] ?m\b", b.get("text", ""))
+        if bad:
+            errs.append(f"beat {i + 1} is not written for the ear ({', '.join(bad)}): spell numbers and units as words")
     if bs and bs[-1].get("text", "").strip() != CTA:
         errs.append("last beat must be exactly the CTA")
     try:
@@ -144,6 +168,9 @@ def write(fact, photos):
     msgs = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
     for att in range(4):
         s = llm(msgs)
+        for b in s.get("beats") or []:                       # typograficke znaky -> ASCII (TTS ich cita zle)
+            b["text"] = re.sub(r"[‐-―]", "-", b.get("text", "")).translate(
+                {0x2018: "'", 0x2019: "'", 0x201c: '"', 0x201d: '"', 0x2026: "..."}).strip()
         errs = validate(s, photos)
         if not errs:
             narr = "\n".join(b["text"] for b in s["beats"])
@@ -154,8 +181,8 @@ def write(fact, photos):
             log(f"   scenar OK (pokus {att + 1})")
             return s
         log(f"   pokus {att + 1}: " + " | ".join(errs)[:400])
-        msgs += [{"role": "assistant", "content": json.dumps(s)},
-                 {"role": "user", "content": "Fix these problems and return the full JSON again:\n- " + "\n- ".join(errs)}]
+        msgs = msgs[:2] + [{"role": "assistant", "content": json.dumps(s)},   # len posledny navrh (Groq 8000 tok/min)
+                           {"role": "user", "content": "Fix these problems and return the full JSON again:\n- " + "\n- ".join(errs)}]
     sys.exit("scenar neprešiel kontrolou ani na 4. pokus")
 
 
