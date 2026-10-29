@@ -337,6 +337,9 @@ def build(fact, s, photos):
     km = float(s["feature_km"])
     zf = max(4.5, min(Z_MAX - 1.0, z_for(lat, km) - 0.35))     # cely utvar aj s okolim (~60 % sirky)
     zs = {"feature": zf, "close": min(Z_MAX, zf + 0.9), "wide": max(4.5, zf - 1.8), "space": max(4.5, zf - 5.0)}
+    def cut(t, n):                                           # skratit na cele slova, nie "FROM SPAC"
+        t = t.upper().strip()
+        return t if len(t) <= n else t[:n + 1].rsplit(" ", 1)[0]
     beats, nfeat, wide_used = [], 0, False
     for i, b in enumerate(s["beats"]):
         shot = b.get("shot") if b.get("shot") in zs else "feature"
@@ -360,17 +363,17 @@ def build(fact, s, photos):
         elif o and o.get("type") == "rings":
             nb["rings"] = {"lat": lat, "lon": lon, "km": [round(km / 2 * f, 2) for f in (0.3, 0.6, 0.9)], "on": o["on"]}
         elif o and o.get("type") == "tag":
-            nb["tag"] = {"lat": lat, "lon": lon, "label": o.get("label", "")[:18].upper(), "on": o["on"]}
+            nb["tag"] = {"lat": lat, "lon": lon, "label": cut(o.get("label", ""), 18), "on": o["on"]}
         elif o and o.get("type") == "stamp":
             lab = re.sub(r"\bMYA\b", "MILLION YEARS AGO", o.get("label", "").upper())
-            nb["stamp"] = {"label": re.sub(r"\bBYA\b", "BILLION YEARS AGO", lab)[:26], "on": o["on"]}
+            nb["stamp"] = {"label": cut(re.sub(r"\bBYA\b", "BILLION YEARS AGO", lab), 26), "on": o["on"]}
         r = b.get("react")
         if r and r.get("expr") in ("surprised", "happy"):
             nb["react"] = {"expr": r["expr"], "on": r["on"], "dur": 1.4}
         p = b.get("photo")
         if p and 0 < i < len(s["beats"]) - 1:
             ph = photos[p["index"]]
-            nb["photo"] = {"file": ph["file"], "label": p.get("label", "")[:22].upper(), "credit": ph["credit"],
+            nb["photo"] = {"file": ph["file"], "label": cut(p.get("label", ""), 22), "credit": ph["credit"],
                            "on": p["on"], "dur": 2.8}
         beats.append(nb)
     used = [photos[b["photo"]["index"]] for b in s["beats"] if b.get("photo")]
