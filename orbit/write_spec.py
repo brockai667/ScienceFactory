@@ -335,16 +335,19 @@ def z_for(lat, km):
 def build(fact, s, photos):
     lat, lon = fact["lat"], fact["lon"]
     km = float(s["feature_km"])
-    zf = max(4.5, min(Z_MAX - 1.0, z_for(lat, km)))
-    zs = {"feature": zf, "close": min(Z_MAX, zf + 1.0), "wide": max(4.5, zf - 2.0), "space": max(4.5, zf - 5.0)}
-    beats, nfeat = [], 0
+    zf = max(4.5, min(Z_MAX - 1.0, z_for(lat, km) - 0.35))     # cely utvar aj s okolim (~60 % sirky)
+    zs = {"feature": zf, "close": min(Z_MAX, zf + 0.9), "wide": max(4.5, zf - 1.8), "space": max(4.5, zf - 5.0)}
+    beats, nfeat, wide_used = [], 0, False
     for i, b in enumerate(s["beats"]):
         shot = b.get("shot") if b.get("shot") in zs else "feature"
         if i == len(s["beats"]) - 1:
             shot = "space"
+        elif shot == "space" or (shot == "wide" and (wide_used or i == 0)):
+            shot = "feature"                                 # dalekych zaberov max 1, inak kamera "pumpuje"
+        wide_used |= shot == "wide"
         z = zs[shot]
         if shot == "feature":
-            z += 0.2 * nfeat; nfeat += 1                     # kazdy dalsi zaber kusok blizsie
+            z += min(0.3, 0.1 * nfeat); nfeat += 1           # pomaly najazd, nie skoky
         nb = {"text": b["text"], "cam": {"lat": lat, "lon": lon, "z": round(min(Z_MAX, z), 2)}}
         if i == 0:
             nb["globe"] = True
@@ -356,7 +359,8 @@ def build(fact, s, photos):
         elif o and o.get("type") == "tag":
             nb["tag"] = {"lat": lat, "lon": lon, "label": o.get("label", "")[:18].upper(), "on": o["on"]}
         elif o and o.get("type") == "stamp":
-            nb["stamp"] = {"label": o.get("label", "")[:26].upper(), "on": o["on"]}
+            lab = re.sub(r"\bMYA\b", "MILLION YEARS AGO", o.get("label", "").upper())
+            nb["stamp"] = {"label": re.sub(r"\bBYA\b", "BILLION YEARS AGO", lab)[:26], "on": o["on"]}
         r = b.get("react")
         if r and r.get("expr") in ("surprised", "happy"):
             nb["react"] = {"expr": r["expr"], "on": r["on"], "dur": 1.4}
@@ -396,6 +400,9 @@ def main():
         fact["lat"], fact["lon"] = q["lat"], q["lon"] = lat, lon
         q["located"] = ok
     download(photos, slug, {b["photo"]["index"] for b in s["beats"] if b.get("photo")})
+    os.makedirs(os.path.join(HERE, "drafts"), exist_ok=True)       # surovy navrh: prerender bez noveho pisania
+    json.dump({"draft": s, "photos": photos, "lat": fact["lat"], "lon": fact["lon"]},
+              open(os.path.join(HERE, "drafts", slug + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     spec = build(fact, s, photos)
     json.dump(spec, open(os.path.join(HERE, "specs", slug + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     q["status"] = "written"
