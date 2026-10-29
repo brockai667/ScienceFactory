@@ -244,8 +244,8 @@ def ass_time(t):
 
 
 def build_ass(words, keys, work):
-    # titulky vedla Orbiho (ako keby hovoril on): zarovnane vlavo-stred od x=480, zalomenie do 560 px
-    st = "Style: C,Poppins SemiBold,74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,6,2,4,480,40,0,1"
+    # titulky nad Orbim (ako bublina, hovori on): spodok tesne nad antenou, zarovnane vlavo od x=60
+    st = "Style: C,Poppins SemiBold,94,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,7,2,1,60,60,0,1"
     lines = ["[Script Info]", f"PlayResX: {W}", f"PlayResY: {H}", "WrapStyle: 0", "", "[V4+ Styles]",
              "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
              st, "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"]
@@ -264,7 +264,7 @@ def build_ass(words, keys, work):
             hot = any(c.isdigit() for c in t) or w["k"] in keys
             txt.append("{\\c&H0033D4FF&}" + t + "{\\c&H00FFFFFF&}" if hot else t)
         lines.append(f"Dialogue: 0,{ass_time(ch[0]['s'])},{ass_time(max(end, ch[0]['s'] + 0.2))},C,,0,0,0,,"
-                     "{\\an4\\pos(480,1575)\\fscx108\\fscy108\\t(0,90,\\fscx100\\fscy100)}" + " ".join(txt))
+                     "{\\an1\\pos(60,1395)\\fscx108\\fscy108\\t(0,90,\\fscx100\\fscy100)}" + " ".join(txt))
     open(os.path.join(work, "caps.ass"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
 
 
