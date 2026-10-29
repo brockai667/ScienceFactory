@@ -1,117 +1,123 @@
 {
  "draft": {
-  "title": "MANICOUAGAN EYE",
+  "title": "MANICOUAN RING",
   "feature_km": 70,
   "hooks": [
    {
-    "text": "This ring is seventy kilometers wide, and a meteor strike shouldn't make it smooth.",
-    "title": "COSMIC EYE?"
+    "text": "This perfect ring is seventy kilometers wide, and a scar shouldn't appear here.",
+    "title": "GIGANTIC CIRCLE"
    },
    {
-    "text": "A perfect circle of water, seventy kilometers across, sits where a meteor crashed.",
-    "title": "IMPACT POND?"
+    "text": "An eye of Quebec spans seventy kilometers, and it never blinked.",
+    "title": "COSMIC GAZE"
    },
    {
-    "text": "This bright blue ring, seventy kilometers across, hides a massive crater beneath.",
-    "title": "CRATER HIDDEN?"
+    "text": "Why does this ring measure seventy kilometers, when no volcano made it?",
+    "title": "CRATER PUZZLE"
    }
   ],
   "beats": [
    {
-    "text": "This bright blue ring, seventy kilometers across, hides a massive crater beneath.",
+    "text": "An eye of Quebec spans seventy kilometers, and it never blinked.",
     "shot": "feature",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "From orbit the lake looks like a bright blue eye amid dark forest.",
-    "shot": "wide",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "The water forms a seventy-kilometer circle, while the crater spans about one hundred kilometers.",
+    "text": "So what carved a perfect ring into Quebec?",
     "shot": "close",
-    "overlay": {
-     "type": "ruler",
-     "on": "circle",
-     "label": "70 KM"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "So why does this ancient scar appear as such a perfect circle?",
-    "shot": "feature",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "A meteor five kilometers across hit here two hundred fourteen million years ago.",
+    "text": "And the middle hides one more surprise.",
     "shot": "close",
-    "overlay": {
-     "type": "stamp",
-     "on": "years",
-     "label": "214 MY"
-    },
+    "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "The impact made a multi-ring basin; rain and rivers later filled the centre, creating the lake.",
+    "text": "From orbit the ring looks like a giant eye, and Greater London would fit inside.",
     "shot": "wide",
-    "overlay": null,
+    "overlay": {
+     "type": "scale",
+     "on": "Greater"
+    },
     "react": null,
     "photo": {
      "index": 0,
-     "label": "Reservoir from ISS",
-     "on": "lake"
+     "label": "From the ISS",
+     "on": "orbit"
     }
    },
    {
-    "text": "It now holds about one hundred thirty-eight cubic kilometers of water, enough to flood a city.",
-    "shot": "feature",
+    "text": "The outer crater is about one hundred kilometers across.",
+    "shot": "wide",
     "overlay": {
-     "type": "tag",
-     "on": "water",
-     "label": "138"
+     "type": "ruler",
+     "on": "crater",
+     "label": "100 KM"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Two hundred fourteen million years ago a meteor slammed here.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "meteor",
+     "label": "214 MYA"
     },
     "react": {
      "expr": "surprised",
+     "on": "meteor"
+    },
+    "photo": null
+   },
+   {
+    "text": "The impactor was five kilometers wide, carving the concentric basin we see.",
+    "shot": "close",
+    "overlay": {
+     "type": "highlight",
+     "on": "five"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It holds about one hundred thirty eight cubic kilometers of water, a massive hidden volume.",
+    "shot": "wide",
+    "overlay": {
+     "type": "tag",
+     "on": "water",
+     "label": "VOLUME"
+    },
+    "react": {
+     "expr": "happy",
      "on": "water"
     },
     "photo": null
    },
    {
-    "text": "That smooth ring you see is the scar of a cosmic collision.",
-    "shot": "feature",
-    "overlay": null,
-    "react": {
-     "expr": "happy",
-     "on": "collision"
-    },
-    "photo": null
-   },
-   {
-    "text": "Follow for more places you can see from space.",
+    "text": "Next target: the farthest point from any coastline on a continent. Follow for the next scan. Orbi out.",
     "shot": "space",
     "overlay": null,
     "react": null,
     "photo": null
    }
   ],
-  "description": "Manicouagan Reservoir is a seventy‑kilometer‑wide annular lake formed by a five‑kilometer meteor impact 214 million years ago. It fills a multi‑ring crater about one hundred kilometers across and holds roughly 138 cubic kilometers of water.",
+  "description": "Manicouagan Reservoir is a seventy‑kilometer‑wide annular lake formed by a meteor impact two hundred fourteen million years ago. It holds about one hundred thirty eight cubic kilometers of water.",
   "hashtags": [
    "#Manicouagan",
    "#ImpactCrater",
-   "#Quebec",
    "#SatelliteView",
-   "#SpaceGeology"
+   "#SpaceScience",
+   "#Geology"
   ],
-  "hook_title": "CRATER HIDDEN?"
+  "hook_title": "COSMIC GAZE"
  },
  "photos": [
   {
@@ -153,5 +159,995 @@
   }
  ],
  "lat": 51.3697,
- "lon": -68.6587
+ "lon": -68.6587,
+ "shape": [
+  [
+   51.39672,
+   -69.18935
+  ],
+  [
+   51.39339,
+   -69.16864
+  ],
+  [
+   51.37044,
+   -69.16891
+  ],
+  [
+   51.35071,
+   -69.17578
+  ],
+  [
+   51.3283,
+   -69.1708
+  ],
+  [
+   51.31521,
+   -69.18865
+  ],
+  [
+   51.27313,
+   -69.18762
+  ],
+  [
+   51.27625,
+   -69.17131
+  ],
+  [
+   51.33012,
+   -69.1308
+  ],
+  [
+   51.30856,
+   -69.1296
+  ],
+  [
+   51.26809,
+   -69.11449
+  ],
+  [
+   51.26991,
+   -69.08977
+  ],
+  [
+   51.24681,
+   -69.07862
+  ],
+  [
+   51.19929,
+   -69.05493
+  ],
+  [
+   51.18025,
+   -69.01321
+  ],
+  [
+   51.15356,
+   -68.96635
+  ],
+  [
+   51.14774,
+   -68.94438
+  ],
+  [
+   51.12601,
+   -68.89619
+  ],
+  [
+   51.12749,
+   -68.89069
+  ],
+  [
+   51.09497,
+   -68.83319
+  ],
+  [
+   51.0728,
+   -68.84834
+  ],
+  [
+   51.05467,
+   -68.81624
+  ],
+  [
+   51.01441,
+   -68.7759
+  ],
+  [
+   50.98135,
+   -68.75376
+  ],
+  [
+   50.94307,
+   -68.70981
+  ],
+  [
+   50.88918,
+   -68.68578
+  ],
+  [
+   50.85925,
+   -68.71119
+  ],
+  [
+   50.82093,
+   -68.73865
+  ],
+  [
+   50.75376,
+   -68.74414
+  ],
+  [
+   50.70862,
+   -68.756
+  ],
+  [
+   50.641,
+   -68.70526
+  ],
+  [
+   50.6775,
+   -68.72197
+  ],
+  [
+   50.71201,
+   -68.72505
+  ],
+  [
+   50.7569,
+   -68.71548
+  ],
+  [
+   50.77536,
+   -68.69265
+  ],
+  [
+   50.80049,
+   -68.7123
+  ],
+  [
+   50.85041,
+   -68.69246
+  ],
+  [
+   50.90478,
+   -68.66311
+  ],
+  [
+   50.94309,
+   -68.6595
+  ],
+  [
+   50.96126,
+   -68.66671
+  ],
+  [
+   51.01237,
+   -68.63564
+  ],
+  [
+   51.04639,
+   -68.56184
+  ],
+  [
+   51.12126,
+   -68.50084
+  ],
+  [
+   51.12159,
+   -68.49054
+  ],
+  [
+   51.12072,
+   -68.46771
+  ],
+  [
+   51.15045,
+   -68.4102
+  ],
+  [
+   51.17478,
+   -68.38308
+  ],
+  [
+   51.13053,
+   -68.33982
+  ],
+  [
+   51.14636,
+   -68.31802
+  ],
+  [
+   51.19017,
+   -68.31888
+  ],
+  [
+   51.22383,
+   -68.30257
+  ],
+  [
+   51.20566,
+   -68.27373
+  ],
+  [
+   51.22383,
+   -68.26084
+  ],
+  [
+   51.24586,
+   -68.25328
+  ],
+  [
+   51.28507,
+   -68.2047
+  ],
+  [
+   51.30471,
+   -68.14188
+  ],
+  [
+   51.32048,
+   -68.1369
+  ],
+  [
+   51.3282,
+   -68.12983
+  ],
+  [
+   51.31802,
+   -68.14788
+  ],
+  [
+   51.33926,
+   -68.19252
+  ],
+  [
+   51.34698,
+   -68.22582
+  ],
+  [
+   51.41555,
+   -68.232
+  ],
+  [
+   51.4255,
+   -68.25912
+  ],
+  [
+   51.43588,
+   -68.2629
+  ],
+  [
+   51.46287,
+   -68.24239
+  ],
+  [
+   51.47845,
+   -68.25143
+  ],
+  [
+   51.48326,
+   -68.27079
+  ],
+  [
+   51.49732,
+   -68.29122
+  ],
+  [
+   51.53769,
+   -68.27337
+  ],
+  [
+   51.56842,
+   -68.28288
+  ],
+  [
+   51.55461,
+   -68.25484
+  ],
+  [
+   51.57097,
+   -68.28166
+  ],
+  [
+   51.61163,
+   -68.32967
+  ],
+  [
+   51.63904,
+   -68.24861
+  ],
+  [
+   51.65955,
+   -68.22046
+  ],
+  [
+   51.68685,
+   -68.18495
+  ],
+  [
+   51.69366,
+   -68.17723
+  ],
+  [
+   51.79218,
+   -68.18994
+  ],
+  [
+   51.77087,
+   -68.19349
+  ],
+  [
+   51.75705,
+   -68.18696
+  ],
+  [
+   51.7341,
+   -68.194
+  ],
+  [
+   51.70719,
+   -68.19469
+  ],
+  [
+   51.66856,
+   -68.25443
+  ],
+  [
+   51.6637,
+   -68.25668
+  ],
+  [
+   51.63169,
+   -68.28449
+  ],
+  [
+   51.62168,
+   -68.34912
+  ],
+  [
+   51.65679,
+   -68.38485
+  ],
+  [
+   51.67068,
+   -68.42103
+  ],
+  [
+   51.68293,
+   -68.43013
+  ],
+  [
+   51.67103,
+   -68.4421
+  ],
+  [
+   51.64694,
+   -68.47124
+  ],
+  [
+   51.6483,
+   -68.50192
+  ],
+  [
+   51.66209,
+   -68.54621
+  ],
+  [
+   51.68285,
+   -68.5388
+  ],
+  [
+   51.72529,
+   -68.48284
+  ],
+  [
+   51.73412,
+   -68.48267
+  ],
+  [
+   51.81888,
+   -68.44868
+  ],
+  [
+   51.89723,
+   -68.38963
+  ],
+  [
+   51.92436,
+   -68.40064
+  ],
+  [
+   51.83988,
+   -68.44542
+  ],
+  [
+   51.83061,
+   -68.47004
+  ],
+  [
+   51.87678,
+   -68.46533
+  ],
+  [
+   52.0319,
+   -68.52252
+  ],
+  [
+   52.0762,
+   -68.57355
+  ],
+  [
+   51.99404,
+   -68.509
+  ],
+  [
+   51.9273,
+   -68.49727
+  ],
+  [
+   51.88525,
+   -68.48336
+  ],
+  [
+   51.84158,
+   -68.50259
+  ],
+  [
+   51.80136,
+   -68.48731
+  ],
+  [
+   51.7423,
+   -68.51391
+  ],
+  [
+   51.72115,
+   -68.51134
+  ],
+  [
+   51.71242,
+   -68.5419
+  ],
+  [
+   51.75282,
+   -68.57795
+  ],
+  [
+   51.77903,
+   -68.60938
+  ],
+  [
+   51.71498,
+   -68.56524
+  ],
+  [
+   51.67965,
+   -68.59219
+  ],
+  [
+   51.67554,
+   -68.64724
+  ],
+  [
+   51.6755,
+   -68.67545
+  ],
+  [
+   51.65735,
+   -68.68844
+  ],
+  [
+   51.63984,
+   -68.70835
+  ],
+  [
+   51.64406,
+   -68.73395
+  ],
+  [
+   51.64992,
+   -68.76016
+  ],
+  [
+   51.65434,
+   -68.78739
+  ],
+  [
+   51.65897,
+   -68.81158
+  ],
+  [
+   51.71107,
+   -68.82035
+  ],
+  [
+   51.74424,
+   -68.85039
+  ],
+  [
+   51.67526,
+   -68.8454
+  ],
+  [
+   51.6366,
+   -68.88969
+  ],
+  [
+   51.62158,
+   -68.92247
+  ],
+  [
+   51.61769,
+   -68.9663
+  ],
+  [
+   51.60794,
+   -69.03138
+  ],
+  [
+   51.64577,
+   -69.04588
+  ],
+  [
+   51.66776,
+   -69.07527
+  ],
+  [
+   51.72936,
+   -69.0569
+  ],
+  [
+   51.75561,
+   -69.08934
+  ],
+  [
+   51.81391,
+   -69.07046
+  ],
+  [
+   51.89788,
+   -69.09913
+  ],
+  [
+   51.87945,
+   -69.08419
+  ],
+  [
+   51.8137,
+   -69.08471
+  ],
+  [
+   51.76911,
+   -69.10033
+  ],
+  [
+   51.68872,
+   -69.10136
+  ],
+  [
+   51.62088,
+   -69.09096
+  ],
+  [
+   51.58427,
+   -69.13463
+  ],
+  [
+   51.59248,
+   -69.1257
+  ],
+  [
+   51.54388,
+   -69.12072
+  ],
+  [
+   51.53261,
+   -69.11412
+  ],
+  [
+   51.51002,
+   -69.13111
+  ],
+  [
+   51.50543,
+   -69.14639
+  ],
+  [
+   51.48359,
+   -69.13721
+  ],
+  [
+   51.44895,
+   -69.1439
+  ],
+  [
+   51.43536,
+   -69.15231
+  ],
+  [
+   51.44338,
+   -69.16708
+  ],
+  [
+   51.41556,
+   -69.15592
+  ],
+  [
+   51.39672,
+   -69.18935
+  ]
+ ],
+ "scale": {
+  "city": {
+   "name": "GREATER LONDON",
+   "area_km2": 1588.4,
+   "span_km": 58.5,
+   "poly_km": [
+    [
+     -30.041,
+     -0.153
+    ],
+    [
+     -26.455,
+     -1.454
+    ],
+    [
+     -26.304,
+     -3.468
+    ],
+    [
+     -21.79,
+     -5.212
+    ],
+    [
+     -21.638,
+     -6.54
+    ],
+    [
+     -19.549,
+     -6.367
+    ],
+    [
+     -17.383,
+     -8.584
+    ],
+    [
+     -16.652,
+     -8.416
+    ],
+    [
+     -15.965,
+     -10.071
+    ],
+    [
+     -17.57,
+     -13.384
+    ],
+    [
+     -17.416,
+     -15.812
+    ],
+    [
+     -15.867,
+     -14.848
+    ],
+    [
+     -14.351,
+     -11.535
+    ],
+    [
+     -11.719,
+     -9.868
+    ],
+    [
+     -11.665,
+     -11.342
+    ],
+    [
+     -10.382,
+     -11.817
+    ],
+    [
+     -9.751,
+     -13.693
+    ],
+    [
+     -10.544,
+     -14.77
+    ],
+    [
+     -9.634,
+     -15.443
+    ],
+    [
+     -8.332,
+     -13.918
+    ],
+    [
+     -5.958,
+     -15.392
+    ],
+    [
+     -5.422,
+     -18.597
+    ],
+    [
+     -4.173,
+     -18.652
+    ],
+    [
+     -3.27,
+     -20.202
+    ],
+    [
+     -0.973,
+     -18.575
+    ],
+    [
+     -0.124,
+     -16.552
+    ],
+    [
+     1.791,
+     -16.256
+    ],
+    [
+     1.863,
+     -15.129
+    ],
+    [
+     2.721,
+     -14.458
+    ],
+    [
+     5.508,
+     -15.516
+    ],
+    [
+     6.39,
+     -19.646
+    ],
+    [
+     7.631,
+     -17.906
+    ],
+    [
+     8.289,
+     -19.548
+    ],
+    [
+     9.416,
+     -19.914
+    ],
+    [
+     11.666,
+     -19.096
+    ],
+    [
+     11.091,
+     -18.115
+    ],
+    [
+     11.245,
+     -16.966
+    ],
+    [
+     13.525,
+     -15.458
+    ],
+    [
+     13.563,
+     -13.857
+    ],
+    [
+     15.239,
+     -13.128
+    ],
+    [
+     15.975,
+     -10.11
+    ],
+    [
+     15.594,
+     -8.477
+    ],
+    [
+     16.609,
+     -8.511
+    ],
+    [
+     15.66,
+     -6.782
+    ],
+    [
+     16.011,
+     -4.638
+    ],
+    [
+     19.452,
+     -1.675
+    ],
+    [
+     20.02,
+     0.622
+    ],
+    [
+     20.861,
+     1.416
+    ],
+    [
+     19.949,
+     2.297
+    ],
+    [
+     21.296,
+     3.306
+    ],
+    [
+     21.064,
+     4.104
+    ],
+    [
+     22.124,
+     4.256
+    ],
+    [
+     21.796,
+     5.514
+    ],
+    [
+     22.744,
+     6.562
+    ],
+    [
+     22.951,
+     5.353
+    ],
+    [
+     23.634,
+     5.352
+    ],
+    [
+     23.749,
+     6.931
+    ],
+    [
+     28.503,
+     8.074
+    ],
+    [
+     27.056,
+     10.653
+    ],
+    [
+     25.479,
+     10.485
+    ],
+    [
+     24.063,
+     14.386
+    ],
+    [
+     22.963,
+     14.609
+    ],
+    [
+     23.663,
+     15.414
+    ],
+    [
+     20.888,
+     17.942
+    ],
+    [
+     17.061,
+     16.801
+    ],
+    [
+     14.787,
+     17.042
+    ],
+    [
+     10.399,
+     14.951
+    ],
+    [
+     6.862,
+     17.621
+    ],
+    [
+     6.924,
+     18.979
+    ],
+    [
+     4.499,
+     19.544
+    ],
+    [
+     4.581,
+     23.374
+    ],
+    [
+     -1.922,
+     24.589
+    ],
+    [
+     -5.989,
+     24.175
+    ],
+    [
+     -6.611,
+     22.514
+    ],
+    [
+     -7.901,
+     21.498
+    ],
+    [
+     -8.753,
+     22.186
+    ],
+    [
+     -9.362,
+     21.216
+    ],
+    [
+     -12.028,
+     20.631
+    ],
+    [
+     -12.496,
+     19.058
+    ],
+    [
+     -15.186,
+     18.352
+    ],
+    [
+     -16.611,
+     18.914
+    ],
+    [
+     -22.352,
+     15.915
+    ],
+    [
+     -25.202,
+     16.652
+    ],
+    [
+     -26.35,
+     15.792
+    ],
+    [
+     -29.262,
+     17.815
+    ],
+    [
+     -29.292,
+     13.568
+    ],
+    [
+     -27.7,
+     9.792
+    ],
+    [
+     -29.01,
+     7.638
+    ],
+    [
+     -28.156,
+     4.111
+    ],
+    [
+     -30.041,
+     -0.153
+    ]
+   ]
+  },
+  "say": "Greater London",
+  "on": "Greater",
+  "fact": "Greater London would fit inside it"
+ }
 }
