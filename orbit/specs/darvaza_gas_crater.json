@@ -1,0 +1,132 @@
+{
+ "title": "DARVAZA CRATER",
+ "coords": "40.2525 N, 58.4396 E",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 40.2525,
+  "lon": 58.4396
+ },
+ "source": "https://en.wikipedia.org/wiki/Darvaza_gas_crater",
+ "feature_km": 0.07,
+ "beats": [
+  {
+   "text": "A glowing pit thirty metres deep, and it shouldn't stay alive.",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 15.8
+   },
+   "globe": true
+  },
+  {
+   "text": "So what keeps this desert pit alight for decades?",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 16.7
+   }
+  },
+  {
+   "text": "And deeper down, one more surprise awaits you.",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 16.7
+   }
+  },
+  {
+   "text": "From orbit, the crater looks like a glowing hole, about seventy metres across.",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 15.8
+   },
+   "ruler": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "km": 0.07,
+    "label": "0.07 KM",
+    "on": "seventy"
+   }
+  },
+  {
+   "text": "It lies 260 kilometres north of Ashgabat.",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 15.8
+   },
+   "highlight": {
+    "on": "Ashgabat"
+   }
+  },
+  {
+   "text": "In 1971, drilling punctured a gas cavern and the roof collapsed.",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 16.7
+   },
+   "tag": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "label": "DRILL",
+    "on": "drilling"
+   }
+  },
+  {
+   "text": "Engineers then set the fire to burn off poisonous gases forever.",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 16.7
+   },
+   "stamp": {
+    "label": "NINETEEN SEVENTY ONE",
+    "on": "fire"
+   }
+  },
+  {
+   "text": "Hundreds of natural gas fires light the floor and rim.",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 15.8
+   },
+   "highlight": {
+    "on": "fires"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "fires",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "Next target: the most remote point on land, far from any coast. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": 40.2525,
+    "lon": 58.4396,
+    "z": 10.8
+   },
+   "react": {
+    "expr": "happy",
+    "on": "target",
+    "dur": 1.4
+   }
+  }
+ ],
+ "hook": "ENDLESS BURN",
+ "description": "The Darvaza crater in Turkmenistan has burned since 1971 after a drilling accident collapsed a gas cavern. Its diameter is about seventy metres and the fire remains visible from space. Imagery: Esri, Maxar, Earthstar Geographics. Source: Wikipedia.",
+ "hashtags": [
+  "#Darvaza",
+  "#DoorToHell",
+  "#GasCrater",
+  "#Turkmenistan",
+  "#Orbi"
+ ],
+ "shape": null,
+ "series_no": 2
+}

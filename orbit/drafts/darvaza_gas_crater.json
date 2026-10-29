@@ -1,0 +1,123 @@
+{
+ "draft": {
+  "title": "DARVAZA CRATER",
+  "feature_km": 0.07,
+  "hooks": [
+   {
+    "text": "A glowing pit thirty metres deep, and it shouldn't stay alive.",
+    "title": "ENDLESS BURN"
+   },
+   {
+    "text": "This fiery crater is seventy metres wide, and it shouldn't stay burning.",
+    "title": "ENDLESS FLAME"
+   },
+   {
+    "text": "This desert fire spans seventy metres, and no one expected it to endure.",
+    "title": "PERMANENT GLOW"
+   }
+  ],
+  "beats": [
+   {
+    "text": "A glowing pit thirty metres deep, and it shouldn't stay alive.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "So what keeps this desert pit alight for decades?",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "And deeper down, one more surprise awaits you.",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "From orbit, the crater looks like a glowing hole, about seventy metres across.",
+    "shot": "wide",
+    "overlay": {
+     "type": "ruler",
+     "on": "seventy",
+     "label": "0.07 KM"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It lies 260 kilometres north of Ashgabat.",
+    "shot": "close",
+    "overlay": {
+     "type": "highlight",
+     "on": "Ashgabat"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "In 1971, drilling punctured a gas cavern and the roof collapsed.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "drilling",
+     "label": "DRILL"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Engineers then set the fire to burn off poisonous gases forever.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "fire",
+     "label": "NINETEEN SEVENTY ONE"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Hundreds of natural gas fires light the floor and rim.",
+    "shot": "wide",
+    "overlay": {
+     "type": "highlight",
+     "on": "fires"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "fires"
+    },
+    "photo": null
+   },
+   {
+    "text": "Next target: the most remote point on land, far from any coast. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "target"
+    },
+    "photo": null
+   }
+  ],
+  "description": "The Darvaza crater in Turkmenistan has burned since 1971 after a drilling accident collapsed a gas cavern. Its diameter is about seventy metres and the fire remains visible from space.",
+  "hashtags": [
+   "#Darvaza",
+   "#DoorToHell",
+   "#GasCrater",
+   "#Turkmenistan",
+   "#Orbi"
+  ],
+  "hook_title": "ENDLESS BURN"
+ },
+ "photos": [],
+ "lat": 40.2525,
+ "lon": 58.4396,
+ "shape": null,
+ "scale": null
+}
