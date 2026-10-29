@@ -1,5 +1,5 @@
 {
- "title": "Manicouagan Reservoir – the eye of Quebec",
+ "title": "Manicouagan Reservoir – The Eye of Quebec",
  "coords": "51.1272 N, 68.7472 W",
  "voice": "am_michael",
  "speed": 1.0,
@@ -21,7 +21,7 @@
    "globe": true
   },
   {
-   "text": "From orbit it looks like a giant eye, a perfect circle about seventy kilometers across.",
+   "text": "A perfect circular lake, seventy kilometers wide, rings like an eye from space.",
    "cam": {
     "lat": 51.1272,
     "lon": -68.7472,
@@ -33,58 +33,50 @@
     "km": 70.0,
     "label": "70 KM",
     "on": "seventy"
-   }
-  },
-  {
-   "text": "The blue ring surrounds a solitary island plateau, a quiet landlocked mountain rising in the middle.",
-   "cam": {
-    "lat": 51.1272,
-    "lon": -68.7472,
-    "z": 11.24
    },
    "photo": {
     "file": "photos/manicouagan_reservoir/p0.jpg",
-    "label": "VIEW FROM SPACE",
+    "label": "MANICOUAGAN RESERVOIR ",
     "credit": "NASA",
-    "on": "island",
+    "on": "eye",
     "dur": 2.8
    }
   },
   {
-   "text": "People call it the eye of Quebec, but what could have carved such a massive ring?",
+   "text": "Scientists call it the eye of Quebec, but what made such a giant ring?",
    "cam": {
     "lat": 51.1272,
     "lon": -68.7472,
-    "z": 8.24
+    "z": 11.24
    }
   },
   {
-   "text": "The impact happened two hundred fourteen million years ago.",
+   "text": "Could a meteor have carved this massive crater?",
+   "cam": {
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "z": 11.24
+   }
+  },
+  {
+   "text": "About two hundred fourteen million years ago, a meteor five kilometers across struck here.",
    "cam": {
     "lat": 51.1272,
     "lon": -68.7472,
     "z": 10.44
    },
    "stamp": {
-    "label": "214 MILLION",
-    "on": "impact"
+    "label": "214 MILLION YEARS",
+    "on": "two"
    },
    "react": {
     "expr": "surprised",
-    "on": "impact",
+    "on": "two",
     "dur": 1.4
    }
   },
   {
-   "text": "A five kilometer meteor created a crater about one hundred kilometers wide.",
-   "cam": {
-    "lat": 51.1272,
-    "lon": -68.7472,
-    "z": 11.24
-   }
-  },
-  {
-   "text": "Water later filled the inner ring, leaving the island plateau high above the lake.",
+   "text": "The impact shattered rock, forming a multi-ring basin about one hundred kilometers across.",
    "cam": {
     "lat": 51.1272,
     "lon": -68.7472,
@@ -92,21 +84,25 @@
    }
   },
   {
-   "text": "So that mysterious eye is really a giant impact crater turned lake.",
+   "text": "Water filled the basin, a lake that hides an island crowned by a nine-hundred-fifty meter peak.",
+   "cam": {
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "z": 11.24
+   },
+   "tag": {
+    "lat": 51.1272,
+    "lon": -68.7472,
+    "label": "RENÉ‑LEVASSER",
+    "on": "island"
+   }
+  },
+  {
+   "text": "So the strange eye you saw is a 214 million year old impact crater.",
    "cam": {
     "lat": 51.1272,
     "lon": -68.7472,
     "z": 10.64
-   },
-   "rings": {
-    "lat": 51.1272,
-    "lon": -68.7472,
-    "km": [
-     9.1,
-     18.2,
-     27.3
-    ],
-    "on": "eye"
    },
    "react": {
     "expr": "happy",
@@ -123,12 +119,12 @@
    }
   }
  ],
- "description": "Manicouagan Reservoir is a seventy kilometer diameter annular lake formed by a meteor impact two hundred fourteen million years ago. The crater's outer ring spans about one hundred kilometers and encloses Rene-Levasseur Island. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA, Wikimedia Commons. Source: Wikipedia.",
+ "description": "Manicouagan Reservoir is a seventy‑kilometer wide annular lake in central Quebec, formed by a meteor impact two hundred fourteen million years ago. The impact created a multi‑ring basin about one hundred kilometers across, with a central island plateau topped by Mount Babel. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA, Wikimedia Commons. Source: Wikipedia.",
  "hashtags": [
-  "#Space",
-  "#Geology",
-  "#MeteorImpact",
-  "#Canada",
-  "#SatelliteView"
+  "#Manicouagan",
+  "#ImpactCrater",
+  "#Quebec",
+  "#SatelliteView",
+  "#SpaceGeology"
  ]
 }
