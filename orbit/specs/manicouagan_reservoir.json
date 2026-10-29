@@ -1,0 +1,116 @@
+{
+ "title": "Manicouagan Reservoir – The Eye of Quebec",
+ "coords": "51.1272 N, 68.7472 W",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 51.12722222,
+  "lon": -68.74722222
+ },
+ "source": "https://en.wikipedia.org/wiki/Manicouagan_Reservoir",
+ "feature_km": 70.0,
+ "beats": [
+  {
+   "text": "Enter the coordinates into a satellite map and you’ll spot a giant circular lake in Quebec.",
+   "cam": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "z": 10.24
+   },
+   "globe": true
+  },
+  {
+   "text": "From above the reservoir appears as a 70‑km‑wide ring of water surrounding a central island.",
+   "cam": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "z": 8.24
+   },
+   "ruler": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "km": 70.0,
+    "label": "70 KM",
+    "on": "70‑km‑wide"
+   }
+  },
+  {
+   "text": "The shape has earned it the nickname “eye of Quebec”.",
+   "cam": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "z": 11.24
+   }
+  },
+  {
+   "text": "It is actually a 214‑million‑year‑old impact crater created by a 5‑km meteorite.",
+   "cam": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "z": 11.24
+   },
+   "stamp": {
+    "label": "214 MYA",
+    "on": "214‑million‑year‑old"
+   }
+  },
+  {
+   "text": "Inside lies René‑Levasseur Island, rising 952 m, and the lake holds 137.9 km³ of water.",
+   "cam": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "z": 11.24
+   },
+   "tag": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "label": "ISLAND",
+    "on": "René‑Levasseur"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "lake",
+    "dur": 1.4
+   },
+   "photo": {
+    "file": "photos/manicouagan_reservoir/p1.jpg",
+    "label": "ISLAND VIEW",
+    "credit": "J-A Béland, CC BY-SA 4.0",
+    "on": "René‑Levasseur",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "That’s why the world refers to it as the eye of Quebec, visible from orbit.",
+   "cam": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "z": 8.24
+   },
+   "photo": {
+    "file": "photos/manicouagan_reservoir/p0.jpg",
+    "label": "ISS VIEW",
+    "credit": "NASA",
+    "on": "eye",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Follow for more places you can see from space.",
+   "cam": {
+    "lat": 51.12722222,
+    "lon": -68.74722222,
+    "z": 5.24
+   }
+  }
+ ],
+ "description": "Manicouagan Reservoir in central Quebec covers 1,942 km² and is a 70‑km‑wide ring formed by a 214‑million‑year‑old meteorite impact. The central René‑Levasseur Island rises 952 m and the lake holds 137.9 km³ of water. Imagery: Esri, Maxar, Earthstar Geographics. Photos: J-A Béland, CC BY-SA 4.0; NASA, Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#Manicouagan",
+  "#ImpactCrater",
+  "#SpaceViews",
+  "#Quebec",
+  "#EyeOfQuebec"
+ ]
+}
