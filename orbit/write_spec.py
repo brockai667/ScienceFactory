@@ -194,7 +194,37 @@ def write(fact, photos):
     sys.exit("scenar neprešiel kontrolou ani na 4. pokus")
 
 
-# ---------------------------------------------------------------- dorovnanie suradnic (vizualny model)
+# ---------------------------------------------------------------- dorovnanie suradnic
+def dist_km(a, b, c, d):
+    x = math.sin(math.radians(a)) * math.sin(math.radians(c)) + \
+        math.cos(math.radians(a)) * math.cos(math.radians(c)) * math.cos(math.radians(d - b))
+    return 6371 * math.acos(max(-1.0, min(1.0, x)))
+
+
+def locate_osm(title, lat, lon):
+    """OpenStreetMap (Nominatim, bez kluca): stred obdlznika okolo obrysu utvaru. Tazisko býva mimo (prstence, ramena jazier).
+    Berie len prirodne/vodne/historicke objekty do 150 km od suradnic z Wikipedie."""
+    try:
+        r = requests.get("https://nominatim.openstreetmap.org/search", headers=UA, timeout=30,
+                         params={"q": title, "format": "jsonv2", "limit": 5}).json()
+    except (requests.RequestException, ValueError):
+        return lat, lon, False
+    best = None
+    for x in r:
+        if x.get("category") in ("tourism", "amenity", "shop", "highway", "building", "office", "railway"):
+            continue
+        s, n, w, e = map(float, x["boundingbox"])
+        cy, cx = (s + n) / 2, (w + e) / 2
+        d = dist_km(lat, lon, cy, cx)
+        if d < 150 and (best is None or d < best[0]):
+            best = (d, cy, cx, f"{x.get('category')}/{x.get('type')}")
+    if not best:
+        return lat, lon, False
+    log(f"   OSM {best[3]}: posun {best[0]:.1f} km")
+    return round(best[1], 4), round(best[2], 4), True
+
+
+# ---------------------------------------------------------------- dorovnanie suradnic (vizualny model, zaloha)
 VISION = ("meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct")
 COLS = "ABCDEFGH"
 
@@ -346,7 +376,9 @@ def main():
     log(f"   fotky z Commons: {len(photos)}")
     s = write(fact, photos)
     if not q.get("located"):
-        lat, lon, ok = locate(fact, q["lat"], q["lon"], float(s["feature_km"]))
+        lat, lon, ok = locate_osm(fact["title"], q["lat"], q["lon"])
+        if not ok:
+            lat, lon, ok = locate(fact, q["lat"], q["lon"], float(s["feature_km"]))
         log(f"   stred utvaru: {lat}, {lon} (Wikipedia {q['lat']}, {q['lon']}){'' if ok else ' - NEDOROVNANE'}")
         fact["lat"], fact["lon"] = q["lat"], q["lon"] = lat, lon
         q["located"] = ok
