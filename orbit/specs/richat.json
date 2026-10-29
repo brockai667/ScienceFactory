@@ -1,0 +1,147 @@
+{
+ "title": "The Eye of the Sahara",
+ "coords": "21.1244 N, 11.4019 W",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 21.1244,
+  "lon": -11.4019
+ },
+ "beats": [
+  {
+   "text": "Type these coordinates into a satellite map, and you'll find something strange in the middle of the Sahara.",
+   "cam": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "z": 11.4
+   },
+   "globe": true,
+   "react": {
+    "expr": "surprised",
+    "on": "strange"
+   }
+  },
+  {
+   "text": "A giant eye, forty kilometers wide. Astronauts use it as a landmark from space.",
+   "cam": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "z": 11.6
+   },
+   "ruler": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "km": 40,
+    "label": "40 KM",
+    "on": "forty"
+   },
+   "photo": {
+    "file": "photos/richat/p5.jpg",
+    "label": "PHOTO FROM THE ISS",
+    "credit": "NASA (ISS030-E-12516)",
+    "on": "Astronauts",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Perfect rings, one inside another.",
+   "cam": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "z": 11.8
+   },
+   "rings": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "km": [
+     5,
+     10,
+     15.5
+    ],
+    "on": "rings"
+   }
+  },
+  {
+   "text": "Some people say this is the lost city of Atlantis.",
+   "cam": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "z": 12.5
+   },
+   "tag": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "label": "ATLANTIS?",
+    "on": "Atlantis"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "Atlantis",
+    "dur": 1.2
+   }
+  },
+  {
+   "text": "But the truth is way older. About a hundred million years ago, molten rock pushed the ground up into a giant dome.",
+   "cam": {
+    "lat": 21.1,
+    "lon": -11.4,
+    "z": 9.6
+   },
+   "stamp": {
+    "label": "100 MILLION YEARS AGO",
+    "on": "hundred"
+   }
+  },
+  {
+   "text": "Then wind and rain wore it down, layer by layer, until only these rings were left.",
+   "cam": {
+    "lat": 21.125,
+    "lon": -11.33,
+    "z": 13.4
+   },
+   "photo": {
+    "file": "photos/richat/p4.jpg",
+    "label": "INSIDE THE RINGS",
+    "credit": "Clemens Schmillen, CC BY-SA 4.0",
+    "on": "layer",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "The Eye of the Sahara isn't a lost city. It's the inside of an ancient dome, laid open by the wind.",
+   "cam": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "z": 11.3
+   },
+   "react": {
+    "expr": "happy",
+    "on": "isnt",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "Follow for more places you can see from space.",
+   "cam": {
+    "lat": 21.1244,
+    "lon": -11.4019,
+    "z": 6.5
+   },
+   "react": {
+    "expr": "happy",
+    "on": "follow",
+    "dur": 2.0
+   }
+  }
+ ],
+ "description": "The Richat Structure in Mauritania, the Eye of the Sahara, is about 40 km wide and a landmark for astronauts. Some claim it is Atlantis. Geologists say it is a deeply eroded dome pushed up by magma about 100 million years ago. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA (ISS030-E-12516, public domain); Clemens Schmillen, CC BY-SA 4.0, Wikimedia Commons.",
+ "hashtags": [
+  "#shorts",
+  "#sahara",
+  "#mystery",
+  "#atlantis",
+  "#geology",
+  "#earth"
+ ]
+}

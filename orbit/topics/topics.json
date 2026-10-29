@@ -1,0 +1,1170 @@
+[
+ {
+  "slug": "richat_structure",
+  "title": "Richat Structure",
+  "lat": 21.1147,
+  "lon": -11.3943,
+  "chars": 1210,
+  "has_coords": true
+ },
+ {
+  "slug": "pole_of_inaccessibility",
+  "title": "Pole of inaccessibility",
+  "lat": null,
+  "lon": null,
+  "chars": 1199,
+  "has_coords": false
+ },
+ {
+  "slug": "darvaza_gas_crater",
+  "title": "Darvaza gas crater",
+  "lat": 40.2525,
+  "lon": 58.4396,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "great_blue_hole",
+  "title": "Great Blue Hole",
+  "lat": 17.31527778,
+  "lon": -87.53444444,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "lake_natron",
+  "title": "Lake Natron",
+  "lat": -2.41666667,
+  "lon": 36,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "vredefort_impact_structure",
+  "title": "Vredefort impact structure",
+  "lat": -27,
+  "lon": 27.5,
+  "chars": 1208,
+  "has_coords": true
+ },
+ {
+  "slug": "manicouagan_reservoir",
+  "title": "Manicouagan Reservoir",
+  "lat": 51.12722222,
+  "lon": -68.74722222,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "racetrack_playa",
+  "title": "Racetrack Playa",
+  "lat": 36.6813,
+  "lon": -117.5627,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "nazca_lines",
+  "title": "Nazca lines",
+  "lat": -14.6975,
+  "lon": -75.135,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "area_51",
+  "title": "Area 51",
+  "lat": 37.23333333,
+  "lon": -115.80833333,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "bermuda_triangle",
+  "title": "Bermuda Triangle",
+  "lat": 25,
+  "lon": -71,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "lake_hillier",
+  "title": "Lake Hillier",
+  "lat": -34.09583333,
+  "lon": 123.20277778,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "danakil_depression",
+  "title": "Danakil Depression",
+  "lat": 14.2417,
+  "lon": 40.3,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "dallol_hydrothermal_system",
+  "title": "Dallol (hydrothermal system)",
+  "lat": null,
+  "lon": null,
+  "chars": 1198,
+  "has_coords": false
+ },
+ {
+  "slug": "grand_prismatic_spring",
+  "title": "Grand Prismatic Spring",
+  "lat": 44.525,
+  "lon": -110.8381,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "socotra",
+  "title": "Socotra",
+  "lat": 12.51,
+  "lon": 53.92,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "north_sentinel_island",
+  "title": "North Sentinel Island",
+  "lat": 11.5775,
+  "lon": 92.24444444,
+  "chars": 1208,
+  "has_coords": true
+ },
+ {
+  "slug": "surtsey",
+  "title": "Surtsey",
+  "lat": 63.303,
+  "lon": -20.605,
+  "chars": 1211,
+  "has_coords": true
+ },
+ {
+  "slug": "hashima_island",
+  "title": "Hashima Island",
+  "lat": 32.62777778,
+  "lon": 129.73833333,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "pripyat",
+  "title": "Pripyat",
+  "lat": 51.40611111,
+  "lon": 30.05722222,
+  "chars": 1202,
+  "has_coords": true
+ },
+ {
+  "slug": "kola_superdeep_borehole",
+  "title": "Kola Superdeep Borehole",
+  "lat": 69.3965,
+  "lon": 30.61,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "mir_mine",
+  "title": "Mir mine",
+  "lat": 62.52583333,
+  "lon": 113.98416667,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "bingham_canyon_mine",
+  "title": "Bingham Canyon Mine",
+  "lat": 40.523,
+  "lon": -112.151,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "kennicott",
+  "title": "Kennicott",
+  "lat": null,
+  "lon": null,
+  "chars": 790,
+  "has_coords": false
+ },
+ {
+  "slug": "uluru",
+  "title": "Uluru",
+  "lat": -25.345,
+  "lon": 131.03611111,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "wave_rock",
+  "title": "Wave Rock",
+  "lat": -32.44389,
+  "lon": 118.89828,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "lake_retba",
+  "title": "Lake Retba",
+  "lat": 14.83833889,
+  "lon": -17.24482222,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "spotted_lake",
+  "title": "Spotted Lake",
+  "lat": 49.07806,
+  "lon": -119.56694,
+  "chars": 1197,
+  "has_coords": true
+ },
+ {
+  "slug": "great_salt_lake",
+  "title": "Great Salt Lake",
+  "lat": 41.16666667,
+  "lon": -112.53333333,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "salar_de_uyuni",
+  "title": "Salar de Uyuni",
+  "lat": -20.133775,
+  "lon": -67.48913333,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "dead_sea",
+  "title": "Dead Sea",
+  "lat": null,
+  "lon": null,
+  "chars": 1205,
+  "has_coords": false
+ },
+ {
+  "slug": "aral_sea",
+  "title": "Aral Sea",
+  "lat": 45,
+  "lon": 60,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "lake_baikal",
+  "title": "Lake Baikal",
+  "lat": 53.5,
+  "lon": 108,
+  "chars": 1202,
+  "has_coords": true
+ },
+ {
+  "slug": "mount_roraima",
+  "title": "Mount Roraima",
+  "lat": 5.14333333,
+  "lon": -60.7625,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "angel_falls",
+  "title": "Angel Falls",
+  "lat": 5.9675,
+  "lon": -62.53555556,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "tsingy_de_bemaraha_national_park",
+  "title": "Tsingy de Bemaraha National Park",
+  "lat": null,
+  "lon": null,
+  "chars": 1196,
+  "has_coords": false
+ },
+ {
+  "slug": "danxia_landform",
+  "title": "Danxia landform",
+  "lat": 28.42194444,
+  "lon": 106.0425,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "zhangjiajie_national_forest_park",
+  "title": "Zhangjiajie National Forest Park",
+  "lat": 29.3499204,
+  "lon": 110.435151,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "pamukkale",
+  "title": "Pamukkale",
+  "lat": 37.92388889,
+  "lon": 29.12333333,
+  "chars": 1202,
+  "has_coords": true
+ },
+ {
+  "slug": "cappadocia",
+  "title": "Cappadocia",
+  "lat": 38.61833333,
+  "lon": 34.86722222,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "derinkuyu_underground_city",
+  "title": "Derinkuyu underground city",
+  "lat": 38.3735,
+  "lon": 34.7351,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "g_bekli_tepe",
+  "title": "Göbekli Tepe",
+  "lat": 37.22361111,
+  "lon": 38.92166667,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "petra",
+  "title": "Petra",
+  "lat": null,
+  "lon": null,
+  "chars": 1211,
+  "has_coords": false
+ },
+ {
+  "slug": "dracaena_cinnabari",
+  "title": "Dracaena cinnabari",
+  "lat": null,
+  "lon": null,
+  "chars": 1203,
+  "has_coords": false
+ },
+ {
+  "slug": "marree_man",
+  "title": "Marree Man",
+  "lat": -29.53,
+  "lon": 137.4655,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "uffington_white_horse",
+  "title": "Uffington White Horse",
+  "lat": 51.5775,
+  "lon": -1.56666667,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "cerne_abbas_giant",
+  "title": "Cerne Abbas Giant",
+  "lat": 50.813676,
+  "lon": -2.4747,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "atacama_giant",
+  "title": "Atacama Giant",
+  "lat": -19.94888889,
+  "lon": -69.63305556,
+  "chars": 1159,
+  "has_coords": true
+ },
+ {
+  "slug": "sajama_lines",
+  "title": "Sajama Lines",
+  "lat": -18.277,
+  "lon": -68.692,
+  "chars": 1202,
+  "has_coords": true
+ },
+ {
+  "slug": "blythe_intaglios",
+  "title": "Blythe Intaglios",
+  "lat": 33.80027778,
+  "lon": -114.53833333,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "steppe_geoglyphs",
+  "title": "Steppe Geoglyphs",
+  "lat": null,
+  "lon": null,
+  "chars": 1201,
+  "has_coords": false
+ },
+ {
+  "slug": "great_wall_of_china",
+  "title": "Great Wall of China",
+  "lat": 40.43138889,
+  "lon": 116.56444444,
+  "chars": 1206,
+  "has_coords": true
+ },
+ {
+  "slug": "palm_jumeirah",
+  "title": "Palm Jumeirah",
+  "lat": 25.11805556,
+  "lon": 55.13333333,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "the_world_archipelago",
+  "title": "The World (archipelago)",
+  "lat": 25.21666667,
+  "lon": 55.16666667,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "burning_man",
+  "title": "Burning Man",
+  "lat": 40.7869,
+  "lon": -119.2042,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "baikonur_cosmodrome",
+  "title": "Baikonur Cosmodrome",
+  "lat": 45.965,
+  "lon": 63.305,
+  "chars": 1209,
+  "has_coords": true
+ },
+ {
+  "slug": "woomera_prohibited_area",
+  "title": "Woomera Prohibited Area",
+  "lat": -30,
+  "lon": 134,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "diego_garcia",
+  "title": "Diego Garcia",
+  "lat": -7.31333333,
+  "lon": 72.41111111,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "kerguelen_islands",
+  "title": "Kerguelen Islands",
+  "lat": -49.25,
+  "lon": 69.15,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "tristan_da_cunha",
+  "title": "Tristan da Cunha",
+  "lat": -37.115,
+  "lon": -12.285,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "bouvet_island",
+  "title": "Bouvet Island",
+  "lat": -54.42,
+  "lon": 3.36,
+  "chars": 1208,
+  "has_coords": true
+ },
+ {
+  "slug": "pitcairn_islands",
+  "title": "Pitcairn Islands",
+  "lat": -25.06666667,
+  "lon": -130.1,
+  "chars": 1195,
+  "has_coords": true
+ },
+ {
+  "slug": "easter_island",
+  "title": "Easter Island",
+  "lat": -27.12,
+  "lon": -109.35,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "clipperton_island",
+  "title": "Clipperton Island",
+  "lat": 10.3,
+  "lon": -109.21666667,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "snake_island_ukraine",
+  "title": "Snake Island (Ukraine)",
+  "lat": 45.255,
+  "lon": 30.20416667,
+  "chars": 1206,
+  "has_coords": true
+ },
+ {
+  "slug": "ilha_da_queimada_grande",
+  "title": "Ilha da Queimada Grande",
+  "lat": -24.48611111,
+  "lon": -46.675,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "poveglia",
+  "title": "Poveglia",
+  "lat": 45.381944,
+  "lon": 12.331111,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "gruinard_island",
+  "title": "Gruinard Island",
+  "lat": 57.89,
+  "lon": -5.47,
+  "chars": 1206,
+  "has_coords": true
+ },
+ {
+  "slug": "pituffik_space_base",
+  "title": "Pituffik Space Base",
+  "lat": 76.53111111,
+  "lon": -68.70305556,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "svalbard_global_seed_vault",
+  "title": "Svalbard Global Seed Vault",
+  "lat": 78.23583333,
+  "lon": 15.49138889,
+  "chars": 1208,
+  "has_coords": true
+ },
+ {
+  "slug": "camp_century",
+  "title": "Camp Century",
+  "lat": 77.1667,
+  "lon": -61.1333,
+  "chars": 1202,
+  "has_coords": true
+ },
+ {
+  "slug": "lake_vostok",
+  "title": "Lake Vostok",
+  "lat": -77.5,
+  "lon": 106,
+  "chars": 1210,
+  "has_coords": true
+ },
+ {
+  "slug": "blood_falls",
+  "title": "Blood Falls",
+  "lat": -77.71666667,
+  "lon": 162.26666667,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "mcmurdo_dry_valleys",
+  "title": "McMurdo Dry Valleys",
+  "lat": -77.46666667,
+  "lon": 162.51666667,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "mount_erebus",
+  "title": "Mount Erebus",
+  "lat": -77.52972222,
+  "lon": 167.15333333,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "deception_island",
+  "title": "Deception Island",
+  "lat": -62.95833333,
+  "lon": -60.64166667,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "clearwater_lakes",
+  "title": "Clearwater Lakes",
+  "lat": 56.13333333,
+  "lon": -74.3,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "meteor_crater",
+  "title": "Meteor Crater",
+  "lat": 35.02805556,
+  "lon": -111.02333333,
+  "chars": 1209,
+  "has_coords": true
+ },
+ {
+  "slug": "wolfe_creek_crater",
+  "title": "Wolfe Creek Crater",
+  "lat": -19.17166667,
+  "lon": 127.79555556,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "kaali_crater",
+  "title": "Kaali crater",
+  "lat": 58.37277778,
+  "lon": 22.66944444,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "lonar_lake",
+  "title": "Lonar Lake",
+  "lat": 19.975,
+  "lon": 76.5075,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "gosses_bluff_impact_structure",
+  "title": "Gosses Bluff impact structure",
+  "lat": -23.82083333,
+  "lon": 132.30777778,
+  "chars": 1202,
+  "has_coords": true
+ },
+ {
+  "slug": "aorounga_crater",
+  "title": "Aorounga crater",
+  "lat": 19.1,
+  "lon": 19.25,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "popigai_impact_structure",
+  "title": "Popigai impact structure",
+  "lat": 71.65,
+  "lon": 111.18333333,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "chicxulub_crater",
+  "title": "Chicxulub crater",
+  "lat": 21.4,
+  "lon": -89.5,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "sudbury_basin",
+  "title": "Sudbury Basin",
+  "lat": 46.6,
+  "lon": -81.18333333,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "pingualuit_crater",
+  "title": "Pingualuit crater",
+  "lat": 61.2775,
+  "lon": -73.66,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "tunguska_event",
+  "title": "Tunguska event",
+  "lat": 60.90305556,
+  "lon": 101.90972222,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "yellowstone_caldera",
+  "title": "Yellowstone Caldera",
+  "lat": 44.4,
+  "lon": -110.7,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "krakatoa",
+  "title": "Krakatoa",
+  "lat": -6.102,
+  "lon": 105.423,
+  "chars": 1202,
+  "has_coords": true
+ },
+ {
+  "slug": "mount_vesuvius",
+  "title": "Mount Vesuvius",
+  "lat": 40.82138889,
+  "lon": 14.42611111,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "ol_doinyo_lengai",
+  "title": "Ol Doinyo Lengai",
+  "lat": -2.764,
+  "lon": 35.914,
+  "chars": 1195,
+  "has_coords": true
+ },
+ {
+  "slug": "erta_ale",
+  "title": "Erta Ale",
+  "lat": 13.60638889,
+  "lon": 40.66138889,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "mount_nyiragongo",
+  "title": "Mount Nyiragongo",
+  "lat": -1.52194444,
+  "lon": 29.24944444,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "ijen",
+  "title": "Ijen",
+  "lat": -8.06277778,
+  "lon": 114.26194444,
+  "chars": 1206,
+  "has_coords": true
+ },
+ {
+  "slug": "sakurajima",
+  "title": "Sakurajima",
+  "lat": 31.58055556,
+  "lon": 130.65805556,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "anak_krakatoa",
+  "title": "Anak Krakatoa",
+  "lat": -6.102,
+  "lon": 105.423,
+  "chars": 1195,
+  "has_coords": true
+ },
+ {
+  "slug": "hunga_tonga_hunga_ha_apai",
+  "title": "Hunga Tonga–Hunga Haʻapai",
+  "lat": -20.545,
+  "lon": -175.3925,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "mount_st_helens",
+  "title": "Mount St. Helens",
+  "lat": 46.1912,
+  "lon": -122.1944,
+  "chars": 1214,
+  "has_coords": true
+ },
+ {
+  "slug": "lake_nyos",
+  "title": "Lake Nyos",
+  "lat": 6.43805556,
+  "lon": 10.29888889,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "boiling_lake",
+  "title": "Boiling Lake",
+  "lat": 15.31833333,
+  "lon": -61.29416667,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "champagne_pool",
+  "title": "Champagne Pool",
+  "lat": -38.359086,
+  "lon": 176.368901,
+  "chars": 1206,
+  "has_coords": true
+ },
+ {
+  "slug": "deadvlei",
+  "title": "Deadvlei",
+  "lat": -24.75972222,
+  "lon": 15.29194444,
+  "chars": 1202,
+  "has_coords": true
+ },
+ {
+  "slug": "kolmanskop",
+  "title": "Kolmanskop",
+  "lat": -26.70406,
+  "lon": 15.232365,
+  "chars": 1195,
+  "has_coords": true
+ },
+ {
+  "slug": "fairy_circle_arid_grass_formation",
+  "title": "Fairy circle (arid grass formation)",
+  "lat": null,
+  "lon": null,
+  "chars": 1201,
+  "has_coords": false
+ },
+ {
+  "slug": "sossusvlei",
+  "title": "Sossusvlei",
+  "lat": -24.73983,
+  "lon": 15.28765,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "skeleton_coast",
+  "title": "Skeleton Coast",
+  "lat": null,
+  "lon": null,
+  "chars": 1207,
+  "has_coords": false
+ },
+ {
+  "slug": "lake_turkana",
+  "title": "Lake Turkana",
+  "lat": 3.58333333,
+  "lon": 36.11666667,
+  "chars": 1209,
+  "has_coords": true
+ },
+ {
+  "slug": "ngorongoro_conservation_area",
+  "title": "Ngorongoro Conservation Area",
+  "lat": -3.21,
+  "lon": 35.46,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "okavango_delta",
+  "title": "Okavango Delta",
+  "lat": -19.4,
+  "lon": 22.9,
+  "chars": 1207,
+  "has_coords": true
+ },
+ {
+  "slug": "lena_pillars",
+  "title": "Lena Pillars",
+  "lat": 61.14619,
+  "lon": 127.58471,
+  "chars": 1200,
+  "has_coords": true
+ },
+ {
+  "slug": "batagaika_crater",
+  "title": "Batagaika crater",
+  "lat": null,
+  "lon": null,
+  "chars": 1202,
+  "has_coords": false
+ },
+ {
+  "slug": "yamal_peninsula",
+  "title": "Yamal Peninsula",
+  "lat": 70.67088,
+  "lon": 70.13672,
+  "chars": 1191,
+  "has_coords": true
+ },
+ {
+  "slug": "oymyakon",
+  "title": "Oymyakon",
+  "lat": 63.46083333,
+  "lon": 142.78583333,
+  "chars": 1191,
+  "has_coords": true
+ },
+ {
+  "slug": "norilsk",
+  "title": "Norilsk",
+  "lat": 69.33333333,
+  "lon": 88.21666667,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "mirny_sakha_republic",
+  "title": "Mirny, Sakha Republic",
+  "lat": 62.55,
+  "lon": 113.96666667,
+  "chars": 1192,
+  "has_coords": true
+ },
+ {
+  "slug": "giza_pyramid_complex",
+  "title": "Giza pyramid complex",
+  "lat": 29.97611111,
+  "lon": 31.13277778,
+  "chars": 1209,
+  "has_coords": true
+ },
+ {
+  "slug": "teotihuacan",
+  "title": "Teotihuacan",
+  "lat": 19.6925,
+  "lon": -98.84388889,
+  "chars": 1211,
+  "has_coords": true
+ },
+ {
+  "slug": "angkor_wat",
+  "title": "Angkor Wat",
+  "lat": 13.4125,
+  "lon": 103.86666667,
+  "chars": 1209,
+  "has_coords": true
+ },
+ {
+  "slug": "bagan",
+  "title": "Bagan",
+  "lat": 21.1725,
+  "lon": 94.86,
+  "chars": 1193,
+  "has_coords": true
+ },
+ {
+  "slug": "machu_picchu",
+  "title": "Machu Picchu",
+  "lat": -13.16333333,
+  "lon": -72.54555556,
+  "chars": 1206,
+  "has_coords": true
+ },
+ {
+  "slug": "mohenjo_daro",
+  "title": "Mohenjo-daro",
+  "lat": 27.32916667,
+  "lon": 68.13888889,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "great_zimbabwe",
+  "title": "Great Zimbabwe",
+  "lat": -20.26666667,
+  "lon": 30.93333333,
+  "chars": 1208,
+  "has_coords": true
+ },
+ {
+  "slug": "sigiriya",
+  "title": "Sigiriya",
+  "lat": 7.95694444,
+  "lon": 80.75972222,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "nan_madol",
+  "title": "Nan Madol",
+  "lat": 6.84194444,
+  "lon": 158.33222222,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "antarctic_peninsula",
+  "title": "Antarctic Peninsula",
+  "lat": -69.5,
+  "lon": -65,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "danube_delta",
+  "title": "Danube Delta",
+  "lat": 45.2,
+  "lon": 29.5,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "rub_al_khali",
+  "title": "Rub' al Khali",
+  "lat": 20,
+  "lon": 50,
+  "chars": 1195,
+  "has_coords": true
+ },
+ {
+  "slug": "bayuda_desert",
+  "title": "Bayuda Desert",
+  "lat": null,
+  "lon": null,
+  "chars": 1206,
+  "has_coords": false
+ },
+ {
+  "slug": "sahara",
+  "title": "Sahara",
+  "lat": 23,
+  "lon": 13,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "lut_desert",
+  "title": "Lut Desert",
+  "lat": 30.60500001,
+  "lon": 59.06777779,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "taklamakan_desert",
+  "title": "Taklamakan Desert",
+  "lat": 38.9,
+  "lon": 82.2,
+  "chars": 1197,
+  "has_coords": true
+ },
+ {
+  "slug": "atacama_desert",
+  "title": "Atacama Desert",
+  "lat": -24.5,
+  "lon": -69.25,
+  "chars": 1204,
+  "has_coords": true
+ },
+ {
+  "slug": "badwater_basin",
+  "title": "Badwater Basin",
+  "lat": 36.25027778,
+  "lon": -116.82583333,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "death_valley",
+  "title": "Death Valley",
+  "lat": 36.24694444,
+  "lon": -116.81694444,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "monument_valley",
+  "title": "Monument Valley",
+  "lat": 36.98333333,
+  "lon": -110.1,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "horseshoe_bend_arizona",
+  "title": "Horseshoe Bend (Arizona)",
+  "lat": 36.87944444,
+  "lon": -111.51388889,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "grand_canyon",
+  "title": "Grand Canyon",
+  "lat": 36.3,
+  "lon": -112.75,
+  "chars": 1203,
+  "has_coords": true
+ },
+ {
+  "slug": "mono_lake",
+  "title": "Mono Lake",
+  "lat": 38.0165908,
+  "lon": -119.0093116,
+  "chars": 1201,
+  "has_coords": true
+ },
+ {
+  "slug": "salton_sea",
+  "title": "Salton Sea",
+  "lat": 33.31305556,
+  "lon": -115.83444444,
+  "chars": 1205,
+  "has_coords": true
+ },
+ {
+  "slug": "lake_kaindy",
+  "title": "Lake Kaindy",
+  "lat": 42.98750001,
+  "lon": 78.4638889,
+  "chars": 1206,
+  "has_coords": true
+ },
+ {
+  "slug": "plitvice_lakes_national_park",
+  "title": "Plitvice Lakes National Park",
+  "lat": 44.88055556,
+  "lon": 15.61611111,
+  "chars": 1195,
+  "has_coords": true
+ },
+ {
+  "slug": "blue_lagoon_geothermal_spa",
+  "title": "Blue Lagoon (geothermal spa)",
+  "lat": 63.88,
+  "lon": -22.44805556,
+  "chars": 1199,
+  "has_coords": true
+ },
+ {
+  "slug": "giant_s_causeway",
+  "title": "Giant's Causeway",
+  "lat": 55.24083333,
+  "lon": -6.51166667,
+  "chars": 1208,
+  "has_coords": true
+ },
+ {
+  "slug": "fingal_s_cave",
+  "title": "Fingal's Cave",
+  "lat": 56.43388889,
+  "lon": -6.33611111,
+  "chars": 1196,
+  "has_coords": true
+ },
+ {
+  "slug": "old_man_of_hoy",
+  "title": "Old Man of Hoy",
+  "lat": 58.8857,
+  "lon": -3.43299,
+  "chars": 1200,
+  "has_coords": true
+ }
+]

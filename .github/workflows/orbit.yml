@@ -1,0 +1,94 @@
+name: Curio ORBIT (scenar z Wikipedie + render, test)
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Slug temy z orbit/topics/queue.json (napr. manicouagan_reservoir); prazdne = dalsia todo"
+        type: string
+        default: ""
+      render:
+        description: "Aj vyrenderovat video (inak len scenar)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write          # ulozi scenar (orbit/specs), fotky a stav fronty
+
+concurrency:
+  group: orbit
+  cancel-in-progress: false
+
+jobs:
+  orbit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install Python deps
+        run: pip install requests kokoro-onnx soundfile Pillow numpy opencv-python-headless faster-whisper "av<19"
+
+      - name: Cache Kokoro model (~340 MB)
+        uses: actions/cache@v4
+        with:
+          path: kokoro
+          key: pro-models-v1
+
+      - name: Cache satelitne dlazdice
+        uses: actions/cache@v4
+        with:
+          path: assets/tiles_esri
+          key: orbit-tiles-${{ github.run_id }}
+          restore-keys: orbit-tiles-
+
+      - name: Prepare config
+        run: cp config.example.json config.json
+
+      - name: Napisat scenar (Groq + kontrola faktov)
+        id: write
+        env:
+          MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
+          MODELS_BASE_URL: https://api.groq.com/openai/v1
+          MODELS_MODEL: openai/gpt-oss-120b
+          MODELS_FALLBACK: openai/gpt-oss-20b
+        run: python orbit/write_spec.py "${{ github.event.inputs.topic }}"
+
+      - name: Render
+        if: github.event.inputs.render == 'true'
+        run: |
+          python orbit/orbit_engine.py "orbit/specs/${{ steps.write.outputs.slug }}.json"
+          F=output/orbit_${{ steps.write.outputs.slug }}.mp4
+          for t in 1 5 10 15 20 25 30 35; do ffmpeg -loglevel error -y -ss $t -i $F -frames:v 1 -vf scale=270:480 output/f_$t.png; done
+          ffmpeg -loglevel error -y -i output/f_1.png -i output/f_5.png -i output/f_10.png -i output/f_15.png -i output/f_20.png -i output/f_25.png -i output/f_30.png -i output/f_35.png \
+            -filter_complex "[0][1][2][3]hstack=4[a];[4][5][6][7]hstack=4[b];[a][b]vstack" output/orbit_${{ steps.write.outputs.slug }}_sheet.jpg
+
+      - name: Upload video + scenar
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbit-${{ steps.write.outputs.slug }}
+          retention-days: 7
+          if-no-files-found: ignore
+          path: |
+            output/orbit_*.mp4
+            output/orbit_*_sheet.jpg
+            orbit/specs/${{ steps.write.outputs.slug }}.json
+
+      - name: Persist scenar + stav
+        if: always() && steps.write.outputs.slug != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          rm -f config.json
+          git add orbit/specs/ orbit/photos/ orbit/topics/queue.json
+          git commit -m "orbit: scenar ${{ steps.write.outputs.slug }}" || echo "no changes"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          git push || echo "nothing to push"
