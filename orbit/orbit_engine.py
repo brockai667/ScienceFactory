@@ -25,7 +25,7 @@ TDIR = os.path.join(ROOT, "assets", "tiles_esri")
 FONT = os.path.join(ROOT, "assets", "fonts", "Poppins-SemiBold.ttf")
 RED = (48, 59, 255)          # BGR
 YEL = (40, 214, 255)
-GLOBE_T = 2.3                # trvanie glóbusu
+GLOBE_T = 1.6                # trvanie glóbusu (kratko: miesto musi byt vidiet do 2 s)
 GLOBE_ZEND = 5.3             # zoom, na ktorom glóbus prechadza do plochej mapy
 GLOBE_LEVEL = 4              # textura glóbusu (16x16 dlazdic)
 
@@ -382,6 +382,15 @@ def draw_overlays(fr, t, cam, spec, beats, words):
         k = int(len(s) * min(1.0, max(0.0, (t - 0.15) / 1.25)))
         a = 1.0 if t < b0["t1"] - 0.1 else max(0.0, 1 - (t - b0["t1"] + 0.1) / 0.4)
         paste_rgba(fr, search_bar(s[:k], (int(t * 2.2) % 2 == 0) or k < len(s)), 60, 130, a)
+        # titulok hooku: velky text od prvej sekundy, aby bolo hned jasne, preco pozerat
+        if spec.get("hook"):
+            hw = spec["hook"].split()
+            cut = len(hw) if len(spec["hook"]) <= 12 or len(hw) < 2 else min(
+                range(1, len(hw)), key=lambda c: max(len(" ".join(hw[:c])), len(" ".join(hw[c:]))))
+            for i, ln in enumerate([" ".join(hw[:cut]), " ".join(hw[cut:])]):
+                if ln:
+                    lab = text_rgba(ln, 104, fill=(255, 214, 0, 255) if i else (255, 255, 255, 255), box=(0, 0, 0, 185))
+                    paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 300 + i * 150 - int(25 * (1 - ease(min(1, t / 0.25)))), a)
     for b in beats:
         if not (b["t0"] - 0.1 <= t < b["t1"] + 0.1):
             continue

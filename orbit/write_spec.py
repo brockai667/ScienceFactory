@@ -93,14 +93,23 @@ A cute satellite robot narrates while the camera flies from a globe down to the 
 
 Structure:
 - 8 or 9 beats, 95 to 120 words in total. Short spoken sentences (max 16 words), plain English.
-- Beat 1 is the hook: tell viewers to type these coordinates into a satellite map and what strange thing they will find, and where. Never say the coordinate numbers (they are typed on screen).
+- Beat 1 is the hook (rules below). Write 3 different hook candidates in "hooks"; beat 1 text is your best one.
 - Beats 2-4 build curiosity: what it looks like, how big it is, the popular myth or wild guess (only if the article mentions one; otherwise ask the question the viewer is thinking, like "So what could make a ring this big?").
 - Beats 5-7 give the real answer step by step, then one surprising detail.
 - Then one short payoff line that ties back to the hook. Do not repeat a sentence, name or nickname you already used.
 - The last beat is exactly: "%s"
 
+Hook rules (beat 1):
+- One spoken sentence, 14 words max. It must work with sound on and eyes off the screen.
+- Name one concrete thing the viewer sees (ring, island, crater, color, shape) in the first 6 words.
+- Add tension with a specific number from the article (size, age, cause) or an impossibility. Never a vague adjective.
+- Banned: "something strange", "weird", "mysterious", "you won't believe", "secret", "scientists are baffled", "Did you know", "Today we", any claim not in the article.
+- Never say the coordinate numbers (they are typed on screen). "Search [name] on a satellite map and look at [feature]" is fine only with a specific feature.
+- Patterns: "This [shape] is [size] wide, and [process] shouldn't make [shape]." / "A [size] [object] hit [place], and the scar is still there." / "Why is this [place] a perfect [shape]?" / "This [feature] is [age] old, and you can still see it from space." / "[Ordinary setting], and in the middle, [unexpected thing]."
+- Each candidate has a "title": 2 to 4 words, ALL CAPS, max 22 characters, shown big from second 0. It adds a second true fact or a question and never repeats a word of the spoken hook. Digits are fine in the title only.
+
 Example of the tone (a different place):
-1 "Type these coordinates into a satellite map, and you'll find something strange in the middle of the Sahara."
+1 "This giant eye in the Sahara is forty kilometers wide, and no one built it."
 2 "A giant eye, forty kilometers wide. Astronauts use it as a landmark from space."
 3 "Perfect rings, one inside another."
 4 "Some people say this is the lost city of Atlantis."
@@ -122,6 +131,7 @@ Visual cues (each "on" is ONE word copied exactly from that beat's text, where t
 - photo (use 1 or 2 if the list has photos that clearly show this place, never in beat 1 or the last beat): {"index":N,"label":"SHORT CAPTION","on":word} using a photo from the list.
 
 Return JSON: {"title": str, "feature_km": number (size of the main thing visible from above, in km, from the article),
+"hooks": [{"text": str, "title": str}, 3 items],
 "beats": [{"text": str, "shot": str, "overlay": obj or null, "react": obj or null, "photo": obj or null}],
 "description": str (2 sentences, facts only), "hashtags": [5 strings starting with #]}""" % CTA
 
@@ -133,6 +143,17 @@ Flag a sentence only if it states a FACT that is false or not in the article:
 Never flag: describing how it looks on the satellite image (shapes, colors, "looks like an eye", "from space"), telling viewers to type coordinates,
 questions, simple plain-language wording of what the article says, the closing "Follow for more" line.
 Return JSON: {"problems": [str]}, one short line per false or invented fact. Empty list if there are none."""
+
+JUDGE = """You pick the strongest opening line (hook) for a 45 second vertical video about a place seen on a satellite map.
+Score each candidate 0-2 on each point:
+1. Picture: names a concrete visual in the first 6 words.
+2. Tension: a number, scale or impossibility that makes you ask a question.
+3. Speed and sound: 14 words or fewer, clear without seeing the screen, no hype phrases, no coordinate numbers.
+4. Truth and fit: every claim is in the article; the title adds a new fact and does not repeat the hook's words.
+Highest total wins; a tie goes to the shorter one.
+Return JSON: {"scores": [int per candidate], "best": index of the winner (0-based)}"""
+
+BANNED = re.compile(r"something (strange|weird)|\bweird\b|mysterious|won't believe|\bsecret\b|baffled|did you know|today we", re.I)
 
 
 def validate(s, photos):
@@ -153,6 +174,17 @@ def validate(s, photos):
         errs.append("use 3 or 4 overlays")
     if photos and not any(b.get("photo") for b in bs):
         errs.append("use at least 1 photo from the list")
+    hooks = [h for h in s.get("hooks") or [] if isinstance(h, dict)]
+    if len(hooks) < 2:
+        errs.append("give 3 hook candidates in \"hooks\"")
+    for i, h in enumerate(hooks):
+        txt, ttl = str(h.get("text", "")), str(h.get("title", ""))
+        if len(txt.split()) > 15:
+            errs.append(f"hook {i + 1} is longer than 14 words")
+        if BANNED.search(txt) or re.search(r"[0-9]", txt):
+            errs.append(f"hook {i + 1} uses a banned phrase or digits")
+        if not 2 <= len(ttl.split()) <= 4 or len(ttl) > 22:
+            errs.append(f"hook {i + 1} title must be 2-4 words, max 22 characters")
     if bs and bs[-1].get("text", "").strip() != CTA:
         errs.append("last beat must be exactly the CTA")
     try:
@@ -194,7 +226,19 @@ def write(fact, photos):
             msgs = msgs[:2]
             continue
         if not errs:
-            narr = "\n".join(b["text"] for b in s["beats"])
+            hooks = [h for h in s["hooks"] if isinstance(h, dict)]
+            pick = llm([{"role": "system", "content": JUDGE},
+                        {"role": "user", "content": f"Article:\n{fact['extract'][:2500]}\n\nCandidates:\n" + "\n".join(
+                            f"{i}: \"{h['text']}\" / title: {h['title']}" for i, h in enumerate(hooks))}], temp=0.1)
+            best = pick.get("best") if isinstance(pick.get("best"), int) and 0 <= pick["best"] < len(hooks) else 0
+            b0 = s["beats"][0]
+            b0["text"], s["hook_title"] = hooks[best]["text"].strip(), hooks[best]["title"].strip()
+            toks = [re.sub(r"[^a-z0-9']", "", t.lower()) for t in b0["text"].split()]
+            for k in ("overlay", "react", "photo"):              # cue na slove, ktore vo vitaznom hooku nie je, zahodit
+                if b0.get(k) and re.sub(r"[^a-z0-9']", "", str(b0[k].get("on", "")).lower()) not in toks:
+                    b0[k] = None
+            log(f"   hook {best + 1}/{len(hooks)} {pick.get('scores')}: {b0['text']} | {s['hook_title']}")
+            narr = f"On-screen title: {s['hook_title']}\n" + "\n".join(b["text"] for b in s["beats"])
             errs = llm([{"role": "system", "content": CHECK},
                         {"role": "user", "content": f"Article:\n{fact['extract']}\n\nNarration:\n{narr}"}], temp=0.1).get("problems") or []
             errs = [f"fact: {e}" for e in errs]
@@ -382,7 +426,7 @@ def build(fact, s, photos):
     ns, ew = ("N" if lat >= 0 else "S"), ("E" if lon >= 0 else "W")
     return {"title": s.get("title") or fact["title"], "coords": f"{abs(lat):.4f} {ns}, {abs(lon):.4f} {ew}",
             "voice": "am_michael", "speed": 1.0, "music": "cine_616.mp3", "start": {"lat": lat, "lon": lon},
-            "source": fact["url"], "feature_km": km, "beats": beats,
+            "source": fact["url"], "feature_km": km, "beats": beats, "hook": cut(s.get("hook_title", ""), 22),
             "description": f"{s.get('description', '').strip()} {credits} Source: Wikipedia.",
             "hashtags": (s.get("hashtags") or ["#shorts"])[:6]}
 
