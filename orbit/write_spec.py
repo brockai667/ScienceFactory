@@ -31,7 +31,7 @@ def llm(messages, temp=0.7):
                 m = re.search(r"try again in ([0-9.]+)s", r.text)     # Groq free: 8000 tokenov/min
                 if r.status_code == 429 and m:
                     wait = float(m.group(1)) + 2
-                log(f"   llm {model} {r.status_code}, cakam {wait:.0f} s")
+                log(f"   llm {model} {r.status_code}, cakam {wait:.0f} s" + ("" if r.status_code == 429 else ": " + r.text[:300]))
             except (requests.RequestException, ValueError, KeyError) as e:
                 log(f"   llm {model} chyba: {e}")
             time.sleep(wait)
@@ -131,7 +131,7 @@ Visual cues (each "on" is ONE word copied exactly from that beat's text, where t
 - photo (use 1 or 2 if the list has photos that clearly show this place, never in beat 1 or the last beat): {"index":N,"label":"SHORT CAPTION","on":word} using a photo from the list.
 
 Return JSON: {"title": str, "feature_km": number (size of the main thing visible from above, in km, from the article),
-"hooks": [{"text": str, "title": str}, 3 items],
+"hooks": [{"text": str, "title": str}, {"text": str, "title": str}, {"text": str, "title": str}],
 "beats": [{"text": str, "shot": str, "overlay": obj or null, "react": obj or null, "photo": obj or null}],
 "description": str (2 sentences, facts only), "hashtags": [5 strings starting with #]}""" % CTA
 
@@ -222,7 +222,7 @@ def write(fact, photos):
                         o["on"] = hit[0]
         errs = validate(s, photos)
         if len(s.get("beats") or []) < 6:                    # rozbity navrh: neopravovat, zacat odznova
-            log(f"   pokus {att + 1}: rozbity navrh, odznova")
+            log(f"   pokus {att + 1}: rozbity navrh, odznova: {json.dumps(s)[:300]}")
             msgs = msgs[:2]
             continue
         if not errs:
