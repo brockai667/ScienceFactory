@@ -189,6 +189,13 @@ Highest total wins; a tie goes to the shorter one.
 Return JSON: {"scores": [int per candidate], "best": index of the winner (0-based)}"""
 
 BANNED = re.compile(r"something (strange|weird)|\bweird\b|mysterious|won't believe|\bsecret\b|baffled|did you know|today we", re.I)
+# stylove pravidla: model ich pri oprave casto pokazi inde -> od 4. pokusu nebrzdia (fakty a struktura ano)
+SOFT = re.compile(r"never repeat a number|one number per beat|need 100-125 words|react cues|not a bare number|longer than 14 words"
+                  r"|title '.*' needs a true number")
+
+
+def fine(errs, att):
+    return not errs or (att >= 3 and all(SOFT.search(e) for e in errs))
 
 
 def numbers(text):
@@ -267,7 +274,7 @@ def validate(s, photos, ctx):
         errs.append("use 4 or 5 overlays, none in beat 1 or beat 9")
     for i, b in enumerate(bs):
         o = b.get("overlay") or {}
-        if o.get("type") in ("tag", "stamp") and not re.search(r"[A-Za-z]{3}", digits(str(o.get("label", "")))):
+        if o.get("type") in ("tag", "stamp") and not re.search(r"[A-Za-z]{2}", digits(str(o.get("label", "")))):
             errs.append(f"beat {i + 1} {o['type']} label '{o.get('label')}' needs words, not a bare number")
     if photos and not any(b.get("photo") for b in bs):
         errs.append("use at least 1 photo from the list")
@@ -337,7 +344,7 @@ def write(fact, photos, scale, nxt, km=None):
             log(f"   pokus {att + 1}: rozbity navrh, odznova: {json.dumps(s)[:300]}")
             msgs = msgs[:2]
             continue
-        if not errs:
+        if fine(errs, att):
             hooks = [h for h in s["hooks"] if isinstance(h, dict)]
             pick = llm([{"role": "system", "content": JUDGE},
                         {"role": "user", "content": f"Article:\n{fact['extract'][:2500]}\n\nCandidates:\n" + "\n".join(
@@ -352,7 +359,7 @@ def write(fact, photos, scale, nxt, km=None):
                     b0[k] = None
             log(f"   hook {best + 1}/{len(hooks)} {pick.get('scores')}: {b0['text']} | {s['hook_title']}")
             errs = validate(s, photos, ctx)                      # vitazny hook moze zopakovat cislo z dalsich beatov
-        if not errs:
+        if fine(errs, att):
             narr = f"On-screen title: {s['hook_title']}\n" + "\n".join(f"Beat {i + 1}: {b['text']}" for i, b in enumerate(s["beats"]))
             errs = llm([{"role": "system", "content": CHECK},
                         {"role": "user", "content": f"Article:\n{fact['extract']}{side}\n\nNarration:\n{narr}"}], temp=0.1).get("problems") or []
