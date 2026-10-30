@@ -23,19 +23,26 @@ def llm(messages, temp=0.7):
     base = os.environ.get("MODELS_BASE_URL", "https://api.groq.com/openai/v1").rstrip("/")
     tok = os.environ["MODELS_TOKEN"]
     for model in (os.environ.get("MODELS_MODEL", "openai/gpt-oss-120b"), os.environ.get("MODELS_FALLBACK", "openai/gpt-oss-20b")):
-        strict = True
+        strict, effort = True, "medium"
         for a in range(5):
             wait = 8 * (a + 1)
             try:
-                body = {"model": model, "messages": messages, "temperature": temp}
+                body = {"model": model, "messages": messages, "temperature": temp, "reasoning_effort": effort,
+                        "max_completion_tokens": max(1500, 7600 - len(json.dumps(messages)) // 3)}   # prompt + strop <= 8000 TPM
                 if strict:
                     body["response_format"] = {"type": "json_object"}
                 r = requests.post(base + "/chat/completions", headers={"Authorization": "Bearer " + tok}, json=body, timeout=180)
                 if r.status_code == 200:
-                    txt = r.json()["choices"][0]["message"]["content"]
+                    ch = r.json()["choices"][0]
+                    txt = ch["message"].get("content") or ""
+                    if "{" not in txt:                           # cele tokeny zjedlo uvazovanie -> menej uvazovat
+                        log(f"   llm {model}: prazdna odpoved ({ch.get('finish_reason')}, {r.json().get('usage', {}).get('completion_tokens')} tok)")
+                        effort, wait = "low", 3
+                        time.sleep(wait)
+                        continue
                     return json.loads(txt[txt.find("{"):txt.rfind("}") + 1])
                 if "json_validate_failed" in r.text:             # Groq obcas vrati prazdny JSON rezim -> bez neho, JSON vyrezat z textu
-                    strict, wait = False, 3
+                    strict, effort, wait = False, "low", 3
                 m = re.search(r"try again in ([0-9.]+)s", r.text)     # Groq free: 8000 tokenov/min
                 if r.status_code == 429 and m:
                     wait = float(m.group(1)) + 2
