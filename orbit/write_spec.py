@@ -327,7 +327,7 @@ def write(fact, photos, scale, nxt, km=None):
     side = (f"\n\nComputed scale fact (true): {scale['fact']}." if scale else "") + (
         f"\n\nNext-topic text (only for the 'Next target' line): {nxt['extract'][:500]}" if nxt else "")
     msgs = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
-    for att in range(8):
+    for att in range(10):
         s = llm(msgs)
         for b in s.get("beats") or []:                       # typograficke znaky -> ASCII (TTS ich cita zle)
             b["text"] = re.sub(r"[‐-―]", "-", b.get("text", "")).translate(
@@ -339,6 +339,8 @@ def write(fact, photos, scale, nxt, km=None):
                     hit = [w for w in str(o["on"]).split() if re.sub(r"[^a-z0-9']", "", w.lower()) in toks]
                     if hit:
                         o["on"] = hit[0]
+                if isinstance(o, dict) and re.sub(r"[^a-z0-9']", "", str(o.get("on", "")).lower()) not in toks and toks:
+                    o["on"] = max(b["text"].split(), key=len).strip(".,!?;:'\"")   # cue na slove mimo vety -> najdlhsie slovo
         errs = validate(s, photos, ctx)
         if len(s.get("beats") or []) < 6:                    # rozbity navrh: neopravovat, zacat odznova
             log(f"   pokus {att + 1}: rozbity navrh, odznova: {json.dumps(s)[:300]}")
@@ -370,7 +372,7 @@ def write(fact, photos, scale, nxt, km=None):
         log(f"   pokus {att + 1}: " + " | ".join(errs)[:400])
         msgs = msgs[:2] + [{"role": "assistant", "content": json.dumps(s)},   # len posledny navrh (Groq 8000 tok/min)
                            {"role": "user", "content": "Fix these problems and return the full JSON again:\n- " + "\n- ".join(errs)}]
-    sys.exit("scenar nepresiel kontrolou ani na 8. pokus")
+    sys.exit("scenar nepresiel kontrolou ani na 10. pokus")
 
 
 # ---------------------------------------------------------------- dorovnanie suradnic
