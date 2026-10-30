@@ -265,7 +265,7 @@ def validate(s, photos, ctx):
         errs.append("use 4 or 5 overlays, none in beat 1 or beat 9")
     for i, b in enumerate(bs):
         o = b.get("overlay") or {}
-        if o.get("type") in ("tag", "stamp") and not re.search(r"[A-Za-z]{3}", str(o.get("label", ""))):
+        if o.get("type") in ("tag", "stamp") and not re.search(r"[A-Za-z]{3}", digits(str(o.get("label", "")))):
             errs.append(f"beat {i + 1} {o['type']} label '{o.get('label')}' needs words, not a bare number")
     if photos and not any(b.get("photo") for b in bs):
         errs.append("use at least 1 photo from the list")
