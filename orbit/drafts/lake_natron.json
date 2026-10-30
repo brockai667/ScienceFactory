@@ -1,0 +1,549 @@
+{
+ "draft": {
+  "title": "NATRON'S SHIMMER",
+  "feature_km": 57,
+  "hooks": [
+   {
+    "text": "A shallow lake spans fifty‑seven kilometres, yet its chemistry shouldn't sparkle so intensely.",
+    "title": "ALKA PUZZLE"
+   },
+   {
+    "text": "A bright lake stretches fifty‑seven kilometres, and its surface shouldn't glimmer this way.",
+    "title": "SHIMMER FACT"
+   },
+   {
+    "text": "A long lake covers fifty‑seven kilometres, and its water shouldn't be this alkaline.",
+    "title": "ALKA RIFT"
+   }
+  ],
+  "beats": [
+   {
+    "text": "A long lake covers fifty-seven kilometres, and its water shouldn't be this alkaline.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "So why does this shallow lake shine with a crystal-like surface?",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "And the middle hides one more surprise.",
+    "shot": "wide",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "From orbit the lake stretches like a long ribbon across the rift.",
+    "shot": "wide",
+    "overlay": {
+     "type": "ruler",
+     "on": "lake",
+     "label": "57 KM"
+    },
+    "react": null,
+    "photo": {
+     "index": 0,
+     "label": "Lake Natron view",
+     "on": "lake"
+    }
+   },
+   {
+    "text": "Washington would fit inside it, and it is about three times as wide as Washington.",
+    "shot": "close",
+    "overlay": {
+     "type": "scale",
+     "on": "Washington"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Sodium carbonate from evaporating water builds up, raising the lake's pH.",
+    "shot": "close",
+    "overlay": {
+     "type": "highlight",
+     "on": "Sodium"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Mineral-rich hot springs add more salts, keeping the water intensely alkaline.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "hot",
+     "label": "SPRINGS"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It sits within the Gregory Rift, the eastern arm of the East African Rift.",
+    "shot": "wide",
+    "overlay": {
+     "type": "stamp",
+     "on": "Gregory",
+     "label": "RIFT"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "Gregory"
+    },
+    "photo": null
+   },
+   {
+    "text": "Next target: a circular sinkhole over three hundred metres wide. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "sinkhole"
+    },
+    "photo": null
+   }
+  ],
+  "description": "Lake Natron is a shallow, highly alkaline lake up to fifty‑seven kilometres long in Tanzania's Gregory Rift. Its water can reach pH above twelve due to sodium carbonate and mineral‑rich hot springs.",
+  "hashtags": [
+   "#LakeNatron",
+   "#AlkalineLake",
+   "#RiftValley",
+   "#Satellites",
+   "#Geology"
+  ],
+  "hook_title": "ALKA RIFT"
+ },
+ "photos": [
+  {
+   "name": "File:Around Lake Natron Camp (1) (28588319845).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Around_Lake_Natron_Camp_%281%29_%2828588319845%29.jpg/1920px-Around_Lake_Natron_Camp_%281%29_%2828588319845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Around Lake Natron Camp (1)",
+   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0",
+   "file": "photos/lake_natron/p0.jpg"
+  },
+  {
+   "name": "File:Around Lake Natron Camp (2) (27972345863).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Around_Lake_Natron_Camp_%282%29_%2827972345863%29.jpg/1920px-Around_Lake_Natron_Camp_%282%29_%2827972345863%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Around Lake Natron Camp (2)",
+   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+  },
+  {
+   "name": "File:Around Lake Natron Camp (3) (27972253643).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Around_Lake_Natron_Camp_%283%29_%2827972253643%29.jpg/1920px-Around_Lake_Natron_Camp_%283%29_%2827972253643%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Around Lake Natron Camp (3)",
+   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+  },
+  {
+   "name": "File:Landscape near Lake Natron (5) (28484189912).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Landscape_near_Lake_Natron_%285%29_%2828484189912%29.jpg/1920px-Landscape_near_Lake_Natron_%285%29_%2828484189912%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Landscape near Lake Natron (5)",
+   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+  },
+  {
+   "name": "File:Landscape near Lake Natron (6) (28484132322).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Landscape_near_Lake_Natron_%286%29_%2828484132322%29.jpg/1920px-Landscape_near_Lake_Natron_%286%29_%2828484132322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Landscape near Lake Natron (6)",
+   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+  },
+  {
+   "name": "File:Landscape near Lake Natron (7) (28558101556).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Landscape_near_Lake_Natron_%287%29_%2828558101556%29.jpg/1920px-Landscape_near_Lake_Natron_%287%29_%2828558101556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Landscape near Lake Natron (7)",
+   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+  }
+ ],
+ "lat": -2.3471,
+ "lon": 36.0106,
+ "shape": [
+  [
+   -2.43347,
+   35.89693
+  ],
+  [
+   -2.47529,
+   35.88939
+  ],
+  [
+   -2.47469,
+   35.89406
+  ],
+  [
+   -2.45677,
+   35.90989
+  ],
+  [
+   -2.45706,
+   35.9283
+  ],
+  [
+   -2.46724,
+   35.93804
+  ],
+  [
+   -2.48749,
+   35.94663
+  ],
+  [
+   -2.50122,
+   35.94663
+  ],
+  [
+   -2.53268,
+   35.93573
+  ],
+  [
+   -2.56372,
+   35.9153
+  ],
+  [
+   -2.56549,
+   35.90996
+  ],
+  [
+   -2.58491,
+   35.91269
+  ],
+  [
+   -2.58719,
+   35.92259
+  ],
+  [
+   -2.57926,
+   35.93049
+  ],
+  [
+   -2.57326,
+   35.95626
+  ],
+  [
+   -2.57723,
+   35.97005
+  ],
+  [
+   -2.5882,
+   35.97609
+  ],
+  [
+   -2.59016,
+   35.9936
+  ],
+  [
+   -2.59576,
+   35.9984
+  ],
+  [
+   -2.59183,
+   36.00998
+  ],
+  [
+   -2.573,
+   36.01249
+  ],
+  [
+   -2.54596,
+   36.03358
+  ],
+  [
+   -2.5321,
+   36.03505
+  ],
+  [
+   -2.52807,
+   36.04453
+  ],
+  [
+   -2.51864,
+   36.04334
+  ],
+  [
+   -2.46278,
+   36.07394
+  ],
+  [
+   -2.45287,
+   36.08569
+  ],
+  [
+   -2.43418,
+   36.09509
+  ],
+  [
+   -2.42772,
+   36.09302
+  ],
+  [
+   -2.41596,
+   36.10132
+  ],
+  [
+   -2.38932,
+   36.10407
+  ],
+  [
+   -2.38375,
+   36.11281
+  ],
+  [
+   -2.36252,
+   36.11783
+  ],
+  [
+   -2.34474,
+   36.12006
+  ],
+  [
+   -2.33534,
+   36.11436
+  ],
+  [
+   -2.32737,
+   36.12149
+  ],
+  [
+   -2.30322,
+   36.12455
+  ],
+  [
+   -2.28809,
+   36.13209
+  ],
+  [
+   -2.27277,
+   36.13316
+  ],
+  [
+   -2.27612,
+   36.12631
+  ],
+  [
+   -2.25588,
+   36.12888
+  ],
+  [
+   -2.22187,
+   36.12509
+  ],
+  [
+   -2.18794,
+   36.10966
+  ],
+  [
+   -2.17645,
+   36.0911
+  ],
+  [
+   -2.17586,
+   36.08157
+  ],
+  [
+   -2.15501,
+   36.0659
+  ],
+  [
+   -2.14198,
+   36.04132
+  ],
+  [
+   -2.11721,
+   36.03877
+  ],
+  [
+   -2.10497,
+   36.02943
+  ],
+  [
+   -2.09832,
+   35.99787
+  ],
+  [
+   -2.10124,
+   35.98564
+  ],
+  [
+   -2.11325,
+   35.97403
+  ],
+  [
+   -2.12264,
+   35.97129
+  ],
+  [
+   -2.14447,
+   35.98802
+  ],
+  [
+   -2.1515,
+   35.98784
+  ],
+  [
+   -2.15974,
+   35.98252
+  ],
+  [
+   -2.17535,
+   35.98475
+  ],
+  [
+   -2.19953,
+   35.96742
+  ],
+  [
+   -2.23955,
+   35.97469
+  ],
+  [
+   -2.27169,
+   35.96835
+  ],
+  [
+   -2.30228,
+   35.99076
+  ],
+  [
+   -2.32132,
+   35.99196
+  ],
+  [
+   -2.34036,
+   35.95523
+  ],
+  [
+   -2.34122,
+   35.9348
+  ],
+  [
+   -2.35391,
+   35.93188
+  ],
+  [
+   -2.3666,
+   35.9221
+  ],
+  [
+   -2.37228,
+   35.90617
+  ],
+  [
+   -2.38481,
+   35.90595
+  ],
+  [
+   -2.38899,
+   35.89981
+  ],
+  [
+   -2.39712,
+   35.90129
+  ],
+  [
+   -2.40322,
+   35.8963
+  ],
+  [
+   -2.41437,
+   35.89785
+  ],
+  [
+   -2.4228,
+   35.8933
+  ],
+  [
+   -2.43347,
+   35.89693
+  ]
+ ],
+ "scale": {
+  "city": {
+   "name": "WASHINGTON D.C.",
+   "area_km2": 176.3,
+   "span_km": 22.6,
+   "poly_km": [
+    [
+     -6.274,
+     6.483
+    ],
+    [
+     -4.368,
+     3.614
+    ],
+    [
+     -1.848,
+     2.723
+    ],
+    [
+     -1.013,
+     0.543
+    ],
+    [
+     -0.227,
+     -0.474
+    ],
+    [
+     0.154,
+     -0.019
+    ],
+    [
+     0.7,
+     -0.711
+    ],
+    [
+     0.83,
+     -1.256
+    ],
+    [
+     0.425,
+     -1.349
+    ],
+    [
+     0.805,
+     -1.363
+    ],
+    [
+     1.421,
+     -2.87
+    ],
+    [
+     1.115,
+     -3.944
+    ],
+    [
+     0.094,
+     -3.817
+    ],
+    [
+     0.383,
+     -4.923
+    ],
+    [
+     0.825,
+     -5.012
+    ],
+    [
+     0.733,
+     -9.298
+    ],
+    [
+     11.962,
+     1.895
+    ],
+    [
+     0.557,
+     13.296
+    ],
+    [
+     -6.274,
+     6.483
+    ]
+   ]
+  },
+  "say": "Washington D.C.",
+  "on": "Washington",
+  "fact": "Washington D.C. would fit inside it, and it is about three times as wide as Washington D.C."
+ }
+}

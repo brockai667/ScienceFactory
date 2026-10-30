@@ -32,9 +32,11 @@
  {
   "slug": "lake_natron",
   "title": "Lake Natron",
-  "lat": -2.41666667,
-  "lon": 36,
-  "status": "todo"
+  "lat": -2.3471,
+  "lon": 36.0106,
+  "status": "written",
+  "located": true,
+  "no": 3
  },
  {
   "slug": "vredefort_impact_structure",
