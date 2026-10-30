@@ -46,7 +46,7 @@ def llm(messages, temp=0.7):
                 m = re.search(r"try again in ([0-9.]+)s", r.text)     # Groq free: 8000 tokenov/min
                 if r.status_code == 429 and m:
                     wait = float(m.group(1)) + 2
-                log(f"   llm {model} {r.status_code}, cakam {wait:.0f} s" + ("" if r.status_code == 429 else ": " + r.text[:300]))
+                log(f"   llm {model} {r.status_code}, cakam {wait:.0f} s" + ("" if r.status_code == 429 and m else ": " + r.text[:300]))
             except (requests.RequestException, ValueError, KeyError) as e:
                 log(f"   llm {model} chyba: {e}")
             time.sleep(wait)
@@ -329,7 +329,8 @@ def write(fact, photos, scale, nxt, km=None):
     msgs = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
     for att in range(10):
         s = llm(msgs)
-        for b in s.get("beats") or []:                       # typograficke znaky -> ASCII (TTS ich cita zle)
+        s["beats"] = [b for b in s.get("beats") or [] if isinstance(b, dict)]
+        for b in s["beats"]:                     # typograficke znaky -> ASCII (TTS ich cita zle)
             b["text"] = re.sub(r"[‐-―]", "-", b.get("text", "")).translate(
                 {0x2018: "'", 0x2019: "'", 0x201c: '"', 0x201d: '"', 0x2026: "..."}).strip()
             toks = [re.sub(r"[^a-z0-9']", "", t.lower()) for t in b["text"].split()]
