@@ -110,10 +110,10 @@ The viewer must keep watching because a question stays open until late in the vi
 Structure, exactly 9 beats, 100 to 125 words in total. Short spoken sentences (max 16 words), plain English:
 1. Hook (rules below). Write 3 different hook candidates in "hooks"; beat 1 text is your best one.
 2. The question the viewer is now asking, as a real question ("So what carves a lake into a perfect ring?"). Do not answer it yet.
-3. A promise that keeps them watching: one more surprise is coming at the end, without saying what it is ("And the middle hides one more surprise."). Never reveal it here.
+3. A teaser for the fact you will reveal in beat 8: name its topic, not the fact ("And wait till you hear what lives in this water."). Never reveal it here. Pick the beat 8 fact first, then write this teaser for it; a generic "one more surprise" is not allowed.
 4-5. What you see and how big it is. Use the computed scale fact here if one is given.
 6-7. The real answer, step by step. This is the first time the cause is named.
-8. The payoff of the promise from beat 3: the most surprising fact in the article that you have not used yet.
+8. The payoff: exactly the fact teased in beat 3, the most surprising fact in the article that you have not used yet.
 9. The last beat (exact rule given in the user message).
 - One number per beat at most, and never the same number twice in the video (the screen already shows sizes).
 - Do not repeat a sentence, name or nickname you already used.
@@ -126,12 +126,12 @@ Hook rules (beat 1):
 - Banned: "something strange", "weird", "mysterious", "you won't believe", "secret", "scientists are baffled", "Did you know", "Today we", any claim not in the article.
 - Never say the coordinate numbers (they are typed on screen). "Search [name] on a satellite map and look at [feature]" is fine only with a specific feature.
 - Patterns: "This [shape] is [size] wide, and [process] shouldn't make [shape]." / "A [size] [object] hit [place], and the scar is still there." / "Why is this [place] a perfect [shape]?" / "This [feature] is [age] old, and you can still see it from space." / "[Ordinary setting], and in the middle, [unexpected thing]."
-- Each candidate has a "title": 2 to 4 words, ALL CAPS, max 22 characters, shown big from second 0. It adds a second true fact or a question and never repeats a word of the spoken hook. Digits are fine in the title only.
+- Each candidate has a "title": 2 to 4 words, ALL CAPS, max 22 characters, shown big from second 0. It is a second true fact from the article built around a number in digits plus a plain noun ("214 MILLION YEARS OLD", "PH ABOVE 12", "8 KM DEEP"). Never repeat the hook's number, never invented, clipped or poetic words ("SKY PAINT", "ALKA RIFT", "COSMIC GAZE"). Digits are fine in the title only.
 
 Example of the tone (a different place):
 1 "This giant eye in the Sahara is forty kilometers wide, and no one built it."
 2 "So what draws perfect rings into a desert?"
-3 "Stay till the end, because the rings hide one more surprise."
+3 "And wait till you hear who uses these rings."
 4 "From orbit, ring sits inside ring, like a target."
 5 "Paris would fit inside it, and it is about two times as wide."
 6 "About a hundred million years ago, molten rock pushed the ground up into a giant dome."
@@ -147,6 +147,7 @@ Facts:
 - Never invent a myth, rumor or what "some people" say, think or wonder. If the article has no myth, use a question instead.
 - No comparisons or analogies of your own ("enough to flood a city", "as big as a country"). The only allowed comparison is the computed scale fact in the user message.
 - Do not describe colors (blue, green, white...) unless the article states that color. Satellite colors often look different from what you expect.
+- No decorative adjectives the article does not support (crystal, pristine, glowing, eerie, ancient, massive, hidden). Plain words are better.
 
 Visual cues (each "on" is ONE word copied exactly from that beat's text, where the cue appears):
 - shot per beat: "feature" (whole place fills the screen), "close" (zoomed in on detail), "wide" (zoomed out to see the surroundings), "space" (far away, only for the last beat).
@@ -171,9 +172,10 @@ Flag a sentence only if it states a FACT that is false or not in the article:
 - a name, nickname, cause, record or event the article does not give,
 - anything about what people or scientists say, call it, think, wonder or believe, unless the article says it,
 - any comparison or analogy ("enough to flood a city", "bigger than...") that is not in the article, except the computed scale fact given below,
-- a color the article does not state.
+- a color the article does not state, or a describing word (crystal, glowing, pristine, forever) the article does not support,
+- beat 3 teases a topic that beat 8 does not deliver (beat 3 "the middle hides a surprise" but beat 8 is not about the middle), or beat 3 is a generic "one more surprise".
 Never flag: describing shapes on the satellite image ("looks like an eye", "a ring", "from space"), telling viewers to type coordinates,
-questions, promises that a surprise is coming, simple plain-language wording of what the article says, the computed scale fact,
+questions, a teaser in beat 3 that beat 8 delivers, simple plain-language wording of what the article says, the computed scale fact,
 the closing "Follow for the next scan. Orbi out." line. The "Next target" line is about a different place: check it only against the next-topic text.
 Return JSON: {"problems": [str]}, one short line per false or invented fact. Empty list if there are none."""
 
@@ -182,7 +184,7 @@ Score each candidate 0-2 on each point:
 1. Picture: names a concrete visual in the first 6 words.
 2. Tension: a number, scale or impossibility that makes you ask a question, WITHOUT revealing the cause or answer (hook or title naming the cause scores 0 here).
 3. Speed and sound: 14 words or fewer, clear without seeing the screen, no hype phrases, no coordinate numbers.
-4. Truth and fit: every claim is in the article; the title adds a new fact and does not repeat the hook's words.
+4. Truth and fit: every claim is in the article; the title is a plain fact with a number (not poetic or invented words) and does not repeat the hook's words.
 Highest total wins; a tie goes to the shorter one.
 Return JSON: {"scores": [int per candidate], "best": index of the winner (0-based)}"""
 
@@ -280,6 +282,8 @@ def validate(s, photos, ctx):
             errs.append(f"hook {i + 1} uses a banned phrase or digits")
         if not 2 <= len(ttl.split()) <= 4 or len(ttl) > 22:
             errs.append(f"hook {i + 1} title must be 2-4 words, max 22 characters")
+        if not re.search(r"[0-9]", ttl):                         # "SKY PAINT", "ALKA RIFT" nic nehovoria
+            errs.append(f"hook {i + 1} title '{ttl}' needs a true number in digits from the article plus a plain noun (like \"214 MILLION YEARS\")")
     last = bs[-1].get("text", "").strip() if bs else ""
     if ctx["next"]:
         if not (last.startswith("Next target:") and last.endswith(SIGNOFF) and len(last.split()) <= 22):
@@ -349,7 +353,7 @@ def write(fact, photos, scale, nxt, km=None):
             log(f"   hook {best + 1}/{len(hooks)} {pick.get('scores')}: {b0['text']} | {s['hook_title']}")
             errs = validate(s, photos, ctx)                      # vitazny hook moze zopakovat cislo z dalsich beatov
         if not errs:
-            narr = f"On-screen title: {s['hook_title']}\n" + "\n".join(b["text"] for b in s["beats"])
+            narr = f"On-screen title: {s['hook_title']}\n" + "\n".join(f"Beat {i + 1}: {b['text']}" for i, b in enumerate(s["beats"]))
             errs = llm([{"role": "system", "content": CHECK},
                         {"role": "user", "content": f"Article:\n{fact['extract']}{side}\n\nNarration:\n{narr}"}], temp=0.1).get("problems") or []
             errs = [f"fact: {e}" for e in errs]
