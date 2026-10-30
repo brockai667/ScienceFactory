@@ -201,6 +201,36 @@ def numbers(text):
     return [" ".join(c[:-1] if c[-1] == "and" else c) for c in out]
 
 
+UNITS = dict(zip("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen "
+                 "seventeen eighteen nineteen".split(), range(20)))
+UNITS.update(zip("twenty thirty forty fifty sixty seventy eighty ninety".split(), range(20, 100, 10)))
+MULT = {"hundred": 100, "thousand": 1000, "million": 10 ** 6, "billion": 10 ** 9}
+
+
+def digits(label):
+    """'ONE HUNDRED THIRTY EIGHT KM3' -> '138 KM3' (stitok je kratky, slova by sa zrezali)."""
+    out, tot, cur, num = [], 0, 0, False
+    for w in re.split(r"[\s-]+", label.strip()) + [""]:
+        lw = w.lower()
+        if lw in UNITS or lw in MULT or (num and lw == "and"):
+            num = True
+            if lw in UNITS:
+                cur += UNITS[lw]
+            elif lw == "hundred":
+                cur = (cur or 1) * 100
+            elif lw in MULT:
+                tot, cur = tot + (cur or 1) * MULT[lw], 0
+            continue
+        if num:
+            n = tot + cur
+            out.append(f"{n // 10 ** 9} BILLION" if n >= 10 ** 9 and n % 10 ** 9 == 0 else
+                       f"{n // 10 ** 6} MILLION" if n >= 10 ** 6 and n % 10 ** 6 == 0 else f"{n:,}")
+            tot, cur, num = 0, 0, False
+        if w:
+            out.append(w)
+    return " ".join(out)
+
+
 def validate(s, photos, ctx):
     errs = []
     bs = s.get("beats") or []
@@ -522,7 +552,7 @@ def build(fact, s, photos, scale=None, shape=None, no=None):
             shot = "space"
         elif shot == "space" or (shot == "wide" and (wide_used or i == 0)):
             shot = "feature"                                 # dalekych zaberov max 1, inak kamera "pumpuje"
-        measured = (b.get("overlay") or {}).get("type") in ("ruler", "rings", "scale", "highlight")
+        measured = (b.get("overlay") or {}).get("type") in ("ruler", "rings", "scale", "highlight", "tag")
         if measured:
             shot = "feature"                                 # pravitko/prstence sedia len na celom utvare
         wide_used |= shot == "wide"
@@ -542,7 +572,7 @@ def build(fact, s, photos, scale=None, shape=None, no=None):
         elif o and o.get("type") == "highlight":
             nb["highlight"] = {"on": o["on"]}
         elif o and o.get("type") == "tag":
-            nb["tag"] = {"lat": lat, "lon": lon, "label": cut(o.get("label", ""), 18), "on": o["on"]}
+            nb["tag"] = {"lat": lat, "lon": lon, "label": cut(digits(o.get("label", "")), 18), "on": o["on"]}
         elif o and o.get("type") == "stamp":
             lab = re.sub(r"\bMYA\b", "MILLION YEARS AGO", o.get("label", "").upper())
             nb["stamp"] = {"label": cut(re.sub(r"\bBYA\b", "BILLION YEARS AGO", lab), 26), "on": o["on"]}
