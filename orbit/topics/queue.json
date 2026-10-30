@@ -11,14 +11,14 @@
   "title": "Pole of inaccessibility",
   "lat": -48.8767,
   "lon": -123.3933,
-  "status": "todo"
+  "status": "skip"
  },
  {
   "slug": "darvaza_gas_crater",
   "title": "Darvaza gas crater",
   "lat": 40.2525,
   "lon": 58.4396,
-  "status": "written",
+  "status": "skip",
   "located": true,
   "no": 2
  },
@@ -141,7 +141,7 @@
   "title": "Kola Superdeep Borehole",
   "lat": 69.3965,
   "lon": 30.61,
-  "status": "todo"
+  "status": "skip"
  },
  {
   "slug": "mir_mine",
