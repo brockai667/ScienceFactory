@@ -23,14 +23,19 @@ def llm(messages, temp=0.7):
     base = os.environ.get("MODELS_BASE_URL", "https://api.groq.com/openai/v1").rstrip("/")
     tok = os.environ["MODELS_TOKEN"]
     for model in (os.environ.get("MODELS_MODEL", "openai/gpt-oss-120b"), os.environ.get("MODELS_FALLBACK", "openai/gpt-oss-20b")):
+        strict = True
         for a in range(5):
             wait = 8 * (a + 1)
             try:
-                r = requests.post(base + "/chat/completions", headers={"Authorization": "Bearer " + tok},
-                                  json={"model": model, "messages": messages, "temperature": temp,
-                                        "response_format": {"type": "json_object"}}, timeout=180)
+                body = {"model": model, "messages": messages, "temperature": temp}
+                if strict:
+                    body["response_format"] = {"type": "json_object"}
+                r = requests.post(base + "/chat/completions", headers={"Authorization": "Bearer " + tok}, json=body, timeout=180)
                 if r.status_code == 200:
-                    return json.loads(r.json()["choices"][0]["message"]["content"])
+                    txt = r.json()["choices"][0]["message"]["content"]
+                    return json.loads(txt[txt.find("{"):txt.rfind("}") + 1])
+                if "json_validate_failed" in r.text:             # Groq obcas vrati prazdny JSON rezim -> bez neho, JSON vyrezat z textu
+                    strict, wait = False, 3
                 m = re.search(r"try again in ([0-9.]+)s", r.text)     # Groq free: 8000 tokenov/min
                 if r.status_code == 429 and m:
                     wait = float(m.group(1)) + 2
@@ -557,7 +562,15 @@ def build(fact, s, photos, scale=None, shape=None, no=None):
 def main():
     qp = os.path.join(TOP, "queue.json")
     queue = json.load(open(qp, encoding="utf-8"))
-    slug = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else next(q["slug"] for q in queue if q["status"] == "todo")
+    slug, km = (sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else None), None
+    for x in ([] if slug else [x for x in queue if x["status"] == "todo"]):
+        km = feature_size(json.load(open(os.path.join(TOP, "facts", x["slug"] + ".json"), encoding="utf-8")))
+        if km and km < 0.25:                                      # zo satelitu len bodka (Darvaza 70 m) -> preskocit
+            log(f"   {x['slug']}: {km} km, primale, preskakujem")
+            x["status"] = "skip"
+            continue
+        slug = x["slug"]
+        break
     q = next(q for q in queue if q["slug"] == slug)
     fact = json.load(open(os.path.join(TOP, "facts", slug + ".json"), encoding="utf-8"))
     fact["lat"], fact["lon"] = q["lat"], q["lon"]          # queue ma aj rucne opravene suradnice
@@ -575,10 +588,10 @@ def main():
         if not ok:
             lat, lon, ok = locate_osm(fact["title"], q["lat"], q["lon"])
             fact["lat"], fact["lon"] = lat, lon
-        km = feature_size(fact)                                     # porovnanie s mestom pocita kod z clanku
+        km = km or feature_size(fact)                               # porovnanie s mestom pocita kod z clanku
         scale = scale_fact(km) if km else None
         shape, span = osm_shape(fact["title"], fact["lat"], fact["lon"])
-        if shape and km and not 0.4 * km <= span <= 2.5 * km:     # obrys je nieco ine nez utvar z clanku
+        if shape and km and not 0.6 * km <= span <= 1.5 * km:     # obrys je nieco ine nez utvar z clanku (ramena, rieky)
             log(f"   obrys {span} km nesedi s {km} km, zvyraznenie kruhom")
             shape = None
         log(f"   velkost {km} km, porovnanie: {scale['fact'] if scale else 'ziadne'}")
