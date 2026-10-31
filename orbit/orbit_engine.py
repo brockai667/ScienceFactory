@@ -359,8 +359,10 @@ def camera_track(spec, beats, total):
                          (c["lat"], c["lon"], GLOBE_ZEND), (c["lat"], c["lon"], c["z"])))
         else:
             mv = min(1.7, max(0.9, 0.4 * (b["t1"] - b["t0"]))) if abs(c["z"] - prev["z"]) > 0.5 else 1.0
-            keys.append(("fly", b["t0"] - 0.15, b["t0"] - 0.15 + mv, (prev["lat"], prev["lon"], prev["z"]),
-                         (c["lat"], c["lon"], c["z"])))
+            if c.get("hop"):                                  # let k dalsiemu cielu: von do vesmiru, presun, dnu
+                mv = min(3.2, max(2.2, 0.5 * (b["t1"] - b["t0"])))
+            keys.append(("hop" if c.get("hop") else "fly", b["t0"] - 0.15, b["t0"] - 0.15 + mv,
+                         (prev["lat"], prev["lon"], prev["z"]), (c["lat"], c["lon"], c["z"])))
         prev = c
     frames = []
     n = int(math.ceil(total * FPS))
@@ -374,6 +376,12 @@ def camera_track(spec, beats, total):
                 lat = p0[0] + (p1[0] - p0[0]) * u
                 lon = p0[1] + (p1[1] - p0[1]) * u
                 z = p0[2] + (p1[2] - p0[2]) * u
+                if kind == "hop":                           # obluk: presun sa deje vysoko nad Zemou (z ~4 v strede)
+                    v = min(1.0, max(0.0, (t - a) / max(0.05, bnd - a)))
+                    w = ease(min(1.0, max(0.0, (v - 0.25) / 0.5)))
+                    lat, lon = p0[0] + (p1[0] - p0[0]) * w, p0[1] + (p1[1] - p0[1]) * w
+                    dip = max(0.0, (p0[2] + p1[2]) / 2 - 4.0)
+                    z = p0[2] + (p1[2] - p0[2]) * ease(v) - dip * math.sin(math.pi * v)
                 drift = max(0.0, t - bnd) * 0.035          # pomaly dych kamery po dolete
                 cur = (lat, lon, z + drift)
         if cur is None:
@@ -385,8 +393,8 @@ def camera_track(spec, beats, total):
 def globe_params(spec, t):
     tgt = spec["beats"][0]["cam"]
     u = ease(t / GLOBE_T)
-    lat = 8 + (tgt["lat"] - 8) * u
-    lon = tgt["lon"] + 75 * (1 - u)
+    lat = 0.6 * tgt["lat"] + 0.4 * tgt["lat"] * u                # od 1. snimku vidno spravnu cast sveta, nie Afriku
+    lon = tgt["lon"] + 25 * (1 - u)
     zc = GLOBE_ZEND
     rend = 256 * 2 ** zc / (2 * math.pi * math.cos(math.radians(tgt["lat"])))
     r0 = 360

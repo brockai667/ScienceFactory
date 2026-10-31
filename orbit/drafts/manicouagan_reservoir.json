@@ -39,19 +39,15 @@
     "photo": null
    },
    {
-    "text": "From orbit, the outer rim stretches about one hundred kilometers.",
+    "text": "From orbit, the ring of water measures about seventy kilometers across.",
     "shot": "close",
     "overlay": {
      "type": "ruler",
-     "on": "outer",
-     "label": "100 KM"
+     "on": "ring",
+     "label": "70 KM"
     },
     "react": null,
-    "photo": {
-     "index": 0,
-     "label": "Space view",
-     "on": "kilometers"
-    }
+    "photo": null
    },
    {
     "text": "Greater London would fit inside it.",
@@ -118,7 +114,7 @@
    "#Quebec",
    "#SpaceScience"
   ],
-  "hook_title": "5 KM IMPACT"
+  "hook_title": "70 KM RING"
  },
  "photos": [
   {

@@ -126,7 +126,8 @@ Hook rules (beat 1):
 - Banned: "something strange", "weird", "mysterious", "you won't believe", "secret", "scientists are baffled", "Did you know", "Today we", any claim not in the article.
 - Never say the coordinate numbers (they are typed on screen). "Search [name] on a satellite map and look at [feature]" is fine only with a specific feature.
 - Patterns: "This [shape] is [size] wide, and [process] shouldn't make [shape]." / "A [size] [object] hit [place], and the scar is still there." / "Why is this [place] a perfect [shape]?" / "This [feature] is [age] old, and you can still see it from space." / "[Ordinary setting], and in the middle, [unexpected thing]."
-- Each candidate has a "title": 2 to 4 words, ALL CAPS, max 22 characters, shown big from second 0. It is a second true fact from the article built around a number in digits plus a plain noun ("214 MILLION YEARS OLD", "PH ABOVE 12", "8 KM DEEP"). Never repeat the hook's number, never invented, clipped or poetic words ("SKY PAINT", "ALKA RIFT", "COSMIC GAZE"). Digits are fine in the title only.
+- Each candidate has a "title": 2 to 4 words, ALL CAPS, max 22 characters, shown big from second 0. It shows the hook's own number in digits plus a plain noun, so screen and voice say the same thing (hook "A perfect ring seventy kilometers wide..." -> title "70 KM RING"; "PH ABOVE 12", "8 KM DEEP"). Never a different number than the hook, never the cause (IMPACT, METEOR, VOLCANO...), never invented, clipped or poetic words ("SKY PAINT", "ALKA RIFT", "COSMIC GAZE"). Digits are fine in the title only.
+- A size in the hook is the size of the main feature (feature_km), the same number the ruler shows later. Do not give the lake, the rim and the crater three different sizes.
 
 Example of the tone (a different place):
 1 "This giant eye in the Sahara is forty kilometers wide, and no one built it."
@@ -186,11 +187,12 @@ Score each candidate 0-2 on each point:
 1. Picture: names a concrete visual in the first 6 words.
 2. Tension: a number, scale or impossibility that makes you ask a question, WITHOUT revealing the cause or answer (hook or title naming the cause scores 0 here).
 3. Speed and sound: 14 words or fewer, clear without seeing the screen, no hype phrases, no coordinate numbers.
-4. Truth and fit: every claim is in the article; the title is a plain fact with a number (not poetic or invented words) and does not repeat the hook's words.
+4. Truth and fit: every claim is in the article; the title is a plain fact with the hook's own number (not poetic or invented words, not the cause).
 Highest total wins; a tie goes to the shorter one.
 Return JSON: {"scores": [int per candidate], "best": index of the winner (0-based)}"""
 
 BANNED = re.compile(r"something (strange|weird)|\bweird\b|mysterious|won't believe|\bsecret\b|baffled|did you know|today we", re.I)
+CAUSE = re.compile(r"impact|meteor|asteroid|comet|volcan|erosion|erupt|eroded|glacier|collapse|tectonic", re.I)
 # stylove pravidla: model ich pri oprave casto pokazi inde -> od 4. pokusu nebrzdia (fakty a struktura ano)
 SOFT = re.compile(r"never repeat a number|one number per beat|need 100-125 words|react cues|not a bare number|longer than 14 words"
                   r"|title '.*' needs a true number")
@@ -299,6 +301,14 @@ def validate(s, photos, ctx):
             errs.append(f"hook {i + 1} title must be 2-4 words, max 22 characters")
         if not re.search(r"[0-9]", ttl):                         # "SKY PAINT", "ALKA RIFT" nic nehovoria
             errs.append(f"hook {i + 1} title '{ttl}' needs a true number in digits from the article plus a plain noun (like \"214 MILLION YEARS\")")
+        spoken = digits(re.sub(r"[^\w\s-]", " ", txt)).replace(",", "")         # "twelve." -> "12"
+        if re.search(r"[0-9]", ttl) and not set(re.findall(r"\d+", ttl)) & set(re.findall(r"\d+", spoken)):
+            errs.append(f"hook {i + 1} title '{ttl}' must show the hook's own number (screen and voice say the same)")
+        if CAUSE.search(ttl):
+            errs.append(f"hook {i + 1} title '{ttl}' gives away the cause")
+        hk = [float(n) for n in re.findall(r"(\d+(?:\.\d+)?) ?KILOMET", spoken.upper())]
+        if hk and s.get("feature_km") and not any(abs(n / float(s["feature_km"]) - 1) <= 0.15 for n in hk):
+            errs.append(f"hook {i + 1} says {hk[0]:g} km but feature_km (the ruler) is {s['feature_km']}: use one size")
     last = bs[-1].get("text", "").strip() if bs else ""
     if ctx["next"]:
         if not (last.startswith("Next target:") and last.endswith(SIGNOFF) and len(last.split()) <= 22):
@@ -559,7 +569,7 @@ def z_for(lat, km):
     return math.log2(156543.03 * math.cos(math.radians(lat)) * 1080 * 0.8 / (km * 1000))
 
 
-def build(fact, s, photos, scale=None, shape=None, no=None):
+def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
     lat, lon = fact["lat"], fact["lon"]
     km = float(s["feature_km"])
     zf = max(4.5, min(Z_MAX - 1.0, z_for(lat, km) - 0.35))     # cely utvar aj s okolim (~60 % sirky)
@@ -572,8 +582,8 @@ def build(fact, s, photos, scale=None, shape=None, no=None):
         shot = b.get("shot") if b.get("shot") in zs else "feature"
         if i == len(s["beats"]) - 1:
             shot = "space"
-        elif shot == "space" or (shot == "wide" and (wide_used or i == 0)):
-            shot = "feature"                                 # dalekych zaberov max 1, inak kamera "pumpuje"
+        elif shot == "space" or (shot == "wide" and (wide_used or i < 3)):
+            shot = "feature"                                 # dalekych zaberov max 1, inak kamera "pumpuje"; nie pocas hacika a teaseru
         measured = (b.get("overlay") or {}).get("type") in ("ruler", "rings", "scale", "highlight", "tag")
         if measured:
             shot = "feature"                                 # pravitko/prstence sedia len na celom utvare
@@ -582,6 +592,8 @@ def build(fact, s, photos, scale=None, shape=None, no=None):
         if shot == "feature" and not measured:
             z += min(0.3, 0.1 * nfeat); nfeat += 1           # pomaly najazd, nie skoky
         nb = {"text": b["text"], "cam": {"lat": lat, "lon": lon, "z": round(min(Z_MAX, z), 2)}}
+        if shot == "space" and nxt_pos:                      # koniec: skok k dalsiemu cielu namiesto statickej mapy
+            nb["cam"] = {"lat": nxt_pos[0], "lon": nxt_pos[1], "z": 13.0, "hop": True}
         if i == 0:
             nb["globe"] = True
         o = b.get("overlay") if i else None                  # v 1. zabere leti kamera z globusu, overlay by bol mrnavy
@@ -640,6 +652,8 @@ def main():
         s, photos = d["draft"], d["photos"]
         log("   prerender z ulozeneho navrhu")
         shape, scale = d.get("shape"), d.get("scale")
+        nq = next((x for x in queue if x["slug"] == d.get("next")), None) or next(
+            (x for x in queue if x["status"] == "todo" and x["slug"] != slug), None)
     else:
         photos = commons_photos(fact["title"], q["lat"], q["lon"])
         log(f"   fotky z Commons: {len(photos)}")
@@ -667,9 +681,10 @@ def main():
     q["no"] = q.get("no") or 1 + max(x.get("no") or 0 for x in queue)   # cislo dielu serie
     download(photos, slug, {b["photo"]["index"] for b in s["beats"] if b.get("photo")})
     os.makedirs(os.path.join(HERE, "drafts"), exist_ok=True)       # surovy navrh: prerender bez noveho pisania
-    json.dump({"draft": s, "photos": photos, "lat": fact["lat"], "lon": fact["lon"], "shape": shape, "scale": scale},
+    json.dump({"draft": s, "photos": photos, "lat": fact["lat"], "lon": fact["lon"], "shape": shape, "scale": scale,
+               "next": nq["slug"] if nq else None},
               open(os.path.join(HERE, "drafts", slug + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    spec = build(fact, s, photos, scale, shape, q["no"])
+    spec = build(fact, s, photos, scale, shape, q["no"], (nq["lat"], nq["lon"]) if nq else None)
     json.dump(spec, open(os.path.join(HERE, "specs", slug + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     q["status"] = "written"
     json.dump(queue, open(qp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
