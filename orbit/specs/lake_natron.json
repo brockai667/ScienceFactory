@@ -1,5 +1,5 @@
 {
- "title": "NATRON'S SHIMMER",
+ "title": "57 KM LONG",
  "coords": "2.3471 S, 36.0106 E",
  "voice": "am_michael",
  "speed": 1.0,
@@ -12,7 +12,7 @@
  "feature_km": 57.0,
  "beats": [
   {
-   "text": "A long lake covers fifty-seven kilometres, and its water shouldn't be this alkaline.",
+   "text": "How can a lake this long, fifty-seven kilometers, stay under three meters deep?",
    "cam": {
     "lat": -2.3471,
     "lon": 36.0106,
@@ -21,45 +21,32 @@
    "globe": true
   },
   {
-   "text": "So why does this shallow lake shine with a crystal-like surface?",
-   "cam": {
-    "lat": -2.3471,
-    "lon": 36.0106,
-    "z": 11.76
-   }
-  },
-  {
-   "text": "And the middle hides one more surprise.",
-   "cam": {
-    "lat": -2.3471,
-    "lon": 36.0106,
-    "z": 9.06
-   }
-  },
-  {
-   "text": "From orbit the lake stretches like a long ribbon across the rift.",
+   "text": "So what makes this shallow basin so alkaline despite river inflow?",
    "cam": {
     "lat": -2.3471,
     "lon": 36.0106,
     "z": 10.86
    },
-   "ruler": {
-    "lat": -2.3471,
-    "lon": 36.0106,
-    "km": 57.0,
-    "label": "57 KM",
-    "on": "lake"
-   },
-   "photo": {
-    "file": "photos/lake_natron/p0.jpg",
-    "label": "LAKE NATRON VIEW",
-    "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0",
-    "on": "lake",
-    "dur": 2.8
+   "highlight": {
+    "on": "alkaline"
    }
   },
   {
-   "text": "Washington would fit inside it, and it is about three times as wide as Washington.",
+   "text": "And wait till you hear why it earned Ramsar wetland status.",
+   "cam": {
+    "lat": -2.3471,
+    "lon": 36.0106,
+    "z": 10.86
+   },
+   "tag": {
+    "lat": -2.3471,
+    "lon": 36.0106,
+    "label": "WETLAND",
+    "on": "Ramsar"
+   }
+  },
+  {
+   "text": "From orbit the lake dwarfs Washington, three times its width fits inside.",
    "cam": {
     "lat": -2.3471,
     "lon": 36.0106,
@@ -146,72 +133,85 @@
      ]
     ],
     "on": "Washington"
+   },
+   "photo": {
+    "file": "photos/lake_natron/p0.jpg",
+    "label": "EARTH FROM ISS",
+    "credit": "Earth Science and Remote Sensing Unit, N",
+    "on": "orbit",
+    "dur": 2.8
    }
   },
   {
-   "text": "Sodium carbonate from evaporating water builds up, raising the lake's pH.",
+   "text": "Its width reaches twenty-two kilometers, showing the lake's massive expanse.",
    "cam": {
     "lat": -2.3471,
     "lon": 36.0106,
     "z": 10.86
    },
-   "highlight": {
-    "on": "Sodium"
+   "ruler": {
+    "lat": -2.3471,
+    "lon": 36.0106,
+    "km": 57.0,
+    "label": "22 KM",
+    "on": "width"
    }
   },
   {
-   "text": "Mineral-rich hot springs add more salts, keeping the water intensely alkaline.",
+   "text": "First, mineral-rich hot springs add sodium carbonate and other minerals to the lake.",
+   "cam": {
+    "lat": -2.3471,
+    "lon": 36.0106,
+    "z": 11.76
+   }
+  },
+  {
+   "text": "Then intense evaporation leaves natron and trona, pushing pH above twelve.",
    "cam": {
     "lat": -2.3471,
     "lon": 36.0106,
     "z": 11.76
    },
-   "tag": {
-    "lat": -2.3471,
-    "lon": 36.0106,
-    "label": "SPRINGS",
-    "on": "hot"
-   }
-  },
-  {
-   "text": "It sits within the Gregory Rift, the eastern arm of the East African Rift.",
-   "cam": {
-    "lat": -2.3471,
-    "lon": 36.0106,
-    "z": 10.96
-   },
    "stamp": {
-    "label": "RIFT",
-    "on": "Gregory"
+    "label": "PH >12",
+    "on": "twelve"
    },
    "react": {
     "expr": "surprised",
-    "on": "Gregory",
+    "on": "twelve",
     "dur": 1.4
    }
   },
   {
-   "text": "Next target: a circular sinkhole over three hundred metres wide. Follow for the next scan. Orbi out.",
+   "text": "And the lake earned international wetland protection for its unique ecosystem.",
+   "cam": {
+    "lat": -2.3471,
+    "lon": 36.0106,
+    "z": 11.76
+   },
+   "react": {
+    "expr": "happy",
+    "on": "wetland",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "Next target: a giant marine sinkhole off Belize's coast. Follow for the next scan. Orbi out.",
    "cam": {
     "lat": -2.3471,
     "lon": 36.0106,
     "z": 5.86
-   },
-   "react": {
-    "expr": "happy",
-    "on": "sinkhole",
-    "dur": 1.4
    }
   }
  ],
- "hook": "ALKA RIFT",
- "description": "Lake Natron is a shallow, highly alkaline lake up to fifty‑seven kilometres long in Tanzania's Gregory Rift. Its water can reach pH above twelve due to sodium carbonate and mineral‑rich hot springs. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0, Wikimedia Commons. Source: Wikipedia.",
+ "hook": "TEMP ABOVE 40",
+ "description": "Lake Natron is a shallow alkaline lake in Tanzania and Kenya, up to fifty-seven kilometers long and twenty-two kilometers wide. Its pH above twelve and mineral deposits earned it Ramsar wetland status of international significance. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Earth Science and Remote Sensing Unit, N, Wikimedia Commons. Source: Wikipedia.",
  "hashtags": [
   "#LakeNatron",
   "#AlkalineLake",
-  "#RiftValley",
-  "#Satellites",
-  "#Geology"
+  "#RamsarSite",
+  "#Tanzania",
+  "#OrbiExplores"
  ],
  "shape": [
   [

@@ -1,161 +1,162 @@
 {
  "draft": {
-  "title": "NATRON'S SHIMMER",
+  "title": "57 KM LONG",
   "feature_km": 57,
   "hooks": [
    {
-    "text": "A shallow lake spans fifty‑seven kilometres, yet its chemistry shouldn't sparkle so intensely.",
-    "title": "ALKA PUZZLE"
+    "text": "This long lake stretches fifty-seven kilometers, and such a shape shouldn't exist.",
+    "title": "57 KM LONG"
    },
    {
-    "text": "A bright lake stretches fifty‑seven kilometres, and its surface shouldn't glimmer this way.",
-    "title": "SHIMMER FACT"
+    "text": "Why does this shallow basin reach fifty-seven kilometers, yet stay barely three meters deep?",
+    "title": "DEPTH BELOW 3"
    },
    {
-    "text": "A long lake covers fifty‑seven kilometres, and its water shouldn't be this alkaline.",
-    "title": "ALKA RIFT"
+    "text": "How can a lake this long, fifty-seven kilometers, stay under three meters deep?",
+    "title": "TEMP ABOVE 40"
    }
   ],
   "beats": [
    {
-    "text": "A long lake covers fifty-seven kilometres, and its water shouldn't be this alkaline.",
+    "text": "How can a lake this long, fifty-seven kilometers, stay under three meters deep?",
     "shot": "feature",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "So why does this shallow lake shine with a crystal-like surface?",
+    "text": "So what makes this shallow basin so alkaline despite river inflow?",
     "shot": "close",
-    "overlay": null,
+    "overlay": {
+     "type": "highlight",
+     "on": "alkaline"
+    },
     "react": null,
     "photo": null
    },
    {
-    "text": "And the middle hides one more surprise.",
-    "shot": "wide",
-    "overlay": null,
+    "text": "And wait till you hear why it earned Ramsar wetland status.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "Ramsar",
+     "label": "wetland"
+    },
     "react": null,
     "photo": null
    },
    {
-    "text": "From orbit the lake stretches like a long ribbon across the rift.",
+    "text": "From orbit the lake dwarfs Washington, three times its width fits inside.",
     "shot": "wide",
     "overlay": {
-     "type": "ruler",
-     "on": "lake",
-     "label": "57 KM"
+     "type": "scale",
+     "on": "Washington",
+     "label": "Washington D.C."
     },
     "react": null,
     "photo": {
      "index": 0,
-     "label": "Lake Natron view",
-     "on": "lake"
+     "label": "Earth from ISS",
+     "on": "orbit"
     }
    },
    {
-    "text": "Washington would fit inside it, and it is about three times as wide as Washington.",
+    "text": "Its width reaches twenty-two kilometers, showing the lake's massive expanse.",
     "shot": "close",
     "overlay": {
-     "type": "scale",
-     "on": "Washington"
+     "type": "ruler",
+     "on": "width",
+     "label": "22 KM"
     },
     "react": null,
     "photo": null
    },
    {
-    "text": "Sodium carbonate from evaporating water builds up, raising the lake's pH.",
+    "text": "First, mineral-rich hot springs add sodium carbonate and other minerals to the lake.",
     "shot": "close",
-    "overlay": {
-     "type": "highlight",
-     "on": "Sodium"
-    },
+    "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "Mineral-rich hot springs add more salts, keeping the water intensely alkaline.",
+    "text": "Then intense evaporation leaves natron and trona, pushing pH above twelve.",
     "shot": "close",
-    "overlay": {
-     "type": "tag",
-     "on": "hot",
-     "label": "SPRINGS"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "It sits within the Gregory Rift, the eastern arm of the East African Rift.",
-    "shot": "wide",
     "overlay": {
      "type": "stamp",
-     "on": "Gregory",
-     "label": "RIFT"
+     "on": "twelve",
+     "label": "pH >12"
     },
     "react": {
      "expr": "surprised",
-     "on": "Gregory"
+     "on": "twelve"
     },
     "photo": null
    },
    {
-    "text": "Next target: a circular sinkhole over three hundred metres wide. Follow for the next scan. Orbi out.",
-    "shot": "space",
+    "text": "And the lake earned international wetland protection for its unique ecosystem.",
+    "shot": "close",
     "overlay": null,
     "react": {
      "expr": "happy",
-     "on": "sinkhole"
+     "on": "wetland"
     },
+    "photo": null
+   },
+   {
+    "text": "Next target: a giant marine sinkhole off Belize's coast. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": null,
     "photo": null
    }
   ],
-  "description": "Lake Natron is a shallow, highly alkaline lake up to fifty‑seven kilometres long in Tanzania's Gregory Rift. Its water can reach pH above twelve due to sodium carbonate and mineral‑rich hot springs.",
+  "description": "Lake Natron is a shallow alkaline lake in Tanzania and Kenya, up to fifty-seven kilometers long and twenty-two kilometers wide. Its pH above twelve and mineral deposits earned it Ramsar wetland status of international significance.",
   "hashtags": [
    "#LakeNatron",
    "#AlkalineLake",
-   "#RiftValley",
-   "#Satellites",
-   "#Geology"
+   "#RamsarSite",
+   "#Tanzania",
+   "#OrbiExplores"
   ],
-  "hook_title": "ALKA RIFT"
+  "hook_title": "TEMP ABOVE 40"
  },
  "photos": [
   {
-   "name": "File:Around Lake Natron Camp (1) (28588319845).jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Around_Lake_Natron_Camp_%281%29_%2828588319845%29.jpg/1920px-Around_Lake_Natron_Camp_%281%29_%2828588319845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "desc": "Around Lake Natron Camp (1)",
-   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0",
+   "name": "File:ISS063-E-98490 - View of Earth.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/ISS063-E-98490_-_View_of_Earth.jpg/1920px-ISS063-E-98490_-_View_of_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "View of Earth taken during ISS Expedition 63.",
+   "credit": "Earth Science and Remote Sensing Unit, N",
    "file": "photos/lake_natron/p0.jpg"
   },
   {
-   "name": "File:Around Lake Natron Camp (2) (27972345863).jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Around_Lake_Natron_Camp_%282%29_%2827972345863%29.jpg/1920px-Around_Lake_Natron_Camp_%282%29_%2827972345863%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "desc": "Around Lake Natron Camp (2)",
-   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+   "name": "File:ISS063-E-100418 - View of Earth.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/ISS063-E-100418_-_View_of_Earth.jpg/1920px-ISS063-E-100418_-_View_of_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "View of Earth taken during ISS Expedition 63.",
+   "credit": "Earth Science and Remote Sensing Unit, N"
   },
   {
-   "name": "File:Around Lake Natron Camp (3) (27972253643).jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Around_Lake_Natron_Camp_%283%29_%2827972253643%29.jpg/1920px-Around_Lake_Natron_Camp_%283%29_%2827972253643%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "desc": "Around Lake Natron Camp (3)",
-   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+   "name": "File:ISS063-E-100419 - View of Earth.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/ISS063-E-100419_-_View_of_Earth.jpg/1920px-ISS063-E-100419_-_View_of_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "View of Earth taken during ISS Expedition 63.",
+   "credit": "Earth Science and Remote Sensing Unit, N"
   },
   {
-   "name": "File:Landscape near Lake Natron (5) (28484189912).jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Landscape_near_Lake_Natron_%285%29_%2828484189912%29.jpg/1920px-Landscape_near_Lake_Natron_%285%29_%2828484189912%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "desc": "Landscape near Lake Natron (5)",
-   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+   "name": "File:ISS063-E-100420 - View of Earth.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/ISS063-E-100420_-_View_of_Earth.jpg/1920px-ISS063-E-100420_-_View_of_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "View of Earth taken during ISS Expedition 63.",
+   "credit": "Earth Science and Remote Sensing Unit, N"
   },
   {
-   "name": "File:Landscape near Lake Natron (6) (28484132322).jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Landscape_near_Lake_Natron_%286%29_%2828484132322%29.jpg/1920px-Landscape_near_Lake_Natron_%286%29_%2828484132322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "desc": "Landscape near Lake Natron (6)",
-   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+   "name": "File:ISS063-E-100421 - View of Earth.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/ISS063-E-100421_-_View_of_Earth.jpg/1920px-ISS063-E-100421_-_View_of_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "View of Earth taken during ISS Expedition 63.",
+   "credit": "Earth Science and Remote Sensing Unit, N"
   },
   {
-   "name": "File:Landscape near Lake Natron (7) (28558101556).jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Landscape_near_Lake_Natron_%287%29_%2828558101556%29.jpg/1920px-Landscape_near_Lake_Natron_%287%29_%2828558101556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "desc": "Landscape near Lake Natron (7)",
-   "credit": "Richard Mortel from Riyadh, Saudi Arabia, CC BY 2.0"
+   "name": "File:ISS063-E-100416 - View of Earth.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/ISS063-E-100416_-_View_of_Earth.jpg/1920px-ISS063-E-100416_-_View_of_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "View of Earth taken during ISS Expedition 63.",
+   "credit": "Earth Science and Remote Sensing Unit, N"
   }
  ],
  "lat": -2.3471,
