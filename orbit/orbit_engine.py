@@ -651,11 +651,14 @@ def prep_orbi(spec, beats, words, work):
                 ev.append((t0, t0 + 1.0, "point", (st["lat"], st["lon"])))
     ORBI["events"] = ev
     cards = []
+    ov = [word_at(words, b, b[k].get("on"), 0.4) for b in beats            # zaciatky dalsich overlayov
+          for k in ("ruler", "rings", "tag", "stamp", "scale", "highlight") if k in b]
     for b in beats:
         p = b.get("photo")
         if p:
             t0 = word_at(words, b, p.get("on"), 0.3)
-            cards.append((t0, t0 + p.get("dur", 2.8), photo_card(os.path.join(HERE, p["file"]), p["label"], p["credit"])))
+            t1 = min([t0 + p.get("dur", 2.8)] + [s - 0.15 for s in ov if s > t0 + 1.2])   # fotka nezakryje dalsi overlay
+            cards.append((t0, t1, photo_card(os.path.join(HERE, p["file"]), p["label"], p["credit"])))
     ORBI["cards"] = cards
 
 
