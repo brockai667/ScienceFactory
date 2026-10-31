@@ -440,7 +440,7 @@
     "z": 10.79
    },
    "stamp": {
-    "label": "IMPACT",
+    "label": "214 MILLION YEARS AGO",
     "on": "meteor"
    },
    "react": {
@@ -461,7 +461,7 @@
    }
   },
   {
-   "text": "It is sometimes called the eye of Quebec, a name that fits perfectly.",
+   "text": "It is sometimes called the eye of Quebec.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -470,7 +470,7 @@
    "tag": {
     "lat": 51.3697,
     "lon": -68.6587,
-    "label": "NICKNAME",
+    "label": "EYE OF QUEBEC",
     "on": "eye"
    },
    "react": {
