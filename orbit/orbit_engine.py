@@ -459,7 +459,7 @@ def draw_overlays(fr, t, cam, spec, beats, words):
         s = spec["coords"]
         k = int(len(s) * min(1.0, max(0.0, (t - 0.15) / 1.25)))
         a = 1.0 if t < b0["t1"] - 0.1 else max(0.0, 1 - (t - b0["t1"] + 0.1) / 0.4)
-        paste_rgba(fr, search_bar(s[:k], (int(t * 2.2) % 2 == 0) or k < len(s)), 60, 130, a)
+        paste_rgba(fr, search_bar(s[:k], k < len(s)), 60, 130, a)
         if spec.get("series_no") is not None:                 # odznak serie nad pravym koncom vyhladavaca
             bd = badge(int(spec["series_no"]))
             paste_rgba(fr, bd, 60 + 955 - (bd.shape[1] - 8), 130 + 8 - 12 - (bd.shape[0] - 8),
