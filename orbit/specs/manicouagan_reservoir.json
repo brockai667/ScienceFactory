@@ -33,11 +33,11 @@
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
-    "z": 8.09
+    "z": 9.99
    }
   },
   {
-   "text": "From orbit, the outer rim stretches about one hundred kilometers.",
+   "text": "From orbit, the ring of water measures about seventy kilometers across.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -47,15 +47,8 @@
     "lat": 51.3697,
     "lon": -68.6587,
     "km": 70.0,
-    "label": "100 KM",
-    "on": "outer"
-   },
-   "photo": {
-    "file": "photos/manicouagan_reservoir/p0.jpg",
-    "label": "SPACE VIEW",
-    "credit": "NASA",
-    "on": "kilometers",
-    "dur": 2.8
+    "label": "70 KM",
+    "on": "ring"
    }
   },
   {
@@ -482,14 +475,15 @@
   {
    "text": "Next target: a marine sinkhole three hundred eighteen meters across. Follow for the next scan. Orbi out.",
    "cam": {
-    "lat": 51.3697,
-    "lon": -68.6587,
-    "z": 4.89
+    "lat": 17.31527778,
+    "lon": -87.53444444,
+    "z": 13.0,
+    "hop": true
    }
   }
  ],
- "hook": "5 KM IMPACT",
- "description": "Manicouagan Reservoir is a seventy kilometer wide annular lake formed by a meteor impact two hundred fourteen million years ago. The inner island, René‑Levasseur, sits in its center and the feature is visible from space. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA, Wikimedia Commons. Source: Wikipedia.",
+ "hook": "70 KM RING",
+ "description": "Manicouagan Reservoir is a seventy kilometer wide annular lake formed by a meteor impact two hundred fourteen million years ago. The inner island, René‑Levasseur, sits in its center and the feature is visible from space. Imagery: Esri, Maxar, Earthstar Geographics. Source: Wikipedia.",
  "hashtags": [
   "#Manicouagan",
   "#ImpactCrater",
