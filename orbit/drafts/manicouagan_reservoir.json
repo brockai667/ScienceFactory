@@ -70,7 +70,7 @@
     "overlay": {
      "type": "stamp",
      "on": "meteor",
-     "label": "impact"
+     "label": "214 MILLION YEARS AGO"
     },
     "react": {
      "expr": "surprised",
@@ -89,12 +89,12 @@
     "photo": null
    },
    {
-    "text": "It is sometimes called the eye of Quebec, a name that fits perfectly.",
+    "text": "It is sometimes called the eye of Quebec.",
     "shot": "wide",
     "overlay": {
      "type": "tag",
      "on": "eye",
-     "label": "nickname"
+     "label": "EYE OF QUEBEC"
     },
     "react": {
      "expr": "happy",

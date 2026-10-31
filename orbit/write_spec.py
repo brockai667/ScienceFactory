@@ -158,6 +158,8 @@ Visual cues (each "on" is ONE word copied exactly from that beat's text, where t
   {"type":"rings","on":word} only if the place is round,
   {"type":"tag","on":word,"label":"SHORT WORDS"} to pin a named part,
   {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"} for the key date or record.
+  Tag and stamp labels show the fact itself, 2-4 words taken from that beat's text ("EYE OF QUEBEC", "214 MILLION YEARS AGO", "PH ABOVE 12"), never a category word (NICKNAME, NAME, IMPACT, FACT, DATE, RECORD, VOLUME, SIZE, AGE).
+- No filler that only comments on the fact ("a name that fits perfectly", "which is amazing", "truly remarkable"). End each beat on the fact.
 - react (2 or 3 in the whole video, the robot's face reacts): {"expr":"surprised" or "happy","on":word}. Surprised on the most shocking fact, happy on the payoff or the last beat.
 - photo (use 1 or 2 if the list has photos that clearly show this place, never in beat 1 or the last beat): {"index":N,"label":"SHORT CAPTION","on":word} using a photo from the list.
 
@@ -276,6 +278,12 @@ def validate(s, photos, ctx):
         o = b.get("overlay") or {}
         if o.get("type") in ("tag", "stamp") and not re.search(r"[A-Za-z]{2}", digits(str(o.get("label", "")))):
             errs.append(f"beat {i + 1} {o['type']} label '{o.get('label')}' needs words, not a bare number")
+        elif o.get("type") in ("tag", "stamp"):
+            lab = digits(str(o.get("label", ""))).lower().split()
+            said = set(digits(b.get("text", "")).lower().replace(",", " ").replace(".", " ").split())
+            if len(lab) < 2 or not set(lab) & said:
+                errs.append(f"beat {i + 1} {o['type']} label '{o.get('label')}' must be the fact itself in 2-4 words "
+                            f"from the beat text (like 'EYE OF QUEBEC'), not a category word")
     if photos and not any(b.get("photo") for b in bs):
         errs.append("use at least 1 photo from the list")
     hooks = [h for h in s.get("hooks") or [] if isinstance(h, dict)]
