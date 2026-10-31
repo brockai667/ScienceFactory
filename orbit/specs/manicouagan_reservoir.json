@@ -1,5 +1,5 @@
 {
- "title": "MANICOUAGAN EYE",
+ "title": "70 KM RING",
  "coords": "51.3697 N, 68.6587 W",
  "voice": "am_michael",
  "speed": 1.0,
@@ -12,7 +12,7 @@
  "feature_km": 70.0,
  "beats": [
   {
-   "text": "This ring survived two hundred fourteen million years, yet looks fresh.",
+   "text": "A perfect ring stretches seventy kilometers, and a crater shouldn't look so neat.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -21,7 +21,7 @@
    "globe": true
   },
   {
-   "text": "So what carved this perfect circle into the ancient forest?",
+   "text": "So what carves a lake into a perfect ring?",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -29,15 +29,15 @@
    }
   },
   {
-   "text": "And the centre hides one more surprise waiting for you.",
+   "text": "And wait till you hear what locals call this lake.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
-    "z": 10.79
+    "z": 8.09
    }
   },
   {
-   "text": "From orbit the ring looks like a giant eye, perfectly round.",
+   "text": "From orbit, the outer rim stretches about one hundred kilometers.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -47,19 +47,19 @@
     "lat": 51.3697,
     "lon": -68.6587,
     "km": 70.0,
-    "label": "70 KM",
-    "on": "ring"
+    "label": "100 KM",
+    "on": "outer"
    },
    "photo": {
     "file": "photos/manicouagan_reservoir/p0.jpg",
-    "label": "MANICOUAGAN FROM SPACE",
+    "label": "SPACE VIEW",
     "credit": "NASA",
-    "on": "ring",
+    "on": "kilometers",
     "dur": 2.8
    }
   },
   {
-   "text": "Greater London would fit inside its full span.",
+   "text": "Greater London would fit inside it.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -433,14 +433,14 @@
    }
   },
   {
-   "text": "A five kilometer meteor struck here in the Late Triassic, shaping the basin.",
+   "text": "Two hundred fourteen million years ago, a meteor struck here.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
     "z": 10.79
    },
    "stamp": {
-    "label": "LATE TRIASSIC",
+    "label": "IMPACT",
     "on": "meteor"
    },
    "react": {
@@ -450,7 +450,7 @@
    }
   },
   {
-   "text": "The impact shattered rock, forming multiple rings that later filled with water.",
+   "text": "The five kilometer body shattered rock, forming concentric rings that later filled with water.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -461,7 +461,7 @@
    }
   },
   {
-   "text": "It still holds about one hundred thirty eight cubic kilometres of crystal water.",
+   "text": "It is sometimes called the eye of Quebec, a name that fits perfectly.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -470,17 +470,17 @@
    "tag": {
     "lat": 51.3697,
     "lon": -68.6587,
-    "label": "138",
-    "on": "water"
+    "label": "NICKNAME",
+    "on": "eye"
    },
    "react": {
     "expr": "happy",
-    "on": "water",
+    "on": "eye",
     "dur": 1.4
    }
   },
   {
-   "text": "Next target: a 318 meter deep sinkhole off Belize's coast. Follow for the next scan. Orbi out.",
+   "text": "Next target: a marine sinkhole three hundred eighteen meters across. Follow for the next scan. Orbi out.",
    "cam": {
     "lat": 51.3697,
     "lon": -68.6587,
@@ -488,14 +488,14 @@
    }
   }
  ],
- "hook": "SKY PAINT",
- "description": "Manicouagan Reservoir is a seventy kilometre annular lake formed by a five kilometre meteor impact two hundred fourteen million years ago. Its central island holds Mount Babel, rising nine hundred fifty two metres above sea level. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA, Wikimedia Commons. Source: Wikipedia.",
+ "hook": "5 KM IMPACT",
+ "description": "Manicouagan Reservoir is a seventy kilometer wide annular lake formed by a meteor impact two hundred fourteen million years ago. The inner island, René‑Levasseur, sits in its center and the feature is visible from space. Imagery: Esri, Maxar, Earthstar Geographics. Photos: NASA, Wikimedia Commons. Source: Wikipedia.",
  "hashtags": [
   "#Manicouagan",
-  "#SatelliteView",
   "#ImpactCrater",
-  "#SpaceScience",
-  "#Orbi"
+  "#SatelliteView",
+  "#Quebec",
+  "#SpaceScience"
  ],
  "shape": null,
  "series_no": 1

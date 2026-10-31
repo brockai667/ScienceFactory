@@ -1,76 +1,76 @@
 {
  "draft": {
-  "title": "MANICOUAGAN EYE",
+  "title": "70 KM RING",
   "feature_km": 70,
   "hooks": [
    {
-    "text": "This ring survived two hundred fourteen million years, yet looks fresh.",
-    "title": "SKY PAINT"
+    "text": "A perfect ring spans seventy kilometers, and a crater shouldn't look so neat.",
+    "title": "70 KM RING"
    },
    {
-    "text": "A perfect circle seventy kilometers wide, and no one painted it.",
-    "title": "EARTH'S EYE"
+    "text": "A perfect ring stretches seventy kilometers, and a crater shouldn't look so neat.",
+    "title": "5 KM IMPACT"
    },
    {
-    "text": "Why does a five kilometer scar sit quiet in the forest?",
-    "title": "IMPACT MARK"
+    "text": "An annular lake spans seventy kilometers, and a meteor shouldn't leave a smooth circle.",
+    "title": "952 METERS HIGH"
    }
   ],
   "beats": [
    {
-    "text": "This ring survived two hundred fourteen million years, yet looks fresh.",
+    "text": "A perfect ring stretches seventy kilometers, and a crater shouldn't look so neat.",
     "shot": "feature",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "So what carved this perfect circle into the ancient forest?",
+    "text": "So what carves a lake into a perfect ring?",
     "shot": "close",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "And the centre hides one more surprise waiting for you.",
-    "shot": "close",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "From orbit the ring looks like a giant eye, perfectly round.",
+    "text": "And wait till you hear what locals call this lake.",
     "shot": "wide",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "From orbit, the outer rim stretches about one hundred kilometers.",
+    "shot": "close",
     "overlay": {
      "type": "ruler",
-     "on": "ring",
-     "label": "70 KM"
+     "on": "outer",
+     "label": "100 KM"
     },
     "react": null,
     "photo": {
      "index": 0,
-     "label": "Manicouagan from space",
-     "on": "ring"
+     "label": "Space view",
+     "on": "kilometers"
     }
    },
    {
-    "text": "Greater London would fit inside its full span.",
+    "text": "Greater London would fit inside it.",
     "shot": "wide",
     "overlay": {
      "type": "scale",
      "on": "Greater",
-     "label": "Greater London"
+     "label": "London"
     },
     "react": null,
     "photo": null
    },
    {
-    "text": "A five kilometer meteor struck here in the Late Triassic, shaping the basin.",
+    "text": "Two hundred fourteen million years ago, a meteor struck here.",
     "shot": "close",
     "overlay": {
      "type": "stamp",
      "on": "meteor",
-     "label": "Late Triassic"
+     "label": "impact"
     },
     "react": {
      "expr": "surprised",
@@ -79,7 +79,7 @@
     "photo": null
    },
    {
-    "text": "The impact shattered rock, forming multiple rings that later filled with water.",
+    "text": "The five kilometer body shattered rock, forming concentric rings that later filled with water.",
     "shot": "close",
     "overlay": {
      "type": "highlight",
@@ -89,36 +89,36 @@
     "photo": null
    },
    {
-    "text": "It still holds about one hundred thirty eight cubic kilometres of crystal water.",
+    "text": "It is sometimes called the eye of Quebec, a name that fits perfectly.",
     "shot": "wide",
     "overlay": {
      "type": "tag",
-     "on": "water",
-     "label": "One hundred thirty eight"
+     "on": "eye",
+     "label": "nickname"
     },
     "react": {
      "expr": "happy",
-     "on": "water"
+     "on": "eye"
     },
     "photo": null
    },
    {
-    "text": "Next target: a 318 meter deep sinkhole off Belize's coast. Follow for the next scan. Orbi out.",
+    "text": "Next target: a marine sinkhole three hundred eighteen meters across. Follow for the next scan. Orbi out.",
     "shot": "space",
     "overlay": null,
     "react": null,
     "photo": null
    }
   ],
-  "description": "Manicouagan Reservoir is a seventy kilometre annular lake formed by a five kilometre meteor impact two hundred fourteen million years ago. Its central island holds Mount Babel, rising nine hundred fifty two metres above sea level.",
+  "description": "Manicouagan Reservoir is a seventy kilometer wide annular lake formed by a meteor impact two hundred fourteen million years ago. The inner island, René‑Levasseur, sits in its center and the feature is visible from space.",
   "hashtags": [
    "#Manicouagan",
-   "#SatelliteView",
    "#ImpactCrater",
-   "#SpaceScience",
-   "#Orbi"
+   "#SatelliteView",
+   "#Quebec",
+   "#SpaceScience"
   ],
-  "hook_title": "SKY PAINT"
+  "hook_title": "5 KM IMPACT"
  },
  "photos": [
   {
