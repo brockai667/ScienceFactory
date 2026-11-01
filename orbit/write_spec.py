@@ -110,7 +110,7 @@ Viewers swipe away in the first seconds, so the most surprising fact comes early
 Structure, exactly 9 beats, 85 to 105 words in total. Short spoken sentences (max 14 words), plain English:
 1. Hook (rules below). Write 3 different hook candidates in "hooks"; beat 1 text is your best one.
 2. The question the viewer is now asking, as a real question ("So what carves a lake into a perfect ring?"). Do not answer it yet.
-3. The surprise: the most surprising fact in the article that is not the cause (a nickname, a record, what lives there, who uses it), said plainly right now ("Locals call it the eye of Quebec.").
+3. The surprise: the most surprising fact in the article that is not the cause (a record, a famous visitor, what lives there, who uses it; a nickname only if the article gives one), said plainly right now. Copy it from the article; never invent a name.
 4-5. What you see and how big it is. Use the computed scale fact here if one is given.
 6-7. The real answer, step by step. This is the first time the cause is named.
 8. The twist: one more true fact from the article you have not used, best about the place today (what is there now, who uses it, what changed).
@@ -368,6 +368,13 @@ def write(fact, photos, scale, nxt, km=None):
                         o["on"] = hit[0]
                 if isinstance(o, dict) and re.sub(r"[^a-z0-9']", "", str(o.get("on", "")).lower()) not in toks and toks:
                     o["on"] = max(b["text"].split(), key=len).strip(".,!?;:'\"")   # cue na slove mimo vety -> najdlhsie slovo
+        for h in s.get("hooks") or []:                       # titulok s inym cislom nez hlas -> cislo z hlasu (model to nevie opravit)
+            if isinstance(h, dict):
+                sp = re.findall(r"\d+", digits(re.sub(r"[^\w\s-]", " ", str(h.get("text", "")))).replace(",", ""))
+                tt = str(h.get("title", "")); tn = re.findall(r"\d+", tt)
+                if sp and tn and not set(tn) & set(sp):
+                    log(f"   titulok {tt} -> cislo {sp[0]} z hooku: {h.get('text')}")
+                    h["title"] = tt.replace(tn[0], sp[0], 1)
         errs = validate(s, photos, ctx)
         if len(s.get("beats") or []) < 6:                    # rozbity navrh: neopravovat, zacat odznova
             log(f"   pokus {att + 1}: rozbity navrh, odznova: {json.dumps(s)[:300]}")
