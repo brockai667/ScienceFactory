@@ -2,7 +2,7 @@ name: Curio ORBIT (denne - scenar z Wikipedie, render, publikovanie)
 
 on:
   schedule:
-    - cron: "20 5 * * *"   # ~6:20 Bratislava; video vyjde o 17:00 (Buffer YT+IG, TikTok feed)
+    - cron: "20 1 * * *"   # ~2:20 Bratislava (rezerva na meskanie cronu), TikTok appka ma video do 10:00; Buffer YT+IG o 17:00
   workflow_dispatch:
     inputs:
       topic:
