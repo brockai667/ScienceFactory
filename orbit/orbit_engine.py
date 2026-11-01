@@ -581,7 +581,7 @@ def soft_shadow(fr, pts, thick, strength):
 
 def feature_px(spec, cam):
     """Obrys samotneho miesta (spec["shape"] = [[lat, lon], ...]) v pixeloch; inak kruh feature_km/2."""
-    if spec.get("shape") and len(spec["shape"]) >= 3:
+    if spec.get("shape") and len(spec["shape"]) >= 12:          # 4 body z OSM = trojuholnik, nie obrys -> kruh
         return np.array([screen_xy(la, lo, cam) for la, lo in spec["shape"]], np.float32)
     st = spec.get("start") or spec["beats"][0]["cam"]
     x0, y0 = screen_xy(st["lat"], st["lon"], cam)
@@ -884,6 +884,51 @@ def draw_fx(fr, t, cam, spec, beats, words):
                 cr = [np.array([[cx + sx * 14 * s, cy + sy * 14 * s], [cx + sx * 46 * s, cy + sy * 46 * s]], np.float32)
                       for sx, sy in ((1, 0), (-1, 0), (0, 1), (0, -1))]
                 glow_lines(fr, cr, CYAN, 5, core=(255, 255, 230), alpha=out)
+            elif k == "depth":                                # hlbkomer: znacka klesa ku dnu, jama tmavne
+                rr = min(R, 420); u = ease(min(1.0, max(0.0, dt - 0.3) / 1.6))
+                m = np.zeros((H, W), np.float32)
+                cv2.fillPoly(m, [np.round(feature_px(spec, cam) * 16).astype(np.int32)], 1.0, cv2.LINE_AA, 4)
+                bb = roi(feature_px(spec, cam), 30)
+                if bb:
+                    x0, y0, x1, y1 = bb
+                    mm = cv2.GaussianBlur(m[y0:y1, x0:x1], (0, 0), 12)
+                    d = np.clip(1 - np.hypot(_xx[y0:y1, x0:x1] - cx, _yy[y0:y1, x0:x1] - cy) / max(rr, 1), 0, 1)
+                    a = (mm * (0.25 + 0.45 * d) * u * out)[..., None]          # do stredu tmavsie = hlbsie
+                    fr[y0:y1, x0:x1] = fr[y0:y1, x0:x1] * (1 - a) + np.array([70, 25, 5], np.float32) * a
+                gx = min(W - 170.0, cx + rr + 90); top = max(450.0, cy - 0.8 * rr); bot = min(H - 650.0, top + 640)
+                g = ease(min(1.0, dt / 0.4))
+                ln = [np.array([[gx, top], [gx, top + (bot - top) * g]], np.float32)]
+                ln += [np.array([[gx - 22, y], [gx, y]], np.float32) for y in np.linspace(top, bot, 6) if y <= top + (bot - top) * g]
+                glow_lines(fr, ln, CYAN, 8, core=(255, 255, 230), alpha=out)
+                if dt > 0.3:
+                    y = top + (bot - top) * u
+                    tri = np.array([[gx + 8, y], [gx + 40, y - 18], [gx + 40, y + 18]], np.float32)
+                    cv2.fillPoly(fr, [np.round(tri * 16).astype(np.int32)], (255, 255, 255), cv2.LINE_AA, 4)
+                    v = f"-{int(round(f['n'] * u))} {f.get('unit', 'M')}" if f.get("n") else "DEPTH"
+                    lab = text_rgba(v, 60, fill=(78, 240, 255, 255), box=(0, 0, 0, 170), pad=12)
+                    paste_rgba(fr, lab, int(min(W - lab.shape[1] - 10, gx + 48)), int(y - lab.shape[0] / 2), out)
+                for j in range(2):                            # sonarove pingy zo dna
+                    uu = (dt - 0.6 - 0.7 * j) / 1.2
+                    if 0 <= uu < 1:
+                        a2 = np.linspace(0, 2 * math.pi, 90, endpoint=False); r = 20 + rr * ease(uu)
+                        ring = np.stack([cx + r * np.cos(a2), cy + r * np.sin(a2)], 1).astype(np.float32)
+                        glow_lines(fr, [ring], CYAN, max(2, int(6 * (1 - uu))), closed=True, alpha=out * (1 - uu) * 0.8)
+            elif k == "sea":                                  # hladina mora klesa / stupa cez cely zaber
+                al = out * min(1.0, dt / 0.3, max(0.0, (2.6 - dt) / 0.5))
+                if al > 0:
+                    u = ease(min(1.0, dt / 1.8)); up = f.get("dir", -1) > 0
+                    ya, yb = 420.0, H - 640.0
+                    y0 = yb + (ya - yb) * u if up else ya + (yb - ya) * u       # horna hrana vody
+                    xs = np.arange(0, W, 8, dtype=np.float32)
+                    edge = y0 + 12 * np.sin(xs / 55 + t * 6)
+                    iy = int(max(0, edge.min()))
+                    if iy < H:
+                        msk = (_yy[iy:] >= np.interp(_xx[0], xs, edge)[None, :]).astype(np.float32)
+                        a = (cv2.GaussianBlur(msk, (0, 0), 3) * 0.38 * al)[..., None]
+                        fr[iy:] = fr[iy:] * (1 - a) + np.array([215, 140, 30], np.float32) * a
+                    glow_lines(fr, [np.stack([xs, edge], 1)], CYAN, 5, core=(255, 255, 230), alpha=al)
+                    lab = text_rgba("SEA LEVEL RISES" if up else "SEA LEVEL FALLS", 54, fill=(255, 255, 255, 255), box=(0, 0, 0, 160), pad=14)
+                    paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), int(min(H - 700, max(300, y0 - lab.shape[0] - 30))), al)
             elif k == "follow":                               # tlacidlo sledovat + tuknutie
                 draw_follow(fr, t, dt, out, spec)
 
@@ -1064,7 +1109,7 @@ def prep_orbi(spec, beats, words, work):
                 ev.append((t0, t0 + 1.0, "point", (st["lat"], st["lon"])))
         for f in b.get("fx", []):
             t0 = word_at(words, b, f.get("on"), 0.4)
-            if f["kind"] in ("trace", "cracks", "water", "eye"):
+            if f["kind"] in ("trace", "cracks", "water", "eye", "depth"):
                 ev.append((t0, t0 + 1.0, "point", (st["lat"], st["lon"])))
             if f["kind"] == "eye":                           # oko zmurkne -> Orbi zmurkne naspat
                 ev.append((t0 + 1.35, t0 + 2.0, "expr", "wink"))
@@ -1299,6 +1344,16 @@ def mix_audio(spec, voice, total, beats, work, words=()):
                 put(ts + 0.25, sfx.riser(SR, rng, 1.1)[::-1] * db(-22), ev)
                 for i in range(4):
                     put(ts + 0.1 * i, sfx.tick(SR, rng, f=1800) * db(-20), ev)
+            elif k == "depth":                                # klesajuci ton + 2 pingy
+                n0 = int(1.6 * SR); tt = np.arange(n0) / SR
+                put(ts + 0.3, np.sin(2 * math.pi * np.cumsum(np.linspace(520, 180, n0)) / SR) * np.sin(math.pi * tt / 1.6) * db(-22), ev)
+                for j in range(2):
+                    n1 = int(0.5 * SR); t1 = np.arange(n1) / SR
+                    put(ts + 0.6 + 0.7 * j, np.sin(2 * math.pi * 1100 * t1) * np.exp(-t1 / 0.15) * db(-17), ev)
+            elif k == "sea":
+                w = sfx_whoosh(1.8, rng)
+                w = w if f.get("dir", -1) > 0 else w[::-1]
+                put(ts, w / (np.abs(w).max() + 1e-9) * db(-17), ev)
             elif k == "pulse":
                 for j in range(3):
                     n0 = int(0.5 * SR); tt = np.arange(n0) / SR

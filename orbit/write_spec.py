@@ -107,7 +107,7 @@ SYSTEM = """You write narration for a 30-35 second vertical video about a place 
 A cute satellite robot called Orbi narrates while the camera flies from a globe down to the place.
 Viewers swipe away in the first seconds, so the most surprising fact comes early (beat 3), and only the cause stays open until beat 6.
 
-Structure, exactly 9 beats, 85 to 105 words in total. Short spoken sentences (max 14 words), plain English:
+Structure, exactly 9 beats, 80 to 95 words in total. Short spoken sentences (max 14 words), plain English:
 1. Hook (rules below). Write 3 different hook candidates in "hooks"; beat 1 text is your best one.
 2. The question the viewer is now asking, as a real question ("So what carves a lake into a perfect ring?"). Do not answer it yet.
 3. The surprise: the most surprising fact in the article that is not the cause (a record, a famous visitor, what lives there, who uses it; a nickname only if the article gives one), said plainly right now. Copy it from the article; never invent a name.
@@ -199,7 +199,7 @@ HIT = re.compile(r"\b(struck|strikes|hit|hits|slammed|smashed|crashed|landed|imp
 # stylove pravidla: model ich pri oprave casto pokazi inde -> od 4. pokusu nebrzdia (fakty a struktura ano)
 TEASE = re.compile(r"\bwait (till|until|to)\b|\bstay (till|until|to the end)\b|\byou'll (soon )?(see|hear|find)\b"
                    r"|one more surprise|\bfind out\b|keep watching", re.I)
-SOFT = re.compile(r"never repeat a number|one number per beat|need 85-105 words|react cues|not a bare number|longer than 14 words"
+SOFT = re.compile(r"never repeat a number|one number per beat|need 80-95 words|react cues|not a bare number|longer than 14 words"
                   r"|title '.*' needs a true number")
 
 
@@ -271,8 +271,8 @@ def validate(s, photos, ctx):
     if ctx["scale"] and not any((b.get("overlay") or {}).get("type") == "scale" for b in bs):
         errs.append(f"add this computed scale fact in beat 4 or 5: \"{ctx['scale']['fact']}.\" with a scale overlay on the word '{ctx['scale']['on']}'")
     words = sum(len(b.get("text", "").split()) for b in bs)
-    if not 80 <= words <= 115:
-        errs.append(f"need 85-105 words, got {words}")
+    if not 75 <= words <= 105:
+        errs.append(f"need 80-95 words, got {words}")
     for i, b in enumerate(bs[:-1]):
         if TEASE.search(b.get("text", "")):
             errs.append(f"beat {i + 1} teases a later fact ('{TEASE.search(b['text']).group(0)}'): say the fact itself")
@@ -462,6 +462,8 @@ def osm_shape(title, lat, lon):
         ring = max(rings, key=len)
         ys, xs = [p[1] for p in ring], [p[0] for p in ring]
         span = max(dist_km(min(ys), min(xs), min(ys), max(xs)), dist_km(min(ys), min(xs), max(ys), min(xs)))
+        if len(ring) < 12:                                   # maly utvar -> OSM zjednodusi na trojuholnik
+            continue
         if dist_km(lat, lon, (min(ys) + max(ys)) / 2, (min(xs) + max(xs)) / 2) < 60 and span > 0.3:
             ring = ring[::max(1, len(ring) // 150)]
             log(f"   obrys z OSM: {len(ring)} bodov, {span:.0f} km")
@@ -620,6 +622,17 @@ def beat_fx(txt, i, n, nb, measured):
         fx.append({"kind": "cracks", "on": w})
     if re.search(r"\b(fill|flood)\w*", txt, re.I) and re.search(r"\bwater\b", txt, re.I):
         fx.append({"kind": "water", "on": on(r"\b(fill|flood)\w*")})        # uz pri "filled", nie az na konci vety
+    w = on(r"\b(deep|deeper|deepest|depth|depths)\b")
+    if w:                                                    # hlbkomer; cislo len zo stampu (text ma cisla slovom)
+        m = re.search(r"([\d,.]+)\s*(M|METERS?|METRES?|FT|FEET|KM)\b", st)
+        d = {"kind": "depth", "on": w}
+        if m:
+            d["n"] = int(float(m.group(1).replace(",", "")))
+            d["unit"] = {"FT": "FT", "FEET": "FT", "KM": "KM"}.get(m.group(2), "M")
+        fx.append(d)
+    m = re.search(r"\bsea(s| levels?)?\b[^.]{0,30}?\b(rose|rise[sn]?|rising|climb\w*|fell|fall\w*|drop\w*|lower\w*|sank)\b", txt, re.I)
+    if m and not any(f["kind"] == "rewind" for f in fx):
+        fx.append({"kind": "sea", "on": m.group(2).lower(), "dir": 1 if re.match(r"r|c", m.group(2), re.I) else -1})
     w = on(r"\beye\b")
     if w:                                                    # oko je vacsie nez bublina, spolu by sa prekryvali
         fx = [f for f in fx if f["kind"] != "speech"] + [{"kind": "eye", "on": w}]
