@@ -598,7 +598,7 @@ def beat_fx(txt, i, n, nb, measured):
     if w:
         fx.append({"kind": "cracks", "on": w})
     if re.search(r"\b(fill|flood)\w*", txt, re.I) and re.search(r"\bwater\b", txt, re.I):
-        fx.append({"kind": "water", "on": "water"})
+        fx.append({"kind": "water", "on": on(r"\b(fill|flood)\w*")})        # uz pri "filled", nie az na konci vety
     w = on(r"\beye\b")
     if w:
         fx.append({"kind": "eye", "on": w})

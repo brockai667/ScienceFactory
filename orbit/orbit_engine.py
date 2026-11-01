@@ -791,7 +791,9 @@ def draw_fx(fr, t, cam, spec, beats, words):
             elif k == "ask":                                  # otazniky vyskakuju okolo miesta
                 for i, (ang, sz) in enumerate(((-55, 170), (-115, 130), (200, 150), (25, 120), (150, 110))):
                     s = back_ease(dt - 0.13 * i)
-                    x = cx + 1.0 * R * math.cos(math.radians(ang)); y = cy + 0.9 * R * math.sin(math.radians(ang))
+                    rr = min(R, 400)                          # pri velkom utvare by otazniky vypadli z obrazu
+                    x = min(W - 100, max(100, cx + rr * math.cos(math.radians(ang))))
+                    y = min(H - 600, max(300, cy + 0.9 * rr * math.sin(math.radians(ang))))
                     paste_scaled(fr, glyph("?", sz, (255, 214, 40, 255)), x, y + 10 * math.sin(t * 5 + i), s, out)
             elif k == "speech":                               # bublina: niekto prave pise
                 ph = int(t * 12) % 12
