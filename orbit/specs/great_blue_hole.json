@@ -92,6 +92,14 @@
     "label": "124 METERS DEEP",
     "on": "deep"
    },
+   "fx": [
+    {
+     "kind": "depth",
+     "on": "deep",
+     "n": 124,
+     "unit": "M"
+    }
+   ],
    "react": {
     "expr": "surprised",
     "on": "deep",
@@ -107,9 +115,9 @@
    },
    "fx": [
     {
-     "kind": "scan",
-     "on": null,
-     "fallback": true
+     "kind": "sea",
+     "on": "fell",
+     "dir": -1
     }
    ]
   },
@@ -124,6 +132,11 @@
     {
      "kind": "water",
      "on": "flooded"
+    },
+    {
+     "kind": "sea",
+     "on": "rose",
+     "dir": 1
     }
    ]
   },
