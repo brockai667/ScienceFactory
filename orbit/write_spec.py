@@ -103,18 +103,19 @@ def download(photos, slug, idx):
 
 
 # ---------------------------------------------------------------- scenar
-SYSTEM = """You write narration for a 40-50 second vertical video about a place seen on a satellite map.
+SYSTEM = """You write narration for a 30-35 second vertical video about a place seen on a satellite map.
 A cute satellite robot called Orbi narrates while the camera flies from a globe down to the place.
-The viewer must keep watching because a question stays open until late in the video.
+Viewers swipe away in the first seconds, so the most surprising fact comes early (beat 3), and only the cause stays open until beat 6.
 
-Structure, exactly 9 beats, 100 to 125 words in total. Short spoken sentences (max 16 words), plain English:
+Structure, exactly 9 beats, 85 to 105 words in total. Short spoken sentences (max 14 words), plain English:
 1. Hook (rules below). Write 3 different hook candidates in "hooks"; beat 1 text is your best one.
 2. The question the viewer is now asking, as a real question ("So what carves a lake into a perfect ring?"). Do not answer it yet.
-3. A teaser for the fact you will reveal in beat 8: name its topic, not the fact ("And wait till you hear what lives in this water."). Never reveal it here. Pick the beat 8 fact first, then write this teaser for it; a generic "one more surprise" is not allowed.
+3. The surprise: the most surprising fact in the article that is not the cause (a nickname, a record, what lives there, who uses it), said plainly right now ("Locals call it the eye of Quebec.").
 4-5. What you see and how big it is. Use the computed scale fact here if one is given.
 6-7. The real answer, step by step. This is the first time the cause is named.
-8. The payoff: exactly the fact teased in beat 3, the most surprising fact in the article that you have not used yet.
+8. The twist: one more true fact from the article you have not used, best about the place today (what is there now, who uses it, what changed).
 9. The last beat (exact rule given in the user message).
+- Never tease a later fact ("wait till you hear", "stay to the end", "you'll see", "one more surprise"): say the fact itself.
 - One number per beat at most, and never the same number twice in the video (the screen already shows sizes).
 - Do not repeat a sentence, name or nickname you already used.
 
@@ -132,12 +133,12 @@ Hook rules (beat 1):
 Example of the tone (a different place):
 1 "This giant eye in the Sahara is forty kilometers wide, and no one built it."
 2 "So what draws perfect rings into a desert?"
-3 "And wait till you hear who uses these rings."
+3 "Astronauts use it as a landmark, one of the few things they can spot."
 4 "From orbit, ring sits inside ring, like a target."
-5 "Paris would fit inside it, and it is about two times as wide."
-6 "About a hundred million years ago, molten rock pushed the ground up into a giant dome."
-7 "Then wind and rain wore it down, layer by layer, until only these rings were left."
-8 "And astronauts use it as a landmark, because it is one of the few things you can spot from space."
+5 "Paris would fit inside it."
+6 "About a hundred million years ago, molten rock pushed the ground into a dome."
+7 "Then wind and rain wore it down until only these rings were left."
+8 "Today, nomads walk across the rings without even noticing them."
 9 "Next target: a crater that has been burning for decades. Follow for the next scan. Orbi out."
 
 Written for the ear (a voice reads it):
@@ -161,7 +162,7 @@ Visual cues (each "on" is ONE word copied exactly from that beat's text, where t
   {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"} for the key date or record.
   Tag and stamp labels show the fact itself, 2-4 words taken from that beat's text ("EYE OF QUEBEC", "214 MILLION YEARS AGO", "PH ABOVE 12"), never a category word (NICKNAME, NAME, IMPACT, FACT, DATE, RECORD, VOLUME, SIZE, AGE).
 - No filler that only comments on the fact ("a name that fits perfectly", "which is amazing", "truly remarkable"). End each beat on the fact.
-- react (2 or 3 in the whole video, the robot's face reacts): {"expr":"surprised" or "happy","on":word}. Surprised on the most shocking fact, happy on the payoff or the last beat.
+- react (2 or 3 in the whole video, the robot's face reacts): {"expr":"surprised" or "happy","on":word}. Surprised on the most shocking fact, happy on the beat 3 surprise or the last beat.
 - photo (use 1 or 2 if the list has photos that clearly show this place, never in beat 1 or the last beat): {"index":N,"label":"SHORT CAPTION","on":word} using a photo from the list.
 
 Return JSON: {"title": str, "feature_km": number (size of the main thing visible from above, in km, from the article),
@@ -176,13 +177,13 @@ Flag a sentence only if it states a FACT that is false or not in the article:
 - anything about what people or scientists say, call it, think, wonder or believe, unless the article says it,
 - any comparison or analogy ("enough to flood a city", "bigger than...") that is not in the article, except the computed scale fact given below,
 - a color the article does not state, or a describing word (crystal, glowing, pristine, forever) the article does not support,
-- beat 3 teases a topic that beat 8 does not deliver (beat 3 "the middle hides a surprise" but beat 8 is not about the middle), or beat 3 is a generic "one more surprise".
+- beat 3 only teases a fact ("wait till you hear what locals call it") instead of saying it.
 Never flag: describing shapes on the satellite image ("looks like an eye", "a ring", "from space"), telling viewers to type coordinates,
-questions, a teaser in beat 3 that beat 8 delivers, simple plain-language wording of what the article says, the computed scale fact,
+questions, simple plain-language wording of what the article says, the computed scale fact,
 the closing "Follow for the next scan. Orbi out." line. The "Next target" line is about a different place: check it only against the next-topic text.
 Return JSON: {"problems": [str]}, one short line per false or invented fact. Empty list if there are none."""
 
-JUDGE = """You pick the strongest opening line (hook) for a 45 second vertical video about a place seen on a satellite map.
+JUDGE = """You pick the strongest opening line (hook) for a 30 second vertical video about a place seen on a satellite map.
 Score each candidate 0-2 on each point:
 1. Picture: names a concrete visual in the first 6 words.
 2. Tension: a number, scale or impossibility that makes you ask a question, WITHOUT revealing the cause or answer (hook or title naming the cause scores 0 here).
@@ -196,7 +197,9 @@ CAUSE = re.compile(r"impact|meteor|asteroid|comet|volcan|erosion|erupt|eroded|gl
 METEOR = re.compile(r"\b(meteor\w*|asteroid\w*|comet\w*|impact\w*)\b", re.I)
 HIT = re.compile(r"\b(struck|strikes|hit|hits|slammed|smashed|crashed|landed|impact\w*)\b", re.I)
 # stylove pravidla: model ich pri oprave casto pokazi inde -> od 4. pokusu nebrzdia (fakty a struktura ano)
-SOFT = re.compile(r"never repeat a number|one number per beat|need 100-125 words|react cues|not a bare number|longer than 14 words"
+TEASE = re.compile(r"\bwait (till|until|to)\b|\bstay (till|until|to the end)\b|\byou'll (soon )?(see|hear|find)\b"
+                   r"|one more surprise|\bfind out\b|keep watching", re.I)
+SOFT = re.compile(r"never repeat a number|one number per beat|need 85-105 words|react cues|not a bare number|longer than 14 words"
                   r"|title '.*' needs a true number")
 
 
@@ -268,8 +271,11 @@ def validate(s, photos, ctx):
     if ctx["scale"] and not any((b.get("overlay") or {}).get("type") == "scale" for b in bs):
         errs.append(f"add this computed scale fact in beat 4 or 5: \"{ctx['scale']['fact']}.\" with a scale overlay on the word '{ctx['scale']['on']}'")
     words = sum(len(b.get("text", "").split()) for b in bs)
-    if not 95 <= words <= 130:
-        errs.append(f"need 100-125 words, got {words}")
+    if not 80 <= words <= 110:
+        errs.append(f"need 85-105 words, got {words}")
+    for i, b in enumerate(bs[:-1]):
+        if TEASE.search(b.get("text", "")):
+            errs.append(f"beat {i + 1} teases a later fact ('{TEASE.search(b['text']).group(0)}'): say the fact itself")
     for i, b in enumerate(bs):
         bad = re.findall(r"[0-9]+[.,][0-9]+|[%~()²³]|\bkm\b|[0-9] ?m\b", b.get("text", ""))
         if bad:
@@ -587,8 +593,9 @@ def beat_fx(txt, i, n, nb, measured):
     w = on(r"\b(ring|rings|circle|circular|round|oval)\b")
     if w and not measured and "highlight" not in nb and "tag" not in nb:
         fx.append({"kind": "trace", "on": w})
-    if re.search(r"\b(call|name|nickname)\w*", txt, re.I) and re.search(r"\b(what|wait|guess)\b", txt, re.I) and "tag" not in nb:
-        fx.append({"kind": "speech", "on": on(r"\b(call|name|nickname)\w*")})
+    w = on(r"\b(call|calls|called|nickname\w*|known)\b")
+    if w:                                                    # "locals call it..." -> bublina, niekto hovori
+        fx.append({"kind": "speech", "on": w})
     st = nb.get("stamp", {}).get("label", "")
     m = re.match(r"([\d.,]+)\s*(THOUSAND|MILLION|BILLION)?\s.*AGO", st)
     if m:
@@ -600,8 +607,8 @@ def beat_fx(txt, i, n, nb, measured):
     if re.search(r"\b(fill|flood)\w*", txt, re.I) and re.search(r"\bwater\b", txt, re.I):
         fx.append({"kind": "water", "on": on(r"\b(fill|flood)\w*")})        # uz pri "filled", nie az na konci vety
     w = on(r"\beye\b")
-    if w:
-        fx.append({"kind": "eye", "on": w})
+    if w:                                                    # oko je vacsie nez bublina, spolu by sa prekryvali
+        fx = [f for f in fx if f["kind"] != "speech"] + [{"kind": "eye", "on": w}]
     return fx
 
 
@@ -651,6 +658,10 @@ def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
             hw = HIT.search(b["text"], m.start()) or HIT.search(b["text"]) or m
             nb["impact"] = {"on": hw.group(1).lower()}
         fx = beat_fx(b["text"], i, len(s["beats"]), nb, measured)
+        busy = fx or any(k in nb for k in ("ruler", "rings", "scale", "highlight", "tag", "stamp", "impact", "photo"))
+        if not busy and 0 < i < len(s["beats"]) - 1:         # nic sa nedeje -> nahradny efekt (sken / sonar), striedavo
+            nfb = sum(1 for x in beats for f in x.get("fx", []) if f.get("fallback"))
+            fx = [{"kind": ("scan", "pulse")[nfb % 2], "on": None, "fallback": True}]
         if fx:
             nb["fx"] = fx
         r = b.get("react")

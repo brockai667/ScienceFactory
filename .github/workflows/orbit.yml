@@ -75,6 +75,10 @@ jobs:
           ffmpeg -loglevel error -y -i output/f_1.png -i output/f_5.png -i output/f_10.png -i output/f_15.png -i output/f_20.png -i output/f_25.png -i output/f_30.png -i output/f_35.png \
             -filter_complex "[0][1][2][3]hstack=4[a];[4][5][6][7]hstack=4[b];[a][b]vstack" output/orbit_${{ steps.write.outputs.slug }}_sheet.jpg
 
+      - name: Kontrola pred nahratim (velkost, pocet efektov)
+        if: github.event.inputs.render == 'true'
+        run: python orbit/qc.py "orbit/specs/${{ steps.write.outputs.slug }}.json" "output/orbit_${{ steps.write.outputs.slug }}.mp4"
+
       - name: Upload video + scenar
         if: always()
         uses: actions/upload-artifact@v4

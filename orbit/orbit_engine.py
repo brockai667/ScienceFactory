@@ -806,7 +806,7 @@ def draw_fx(fr, t, cam, spec, beats, words):
             elif k == "rewind":                               # pretacanie: pocitadlo rokov + pasy ako na VHS
                 end = min(1.4, max(0.5, ((word_at(words, b, b["stamp"]["on"], 0.5) if "stamp" in b else ts + 1.4) - ts - 0.05)))
                 if dt < end:
-                    v = int(f["n"] * ease(min(1.0, dt / (end * 0.85))))
+                    v = int(f["n"] * ease(min(1.0, dt / (end * 0.55))))   # rychlo na cielove cislo, potom drzi
                     lab = text_rgba(f"{v:,} YEARS AGO", 70, fill=(255, 255, 255, 255), box=(0, 0, 0, 170))
                     paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 330)
             elif k == "cracks":                               # zhave praskliny sa rozbehnu z miesta dopadu
@@ -852,6 +852,38 @@ def draw_fx(fr, t, cam, spec, beats, words):
                 d = ease(dt / 0.6)
                 lash = [np.array([up[j], up[j] + (0, -55 * bl - 10)], np.float32) for j in range(12, 49, 6)] if d >= 1 else []
                 glow_lines(fr, [open_part(up, d), open_part(lo, d)] + lash, (255, 255, 255), 9, core=(255, 255, 255), alpha=out)
+            elif k == "scan":                                 # nahradny efekt: satelit skenuje miesto (ramik + ciara)
+                rr = min(R, 420)
+                x0, x1 = max(70.0, cx - rr), min(W - 70.0, cx + rr)
+                y0, y1 = max(300.0, cy - rr), min(H - 620.0, cy + rr)
+                s = ease(min(1.0, dt / 0.35)); L = 70
+                cs = []
+                for px, py, sx, sy in ((x0, y0, 1, 1), (x1, y0, -1, 1), (x0, y1, 1, -1), (x1, y1, -1, -1)):
+                    px -= sx * 60 * (1 - s); py -= sy * 60 * (1 - s)    # rohy priletia zvonka
+                    cs.append(np.array([[px, py + sy * L], [px, py], [px + sx * L, py]], np.float32))
+                glow_lines(fr, cs, CYAN, 7, core=(255, 255, 230), alpha=out * s)
+                u = (dt - 0.25) / 1.1
+                if 0 <= u < 1:
+                    y = y0 + (y1 - y0) * ease(u); ya = int(max(0, y - 110)); xa, xb = int(x0), int(x1)
+                    if int(y) > ya:
+                        g = (np.linspace(0, 0.35, int(y) - ya, dtype=np.float32) * out)[:, None, None]
+                        fr[ya:int(y), xa:xb] = fr[ya:int(y), xa:xb] * (1 - g) + np.array(CYAN, np.float32) * g
+                    glow_lines(fr, [np.array([[x0, y], [x1, y]], np.float32)], CYAN, 6, alpha=out)
+                if dt < 1.6:
+                    lab = text_rgba("SCANNING" + "." * (int(dt * 6) % 4), 38, fill=(78, 240, 255, 255), box=(0, 0, 0, 140), pad=10)
+                    paste_rgba(fr, lab, int(x0), int(y0 - lab.shape[0] - 14), out)
+            elif k == "pulse":                                # nahradny efekt: sonarovy ping z miesta
+                a = np.linspace(0, 2 * math.pi, 90, endpoint=False)
+                for j in range(3):
+                    u = (dt - 0.3 * j) / 1.4
+                    if 0 <= u < 1:
+                        r = 30 + min(R, 480) * 1.1 * ease(u)
+                        ring = np.stack([cx + r * np.cos(a), cy + r * np.sin(a)], 1).astype(np.float32)
+                        glow_lines(fr, [ring], CYAN, max(2, int(8 * (1 - u))), closed=True, alpha=out * (1 - u))
+                s = back_ease(dt, 0.3)
+                cr = [np.array([[cx + sx * 14 * s, cy + sy * 14 * s], [cx + sx * 46 * s, cy + sy * 46 * s]], np.float32)
+                      for sx, sy in ((1, 0), (-1, 0), (0, 1), (0, -1))]
+                glow_lines(fr, cr, CYAN, 5, core=(255, 255, 230), alpha=out)
             elif k == "follow":                               # tlacidlo sledovat + tuknutie
                 draw_follow(fr, t, dt, out, spec)
 
@@ -1263,6 +1295,14 @@ def mix_audio(spec, voice, total, beats, work, words=()):
                 put(ts, w / (np.abs(w).max() + 1e-9) * db(-16), ev)
             elif k == "eye":
                 put(ts + 1.0, sfx.tick(SR, rng) * db(-14), ev); put(ts + 1.3, sfx.tick(SR, rng) * db(-14), ev)
+            elif k == "scan":
+                put(ts + 0.25, sfx.riser(SR, rng, 1.1)[::-1] * db(-22), ev)
+                for i in range(4):
+                    put(ts + 0.1 * i, sfx.tick(SR, rng, f=1800) * db(-20), ev)
+            elif k == "pulse":
+                for j in range(3):
+                    n0 = int(0.5 * SR); tt = np.arange(n0) / SR
+                    put(ts + 0.3 * j, np.sin(2 * math.pi * 1250 * tt) * np.exp(-tt / 0.12) * db(-18 - 4 * j), ev)
     fx += ev
     msrc = os.path.join(ROOT, "assets", "music", spec.get("music", "cine_616.mp3"))
     subprocess.run([FF, "-y", "-i", msrc, "-t", str(total + 3), "-ar", str(SR), "-ac", "1", "m.wav"],
@@ -1307,7 +1347,7 @@ def prefetch(spec, cams):
 def render(spec, beats, words, cams, total, work, out):
     cmd = [FF, "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
            "-i", "mix.wav", "-vf", "subtitles=caps.ass:fontsdir=fonts", "-c:v", "libx264", "-preset", "medium",
-           "-crf", "21", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+           "-crf", "21", "-maxrate", "5M", "-bufsize", "10M", "-pix_fmt", "yuv420p",   # strop ~25 MB (zrno filmu) "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
            "-shortest", "-movflags", "+faststart", out]
     os.makedirs(os.path.dirname(out), exist_ok=True)
     elog = open(os.path.join(work, "ffmpeg.log"), "wb")
