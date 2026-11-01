@@ -436,6 +436,9 @@
     "label": "214 MILLION YEARS AGO",
     "on": "meteor"
    },
+   "impact": {
+    "on": "struck"
+   },
    "react": {
     "expr": "surprised",
     "on": "meteor",
