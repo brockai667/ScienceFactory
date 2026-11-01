@@ -340,7 +340,8 @@ def validate(s, photos, ctx):
     return errs
 
 
-def write(fact, photos, scale, nxt, km=None):
+def prompt(fact, photos, scale, nxt, km=None):
+    """zadanie pre model (aj pre zasobu scenarov orbit/bank.py): (user, side, ctx pre validate)"""
     ctx = {"article": fact["extract"], "scale": scale, "next": nxt}
     plist = "\n".join(f"{i}: {p['desc']}" for i, p in enumerate(photos)) or "(no photos)"
     extra = (f"Size of the main feature from the article: {km:g} km (use it as feature_km).\n" if km else "") + (f"Computed scale fact (true, use it in beat 4 or 5 with a scale overlay on the word '{scale['on']}'): {scale['fact']}."
@@ -352,6 +353,11 @@ def write(fact, photos, scale, nxt, km=None):
             f"\n\nArticle:\n{fact['extract']}")
     side = (f"\n\nComputed scale fact (true): {scale['fact']}." if scale else "") + (
         f"\n\nNext-topic text (only for the 'Next target' line): {nxt['extract'][:500]}" if nxt else "")
+    return user, side, ctx
+
+
+def write(fact, photos, scale, nxt, km=None):
+    user, side, ctx = prompt(fact, photos, scale, nxt, km)
     msgs = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
     for att in range(10):
         s = llm(msgs)
@@ -722,6 +728,10 @@ def main():
     promised = json.load(open(lp, encoding="utf-8")).get("next") if lp and os.path.exists(lp) else None
     todo.sort(key=lambda x: x["slug"] != promised)                  # predosly diel slubil "Next target: ..." -> ten prvy
     for x in ([] if slug else todo):
+        bk = os.path.join(HERE, "bank", x["slug"] + ".json")
+        if os.path.exists(bk) and json.load(open(bk, encoding="utf-8")).get("draft"):   # zo zasoby: velkost uz overena rucne
+            slug = x["slug"]
+            break
         km = feature_size(json.load(open(os.path.join(TOP, "facts", x["slug"] + ".json"), encoding="utf-8")))
         if km and km < 0.25:                                      # zo satelitu len bodka (Darvaza 70 m) -> preskocit
             log(f"   {x['slug']}: {km} km, primale, preskakujem")
@@ -734,7 +744,20 @@ def main():
     fact["lat"], fact["lon"] = q["lat"], q["lon"]          # queue ma aj rucne opravene suradnice
     log(f"tema: {fact['title']} ({q['lat']:.4f}, {q['lon']:.4f})")
     dp = os.path.join(HERE, "drafts", slug + ".json")
-    if os.environ.get("ORBIT_REBUILD") == "1" and os.path.exists(dp):   # len prepocitat kameru/overlaye, text ostava
+    bp = os.path.join(HERE, "bank", slug + ".json")                   # rucne prepracovany scenar zo zasoby (orbit/bank.py)
+    bank = json.load(open(bp, encoding="utf-8")) if os.path.exists(bp) else {}
+    if os.environ.get("ORBIT_REBUILD") != "1" and bank.get("draft"):
+        s, photos, shape, scale = bank["draft"], bank["photos"], bank["shape"], bank["scale"]
+        lat, lon, ok = bank["lat"], bank["lon"], bank["located"]
+        fact["lat"], fact["lon"] = lat, lon
+        nq = next((x for x in queue if x["slug"] == bank.get("next")), None)
+        log("   scenar zo zasoby (orbit/bank)")
+        if not ok:
+            lat, lon, ok = locate(fact, q["lat"], q["lon"], float(s["feature_km"]))
+        if not q.get("located"):
+            fact["lat"], fact["lon"] = q["lat"], q["lon"] = lat, lon
+            q["located"] = ok
+    elif os.environ.get("ORBIT_REBUILD") == "1" and os.path.exists(dp):   # len prepocitat kameru/overlaye, text ostava
         d = json.load(open(dp, encoding="utf-8"))
         s, photos = d["draft"], d["photos"]
         log("   prerender z ulozeneho navrhu")

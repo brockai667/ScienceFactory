@@ -2,6 +2,7 @@
 python orbit/publish.py <slug> [--dry-run]     opakovane spustenie doplni len chybajuce sluzby
 python orbit/publish.py --retry               doplni Buffer pri starsich dieloch (napr. po vymene tokenu)
 python orbit/publish.py --check-stop           exit 1, ak uz vyslo STOP_AFTER videi (fabrika caka na verdikt)
+python orbit/publish.py --retime              po zmene SLOT_HOUR presunie naplanovane Buffer posty + TikTok feed
 Stav: orbit/published.json {slug: {no, due, video, services}}."""
 import datetime
 import json
@@ -16,8 +17,8 @@ sys.path.insert(0, ROOT)
 PUB = os.path.join(HERE, "published.json")
 FEED = os.path.join(HERE, "tiktok.json")
 QUEUE = os.path.join(HERE, "topics", "queue.json")
-SLOT_HOUR = 17                                               # Bratislava; 1 video denne
-STOP_AFTER = 10                                              # potom stop, Damian rozhodne podla videni
+SLOT_HOUR = 10                                               # Bratislava; 1 video denne (TikTok z appky v rovnaky cas)
+STOP_AFTER = 10                                              # potom stop, po 10 dnoch Damian porovna cisla
 TAG = "orbit"                                                # GitHub Release s videami (verejny, zadarmo)
 
 
@@ -57,6 +58,8 @@ def main():
         n = len(pub)
         print(f"ORBIT: vyslo {n} videi (stop pri {STOP_AFTER})")
         sys.exit(1 if n >= STOP_AFTER else 0)
+    if "--retime" in args:                                     # zmena SLOT_HOUR: naplanovane posty presunut na novy cas
+        sys.exit(retime(pub))
     if "--retry" in args:
         bad = 0
         for slug, e in list(pub.items()):
@@ -65,6 +68,37 @@ def main():
         sys.exit(1 if bad else 0)
     slug = next(a for a in args if not a.startswith("--"))
     sys.exit(publish(slug, pub, "--dry-run" in args))
+
+
+def retime(pub):
+    """diely, ktore este nevysli a nemaju cas SLOT_HOUR: zmazat ich naplanovane Buffer posty a naplanovat znova
+    (v ten isty den o SLOT_HOUR, ak je este aspon 30 min dopredu, inak dalsi volny den)."""
+    from zoneinfo import ZoneInfo
+    import push_to_buffer as pb
+    tz = ZoneInfo("Europe/Bratislava")
+    token = (pb.load_cfg().get("buffer_token") or "").strip()
+    now = datetime.datetime.now(tz)
+    orgs = ((pb.gql(token, "query{account{organizations{id}}}") or {}).get("account") or {}).get("organizations") or []
+    q = ("query($o:OrganizationId!){posts(input:{organizationId:$o, filter:{status:[scheduled]}}){edges{node{id dueAt channelId}}}}")
+    mine = {c["id"] for c in pb.load_cfg().get("buffer_channels") or []}
+    posts = [e["node"] for o in orgs for e in (((pb.gql(token, q, {"o": o["id"]}) or {}).get("posts") or {}).get("edges") or [])
+             if e["node"].get("channelId") in mine]
+    bad = 0
+    for slug, e in pub.items():
+        old = datetime.datetime.fromisoformat(e["due"].replace("Z", "+00:00")).astimezone(tz)
+        if old < now or old.hour == SLOT_HOUR:
+            continue
+        for p in posts:                                       # posty tohto dielu = rovnaky cas v Bufferi
+            if datetime.datetime.fromisoformat(p["dueAt"].replace("Z", "+00:00")) == old:
+                d = pb.gql(token, "mutation($id:PostId!){deletePost(input:{id:$id}){__typename}}", {"id": p["id"]})
+                print(f"  {slug}: zruseny post {p['id']} ({p['dueAt']}): {json.dumps(d)[:120]}")
+        t = old.replace(hour=SLOT_HOUR, minute=0)
+        e["due"] = (t.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+                    if t >= now + datetime.timedelta(minutes=30) else next_due({k: v for k, v in pub.items() if k != slug}))
+        e["services"] = [s for s in e["services"] if s == "tiktok"]
+        save(PUB, pub)
+        bad += publish(slug, pub, False)
+    return 1 if bad else 0
 
 
 def publish(slug, pub, dry):

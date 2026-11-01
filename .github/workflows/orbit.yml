@@ -2,7 +2,7 @@ name: Curio ORBIT (denne - scenar z Wikipedie, render, publikovanie)
 
 on:
   schedule:
-    - cron: "20 1 * * *"   # ~2:20 Bratislava (rezerva na meskanie cronu), TikTok appka ma video do 10:00; Buffer YT+IG o 17:00
+    - cron: "20 1 * * *"   # ~2:20 Bratislava (rezerva na meskanie cronu), video je v TikTok appke pred 10:00; Buffer YT+IG o 10:00
   workflow_dispatch:
     inputs:
       topic:
@@ -18,12 +18,17 @@ on:
         type: boolean
         default: false
       publish:
-        description: "Aj publikovat (Buffer YT+IG o 17:00, TikTok feed)"
+        description: "Aj publikovat (Buffer YT+IG o 10:00, TikTok feed)"
+        type: boolean
+        default: false
+      retime:
+        description: "Len presunut naplanovane diely na novy cas (SLOT_HOUR v orbit/publish.py), nic nepisat ani nerenderovat"
         type: boolean
         default: false
 
 permissions:
   contents: write          # ulozi scenar (orbit/specs), fotky a stav fronty
+  issues: write            # "CURIO - doplnit scripty" (GitHub posle mail)
 
 concurrency:
   group: orbit
@@ -75,8 +80,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python orbit/publish.py --retry
 
-      - name: Napisat scenar (Groq + kontrola faktov)
+      - name: Presunut naplanovane diely na novy cas
+        if: github.event.inputs.retime == 'true'
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python orbit/publish.py --retime
+
+      - name: Napisat scenar (zasoba orbit/bank, inak Groq + kontrola faktov)
         id: write
+        if: github.event.inputs.retime != 'true'
         env:
           MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
           MODELS_BASE_URL: https://api.groq.com/openai/v1
@@ -105,6 +118,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python orbit/publish.py "${{ steps.write.outputs.slug }}"
 
+      - name: Zasoba scenarov (prazdna -> mail CURIO - doplnit scripty)
+        if: success() && (github.event_name == 'schedule' || github.event.inputs.publish == 'true')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python orbit/bank.py left && exit 0
+          T="CURIO - doplniť scripty"
+          if [ -z "$(gh issue list --state open --search "$T in:title" --json number --jq '.[].number')" ]; then
+            gh issue create --title "$T" --body "Zásoba ručne prepracovaných scenárov (orbit/bank) je prázdna. Ďalšie diely by písal Groq. Doplniť: python orbit/bank.py prep N, napísať drafty, bank.py check."
+          fi
+          exit 1
+
       - name: Upload video + scenar
         if: always()
         uses: actions/upload-artifact@v4
@@ -123,7 +148,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           rm -f config.json
-          git add orbit/specs/ orbit/drafts/ orbit/photos/ orbit/topics/queue.json
+          git add orbit/specs/ orbit/drafts/ orbit/photos/ orbit/bank/ orbit/topics/queue.json
           for f in orbit/published.json orbit/tiktok.json; do if [ -f $f ]; then git add $f; fi; done
           git commit -m "orbit: ${{ steps.write.outputs.slug || 'stav' }}" || echo "no changes"
           git pull --rebase --autostash origin ${{ github.ref_name }} || true
