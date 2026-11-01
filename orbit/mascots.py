@@ -15,7 +15,7 @@ def _glow(im, color, blur=28):
     return Image.alpha_composite(g, im)
 
 
-def orbi(mouth, blink, look, expr="normal"):
+def orbi(mouth, blink, look, expr="normal", hat=False):
     w, h = 1600, 1520
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     cx, cy, r = 800, 860, 380
@@ -45,8 +45,8 @@ def orbi(mouth, blink, look, expr="normal"):
     cyan = (78, 240, 255, 255)
     ox = look * 40
     eh = max(10, 120 * (1 - blink))
-    for ex in (cx - 100 + ox, cx + 100 + ox):
-        if expr == "happy":                                   # oci ako ^ ^
+    for ei, ex in enumerate((cx - 100 + ox, cx + 100 + ox)):
+        if expr == "happy" or (expr == "wink" and ei == 1):  # oci ako ^ ^ (wink: len prave)
             fd.arc((ex - 46, cy - 70, ex + 46, cy + 10), 200, 340, fill=cyan, width=26)
         elif expr == "surprised":                             # velke okruhle oci
             fd.ellipse((ex - 48, cy - 30 - max(10, 150 * (1 - blink)) / 2, ex + 48,
@@ -61,6 +61,16 @@ def orbi(mouth, blink, look, expr="normal"):
         mw = 110 if expr == "happy" else 80
         fd.rounded_rectangle((cx - mw + ox, cy + 85 - mh / 2, cx + mw + ox, cy + 85 + mh / 2), 20, fill=cyan)
     im = Image.alpha_composite(im, _glow(face, (78, 240, 255, 160), 22))
+    if hat:                                                   # stary film: cylinder + monokel
+        d = ImageDraw.Draw(im)
+        hb = cy - r + 70
+        d.polygon([(cx - 170, hb - 20), (cx - 150, hb - 330), (cx + 150, hb - 330), (cx + 170, hb - 20)],
+                  fill=(28, 28, 34, 255), outline=INK)
+        d.rectangle((cx - 165, hb - 110, cx + 165, hb - 50), fill=(190, 40, 45, 255))
+        d.ellipse((cx - 300, hb - 50, cx + 300, hb + 40), fill=(28, 28, 34, 255), outline=INK, width=LW)
+        mx = cx + 100 + ox
+        d.ellipse((mx - 78, cy - 30 - 78, mx + 78, cy - 30 + 78), outline=(230, 190, 70, 255), width=18)
+        d.line((mx + 60, cy + 20, mx + 150, cy + 330), fill=(230, 190, 70, 255), width=10)
     return im
 
 
@@ -125,8 +135,12 @@ def pin(mouth, blink, look):
 KINDS = {"orbi": orbi, "astro": astro, "pin": pin}
 
 
-def draw(kind, mouth=0.0, blink=0.0, look=0.0, h_out=H_OUT, expr="normal"):
-    im = KINDS[kind](mouth, blink, look, expr) if kind == "orbi" else KINDS[kind](mouth, blink, look)
+_base_h = {}
+def draw(kind, mouth=0.0, blink=0.0, look=0.0, h_out=H_OUT, expr="normal", hat=False):
+    im = KINDS[kind](mouth, blink, look, expr, hat) if kind == "orbi" else KINDS[kind](mouth, blink, look)
     bb = im.getbbox(); im = im.crop(bb)
-    w = int(im.width * h_out / im.height)
-    return im.resize((w, h_out), Image.LANCZOS)
+    if kind not in _base_h:                                   # mierka podla postavicky bez klobuka
+        b0 = orbi(0, 0, 0).getbbox() if kind == "orbi" else bb
+        _base_h[kind] = b0[3] - b0[1]
+    k = h_out / _base_h[kind]
+    return im.resize((int(im.width * k), int(im.height * k)), Image.LANCZOS)

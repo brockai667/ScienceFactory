@@ -789,12 +789,17 @@ def draw_fx(fr, t, cam, spec, beats, words):
             if k == "trace":                                  # obkreslenie utvaru ziarou
                 glow_lines(fr, [poly_part(feature_px(spec, cam), ease(dt / 0.9))], YEL, 10, alpha=out)
             elif k == "ask":                                  # otazniky vyskakuju okolo miesta
+                cols = ((255, 214, 40, 255), (255, 255, 255, 255), (78, 240, 255, 255))
                 for i, (ang, sz) in enumerate(((-55, 170), (-115, 130), (200, 150), (25, 120), (150, 110))):
                     s = back_ease(dt - 0.13 * i)
+                    if s <= 0.03:
+                        continue
+                    g, p = rotate_rgba(glyph("?", sz, cols[i % 3]), 14 * math.sin(t * 7 + i * 1.7), s)   # kyvanie
                     rr = min(R, 400)                          # pri velkom utvare by otazniky vypadli z obrazu
                     x = min(W - 100, max(100, cx + rr * math.cos(math.radians(ang))))
                     y = min(H - 600, max(300, cy + 0.9 * rr * math.sin(math.radians(ang))))
-                    paste_scaled(fr, glyph("?", sz, (255, 214, 40, 255)), x, y + 10 * math.sin(t * 5 + i), s, out)
+                    y -= 25 * min(1.0, dt / 1.5)                  # pomaly stupaju
+                    paste_rgba(fr, g, int(x - g.shape[1] / 2), int(y + 10 * math.sin(t * 5 + i) - g.shape[0] / 2), out)
             elif k == "speech":                               # bublina: niekto prave pise
                 ph = int(t * 12) % 12
                 paste_scaled(fr, bubble(ph), cx + 0.45 * R + 60, cy - 0.75 * R, back_ease(dt), out)
@@ -804,12 +809,6 @@ def draw_fx(fr, t, cam, spec, beats, words):
                     v = int(f["n"] * ease(min(1.0, dt / (end * 0.85))))
                     lab = text_rgba(f"{v:,} YEARS AGO", 70, fill=(255, 255, 255, 255), box=(0, 0, 0, 170))
                     paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 330)
-                    rng = np.random.default_rng(int(t * 30))
-                    for _ in range(5):
-                        y = int(rng.uniform(0, H)); hh = int(rng.uniform(3, 14))
-                        fr[y:y + hh] = fr[y:y + hh] * 0.6 + 255 * 0.4
-                    tri = [np.array([[60 + o, 470], [60 + o, 530], [24 + o, 500]], np.int32) for o in (0, 38)]
-                    cv2.fillPoly(fr, tri, (255, 255, 255), cv2.LINE_AA)
             elif k == "cracks":                               # zhave praskliny sa rozbehnu z miesta dopadu
                 g = ease(dt / 0.55); al = out * max(0.0, min(1.0, (2.6 - dt) / 0.6))
                 if al > 0:
@@ -854,12 +853,112 @@ def draw_fx(fr, t, cam, spec, beats, words):
                 lash = [np.array([up[j], up[j] + (0, -55 * bl - 10)], np.float32) for j in range(12, 49, 6)] if d >= 1 else []
                 glow_lines(fr, [open_part(up, d), open_part(lo, d)] + lash, (255, 255, 255), 9, core=(255, 255, 255), alpha=out)
             elif k == "follow":                               # tlacidlo sledovat + tuknutie
-                done = dt > 0.75
-                x, y = W / 2, 1150
-                paste_scaled(fr, follow_btn(done), x, y, back_ease(dt) * (1 - 0.08 * math.sin(math.pi * min(1, max(0, (dt - 0.6) / 0.2)))), out)
-                if 0.6 < dt < 1.2:
-                    u = (dt - 0.6) / 0.6
-                    cv2.circle(fr, (int(x + 120), int(y + 20)), int(20 + 90 * u), (255, 255, 255), 6, cv2.LINE_AA)
+                draw_follow(fr, t, dt, out, spec)
+
+
+def avatar():
+    """Okruhly avatar kanala s Orbim (ako profilovka na TikToku)."""
+    if "avatar" not in _sb:
+        from PIL import ImageFilter
+        D = 320
+        im = Image.new("RGBA", (D + 40, D + 40), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        d.ellipse((12, 12, D + 28, D + 28), fill=(78, 240, 255, 90))             # svetelny okraj
+        d.ellipse((20, 20, D + 20, D + 20), fill=(16, 28, 54, 255))
+        o = mascots.draw("orbi", 0.2, 0, 0, h_out=int(D * 0.95), expr="happy")   # telo vyplni kruh, panely orezane
+        face = Image.new("RGBA", (D, D), (0, 0, 0, 0))
+        face.alpha_composite(o, (int(D / 2 - o.width / 2), int(D / 2 - o.height / 2 + D * 0.08)))
+        m = Image.new("L", (D, D), 0); ImageDraw.Draw(m).ellipse((0, 0, D - 1, D - 1), fill=255)
+        face.putalpha(Image.fromarray(np.minimum(np.array(face.split()[3]), np.array(m))))
+        im.alpha_composite(face, (20, 20))
+        d = ImageDraw.Draw(im); d.ellipse((20, 20, D + 20, D + 20), outline=(255, 255, 255, 255), width=9)
+        _sb["avatar"] = np.array(im.filter(ImageFilter.SMOOTH))
+    return _sb["avatar"]
+
+
+def draw_follow(fr, t, dt, out, spec):
+    # moderne CTA: avatar s cervenym "+", prst tukne, "+" sa zmeni na fajku, vystrelia iskry
+    cx, cy = W / 2, 860                                    # nad titulkami (~1300)
+    tap = 0.75
+    press = 1 - 0.1 * math.sin(math.pi * min(1.0, max(0.0, (dt - tap + 0.12) / 0.24)))
+    av = avatar()
+    paste_scaled(fr, av, cx, cy, back_ease(dt, 0.4) * press, out)
+    bx, by = cx, cy + 165 * press
+    s = back_ease(dt - 0.15, 0.3)
+    if s > 0.03:
+        if dt < tap:                                         # cerveny odznak s "+"
+            cv2.circle(fr, (int(bx), int(by)), int(38 * s), (85, 44, 254), -1, cv2.LINE_AA)
+            for a in (0, 90):
+                ca, sa = math.cos(math.radians(a)), math.sin(math.radians(a))
+                cv2.line(fr, (int(bx - 18 * s * ca), int(by - 18 * s * sa)), (int(bx + 18 * s * ca), int(by + 18 * s * sa)),
+                         (255, 255, 255), 8, cv2.LINE_AA)
+        else:                                                # fajka, odznak sa nafukne a zmizne
+            u = dt - tap; k = back_ease(u, 0.25) * max(0.0, min(1.0, (1.6 - u) / 0.3))
+            if k > 0.03:
+                cv2.circle(fr, (int(bx), int(by)), int(38 * k), (255, 255, 255), -1, cv2.LINE_AA)
+                pts = np.array([[bx - 16 * k, by + 1 * k], [bx - 4 * k, by + 13 * k], [bx + 18 * k, by - 12 * k]], np.int32)
+                cv2.polylines(fr, [pts], False, (85, 44, 254), 8, cv2.LINE_AA)
+            rng = np.random.default_rng(9)                   # iskry
+            for i in range(16):
+                ang = 2 * math.pi * i / 16 + rng.uniform(-0.2, 0.2); v = rng.uniform(140, 260)
+                d = v * (1 - math.exp(-u * 4)); a = max(0.0, 1 - u / 0.9)
+                if a > 0:
+                    col = ((85, 44, 254), (40, 214, 255), (255, 240, 78))[i % 3]
+                    cv2.circle(fr, (int(bx + d * math.cos(ang)), int(by + d * math.sin(ang) + 120 * u * u)),
+                               int(9 * a + 2), tuple(c * a for c in col), -1, cv2.LINE_AA)
+    if dt < tap + 0.2:                                       # prst (polopriehladny kruh) priletí a tukne
+        u = ease(min(1.0, max(0.0, (dt - 0.3) / (tap - 0.35))))
+        fx_, fy_ = bx + 220 * (1 - u), by + 260 * (1 - u)
+        if dt > 0.3:
+            ov = fr.copy(); r = int(34 * (0.8 if abs(dt - tap) < 0.1 else 1))
+            cv2.circle(ov, (int(fx_), int(fy_)), r, (255, 255, 255), -1, cv2.LINE_AA)
+            fr[:] = fr * 0.5 + ov * 0.5
+    if dt > tap and dt - tap < 0.5:                          # vlna po tuknuti
+        u = (dt - tap) / 0.5
+        cv2.circle(fr, (int(bx), int(by)), int(40 + 120 * u), (255, 255, 255), max(1, int(8 * (1 - u))), cv2.LINE_AA)
+    nxt = (spec.get("series_no") or 0) + 1
+    lab = text_rgba(f"FOLLOW FOR SCAN #{nxt:03d}" if dt < tap else "SEE YOU AT THE NEXT SCAN", 46,
+                    fill=(255, 255, 255, 255), box=(0, 0, 0, 150), pad=16)
+    paste_scaled(fr, lab, cx, cy + 290, back_ease(dt - 0.25, 0.35), out)
+
+
+FILM_EDGE = 64
+def film_post(fr, t, sw):
+    # stary film cez cely obraz: zrno, skrabance, prach, blikanie, chvenie, perforacia, prepalenie na prechodoch
+    if not sw or not (sw[0] <= t < sw[1] + 0.5):
+        return
+    a = min(1.0, (t - sw[0]) / 0.3, (sw[1] + 0.5 - t) / 0.5)
+    rng = np.random.default_rng(int(t * FPS) * 7 + 1)
+    if a > 0.5:                                              # chvenie obrazu v projektore
+        fr[:] = np.roll(fr, int(rng.integers(-4, 5)), 0)
+    fr *= 1 + a * rng.uniform(-0.08, 0.05)                   # blikanie
+    n = cv2.resize(rng.normal(0, 1, (H // 3, W // 3)).astype(np.float32), (W, H))
+    fr += (n * 16 * a)[..., None]                            # zrno
+    v = np.clip(((_xx - W / 2) / (W * 0.62)) ** 2 + ((_yy - H / 2) / (H * 0.58)) ** 2, 0, 1)
+    fr *= (1 - a * 0.55 * v ** 1.5)[..., None]               # silna vineta
+    srng = np.random.default_rng(int(t / 0.45))              # skrabance drzia par snimok, len sa trasu
+    for _ in range(int(srng.integers(1, 4))):
+        x = int(srng.uniform(120, W - 120) + rng.uniform(-3, 3)); y0 = int(srng.uniform(-200, H * 0.5))
+        lt = srng.random() < 0.6
+        sl = fr[max(0, y0):min(H, y0 + int(srng.uniform(600, 1600))), x:x + 3]
+        sl[:] = sl * (1 - 0.6 * a) + (235 if lt else 20) * 0.6 * a
+    for _ in range(int(rng.integers(0, 5))):                 # prach a chlpy
+        x, y = int(rng.uniform(0, W)), int(rng.uniform(0, H)); c = (25, 25, 25) if rng.random() < 0.7 else (230, 230, 230)
+        if rng.random() < 0.7:
+            cv2.circle(fr, (x, y), int(rng.uniform(2, 8)), c, -1, cv2.LINE_AA)
+        else:
+            pts = np.cumsum(rng.normal(0, 9, (8, 2)), 0) + (x, y)
+            cv2.polylines(fr, [pts.astype(np.int32)], False, c, 2, cv2.LINE_AA)
+    e = FILM_EDGE; off = (t * 700) % 140                     # perforacia filmoveho pasu po stranach
+    for x0 in (0, W - e):
+        fr[:, x0:x0 + e] *= 1 - 0.9 * a
+        for y in np.arange(-140, H + 140, 140) + off:
+            cv2.rectangle(fr, (x0 + 16, int(y)), (x0 + e - 16, int(y + 60)), (200 * a, 205 * a, 210 * a), -1, cv2.LINE_AA)
+    for tb, dur in ((sw[0], 0.35), (sw[1] - 0.1, 0.6)):      # prepalenie filmu pri vstupe a vystupe
+        u = (t - tb) / dur
+        if 0 <= u < 1:
+            k = math.sin(math.pi * u)
+            g = np.clip(1 - np.hypot(_xx - W * 0.85, _yy - H * 0.2) / (H * (0.4 + 1.2 * u)), 0, 1) ** 1.2
+            fr[:] = fr * (1 - k * g[..., None]) + np.array([150, 215, 255], np.float32) * (k * g[..., None]) * 1.1
 
 
 def draw_highlight(fr, t, cam, spec, beats, words):
@@ -932,10 +1031,25 @@ def prep_orbi(spec, beats, words, work):
                 t0 = word_at(words, b, b[k].get("on"), 0.4)
                 ev.append((t0, t0 + 1.0, "point", (st["lat"], st["lon"])))
         for f in b.get("fx", []):
+            t0 = word_at(words, b, f.get("on"), 0.4)
             if f["kind"] in ("trace", "cracks", "water", "eye"):
-                t0 = word_at(words, b, f.get("on"), 0.4)
                 ev.append((t0, t0 + 1.0, "point", (st["lat"], st["lon"])))
+            if f["kind"] == "eye":                           # oko zmurkne -> Orbi zmurkne naspat
+                ev.append((t0 + 1.35, t0 + 2.0, "expr", "wink"))
+            if f["kind"] == "follow":
+                ev.append((t0 + 0.75, t0 + 2.2, "expr", "happy"))
     ORBI["events"] = ev
+    mods = []                                                # klobuk v minulosti, otocka pri dopade, naklon pri otazke
+    sw = sepia_window(beats, words)
+    if sw:
+        mods.append((sw[0] + 0.3, sw[1] + 0.2, "hat"))
+    for b in beats:
+        if "impact" in b:
+            th = impact_time(b, words); mods.append((th + 0.05, th + 0.85, "spin"))
+        for f in b.get("fx", []):
+            if f["kind"] == "ask":
+                t0 = word_at(words, b, f.get("on"), 0.4); mods.append((t0, t0 + 1.8, "tilt"))
+    ORBI["mods"] = mods
     cards = []
     ov = [word_at(words, b, b[k].get("on"), 0.4) for b in beats            # zaciatky dalsich overlayov
           for k in ("ruler", "rings", "tag", "stamp", "scale", "highlight") if k in b]
@@ -949,11 +1063,18 @@ def prep_orbi(spec, beats, words, work):
 
 
 _sprites = {}
-def orbi_sprite(mouth, blink, look, expr):
-    k = (round(mouth * 4) / 4, round(blink * 3) / 3, round(look * 2) / 2, expr)
+def orbi_sprite(mouth, blink, look, expr, hat=False):
+    k = (round(mouth * 4) / 4, round(blink * 3) / 3, round(look * 2) / 2, expr, hat)
     if k not in _sprites:
-        _sprites[k] = np.array(mascots.draw("orbi", *k[:3], h_out=ORBI_H, expr=expr).convert("RGBA"))
+        _sprites[k] = np.array(mascots.draw("orbi", *k[:3], h_out=ORBI_H, expr=expr, hat=hat).convert("RGBA"))
     return _sprites[k]
+
+
+def rotate_rgba(im, ang, sc=1.0):
+    h, w = im.shape[:2]; p = int(max(h, w) * 0.25)
+    im = cv2.copyMakeBorder(im, p, p, p, p, cv2.BORDER_CONSTANT, value=(0, 0, 0, 0))
+    M = cv2.getRotationMatrix2D((im.shape[1] / 2, im.shape[0] / 2), ang, sc)
+    return cv2.warpAffine(im, M, (im.shape[1], im.shape[0]), flags=cv2.INTER_LINEAR), p
 
 
 def photo_card(path, label, credit):
@@ -1000,7 +1121,16 @@ def draw_orbi(fr, t, cam):
         return
     if target:
         look = 1.0
-    sp = orbi_sprite(mouth, blink, look, expr)
+    hat, ang = False, 3 * math.sin(t * 1.9)                  # jemne kolisanie aj v klude
+    for t0, t1, kind in ORBI.get("mods", []):
+        if t0 <= t < t1:
+            if kind == "hat":
+                hat = True
+            elif kind == "spin":                             # odhodi ho tlakova vlna: otocka dookola
+                ang = -360 * ease((t - t0) / (t1 - t0))
+            elif kind == "tilt":                             # nakloni hlavu nad otaznikmi
+                ang = 16 * ease(min(1.0, (t - t0) / 0.3)) * min(1.0, (t1 - t) / 0.3) + 3 * math.sin(t * 6)
+    sp = orbi_sprite(mouth, blink, look, expr, hat)
     bob = 7 * math.sin(t * 2.4)
     jump = 0.0
     for t0, t1, kind, data in ORBI["events"]:
@@ -1025,6 +1155,9 @@ def draw_orbi(fr, t, cam):
             rr = int(20 + 70 * ((t - tt0 - 0.35) % 0.6) / 0.6)
             cv2.circle(lay, (int(tx), int(ty)), rr, CYAN, 6, cv2.LINE_AA)
         fr += lay * fade
+    if abs(ang) > 0.5:
+        sp, p = rotate_rgba(sp, ang)
+        x, y = x - p, y - p
     paste_rgba(fr, sp, int(x), int(y))
 
 
@@ -1113,7 +1246,7 @@ def mix_audio(spec, voice, total, beats, work, words=()):
             elif k in ("speech", "follow"):
                 put(ts, sfx.pop(SR, rng, f0=980) * db(-14), ev)
                 if k == "follow":
-                    put(ts + 0.6, sfx_click(rng) / 0.12 * db(-10), ev)
+                    put(ts + 0.75, sfx_click(rng) / 0.12 * db(-10), ev); put(ts + 0.8, sfx.chirp(SR, rng) * db(-15), ev)
             elif k == "trace":
                 put(ts, sfx.riser(SR, rng, 0.9) * db(-18), ev)
             elif k == "rewind":
@@ -1181,6 +1314,7 @@ def render(spec, beats, words, cams, total, work, out):
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE, cwd=work, stderr=elog)
     yy, xx = _yy, _xx
     vig = np.clip(1.12 - (((xx - W / 2) / W) ** 2 + ((yy - H / 2) / H) ** 2) * 1.1, 0.55, 1)[..., None]
+    sw = sepia_window(beats, words)
     for f, cam in enumerate(cams):
         t = f / FPS
         if t < GLOBE_T:
@@ -1198,6 +1332,7 @@ def render(spec, beats, words, cams, total, work, out):
         draw_overlays(fr, t, ocam, spec, beats, words)
         draw_cards(fr, t)
         draw_orbi(fr, t, ocam)
+        film_post(fr, t, sw)
         if t < 0.12:
             fr *= t / 0.12 * 0.6 + 0.4
         p.stdin.write(np.clip(fr, 0, 255).astype(np.uint8).tobytes())
