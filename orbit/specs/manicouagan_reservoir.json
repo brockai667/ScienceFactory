@@ -485,7 +485,7 @@
     },
     {
      "kind": "water",
-     "on": "water"
+     "on": "filled"
     }
    ]
   },
