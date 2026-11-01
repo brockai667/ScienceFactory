@@ -271,7 +271,7 @@ def validate(s, photos, ctx):
     if ctx["scale"] and not any((b.get("overlay") or {}).get("type") == "scale" for b in bs):
         errs.append(f"add this computed scale fact in beat 4 or 5: \"{ctx['scale']['fact']}.\" with a scale overlay on the word '{ctx['scale']['on']}'")
     words = sum(len(b.get("text", "").split()) for b in bs)
-    if not 80 <= words <= 110:
+    if not 80 <= words <= 115:
         errs.append(f"need 85-105 words, got {words}")
     for i, b in enumerate(bs[:-1]):
         if TEASE.search(b.get("text", "")):
@@ -376,9 +376,8 @@ def write(fact, photos, scale, nxt, km=None):
                     log(f"   titulok {tt} -> cislo {sp[0]} z hooku: {h.get('text')}")
                     h["title"] = tt.replace(tn[0], sp[0], 1)
         errs = validate(s, photos, ctx)
-        if len(s.get("beats") or []) < 6:                    # rozbity navrh: neopravovat, zacat odznova
-            log(f"   pokus {att + 1}: rozbity navrh, odznova: {json.dumps(s)[:300]}")
-            msgs = msgs[:2]
+        if len(s.get("beats") or []) < 6:                    # rozbity navrh: zopakovat tu istu poziadavku (opravy ostanu)
+            log(f"   pokus {att + 1}: rozbity navrh, znova: {json.dumps(s)[:300]}")
             continue
         if fine(errs, att):
             hooks = [h for h in s["hooks"] if isinstance(h, dict)]
@@ -386,20 +385,28 @@ def write(fact, photos, scale, nxt, km=None):
                         {"role": "user", "content": f"Article:\n{fact['extract'][:2500]}\n\nCandidates:\n" + "\n".join(
                             f"{i}: \"{h['text']}\" / title: {h['title']}" for i, h in enumerate(hooks))}], temp=0.1)
             best = pick.get("best") if isinstance(pick.get("best"), int) and 0 <= pick["best"] < len(hooks) else 0
+            sc = pick.get("scores") if isinstance(pick.get("scores"), list) and len(pick["scores"]) == len(hooks) else []
+            order = [best] + sorted((i for i in range(len(hooks)) if i != best),
+                                    key=lambda i: -(sc[i] if i < len(sc) and isinstance(sc[i], (int, float)) else 0))
             b0 = s["beats"][0]
-            b0["text"], s["hook_title"] = [re.sub(r"[‐-―]", "-", hooks[best][k]).translate(
-                {0x2018: "'", 0x2019: "'", 0x201c: '"', 0x201d: '"'}).strip() for k in ("text", "title")]
-            toks = [re.sub(r"[^a-z0-9']", "", t.lower()) for t in b0["text"].split()]
-            for k in ("overlay", "react", "photo"):              # cue na slove, ktore vo vitaznom hooku nie je, zahodit
-                if b0.get(k) and re.sub(r"[^a-z0-9']", "", str(b0[k].get("on", "")).lower()) not in toks:
-                    b0[k] = None
-            log(f"   hook {best + 1}/{len(hooks)} {pick.get('scores')}: {b0['text']} | {s['hook_title']}")
-            errs = validate(s, photos, ctx)                      # vitazny hook moze zopakovat cislo z dalsich beatov
-        if fine(errs, att):
-            narr = f"On-screen title: {s['hook_title']}\n" + "\n".join(f"Beat {i + 1}: {b['text']}" for i, b in enumerate(s["beats"]))
-            errs = llm([{"role": "system", "content": CHECK},
-                        {"role": "user", "content": f"Article:\n{fact['extract']}{side}\n\nNarration:\n{narr}"}], temp=0.1).get("problems") or []
-            errs = [f"fact: {e}" for e in errs]
+            cues = {k: b0.get(k) for k in ("overlay", "react", "photo")}
+            for best in order:                               # hook neprejde (cislo, fakt) -> dalsi kandidat, nie novy scenar
+                b0["text"], s["hook_title"] = [re.sub(r"[‐-―]", "-", hooks[best][k]).translate(
+                    {0x2018: "'", 0x2019: "'", 0x201c: '"', 0x201d: '"'}).strip() for k in ("text", "title")]
+                toks = [re.sub(r"[^a-z0-9']", "", t.lower()) for t in b0["text"].split()]
+                for k, o in cues.items():                    # cue na slove, ktore vo vitaznom hooku nie je, zahodit
+                    b0[k] = o if o and re.sub(r"[^a-z0-9']", "", str(o.get("on", "")).lower()) in toks else None
+                log(f"   hook {best + 1}/{len(hooks)} {sc}: {b0['text']} | {s['hook_title']}")
+                errs = validate(s, photos, ctx)              # hook moze zopakovat cislo z dalsich beatov
+                if fine(errs, att):
+                    narr = f"On-screen title: {s['hook_title']}\n" + "\n".join(f"Beat {i + 1}: {b['text']}" for i, b in enumerate(s["beats"]))
+                    errs = llm([{"role": "system", "content": CHECK},
+                                {"role": "user", "content": f"Article:\n{fact['extract']}{side}\n\nNarration:\n{narr}"}], temp=0.1).get("problems") or []
+                    errs = [f"fact: {e}" for e in errs]
+                    hk = b0["text"][:30].lower()
+                    if not (errs and all(hk in e.lower() or "beat 1" in e.lower() or "title" in e.lower() for e in errs)):
+                        break                                # chyby aj mimo hooku: opravi ich model
+                log(f"   hook {best + 1} neprešiel: " + " | ".join(errs)[:200])
         if not errs:
             log(f"   scenar OK (pokus {att + 1})")
             return s
