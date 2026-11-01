@@ -26,7 +26,17 @@
     "lat": 51.3697,
     "lon": -68.6587,
     "z": 10.79
-   }
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "what"
+    },
+    {
+     "kind": "trace",
+     "on": "ring"
+    }
+   ]
   },
   {
    "text": "And wait till you hear what locals call this lake.",
@@ -34,7 +44,13 @@
     "lat": 51.3697,
     "lon": -68.6587,
     "z": 9.99
-   }
+   },
+   "fx": [
+    {
+     "kind": "speech",
+     "on": "call"
+    }
+   ]
   },
   {
    "text": "From orbit, the ring of water measures about seventy kilometers across.",
@@ -439,6 +455,13 @@
    "impact": {
     "on": "struck"
    },
+   "fx": [
+    {
+     "kind": "rewind",
+     "on": "two",
+     "n": 214000000
+    }
+   ],
    "react": {
     "expr": "surprised",
     "on": "meteor",
@@ -454,7 +477,17 @@
    },
    "highlight": {
     "on": "rings"
-   }
+   },
+   "fx": [
+    {
+     "kind": "cracks",
+     "on": "shattered"
+    },
+    {
+     "kind": "water",
+     "on": "water"
+    }
+   ]
   },
   {
    "text": "It is sometimes called the eye of Quebec.",
@@ -469,6 +502,12 @@
     "label": "EYE OF QUEBEC",
     "on": "eye"
    },
+   "fx": [
+    {
+     "kind": "eye",
+     "on": "eye"
+    }
+   ],
    "react": {
     "expr": "happy",
     "on": "eye",
@@ -482,7 +521,13 @@
     "lon": -87.53444444,
     "z": 13.0,
     "hop": true
-   }
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ]
   }
  ],
  "hook": "70 KM RING",
