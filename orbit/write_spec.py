@@ -11,7 +11,7 @@ SIGNOFF = "Follow for the next scan. Orbi out."          # pevny koniec kazdeho 
 NUMW = set("two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen "
            "eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million billion".split())
 COLORW = re.compile(r"\b(blue|green|red|white|black|pink|yellow|orange|purple|turquoise|golden|brown|gr[ae]y)\b", re.I)
-Z_MAX = 16.8                  # Esri ma ostre snimky vsade len priblizne do z17
+Z_MAX = 17.0                  # Esri ma ostre snimky vsade len priblizne do z17 (nad 17 sa mieša z18, ta nie vsade je)
 
 
 def log(*a):
@@ -629,7 +629,7 @@ def beat_fx(txt, i, n, nb, measured):
 def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
     lat, lon = fact["lat"], fact["lon"]
     km = float(s["feature_km"])
-    zf = max(4.5, min(Z_MAX - 1.0, z_for(lat, km) - 0.35))     # cely utvar aj s okolim (~60 % sirky)
+    zf = max(4.5, min(Z_MAX - 0.2, z_for(lat, km) - 0.35))     # cely utvar aj s okolim (~60 % sirky); maly utvar co najblizsie
     zs = {"feature": zf, "close": min(Z_MAX, zf + 0.9), "wide": max(4.5, zf - 1.8), "space": max(4.5, zf - 5.0)}
     def cut(t, n):                                           # skratit na cele slova, nie "FROM SPAC"
         t = t.upper().strip()
@@ -655,7 +655,8 @@ def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
             nb["globe"] = True
         o = b.get("overlay") if i else None                  # v 1. zabere leti kamera z globusu, overlay by bol mrnavy
         if o and o.get("type") == "ruler":
-            nb["ruler"] = {"lat": lat, "lon": lon, "km": km, "label": o.get("label") or f"{km:g} KM", "on": o["on"]}
+            lab = f"{round(km * 1000)} M" if km < 1 else (o.get("label") or f"{km:g} KM")   # nie "0.318 KM"
+            nb["ruler"] = {"lat": lat, "lon": lon, "km": km, "label": lab, "on": o["on"]}
         elif o and o.get("type") == "rings":
             nb["rings"] = {"lat": lat, "lon": lon, "km": [round(km / 2 * f, 2) for f in (0.3, 0.6, 0.9)], "on": o["on"]}
         elif o and o.get("type") == "scale" and scale:
@@ -692,7 +693,7 @@ def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
         " Photos: " + "; ".join(sorted({p["credit"] for p in used})) + ", Wikimedia Commons." if used else "")
     ns, ew = ("N" if lat >= 0 else "S"), ("E" if lon >= 0 else "W")
     return {"title": s.get("title") or fact["title"], "coords": f"{abs(lat):.4f} {ns}, {abs(lon):.4f} {ew}",
-            "voice": "am_michael", "speed": 1.0, "music": "cine_616.mp3", "start": {"lat": lat, "lon": lon},
+            "voice": "am_michael", "speed": 1.1, "music": "cine_616.mp3", "start": {"lat": lat, "lon": lon},
             "source": fact["url"], "feature_km": km, "beats": beats, "hook": cut(s.get("hook_title", ""), 22),
             "description": f"{s.get('description', '').strip()} {credits} Source: Wikipedia.",
             "hashtags": (s.get("hashtags") or ["#shorts"])[:6], "shape": shape, "series_no": no}

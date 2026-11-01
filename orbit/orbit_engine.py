@@ -512,8 +512,8 @@ def draw_overlays(fr, t, cam, spec, beats, words):
                     cv2.ellipse(fr, (int(x), int(y)), (int(rad), int(rad)), -90, 0, 360 * u, RED, 7, cv2.LINE_AA)
         if "tag" in b:
             r = b["tag"]; ts = word_at(words, b, r.get("on"), 0.5)
-            if t >= ts:
-                u = ease((t - ts) / 0.35)
+            if ts <= t < b["t1"]:                             # do konca beatu, nie do preletu k dalsiemu cielu
+                u = ease((t - ts) / 0.35) * min(1.0, (b["t1"] - t) / 0.25)
                 x, y = screen_xy(r["lat"], r["lon"], cam)
                 cv2.circle(fr, (int(x), int(y)), int(16 * u) + 1, RED, -1, cv2.LINE_AA)
                 cv2.circle(fr, (int(x), int(y)), int(16 * u) + 1, (255, 255, 255), 4, cv2.LINE_AA)
@@ -522,8 +522,8 @@ def draw_overlays(fr, t, cam, spec, beats, words):
                 paste_rgba(fr, lab, int(x - lab.shape[1] / 2), int(y - 20 - 150 * u - lab.shape[0]), u)
         if "stamp" in b:
             r = b["stamp"]; ts = word_at(words, b, r.get("on"), 0.5)
-            if ts <= t:
-                u = ease((t - ts) / 0.3)
+            if ts <= t < b["t1"]:
+                u = ease((t - ts) / 0.3) * min(1.0, (b["t1"] - t) / 0.25)
                 lab = text_rgba(r["label"], 70, fill=(255, 255, 255, 255), box=(0, 0, 0, 170))
                 paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 330 - int(30 * (1 - u)), u)
         if "scale" in b and b["scale"].get("poly_km") and t < b["t1"]:
