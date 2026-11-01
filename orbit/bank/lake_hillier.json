@@ -1,0 +1,131 @@
+{
+ "slug": "lake_hillier",
+ "next": "danakil_depression",
+ "photos": [],
+ "lat": -34.0946,
+ "lon": 123.2028,
+ "located": true,
+ "km": 0.6,
+ "scale": null,
+ "shape": null,
+ "user": "Place: Lake Hillier\nCoordinates: -34.0946, 123.2028\nSize of the main feature from the article: 0.6 km (use it as feature_km).\nComputed scale fact: none (do not use a scale overlay).\nBeat 9 must be exactly: \"Next target: <tease of at most 10 words, one true fact from the next-topic text, without naming the place>. Follow for the next scan. Orbi out.\"\nNext topic: Danakil Depression. The Danakil Depression is a large valley of approximately 200 by 50 km (124 by 31 mi), across the north of the Afar Region of Ethiopia and Eritrea. It is about 125 m (410 ft) below sea level and is bordered to the west by the Ethiopian Plateau and to the east by the Danakil Alps, beyond which is the Red Sea. It is the third lowest-lying location on the continent of Africa.\nThe Danakil Depression is a geological depression formed by rifting. It constitutes the northern part of the Afar Triangle o\n\nPhotos:\n(no photos)\n\nArticle:\nLake Hillier is a saline lake on the edge of Middle Island, the largest of the islands and islets that make up the Recherche Archipelago in the Goldfields-Esperance region, off the south coast of Western Australia. It is particularly notable for its pink colour. A long and thin shore divides the Southern Ocean (by some definitions, the Indian Ocean) from the lake.\n\n\nDescription\nLake Hillier is about 600 metres (2,000 ft) in length by about 250 m (820 ft) in width. The lake is surrounded by a rim of sand and a dense woodland of paperbark and eucalyptus trees with a narrow strip of sand dunes covered by vegetation separating its northern edge from the northern coast of Middle Island. The most notable feature of the lake is its pink, vibrant colour. The vibrant colour is permanent, and does not alter when the water is taken in a container. The pink colour is believed to be due to the presence of the organism Dunaliella salina. The Extreme Microbiome Project, part of the Association of Biomolecular Resource Facilities, Metagenomics Research Group, has performed a metagenomic analysis on the lake to find Dunaliella as well as Salinibacter ruber, Dechloromonas aromatica, and a few species...",
+ "side": "\n\nNext-topic text (only for the 'Next target' line): The Danakil Depression is a large valley of approximately 200 by 50 km (124 by 31 mi), across the north of the Afar Region of Ethiopia and Eritrea. It is about 125 m (410 ft) below sea level and is bordered to the west by the Ethiopian Plateau and to the east by the Danakil Alps, beyond which is the Red Sea. It is the third lowest-lying location on the continent of Africa.\nThe Danakil Depression is a geological depression formed by rifting. It constitutes the northern part of the Afar Triangle o",
+ "draft": {
+  "title": "Lake Hillier",
+  "feature_km": 0.6,
+  "hooks": [
+   {
+    "text": "This lake is pink, all six hundred meters of it.",
+    "title": "600 M PINK LAKE"
+   },
+   {
+    "text": "A pink lake six hundred meters long, one thin shore from the ocean.",
+    "title": "600 M LAKE"
+   },
+   {
+    "text": "Why is this six hundred meter lake on an Australian island pink?",
+    "title": "600 M ISLAND LAKE"
+   }
+  ],
+  "beats": [
+   {
+    "text": "This lake is pink, all six hundred meters of it.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "So what turns a salty lake pink?",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Pour its water into a container, and it stays pink.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "stays",
+     "label": "STAYS PINK"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "stays"
+    },
+    "photo": null
+   },
+   {
+    "text": "It sits on the edge of Middle Island, off Western Australia.",
+    "shot": "feature",
+    "overlay": {
+     "type": "tag",
+     "on": "Middle",
+     "label": "MIDDLE ISLAND"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "A long, thin shore divides it from the Southern Ocean.",
+    "shot": "feature",
+    "overlay": {
+     "type": "ruler",
+     "on": "shore",
+     "label": "600 M"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "The pink is believed to come from an organism, Dunaliella salina.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "Dunaliella",
+     "label": "DUNALIELLA SALINA"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "The Extreme Microbiome Project found its DNA in the lake.",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Around it grows dense woodland of paperbark and eucalyptus trees.",
+    "shot": "wide",
+    "overlay": {
+     "type": "tag",
+     "on": "paperbark",
+     "label": "PAPERBARK WOODLAND"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Next target: Africa's third lowest place. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "Orbi"
+    },
+    "photo": null
+   }
+  ],
+  "description": "Lake Hillier is a saline lake about 600 metres long on Middle Island, off the south coast of Western Australia, and its pink colour stays the same even in a container. The colour is believed to come from the organism Dunaliella salina, which the Extreme Microbiome Project found in a metagenomic analysis of the lake.",
+  "hashtags": [
+   "#LakeHillier",
+   "#PinkLake",
+   "#WesternAustralia",
+   "#SatelliteView",
+   "#CurioOrbit"
+  ],
+  "hook_title": "600 M PINK LAKE"
+ }
+}

@@ -1,0 +1,517 @@
+{
+ "slug": "danakil_depression",
+ "next": "dallol_hydrothermal_system",
+ "photos": [
+  {
+   "name": "File:Volcano eruption at the Danakil depression, Ethiopia..jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Volcano_eruption_at_the_Danakil_depression%2C_Ethiopia..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "התפרצות געשית בהר געש באתיופיה. מיקום : דנאקיל .",
+   "credit": "Iany 1958, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Salt miners, Danakil Depression.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Salt_miners%2C_Danakil_Depression.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "This is an image of \"African people at work\" from",
+   "credit": "Niels Van Iperen, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Danakil depression.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Danakil_depression.jpg/1920px-Danakil_depression.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Danakil depression",
+   "credit": "Kalogeropoulos, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Salt Lake Danakil.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Salt_Lake_Danakil.jpg/1920px-Salt_Lake_Danakil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "its one small water body in Danakil Depression where Ethiopians used to mine salt.",
+   "credit": "Sharanbhurke, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:The Danakil Depression.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/The_Danakil_Depression.jpg/1920px-The_Danakil_Depression.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "In the northern part of the Afar Triangle lies the Danakil Depression. At about 125 meters below sea level, it's one of the lowest places on Earth. This area is",
+   "credit": "Yonas Kidane, CC BY-SA 2.0"
+  },
+  {
+   "name": "File:Danakil-Depression-Fordors.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Danakil-Depression-Fordors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "Danakil çölü",
+   "credit": "Araştırmacı Ekanrın, CC BY-SA 4.0"
+  }
+ ],
+ "lat": 14.0,
+ "lon": 40.5,
+ "located": true,
+ "km": 200,
+ "scale": {
+  "city": {
+   "name": "LUXEMBOURG",
+   "area_km2": 2572.3,
+   "span_km": 81.3,
+   "poly_km": [
+    [
+     -25.12,
+     8.379
+    ],
+    [
+     -21.682,
+     6.268
+    ],
+    [
+     -23.811,
+     5.614
+    ],
+    [
+     -23.321,
+     3.895
+    ],
+    [
+     -24.398,
+     3.599
+    ],
+    [
+     -23.479,
+     3.05
+    ],
+    [
+     -24.86,
+     1.384
+    ],
+    [
+     -23.87,
+     -3.068
+    ],
+    [
+     -21.194,
+     -2.808
+    ],
+    [
+     -18.177,
+     -8.205
+    ],
+    [
+     -18.613,
+     -10.79
+    ],
+    [
+     -15.838,
+     -10.417
+    ],
+    [
+     -14.254,
+     -12.366
+    ],
+    [
+     -15.805,
+     -16.039
+    ],
+    [
+     -12.553,
+     -17.545
+    ],
+    [
+     -12.765,
+     -20.132
+    ],
+    [
+     -17.071,
+     -24.901
+    ],
+    [
+     -15.276,
+     -27.289
+    ],
+    [
+     -19.887,
+     -30.986
+    ],
+    [
+     -17.839,
+     -30.801
+    ],
+    [
+     -17.912,
+     -33.302
+    ],
+    [
+     -15.742,
+     -35.519
+    ],
+    [
+     -8.14,
+     -36.459
+    ],
+    [
+     -7.432,
+     -40.92
+    ],
+    [
+     -3.137,
+     -41.275
+    ],
+    [
+     -1.964,
+     -39.22
+    ],
+    [
+     1.1,
+     -40.718
+    ],
+    [
+     3.058,
+     -36.181
+    ],
+    [
+     11.147,
+     -33.858
+    ],
+    [
+     20.354,
+     -39.947
+    ],
+    [
+     19.553,
+     -32.128
+    ],
+    [
+     21.394,
+     -29.245
+    ],
+    [
+     19.625,
+     -27.358
+    ],
+    [
+     21.323,
+     -27.008
+    ],
+    [
+     20.934,
+     -25.246
+    ],
+    [
+     24.193,
+     -22.169
+    ],
+    [
+     25.554,
+     -18.239
+    ],
+    [
+     24.824,
+     -16.852
+    ],
+    [
+     30.216,
+     -12.032
+    ],
+    [
+     29.487,
+     -10.571
+    ],
+    [
+     31.043,
+     -10.801
+    ],
+    [
+     29.829,
+     -7.657
+    ],
+    [
+     31.127,
+     -6.554
+    ],
+    [
+     30.213,
+     -3.471
+    ],
+    [
+     31.741,
+     -1.112
+    ],
+    [
+     30.604,
+     -2.065
+    ],
+    [
+     27.731,
+     0.181
+    ],
+    [
+     24.737,
+     -1.145
+    ],
+    [
+     20.013,
+     3.297
+    ],
+    [
+     17.322,
+     1.683
+    ],
+    [
+     16.219,
+     5.4
+    ],
+    [
+     10.656,
+     8.739
+    ],
+    [
+     9.531,
+     11.306
+    ],
+    [
+     9.944,
+     14.256
+    ],
+    [
+     8.104,
+     14.075
+    ],
+    [
+     7.535,
+     16.408
+    ],
+    [
+     6.658,
+     14.695
+    ],
+    [
+     6.273,
+     18.057
+    ],
+    [
+     3.781,
+     19.599
+    ],
+    [
+     4.627,
+     20.774
+    ],
+    [
+     3.178,
+     21.821
+    ],
+    [
+     4.357,
+     22.279
+    ],
+    [
+     1.96,
+     26.317
+    ],
+    [
+     3.155,
+     27.89
+    ],
+    [
+     2.21,
+     28.022
+    ],
+    [
+     3.783,
+     34.0
+    ],
+    [
+     1.911,
+     34.831
+    ],
+    [
+     2.889,
+     36.374
+    ],
+    [
+     1.221,
+     38.633
+    ],
+    [
+     -1.58,
+     36.731
+    ],
+    [
+     -3.746,
+     37.739
+    ],
+    [
+     -4.357,
+     39.988
+    ],
+    [
+     -8.746,
+     38.863
+    ],
+    [
+     -8.914,
+     34.3
+    ],
+    [
+     -13.656,
+     32.177
+    ],
+    [
+     -14.241,
+     28.526
+    ],
+    [
+     -16.606,
+     26.286
+    ],
+    [
+     -15.479,
+     24.854
+    ],
+    [
+     -16.201,
+     22.968
+    ],
+    [
+     -19.138,
+     21.192
+    ],
+    [
+     -17.809,
+     17.667
+    ],
+    [
+     -22.295,
+     15.441
+    ],
+    [
+     -23.086,
+     10.462
+    ],
+    [
+     -25.12,
+     8.379
+    ]
+   ]
+  },
+  "say": "Luxembourg",
+  "on": "Luxembourg",
+  "fact": "Luxembourg would fit inside it, and it is about two times as wide as Luxembourg"
+ },
+ "shape": null,
+ "user": "Place: Danakil Depression\nCoordinates: 14.0000, 40.5000\nSize of the main feature from the article: 200 km (use it as feature_km).\nComputed scale fact (true, use it in beat 4 or 5 with a scale overlay on the word 'Luxembourg'): Luxembourg would fit inside it, and it is about two times as wide as Luxembourg.\nBeat 9 must be exactly: \"Next target: <tease of at most 10 words, one true fact from the next-topic text, without naming the place>. Follow for the next scan. Orbi out.\"\nNext topic: Dallol (hydrothermal system). Dallol is a terrestrial hydrothermal system around a cinder cone volcano in the Danakil Depression, northeast of the Erta Ale Range in Ethiopia. It is known for its unearthly colors and mineral patterns, and the very acidic fluids, commonly noted as some of the most acidic on Earth, that discharge from its hydrothermal springs.\n\n\nEtymology\nThe term Dallol was coined by the Afar people and means dissolution or disintegration, describing a landscape of green acid ponds and geysers (pH-values less \n\nPhotos:\n0: התפרצות געשית בהר געש באתיופיה. מיקום : דנאקיל .\n1: This is an image of \"African people at work\" from\n2: Danakil depression\n3: its one small water body in Danakil Depression where Ethiopians used to mine salt.\n4: In the northern part of the Afar Triangle lies the Danakil Depression. At about 125 meters below sea level, it's one of the lowest places on Earth. This area is\n5: Danakil çölü\n\nArticle:\nThe Danakil Depression is a large valley of approximately 200 by 50 km (124 by 31 mi), across the north of the Afar Region of Ethiopia and Eritrea. It is about 125 m (410 ft) below sea level and is bordered to the west by the Ethiopian Plateau and to the east by the Danakil Alps, beyond which is the Red Sea. It is the third lowest-lying location on the continent of Africa.\nThe Danakil Depression is a geological depression formed by rifting. It constitutes the northern part of the Afar Triangle or Afar Depression.  \n\n\nGeology\n\nThe Danakil Depression is a large valley caused by the extension between the Nubian plate and the Danakil (or Arrata) microplate (on which lie the Danakil Alps). The velocity between these two plates is approximately 18 mm/yr in the south of the Depression and 8 mm/yr in the north of it. The Danakil Depression is thus a rift, more precisely the northern tip of the Afar rift. \nThe formation of the rift started approximately 11 million years ago (Ma) with the counterclockwise rotation of the Danakil microplate. Since then, tectonic extension caused the thinning of the crust and the subsidence of the basin where both sediments and volcanic rocks accumulated. In...",
+ "side": "\n\nComputed scale fact (true): Luxembourg would fit inside it, and it is about two times as wide as Luxembourg.\n\nNext-topic text (only for the 'Next target' line): Dallol is a terrestrial hydrothermal system around a cinder cone volcano in the Danakil Depression, northeast of the Erta Ale Range in Ethiopia. It is known for its unearthly colors and mineral patterns, and the very acidic fluids, commonly noted as some of the most acidic on Earth, that discharge from its hydrothermal springs.\n\n\nEtymology\nThe term Dallol was coined by the Afar people and means dissolution or disintegration, describing a landscape of green acid ponds and geysers (pH-values less ",
+ "draft": {
+  "title": "Danakil Depression",
+  "feature_km": 200,
+  "hooks": [
+   {
+    "text": "A valley about two hundred kilometers long, lying below sea level.",
+    "title": "200 KM VALLEY"
+   },
+   {
+    "text": "This valley floor sits about one hundred twenty five meters below sea level.",
+    "title": "125 M BELOW SEA"
+   },
+   {
+    "text": "Why does a valley about two hundred kilometers long sit below sea level?",
+    "title": "200 KM BELOW SEA"
+   }
+  ],
+  "beats": [
+   {
+    "text": "A valley about two hundred kilometers long, lying below sea level.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "So how did it sink so low?",
+    "shot": "feature",
+    "overlay": {
+     "type": "ruler",
+     "on": "sink",
+     "label": "200 KM"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It is Africa's third lowest place.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "lowest",
+     "label": "THIRD LOWEST IN AFRICA"
+    },
+    "react": {
+     "expr": "happy",
+     "on": "lowest"
+    },
+    "photo": {
+     "index": 4,
+     "label": "DANAKIL DEPRESSION",
+     "on": "place"
+    }
+   },
+   {
+    "text": "East lie the Danakil Alps, then the Red Sea.",
+    "shot": "wide",
+    "overlay": {
+     "type": "highlight",
+     "on": "East"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Luxembourg would fit inside, and the valley is about twice as wide.",
+    "shot": "feature",
+    "overlay": {
+     "type": "scale",
+     "on": "Luxembourg"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It is a rift. About eleven million years ago, a microplate began to turn.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "eleven",
+     "label": "11 MILLION YEARS AGO"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It pulled away from the Nubian plate. The crust thinned and sank.",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It still spreads up to eighteen millimeters a year.",
+    "shot": "feature",
+    "overlay": null,
+    "react": {
+     "expr": "surprised",
+     "on": "spreads"
+    },
+    "photo": null
+   },
+   {
+    "text": "Next target: some of Earth's most acidic springs, in this valley. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   }
+  ],
+  "description": "The Danakil Depression is a valley about 200 by 50 km across Ethiopia and Eritrea, about 125 m below sea level and the third lowest place in Africa. It is a rift that began about 11 million years ago, as the Danakil microplate rotated and pulled away from the Nubian plate.",
+  "hashtags": [
+   "#DanakilDepression",
+   "#Ethiopia",
+   "#Afar",
+   "#SatelliteView",
+   "#CurioOrbit"
+  ],
+  "hook_title": "200 KM VALLEY"
+ }
+}

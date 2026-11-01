@@ -1,0 +1,525 @@
+{
+ "slug": "socotra",
+ "next": "north_sentinel_island",
+ "photos": [
+  {
+   "name": "File:Socotra satview.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Socotra_satview.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "Socotra satview",
+   "credit": "Wikimedia Commons"
+  },
+  {
+   "name": "File:Socotra dragon tree.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Socotra_dragon_tree.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "Dracaena cinnabari (Dragon's Blood Tree) — endemic to Socotra island, Yemen.",
+   "credit": "Boris Khvostichenko(User:Boriskhv), CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Socotra -Nawjad01.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Socotra_-Nawjad01.JPG/1920px-Socotra_-Nawjad01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Omq tent in Nawjad, south of Socotra island.",
+   "credit": "Email4mobile"
+  },
+  {
+   "name": "File:Socotra -Ar'ar.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Socotra_-Ar%27ar.JPG/1920px-Socotra_-Ar%27ar.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Arar, east of Socotra island.",
+   "credit": "Email4mobile"
+  },
+  {
+   "name": "File:Socotra-rock.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Socotra-rock.jpg/1920px-Socotra-rock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "صورة لصخرة منحوتة بشكل جذع شجرة بفعل عوامل التعرية. الصورة أخذت في أحد جبال حديبو عاصمة جزيرة سقطرى.",
+   "credit": "Almuhammedi"
+  },
+  {
+   "name": "File:Soured Milk and Rice-Socotra Island.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Soured_Milk_and_Rice-Socotra_Island.jpg/1920px-Soured_Milk_and_Rice-Socotra_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Yemen",
+   "credit": "Rod Waddington from Kergunyah, Australia, CC BY-SA 2.0"
+  }
+ ],
+ "lat": 12.5075,
+ "lon": 53.9198,
+ "located": true,
+ "km": 132,
+ "scale": {
+  "city": {
+   "name": "LUXEMBOURG",
+   "area_km2": 2572.3,
+   "span_km": 81.3,
+   "poly_km": [
+    [
+     -25.12,
+     8.379
+    ],
+    [
+     -21.682,
+     6.268
+    ],
+    [
+     -23.811,
+     5.614
+    ],
+    [
+     -23.321,
+     3.895
+    ],
+    [
+     -24.398,
+     3.599
+    ],
+    [
+     -23.479,
+     3.05
+    ],
+    [
+     -24.86,
+     1.384
+    ],
+    [
+     -23.87,
+     -3.068
+    ],
+    [
+     -21.194,
+     -2.808
+    ],
+    [
+     -18.177,
+     -8.205
+    ],
+    [
+     -18.613,
+     -10.79
+    ],
+    [
+     -15.838,
+     -10.417
+    ],
+    [
+     -14.254,
+     -12.366
+    ],
+    [
+     -15.805,
+     -16.039
+    ],
+    [
+     -12.553,
+     -17.545
+    ],
+    [
+     -12.765,
+     -20.132
+    ],
+    [
+     -17.071,
+     -24.901
+    ],
+    [
+     -15.276,
+     -27.289
+    ],
+    [
+     -19.887,
+     -30.986
+    ],
+    [
+     -17.839,
+     -30.801
+    ],
+    [
+     -17.912,
+     -33.302
+    ],
+    [
+     -15.742,
+     -35.519
+    ],
+    [
+     -8.14,
+     -36.459
+    ],
+    [
+     -7.432,
+     -40.92
+    ],
+    [
+     -3.137,
+     -41.275
+    ],
+    [
+     -1.964,
+     -39.22
+    ],
+    [
+     1.1,
+     -40.718
+    ],
+    [
+     3.058,
+     -36.181
+    ],
+    [
+     11.147,
+     -33.858
+    ],
+    [
+     20.354,
+     -39.947
+    ],
+    [
+     19.553,
+     -32.128
+    ],
+    [
+     21.394,
+     -29.245
+    ],
+    [
+     19.625,
+     -27.358
+    ],
+    [
+     21.323,
+     -27.008
+    ],
+    [
+     20.934,
+     -25.246
+    ],
+    [
+     24.193,
+     -22.169
+    ],
+    [
+     25.554,
+     -18.239
+    ],
+    [
+     24.824,
+     -16.852
+    ],
+    [
+     30.216,
+     -12.032
+    ],
+    [
+     29.487,
+     -10.571
+    ],
+    [
+     31.043,
+     -10.801
+    ],
+    [
+     29.829,
+     -7.657
+    ],
+    [
+     31.127,
+     -6.554
+    ],
+    [
+     30.213,
+     -3.471
+    ],
+    [
+     31.741,
+     -1.112
+    ],
+    [
+     30.604,
+     -2.065
+    ],
+    [
+     27.731,
+     0.181
+    ],
+    [
+     24.737,
+     -1.145
+    ],
+    [
+     20.013,
+     3.297
+    ],
+    [
+     17.322,
+     1.683
+    ],
+    [
+     16.219,
+     5.4
+    ],
+    [
+     10.656,
+     8.739
+    ],
+    [
+     9.531,
+     11.306
+    ],
+    [
+     9.944,
+     14.256
+    ],
+    [
+     8.104,
+     14.075
+    ],
+    [
+     7.535,
+     16.408
+    ],
+    [
+     6.658,
+     14.695
+    ],
+    [
+     6.273,
+     18.057
+    ],
+    [
+     3.781,
+     19.599
+    ],
+    [
+     4.627,
+     20.774
+    ],
+    [
+     3.178,
+     21.821
+    ],
+    [
+     4.357,
+     22.279
+    ],
+    [
+     1.96,
+     26.317
+    ],
+    [
+     3.155,
+     27.89
+    ],
+    [
+     2.21,
+     28.022
+    ],
+    [
+     3.783,
+     34.0
+    ],
+    [
+     1.911,
+     34.831
+    ],
+    [
+     2.889,
+     36.374
+    ],
+    [
+     1.221,
+     38.633
+    ],
+    [
+     -1.58,
+     36.731
+    ],
+    [
+     -3.746,
+     37.739
+    ],
+    [
+     -4.357,
+     39.988
+    ],
+    [
+     -8.746,
+     38.863
+    ],
+    [
+     -8.914,
+     34.3
+    ],
+    [
+     -13.656,
+     32.177
+    ],
+    [
+     -14.241,
+     28.526
+    ],
+    [
+     -16.606,
+     26.286
+    ],
+    [
+     -15.479,
+     24.854
+    ],
+    [
+     -16.201,
+     22.968
+    ],
+    [
+     -19.138,
+     21.192
+    ],
+    [
+     -17.809,
+     17.667
+    ],
+    [
+     -22.295,
+     15.441
+    ],
+    [
+     -23.086,
+     10.462
+    ],
+    [
+     -25.12,
+     8.379
+    ]
+   ]
+  },
+  "say": "Luxembourg",
+  "on": "Luxembourg",
+  "fact": "Luxembourg would fit inside it, and it is about two times as wide as Luxembourg"
+ },
+ "shape": null,
+ "user": "Place: Socotra\nCoordinates: 12.5075, 53.9198\nSize of the main feature from the article: 132 km (use it as feature_km).\nComputed scale fact (true, use it in beat 4 or 5 with a scale overlay on the word 'Luxembourg'): Luxembourg would fit inside it, and it is about two times as wide as Luxembourg.\nBeat 9 must be exactly: \"Next target: <tease of at most 10 words, one true fact from the next-topic text, without naming the place>. Follow for the next scan. Orbi out.\"\nNext topic: North Sentinel Island. North Sentinel Island is one of the Andaman Islands, an Indian archipelago in the Bay of Bengal. A protected area of India, it is home to the Sentinelese, an uncontacted indigenous tribe who have defended—often with violence—their protected isolation from the outside world.\nThe Andaman and Nicobar Islands Protection of Aboriginal Tribes Regulation 1956 prohibits travel to the island and any approach closer than five kilometres (three miles), in order to protect the remaining tribal community fro\n\nPhotos:\n0: Socotra satview\n1: Dracaena cinnabari (Dragon's Blood Tree) — endemic to Socotra island, Yemen.\n2: Omq tent in Nawjad, south of Socotra island.\n3: Arar, east of Socotra island.\n4: صورة لصخرة منحوتة بشكل جذع شجرة بفعل عوامل التعرية. الصورة أخذت في أحد جبال حديبو عاصمة جزيرة سقطرى.\n5: Yemen\n\nArticle:\nSocotra, locally known as Saqatri, is a Yemeni island in the Indian Ocean. It is situated between the Gulf of Aden, the Guardafui Channel and the Arabian Sea, and lies near major shipping routes. The largest of the six islands in the Socotra archipelago, it comprises around 95% of the landmass of the archipelago. It lies 380 kilometres (205 nautical miles) south of the Arabian Peninsula and 232 km (125 nmi) east of the Horn of Africa. The island is culturally and administratively a part of Yemen, but geographically it belongs to Africa, for it represents a continental fragment that is geologically linked to the Somali plate. The inhabitants of the island are called Soqotrans, and they speak Arabic and Soqotri.\nSocotra is unusual in hosting a large number of species that are endemic; a third of its plant life is found nowhere else on Earth. Due to the island's unusual geography, it has been described as \"the most alien-looking place on Earth\". The island measures 132 km (82 mi) in length and 42 km (26 mi) across at its widest. In 2008, Socotra was recognised as a UNESCO World Heritage Site.\n\n\nEtymology\nScholars' views vary regarding the origin of the island's name. One theory is...",
+ "side": "\n\nComputed scale fact (true): Luxembourg would fit inside it, and it is about two times as wide as Luxembourg.\n\nNext-topic text (only for the 'Next target' line): North Sentinel Island is one of the Andaman Islands, an Indian archipelago in the Bay of Bengal. A protected area of India, it is home to the Sentinelese, an uncontacted indigenous tribe who have defended—often with violence—their protected isolation from the outside world.\nThe Andaman and Nicobar Islands Protection of Aboriginal Tribes Regulation 1956 prohibits travel to the island and any approach closer than five kilometres (three miles), in order to protect the remaining tribal community fro",
+ "draft": {
+  "title": "Socotra",
+  "feature_km": 132,
+  "hooks": [
+   {
+    "text": "This one hundred thirty-two kilometer island grows plants found nowhere else.",
+    "title": "132 KM ISLAND"
+   },
+   {
+    "text": "This one hundred thirty-two kilometer island is part of Yemen, but sits on Africa.",
+    "title": "132 KM ISLAND"
+   },
+   {
+    "text": "Why does this one hundred thirty-two kilometer island grow plants found nowhere else?",
+    "title": "132 KM LONG"
+   }
+  ],
+  "beats": [
+   {
+    "text": "This one hundred thirty-two kilometer island grows plants found nowhere else.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "So how did it get its own plants?",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 1,
+     "label": "DRAGON'S BLOOD TREE",
+     "on": "plants"
+    }
+   },
+   {
+    "text": "It's been described as the most alien-looking place on Earth.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "place",
+     "label": "MOST ALIEN-LOOKING PLACE"
+    },
+    "react": {
+     "expr": "happy",
+     "on": "place"
+    },
+    "photo": null
+   },
+   {
+    "text": "It's the largest of six islands.",
+    "shot": "feature",
+    "overlay": {
+     "type": "ruler",
+     "on": "largest",
+     "label": "132 KM"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Luxembourg would fit inside it. The island is about two times as wide as Luxembourg.",
+    "shot": "feature",
+    "overlay": {
+     "type": "scale",
+     "on": "Luxembourg"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Geologically, it's a continental fragment, linked to the Somali plate.",
+    "shot": "wide",
+    "overlay": {
+     "type": "tag",
+     "on": "Somali",
+     "label": "SOMALI PLATE"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "fragment"
+    },
+    "photo": null
+   },
+   {
+    "text": "Yet it lies two hundred thirty-two kilometers off Africa.",
+    "shot": "wide",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Today its people, the Soqotrans, speak Arabic and Soqotri.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "Soqotri",
+     "label": "ARABIC AND SOQOTRI"
+    },
+    "react": null,
+    "photo": {
+     "index": 2,
+     "label": "NAWJAD, SOCOTRA",
+     "on": "people"
+    }
+   },
+   {
+    "text": "Next target: an island you may not approach within five kilometers. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "Orbi"
+    },
+    "photo": null
+   }
+  ],
+  "description": "Socotra is a Yemeni island in the Indian Ocean, and a third of its plant life is found nowhere else on Earth. Geographically it belongs to Africa, and in 2008 it became a UNESCO World Heritage Site.",
+  "hashtags": [
+   "#Socotra",
+   "#Yemen",
+   "#IndianOcean",
+   "#EndemicPlants",
+   "#SatelliteMap"
+  ],
+  "hook_title": "132 KM ISLAND"
+ }
+}
