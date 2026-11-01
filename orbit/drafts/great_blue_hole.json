@@ -1,0 +1,188 @@
+{
+ "draft": {
+  "title": "Great Blue Hole",
+  "feature_km": 0.318,
+  "hooks": [
+   {
+    "text": "This circular hole is three hundred eighteen meters wide, and no one dug it.",
+    "title": "318 M HOLE"
+   },
+   {
+    "text": "A perfect round opening spans three hundred eighteen meters, yet no machine created it.",
+    "title": "318 M CIRCLE"
+   },
+   {
+    "text": "Why does a three hundred eighteen meter circle sit silent on a reef?",
+    "title": "318 M RING"
+   }
+  ],
+  "beats": [
+   {
+    "text": "This circular hole is three hundred eighteen meters wide, and no one dug it.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "So what carved this giant marine sinkhole?",
+    "shot": "close",
+    "overlay": {
+     "type": "highlight",
+     "on": "sinkhole"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Jacques Cousteau called it one of the top five scuba sites worldwide.",
+    "shot": "close",
+    "overlay": {
+     "type": "highlight",
+     "on": "sites"
+    },
+    "react": {
+     "expr": "happy",
+     "on": "sites"
+    },
+    "photo": {
+     "index": 1,
+     "label": "NASA image",
+     "on": "sites"
+    }
+   },
+   {
+    "text": "From orbit the hole appears as a perfect circle on the reef.",
+    "shot": "wide",
+    "overlay": {
+     "type": "ruler",
+     "on": "hole",
+     "label": "0.318 KM"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It is one hundred twenty four meters deep.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "deep",
+     "label": "124 METERS DEEP"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "deep"
+    },
+    "photo": null
+   },
+   {
+    "text": "During the Quaternary sea levels fell, dissolving limestone and forming a cavity.",
+    "shot": "space",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "When seas rose again, the cavity flooded, creating the water-filled hole.",
+    "shot": "space",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Today divers explore its ledges, finding ancient stalactites at twenty one meters.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "ledges",
+     "label": "21 METERS"
+    },
+    "react": null,
+    "photo": {
+     "index": 2,
+     "label": "Corals",
+     "on": "ledges"
+    }
+   },
+   {
+    "text": "Next target: a crater once larger than Chicxulub. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   }
+  ],
+  "description": "The Great Blue Hole is a three hundred eighteen meter wide marine sinkhole off Belize, formed when sea levels fell during the Quaternary. Jacques Cousteau made it famous as a top scuba diving site.",
+  "hashtags": [
+   "#GreatBlueHole",
+   "#Belize",
+   "#OceanicSinkhole",
+   "#JacquesCousteau",
+   "#DiveSpot"
+  ],
+  "hook_title": "318 M HOLE"
+ },
+ "photos": [
+  {
+   "name": "File:Hole in the Ozone Layer Over Antarctica - GPN-2002-000117.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Hole_in_the_Ozone_Layer_Over_Antarctica_-_GPN-2002-000117.jpg/1920px-Hole_in_the_Ozone_Layer_Over_Antarctica_-_GPN-2002-000117.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "In 1985, a British scientist working in Antarctica discovered a 40 percent loss in the ozone layer over the continent. When Goddard Space Flight Center research",
+   "credit": "NASA"
+  },
+  {
+   "name": "File:Lighthouse Reef Belize.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Lighthouse_Reef_Belize.jpg/1920px-Lighthouse_Reef_Belize.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "NASA image of Lighthouse Reef, Belize, which includes the Great Blue Hole roughly near its center.Created by Jesse Allen, using EO-1 ALI ,data provided courtesy",
+   "credit": "Jesse Allen",
+   "file": "photos/great_blue_hole/p1.jpg"
+  },
+  {
+   "name": "File:Blue Hole coral.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Blue_Hole_coral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "Corals in the Great Blue Hole, Belize.",
+   "credit": "jayhem, CC BY 2.0",
+   "file": "photos/great_blue_hole/p2.jpg"
+  },
+  {
+   "name": "File:Center of the Milky Way Galaxy IV – Composite.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Center_of_the_Milky_Way_Galaxy_IV_%E2%80%93_Composite.jpg/1920px-Center_of_the_Milky_Way_Galaxy_IV_%E2%80%93_Composite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "In celebration of the International Year of Astronomy 2009, NASA's Great Observatories -- the Hubble Space Telescope, the Spitzer Space Telescope, and the Chand",
+   "credit": "NASA/JPL-Caltech/ESA/CXC/STScI"
+  },
+  {
+   "name": "File:Brain Coral, Belize.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Brain_Coral%2C_Belize.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "Brain coral (Diploria labyrinthiformis) and tube sponge of the Great Blue Hole in Belize, with trunkfish. Get a better view with Blackmagic or Fluidr. Licensing",
+   "credit": "jayhem from Antibes, France, CC BY-SA 2.0"
+  },
+  {
+   "name": "File:Blue hole Belize (21204937128).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Blue_hole_Belize_%2821204937128%29.jpg/1920px-Blue_hole_Belize_%2821204937128%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "blue hole Belize",
+   "credit": "dronepicr, CC BY 2.0"
+  }
+ ],
+ "lat": 17.3159,
+ "lon": -87.5348,
+ "shape": [
+  [
+   17.3173,
+   -87.53487
+  ],
+  [
+   17.31458,
+   -87.53469
+  ],
+  [
+   17.31618,
+   -87.53327
+  ],
+  [
+   17.3173,
+   -87.53487
+  ]
+ ],
+ "scale": null,
+ "next": "vredefort_impact_structure"
+}

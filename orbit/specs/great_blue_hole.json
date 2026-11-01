@@ -1,0 +1,195 @@
+{
+ "title": "Great Blue Hole",
+ "coords": "17.3159 N, 87.5348 W",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 17.3159,
+  "lon": -87.5348
+ },
+ "source": "https://en.wikipedia.org/wiki/Great_Blue_Hole",
+ "feature_km": 0.318,
+ "beats": [
+  {
+   "text": "This circular hole is three hundred eighteen meters wide, and no one dug it.",
+   "cam": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "z": 15.8
+   },
+   "globe": true
+  },
+  {
+   "text": "So what carved this giant marine sinkhole?",
+   "cam": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "z": 15.8
+   },
+   "highlight": {
+    "on": "sinkhole"
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "what"
+    }
+   ]
+  },
+  {
+   "text": "Jacques Cousteau called it one of the top five scuba sites worldwide.",
+   "cam": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "z": 15.8
+   },
+   "highlight": {
+    "on": "sites"
+   },
+   "fx": [
+    {
+     "kind": "speech",
+     "on": "called"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "sites",
+    "dur": 1.4
+   },
+   "photo": {
+    "file": "photos/great_blue_hole/p1.jpg",
+    "label": "NASA IMAGE",
+    "credit": "Jesse Allen",
+    "on": "sites",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "From orbit the hole appears as a perfect circle on the reef.",
+   "cam": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "z": 15.8
+   },
+   "ruler": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "km": 0.318,
+    "label": "0.318 KM",
+    "on": "hole"
+   }
+  },
+  {
+   "text": "It is one hundred twenty four meters deep.",
+   "cam": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "z": 16.7
+   },
+   "stamp": {
+    "label": "124 METERS DEEP",
+    "on": "deep"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "deep",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "During the Quaternary sea levels fell, dissolving limestone and forming a cavity.",
+   "cam": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "z": 15.9
+   },
+   "fx": [
+    {
+     "kind": "scan",
+     "on": null,
+     "fallback": true
+    }
+   ]
+  },
+  {
+   "text": "When seas rose again, the cavity flooded, creating the water-filled hole.",
+   "cam": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "z": 16.0
+   },
+   "fx": [
+    {
+     "kind": "water",
+     "on": "flooded"
+    }
+   ]
+  },
+  {
+   "text": "Today divers explore its ledges, finding ancient stalactites at twenty one meters.",
+   "cam": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "z": 15.8
+   },
+   "tag": {
+    "lat": 17.3159,
+    "lon": -87.5348,
+    "label": "21 METERS",
+    "on": "ledges"
+   },
+   "photo": {
+    "file": "photos/great_blue_hole/p2.jpg",
+    "label": "CORALS",
+    "credit": "jayhem, CC BY 2.0",
+    "on": "ledges",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Next target: a crater once larger than Chicxulub. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": -27,
+    "lon": 27.5,
+    "z": 13.0,
+    "hop": true
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ]
+  }
+ ],
+ "hook": "318 M HOLE",
+ "description": "The Great Blue Hole is a three hundred eighteen meter wide marine sinkhole off Belize, formed when sea levels fell during the Quaternary. Jacques Cousteau made it famous as a top scuba diving site. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Jesse Allen; jayhem, CC BY 2.0, Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#GreatBlueHole",
+  "#Belize",
+  "#OceanicSinkhole",
+  "#JacquesCousteau",
+  "#DiveSpot"
+ ],
+ "shape": [
+  [
+   17.3173,
+   -87.53487
+  ],
+  [
+   17.31458,
+   -87.53469
+  ],
+  [
+   17.31618,
+   -87.53327
+  ],
+  [
+   17.3173,
+   -87.53487
+  ]
+ ],
+ "series_no": 4
+}

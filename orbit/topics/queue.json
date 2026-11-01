@@ -25,9 +25,11 @@
  {
   "slug": "great_blue_hole",
   "title": "Great Blue Hole",
-  "lat": 17.31527778,
-  "lon": -87.53444444,
-  "status": "todo"
+  "lat": 17.3159,
+  "lon": -87.5348,
+  "status": "written",
+  "located": true,
+  "no": 4
  },
  {
   "slug": "lake_natron",
