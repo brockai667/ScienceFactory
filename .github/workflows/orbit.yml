@@ -1,6 +1,8 @@
-name: Curio ORBIT (scenar z Wikipedie + render, test)
+name: Curio ORBIT (denne - scenar z Wikipedie, render, publikovanie)
 
 on:
+  schedule:
+    - cron: "20 5 * * *"   # ~6:20 Bratislava; video vyjde o 17:00 (Buffer YT+IG, TikTok feed)
   workflow_dispatch:
     inputs:
       topic:
@@ -15,6 +17,10 @@ on:
         description: "Nepisat znova: vziat ulozeny navrh (orbit/drafts) a len prepocitat kameru + render"
         type: boolean
         default: false
+      publish:
+        description: "Aj publikovat (Buffer YT+IG o 17:00, TikTok feed)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write          # ulozi scenar (orbit/specs), fotky a stav fronty
@@ -25,6 +31,7 @@ concurrency:
 
 jobs:
   orbit:
+    if: github.event_name != 'schedule' || vars.ORBIT_LIVE == '1'   # denny beh zapina premenna repa ORBIT_LIVE=1
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -56,6 +63,18 @@ jobs:
       - name: Prepare config
         run: cp config.example.json config.json
 
+      - name: Stop po 10 videach (caka na verdikt podla videni)
+        if: (github.event_name == 'schedule' || github.event.inputs.publish == 'true')
+        run: python orbit/publish.py --check-stop
+
+      - name: Doplnit Buffer pri starsich dieloch
+        if: (github.event_name == 'schedule' || github.event.inputs.publish == 'true')
+        continue-on-error: true
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python orbit/publish.py --retry
+
       - name: Napisat scenar (Groq + kontrola faktov)
         id: write
         env:
@@ -67,7 +86,7 @@ jobs:
         run: python orbit/write_spec.py "${{ github.event.inputs.topic }}"
 
       - name: Render
-        if: github.event.inputs.render == 'true'
+        if: (github.event_name == 'schedule' || github.event.inputs.render == 'true')
         run: |
           python orbit/orbit_engine.py "orbit/specs/${{ steps.write.outputs.slug }}.json"
           F=output/orbit_${{ steps.write.outputs.slug }}.mp4
@@ -76,8 +95,15 @@ jobs:
             -filter_complex "[0][1][2][3]hstack=4[a];[4][5][6][7]hstack=4[b];[a][b]vstack" output/orbit_${{ steps.write.outputs.slug }}_sheet.jpg
 
       - name: Kontrola pred nahratim (velkost, pocet efektov)
-        if: github.event.inputs.render == 'true'
+        if: (github.event_name == 'schedule' || github.event.inputs.render == 'true')
         run: python orbit/qc.py "orbit/specs/${{ steps.write.outputs.slug }}.json" "output/orbit_${{ steps.write.outputs.slug }}.mp4"
+
+      - name: Publikovat (Buffer YT+IG, TikTok feed)
+        if: (github.event_name == 'schedule' || github.event.inputs.publish == 'true') && (github.event_name == 'schedule' || github.event.inputs.render == 'true')
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python orbit/publish.py "${{ steps.write.outputs.slug }}"
 
       - name: Upload video + scenar
         if: always()
@@ -92,12 +118,13 @@ jobs:
             orbit/specs/${{ steps.write.outputs.slug }}.json
 
       - name: Persist scenar + stav
-        if: always() && steps.write.outputs.slug != ''
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           rm -f config.json
           git add orbit/specs/ orbit/drafts/ orbit/photos/ orbit/topics/queue.json
-          git commit -m "orbit: scenar ${{ steps.write.outputs.slug }}" || echo "no changes"
+          for f in orbit/published.json orbit/tiktok.json; do if [ -f $f ]; then git add $f; fi; done
+          git commit -m "orbit: ${{ steps.write.outputs.slug || 'stav' }}" || echo "no changes"
           git pull --rebase --autostash origin ${{ github.ref_name }} || true
           git push || echo "nothing to push"

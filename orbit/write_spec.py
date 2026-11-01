@@ -716,7 +716,12 @@ def main():
     qp = os.path.join(TOP, "queue.json")
     queue = json.load(open(qp, encoding="utf-8"))
     slug, km = (sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else None), None
-    for x in ([] if slug else [x for x in queue if x["status"] == "todo"]):
+    todo = [x for x in queue if x["status"] == "todo"]
+    last = max((x for x in queue if x.get("no") and x["status"] in ("written", "done")), key=lambda x: x["no"], default=None)
+    lp = os.path.join(HERE, "drafts", last["slug"] + ".json") if last else ""
+    promised = json.load(open(lp, encoding="utf-8")).get("next") if lp and os.path.exists(lp) else None
+    todo.sort(key=lambda x: x["slug"] != promised)                  # predosly diel slubil "Next target: ..." -> ten prvy
+    for x in ([] if slug else todo):
         km = feature_size(json.load(open(os.path.join(TOP, "facts", x["slug"] + ".json"), encoding="utf-8")))
         if km and km < 0.25:                                      # zo satelitu len bodka (Darvaza 70 m) -> preskocit
             log(f"   {x['slug']}: {km} km, primale, preskakujem")

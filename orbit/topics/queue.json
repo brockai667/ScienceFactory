@@ -19,8 +19,7 @@
   "lat": 40.2525,
   "lon": 58.4396,
   "status": "skip",
-  "located": true,
-  "no": 2
+  "located": true
  },
  {
   "slug": "great_blue_hole",
@@ -29,7 +28,7 @@
   "lon": -87.5348,
   "status": "written",
   "located": true,
-  "no": 4
+  "no": 1
  },
  {
   "slug": "lake_natron",
@@ -37,8 +36,7 @@
   "lat": -2.3471,
   "lon": 36.0106,
   "status": "written",
-  "located": true,
-  "no": 3
+  "located": true
  },
  {
   "slug": "vredefort_impact_structure",
@@ -53,8 +51,7 @@
   "lat": 51.3697,
   "lon": -68.6587,
   "status": "written",
-  "located": true,
-  "no": 1
+  "located": true
  },
  {
   "slug": "racetrack_playa",
