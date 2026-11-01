@@ -95,7 +95,7 @@
    "fx": [
     {
      "kind": "depth",
-     "on": "deep",
+     "on": "it",
      "n": 124,
      "unit": "M"
     }
