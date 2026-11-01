@@ -588,6 +588,69 @@ def feature_px(spec, cam):
     return np.stack([x0 + R * np.cos(a), y0 + R * np.sin(a)], 1).astype(np.float32)
 
 
+IMPACT_FALL = 0.85                                           # let meteoritu pred dopadom (s)
+
+
+def impact_time(b, words):
+    return word_at(words, b, b["impact"].get("on"), 0.6)
+
+
+def draw_impact(fr, t, cam, spec, beats, words):
+    # dopad: ohnivy meteorit priletí zhora sprava, bliesk, tlakova vlna, prach, otras kamery
+    for b in beats:
+        if "impact" not in b:
+            continue
+        th = impact_time(b, words); dt = t - th
+        if not (-IMPACT_FALL <= dt < 2.2):
+            continue
+        st = spec.get("start") or b["cam"]
+        x, y = screen_xy(st["lat"], st["lon"], cam)
+        R = max(80.0, float(spec.get("feature_km") or 20) / 2 * 1000 / m_per_px(st["lat"], cam[2]))
+        if 0 <= dt < 0.45:                                   # otras
+            k = (1 - dt / 0.45) ** 2
+            dx, dy = int(26 * k * math.sin(dt * 95)), int(20 * k * math.cos(dt * 77))
+            fr[:] = np.roll(fr, (dy, dx), (0, 1))
+        if dt < 0:
+            u = (1 + dt / IMPACT_FALL) ** 1.2                    # zrychluje
+            sx, sy = x + 0.4 * W, y - 0.6 * H                     # start na okraji obrazovky vpravo hore
+            hx, hy = sx + (x - sx) * u, sy + (y - sy) * u
+            lay = np.zeros((H, W, 3), np.float32)
+            n = 30
+            for i in range(n):                                   # chvost: od hlavy dozadu, slabne a rednie
+                f = i / n; q = u - 0.3 * f
+                px, py = sx + (x - sx) * q, sy + (y - sy) * q
+                col = (40 + 140 * (1 - f) ** 2, 110 + 130 * (1 - f), 255 * (1 - 0.4 * f))
+                cv2.circle(lay, (int(px), int(py)), int(34 * (1 - f) + 5), col, -1, cv2.LINE_AA)
+            lay = cv2.GaussianBlur(lay, (0, 0), 12) * 1.7
+            cv2.circle(lay, (int(hx), int(hy)), 26, (235, 250, 255), -1, cv2.LINE_AA)
+            fr += cv2.GaussianBlur(lay, (0, 0), 3)
+            continue
+        lay = np.zeros((H, W, 3), np.float32)
+        g = max(0.0, 1 - dt / 1.3) ** 1.5                        # ohnova gula v strede: biele jadro, oranzovy okraj
+        rb = R * (0.18 + 0.22 * ease(min(1, dt / 0.35)))
+        cv2.circle(lay, (int(x), int(y)), int(rb), (30, 100, 255), -1, cv2.LINE_AA)
+        cv2.circle(lay, (int(x), int(y)), int(rb * 0.5), (200, 240, 255), -1, cv2.LINE_AA)
+        lay = cv2.GaussianBlur(lay, (0, 0), max(5.0, rb * 0.35)) * 1.3 * g
+        for i, (sp, col) in enumerate(((1.0, (200, 235, 255)), (0.72, (40, 120, 255)))):  # dve tlakove vlny
+            u = ease(min(1.0, dt / (0.9 + 0.3 * i)))
+            rr = int(R * (0.2 + 1.3 * u) * sp)
+            a = max(0.0, 1 - dt / (1.1 + 0.3 * i))
+            if a > 0 and rr > 2:
+                cv2.circle(lay, (int(x), int(y)), rr, tuple(c * a for c in col), int(8 + 12 * (1 - u)), cv2.LINE_AA)
+        rng = np.random.default_rng(3)                           # zhave ulomky letia von a hasnu
+        for _ in range(70):
+            ang = rng.uniform(0, 2 * math.pi); v = rng.uniform(0.3, 1.1) * R
+            d = v * (1 - math.exp(-dt * 3.5)); a = max(0.0, 1 - dt / rng.uniform(0.7, 1.4))
+            if a > 0:
+                c, s_ = math.cos(ang), math.sin(ang)
+                cv2.line(lay, (int(x + 0.75 * d * c), int(y + 0.75 * d * s_)), (int(x + d * c), int(y + d * s_)),
+                         (60 * a, 170 * a, 255 * a), int(rng.uniform(4, 10)), cv2.LINE_AA)
+        fr += cv2.GaussianBlur(lay, (0, 0), 2)
+        if dt < 0.35:                                            # biely bliesk cez cely obraz
+            fl = (1 - dt / 0.35) ** 2
+            fr[:] = fr * (1 - 0.75 * fl) + 255 * 0.75 * fl
+
+
 def draw_highlight(fr, t, cam, spec, beats, words):
     # zvyraznenie miesta: okolie stmavene na ~45 % s makkym okrajom + svietiaci azurovy obrys
     for b in beats:
@@ -774,6 +837,16 @@ def sfx_whoosh(dur, rng):
     return out / (np.abs(out).max() + 1e-9) * env * 0.16
 
 
+def sfx_boom(rng, dur=1.6):
+    n = int(dur * SR); tt = np.arange(n) / SR
+    rum = rng.normal(0, 1, n); y = 0.0; out = np.zeros(n)
+    for i in range(n):                                  # hlboky sum (dolny priepust ~150 Hz)
+        y += 0.04 * (rum[i] - y); out[i] = y
+    out = out / (np.abs(out).max() + 1e-9) + 0.8 * np.sin(2 * math.pi * (55 - 20 * tt) * tt)
+    crack = rng.normal(0, 1, n) * np.exp(-tt * 40) * 0.5   # ostry uder na zaciatku
+    return (out * np.exp(-tt * 2.6) + crack) * np.minimum(1, tt / 0.004)
+
+
 def mix_audio(spec, voice, total, beats, work, words=()):
     import sfx
     rng = np.random.default_rng(5)
@@ -812,6 +885,11 @@ def mix_audio(spec, voice, total, beats, work, words=()):
         r = b.get("react")
         if r:
             put(word_at(words, b, r.get("on"), 0.3) + 0.05, sfx.chirp(SR, rng) * db(-15), ev)
+        if "impact" in b:                                   # svist padajuceho meteoritu + vybuch
+            th = impact_time(b, words)
+            w = sfx_whoosh(IMPACT_FALL + 0.1, rng); w *= np.linspace(0.3, 1.0, len(w)) ** 2
+            put(th - IMPACT_FALL, w / (np.abs(w).max() + 1e-9) * db(-12), ev)
+            put(th, sfx_boom(rng) / 1.5 * db(-9), ev)
     fx += ev
     msrc = os.path.join(ROOT, "assets", "music", spec.get("music", "cine_616.mp3"))
     subprocess.run([FF, "-y", "-i", msrc, "-t", str(total + 3), "-ar", str(SR), "-ac", "1", "m.wav"],
@@ -875,6 +953,7 @@ def render(spec, beats, words, cams, total, work, out):
         ocam = cam if t >= GLOBE_T - 0.3 else (globe_params(spec, t)[0], globe_params(spec, t)[1],
                                                math.log2(2 * math.pi * globe_params(spec, t)[2] / 256))
         draw_highlight(fr, t, ocam, spec, beats, words)
+        draw_impact(fr, t, ocam, spec, beats, words)
         draw_overlays(fr, t, ocam, spec, beats, words)
         draw_cards(fr, t)
         draw_orbi(fr, t, ocam)

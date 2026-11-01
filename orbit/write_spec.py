@@ -193,6 +193,8 @@ Return JSON: {"scores": [int per candidate], "best": index of the winner (0-base
 
 BANNED = re.compile(r"something (strange|weird)|\bweird\b|mysterious|won't believe|\bsecret\b|baffled|did you know|today we", re.I)
 CAUSE = re.compile(r"impact|meteor|asteroid|comet|volcan|erosion|erupt|eroded|glacier|collapse|tectonic", re.I)
+METEOR = re.compile(r"\b(meteor\w*|asteroid\w*|comet\w*|impact\w*)\b", re.I)
+HIT = re.compile(r"\b(struck|strikes|hit|hits|slammed|smashed|crashed|landed|impact\w*)\b", re.I)
 # stylove pravidla: model ich pri oprave casto pokazi inde -> od 4. pokusu nebrzdia (fakty a struktura ano)
 SOFT = re.compile(r"never repeat a number|one number per beat|need 100-125 words|react cues|not a bare number|longer than 14 words"
                   r"|title '.*' needs a true number")
@@ -610,6 +612,10 @@ def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
         elif o and o.get("type") == "stamp":
             lab = re.sub(r"\bMYA\b", "MILLION YEARS AGO", o.get("label", "").upper())
             nb["stamp"] = {"label": cut(re.sub(r"\bBYA\b", "BILLION YEARS AGO", lab), 26), "on": o["on"]}
+        m = METEOR.search(b["text"]) if i >= 3 and shot != "space" and not any("impact" in x for x in beats) else None
+        if m:                                                # animacia dopadu na prvom beate, kde pribeh povie meteorit
+            hw = HIT.search(b["text"], m.start()) or HIT.search(b["text"]) or m
+            nb["impact"] = {"on": hw.group(1).lower()}
         r = b.get("react")
         if r and r.get("expr") in ("surprised", "happy"):
             nb["react"] = {"expr": r["expr"], "on": r["on"], "dur": 1.4}
