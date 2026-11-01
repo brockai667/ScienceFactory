@@ -625,7 +625,7 @@ def beat_fx(txt, i, n, nb, measured):
     w = on(r"\b(deep|deeper|deepest|depth|depths)\b")
     if w:                                                    # hlbkomer; cislo len zo stampu (text ma cisla slovom)
         m = re.search(r"([\d,.]+)\s*(M|METERS?|METRES?|FT|FEET|KM)\b", st)
-        d = {"kind": "depth", "on": w}
+        d = {"kind": "depth", "on": txt.split()[0].lower().strip(",.")}   # "deep" byva posledne slovo -> od zaciatku vety
         if m:
             d["n"] = int(float(m.group(1).replace(",", "")))
             d["unit"] = {"FT": "FT", "FEET": "FT", "KM": "KM"}.get(m.group(2), "M")
