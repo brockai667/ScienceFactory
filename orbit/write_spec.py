@@ -571,6 +571,40 @@ def z_for(lat, km):
     return math.log2(156543.03 * math.cos(math.radians(lat)) * 1080 * 0.8 / (km * 1000))
 
 
+def beat_fx(txt, i, n, nb, measured):
+    """Efekty k slovam beatu (animacia toho, o com sa prave hovori). Pravidla, bez LLM."""
+    def on(rx):
+        m = re.search(rx, txt, re.I)
+        return m.group(0).split()[0].lower().strip("?.,!") if m else None
+    fx = []
+    if i == 0:                                               # 1. beat = prelet z glóbusu
+        return fx
+    if i == n - 1:
+        w = on(r"\bfollow\b")
+        return [{"kind": "follow", "on": w}] if w else fx
+    if "?" in txt and i < 3:
+        fx.append({"kind": "ask", "on": on(r"\b(what|how|why|who|where|which)\b") or txt.split()[0].lower()})
+    w = on(r"\b(ring|rings|circle|circular|round|oval)\b")
+    if w and not measured and "highlight" not in nb and "tag" not in nb:
+        fx.append({"kind": "trace", "on": w})
+    if re.search(r"\b(call|name|nickname)\w*", txt, re.I) and re.search(r"\b(what|wait|guess)\b", txt, re.I) and "tag" not in nb:
+        fx.append({"kind": "speech", "on": on(r"\b(call|name|nickname)\w*")})
+    st = nb.get("stamp", {}).get("label", "")
+    m = re.match(r"([\d.,]+)\s*(THOUSAND|MILLION|BILLION)?\s.*AGO", st)
+    if m:
+        k = {"THOUSAND": 1e3, "MILLION": 1e6, "BILLION": 1e9}.get(m.group(2), 1)
+        fx.append({"kind": "rewind", "on": txt.split()[0].lower().strip(",."), "n": int(float(m.group(1).replace(",", "")) * k)})
+    w = on(r"\b(shatter|crack|fractur|split|broke|smash)\w*")
+    if w:
+        fx.append({"kind": "cracks", "on": w})
+    if re.search(r"\b(fill|flood)\w*", txt, re.I) and re.search(r"\bwater\b", txt, re.I):
+        fx.append({"kind": "water", "on": "water"})
+    w = on(r"\beye\b")
+    if w:
+        fx.append({"kind": "eye", "on": w})
+    return fx
+
+
 def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
     lat, lon = fact["lat"], fact["lon"]
     km = float(s["feature_km"])
@@ -616,6 +650,9 @@ def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
         if m:                                                # animacia dopadu na prvom beate, kde pribeh povie meteorit
             hw = HIT.search(b["text"], m.start()) or HIT.search(b["text"]) or m
             nb["impact"] = {"on": hw.group(1).lower()}
+        fx = beat_fx(b["text"], i, len(s["beats"]), nb, measured)
+        if fx:
+            nb["fx"] = fx
         r = b.get("react")
         if r and r.get("expr") in ("surprised", "happy"):
             nb["react"] = {"expr": r["expr"], "on": r["on"], "dur": 1.4}

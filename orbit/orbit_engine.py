@@ -495,9 +495,11 @@ def draw_overlays(fr, t, cam, spec, beats, words):
                 cv2.line(fr, (int(xa), int(yl)), (int(xb), int(yl)), (255, 255, 255), 6, cv2.LINE_AA)
                 for xx in (xa, xb):
                     cv2.line(fr, (int(xx), int(yl - 24)), (int(xx), int(yl + 24)), (255, 255, 255), 6, cv2.LINE_AA)
-                if u > 0.6:
-                    lab = text_rgba(r["label"], 64, fill=(255, 255, 255, 255), box=(0, 0, 0, 160))
-                    paste_rgba(fr, lab, int(x - lab.shape[1] / 2), int(yl - 150), min(1, (u - 0.6) / 0.3))
+                if u > 0.1:                                   # cislo sa napocitava spolu s pravitkom
+                    m = re.match(r"^(\d+)(.*)$", r["label"])
+                    txt = f"{round(int(m.group(1)) * min(1.0, u / 0.95))}{m.group(2)}" if m else r["label"]
+                    lab = text_rgba(txt, 64, fill=(255, 255, 255, 255), box=(0, 0, 0, 160))
+                    paste_rgba(fr, lab, int(x - lab.shape[1] / 2), int(yl - 150), min(1, (u - 0.1) / 0.2))
         if "rings" in b:
             r = b["rings"]; ts = word_at(words, b, r.get("on"), 0.3)
             if t >= ts:
@@ -651,6 +653,213 @@ def draw_impact(fr, t, cam, spec, beats, words):
             fr[:] = fr * (1 - 0.75 * fl) + 255 * 0.75 * fl
 
 
+# ---------------------------------------------------------------- efekty k slovam (b["fx"] = [{kind, on, ...}])
+def back_ease(dt, d=0.35):
+    u = min(1.0, max(0.0, dt / d)) - 1
+    return 1 + 2.70158 * u ** 3 + 1.70158 * u ** 2 if dt > 0 else 0.0
+
+
+def paste_scaled(fr, rgba, cx, cy, s, alpha=1.0):
+    h, w = rgba.shape[:2]
+    if s <= 0.03 or alpha <= 0:
+        return
+    im = cv2.resize(rgba, (max(1, int(w * s)), max(1, int(h * s))), interpolation=cv2.INTER_LINEAR)
+    paste_rgba(fr, im, int(cx - im.shape[1] / 2), int(cy - im.shape[0] / 2), alpha)
+
+
+def glyph(txt, sz, fill, stroke=(0, 0, 0, 255), sw=8):
+    k = ("glyph", txt, sz, fill)
+    if k not in _sb:
+        f = font(sz); l, t_, r, b = f.getbbox(txt, stroke_width=sw)
+        im = Image.new("RGBA", (r - l + 12, b - t_ + 12), (0, 0, 0, 0))
+        ImageDraw.Draw(im).text((6 - l, 6 - t_), txt, font=f, fill=fill, stroke_width=sw, stroke_fill=stroke)
+        _sb[k] = np.array(im)
+    return _sb[k]
+
+
+def bubble(ph):
+    k = ("bubble", ph)
+    if k not in _sb:
+        im = Image.new("RGBA", (320, 230), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        d.polygon([(70, 150), (130, 150), (40, 222)], fill=(255, 255, 255, 245))
+        d.rounded_rectangle((6, 6, 314, 170), 70, fill=(255, 255, 255, 245), outline=(30, 30, 30, 255), width=6)
+        d.rectangle((70, 160, 128, 172), fill=(255, 255, 255, 245))
+        for i in range(3):                                   # tri bodky "niekto pise"
+            y = 88 - 16 * max(0.0, math.sin(2 * math.pi * (ph / 12 - i * 0.18)))
+            d.ellipse((92 + i * 56 - 17, y - 17, 92 + i * 56 + 17, y + 17), fill=(70, 70, 70, 255))
+        _sb[k] = np.array(im)
+    return _sb[k]
+
+
+def follow_btn(done):
+    k = ("follow", done)
+    if k not in _sb:
+        txt = "FOLLOWING" if done else "+  FOLLOW"
+        f = font(64); l, t_, r, b = f.getbbox(txt)
+        w, h = r - l + 110, 130
+        im = Image.new("RGBA", (w + 8, h + 8), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        d.rounded_rectangle((4, 4, w, h), 62, fill=(235, 235, 235, 250) if done else (254, 44, 85, 255))
+        d.text((4 + w / 2, 4 + h / 2), txt, font=f, fill=(40, 40, 40, 255) if done else (255, 255, 255, 255), anchor="mm")
+        _sb[k] = np.array(im)
+    return _sb[k]
+
+
+_cracks = {}
+def crack_paths():
+    """Praskliny z miesta dopadu v jednotkach polomeru utvaru (seed pevny -> rovnake v kazdom snimku)."""
+    if not _cracks:
+        rng = np.random.default_rng(7); out = []
+        for i in range(10):
+            a = 2 * math.pi * i / 10 + rng.uniform(-0.25, 0.25); p = [(0.0, 0.0)]; L = rng.uniform(0.8, 1.25)
+            for k in range(9):
+                a += rng.uniform(-0.45, 0.45); x, y = p[-1]
+                p.append((x + L / 9 * math.cos(a), y + L / 9 * math.sin(a)))
+                if k in (3, 6) and rng.random() < 0.7:          # odbocka
+                    b_ = a + rng.choice([-1, 1]) * rng.uniform(0.5, 1.0); q = [p[-1]]
+                    for _ in range(3):
+                        b_ += rng.uniform(-0.4, 0.4); x2, y2 = q[-1]
+                        q.append((x2 + L / 12 * math.cos(b_), y2 + L / 12 * math.sin(b_)))
+                    out.append((k / 9, np.array(q, np.float32)))
+            out.append((0.0, np.array(p, np.float32)))
+        _cracks["p"] = out
+    return _cracks["p"]
+
+
+def open_part(pts, u):
+    seg = np.hypot(*np.diff(pts, axis=0).T); cum = np.concatenate([[0], np.cumsum(seg)])
+    L = cum[-1] * min(1.0, max(0.0, u)); i = int(np.searchsorted(cum, L, side="right")) - 1
+    if i >= len(seg):
+        return pts
+    f = (L - cum[i]) / max(seg[i], 1e-6)
+    return np.vstack([pts[:i + 1], pts[i] + (pts[i + 1] - pts[i]) * f])
+
+
+def glow_lines(fr, polys, col, thick, closed=False, core=(255, 250, 230), alpha=1.0):
+    polys = [p for p in polys if len(p) >= 2]
+    if not polys or alpha <= 0:
+        return
+    bb = roi(np.vstack(polys), 40)
+    if bb is None:
+        return
+    x0, y0, x1, y1 = bb
+    lay = np.zeros((y1 - y0, x1 - x0, 3), np.float32)
+    pi = [np.round((p - (x0, y0)) * 4).astype(np.int32) for p in polys]
+    cv2.polylines(lay, pi, closed, col, thick * 2, cv2.LINE_AA, 2)
+    lay = cv2.GaussianBlur(lay, (0, 0), 6) * 1.3
+    cv2.polylines(lay, pi, closed, core, max(2, thick // 2), cv2.LINE_AA, 2)
+    fr[y0:y1, x0:x1] += lay * alpha
+
+
+def fx_time(b, f, words):
+    return word_at(words, b, f.get("on"), 0.4)
+
+
+def sepia_window(beats, words):
+    """(zaciatok, koniec) pretacania casu: od slova rewind po vodu/dnesok v dalsom beate, inak koniec beatu."""
+    for i, b in enumerate(beats):
+        for f in b.get("fx", []):
+            if f["kind"] == "rewind":
+                t0 = fx_time(b, f, words); t1 = b["t1"]
+                for b2 in beats[i:i + 2]:
+                    for f2 in b2.get("fx", []):
+                        if f2["kind"] == "water":
+                            t1 = fx_time(b2, f2, words) + 0.5
+                return t0, t1
+    return None
+
+
+def draw_fx(fr, t, cam, spec, beats, words):
+    st = spec.get("start") or beats[0]["cam"]
+    cx, cy = screen_xy(st["lat"], st["lon"], cam)
+    R = max(80.0, float(spec.get("feature_km") or 20) / 2 * 1000 / m_per_px(st["lat"], cam[2]))
+    sw = sepia_window(beats, words)
+    if sw and sw[0] <= t < sw[1] + 0.5:                      # minulost: sepia, pri navrate plynulo spat
+        a = 0.85 * min(1.0, (t - sw[0]) / 0.4, (sw[1] + 0.5 - t) / 0.5)
+        gray = fr.mean(2, keepdims=True)
+        fr[:] = fr * (1 - a) + gray * np.array([0.72, 0.93, 1.15], np.float32) * a
+    for b in beats:
+        if not (b["t0"] - 0.1 <= t < b["t1"] + 0.1):
+            continue
+        out = min(1.0, max(0.0, (b["t1"] + 0.1 - t) / 0.35))   # vsetko zmizne s koncom beatu
+        for f in b.get("fx", []):
+            ts = fx_time(b, f, words); dt = t - ts
+            if dt < 0:
+                continue
+            k = f["kind"]
+            if k == "trace":                                  # obkreslenie utvaru ziarou
+                glow_lines(fr, [poly_part(feature_px(spec, cam), ease(dt / 0.9))], YEL, 10, alpha=out)
+            elif k == "ask":                                  # otazniky vyskakuju okolo miesta
+                for i, (ang, sz) in enumerate(((-55, 170), (-115, 130), (200, 150), (25, 120), (150, 110))):
+                    s = back_ease(dt - 0.13 * i)
+                    x = cx + 1.0 * R * math.cos(math.radians(ang)); y = cy + 0.9 * R * math.sin(math.radians(ang))
+                    paste_scaled(fr, glyph("?", sz, (255, 214, 40, 255)), x, y + 10 * math.sin(t * 5 + i), s, out)
+            elif k == "speech":                               # bublina: niekto prave pise
+                ph = int(t * 12) % 12
+                paste_scaled(fr, bubble(ph), cx + 0.45 * R + 60, cy - 0.75 * R, back_ease(dt), out)
+            elif k == "rewind":                               # pretacanie: pocitadlo rokov + pasy ako na VHS
+                end = min(1.4, max(0.5, ((word_at(words, b, b["stamp"]["on"], 0.5) if "stamp" in b else ts + 1.4) - ts - 0.05)))
+                if dt < end:
+                    v = int(f["n"] * ease(min(1.0, dt / (end * 0.85))))
+                    lab = text_rgba(f"{v:,} YEARS AGO", 70, fill=(255, 255, 255, 255), box=(0, 0, 0, 170))
+                    paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 330)
+                    rng = np.random.default_rng(int(t * 30))
+                    for _ in range(5):
+                        y = int(rng.uniform(0, H)); hh = int(rng.uniform(3, 14))
+                        fr[y:y + hh] = fr[y:y + hh] * 0.6 + 255 * 0.4
+                    tri = [np.array([[60 + o, 470], [60 + o, 530], [24 + o, 500]], np.int32) for o in (0, 38)]
+                    cv2.fillPoly(fr, tri, (255, 255, 255), cv2.LINE_AA)
+            elif k == "cracks":                               # zhave praskliny sa rozbehnu z miesta dopadu
+                g = ease(dt / 0.55); al = out * max(0.0, min(1.0, (2.6 - dt) / 0.6))
+                if al > 0:
+                    ps = []
+                    for s0, p in crack_paths():
+                        u = (g - s0) / max(0.05, 1 - s0)
+                        if u > 0:
+                            ps.append(np.array([cx, cy], np.float32) + open_part(p, u) * R)
+                    bb = roi(np.vstack(ps), 10) if ps else None
+                    if bb:
+                        x0, y0, x1, y1 = bb
+                        m = np.zeros((y1 - y0, x1 - x0), np.float32)
+                        cv2.polylines(m, [np.round((p - (x0, y0)) * 4).astype(np.int32) for p in ps], False, 1.0, 9, cv2.LINE_AA, 2)
+                        fr[y0:y1, x0:x1] *= (1 - 0.85 * al * m)[..., None]
+                    glow_lines(fr, ps, (30, 110, 255), 4, core=(120, 210, 255), alpha=al * 0.9)
+            elif k == "water":                                # voda zaleje utvar od stredu, s vlnkami
+                al = out * max(0.0, min(1.0, (2.6 - dt) / 0.7)) * 0.55
+                pts = feature_px(spec, cam); c = pts.mean(0)
+                pp = c + (pts - c) * ease(min(1.0, dt / 1.1))
+                bb = roi(pp, 4)
+                if bb and al > 0:
+                    x0, y0, x1, y1 = bb
+                    m = np.zeros((y1 - y0, x1 - x0), np.float32)
+                    cv2.fillPoly(m, [np.round((pp - (x0, y0)) * 16).astype(np.int32)], 1.0, cv2.LINE_AA, 4)
+                    m = cv2.GaussianBlur(m, (0, 0), 3)
+                    d = np.hypot(_xx[y0:y1, x0:x1] - c[0], _yy[y0:y1, x0:x1] - c[1])
+                    rip = 0.5 + 0.5 * np.sin(d / 16 - dt * 7)
+                    col = np.array([215, 140, 30], np.float32) + rip[..., None] * np.array([40, 60, 40], np.float32)
+                    a = (al * m)[..., None]
+                    fr[y0:y1, x0:x1] = fr[y0:y1, x0:x1] * (1 - a) + col * a
+            elif k == "eye":                                  # oko okolo utvaru, potom zmurkne
+                Rx, Ry = 1.3 * R, 0.68 * R
+                xs = np.linspace(-Rx, Rx, 60)
+                bl = 1 - math.sin(math.pi * min(1.0, max(0.0, (dt - 1.0) / 0.3)))   # 1 otvorene, 0 zatvorene
+                prof = Ry * (1 - (xs / Rx) ** 2)
+                up = np.stack([cx + xs, cy - prof * (2 * bl - 1)], 1).astype(np.float32)
+                lo = np.stack([cx + xs, cy + prof], 1).astype(np.float32)
+                if bl < 0.98:                                 # vecko
+                    lid = np.vstack([np.stack([cx + xs, cy - prof], 1), up[::-1]]).astype(np.float32)
+                    cv2.fillPoly(fr, [np.round(lid * 16).astype(np.int32)], (60, 95, 80), cv2.LINE_AA, 4)
+                d = ease(dt / 0.6)
+                lash = [np.array([up[j], up[j] + (0, -55 * bl - 10)], np.float32) for j in range(12, 49, 6)] if d >= 1 else []
+                glow_lines(fr, [open_part(up, d), open_part(lo, d)] + lash, (255, 255, 255), 9, core=(255, 255, 255), alpha=out)
+            elif k == "follow":                               # tlacidlo sledovat + tuknutie
+                done = dt > 0.75
+                x, y = W / 2, 1150
+                paste_scaled(fr, follow_btn(done), x, y, back_ease(dt) * (1 - 0.08 * math.sin(math.pi * min(1, max(0, (dt - 0.6) / 0.2)))), out)
+                if 0.6 < dt < 1.2:
+                    u = (dt - 0.6) / 0.6
+                    cv2.circle(fr, (int(x + 120), int(y + 20)), int(20 + 90 * u), (255, 255, 255), 6, cv2.LINE_AA)
+
+
 def draw_highlight(fr, t, cam, spec, beats, words):
     # zvyraznenie miesta: okolie stmavene na ~45 % s makkym okrajom + svietiaci azurovy obrys
     for b in beats:
@@ -719,6 +928,10 @@ def prep_orbi(spec, beats, words, work):
         for k in ("scale", "highlight"):                     # luc na stred miesta
             if k in b:
                 t0 = word_at(words, b, b[k].get("on"), 0.4)
+                ev.append((t0, t0 + 1.0, "point", (st["lat"], st["lon"])))
+        for f in b.get("fx", []):
+            if f["kind"] in ("trace", "cracks", "water", "eye"):
+                t0 = word_at(words, b, f.get("on"), 0.4)
                 ev.append((t0, t0 + 1.0, "point", (st["lat"], st["lon"])))
     ORBI["events"] = ev
     cards = []
@@ -890,6 +1103,31 @@ def mix_audio(spec, voice, total, beats, work, words=()):
             w = sfx_whoosh(IMPACT_FALL + 0.1, rng); w *= np.linspace(0.3, 1.0, len(w)) ** 2
             put(th - IMPACT_FALL, w / (np.abs(w).max() + 1e-9) * db(-12), ev)
             put(th, sfx_boom(rng) / 1.5 * db(-9), ev)
+        for f in b.get("fx", []):                           # zvuky k efektom
+            ts = word_at(words, b, f.get("on"), 0.4); k = f["kind"]
+            if k == "ask":
+                for i in range(5):
+                    put(ts + 0.13 * i, sfx.pop(SR, rng, f0=700 + 120 * i) * db(-17), ev)
+            elif k in ("speech", "follow"):
+                put(ts, sfx.pop(SR, rng, f0=980) * db(-14), ev)
+                if k == "follow":
+                    put(ts + 0.6, sfx_click(rng) / 0.12 * db(-10), ev)
+            elif k == "trace":
+                put(ts, sfx.riser(SR, rng, 0.9) * db(-18), ev)
+            elif k == "rewind":
+                w = sfx_whoosh(1.3, rng)[::-1]
+                put(ts, w / (np.abs(w).max() + 1e-9) * db(-13), ev)
+                for i in range(14):
+                    put(ts + 0.08 * i, sfx.tick(SR, rng) * db(-22), ev)
+            elif k == "cracks":
+                for i in range(6):
+                    c = rng.normal(0, 1, int(0.05 * SR)) * np.exp(-np.linspace(0, 6, int(0.05 * SR)))
+                    put(ts + 0.07 * i + rng.uniform(0, 0.03), c / 3 * db(-12), ev)
+            elif k == "water":
+                w = sfx_whoosh(1.6, rng)
+                put(ts, w / (np.abs(w).max() + 1e-9) * db(-16), ev)
+            elif k == "eye":
+                put(ts + 1.0, sfx.tick(SR, rng) * db(-14), ev); put(ts + 1.3, sfx.tick(SR, rng) * db(-14), ev)
     fx += ev
     msrc = os.path.join(ROOT, "assets", "music", spec.get("music", "cine_616.mp3"))
     subprocess.run([FF, "-y", "-i", msrc, "-t", str(total + 3), "-ar", str(SR), "-ac", "1", "m.wav"],
@@ -953,6 +1191,7 @@ def render(spec, beats, words, cams, total, work, out):
         ocam = cam if t >= GLOBE_T - 0.3 else (globe_params(spec, t)[0], globe_params(spec, t)[1],
                                                math.log2(2 * math.pi * globe_params(spec, t)[2] / 256))
         draw_highlight(fr, t, ocam, spec, beats, words)
+        draw_fx(fr, t, ocam, spec, beats, words)
         draw_impact(fr, t, ocam, spec, beats, words)
         draw_overlays(fr, t, ocam, spec, beats, words)
         draw_cards(fr, t)
