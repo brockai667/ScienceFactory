@@ -1,0 +1,520 @@
+{
+ "draft": {
+  "title": "Vredefort Dome",
+  "feature_km": 110,
+  "hooks": [
+   {
+    "text": "This dome is about one hundred ten kilometers wide, and it's only the middle.",
+    "title": "110 KM DOME"
+   },
+   {
+    "text": "This rock ring is over two billion years old, yet still shows from space.",
+    "title": "2 BILLION YEARS"
+   },
+   {
+    "text": "Why is there a dome one hundred ten kilometers wide in South Africa?",
+    "title": "110 KM WIDE"
+   }
+  ],
+  "beats": [
+   {
+    "text": "This dome is about one hundred ten kilometers wide, and it's only the middle.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "So what was this the center of?",
+    "shot": "feature",
+    "overlay": {
+     "type": "highlight",
+     "on": "center"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It is over two billion years old.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "old",
+     "label": "OVER 2 BILLION YEARS"
+    },
+    "react": {
+     "expr": "happy",
+     "on": "old"
+    },
+    "photo": null
+   },
+   {
+    "text": "From orbit, rings of rock circle the town of Vredefort.",
+    "shot": "feature",
+    "overlay": {
+     "type": "rings",
+     "on": "rings"
+    },
+    "react": null,
+    "photo": {
+     "index": 0,
+     "label": "VREDEFORT DOME",
+     "on": "orbit"
+    }
+   },
+   {
+    "text": "Luxembourg would fit inside it.",
+    "shot": "wide",
+    "overlay": {
+     "type": "scale",
+     "on": "Luxembourg"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Something from space hit here. Its crater spanned up to three hundred kilometers.",
+    "shot": "wide",
+    "overlay": {
+     "type": "stamp",
+     "on": "crater",
+     "label": "UP TO 300 KILOMETERS"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "space"
+    },
+    "photo": null
+   },
+   {
+    "text": "That crater wore away. This dome is the bedrock left at its centre.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Today it's a UNESCO World Heritage Site.",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 1,
+     "label": "WORLD HERITAGE SITE",
+     "on": "Heritage"
+    }
+   },
+   {
+    "text": "Next target: a dry lake crossed by straight tracks. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "Orbi"
+    },
+    "photo": null
+   }
+  ],
+  "description": "The Vredefort Dome in South Africa is the central uplift of an impact structure formed about 2.023 billion years ago, whose worn-away crater was estimated at 170 to 300 km across. It was added to UNESCO's World Heritage list in 2005.",
+  "hashtags": [
+   "#Vredefort",
+   "#SouthAfrica",
+   "#Geology",
+   "#SatelliteView",
+   "#EarthFromSpace"
+  ],
+  "hook_title": "110 KM DOME"
+ },
+ "photos": [
+  {
+   "name": "File:Vredefort Dome STS51I-33-56AA.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Vredefort_Dome_STS51I-33-56AA.jpg/1920px-Vredefort_Dome_STS51I-33-56AA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Vredefort Dome, Free State/North West provinces, South Africa. Image #STS51I-33-56AA.",
+   "credit": "Júlio Reis (User:Tintazul)",
+   "file": "photos/vredefort_impact_structure/p0.jpg"
+  },
+  {
+   "name": "File:Vredefort Dome Vredefort-001.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Vredefort_Dome_Vredefort-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "Vredefort Dome - World Heritage Site",
+   "credit": "Leo za1, CC BY-SA 3.0",
+   "file": "photos/vredefort_impact_structure/p1.jpg"
+  },
+  {
+   "name": "File:Vredefort Dome Vredefort-002.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Vredefort_Dome_Vredefort-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "Vredefort Dome - World Heritage Site",
+   "credit": "Leo za1, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Map of Vredefort dome.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Map_of_Vredefort_dome.jpg/1920px-Map_of_Vredefort_dome.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Map of South Africa showing the location of the Vredefort impact crater and the probable location of its original rim.",
+   "credit": "Oggmus, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Vredefort Dome-113482.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Vredefort_Dome-113482.jpg/1920px-Vredefort_Dome-113482.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Vredefort Dome (South Africa)",
+   "credit": "Francesco Bandarin, CC BY-SA 3.0 igo"
+  },
+  {
+   "name": "File:Vredefort Dome-113484.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Vredefort_Dome-113484.jpg/1920px-Vredefort_Dome-113484.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Vredefort Dome (South Africa)",
+   "credit": "Francesco Bandarin, CC BY-SA 3.0 igo"
+  }
+ ],
+ "lat": -27,
+ "lon": 27.5,
+ "shape": null,
+ "scale": {
+  "city": {
+   "name": "LUXEMBOURG",
+   "area_km2": 2572.3,
+   "span_km": 81.3,
+   "poly_km": [
+    [
+     -25.12,
+     8.379
+    ],
+    [
+     -21.682,
+     6.268
+    ],
+    [
+     -23.811,
+     5.614
+    ],
+    [
+     -23.321,
+     3.895
+    ],
+    [
+     -24.398,
+     3.599
+    ],
+    [
+     -23.479,
+     3.05
+    ],
+    [
+     -24.86,
+     1.384
+    ],
+    [
+     -23.87,
+     -3.068
+    ],
+    [
+     -21.194,
+     -2.808
+    ],
+    [
+     -18.177,
+     -8.205
+    ],
+    [
+     -18.613,
+     -10.79
+    ],
+    [
+     -15.838,
+     -10.417
+    ],
+    [
+     -14.254,
+     -12.366
+    ],
+    [
+     -15.805,
+     -16.039
+    ],
+    [
+     -12.553,
+     -17.545
+    ],
+    [
+     -12.765,
+     -20.132
+    ],
+    [
+     -17.071,
+     -24.901
+    ],
+    [
+     -15.276,
+     -27.289
+    ],
+    [
+     -19.887,
+     -30.986
+    ],
+    [
+     -17.839,
+     -30.801
+    ],
+    [
+     -17.912,
+     -33.302
+    ],
+    [
+     -15.742,
+     -35.519
+    ],
+    [
+     -8.14,
+     -36.459
+    ],
+    [
+     -7.432,
+     -40.92
+    ],
+    [
+     -3.137,
+     -41.275
+    ],
+    [
+     -1.964,
+     -39.22
+    ],
+    [
+     1.1,
+     -40.718
+    ],
+    [
+     3.058,
+     -36.181
+    ],
+    [
+     11.147,
+     -33.858
+    ],
+    [
+     20.354,
+     -39.947
+    ],
+    [
+     19.553,
+     -32.128
+    ],
+    [
+     21.394,
+     -29.245
+    ],
+    [
+     19.625,
+     -27.358
+    ],
+    [
+     21.323,
+     -27.008
+    ],
+    [
+     20.934,
+     -25.246
+    ],
+    [
+     24.193,
+     -22.169
+    ],
+    [
+     25.554,
+     -18.239
+    ],
+    [
+     24.824,
+     -16.852
+    ],
+    [
+     30.216,
+     -12.032
+    ],
+    [
+     29.487,
+     -10.571
+    ],
+    [
+     31.043,
+     -10.801
+    ],
+    [
+     29.829,
+     -7.657
+    ],
+    [
+     31.127,
+     -6.554
+    ],
+    [
+     30.213,
+     -3.471
+    ],
+    [
+     31.741,
+     -1.112
+    ],
+    [
+     30.604,
+     -2.065
+    ],
+    [
+     27.731,
+     0.181
+    ],
+    [
+     24.737,
+     -1.145
+    ],
+    [
+     20.013,
+     3.297
+    ],
+    [
+     17.322,
+     1.683
+    ],
+    [
+     16.219,
+     5.4
+    ],
+    [
+     10.656,
+     8.739
+    ],
+    [
+     9.531,
+     11.306
+    ],
+    [
+     9.944,
+     14.256
+    ],
+    [
+     8.104,
+     14.075
+    ],
+    [
+     7.535,
+     16.408
+    ],
+    [
+     6.658,
+     14.695
+    ],
+    [
+     6.273,
+     18.057
+    ],
+    [
+     3.781,
+     19.599
+    ],
+    [
+     4.627,
+     20.774
+    ],
+    [
+     3.178,
+     21.821
+    ],
+    [
+     4.357,
+     22.279
+    ],
+    [
+     1.96,
+     26.317
+    ],
+    [
+     3.155,
+     27.89
+    ],
+    [
+     2.21,
+     28.022
+    ],
+    [
+     3.783,
+     34.0
+    ],
+    [
+     1.911,
+     34.831
+    ],
+    [
+     2.889,
+     36.374
+    ],
+    [
+     1.221,
+     38.633
+    ],
+    [
+     -1.58,
+     36.731
+    ],
+    [
+     -3.746,
+     37.739
+    ],
+    [
+     -4.357,
+     39.988
+    ],
+    [
+     -8.746,
+     38.863
+    ],
+    [
+     -8.914,
+     34.3
+    ],
+    [
+     -13.656,
+     32.177
+    ],
+    [
+     -14.241,
+     28.526
+    ],
+    [
+     -16.606,
+     26.286
+    ],
+    [
+     -15.479,
+     24.854
+    ],
+    [
+     -16.201,
+     22.968
+    ],
+    [
+     -19.138,
+     21.192
+    ],
+    [
+     -17.809,
+     17.667
+    ],
+    [
+     -22.295,
+     15.441
+    ],
+    [
+     -23.086,
+     10.462
+    ],
+    [
+     -25.12,
+     8.379
+    ]
+   ]
+  },
+  "say": "Luxembourg",
+  "on": "Luxembourg",
+  "fact": "Luxembourg would fit inside it"
+ },
+ "next": "racetrack_playa"
+}
