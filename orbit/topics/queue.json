@@ -58,9 +58,11 @@
  {
   "slug": "racetrack_playa",
   "title": "Racetrack Playa",
-  "lat": 36.6813,
-  "lon": -117.5627,
-  "status": "todo"
+  "lat": 36.6812,
+  "lon": -117.5585,
+  "status": "written",
+  "located": true,
+  "no": 3
  },
  {
   "slug": "nazca_lines",

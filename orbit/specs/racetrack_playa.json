@@ -1,0 +1,213 @@
+{
+ "title": "Racetrack Playa",
+ "coords": "36.6812 N, 117.5585 W",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 36.6812,
+  "lon": -117.5585
+ },
+ "source": "https://en.wikipedia.org/wiki/Racetrack_Playa",
+ "feature_km": 4.8,
+ "beats": [
+  {
+   "text": "This dry lake is three miles long, and nobody drew the lines across it.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 14.11
+   },
+   "globe": true
+  },
+  {
+   "text": "So what draws lines on a dry lake?",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 14.11
+   },
+   "highlight": {
+    "on": "lake"
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "what"
+    }
+   ]
+  },
+  {
+   "text": "Rocks here weigh up to three hundred twenty kilograms.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 15.01
+   },
+   "stamp": {
+    "label": "UP TO 320 KILOGRAMS",
+    "on": "kilograms"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "kilograms",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "From orbit, it's flat dried clay, walled in by mountains.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 14.11
+   },
+   "tag": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "label": "DRIED CLAY",
+    "on": "clay"
+   },
+   "photo": {
+    "file": "photos/racetrack_playa/p5.jpg",
+    "label": "RACETRACK PLAYA",
+    "credit": "Lgcharlot, CC BY-SA 4.0",
+    "on": "mountains",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Central Park would fit inside it.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 14.11
+   },
+   "scale": {
+    "name": "CENTRAL PARK",
+    "poly_km": [
+     [
+      -1.139,
+      -1.209
+     ],
+     [
+      -1.121,
+      -1.271
+     ],
+     [
+      -0.494,
+      -1.619
+     ],
+     [
+      -0.447,
+      -1.566
+     ],
+     [
+      -0.401,
+      -1.584
+     ],
+     [
+      1.541,
+      1.902
+     ],
+     [
+      1.528,
+      1.945
+     ],
+     [
+      0.861,
+      2.313
+     ],
+     [
+      0.812,
+      2.297
+     ],
+     [
+      -1.139,
+      -1.209
+     ]
+    ],
+    "on": "Central"
+   }
+  },
+  {
+   "text": "Those rocks are sailing stones. They travel across the clay.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 15.01
+   },
+   "fx": [
+    {
+     "kind": "scan",
+     "on": null,
+     "fallback": true
+    }
+   ],
+   "photo": {
+    "file": "photos/racetrack_playa/p0.jpg",
+    "label": "A SAILING STONE",
+    "credit": "Dan Duriscoe, for the en:U.S. National P",
+    "on": "stones",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "They leave long racetrack imprints. Those are the lines.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 15.01
+   },
+   "fx": [
+    {
+     "kind": "pulse",
+     "on": null,
+     "fallback": true
+    }
+   ]
+  },
+  {
+   "text": "People have documented this since nineteen forty eight.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 12.31
+   },
+   "stamp": {
+    "label": "SINCE 1948",
+    "on": "since"
+   }
+  },
+  {
+   "text": "Next target: hundreds of desert figures, found by drones. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": -14.6975,
+    "lon": -75.135,
+    "z": 13.0,
+    "hop": true
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "Orbi",
+    "dur": 1.4
+   }
+  }
+ ],
+ "hook": "3 MILE DRY LAKE",
+ "description": "Racetrack Playa is a dry lake in Death Valley National Park, California, where sailing stones weighing up to 320 kg travel across the clay and leave linear tracks. The phenomenon has been documented since 1948. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Dan Duriscoe, for the en:U.S. National P; Lgcharlot, CC BY-SA 4.0, Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#RacetrackPlaya",
+  "#DeathValley",
+  "#SailingStones",
+  "#SatelliteView",
+  "#California"
+ ],
+ "shape": null,
+ "series_no": 3
+}
