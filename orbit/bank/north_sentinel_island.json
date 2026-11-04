@@ -180,112 +180,20 @@
   "title": "North Sentinel Island",
   "feature_km": 9,
   "hooks": [
-   {
-    "text": "This island is off-limits for three miles all around.",
-    "title": "3 MILES OFF-LIMITS"
-   },
-   {
-    "text": "No one may come within three miles of this island.",
-    "title": "3 MILE ZONE"
-   },
-   {
-    "text": "Why is this island off-limits for three miles all around?",
-    "title": "3 MILES OFF-LIMITS"
-   }
+   {"text": "Why may no boat come within three miles of this island?", "title": "3 MILE ZONE"},
+   {"text": "No one may come within three miles of this island.", "title": "3 MILES OFF-LIMITS"},
+   {"text": "This island is off-limits for three miles all around.", "title": "3 MILES OFF-LIMITS"}
   ],
   "beats": [
-   {
-    "text": "This island is off-limits for three miles all around.",
-    "shot": "feature",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "So why can no one visit?",
-    "shot": "close",
-    "overlay": null,
-    "react": null,
-    "photo": {
-     "index": 4,
-     "label": "SEEN FROM A FLIGHT",
-     "on": "visit"
-    }
-   },
-   {
-    "text": "It's home to the Sentinelese, an uncontacted tribe guarding their isolation.",
-    "shot": "feature",
-    "overlay": {
-     "type": "tag",
-     "on": "Sentinelese",
-     "label": "THE SENTINELESE"
-    },
-    "react": {
-     "expr": "surprised",
-     "on": "uncontacted"
-    },
-    "photo": null
-   },
-   {
-    "text": "It's one of the Andaman Islands, in the Bay of Bengal.",
-    "shot": "wide",
-    "overlay": {
-     "type": "highlight",
-     "on": "Andaman"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "The Indian Navy patrols the area.",
-    "shot": "wide",
-    "overlay": {
-     "type": "tag",
-     "on": "Navy",
-     "label": "INDIAN NAVY"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "A nineteen fifty-six law bans travel there and any close approach.",
-    "shot": "feature",
-    "overlay": {
-     "type": "stamp",
-     "on": "law",
-     "label": "1956 LAW"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "The ban protects them from mainland diseases they likely have no immunity to.",
-    "shot": "close",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Today, India recognizes their wish to be left alone.",
-    "shot": "feature",
-    "overlay": null,
-    "react": null,
-    "photo": {
-     "index": 5,
-     "label": "VIEW FROM THE AIR",
-     "on": "alone"
-    }
-   },
-   {
-    "text": "Next target: an island that broke the surface in nineteen sixty-three. Follow for the next scan. Orbi out.",
-    "shot": "space",
-    "overlay": null,
-    "react": {
-     "expr": "happy",
-     "on": "Orbi"
-    },
-    "photo": null
-   }
+   {"text": "Why may no boat come within three miles of this island?", "shot": "feature", "overlay": null, "react": null, "photo": null},
+   {"text": "Who is the ban protecting, them or us?", "shot": "close", "overlay": null, "react": null, "photo": {"index": 4, "label": "SEEN FROM A FLIGHT", "on": "ban"}},
+   {"text": "It's home to the Sentinelese, an uncontacted tribe.", "shot": "feature", "overlay": {"type": "tag", "on": "Sentinelese", "label": "THE SENTINELESE"}, "react": {"expr": "surprised", "on": "uncontacted"}, "photo": null},
+   {"text": "From orbit, I keep an eye on it safely.", "shot": "close", "overlay": null, "react": null, "photo": null},
+   {"text": "That forbidden ring of sea dwarfs the island itself.", "shot": "wide", "overlay": {"type": "highlight", "on": "island"}, "react": null, "photo": {"index": 5, "label": "VIEW FROM THE AIR", "on": "sea"}},
+   {"text": "A nineteen fifty-six regulation bans visits, and the Indian Navy patrols.", "shot": "feature", "overlay": {"type": "stamp", "on": "regulation", "label": "1956 REGULATION"}, "react": null, "photo": null},
+   {"text": "It shields the islanders from mainland diseases they likely have no immunity to.", "shot": "close", "overlay": {"type": "tag", "on": "diseases", "label": "MAINLAND DISEASES"}, "react": null, "photo": null},
+   {"text": "If an outsider lands and is killed, India won't prosecute the islanders.", "shot": "feature", "overlay": null, "react": null, "photo": null},
+   {"text": "Next target: an island born in nineteen sixty-three. Follow for the next scan. Orbi out.", "shot": "space", "overlay": null, "react": {"expr": "happy", "on": "Orbi"}, "photo": null}
   ],
   "description": "North Sentinel Island in India's Andaman Islands is home to the Sentinelese, an uncontacted indigenous tribe. A 1956 regulation bans travel there and any approach closer than five kilometers, to protect them from mainland infectious diseases.",
   "hashtags": [
@@ -295,6 +203,6 @@
    "#India",
    "#SatelliteMap"
   ],
-  "hook_title": "3 MILES OFF-LIMITS"
+  "hook_title": "3 MILE ZONE"
  }
 }

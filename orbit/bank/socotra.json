@@ -398,119 +398,20 @@
   "title": "Socotra",
   "feature_km": 132,
   "hooks": [
-   {
-    "text": "This one hundred thirty-two kilometer island grows plants found nowhere else.",
-    "title": "132 KM ISLAND"
-   },
-   {
-    "text": "This one hundred thirty-two kilometer island is part of Yemen, but sits on Africa.",
-    "title": "132 KM ISLAND"
-   },
-   {
-    "text": "Why does this one hundred thirty-two kilometer island grow plants found nowhere else?",
-    "title": "132 KM LONG"
-   }
+   {"text": "One in three plants on this island grows nowhere else on Earth.", "title": "1 IN 3 PLANTS"},
+   {"text": "This one hundred thirty-two kilometer island is part of Yemen, but sits on Africa.", "title": "132 KM ISLAND"},
+   {"text": "Why does this one hundred thirty-two kilometer island grow plants found nowhere else?", "title": "132 KM LONG"}
   ],
   "beats": [
-   {
-    "text": "This one hundred thirty-two kilometer island grows plants found nowhere else.",
-    "shot": "feature",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "So how did it get its own plants?",
-    "shot": "close",
-    "overlay": null,
-    "react": null,
-    "photo": {
-     "index": 1,
-     "label": "DRAGON'S BLOOD TREE",
-     "on": "plants"
-    }
-   },
-   {
-    "text": "It's been described as the most alien-looking place on Earth.",
-    "shot": "close",
-    "overlay": {
-     "type": "stamp",
-     "on": "place",
-     "label": "MOST ALIEN-LOOKING PLACE"
-    },
-    "react": {
-     "expr": "happy",
-     "on": "place"
-    },
-    "photo": null
-   },
-   {
-    "text": "It's the largest of six islands.",
-    "shot": "feature",
-    "overlay": {
-     "type": "ruler",
-     "on": "largest",
-     "label": "132 KM"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Luxembourg would fit inside it. The island is about two times as wide as Luxembourg.",
-    "shot": "feature",
-    "overlay": {
-     "type": "scale",
-     "on": "Luxembourg"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Geologically, it's a continental fragment, linked to the Somali plate.",
-    "shot": "wide",
-    "overlay": {
-     "type": "tag",
-     "on": "Somali",
-     "label": "SOMALI PLATE"
-    },
-    "react": {
-     "expr": "surprised",
-     "on": "fragment"
-    },
-    "photo": null
-   },
-   {
-    "text": "Yet it lies two hundred thirty-two kilometers off Africa.",
-    "shot": "wide",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Today its people, the Soqotrans, speak Arabic and Soqotri.",
-    "shot": "close",
-    "overlay": {
-     "type": "tag",
-     "on": "Soqotri",
-     "label": "ARABIC AND SOQOTRI"
-    },
-    "react": null,
-    "photo": {
-     "index": 2,
-     "label": "NAWJAD, SOCOTRA",
-     "on": "people"
-    }
-   },
-   {
-    "text": "Next target: an island you may not approach within five kilometers. Follow for the next scan. Orbi out.",
-    "shot": "space",
-    "overlay": null,
-    "react": {
-     "expr": "happy",
-     "on": "Orbi"
-    },
-    "photo": null
-   }
+   {"text": "One in three plants on this island grows nowhere else on Earth.", "shot": "feature", "overlay": null, "react": null, "photo": null},
+   {"text": "What cut them off from the rest of the world?", "shot": "close", "overlay": null, "react": null, "photo": {"index": 1, "label": "DRAGON'S BLOOD TREE", "on": "world"}},
+   {"text": "It has been described as the most alien-looking place on Earth.", "shot": "feature", "overlay": {"type": "highlight", "on": "place"}, "react": {"expr": "happy", "on": "place"}, "photo": null},
+   {"text": "Locally, it's known as Saqatri.", "shot": "close", "overlay": {"type": "tag", "on": "Saqatri", "label": "KNOWN AS SAQATRI"}, "react": null, "photo": null},
+   {"text": "Lay Luxembourg over it, and the island still runs past both ends.", "shot": "feature", "overlay": {"type": "scale", "on": "Luxembourg"}, "react": null, "photo": null},
+   {"text": "It belongs to Yemen, but geologically it's a fragment of Africa.", "shot": "wide", "overlay": {"type": "tag", "on": "fragment", "label": "FRAGMENT OF AFRICA"}, "react": {"expr": "surprised", "on": "Africa"}, "photo": null},
+   {"text": "Two hundred thirty-two kilometers of sea and a long isolation did the rest.", "shot": "wide", "overlay": null, "react": null, "photo": null},
+   {"text": "In two thousand eight, it became a UNESCO World Heritage Site.", "shot": "close", "overlay": {"type": "stamp", "on": "UNESCO", "label": "UNESCO SINCE 2008"}, "react": null, "photo": {"index": 2, "label": "NAWJAD, SOCOTRA", "on": "Heritage"}},
+   {"text": "Next target: an island no outsider may approach. Follow for the next scan. Orbi out.", "shot": "space", "overlay": null, "react": {"expr": "happy", "on": "Orbi"}, "photo": null}
   ],
   "description": "Socotra is a Yemeni island in the Indian Ocean, and a third of its plant life is found nowhere else on Earth. Geographically it belongs to Africa, and in 2008 it became a UNESCO World Heritage Site.",
   "hashtags": [
@@ -520,6 +421,6 @@
    "#EndemicPlants",
    "#SatelliteMap"
   ],
-  "hook_title": "132 KM ISLAND"
+  "hook_title": "1 IN 3 PLANTS"
  }
 }

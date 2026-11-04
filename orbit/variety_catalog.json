@@ -1,0 +1,1248 @@
+{
+ "version": 1,
+ "rules": "Pick: never reuse an element used in the last 5 episodes.\nAt most 1 signature element (new visual effect, new Orbi reaction or new transition) per video.\nFacts must stay true: fill placeholders only from verified data; engine 'new' needs implementation first.",
+ "categories": {
+  "hook_openings": [
+   {
+    "id": "number_first",
+    "what": "Open with a single striking number",
+    "example": "<number> meters. That is how <deep/wide/tall> this <feature> is.",
+    "engine": "ready"
+   },
+   {
+    "id": "contradiction",
+    "what": "State two facts that seem to clash",
+    "example": "This <place> is <adjective A> and <adjective B> at the same time.",
+    "engine": "ready"
+   },
+   {
+    "id": "you_line",
+    "what": "Address the viewer directly",
+    "example": "You have probably never heard of this place, yet it can be seen from space.",
+    "engine": "ready"
+   },
+   {
+    "id": "sensory",
+    "what": "Describe what a visitor would feel, hear or smell",
+    "example": "Imagine the air here: <sensory detail>.",
+    "engine": "ready"
+   },
+   {
+    "id": "myth_vs_fact",
+    "what": "Name a common belief then flip it",
+    "example": "Everyone thinks <myth>. From orbit, the truth looks different.",
+    "engine": "ready"
+   },
+   {
+    "id": "countdown",
+    "what": "Count down to the reveal",
+    "example": "Three clues. One place. Ready?",
+    "engine": "ready"
+   },
+   {
+    "id": "wrong_guess",
+    "what": "Say the obvious guess is wrong",
+    "example": "You will guess <obvious thing>. You will be wrong.",
+    "engine": "ready"
+   },
+   {
+    "id": "scale_shock",
+    "what": "Lead with how big or small it is",
+    "example": "This <feature> is bigger than <familiar thing>.",
+    "engine": "ready"
+   },
+   {
+    "id": "eyewitness",
+    "what": "Start from a person who first saw it",
+    "example": "In <year>, a <pilot/explorer> looked down and saw <thing>.",
+    "engine": "ready"
+   },
+   {
+    "id": "orbi_confession",
+    "what": "Orbi admits it was surprised",
+    "example": "I almost flew past this one. Good thing I did not.",
+    "engine": "ready"
+   },
+   {
+    "id": "signal_detected",
+    "what": "Orbi reports a detected anomaly",
+    "example": "Anomaly detected, <direction> of <landmark>.",
+    "engine": "ready"
+   },
+   {
+    "id": "tiny_first",
+    "what": "Start with a small detail, then zoom out",
+    "example": "Look at this <tiny detail>. Now look at where it is.",
+    "engine": "ready"
+   },
+   {
+    "id": "question_cold_open",
+    "what": "Open directly with the question",
+    "example": "What makes <feature> <strange property>?",
+    "engine": "ready"
+   },
+   {
+    "id": "superlative",
+    "what": "Claim the most or least of something",
+    "example": "The <most/least> <adjective> spot in <region>.",
+    "engine": "ready"
+   },
+   {
+    "id": "dare",
+    "what": "Challenge the viewer",
+    "example": "Find the <odd thing> before I do.",
+    "engine": "ready"
+   },
+   {
+    "id": "warning",
+    "what": "Playful warning tone",
+    "example": "Do not blink. This <feature> changes fast.",
+    "engine": "ready"
+   },
+   {
+    "id": "silence_beat",
+    "what": "Opening pause then one short line",
+    "example": "...Look. Just look.",
+    "engine": "ready"
+   },
+   {
+    "id": "map_trivia",
+    "what": "Odd fact about the map position",
+    "example": "Nobody lives within <number> km of this spot.",
+    "engine": "ready"
+   },
+   {
+    "id": "time_first",
+    "what": "Open with an age or duration",
+    "example": "<number> years old, and still doing <thing>.",
+    "engine": "ready"
+   },
+   {
+    "id": "not_what_it_looks",
+    "what": "Say it is not what it seems",
+    "example": "This looks like <A>. It is actually <B>.",
+    "engine": "ready"
+   },
+   {
+    "id": "coordinates_open",
+    "what": "Start by reading coordinates",
+    "example": "<lat>, <lon>. Remember these.",
+    "engine": "ready"
+   },
+   {
+    "id": "viewer_bet",
+    "what": "Bet the viewer cannot name it",
+    "example": "Bet you cannot name this in five seconds.",
+    "engine": "ready"
+   },
+   {
+    "id": "tourist_vs_orbit",
+    "what": "Ground view vs orbital view",
+    "example": "On the ground it is <A>. From orbit it is <B>.",
+    "engine": "ready"
+   },
+   {
+    "id": "rule_break",
+    "what": "Say it seems to break a rule of nature",
+    "example": "This should not exist, but it does.",
+    "engine": "ready"
+   },
+   {
+    "id": "listicle_one",
+    "what": "Present it as number one of a hidden list",
+    "example": "Strangest place I found this week, number <n>.",
+    "engine": "ready"
+   }
+  ],
+  "question_beats": [
+   {
+    "id": "q_beat1",
+    "what": "Pose the question in beat 1",
+    "example": "So why does <place> <strange thing>?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_beat3",
+    "what": "Hold the question until beat 3 after a hook",
+    "example": "Here is what puzzled scientists: <question>?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_viewer_asks",
+    "what": "Orbi asks the viewer to answer in comments",
+    "example": "What would you do with <thing>? Tell me below.",
+    "engine": "ready"
+   },
+   {
+    "id": "q_two_options",
+    "what": "Offer two competing explanations",
+    "example": "Is it <A>, or is it <B>?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_three_choices",
+    "what": "Give three choices, reveal later",
+    "example": "A, B or C? Pick now.",
+    "engine": "ready"
+   },
+   {
+    "id": "q_how_not_why",
+    "what": "Ask how instead of why",
+    "example": "How did <thing> get here?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_who",
+    "what": "Ask who made or first saw it",
+    "example": "Who put <thing> here?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_when",
+    "what": "Ask when it happened",
+    "example": "When did <place> change?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_rhetorical_stack",
+    "what": "Two quick questions in a row",
+    "example": "What is it? And why is it <adjective>?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_what_if",
+    "what": "Hypothetical question",
+    "example": "What if <place> did not exist?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_mid_pivot",
+    "what": "Question appears at the midpoint pivot",
+    "example": "But here is the real question.",
+    "engine": "ready"
+   },
+   {
+    "id": "q_orbi_stuck",
+    "what": "Orbi admits it cannot explain",
+    "example": "Even my sensors cannot explain <detail>.",
+    "engine": "ready"
+   },
+   {
+    "id": "q_yes_no",
+    "what": "Yes or no question",
+    "example": "Is <place> really <claim>?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_missing",
+    "what": "Ask what is missing from the image",
+    "example": "What is missing from this picture?",
+    "engine": "ready"
+   },
+   {
+    "id": "q_repeat_echo",
+    "what": "Repeat the question at the end as callback",
+    "example": "Remember the question? Here is the answer.",
+    "engine": "ready"
+   }
+  ],
+  "comparisons": [
+   {
+    "id": "pitches",
+    "what": "football pitches to cover the area (tag/stamp)",
+    "example": "About <number> football pitches.",
+    "engine": "ready"
+   },
+   {
+    "id": "eiffel_stack",
+    "what": "Eiffel Towers stacked to match height or depth (ruler)",
+    "example": "<number> Eiffel Towers stacked.",
+    "engine": "ready"
+   },
+   {
+    "id": "walk_time",
+    "what": "walking time across it (tag)",
+    "example": "<number> hours to walk across.",
+    "engine": "ready"
+   },
+   {
+    "id": "drive_time",
+    "what": "driving time at highway speed (tag)",
+    "example": "<number> hours by car at <speed>.",
+    "engine": "ready"
+   },
+   {
+    "id": "flight_time",
+    "what": "airliner flight time across it (tag)",
+    "example": "A jet needs <number> minutes to cross it.",
+    "engine": "ready"
+   },
+   {
+    "id": "people_count",
+    "what": "how many people could stand inside (stamp)",
+    "example": "<number> people shoulder to shoulder.",
+    "engine": "ready"
+   },
+   {
+    "id": "blue_whales",
+    "what": "blue whales nose to tail (ruler)",
+    "example": "<number> blue whales end to end.",
+    "engine": "ready"
+   },
+   {
+    "id": "burj_height",
+    "what": "stacks of Burj Khalifa (ruler)",
+    "example": "<number> Burj Khalifas tall.",
+    "engine": "ready"
+   },
+   {
+    "id": "cars_end",
+    "what": "cars bumper to bumper (ruler)",
+    "example": "<number> cars end to end.",
+    "engine": "ready"
+   },
+   {
+    "id": "school_buses",
+    "what": "school buses in a line (ruler)",
+    "example": "<number> school buses long.",
+    "engine": "ready"
+   },
+   {
+    "id": "human_history_years",
+    "what": "age against recorded history (stamp)",
+    "example": "Older than <number> times written history.",
+    "engine": "ready"
+   },
+   {
+    "id": "country_fit",
+    "what": "classic: a country fits inside (scale)",
+    "example": "<Country> would fit inside it.",
+    "engine": "ready"
+   },
+   {
+    "id": "city_fit",
+    "what": "a city fits inside (scale)",
+    "example": "<City> fits inside <number> times.",
+    "engine": "ready"
+   },
+   {
+    "id": "marathon",
+    "what": "marathon distances (ruler)",
+    "example": "<number> marathons long.",
+    "engine": "ready"
+   },
+   {
+    "id": "olympic_pools",
+    "what": "Olympic pools of water (stamp)",
+    "example": "<number> Olympic pools.",
+    "engine": "ready"
+   },
+   {
+    "id": "statue_liberty",
+    "what": "Statues of Liberty tall (ruler)",
+    "example": "<number> Statues of Liberty.",
+    "engine": "ready"
+   },
+   {
+    "id": "lifetimes",
+    "what": "number of human lifetimes (stamp)",
+    "example": "<number> human lifetimes.",
+    "engine": "ready"
+   },
+   {
+    "id": "heartbeats",
+    "what": "heartbeats during a walk across",
+    "example": "<number> heartbeats to cross.",
+    "engine": "new"
+   },
+   {
+    "id": "train_speed",
+    "what": "bullet train crossing time (tag)",
+    "example": "A bullet train needs <number> hours.",
+    "engine": "ready"
+   },
+   {
+    "id": "runner_time",
+    "what": "time for a record sprinter to cross (tag)",
+    "example": "A world-class sprinter needs <number> minutes.",
+    "engine": "ready"
+   },
+   {
+    "id": "coins_wide",
+    "what": "coins laid across (ruler)",
+    "example": "<number> coins in a row.",
+    "engine": "ready"
+   },
+   {
+    "id": "basketball_courts",
+    "what": "basketball courts to match (scale)",
+    "example": "<number> basketball courts.",
+    "engine": "ready"
+   },
+   {
+    "id": "elephants_weight",
+    "what": "weight in elephants, animated scale",
+    "example": "Weighs as much as <number> elephants.",
+    "engine": "new"
+   },
+   {
+    "id": "dinosaur_era",
+    "what": "how long before or after the dinosaurs (stamp)",
+    "example": "Formed <number> million years ago.",
+    "engine": "ready"
+   },
+   {
+    "id": "sound_travel",
+    "what": "time for sound to cross, animated pulse",
+    "example": "Sound needs <number> seconds to cross.",
+    "engine": "new"
+   },
+   {
+    "id": "light_travel",
+    "what": "time for light to cross, animated beam",
+    "example": "Light crosses it in <number> milliseconds.",
+    "engine": "new"
+   },
+   {
+    "id": "pixel_scale",
+    "what": "one pixel equals X meters (scale)",
+    "example": "Each pixel here is <number> meters.",
+    "engine": "ready"
+   },
+   {
+    "id": "ladder_of_scales",
+    "what": "three-step ladder small to large (tag)",
+    "example": "Bigger than <A>, smaller than <B>.",
+    "engine": "ready"
+   },
+   {
+    "id": "percent_of_earth",
+    "what": "percentage of Earth's surface (stamp)",
+    "example": "<number> percent of the planet.",
+    "engine": "ready"
+   },
+   {
+    "id": "daily_pace",
+    "what": "how fast it changes per day (tag)",
+    "example": "It moves <number> cm each day.",
+    "engine": "ready"
+   },
+   {
+    "id": "population_dots",
+    "what": "one dot per person, animated dots",
+    "example": "Each dot is <number> people.",
+    "engine": "new"
+   }
+  ],
+  "story_arcs": [
+   {
+    "id": "classic",
+    "what": "Standard order",
+    "example": "1 hook, 2 name, 3 question, 4 scale, 5 clue, 6 clue, 7 answer, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "early_reveal_twist",
+    "what": "Reveal early then twist",
+    "example": "1 hook, 2 name, 3 answer shown, 4 but wait, 5 twist, 6 proof, 7 deeper cause, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "false_lead",
+    "what": "False lead then correction",
+    "example": "1 hook, 2 guess A, 3 evidence for A, 4 contradiction, 5 guess B, 6 test, 7 real answer, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "backwards_timeline",
+    "what": "Timeline backwards",
+    "example": "1 hook, 2 today, 3 recent past, 4 older, 5 older still, 6 origin, 7 cause, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "two_place_contrast",
+    "what": "Two places contrasted",
+    "example": "1 hook, 2 place A, 3 place B, 4 similarity, 5 difference, 6 cause, 7 surprise, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "three_clues",
+    "what": "Three clues countdown",
+    "example": "1 hook, 2 setup, 3 clue three, 4 clue two, 5 clue one, 6 guess pause, 7 answer, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "eyewitness_science",
+    "what": "Eyewitness then science",
+    "example": "1 hook, 2 first sighting, 3 reaction, 4 early theories, 5 instruments, 6 data, 7 answer, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "zoom_ladder",
+    "what": "Zoom through scales",
+    "example": "1 hook, 2 globe, 3 region, 4 landmark, 5 detail, 6 microscale, 7 reveal, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "myth_bust",
+    "what": "Myth then bust",
+    "example": "1 hook myth, 2 why people believe, 3 first crack, 4 evidence, 5 evidence, 6 truth, 7 consequence, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "problem_solution",
+    "what": "Problem then solution",
+    "example": "1 hook, 2 problem, 3 stakes, 4 failed attempt, 5 idea, 6 how it works, 7 result, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "day_in_life",
+    "what": "A day at the place",
+    "example": "1 hook, 2 dawn, 3 morning, 4 noon, 5 dusk, 6 night, 7 secret, 8 meaning, 9 next target",
+    "engine": "ready"
+   },
+   {
+    "id": "quiz_show",
+    "what": "Viewer quiz structure",
+    "example": "1 hook, 2 question, 3 hint one, 4 hint two, 5 pause, 6 reveal, 7 why, 8 bonus fact, 9 next target",
+    "engine": "ready"
+   }
+  ],
+  "visual_effects": [
+   {
+    "id": "heat_shimmer",
+    "what": "Wavy heat distortion over hot terrain",
+    "example": "Triggers: hot, scorching, desert, burning.",
+    "engine": "new"
+   },
+   {
+    "id": "sand_drift",
+    "what": "Blowing sand particles across the frame",
+    "example": "Triggers: dune, sand, wind, desert.",
+    "engine": "new"
+   },
+   {
+    "id": "lightning_flash",
+    "what": "White flash with branching bolt",
+    "example": "Triggers: storm, lightning, thunder, strike.",
+    "engine": "new"
+   },
+   {
+    "id": "xray_layers",
+    "what": "Peel-back cut-away layers of the ground",
+    "example": "Triggers: beneath, underground, layers, inside.",
+    "engine": "new"
+   },
+   {
+    "id": "footprint_trail",
+    "what": "Footprints appear along a path",
+    "example": "Triggers: walked, trail, journey, steps.",
+    "engine": "new"
+   },
+   {
+    "id": "radar_blips",
+    "what": "Radar sweep with blips",
+    "example": "Triggers: detect, signal, scan, hidden.",
+    "engine": "new"
+   },
+   {
+    "id": "tide_timelapse",
+    "what": "Water level rises and falls",
+    "example": "Triggers: tide, flood, rises, retreat.",
+    "engine": "new"
+   },
+   {
+    "id": "terminator_sweep",
+    "what": "Day/night shadow line sweeping",
+    "example": "Triggers: night, daylight, sunrise, dark.",
+    "engine": "new"
+   },
+   {
+    "id": "compass_spin",
+    "what": "Compass needle spins then settles",
+    "example": "Triggers: north, direction, magnetic, compass.",
+    "engine": "new"
+   },
+   {
+    "id": "magnifier_lens",
+    "what": "Magnifier lens zooms into detail",
+    "example": "Triggers: look closer, tiny, detail, close.",
+    "engine": "new"
+   },
+   {
+    "id": "split_then_now",
+    "what": "Split screen before and after",
+    "example": "Triggers: then, now, used to, once.",
+    "engine": "new"
+   },
+   {
+    "id": "tape_unroll",
+    "what": "Measuring tape unrolls across scene",
+    "example": "Triggers: long, wide, measures, across.",
+    "engine": "new"
+   },
+   {
+    "id": "thermometer",
+    "what": "Thermometer gauge rising",
+    "example": "Triggers: degrees, temperature, freezing, hot.",
+    "engine": "new"
+   },
+   {
+    "id": "population_dots_fx",
+    "what": "Dots appear as people count",
+    "example": "Triggers: people, live, population, residents.",
+    "engine": "new"
+   },
+   {
+    "id": "orbit_path",
+    "what": "Satellite orbit path trace",
+    "example": "Triggers: orbit, passes, satellite, overhead.",
+    "engine": "new"
+   },
+   {
+    "id": "snow_fall",
+    "what": "Falling snow overlay",
+    "example": "Triggers: snow, blizzard, frozen, ice.",
+    "engine": "new"
+   },
+   {
+    "id": "rain_streaks",
+    "what": "Rain streak overlay",
+    "example": "Triggers: rain, monsoon, wet, downpour.",
+    "engine": "new"
+   },
+   {
+    "id": "fog_roll",
+    "what": "Fog rolling over the scene",
+    "example": "Triggers: fog, mist, cloud, haze.",
+    "engine": "new"
+   },
+   {
+    "id": "aurora_ribbons",
+    "what": "Colored aurora ribbons at top",
+    "example": "Triggers: aurora, polar, northern lights, glow.",
+    "engine": "new"
+   },
+   {
+    "id": "lava_glow",
+    "what": "Pulsing orange glow in cracks",
+    "example": "Triggers: lava, volcano, magma, molten.",
+    "engine": "new"
+   },
+   {
+    "id": "earthquake_shake",
+    "what": "Screen shake with ripple rings",
+    "example": "Triggers: quake, tremor, fault, shake.",
+    "engine": "new"
+   },
+   {
+    "id": "ash_cloud",
+    "what": "Dark plume rising",
+    "example": "Triggers: eruption, ash, smoke, plume.",
+    "engine": "new"
+   },
+   {
+    "id": "star_field",
+    "what": "Stars twinkling in background",
+    "example": "Triggers: night sky, stars, cosmic, space.",
+    "engine": "new"
+   },
+   {
+    "id": "meteor_streak",
+    "what": "Meteor streak across frame",
+    "example": "Triggers: meteor, falling, comet.",
+    "engine": "new"
+   },
+   {
+    "id": "depth_sounding",
+    "what": "Sonar rings sinking downward",
+    "example": "Triggers: deep, ocean floor, trench.",
+    "engine": "new"
+   },
+   {
+    "id": "wind_arrows",
+    "what": "Flowing wind arrow field",
+    "example": "Triggers: wind, current, jet, storm.",
+    "engine": "new"
+   },
+   {
+    "id": "grid_overlay",
+    "what": "Lat/long grid fades in",
+    "example": "Triggers: located, coordinates, position.",
+    "engine": "new"
+   },
+   {
+    "id": "time_counter",
+    "what": "Rolling year counter",
+    "example": "Triggers: years, centuries, since, ago.",
+    "engine": "new"
+   },
+   {
+    "id": "mini_globe_pin",
+    "what": "Mini globe corner with pin",
+    "example": "Triggers: where, located, continent.",
+    "engine": "new"
+   },
+   {
+    "id": "color_shift",
+    "what": "False color to real color toggle",
+    "example": "Triggers: actually, looks like, true color.",
+    "engine": "new"
+   },
+   {
+    "id": "zoom_ruler_ticks",
+    "what": "Scale bar grows with zoom",
+    "example": "Triggers: kilometers, miles, scale.",
+    "engine": "new"
+   },
+   {
+    "id": "shockwave_ring",
+    "what": "Expanding ring distortion",
+    "example": "Triggers: blast, wave, boom, spreads.",
+    "engine": "new"
+   },
+   {
+    "id": "pixel_reveal",
+    "what": "Pixelated image sharpening",
+    "example": "Triggers: reveal, unmask, resolve, focus.",
+    "engine": "new"
+   },
+   {
+    "id": "flicker_glitch",
+    "what": "Brief digital glitch bars",
+    "example": "Triggers: error, corrupted, anomaly, glitch.",
+    "engine": "new"
+   },
+   {
+    "id": "label_arrow_pop",
+    "what": "Arrow with bouncing label",
+    "example": "Triggers: this, here, notice, that spot.",
+    "engine": "new"
+   },
+   {
+    "id": "clock_spin",
+    "what": "Clock hands whirling",
+    "example": "Triggers: hours, daily, per day, quickly.",
+    "engine": "new"
+   },
+   {
+    "id": "bar_race",
+    "what": "Animated bar comparing two values",
+    "example": "Triggers: more than, versus, compared.",
+    "engine": "new"
+   },
+   {
+    "id": "heat_map_bloom",
+    "what": "Heat map color bloom over area",
+    "example": "Triggers: concentrated, most, hotspot.",
+    "engine": "new"
+   },
+   {
+    "id": "ripple_water",
+    "what": "Concentric water ripples",
+    "example": "Triggers: drop, lake, still, water.",
+    "engine": "new"
+   },
+   {
+    "id": "ice_crack_spread",
+    "what": "Crack lines spreading on ice",
+    "example": "Triggers: ice, glacier, calving, break.",
+    "engine": "new"
+   },
+   {
+    "id": "season_swap",
+    "what": "Seasonal color swap",
+    "example": "Triggers: autumn, season, spring, changes.",
+    "engine": "new"
+   },
+   {
+    "id": "night_lights_on",
+    "what": "City lights switching on",
+    "example": "Triggers: lights, city, glow at night.",
+    "engine": "new"
+   },
+   {
+    "id": "silhouette_outline",
+    "what": "Draw outline of shape around feature",
+    "example": "Triggers: shape, looks like, outline, resembles.",
+    "engine": "new"
+   },
+   {
+    "id": "number_slot_roll",
+    "what": "Slot-machine number roll",
+    "example": "Triggers: exactly, number, count of.",
+    "engine": "new"
+   },
+   {
+    "id": "scan_line_sweep",
+    "what": "Horizontal scan line sweep",
+    "example": "Triggers: scanning, analysis, reading.",
+    "engine": "new"
+   },
+   {
+    "id": "ruler",
+    "what": "Ruler overlay measuring span",
+    "example": "Triggers: long, wide, across. Engine overlay ruler.",
+    "engine": "ready"
+   },
+   {
+    "id": "rings",
+    "what": "Concentric rings overlay",
+    "example": "Triggers: radius, ring, circle. Engine overlay rings.",
+    "engine": "ready"
+   },
+   {
+    "id": "scale",
+    "what": "Scale bar overlay",
+    "example": "Triggers: scale, kilometers. Engine overlay scale.",
+    "engine": "ready"
+   },
+   {
+    "id": "highlight",
+    "what": "Highlight region",
+    "example": "Triggers: this area, here. Engine overlay highlight.",
+    "engine": "ready"
+   },
+   {
+    "id": "tag",
+    "what": "Floating text tag",
+    "example": "Triggers: named, called, label. Engine overlay tag.",
+    "engine": "ready"
+   },
+   {
+    "id": "stamp",
+    "what": "Big stamp text",
+    "example": "Triggers: confirmed, size, fact. Engine overlay stamp.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_ask",
+    "what": "Question mark fx",
+    "example": "Triggers: why, how, what. Engine fx ask.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_trace",
+    "what": "Path trace",
+    "example": "Triggers: route, path, line. Engine fx trace.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_speech",
+    "what": "Speech bubble",
+    "example": "Triggers: said, called, claimed. Engine fx speech.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_rewind",
+    "what": "Rewind effect",
+    "example": "Triggers: back then, rewind, history. Engine fx rewind.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_cracks",
+    "what": "Cracks",
+    "example": "Triggers: crack, split, fracture. Engine fx cracks.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_water",
+    "what": "Water",
+    "example": "Triggers: water, flood, lake. Engine fx water.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_depth",
+    "what": "Depth cue",
+    "example": "Triggers: deep, depth. Engine fx depth.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_sea",
+    "what": "Sea waves",
+    "example": "Triggers: sea, ocean, coast. Engine fx sea.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_eye",
+    "what": "Eye",
+    "example": "Triggers: watching, look, see. Engine fx eye.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_impact",
+    "what": "Impact burst",
+    "example": "Triggers: hit, impact, crash. Engine fx impact.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_follow",
+    "what": "Follow camera",
+    "example": "Triggers: follow, trace along. Engine fx follow.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_scan",
+    "what": "Fallback scan",
+    "example": "Triggers: default when no keyword. Engine fallback scan.",
+    "engine": "ready"
+   },
+   {
+    "id": "fx_pulse",
+    "what": "Fallback pulse",
+    "example": "Triggers: default when no keyword. Engine fallback pulse.",
+    "engine": "ready"
+   }
+  ],
+  "orbi_reactions": [
+   {
+    "id": "expr_happy",
+    "what": "Happy face expression",
+    "example": "Orbi smiles at good news.",
+    "engine": "ready"
+   },
+   {
+    "id": "expr_shocked",
+    "what": "Shocked face",
+    "example": "Orbi eyes widen at a big number.",
+    "engine": "ready"
+   },
+   {
+    "id": "expr_think",
+    "what": "Thinking face",
+    "example": "Orbi squints during the question.",
+    "engine": "ready"
+   },
+   {
+    "id": "hat_explorer",
+    "what": "Explorer hat",
+    "example": "Orbi wears hat for expedition story.",
+    "engine": "ready"
+   },
+   {
+    "id": "hat_detective",
+    "what": "Detective hat",
+    "example": "Orbi wears hat for mystery.",
+    "engine": "ready"
+   },
+   {
+    "id": "spin_excited",
+    "what": "Spin on the spot",
+    "example": "Orbi spins at the reveal.",
+    "engine": "ready"
+   },
+   {
+    "id": "tilt_curious",
+    "what": "Head tilt",
+    "example": "Orbi tilts at odd feature.",
+    "engine": "ready"
+   },
+   {
+    "id": "tilt_doubt",
+    "what": "Tilt opposite direction in doubt",
+    "example": "Orbi tilts back at a false claim.",
+    "engine": "ready"
+   },
+   {
+    "id": "nod",
+    "what": "Slow nod",
+    "example": "Orbi nods to confirm a fact.",
+    "engine": "new"
+   },
+   {
+    "id": "shake_no",
+    "what": "Head shake no",
+    "example": "Orbi shakes head at the myth.",
+    "engine": "new"
+   },
+   {
+    "id": "shiver",
+    "what": "Shiver for cold places",
+    "example": "Orbi shivers near ice.",
+    "engine": "new"
+   },
+   {
+    "id": "sweat_drop",
+    "what": "Sweat drop for hot places",
+    "example": "Orbi sweats in desert.",
+    "engine": "new"
+   },
+   {
+    "id": "bounce_laugh",
+    "what": "Bounce when joking",
+    "example": "Orbi bounces at a pun.",
+    "engine": "new"
+   },
+   {
+    "id": "facepalm",
+    "what": "Facepalm on wrong guess",
+    "example": "Orbi facepalms.",
+    "engine": "new"
+   },
+   {
+    "id": "salute",
+    "what": "Salute at ending",
+    "example": "Orbi salutes before next target.",
+    "engine": "new"
+   },
+   {
+    "id": "lean_in",
+    "what": "Lean toward screen",
+    "example": "Orbi leans in for a secret.",
+    "engine": "new"
+   },
+   {
+    "id": "peek_corner",
+    "what": "Peek in from frame edge",
+    "example": "Orbi peeks for suspense.",
+    "engine": "new"
+   },
+   {
+    "id": "flash_bulb",
+    "what": "Lightbulb over head",
+    "example": "Orbi gets an idea.",
+    "engine": "new"
+   },
+   {
+    "id": "dizzy",
+    "what": "Dizzy spiral eyes at huge numbers",
+    "example": "Orbi gets dizzy at scale.",
+    "engine": "new"
+   },
+   {
+    "id": "wave_goodbye",
+    "what": "Wave goodbye",
+    "example": "Orbi waves at CTA.",
+    "engine": "new"
+   }
+  ],
+  "transitions": [
+   {
+    "id": "hop",
+    "what": "Camera hop between targets",
+    "example": "Quick hop to new site.",
+    "engine": "ready"
+   },
+   {
+    "id": "globe_spin_in",
+    "what": "Spin globe then dive",
+    "example": "Globe spins to target.",
+    "engine": "new"
+   },
+   {
+    "id": "whip_pan",
+    "what": "Whip pan blur",
+    "example": "Fast pan to next spot.",
+    "engine": "new"
+   },
+   {
+    "id": "pixel_dissolve",
+    "what": "Pixel dissolve",
+    "example": "Pixels dissolve to next view.",
+    "engine": "new"
+   },
+   {
+    "id": "iris_wipe",
+    "what": "Circular iris wipe",
+    "example": "Iris closes on Orbi.",
+    "engine": "new"
+   },
+   {
+    "id": "cloud_pass",
+    "what": "Clouds sweep across then clear",
+    "example": "Clouds wipe to next scene.",
+    "engine": "new"
+   },
+   {
+    "id": "flash_cut",
+    "what": "White flash cut",
+    "example": "Flash for impact beat.",
+    "engine": "new"
+   },
+   {
+    "id": "zoom_through",
+    "what": "Zoom through center point",
+    "example": "Fly into the detail.",
+    "engine": "new"
+   },
+   {
+    "id": "slide_card",
+    "what": "Card slide from side",
+    "example": "Data card slides over.",
+    "engine": "new"
+   },
+   {
+    "id": "rewind_scrub",
+    "what": "Timeline scrub back",
+    "example": "Scrub back in time.",
+    "engine": "new"
+   },
+   {
+    "id": "night_fall",
+    "what": "Fade to night and back",
+    "example": "Day to night transition.",
+    "engine": "new"
+   },
+   {
+    "id": "page_turn",
+    "what": "Map page turn",
+    "example": "Turn page to new map.",
+    "engine": "new"
+   }
+  ],
+  "endings": [
+   {
+    "id": "riddle_teaser",
+    "what": "Next target as riddle",
+    "example": "Next target: <riddle>. Follow for the next one.",
+    "engine": "ready"
+   },
+   {
+    "id": "coordinates_teaser",
+    "what": "Coordinates only",
+    "example": "Next target: <lat>, <lon>. Follow to see.",
+    "engine": "ready"
+   },
+   {
+    "id": "one_word",
+    "what": "One word teaser",
+    "example": "Next target: <one word>.",
+    "engine": "ready"
+   },
+   {
+    "id": "guess_tomorrow",
+    "what": "Ask viewers to guess",
+    "example": "Guess the next target before tomorrow.",
+    "engine": "ready"
+   },
+   {
+    "id": "silhouette_teaser",
+    "what": "Outline shown, name hidden",
+    "example": "Next target: this silhouette.",
+    "engine": "ready"
+   },
+   {
+    "id": "number_teaser",
+    "what": "A number clue",
+    "example": "Next target is <number> km from here.",
+    "engine": "ready"
+   },
+   {
+    "id": "continent_teaser",
+    "what": "Hint by continent",
+    "example": "Next target: somewhere in <continent>.",
+    "engine": "ready"
+   },
+   {
+    "id": "opposite_teaser",
+    "what": "Opposite of today",
+    "example": "Next target is the opposite of this place.",
+    "engine": "ready"
+   },
+   {
+    "id": "comment_vote",
+    "what": "Vote in comments",
+    "example": "Comment A or B for the next target.",
+    "engine": "ready"
+   },
+   {
+    "id": "callback_end",
+    "what": "Callback to hook",
+    "example": "Remember <hook thing>? Next time it gets stranger.",
+    "engine": "ready"
+   },
+   {
+    "id": "cliffhanger",
+    "what": "Cliffhanger line",
+    "example": "What I saw next, I cannot explain.",
+    "engine": "ready"
+   },
+   {
+    "id": "series_count",
+    "what": "Mention series number",
+    "example": "Target number <n> done. Follow for number <n+1>.",
+    "engine": "ready"
+   },
+   {
+    "id": "fact_card",
+    "what": "End with one bonus fact",
+    "example": "Bonus: <fact>. Next target: <teaser>.",
+    "engine": "ready"
+   },
+   {
+    "id": "orbi_sign_off",
+    "what": "Orbi sign-off line",
+    "example": "Orbi out. Next target soon.",
+    "engine": "ready"
+   },
+   {
+    "id": "pinned_question",
+    "what": "Question left for comments",
+    "example": "Pinned question: <question>?",
+    "engine": "ready"
+   }
+  ],
+  "sound_cues": [
+   {
+    "id": "whoosh_hop",
+    "what": "Whoosh on camera hop",
+    "example": "Short whoosh at transition.",
+    "engine": "new"
+   },
+   {
+    "id": "ping_tag",
+    "what": "Ping on label pop",
+    "example": "Soft ping when tag appears.",
+    "engine": "new"
+   },
+   {
+    "id": "bass_hit",
+    "what": "Low bass hit on big number",
+    "example": "Boom on scale reveal.",
+    "engine": "new"
+   },
+   {
+    "id": "riser",
+    "what": "Riser before reveal",
+    "example": "Rising tone into answer.",
+    "engine": "new"
+   },
+   {
+    "id": "record_scratch",
+    "what": "Record scratch on myth flip",
+    "example": "Scratch at contradiction.",
+    "engine": "new"
+   },
+   {
+    "id": "sonar_blip",
+    "what": "Sonar blip for scan",
+    "example": "Blip during scan.",
+    "engine": "new"
+   },
+   {
+    "id": "typing_chirps",
+    "what": "Robot chirps while Orbi speaks",
+    "example": "Chirps under narration.",
+    "engine": "new"
+   },
+   {
+    "id": "silence_drop",
+    "what": "Music drops to silence before twist",
+    "example": "Brief silence.",
+    "engine": "new"
+   },
+   {
+    "id": "ambient_bed",
+    "what": "Place-matched ambient bed",
+    "example": "Wind, waves or hum, low volume.",
+    "engine": "new"
+   },
+   {
+    "id": "outro_jingle",
+    "what": "Short ending jingle",
+    "example": "Jingle with Next target.",
+    "engine": "new"
+   }
+  ]
+ }
+}

@@ -51,23 +51,29 @@
   "title": "Nazca Lines",
   "feature_km": 7,
   "hooks": [
-   {"text": "These desert lines add up to over eight hundred miles, yet they're inches deep.", "title": "800 MILES OF LINES"},
+   {"text": "Who scratched over eight hundred miles of lines into this desert?", "title": "800 MILES OF LINES"},
    {"text": "These desert lines are only inches deep, and some date to five hundred BC.", "title": "FROM 500 BC"},
    {"text": "Lines and animals cover about fifty square kilometers of this desert in Peru.", "title": "50 SQUARE KM"}
   ],
   "beats": [
-   {"text": "These desert lines add up to over eight hundred miles, yet they're inches deep.", "shot": "feature", "overlay": null, "react": null, "photo": null},
-   {"text": "So who made lines this long, and how?", "shot": "close", "overlay": {"type": "highlight", "on": "lines"}, "react": null, "photo": null},
-   {"text": "In this century, drones found several hundred new figures.", "shot": "close", "overlay": {"type": "stamp", "on": "figures", "label": "DRONES FOUND NEW FIGURES"}, "react": {"expr": "surprised", "on": "drones"}, "photo": null},
-   {"text": "Most run straight, but some draw animals and plants.", "shot": "close", "overlay": {"type": "tag", "on": "animals", "label": "ANIMALS AND PLANTS"}, "react": null, "photo": {"index": 5, "label": "THE MONKEY", "on": "animals"}},
-   {"text": "Together they cover about fifty square kilometers.", "shot": "wide", "overlay": {"type": "stamp", "on": "kilometers", "label": "50 SQUARE KILOMETERS"}, "react": null, "photo": null},
-   {"text": "People made them by removing the reddish-brown pebbles on top.", "shot": "close", "overlay": null, "react": null, "photo": {"index": 1, "label": "NAZCA LINES", "on": "pebbles"}},
-   {"text": "That exposed the yellow-grey soil underneath.", "shot": "close", "overlay": {"type": "tag", "on": "soil", "label": "YELLOW-GREY SOIL"}, "react": null, "photo": null},
-   {"text": "Archaeologists believe there are still more to be found.", "shot": "wide", "overlay": null, "react": null, "photo": null},
-   {"text": "Next target: a classified Air Force base near Las Vegas. Follow for the next scan. Orbi out.", "shot": "space", "overlay": null, "react": {"expr": "happy", "on": "Orbi"}, "photo": null}
+   {"text": "Who scratched over eight hundred miles of lines into this desert?", "shot": "feature", "overlay": null, "react": null, "photo": null},
+   {"text": "They're only inches deep. How have they lasted?", "shot": "close", "overlay": null, "react": null, "photo": null},
+   {"text": "This century, drones found several hundred new figures.", "shot": "close", "overlay": {"type": "stamp", "on": "figures", "label": "NEW FIGURES BY DRONE"}, "react": {"expr": "surprised", "on": "drones"}, "photo": null},
+   {"text": "Most run straight. Others draw animals, like the one known as the Monkey.", "shot": "close", "overlay": {"type": "tag", "on": "Monkey", "label": "THE MONKEY"}, "react": null, "photo": {"index": 5, "label": "THE MONKEY", "on": "Monkey"}},
+   {"text": "Together they cover about seven thousand football pitches of ground.", "shot": "wide", "overlay": {"type": "stamp", "on": "football", "label": "7,000 FOOTBALL PITCHES"}, "react": null, "photo": null},
+   {"text": "Over fifteen hundred years ago, people lifted off the reddish-brown surface pebbles.", "shot": "close", "overlay": {"type": "stamp", "on": "ago", "label": "1,500 YEARS AGO"}, "react": null, "photo": {"index": 1, "label": "NAZCA LINES", "on": "pebbles"}},
+   {"text": "That bared the yellow-grey ground underneath, and the lines appeared.", "shot": "close", "overlay": {"type": "tag", "on": "ground", "label": "YELLOW-GREY GROUND"}, "react": null, "photo": null},
+   {"text": "Dry, windless, stable weather has preserved them ever since.", "shot": "wide", "overlay": null, "react": null, "photo": null},
+   {"text": "Next target: a Nevada base where all research is classified. Follow for the next scan. Orbi out.", "shot": "space", "overlay": null, "react": {"expr": "happy", "on": "Orbi"}, "photo": null}
   ],
   "description": "The Nazca lines are geoglyphs in the soil of the Nazca Desert in southern Peru, made between 500 BC and 500 AD by removing reddish-brown pebbles to expose lighter subsoil. Their combined length is more than 1,300 km, and drones have found several hundred new figures this century.",
-  "hashtags": ["#NazcaLines", "#Peru", "#Geoglyphs", "#Archaeology", "#SatelliteView"],
+  "hashtags": [
+   "#NazcaLines",
+   "#Peru",
+   "#Geoglyphs",
+   "#Archaeology",
+   "#SatelliteView"
+  ],
   "hook_title": "800 MILES OF LINES"
  }
 }

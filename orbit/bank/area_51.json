@@ -51,117 +51,20 @@
   "title": "Area 51",
   "feature_km": 6,
   "hooks": [
-   {
-    "text": "This Nevada airfield was only publicly acknowledged in two thousand thirteen.",
-    "title": "ACKNOWLEDGED IN 2013"
-   },
-   {
-    "text": "An airfield eighty three miles from Las Vegas, where all research is classified.",
-    "title": "83 MILES FROM VEGAS"
-   },
-   {
-    "text": "Confirming this Nevada airfield took a records request filed in two thousand five.",
-    "title": "2005 RECORDS REQUEST"
-   }
+   {"text": "You can zoom onto this airfield. The CIA confirmed it in two thousand thirteen.", "title": "CONFIRMED IN 2013"},
+   {"text": "An airfield eighty three miles from Las Vegas, where all research is classified.", "title": "83 MILES FROM VEGAS"},
+   {"text": "Confirming this Nevada airfield took a records request filed in two thousand five.", "title": "2005 RECORDS REQUEST"}
   ],
   "beats": [
-   {
-    "text": "This Nevada airfield was only publicly acknowledged in two thousand thirteen.",
-    "shot": "feature",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "So what is it really for?",
-    "shot": "feature",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Its official name is Homey Airport.",
-    "shot": "close",
-    "overlay": {
-     "type": "tag",
-     "on": "Homey",
-     "label": "HOMEY AIRPORT"
-    },
-    "react": {
-     "expr": "happy",
-     "on": "Homey"
-    },
-    "photo": null
-   },
-   {
-    "text": "From orbit, it sits beside a salt flat called Groom Lake.",
-    "shot": "feature",
-    "overlay": {
-     "type": "tag",
-     "on": "Groom",
-     "label": "GROOM LAKE"
-    },
-    "react": null,
-    "photo": {
-     "index": 4,
-     "label": "GROOM LAKE",
-     "on": "flat"
-    }
-   },
-   {
-    "text": "All its research is Top Secret, which made it central to UFO folklore.",
-    "shot": "close",
-    "overlay": {
-     "type": "stamp",
-     "on": "Secret",
-     "label": "TOP SECRET"
-    },
-    "react": {
-     "expr": "surprised",
-     "on": "UFO"
-    },
-    "photo": null
-   },
-   {
-    "text": "In nineteen fifty five, the Air Force and the CIA acquired it.",
-    "shot": "wide",
-    "overlay": {
-     "type": "stamp",
-     "on": "acquired",
-     "label": "ACQUIRED IN 1955"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Its main job was flight testing the Lockheed U-2.",
-    "shot": "close",
-    "overlay": {
-     "type": "tag",
-     "on": "Lockheed",
-     "label": "LOCKHEED U-2"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Today it's thought to help test experimental aircraft and weapons.",
-    "shot": "close",
-    "overlay": null,
-    "react": null,
-    "photo": {
-     "index": 5,
-     "label": "SECURITY VEHICLE",
-     "on": "experimental"
-    }
-   },
-   {
-    "text": "Next target: a pink lake off Australia. Follow for the next scan. Orbi out.",
-    "shot": "space",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   }
+   {"text": "You can zoom onto this airfield. The CIA confirmed it in two thousand thirteen.", "shot": "feature", "overlay": null, "react": null, "photo": null},
+   {"text": "What were they guarding for fifty-eight years?", "shot": "feature", "overlay": null, "react": null, "photo": null},
+   {"text": "Its official name is Homey Airport.", "shot": "close", "overlay": {"type": "tag", "on": "Homey", "label": "HOMEY AIRPORT"}, "react": {"expr": "happy", "on": "Homey"}, "photo": {"index": 4, "label": "GROOM LAKE, NEVADA", "on": "Airport"}},
+   {"text": "Its research is Top Secret, and UFO folklore grew around it.", "shot": "close", "overlay": {"type": "stamp", "on": "Secret", "label": "TOP SECRET"}, "react": {"expr": "surprised", "on": "UFO"}, "photo": null},
+   {"text": "Cameras keep an eye on the road in.", "shot": "close", "overlay": null, "react": null, "photo": {"index": 1, "label": "CAMERA ON THE ROAD", "on": "Cameras"}},
+   {"text": "In nineteen fifty-five, the CIA and Air Force came to test the U-2 spy plane.", "shot": "wide", "overlay": {"type": "tag", "on": "spy", "label": "SPY PLANE TESTS"}, "react": null, "photo": null},
+   {"text": "It's still thought to test experimental aircraft and weapons.", "shot": "close", "overlay": null, "react": null, "photo": {"index": 5, "label": "SECURITY VEHICLE", "on": "experimental"}},
+   {"text": "Officially, the Air Force calls it an open training range.", "shot": "feature", "overlay": {"type": "tag", "on": "range", "label": "OPEN TRAINING RANGE"}, "react": null, "photo": null},
+   {"text": "Next target: a lake that stays pink even in a container. Follow for the next scan. Orbi out.", "shot": "space", "overlay": null, "react": {"expr": "happy", "on": "Orbi"}, "photo": null}
   ],
   "description": "Area 51 is a highly classified US Air Force facility in southern Nevada, officially called Homey Airport or Groom Lake. The USAF and CIA acquired it in 1955 mainly for Lockheed U-2 flight tests, and the CIA publicly acknowledged it in 2013.",
   "hashtags": [
@@ -171,6 +74,6 @@
    "#SatelliteView",
    "#CurioOrbit"
   ],
-  "hook_title": "ACKNOWLEDGED IN 2013"
+  "hook_title": "CONFIRMED IN 2013"
  }
 }

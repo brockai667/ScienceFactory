@@ -14,109 +14,20 @@
   "title": "Lake Hillier",
   "feature_km": 0.6,
   "hooks": [
-   {
-    "text": "This lake is pink, all six hundred meters of it.",
-    "title": "600 M PINK LAKE"
-   },
-   {
-    "text": "A pink lake six hundred meters long, one thin shore from the ocean.",
-    "title": "600 M LAKE"
-   },
-   {
-    "text": "Why is this six hundred meter lake on an Australian island pink?",
-    "title": "600 M ISLAND LAKE"
-   }
+   {"text": "Six hundred meters of pink water, and the ocean is just past the sand.", "title": "600 M PINK LAKE"},
+   {"text": "A pink lake six hundred meters long, one thin shore from the ocean.", "title": "600 M LAKE"},
+   {"text": "Why is this six hundred meter lake on an Australian island pink?", "title": "600 M ISLAND LAKE"}
   ],
   "beats": [
-   {
-    "text": "This lake is pink, all six hundred meters of it.",
-    "shot": "feature",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "So what turns a salty lake pink?",
-    "shot": "close",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Pour its water into a container, and it stays pink.",
-    "shot": "close",
-    "overlay": {
-     "type": "stamp",
-     "on": "stays",
-     "label": "STAYS PINK"
-    },
-    "react": {
-     "expr": "surprised",
-     "on": "stays"
-    },
-    "photo": null
-   },
-   {
-    "text": "It sits on the edge of Middle Island, off Western Australia.",
-    "shot": "feature",
-    "overlay": {
-     "type": "tag",
-     "on": "Middle",
-     "label": "MIDDLE ISLAND"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "A long, thin shore divides it from the Southern Ocean.",
-    "shot": "feature",
-    "overlay": {
-     "type": "ruler",
-     "on": "shore",
-     "label": "600 M"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "The pink is believed to come from an organism, Dunaliella salina.",
-    "shot": "close",
-    "overlay": {
-     "type": "tag",
-     "on": "Dunaliella",
-     "label": "DUNALIELLA SALINA"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "The Extreme Microbiome Project found its DNA in the lake.",
-    "shot": "close",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Around it grows dense woodland of paperbark and eucalyptus trees.",
-    "shot": "wide",
-    "overlay": {
-     "type": "tag",
-     "on": "paperbark",
-     "label": "PAPERBARK WOODLAND"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Next target: Africa's third lowest place. Follow for the next scan. Orbi out.",
-    "shot": "space",
-    "overlay": null,
-    "react": {
-     "expr": "happy",
-     "on": "Orbi"
-    },
-    "photo": null
-   }
+   {"text": "Six hundred meters of pink water, and the ocean is just past the sand.", "shot": "feature", "overlay": null, "react": null, "photo": null},
+   {"text": "Paint? Pollution? What turns a salt lake pink?", "shot": "close", "overlay": {"type": "highlight", "on": "lake"}, "react": null, "photo": null},
+   {"text": "Scoop it into a container, and it stays pink.", "shot": "close", "overlay": {"type": "stamp", "on": "stays", "label": "STAYS PINK"}, "react": {"expr": "surprised", "on": "stays"}, "photo": null},
+   {"text": "End to end, it's almost two Eiffel Towers long.", "shot": "feature", "overlay": {"type": "ruler", "on": "Eiffel", "label": "600 M"}, "react": null, "photo": null},
+   {"text": "It sits on Middle Island, off Western Australia.", "shot": "feature", "overlay": {"type": "tag", "on": "Middle", "label": "MIDDLE ISLAND"}, "react": null, "photo": null},
+   {"text": "The color is believed to come from a tiny organism, Dunaliella salina.", "shot": "close", "overlay": {"type": "tag", "on": "Dunaliella", "label": "DUNALIELLA SALINA"}, "react": null, "photo": null},
+   {"text": "Scientists found its DNA here, with salt-loving bacteria.", "shot": "close", "overlay": null, "react": null, "photo": null},
+   {"text": "A dense woodland of paperbark and eucalyptus rings the lake.", "shot": "wide", "overlay": null, "react": null, "photo": null},
+   {"text": "Next target: an African valley below sea level. Follow for the next scan. Orbi out.", "shot": "space", "overlay": null, "react": {"expr": "happy", "on": "Orbi"}, "photo": null}
   ],
   "description": "Lake Hillier is a saline lake about 600 metres long on Middle Island, off the south coast of Western Australia, and its pink colour stays the same even in a container. The colour is believed to come from the organism Dunaliella salina, which the Extreme Microbiome Project found in a metagenomic analysis of the lake.",
   "hashtags": [
