@@ -4,7 +4,7 @@
   "feature_km": 7,
   "hooks": [
    {
-    "text": "These desert lines add up to over eight hundred miles, yet they're inches deep.",
+    "text": "Who scratched over eight hundred miles of lines into this desert?",
     "title": "800 MILES OF LINES"
    },
    {
@@ -18,29 +18,26 @@
   ],
   "beats": [
    {
-    "text": "These desert lines add up to over eight hundred miles, yet they're inches deep.",
+    "text": "Who scratched over eight hundred miles of lines into this desert?",
     "shot": "feature",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "So who made lines this long, and how?",
+    "text": "They're only inches deep. How have they lasted?",
     "shot": "close",
-    "overlay": {
-     "type": "highlight",
-     "on": "lines"
-    },
+    "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "In this century, drones found several hundred new figures.",
+    "text": "This century, drones found several hundred new figures.",
     "shot": "close",
     "overlay": {
      "type": "stamp",
      "on": "figures",
-     "label": "DRONES FOUND NEW FIGURES"
+     "label": "NEW FIGURES BY DRONE"
     },
     "react": {
      "expr": "surprised",
@@ -49,35 +46,39 @@
     "photo": null
    },
    {
-    "text": "Most run straight, but some draw animals and plants.",
+    "text": "Most run straight. Others draw animals, like the one known as the Monkey.",
     "shot": "close",
     "overlay": {
      "type": "tag",
-     "on": "animals",
-     "label": "ANIMALS AND PLANTS"
+     "on": "Monkey",
+     "label": "THE MONKEY"
     },
     "react": null,
     "photo": {
      "index": 5,
      "label": "THE MONKEY",
-     "on": "animals"
+     "on": "Monkey"
     }
    },
    {
-    "text": "Together they cover about fifty square kilometers.",
+    "text": "Together they cover about seven thousand football pitches of ground.",
     "shot": "wide",
     "overlay": {
      "type": "stamp",
-     "on": "kilometers",
-     "label": "50 SQUARE KILOMETERS"
+     "on": "football",
+     "label": "7,000 FOOTBALL PITCHES"
     },
     "react": null,
     "photo": null
    },
    {
-    "text": "People made them by removing the reddish-brown pebbles on top.",
+    "text": "Over fifteen hundred years ago, people lifted off the reddish-brown surface pebbles.",
     "shot": "close",
-    "overlay": null,
+    "overlay": {
+     "type": "stamp",
+     "on": "ago",
+     "label": "1,500 YEARS AGO"
+    },
     "react": null,
     "photo": {
      "index": 1,
@@ -86,25 +87,25 @@
     }
    },
    {
-    "text": "That exposed the yellow-grey soil underneath.",
+    "text": "That bared the yellow-grey ground underneath, and the lines appeared.",
     "shot": "close",
     "overlay": {
      "type": "tag",
-     "on": "soil",
-     "label": "YELLOW-GREY SOIL"
+     "on": "ground",
+     "label": "YELLOW-GREY GROUND"
     },
     "react": null,
     "photo": null
    },
    {
-    "text": "Archaeologists believe there are still more to be found.",
+    "text": "Dry, windless, stable weather has preserved them ever since.",
     "shot": "wide",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "Next target: a classified Air Force base near Las Vegas. Follow for the next scan. Orbi out.",
+    "text": "Next target: a Nevada base where all research is classified. Follow for the next scan. Orbi out.",
     "shot": "space",
     "overlay": null,
     "react": {

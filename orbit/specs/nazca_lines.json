@@ -12,7 +12,7 @@
  "feature_km": 7.0,
  "beats": [
   {
-   "text": "These desert lines add up to over eight hundred miles, yet they're inches deep.",
+   "text": "Who scratched over eight hundred miles of lines into this desert?",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
@@ -21,31 +21,32 @@
    "globe": true
   },
   {
-   "text": "So who made lines this long, and how?",
+   "text": "They're only inches deep. How have they lasted?",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
-    "z": 13.84
-   },
-   "highlight": {
-    "on": "lines"
+    "z": 14.74
    },
    "fx": [
     {
      "kind": "ask",
-     "on": "who"
+     "on": "how"
+    },
+    {
+     "kind": "depth",
+     "on": "they're"
     }
    ]
   },
   {
-   "text": "In this century, drones found several hundred new figures.",
+   "text": "This century, drones found several hundred new figures.",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
     "z": 14.74
    },
    "stamp": {
-    "label": "DRONES FOUND NEW FIGURES",
+    "label": "NEW FIGURES BY DRONE",
     "on": "figures"
    },
    "react": {
@@ -55,7 +56,7 @@
    }
   },
   {
-   "text": "Most run straight, but some draw animals and plants.",
+   "text": "Most run straight. Others draw animals, like the one known as the Monkey.",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
@@ -64,41 +65,51 @@
    "tag": {
     "lat": -14.7101,
     "lon": -75.1635,
-    "label": "ANIMALS AND PLANTS",
-    "on": "animals"
+    "label": "THE MONKEY",
+    "on": "Monkey"
    },
+   "fx": [
+    {
+     "kind": "speech",
+     "on": "known"
+    }
+   ],
    "photo": {
     "file": "photos/nazca_lines/p5.jpg",
     "label": "THE MONKEY",
     "credit": "Diego Delso, CC BY-SA 4.0",
-    "on": "animals",
+    "on": "Monkey",
     "dur": 2.8
    }
   },
   {
-   "text": "Together they cover about fifty square kilometers.",
+   "text": "Together they cover about seven thousand football pitches of ground.",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
     "z": 12.04
    },
    "stamp": {
-    "label": "50 SQUARE KILOMETERS",
-    "on": "kilometers"
+    "label": "7,000 FOOTBALL PITCHES",
+    "on": "football"
    }
   },
   {
-   "text": "People made them by removing the reddish-brown pebbles on top.",
+   "text": "Over fifteen hundred years ago, people lifted off the reddish-brown surface pebbles.",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
     "z": 14.74
    },
+   "stamp": {
+    "label": "1,500 YEARS AGO",
+    "on": "ago"
+   },
    "fx": [
     {
-     "kind": "scan",
-     "on": null,
-     "fallback": true
+     "kind": "rewind",
+     "on": "over",
+     "n": 1500
     }
    ],
    "photo": {
@@ -110,7 +121,7 @@
    }
   },
   {
-   "text": "That exposed the yellow-grey soil underneath.",
+   "text": "That bared the yellow-grey ground underneath, and the lines appeared.",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
@@ -119,12 +130,12 @@
    "tag": {
     "lat": -14.7101,
     "lon": -75.1635,
-    "label": "YELLOW GREY SOIL",
-    "on": "soil"
+    "label": "YELLOW GREY GROUND",
+    "on": "ground"
    }
   },
   {
-   "text": "Archaeologists believe there are still more to be found.",
+   "text": "Dry, windless, stable weather has preserved them ever since.",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
@@ -132,14 +143,14 @@
    },
    "fx": [
     {
-     "kind": "pulse",
+     "kind": "scan",
      "on": null,
      "fallback": true
     }
    ]
   },
   {
-   "text": "Next target: a classified Air Force base near Las Vegas. Follow for the next scan. Orbi out.",
+   "text": "Next target: a Nevada base where all research is classified. Follow for the next scan. Orbi out.",
    "cam": {
     "lat": 37.23333333,
     "lon": -115.80833333,
