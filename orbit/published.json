@@ -9,38 +9,5 @@
   "due": "2026-11-02T09:00:00.000Z",
   "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_great_blue_hole.mp4",
   "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_great_blue_hole_tiktok.mp4"
- },
- "vredefort_impact_structure": {
-  "no": 2,
-  "services": [
-   "tiktok",
-   "youtube",
-   "instagram"
-  ],
-  "due": "2026-11-05T09:00:00.000Z",
-  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_vredefort_impact_structure.mp4",
-  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_vredefort_impact_structure_tiktok.mp4"
- },
- "racetrack_playa": {
-  "no": 3,
-  "services": [
-   "tiktok",
-   "youtube",
-   "instagram"
-  ],
-  "due": "2026-11-06T09:00:00.000Z",
-  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_racetrack_playa.mp4",
-  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_racetrack_playa_tiktok.mp4"
- },
- "nazca_lines": {
-  "no": 4,
-  "services": [
-   "tiktok",
-   "youtube",
-   "instagram"
-  ],
-  "due": "2026-11-07T09:00:00.000Z",
-  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_nazca_lines.mp4",
-  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_nazca_lines_tiktok.mp4"
  }
 }
