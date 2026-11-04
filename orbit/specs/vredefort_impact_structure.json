@@ -48,6 +48,13 @@
     "label": "OVER 2 BILLION YEARS",
     "on": "old"
    },
+   "fx": [
+    {
+     "kind": "rewind",
+     "on": "it",
+     "n": 2000000000
+    }
+   ],
    "react": {
     "expr": "happy",
     "on": "old",
@@ -439,6 +446,9 @@
    "stamp": {
     "label": "UP TO 300 KILOMETERS",
     "on": "crater"
+   },
+   "impact": {
+    "on": "hit"
    },
    "react": {
     "expr": "surprised",
