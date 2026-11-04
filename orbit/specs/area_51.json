@@ -157,8 +157,8 @@
   {
    "text": "Next target: a lake that stays pink even in a container. Follow for the next scan. Orbi out.",
    "cam": {
-    "lat": -34.09583333,
-    "lon": 123.20277778,
+    "lat": -34.0946,
+    "lon": 123.2028,
     "z": 13.0,
     "hop": true
    },
