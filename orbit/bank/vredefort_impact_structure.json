@@ -43,354 +43,7 @@
  "lon": 27.5,
  "located": false,
  "km": 110,
- "scale": {
-  "city": {
-   "name": "LUXEMBOURG",
-   "area_km2": 2572.3,
-   "span_km": 81.3,
-   "poly_km": [
-    [
-     -25.12,
-     8.379
-    ],
-    [
-     -21.682,
-     6.268
-    ],
-    [
-     -23.811,
-     5.614
-    ],
-    [
-     -23.321,
-     3.895
-    ],
-    [
-     -24.398,
-     3.599
-    ],
-    [
-     -23.479,
-     3.05
-    ],
-    [
-     -24.86,
-     1.384
-    ],
-    [
-     -23.87,
-     -3.068
-    ],
-    [
-     -21.194,
-     -2.808
-    ],
-    [
-     -18.177,
-     -8.205
-    ],
-    [
-     -18.613,
-     -10.79
-    ],
-    [
-     -15.838,
-     -10.417
-    ],
-    [
-     -14.254,
-     -12.366
-    ],
-    [
-     -15.805,
-     -16.039
-    ],
-    [
-     -12.553,
-     -17.545
-    ],
-    [
-     -12.765,
-     -20.132
-    ],
-    [
-     -17.071,
-     -24.901
-    ],
-    [
-     -15.276,
-     -27.289
-    ],
-    [
-     -19.887,
-     -30.986
-    ],
-    [
-     -17.839,
-     -30.801
-    ],
-    [
-     -17.912,
-     -33.302
-    ],
-    [
-     -15.742,
-     -35.519
-    ],
-    [
-     -8.14,
-     -36.459
-    ],
-    [
-     -7.432,
-     -40.92
-    ],
-    [
-     -3.137,
-     -41.275
-    ],
-    [
-     -1.964,
-     -39.22
-    ],
-    [
-     1.1,
-     -40.718
-    ],
-    [
-     3.058,
-     -36.181
-    ],
-    [
-     11.147,
-     -33.858
-    ],
-    [
-     20.354,
-     -39.947
-    ],
-    [
-     19.553,
-     -32.128
-    ],
-    [
-     21.394,
-     -29.245
-    ],
-    [
-     19.625,
-     -27.358
-    ],
-    [
-     21.323,
-     -27.008
-    ],
-    [
-     20.934,
-     -25.246
-    ],
-    [
-     24.193,
-     -22.169
-    ],
-    [
-     25.554,
-     -18.239
-    ],
-    [
-     24.824,
-     -16.852
-    ],
-    [
-     30.216,
-     -12.032
-    ],
-    [
-     29.487,
-     -10.571
-    ],
-    [
-     31.043,
-     -10.801
-    ],
-    [
-     29.829,
-     -7.657
-    ],
-    [
-     31.127,
-     -6.554
-    ],
-    [
-     30.213,
-     -3.471
-    ],
-    [
-     31.741,
-     -1.112
-    ],
-    [
-     30.604,
-     -2.065
-    ],
-    [
-     27.731,
-     0.181
-    ],
-    [
-     24.737,
-     -1.145
-    ],
-    [
-     20.013,
-     3.297
-    ],
-    [
-     17.322,
-     1.683
-    ],
-    [
-     16.219,
-     5.4
-    ],
-    [
-     10.656,
-     8.739
-    ],
-    [
-     9.531,
-     11.306
-    ],
-    [
-     9.944,
-     14.256
-    ],
-    [
-     8.104,
-     14.075
-    ],
-    [
-     7.535,
-     16.408
-    ],
-    [
-     6.658,
-     14.695
-    ],
-    [
-     6.273,
-     18.057
-    ],
-    [
-     3.781,
-     19.599
-    ],
-    [
-     4.627,
-     20.774
-    ],
-    [
-     3.178,
-     21.821
-    ],
-    [
-     4.357,
-     22.279
-    ],
-    [
-     1.96,
-     26.317
-    ],
-    [
-     3.155,
-     27.89
-    ],
-    [
-     2.21,
-     28.022
-    ],
-    [
-     3.783,
-     34.0
-    ],
-    [
-     1.911,
-     34.831
-    ],
-    [
-     2.889,
-     36.374
-    ],
-    [
-     1.221,
-     38.633
-    ],
-    [
-     -1.58,
-     36.731
-    ],
-    [
-     -3.746,
-     37.739
-    ],
-    [
-     -4.357,
-     39.988
-    ],
-    [
-     -8.746,
-     38.863
-    ],
-    [
-     -8.914,
-     34.3
-    ],
-    [
-     -13.656,
-     32.177
-    ],
-    [
-     -14.241,
-     28.526
-    ],
-    [
-     -16.606,
-     26.286
-    ],
-    [
-     -15.479,
-     24.854
-    ],
-    [
-     -16.201,
-     22.968
-    ],
-    [
-     -19.138,
-     21.192
-    ],
-    [
-     -17.809,
-     17.667
-    ],
-    [
-     -22.295,
-     15.441
-    ],
-    [
-     -23.086,
-     10.462
-    ],
-    [
-     -25.12,
-     8.379
-    ]
-   ]
-  },
-  "say": "Luxembourg",
-  "on": "Luxembourg",
-  "fact": "Luxembourg would fit inside it"
- },
+ "scale": null,
  "shape": null,
  "user": "Place: Vredefort impact structure\nCoordinates: -27.0000, 27.5000\nSize of the main feature from the article: 110 km (use it as feature_km).\nComputed scale fact (true, use it in beat 4 or 5 with a scale overlay on the word 'Luxembourg'): Luxembourg would fit inside it.\nBeat 9 must be exactly: \"Next target: <tease of at most 10 words, one true fact from the next-topic text, without naming the place>. Follow for the next scan. Orbi out.\"\nNext topic: Racetrack Playa. The Racetrack Playa, or The Racetrack, is a dry lake feature with sailing stones that inscribe linear \"racetrack\" imprints. It is located above the northwestern side of Death Valley, in Death Valley National Park, Inyo County, California, U.S.\n\n\nGeography\nThe Racetrack Playa is approximately 3 miles long and 1.2 miles wide and is located at a height of 3708 feet in a north–south valley east of the Panamint Range within Death Valley National Park. It receives only 3 inches of annual precipitation\n\nPhotos:\n0: Vredefort Dome, Free State/North West provinces, South Africa. Image #STS51I-33-56AA.\n1: Vredefort Dome - World Heritage Site\n2: Vredefort Dome - World Heritage Site\n3: Map of South Africa showing the location of the Vredefort impact crater and the probable location of its original rim.\n4: Vredefort Dome (South Africa)\n5: Vredefort Dome (South Africa)\n\nArticle:\nThe Vredefort impact structure is one of the largest impact structures on Earth. The crater, which has since been worn away, has been estimated at 170–300 kilometres (110–190 mi) across when it was formed, the latter estimate suggesting the initial crater was larger than Chicxulub crater, the largest mostly intact impact crater on Earth. \nThe remaining structure, comprising the deformed underlying bedrock, is located in present-day Free State province of South Africa. It is named after the town of Vredefort, near its centre. The structure's central uplift is known as the Vredefort Dome, which is around 100–120 kilometres (62–75 mi) in diameter. The impact structure was formed during the Paleoproterozoic Era, 2.023 billion  (± 4 million) years ago. It is among the oldest known impact structures on Earth, after Yarrabubba (2.23 billion years old) and possibly Miralga.\nThe structure's extraterrestrial origin was established in 1961 after the location of shatter cones by American geologists Robert S. Dietz and Robert B. Hargraves, though an impact was proposed as early as 1937 by Claude C. Albritton and John D. Boon. In 2005, the Vredefort Dome was added to the list of UNESCO World Heritage...",
  "side": "\n\nComputed scale fact (true): Luxembourg would fit inside it.\n\nNext-topic text (only for the 'Next target' line): The Racetrack Playa, or The Racetrack, is a dry lake feature with sailing stones that inscribe linear \"racetrack\" imprints. It is located above the northwestern side of Death Valley, in Death Valley National Park, Inyo County, California, U.S.\n\n\nGeography\nThe Racetrack Playa is approximately 3 miles long and 1.2 miles wide and is located at a height of 3708 feet in a north–south valley east of the Panamint Range within Death Valley National Park. It receives only 3 inches of annual precipitation",
@@ -398,20 +51,112 @@
   "title": "Vredefort Dome",
   "feature_km": 110,
   "hooks": [
-   {"text": "Over two billion years old, and this dome is only the middle of something.", "title": "2 BILLION YEARS"},
-   {"text": "A rock dome one hundred ten kilometers wide, and it's only the middle.", "title": "110 KM DOME"},
-   {"text": "Why does a dome one hundred ten kilometers wide sit in South Africa?", "title": "110 KM WIDE"}
+   {
+    "text": "One hundred ten kilometers of hills, and they all circle one small town.",
+    "title": "110 KM OF HILLS"
+   },
+   {
+    "text": "Over two billion years old, and this dome is only the middle of something.",
+    "title": "2 BILLION YEARS"
+   },
+   {
+    "text": "A rock dome one hundred ten kilometers wide, and it's only the middle.",
+    "title": "110 KM DOME"
+   }
   ],
   "beats": [
-   {"text": "Over two billion years old, and this dome is only the middle of something.", "shot": "feature", "overlay": null, "react": null, "photo": null},
-   {"text": "The middle of what, exactly?", "shot": "feature", "overlay": {"type": "ruler", "on": "middle", "label": "110 KM"}, "react": null, "photo": null},
-   {"text": "Luxembourg would fit inside just this middle part.", "shot": "feature", "overlay": {"type": "scale", "on": "Luxembourg"}, "react": {"expr": "happy", "on": "Luxembourg"}, "photo": null},
-   {"text": "Whatever surrounded it wore away. Only rings of bent bedrock remain.", "shot": "wide", "overlay": null, "react": null, "photo": {"index": 0, "label": "VREDEFORT DOME", "on": "rings"}},
-   {"text": "Something from space hit here, leaving a crater up to three hundred kilometers wide.", "shot": "wide", "overlay": {"type": "stamp", "on": "crater", "label": "UP TO 300 KILOMETERS"}, "react": {"expr": "surprised", "on": "space"}, "photo": null},
-   {"text": "In nineteen sixty-one, geologists found the proof: shatter cones.", "shot": "close", "overlay": {"type": "tag", "on": "shatter", "label": "SHATTER CONES"}, "react": null, "photo": null},
-   {"text": "Only Yarrabubba, in Australia, is a clearly older impact scar.", "shot": "feature", "overlay": null, "react": null, "photo": null},
-   {"text": "Since two thousand five, it's a UNESCO World Heritage Site.", "shot": "close", "overlay": null, "react": null, "photo": {"index": 1, "label": "WORLD HERITAGE SITE", "on": "UNESCO"}},
-   {"text": "Next target: rocks that crawl across a dry lake. Follow for the next scan. Orbi out.", "shot": "space", "overlay": null, "react": {"expr": "happy", "on": "Orbi"}, "photo": null}
+   {
+    "text": "One hundred ten kilometers of hills, and they all circle one small town.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "A volcano? A river? Or something much bigger?",
+    "shot": "feature",
+    "overlay": null,
+    "react": {
+     "expr": "surprised",
+     "on": "bigger"
+    },
+    "photo": null
+   },
+   {
+    "text": "Look closer. They are rings of bent rock around Vredefort.",
+    "shot": "wide",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Over two billion years ago, something from space hit right here.",
+    "shot": "wide",
+    "overlay": {
+     "type": "stamp",
+     "on": "space",
+     "label": "2 BILLION YEARS AGO"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "The crater it left was up to three hundred kilometers wide.",
+    "shot": "wide",
+    "overlay": {
+     "type": "stamp",
+     "on": "kilometers",
+     "label": "UP TO 300 KILOMETERS"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Time wore that crater away. This dome is what remains of its center.",
+    "shot": "feature",
+    "overlay": {
+     "type": "ruler",
+     "on": "dome",
+     "label": "110 KM"
+    },
+    "react": null,
+    "photo": {
+     "index": 0,
+     "label": "VREDEFORT DOME",
+     "on": "dome"
+    }
+   },
+   {
+    "text": "In nineteen sixty-one, geologists found the proof: shatter cones.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "shatter",
+     "label": "SHATTER CONES"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Only Yarrabubba, in Australia, is a clearly older impact scar.",
+    "shot": "feature",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "older"
+    },
+    "photo": null
+   },
+   {
+    "text": "Next target: rocks that crawl across a dry lake. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "Orbi"
+    },
+    "photo": null
+   }
   ],
   "description": "The Vredefort Dome in South Africa is the central uplift of an impact structure formed about 2.023 billion years ago, whose worn-away crater was estimated at 170 to 300 km across. It was added to UNESCO's World Heritage list in 2005.",
   "hashtags": [
@@ -421,6 +166,6 @@
    "#SatelliteView",
    "#EarthFromSpace"
   ],
-  "hook_title": "2 BILLION YEARS"
+  "hook_title": "110 KM OF HILLS"
  }
 }
