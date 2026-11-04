@@ -119,9 +119,11 @@
  {
   "slug": "socotra",
   "title": "Socotra",
-  "lat": 12.51,
-  "lon": 53.92,
-  "status": "todo"
+  "lat": 12.5075,
+  "lon": 53.9198,
+  "status": "written",
+  "located": true,
+  "no": 9
  },
  {
   "slug": "north_sentinel_island",

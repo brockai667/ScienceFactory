@@ -1,0 +1,515 @@
+{
+ "title": "Socotra",
+ "coords": "12.5075 N, 53.9198 E",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 12.5075,
+  "lon": 53.9198
+ },
+ "source": "https://en.wikipedia.org/wiki/Socotra",
+ "feature_km": 132.0,
+ "beats": [
+  {
+   "text": "One in three plants on this island grows nowhere else on Earth.",
+   "cam": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "z": 9.62
+   },
+   "globe": true
+  },
+  {
+   "text": "What cut them off from the rest of the world?",
+   "cam": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "z": 10.52
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "what"
+    }
+   ],
+   "photo": {
+    "file": "photos/socotra/p1.jpg",
+    "label": "DRAGON'S BLOOD TREE",
+    "credit": "Boris Khvostichenko(User:Boriskhv), CC BY-SA 4.0",
+    "on": "world",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "It has been described as the most alien-looking place on Earth.",
+   "cam": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "z": 9.62
+   },
+   "highlight": {
+    "on": "place"
+   },
+   "react": {
+    "expr": "happy",
+    "on": "place",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "Locally, it's known as Saqatri.",
+   "cam": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "z": 9.62
+   },
+   "tag": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "label": "KNOWN AS SAQATRI",
+    "on": "Saqatri"
+   },
+   "fx": [
+    {
+     "kind": "speech",
+     "on": "known"
+    }
+   ]
+  },
+  {
+   "text": "Lay Luxembourg over it, and the island still runs past both ends.",
+   "cam": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "z": 9.62
+   },
+   "scale": {
+    "name": "LUXEMBOURG",
+    "poly_km": [
+     [
+      -25.12,
+      8.379
+     ],
+     [
+      -21.682,
+      6.268
+     ],
+     [
+      -23.811,
+      5.614
+     ],
+     [
+      -23.321,
+      3.895
+     ],
+     [
+      -24.398,
+      3.599
+     ],
+     [
+      -23.479,
+      3.05
+     ],
+     [
+      -24.86,
+      1.384
+     ],
+     [
+      -23.87,
+      -3.068
+     ],
+     [
+      -21.194,
+      -2.808
+     ],
+     [
+      -18.177,
+      -8.205
+     ],
+     [
+      -18.613,
+      -10.79
+     ],
+     [
+      -15.838,
+      -10.417
+     ],
+     [
+      -14.254,
+      -12.366
+     ],
+     [
+      -15.805,
+      -16.039
+     ],
+     [
+      -12.553,
+      -17.545
+     ],
+     [
+      -12.765,
+      -20.132
+     ],
+     [
+      -17.071,
+      -24.901
+     ],
+     [
+      -15.276,
+      -27.289
+     ],
+     [
+      -19.887,
+      -30.986
+     ],
+     [
+      -17.839,
+      -30.801
+     ],
+     [
+      -17.912,
+      -33.302
+     ],
+     [
+      -15.742,
+      -35.519
+     ],
+     [
+      -8.14,
+      -36.459
+     ],
+     [
+      -7.432,
+      -40.92
+     ],
+     [
+      -3.137,
+      -41.275
+     ],
+     [
+      -1.964,
+      -39.22
+     ],
+     [
+      1.1,
+      -40.718
+     ],
+     [
+      3.058,
+      -36.181
+     ],
+     [
+      11.147,
+      -33.858
+     ],
+     [
+      20.354,
+      -39.947
+     ],
+     [
+      19.553,
+      -32.128
+     ],
+     [
+      21.394,
+      -29.245
+     ],
+     [
+      19.625,
+      -27.358
+     ],
+     [
+      21.323,
+      -27.008
+     ],
+     [
+      20.934,
+      -25.246
+     ],
+     [
+      24.193,
+      -22.169
+     ],
+     [
+      25.554,
+      -18.239
+     ],
+     [
+      24.824,
+      -16.852
+     ],
+     [
+      30.216,
+      -12.032
+     ],
+     [
+      29.487,
+      -10.571
+     ],
+     [
+      31.043,
+      -10.801
+     ],
+     [
+      29.829,
+      -7.657
+     ],
+     [
+      31.127,
+      -6.554
+     ],
+     [
+      30.213,
+      -3.471
+     ],
+     [
+      31.741,
+      -1.112
+     ],
+     [
+      30.604,
+      -2.065
+     ],
+     [
+      27.731,
+      0.181
+     ],
+     [
+      24.737,
+      -1.145
+     ],
+     [
+      20.013,
+      3.297
+     ],
+     [
+      17.322,
+      1.683
+     ],
+     [
+      16.219,
+      5.4
+     ],
+     [
+      10.656,
+      8.739
+     ],
+     [
+      9.531,
+      11.306
+     ],
+     [
+      9.944,
+      14.256
+     ],
+     [
+      8.104,
+      14.075
+     ],
+     [
+      7.535,
+      16.408
+     ],
+     [
+      6.658,
+      14.695
+     ],
+     [
+      6.273,
+      18.057
+     ],
+     [
+      3.781,
+      19.599
+     ],
+     [
+      4.627,
+      20.774
+     ],
+     [
+      3.178,
+      21.821
+     ],
+     [
+      4.357,
+      22.279
+     ],
+     [
+      1.96,
+      26.317
+     ],
+     [
+      3.155,
+      27.89
+     ],
+     [
+      2.21,
+      28.022
+     ],
+     [
+      3.783,
+      34.0
+     ],
+     [
+      1.911,
+      34.831
+     ],
+     [
+      2.889,
+      36.374
+     ],
+     [
+      1.221,
+      38.633
+     ],
+     [
+      -1.58,
+      36.731
+     ],
+     [
+      -3.746,
+      37.739
+     ],
+     [
+      -4.357,
+      39.988
+     ],
+     [
+      -8.746,
+      38.863
+     ],
+     [
+      -8.914,
+      34.3
+     ],
+     [
+      -13.656,
+      32.177
+     ],
+     [
+      -14.241,
+      28.526
+     ],
+     [
+      -16.606,
+      26.286
+     ],
+     [
+      -15.479,
+      24.854
+     ],
+     [
+      -16.201,
+      22.968
+     ],
+     [
+      -19.138,
+      21.192
+     ],
+     [
+      -17.809,
+      17.667
+     ],
+     [
+      -22.295,
+      15.441
+     ],
+     [
+      -23.086,
+      10.462
+     ],
+     [
+      -25.12,
+      8.379
+     ]
+    ],
+    "on": "Luxembourg"
+   }
+  },
+  {
+   "text": "It belongs to Yemen, but geologically it's a fragment of Africa.",
+   "cam": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "z": 9.62
+   },
+   "tag": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "label": "FRAGMENT OF AFRICA",
+    "on": "fragment"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "Africa",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "Two hundred thirty-two kilometers of sea and a long isolation did the rest.",
+   "cam": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "z": 7.82
+   },
+   "fx": [
+    {
+     "kind": "scan",
+     "on": null,
+     "fallback": true
+    }
+   ]
+  },
+  {
+   "text": "In two thousand eight, it became a UNESCO World Heritage Site.",
+   "cam": {
+    "lat": 12.5075,
+    "lon": 53.9198,
+    "z": 10.52
+   },
+   "stamp": {
+    "label": "UNESCO SINCE 2008",
+    "on": "UNESCO"
+   },
+   "photo": {
+    "file": "photos/socotra/p2.jpg",
+    "label": "NAWJAD, SOCOTRA",
+    "credit": "Email4mobile",
+    "on": "Heritage",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Next target: an island no outsider may approach. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": 11.5775,
+    "lon": 92.24444444,
+    "z": 13.0,
+    "hop": true
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "Orbi",
+    "dur": 1.4
+   }
+  }
+ ],
+ "hook": "1 IN 3 PLANTS",
+ "description": "Socotra is a Yemeni island in the Indian Ocean, and a third of its plant life is found nowhere else on Earth. Geographically it belongs to Africa, and in 2008 it became a UNESCO World Heritage Site. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Boris Khvostichenko(User:Boriskhv), CC BY-SA 4.0; Email4mobile, Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#Socotra",
+  "#Yemen",
+  "#IndianOcean",
+  "#EndemicPlants",
+  "#SatelliteMap"
+ ],
+ "shape": null,
+ "series_no": 9
+}
