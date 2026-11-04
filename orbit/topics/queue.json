@@ -94,9 +94,11 @@
  {
   "slug": "danakil_depression",
   "title": "Danakil Depression",
-  "lat": 14.2417,
-  "lon": 40.3,
-  "status": "todo"
+  "lat": 14.0,
+  "lon": 40.5,
+  "status": "written",
+  "located": true,
+  "no": 7
  },
  {
   "slug": "dallol_hydrothermal_system",
