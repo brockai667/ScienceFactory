@@ -1,0 +1,189 @@
+{
+ "title": "Area 51",
+ "coords": "37.2467 N, 115.8386 W",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 37.2467,
+  "lon": -115.8386
+ },
+ "source": "https://en.wikipedia.org/wiki/Area_51",
+ "feature_km": 6.0,
+ "beats": [
+  {
+   "text": "You can zoom onto this airfield. The CIA confirmed it in two thousand thirteen.",
+   "cam": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "z": 13.78
+   },
+   "globe": true
+  },
+  {
+   "text": "What were they guarding for fifty-eight years?",
+   "cam": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "z": 13.88
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "what"
+    }
+   ]
+  },
+  {
+   "text": "Its official name is Homey Airport.",
+   "cam": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "z": 13.78
+   },
+   "tag": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "label": "HOMEY AIRPORT",
+    "on": "Homey"
+   },
+   "react": {
+    "expr": "happy",
+    "on": "Homey",
+    "dur": 1.4
+   },
+   "photo": {
+    "file": "photos/area_51/p4.jpg",
+    "label": "GROOM LAKE, NEVADA",
+    "credit": "Doc Searls from Santa Barbara, USA, CC BY 2.0",
+    "on": "Airport",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Its research is Top Secret, and UFO folklore grew around it.",
+   "cam": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "z": 14.68
+   },
+   "stamp": {
+    "label": "TOP SECRET",
+    "on": "Secret"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "UFO",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "Cameras keep an eye on the road in.",
+   "cam": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "z": 14.68
+   },
+   "fx": [
+    {
+     "kind": "eye",
+     "on": "eye"
+    }
+   ],
+   "photo": {
+    "file": "photos/area_51/p1.jpg",
+    "label": "CAMERA ON THE ROAD",
+    "credit": "Geckow",
+    "on": "Cameras",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "In nineteen fifty-five, the CIA and Air Force came to test the U-2 spy plane.",
+   "cam": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "z": 13.78
+   },
+   "tag": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "label": "SPY PLANE TESTS",
+    "on": "spy"
+   }
+  },
+  {
+   "text": "It's still thought to test experimental aircraft and weapons.",
+   "cam": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "z": 14.68
+   },
+   "fx": [
+    {
+     "kind": "scan",
+     "on": null,
+     "fallback": true
+    }
+   ],
+   "photo": {
+    "file": "photos/area_51/p5.jpg",
+    "label": "SECURITY VEHICLE",
+    "credit": "Jimderkaisser, CC BY-SA 3.0",
+    "on": "experimental",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Officially, the Air Force calls it an open training range.",
+   "cam": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "z": 13.78
+   },
+   "tag": {
+    "lat": 37.2467,
+    "lon": -115.8386,
+    "label": "OPEN TRAINING",
+    "on": "range"
+   },
+   "fx": [
+    {
+     "kind": "speech",
+     "on": "calls"
+    }
+   ]
+  },
+  {
+   "text": "Next target: a lake that stays pink even in a container. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": -34.09583333,
+    "lon": 123.20277778,
+    "z": 13.0,
+    "hop": true
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "Orbi",
+    "dur": 1.4
+   }
+  }
+ ],
+ "hook": "CONFIRMED IN 2013",
+ "description": "Area 51 is a highly classified US Air Force facility in southern Nevada, officially called Homey Airport or Groom Lake. The USAF and CIA acquired it in 1955 mainly for Lockheed U-2 flight tests, and the CIA publicly acknowledged it in 2013. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Doc Searls from Santa Barbara, USA, CC BY 2.0; Geckow; Jimderkaisser, CC BY-SA 3.0, Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#Area51",
+  "#GroomLake",
+  "#Nevada",
+  "#SatelliteView",
+  "#CurioOrbit"
+ ],
+ "shape": null,
+ "series_no": 5
+}

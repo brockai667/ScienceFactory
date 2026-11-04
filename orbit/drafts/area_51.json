@@ -1,0 +1,177 @@
+{
+ "draft": {
+  "title": "Area 51",
+  "feature_km": 6,
+  "hooks": [
+   {
+    "text": "You can zoom onto this airfield. The CIA confirmed it in two thousand thirteen.",
+    "title": "CONFIRMED IN 2013"
+   },
+   {
+    "text": "An airfield eighty three miles from Las Vegas, where all research is classified.",
+    "title": "83 MILES FROM VEGAS"
+   },
+   {
+    "text": "Confirming this Nevada airfield took a records request filed in two thousand five.",
+    "title": "2005 RECORDS REQUEST"
+   }
+  ],
+  "beats": [
+   {
+    "text": "You can zoom onto this airfield. The CIA confirmed it in two thousand thirteen.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "What were they guarding for fifty-eight years?",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Its official name is Homey Airport.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "Homey",
+     "label": "HOMEY AIRPORT"
+    },
+    "react": {
+     "expr": "happy",
+     "on": "Homey"
+    },
+    "photo": {
+     "index": 4,
+     "label": "GROOM LAKE, NEVADA",
+     "on": "Airport"
+    }
+   },
+   {
+    "text": "Its research is Top Secret, and UFO folklore grew around it.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "Secret",
+     "label": "TOP SECRET"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "UFO"
+    },
+    "photo": null
+   },
+   {
+    "text": "Cameras keep an eye on the road in.",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 1,
+     "label": "CAMERA ON THE ROAD",
+     "on": "Cameras"
+    }
+   },
+   {
+    "text": "In nineteen fifty-five, the CIA and Air Force came to test the U-2 spy plane.",
+    "shot": "wide",
+    "overlay": {
+     "type": "tag",
+     "on": "spy",
+     "label": "SPY PLANE TESTS"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It's still thought to test experimental aircraft and weapons.",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 5,
+     "label": "SECURITY VEHICLE",
+     "on": "experimental"
+    }
+   },
+   {
+    "text": "Officially, the Air Force calls it an open training range.",
+    "shot": "feature",
+    "overlay": {
+     "type": "tag",
+     "on": "range",
+     "label": "OPEN TRAINING RANGE"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Next target: a lake that stays pink even in a container. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "Orbi"
+    },
+    "photo": null
+   }
+  ],
+  "description": "Area 51 is a highly classified US Air Force facility in southern Nevada, officially called Homey Airport or Groom Lake. The USAF and CIA acquired it in 1955 mainly for Lockheed U-2 flight tests, and the CIA publicly acknowledged it in 2013.",
+  "hashtags": [
+   "#Area51",
+   "#GroomLake",
+   "#Nevada",
+   "#SatelliteView",
+   "#CurioOrbit"
+  ],
+  "hook_title": "CONFIRMED IN 2013"
+ },
+ "photos": [
+  {
+   "name": "File:Groom Lake Road 07.2008.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Groom_Lake_Road_07.2008.jpg/1920px-Groom_Lake_Road_07.2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Groom_Lake_Road",
+   "credit": "Geckow"
+  },
+  {
+   "name": "File:Ueberwachungskamera an der Groom Lake Road 07.2008.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Ueberwachungskamera_an_der_Groom_Lake_Road_07.2008.jpg/1920px-Ueberwachungskamera_an_der_Groom_Lake_Road_07.2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Ueberwachungskamera_an_der_Groom_Lake_Road",
+   "credit": "Geckow",
+   "file": "photos/area_51/p1.jpg"
+  },
+  {
+   "name": "File:Musée Mécanique 209.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Mus%C3%A9e_M%C3%A9canique_209.JPG/1920px-Mus%C3%A9e_M%C3%A9canique_209.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Area 51 & Maximum Force combo arcade machine",
+   "credit": "User:Piotrus, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Musée Mécanique 216.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Mus%C3%A9e_M%C3%A9canique_216.JPG/1920px-Mus%C3%A9e_M%C3%A9canique_216.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Musée Mécanique.",
+   "credit": "User:Piotrus, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Groom Lake and Papoose Lake.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Groom_Lake_and_Papoose_Lake.jpg/1920px-Groom_Lake_and_Papoose_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Groom Lake and Papoose Lake, both in the Nevada Test and Training Range. Groom Lake is also in Area 51. Note that some of the lines you see beside Groom lake ar",
+   "credit": "Doc Searls from Santa Barbara, USA, CC BY 2.0",
+   "file": "photos/area_51/p4.jpg"
+  },
+  {
+   "name": "File:Camo dudes area 51.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Camo_dudes_area_51.JPG/1920px-Camo_dudes_area_51.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Véhicule de sécurité à la zone 51",
+   "credit": "Jimderkaisser, CC BY-SA 3.0",
+   "file": "photos/area_51/p5.jpg"
+  }
+ ],
+ "lat": 37.2467,
+ "lon": -115.8386,
+ "shape": null,
+ "scale": null,
+ "next": "lake_hillier"
+}

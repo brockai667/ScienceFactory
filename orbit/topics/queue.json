@@ -76,9 +76,11 @@
  {
   "slug": "area_51",
   "title": "Area 51",
-  "lat": 37.23333333,
-  "lon": -115.80833333,
-  "status": "todo"
+  "lat": 37.2467,
+  "lon": -115.8386,
+  "status": "written",
+  "located": true,
+  "no": 5
  },
  {
   "slug": "lake_hillier",
