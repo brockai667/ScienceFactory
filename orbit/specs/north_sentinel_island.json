@@ -1,0 +1,297 @@
+{
+ "title": "North Sentinel Island",
+ "coords": "11.5548 N, 92.2408 E",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 11.5548,
+  "lon": 92.2408
+ },
+ "source": "https://en.wikipedia.org/wiki/North_Sentinel_Island",
+ "feature_km": 9.0,
+ "beats": [
+  {
+   "text": "Why may no boat come within three miles of this island?",
+   "cam": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "z": 13.5
+   },
+   "globe": true
+  },
+  {
+   "text": "Who is the ban protecting, them or us?",
+   "cam": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "z": 14.4
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "who"
+    }
+   ],
+   "photo": {
+    "file": "photos/north_sentinel_island/p4.jpg",
+    "label": "SEEN FROM A FLIGHT",
+    "credit": "PJeganathan, CC BY-SA 4.0",
+    "on": "ban",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "It's home to the Sentinelese, an uncontacted tribe.",
+   "cam": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "z": 13.5
+   },
+   "tag": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "label": "THE SENTINELESE",
+    "on": "Sentinelese"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "uncontacted",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "From orbit, I keep an eye on it safely.",
+   "cam": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "z": 14.4
+   },
+   "fx": [
+    {
+     "kind": "eye",
+     "on": "eye"
+    }
+   ]
+  },
+  {
+   "text": "That forbidden ring of sea dwarfs the island itself.",
+   "cam": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "z": 13.5
+   },
+   "highlight": {
+    "on": "island"
+   },
+   "photo": {
+    "file": "photos/north_sentinel_island/p5.jpg",
+    "label": "VIEW FROM THE AIR",
+    "credit": "PJeganathan, CC BY-SA 4.0",
+    "on": "sea",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "A nineteen fifty-six regulation bans visits, and the Indian Navy patrols.",
+   "cam": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "z": 13.6
+   },
+   "stamp": {
+    "label": "1956 REGULATION",
+    "on": "regulation"
+   }
+  },
+  {
+   "text": "It shields the islanders from mainland diseases they likely have no immunity to.",
+   "cam": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "z": 13.5
+   },
+   "tag": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "label": "MAINLAND DISEASES",
+    "on": "diseases"
+   }
+  },
+  {
+   "text": "If an outsider lands and is killed, India won't prosecute the islanders.",
+   "cam": {
+    "lat": 11.5548,
+    "lon": 92.2408,
+    "z": 13.7
+   },
+   "fx": [
+    {
+     "kind": "scan",
+     "on": null,
+     "fallback": true
+    }
+   ]
+  },
+  {
+   "text": "Next target: an island born in nineteen sixty-three. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": 63.303,
+    "lon": -20.605,
+    "z": 13.0,
+    "hop": true
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "Orbi",
+    "dur": 1.4
+   }
+  }
+ ],
+ "hook": "3 MILE ZONE",
+ "description": "North Sentinel Island in India's Andaman Islands is home to the Sentinelese, an uncontacted indigenous tribe. A 1956 regulation bans travel there and any approach closer than five kilometers, to protect them from mainland infectious diseases. Imagery: Esri, Maxar, Earthstar Geographics. Photos: PJeganathan, CC BY-SA 4.0, Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#NorthSentinelIsland",
+  "#AndamanIslands",
+  "#BayOfBengal",
+  "#India",
+  "#SatelliteMap"
+ ],
+ "shape": [
+  [
+   11.53746,
+   92.20421
+  ],
+  [
+   11.51736,
+   92.22841
+  ],
+  [
+   11.51321,
+   92.24091
+  ],
+  [
+   11.51542,
+   92.24587
+  ],
+  [
+   11.51715,
+   92.23153
+  ],
+  [
+   11.5288,
+   92.22312
+  ],
+  [
+   11.52586,
+   92.25003
+  ],
+  [
+   11.5196,
+   92.25808
+  ],
+  [
+   11.51317,
+   92.25204
+  ],
+  [
+   11.5139,
+   92.26476
+  ],
+  [
+   11.51782,
+   92.26201
+  ],
+  [
+   11.52284,
+   92.27065
+  ],
+  [
+   11.53576,
+   92.27746
+  ],
+  [
+   11.55463,
+   92.26904
+  ],
+  [
+   11.58464,
+   92.27201
+  ],
+  [
+   11.59011,
+   92.26348
+  ],
+  [
+   11.59165,
+   92.25742
+  ],
+  [
+   11.58991,
+   92.25994
+  ],
+  [
+   11.59169,
+   92.23601
+  ],
+  [
+   11.59406,
+   92.2492
+  ],
+  [
+   11.59639,
+   92.24381
+  ],
+  [
+   11.59487,
+   92.23146
+  ],
+  [
+   11.59016,
+   92.23373
+  ],
+  [
+   11.58718,
+   92.2302
+  ],
+  [
+   11.59364,
+   92.22524
+  ],
+  [
+   11.59499,
+   92.2121
+  ],
+  [
+   11.59253,
+   92.21707
+  ],
+  [
+   11.58543,
+   92.20725
+  ],
+  [
+   11.57179,
+   92.21507
+  ],
+  [
+   11.55584,
+   92.20797
+  ],
+  [
+   11.53454,
+   92.2123
+  ],
+  [
+   11.53746,
+   92.20421
+  ]
+ ],
+ "series_no": 10
+}

@@ -128,9 +128,11 @@
  {
   "slug": "north_sentinel_island",
   "title": "North Sentinel Island",
-  "lat": 11.5775,
-  "lon": 92.24444444,
-  "status": "todo"
+  "lat": 11.5548,
+  "lon": 92.2408,
+  "status": "written",
+  "located": true,
+  "no": 10
  },
  {
   "slug": "surtsey",
