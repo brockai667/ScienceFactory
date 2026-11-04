@@ -60,6 +60,8 @@ def main():
         sys.exit(1 if n >= STOP_AFTER else 0)
     if "--retime" in args:                                     # zmena SLOT_HOUR: naplanovane posty presunut na novy cas
         sys.exit(retime(pub))
+    if "--unpublish" in args:                                  # stiahnut naplanovane (este nevydane) diely na prerobenie
+        sys.exit(unpublish(pub, [a for a in args if not a.startswith("--")]))
     if "--retry" in args:
         bad = 0
         for slug, e in list(pub.items()):
@@ -98,6 +100,37 @@ def retime(pub):
         e["services"] = [s for s in e["services"] if s == "tiktok"]
         save(PUB, pub)
         bad += publish(slug, pub, False)
+    return 1 if bad else 0
+
+
+def unpublish(pub, slugs):
+    """Zmaze naplanovane Buffer posty dielov (len buduce), vyhodi ich z published.json aj z TikTok feedu."""
+    import push_to_buffer as pb
+    token = (pb.load_cfg().get("buffer_token") or "").strip()
+    now = datetime.datetime.now(datetime.timezone.utc)
+    orgs = ((pb.gql(token, "query{account{organizations{id}}}") or {}).get("account") or {}).get("organizations") or []
+    q = ("query($o:OrganizationId!){posts(input:{organizationId:$o, filter:{status:[scheduled]}}){edges{node{id dueAt channelId}}}}")
+    mine = {c["id"] for c in pb.load_cfg().get("buffer_channels") or []}
+    posts = [e["node"] for o in orgs for e in (((pb.gql(token, q, {"o": o["id"]}) or {}).get("posts") or {}).get("edges") or [])
+             if e["node"].get("channelId") in mine]
+    feed = load(FEED, {"episodes": {}})
+    bad = 0
+    for slug in slugs:
+        e = pub.get(slug)
+        if not e:
+            print(f"  {slug}: nie je v published.json"); continue
+        due = datetime.datetime.fromisoformat(e["due"].replace("Z", "+00:00"))
+        if due < now + datetime.timedelta(minutes=10):
+            print(f"  {slug}: uz vysiel / vychadza, nestahujem"); bad += 1; continue
+        for p in posts:
+            if datetime.datetime.fromisoformat(p["dueAt"].replace("Z", "+00:00")) == due:
+                d = pb.gql(token, "mutation($id:PostId!){deletePost(input:{id:$id}){__typename}}", {"id": p["id"]})
+                print(f"  {slug}: zruseny Buffer post {p['id']} ({p['dueAt']}): {json.dumps(d)[:100]}")
+        feed["episodes"].pop(str(e.get("no")), None)
+        pub.pop(slug)
+        print(f"  {slug}: stiahnuty (feed aj published.json)")
+    save(PUB, pub)
+    save(FEED, feed)
     return 1 if bad else 0
 
 

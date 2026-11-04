@@ -25,6 +25,12 @@ def main():
         errs.append(f"len {real} skutocnych efektov (min {MIN_FX})")
     if fb > MAX_FALLBACK:
         errs.append(f"{fb} beatov len s nahradnym efektom (max {MAX_FALLBACK})")
+    try:                                                       # rozmanitost len hlasi (prisny je bank.py check), den nesmie vypadnut
+        import variety
+        for v in variety.check(os.path.basename(sys.argv[1])[:-5], spec["beats"]):
+            print("qc VAROVANIE (opakovanie):", v)
+    except Exception as e:
+        print("qc: variety preskocene:", e)
     for e in errs:
         print("qc FAIL:", e)
     sys.exit(1 if errs else 0)

@@ -25,6 +25,10 @@ on:
         description: "Len presunut naplanovane diely na novy cas (SLOT_HOUR v orbit/publish.py), nic nepisat ani nerenderovat"
         type: boolean
         default: false
+      unpublish:
+        description: "Stiahnut naplanovane diely na prerobenie (slugy oddelene medzerou), nic nepisat ani nerenderovat"
+        type: string
+        default: ""
 
 permissions:
   contents: write          # ulozi scenar (orbit/specs), fotky a stav fronty
@@ -87,9 +91,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python orbit/publish.py --retime
 
+      - name: Stiahnut naplanovane diely na prerobenie
+        if: github.event.inputs.unpublish != ''
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python orbit/publish.py --unpublish ${{ github.event.inputs.unpublish }}
+
       - name: Napisat scenar (zasoba orbit/bank, inak Groq + kontrola faktov)
         id: write
-        if: github.event.inputs.retime != 'true'
+        if: github.event.inputs.retime != 'true' && (github.event.inputs.unpublish == '' || github.event.inputs.unpublish == null)
         env:
           MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
           MODELS_BASE_URL: https://api.groq.com/openai/v1
