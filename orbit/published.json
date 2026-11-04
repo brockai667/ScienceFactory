@@ -86,5 +86,16 @@
   "due": "2026-11-11T09:00:00.000Z",
   "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_dallol_hydrothermal_system.mp4",
   "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_dallol_hydrothermal_system_tiktok.mp4"
+ },
+ "socotra": {
+  "no": 9,
+  "services": [
+   "tiktok",
+   "youtube",
+   "instagram"
+  ],
+  "due": "2026-11-12T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_socotra.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_socotra_tiktok.mp4"
  }
 }
