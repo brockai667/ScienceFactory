@@ -105,7 +105,9 @@
   "title": "Dallol (hydrothermal system)",
   "lat": 14.2417,
   "lon": 40.3,
-  "status": "todo"
+  "status": "written",
+  "located": false,
+  "no": 8
  },
  {
   "slug": "grand_prismatic_spring",

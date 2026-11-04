@@ -1,0 +1,172 @@
+{
+ "draft": {
+  "title": "Dallol",
+  "feature_km": 3,
+  "hooks": [
+   {
+    "text": "Green acid ponds and yellow crust, with a pH below one.",
+    "title": "PH BELOW 1"
+   },
+   {
+    "text": "This yellow hill is three kilometers long, and its ponds are acid.",
+    "title": "3 KM HILL"
+   },
+   {
+    "text": "Why do these green ponds in the desert have a pH below one?",
+    "title": "PH UNDER 1"
+   }
+  ],
+  "beats": [
+   {
+    "text": "Green acid ponds and yellow crust, with a pH below one.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "How does a desert end up full of acid?",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 2,
+     "label": "DALLOL, ETHIOPIA",
+     "on": "desert"
+    }
+   },
+   {
+    "text": "The Afar people called it Dallol, which means disintegration.",
+    "shot": "feature",
+    "overlay": {
+     "type": "stamp",
+     "on": "disintegration",
+     "label": "MEANS DISINTEGRATION"
+    },
+    "react": {
+     "expr": "happy",
+     "on": "disintegration"
+    },
+    "photo": null
+   },
+   {
+    "text": "Its mountain stands about as tall as a twenty-storey building.",
+    "shot": "feature",
+    "overlay": {
+     "type": "stamp",
+     "on": "building",
+     "label": "20 STOREY BUILDING"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "A round hollow in the middle is probably a collapsed crater.",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "The mountain is a cinder cone volcano feeding hot springs.",
+    "shot": "wide",
+    "overlay": {
+     "type": "tag",
+     "on": "volcano",
+     "label": "CINDER CONE VOLCANO"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "They flood the ground with salty, acidic water.",
+    "shot": "close",
+    "overlay": null,
+    "react": {
+     "expr": "surprised",
+     "on": "acidic"
+    },
+    "photo": {
+     "index": 0,
+     "label": "ACID POOL AND SALT",
+     "on": "acidic"
+    }
+   },
+   {
+    "text": "Small geysers come and go, building cones of salt.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "cones",
+     "label": "CONES OF SALT"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Next target: an island full of plants found nowhere else. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "Orbi"
+    },
+    "photo": null
+   }
+  ],
+  "description": "Dallol is a hydrothermal system around a cinder cone volcano in Ethiopia's Danakil Depression, with green acid ponds below pH one. Its Afar name means dissolution or disintegration, and iron gives its ground yellow and brown colors.",
+  "hashtags": [
+   "#Dallol",
+   "#Ethiopia",
+   "#Danakil",
+   "#HotSprings",
+   "#SatelliteMap"
+  ],
+  "hook_title": "PH BELOW 1"
+ },
+ "photos": [
+  {
+   "name": "File:Dallol-2001.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Dallol-2001.jpg/1920px-Dallol-2001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Dallol, flaque d'acide et formation de sel, soufre et autres minéraux",
+   "credit": "Hervé Sthioul, CC BY 2.5",
+   "file": "photos/dallol_hydrothermal_system/p0.jpg"
+  },
+  {
+   "name": "File:Dallol-Ethiopie (5).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Dallol-Ethiopie_%285%29.jpg/1920px-Dallol-Ethiopie_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Dallol (Danakil, nord-est de l'Ethiopie, à proximité de la frontière érythréenne)",
+   "credit": "Ji-Elle, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Dallol-Ethiopie (4).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Dallol-Ethiopie_%284%29.jpg/1920px-Dallol-Ethiopie_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Dallol (Danakil, nord-est de l'Ethiopie, à proximité de la frontière érythréenne)",
+   "credit": "Ji-Elle, CC BY-SA 3.0",
+   "file": "photos/dallol_hydrothermal_system/p2.jpg"
+  },
+  {
+   "name": "File:Dallol-Ethiopie (8).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Dallol-Ethiopie_%288%29.jpg/1920px-Dallol-Ethiopie_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Dallol (Danakil, nord-est de l'Ethiopie, à proximité de la frontière érythréenne)",
+   "credit": "Ji-Elle, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Dallol-Ethiopie (12).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Dallol-Ethiopie_%2812%29.jpg/1920px-Dallol-Ethiopie_%2812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Dallol (Danakil, nord-est de l'Ethiopie, à proximité de la frontière érythréenne)",
+   "credit": "Ji-Elle, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Dallol-Ethiopie (26).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Dallol-Ethiopie_%2826%29.jpg/1920px-Dallol-Ethiopie_%2826%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Dallol (Danakil, nord-est de l'Ethiopie, à proximité de la frontière érythréene)",
+   "credit": "Ji-Elle, CC BY-SA 3.0"
+  }
+ ],
+ "lat": 14.2417,
+ "lon": 40.3,
+ "shape": null,
+ "scale": null,
+ "next": "socotra"
+}

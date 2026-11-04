@@ -1,0 +1,179 @@
+{
+ "title": "Dallol",
+ "coords": "14.2417 N, 40.3000 E",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 14.2417,
+  "lon": 40.3
+ },
+ "source": "https://en.wikipedia.org/wiki/Dallol_(hydrothermal_system)",
+ "feature_km": 3.0,
+ "beats": [
+  {
+   "text": "Green acid ponds and yellow crust, with a pH below one.",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 15.07
+   },
+   "globe": true
+  },
+  {
+   "text": "How does a desert end up full of acid?",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 15.97
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "how"
+    }
+   ],
+   "photo": {
+    "file": "photos/dallol_hydrothermal_system/p2.jpg",
+    "label": "DALLOL, ETHIOPIA",
+    "credit": "Ji-Elle, CC BY-SA 3.0",
+    "on": "desert",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "The Afar people called it Dallol, which means disintegration.",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 15.17
+   },
+   "stamp": {
+    "label": "MEANS DISINTEGRATION",
+    "on": "disintegration"
+   },
+   "fx": [
+    {
+     "kind": "speech",
+     "on": "called"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "disintegration",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "Its mountain stands about as tall as a twenty-storey building.",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 15.27
+   },
+   "stamp": {
+    "label": "20 STOREY BUILDING",
+    "on": "building"
+   }
+  },
+  {
+   "text": "A round hollow in the middle is probably a collapsed crater.",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 15.97
+   },
+   "fx": [
+    {
+     "kind": "trace",
+     "on": "round"
+    }
+   ]
+  },
+  {
+   "text": "The mountain is a cinder cone volcano feeding hot springs.",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 15.07
+   },
+   "tag": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "label": "CINDER CONE",
+    "on": "volcano"
+   }
+  },
+  {
+   "text": "They flood the ground with salty, acidic water.",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 15.97
+   },
+   "fx": [
+    {
+     "kind": "water",
+     "on": "flood"
+    }
+   ],
+   "react": {
+    "expr": "surprised",
+    "on": "acidic",
+    "dur": 1.4
+   },
+   "photo": {
+    "file": "photos/dallol_hydrothermal_system/p0.jpg",
+    "label": "ACID POOL AND SALT",
+    "credit": "Hervé Sthioul, CC BY 2.5",
+    "on": "acidic",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Small geysers come and go, building cones of salt.",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 15.07
+   },
+   "tag": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "label": "CONES OF SALT",
+    "on": "cones"
+   }
+  },
+  {
+   "text": "Next target: an island full of plants found nowhere else. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": 12.51,
+    "lon": 53.92,
+    "z": 13.0,
+    "hop": true
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "Orbi",
+    "dur": 1.4
+   }
+  }
+ ],
+ "hook": "PH BELOW 1",
+ "description": "Dallol is a hydrothermal system around a cinder cone volcano in Ethiopia's Danakil Depression, with green acid ponds below pH one. Its Afar name means dissolution or disintegration, and iron gives its ground yellow and brown colors. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Hervé Sthioul, CC BY 2.5; Ji-Elle, CC BY-SA 3.0, Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#Dallol",
+  "#Ethiopia",
+  "#Danakil",
+  "#HotSprings",
+  "#SatelliteMap"
+ ],
+ "shape": null,
+ "series_no": 8
+}
