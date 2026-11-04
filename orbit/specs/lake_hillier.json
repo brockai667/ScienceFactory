@@ -1,0 +1,161 @@
+{
+ "title": "Lake Hillier",
+ "coords": "34.0946 S, 123.2028 E",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": -34.0946,
+  "lon": 123.2028
+ },
+ "source": "https://en.wikipedia.org/wiki/Lake_Hillier",
+ "feature_km": 0.6,
+ "beats": [
+  {
+   "text": "Six hundred meters of pink water, and the ocean is just past the sand.",
+   "cam": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "z": 16.8
+   },
+   "globe": true
+  },
+  {
+   "text": "Paint? Pollution? What turns a salt lake pink?",
+   "cam": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "z": 16.8
+   },
+   "highlight": {
+    "on": "lake"
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "what"
+    }
+   ]
+  },
+  {
+   "text": "Scoop it into a container, and it stays pink.",
+   "cam": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "z": 17.0
+   },
+   "stamp": {
+    "label": "STAYS PINK",
+    "on": "stays"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "stays",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "End to end, it's almost two Eiffel Towers long.",
+   "cam": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "z": 16.8
+   },
+   "ruler": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "km": 0.6,
+    "label": "600 M",
+    "on": "Eiffel"
+   }
+  },
+  {
+   "text": "It sits on Middle Island, off Western Australia.",
+   "cam": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "z": 16.8
+   },
+   "tag": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "label": "MIDDLE ISLAND",
+    "on": "Middle"
+   }
+  },
+  {
+   "text": "The color is believed to come from a tiny organism, Dunaliella salina.",
+   "cam": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "z": 16.8
+   },
+   "tag": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "label": "DUNALIELLA SALINA",
+    "on": "Dunaliella"
+   }
+  },
+  {
+   "text": "Scientists found its DNA here, with salt-loving bacteria.",
+   "cam": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "z": 17.0
+   },
+   "fx": [
+    {
+     "kind": "scan",
+     "on": null,
+     "fallback": true
+    }
+   ]
+  },
+  {
+   "text": "A dense woodland of paperbark and eucalyptus rings the lake.",
+   "cam": {
+    "lat": -34.0946,
+    "lon": 123.2028,
+    "z": 15.0
+   },
+   "fx": [
+    {
+     "kind": "trace",
+     "on": "rings"
+    }
+   ]
+  },
+  {
+   "text": "Next target: an African valley below sea level. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": 14.2417,
+    "lon": 40.3,
+    "z": 13.0,
+    "hop": true
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "Orbi",
+    "dur": 1.4
+   }
+  }
+ ],
+ "hook": "600 M PINK LAKE",
+ "description": "Lake Hillier is a saline lake about 600 metres long on Middle Island, off the south coast of Western Australia, and its pink colour stays the same even in a container. The colour is believed to come from the organism Dunaliella salina, which the Extreme Microbiome Project found in a metagenomic analysis of the lake. Imagery: Esri, Maxar, Earthstar Geographics. Source: Wikipedia.",
+ "hashtags": [
+  "#LakeHillier",
+  "#PinkLake",
+  "#WesternAustralia",
+  "#SatelliteView",
+  "#CurioOrbit"
+ ],
+ "shape": null,
+ "series_no": 6
+}
