@@ -67,9 +67,11 @@
  {
   "slug": "nazca_lines",
   "title": "Nazca lines",
-  "lat": -14.6975,
-  "lon": -75.135,
-  "status": "todo"
+  "lat": -14.7101,
+  "lon": -75.1635,
+  "status": "written",
+  "located": true,
+  "no": 4
  },
  {
   "slug": "area_51",

@@ -1,0 +1,173 @@
+{
+ "title": "Nazca Lines",
+ "coords": "14.7101 S, 75.1635 W",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": -14.7101,
+  "lon": -75.1635
+ },
+ "source": "https://en.wikipedia.org/wiki/Nazca_lines",
+ "feature_km": 7.0,
+ "beats": [
+  {
+   "text": "These desert lines add up to over eight hundred miles, yet they're inches deep.",
+   "cam": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "z": 13.84
+   },
+   "globe": true
+  },
+  {
+   "text": "So who made lines this long, and how?",
+   "cam": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "z": 13.84
+   },
+   "highlight": {
+    "on": "lines"
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "who"
+    }
+   ]
+  },
+  {
+   "text": "In this century, drones found several hundred new figures.",
+   "cam": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "z": 14.74
+   },
+   "stamp": {
+    "label": "DRONES FOUND NEW FIGURES",
+    "on": "figures"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "drones",
+    "dur": 1.4
+   }
+  },
+  {
+   "text": "Most run straight, but some draw animals and plants.",
+   "cam": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "z": 13.84
+   },
+   "tag": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "label": "ANIMALS AND PLANTS",
+    "on": "animals"
+   },
+   "photo": {
+    "file": "photos/nazca_lines/p5.jpg",
+    "label": "THE MONKEY",
+    "credit": "Diego Delso, CC BY-SA 4.0",
+    "on": "animals",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Together they cover about fifty square kilometers.",
+   "cam": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "z": 12.04
+   },
+   "stamp": {
+    "label": "50 SQUARE KILOMETERS",
+    "on": "kilometers"
+   }
+  },
+  {
+   "text": "People made them by removing the reddish-brown pebbles on top.",
+   "cam": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "z": 14.74
+   },
+   "fx": [
+    {
+     "kind": "scan",
+     "on": null,
+     "fallback": true
+    }
+   ],
+   "photo": {
+    "file": "photos/nazca_lines/p1.jpg",
+    "label": "NAZCA LINES",
+    "credit": "Diego Delso, CC BY-SA 4.0",
+    "on": "pebbles",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "That exposed the yellow-grey soil underneath.",
+   "cam": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "z": 13.84
+   },
+   "tag": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "label": "YELLOW GREY SOIL",
+    "on": "soil"
+   }
+  },
+  {
+   "text": "Archaeologists believe there are still more to be found.",
+   "cam": {
+    "lat": -14.7101,
+    "lon": -75.1635,
+    "z": 13.94
+   },
+   "fx": [
+    {
+     "kind": "pulse",
+     "on": null,
+     "fallback": true
+    }
+   ]
+  },
+  {
+   "text": "Next target: a classified Air Force base near Las Vegas. Follow for the next scan. Orbi out.",
+   "cam": {
+    "lat": 37.23333333,
+    "lon": -115.80833333,
+    "z": 13.0,
+    "hop": true
+   },
+   "fx": [
+    {
+     "kind": "follow",
+     "on": "follow"
+    }
+   ],
+   "react": {
+    "expr": "happy",
+    "on": "Orbi",
+    "dur": 1.4
+   }
+  }
+ ],
+ "hook": "800 MILES OF LINES",
+ "description": "The Nazca lines are geoglyphs in the soil of the Nazca Desert in southern Peru, made between 500 BC and 500 AD by removing reddish-brown pebbles to expose lighter subsoil. Their combined length is more than 1,300 km, and drones have found several hundred new figures this century. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Diego Delso, CC BY-SA 4.0, Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#NazcaLines",
+  "#Peru",
+  "#Geoglyphs",
+  "#Archaeology",
+  "#SatelliteView"
+ ],
+ "shape": null,
+ "series_no": 4
+}

@@ -1,0 +1,172 @@
+{
+ "draft": {
+  "title": "Nazca Lines",
+  "feature_km": 7,
+  "hooks": [
+   {
+    "text": "These desert lines add up to over eight hundred miles, yet they're inches deep.",
+    "title": "800 MILES OF LINES"
+   },
+   {
+    "text": "These desert lines are only inches deep, and some date to five hundred BC.",
+    "title": "FROM 500 BC"
+   },
+   {
+    "text": "Lines and animals cover about fifty square kilometers of this desert in Peru.",
+    "title": "50 SQUARE KM"
+   }
+  ],
+  "beats": [
+   {
+    "text": "These desert lines add up to over eight hundred miles, yet they're inches deep.",
+    "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "So who made lines this long, and how?",
+    "shot": "close",
+    "overlay": {
+     "type": "highlight",
+     "on": "lines"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "In this century, drones found several hundred new figures.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "figures",
+     "label": "DRONES FOUND NEW FIGURES"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "drones"
+    },
+    "photo": null
+   },
+   {
+    "text": "Most run straight, but some draw animals and plants.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "animals",
+     "label": "ANIMALS AND PLANTS"
+    },
+    "react": null,
+    "photo": {
+     "index": 5,
+     "label": "THE MONKEY",
+     "on": "animals"
+    }
+   },
+   {
+    "text": "Together they cover about fifty square kilometers.",
+    "shot": "wide",
+    "overlay": {
+     "type": "stamp",
+     "on": "kilometers",
+     "label": "50 SQUARE KILOMETERS"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "People made them by removing the reddish-brown pebbles on top.",
+    "shot": "close",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 1,
+     "label": "NAZCA LINES",
+     "on": "pebbles"
+    }
+   },
+   {
+    "text": "That exposed the yellow-grey soil underneath.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "soil",
+     "label": "YELLOW-GREY SOIL"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Archaeologists believe there are still more to be found.",
+    "shot": "wide",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Next target: a classified Air Force base near Las Vegas. Follow for the next scan. Orbi out.",
+    "shot": "space",
+    "overlay": null,
+    "react": {
+     "expr": "happy",
+     "on": "Orbi"
+    },
+    "photo": null
+   }
+  ],
+  "description": "The Nazca lines are geoglyphs in the soil of the Nazca Desert in southern Peru, made between 500 BC and 500 AD by removing reddish-brown pebbles to expose lighter subsoil. Their combined length is more than 1,300 km, and drones have found several hundred new figures this century.",
+  "hashtags": [
+   "#NazcaLines",
+   "#Peru",
+   "#Geoglyphs",
+   "#Archaeology",
+   "#SatelliteView"
+  ],
+  "hook_title": "800 MILES OF LINES"
+ },
+ "photos": [
+  {
+   "name": "File:Nazca Lines Labyrinth Peru.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Nazca_Lines_Labyrinth_Peru.jpg/1920px-Nazca_Lines_Labyrinth_Peru.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "A diagram of one of the many intricate geoglyphs, patterns created on the plains northwest of Nazca (or Nasca), Peru, by the indigenous peoples, probably betwee",
+   "credit": "SiGarb"
+  },
+  {
+   "name": "File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 40.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_40.JPG/1920px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_40.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Nazca Lines, Nazca, Peru",
+   "credit": "Diego Delso, CC BY-SA 4.0",
+   "file": "photos/nazca_lines/p1.jpg"
+  },
+  {
+   "name": "File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 44.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_44.JPG/1920px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_44.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Nazca Lines, Nazca, Peru",
+   "credit": "Diego Delso, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 47.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_47.JPG/1920px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_47.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Nazca Lines, Nazca, Peru",
+   "credit": "Diego Delso, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 41.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_41.JPG/1920px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_41.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Nazca Lines, Nazca, Peru",
+   "credit": "Diego Delso, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 49.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG/1920px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Aerial view of the \"Monkey\", one of the most popular geoglyphs of the Nazca Lines, which are located in the Nazca Desert in southern Peru. The geoglyphs of this",
+   "credit": "Diego Delso, CC BY-SA 4.0",
+   "file": "photos/nazca_lines/p5.jpg"
+  }
+ ],
+ "lat": -14.7101,
+ "lon": -75.1635,
+ "shape": null,
+ "scale": null,
+ "next": "area_51"
+}
