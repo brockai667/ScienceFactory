@@ -194,7 +194,7 @@ Return JSON: {"scores": [int per candidate], "best": index of the winner (0-base
 
 BANNED = re.compile(r"something (strange|weird)|\bweird\b|mysterious|won't believe|\bsecret\b|baffled|did you know|today we", re.I)
 CAUSE = re.compile(r"impact|meteor|asteroid|comet|volcan|erosion|erupt|eroded|glacier|collapse|tectonic", re.I)
-METEOR = re.compile(r"\b(meteor\w*|asteroid\w*|comet\w*|impact\w*)\b", re.I)
+METEOR = re.compile(r"\b(meteor\w*|asteroid\w*|comet\w*|impact\w*|from space)\b", re.I)
 HIT = re.compile(r"\b(struck|strikes|hit|hits|slammed|smashed|crashed|landed|impact\w*)\b", re.I)
 # stylove pravidla: model ich pri oprave casto pokazi inde -> od 4. pokusu nebrzdia (fakty a struktura ano)
 TEASE = re.compile(r"\bwait (till|until|to)\b|\bstay (till|until|to the end)\b|\byou'll (soon )?(see|hear|find)\b"
@@ -619,7 +619,8 @@ def beat_fx(txt, i, n, nb, measured):
     if w:                                                    # "locals call it..." -> bublina, niekto hovori
         fx.append({"kind": "speech", "on": w})
     st = nb.get("stamp", {}).get("label", "")
-    m = re.match(r"([\d.,]+)\s*(THOUSAND|MILLION|BILLION)?\s.*AGO", st)
+    m = re.match(r"([\d.,]+)\s*(THOUSAND|MILLION|BILLION)?\s.*AGO", st) or \
+        re.search(r"([\d.,]+)\s*(THOUSAND|MILLION|BILLION)\s+YEARS(\s+OLD)?$", st)   # "OVER 2 BILLION YEARS" (vek)
     if m:
         k = {"THOUSAND": 1e3, "MILLION": 1e6, "BILLION": 1e9}.get(m.group(2), 1)
         fx.append({"kind": "rewind", "on": txt.split()[0].lower().strip(",."), "n": int(float(m.group(1).replace(",", "")) * k)})

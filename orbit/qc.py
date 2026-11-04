@@ -7,6 +7,7 @@ import sys
 MAX_MB = 30          # zrno filmu zle komprimuje; nad tymto pada upload cez API/Buffer
 MIN_FX = 3           # skutocne animacie k slovam (meteorit, praskliny, oko...), bez nahradnych
 MAX_FALLBACK = 3     # viac beatov s nahradnym skenom = tema, ku ktorej nemame efekty
+OVERLAYS = ("ruler", "rings", "scale", "tag", "stamp")   # highlight je len obrys, nepocita sa
 
 
 def main():
@@ -14,6 +15,7 @@ def main():
     mb = os.path.getsize(sys.argv[2]) / 1e6
     fx = [f for b in spec["beats"] for f in b.get("fx", []) if f["kind"] != "follow"]
     real = sum(1 for f in fx if not f.get("fallback")) + sum(1 for b in spec["beats"] if "impact" in b)
+    real += sum(1 for b in spec["beats"] for k in OVERLAYS if k in b)   # animovane popisky (pravitko, peciatka, stitok...) tiez nie su holy globus
     fb = sum(1 for f in fx if f.get("fallback"))
     print(f"qc: {mb:.1f} MB, efekty {real}, nahradne {fb}: " + ", ".join(f["kind"] for f in fx))
     errs = []
