@@ -102,10 +102,15 @@ jobs:
         if: (github.event_name == 'schedule' || github.event.inputs.render == 'true')
         run: |
           python orbit/orbit_engine.py "orbit/specs/${{ steps.write.outputs.slug }}.json"
+
+      - name: Nahladovy list (8 snimok, len na kontrolu)
+        if: (github.event_name == 'schedule' || github.event.inputs.render == 'true')
+        continue-on-error: true
+        run: |
           F=output/orbit_${{ steps.write.outputs.slug }}.mp4
-          for t in 1 5 10 15 20 25 30 35; do ffmpeg -loglevel error -y -ss $t -i $F -frames:v 1 -vf scale=270:480 output/f_$t.png; done
-          ffmpeg -loglevel error -y -i output/f_1.png -i output/f_5.png -i output/f_10.png -i output/f_15.png -i output/f_20.png -i output/f_25.png -i output/f_30.png -i output/f_35.png \
-            -filter_complex "[0][1][2][3]hstack=4[a];[4][5][6][7]hstack=4[b];[a][b]vstack" output/orbit_${{ steps.write.outputs.slug }}_sheet.jpg
+          D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 $F)   # video ma 30-35 s, snimky rovnomerne
+          for i in 0 1 2 3 4 5 6 7; do ffmpeg -loglevel error -y -ss $(awk "BEGIN{print 0.5+$i*($D-1)/8}") -i $F -frames:v 1 -vf scale=270:480 output/f_$i.png; done
+          ffmpeg -loglevel error -y $(for i in 0 1 2 3 4 5 6 7; do printf -- '-i output/f_%s.png ' $i; done) -filter_complex "[0][1][2][3]hstack=4[a];[4][5][6][7]hstack=4[b];[a][b]vstack" output/orbit_${{ steps.write.outputs.slug }}_sheet.jpg
 
       - name: Kontrola pred nahratim (velkost, pocet efektov)
         if: (github.event_name == 'schedule' || github.event.inputs.render == 'true')
