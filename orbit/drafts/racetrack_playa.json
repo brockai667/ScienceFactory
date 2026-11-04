@@ -4,52 +4,58 @@
   "feature_km": 4.8,
   "hooks": [
    {
-    "text": "This dry lake is three miles long, and nobody drew the lines across it.",
-    "title": "3 MILE DRY LAKE"
+    "text": "Rocks up to three hundred twenty kilograms crawl across this dry lake, leaving tracks.",
+    "title": "320 KG ROCKS"
    },
    {
     "text": "Why do straight tracks cross a dry lake that gets three inches of rain?",
     "title": "3 INCHES OF RAIN"
    },
    {
-    "text": "On this dry lake, rocks up to three hundred twenty kilograms leave tracks.",
-    "title": "320 KG ROCKS"
+    "text": "This dry lake is three miles long, and straight tracks run across it.",
+    "title": "3 MILE DRY LAKE"
    }
   ],
   "beats": [
    {
-    "text": "This dry lake is three miles long, and nobody drew the lines across it.",
+    "text": "Rocks up to three hundred twenty kilograms crawl across this dry lake, leaving tracks.",
     "shot": "feature",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "So what draws lines on a dry lake?",
+    "text": "How, with three inches of rain a year?",
     "shot": "feature",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Their trails named this place: it's known as the Racetrack.",
+    "shot": "close",
     "overlay": {
      "type": "highlight",
-     "on": "lake"
+     "on": "Racetrack"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "Racetrack"
+    },
+    "photo": null
+   },
+   {
+    "text": "Drop Central Park onto it, and the park comes up short.",
+    "shot": "feature",
+    "overlay": {
+     "type": "scale",
+     "on": "Central"
     },
     "react": null,
     "photo": null
    },
    {
-    "text": "Rocks here weigh up to three hundred twenty kilograms.",
-    "shot": "close",
-    "overlay": {
-     "type": "stamp",
-     "on": "kilograms",
-     "label": "UP TO 320 KILOGRAMS"
-    },
-    "react": {
-     "expr": "surprised",
-     "on": "kilograms"
-    },
-    "photo": null
-   },
-   {
-    "text": "From orbit, it's flat dried clay, walled in by mountains.",
+    "text": "Mountains wall in its floor of dried clay.",
     "shot": "wide",
     "overlay": {
      "type": "tag",
@@ -60,50 +66,40 @@
     "photo": {
      "index": 5,
      "label": "RACETRACK PLAYA",
-     "on": "mountains"
+     "on": "Mountains"
     }
    },
    {
-    "text": "Central Park would fit inside it.",
-    "shot": "feature",
-    "overlay": {
-     "type": "scale",
-     "on": "Central"
-    },
+    "text": "Rain floods the clay with shallow water, which freezes at night.",
+    "shot": "close",
+    "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "Those rocks are sailing stones. They travel across the clay.",
+    "text": "By morning, the ice cracks into panels, and wind drives them.",
     "shot": "close",
     "overlay": null,
     "react": null,
+    "photo": null
+   },
+   {
+    "text": "Those panels shove the stones. Tracks have been recorded since nineteen forty-eight.",
+    "shot": "close",
+    "overlay": {
+     "type": "stamp",
+     "on": "since",
+     "label": "RECORDED SINCE 1948"
+    },
+    "react": null,
     "photo": {
      "index": 0,
-     "label": "A SAILING STONE",
+     "label": "THE PLAYA AT NIGHT",
      "on": "stones"
     }
    },
    {
-    "text": "They leave long racetrack imprints. Those are the lines.",
-    "shot": "close",
-    "overlay": null,
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "People have documented this since nineteen forty eight.",
-    "shot": "wide",
-    "overlay": {
-     "type": "stamp",
-     "on": "since",
-     "label": "SINCE 1948"
-    },
-    "react": null,
-    "photo": null
-   },
-   {
-    "text": "Next target: hundreds of desert figures, found by drones. Follow for the next scan. Orbi out.",
+    "text": "Next target: desert drawings that drones keep finding. Follow for the next scan. Orbi out.",
     "shot": "space",
     "overlay": null,
     "react": {
@@ -121,7 +117,7 @@
    "#SatelliteView",
    "#California"
   ],
-  "hook_title": "3 MILE DRY LAKE"
+  "hook_title": "320 KG ROCKS"
  },
  "photos": [
   {

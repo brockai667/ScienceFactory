@@ -12,7 +12,7 @@
  "feature_km": 4.8,
  "beats": [
   {
-   "text": "This dry lake is three miles long, and nobody drew the lines across it.",
+   "text": "Rocks up to three hundred twenty kilograms crawl across this dry lake, leaving tracks.",
    "cam": {
     "lat": 36.6812,
     "lon": -117.5585,
@@ -21,62 +21,43 @@
    "globe": true
   },
   {
-   "text": "So what draws lines on a dry lake?",
+   "text": "How, with three inches of rain a year?",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 14.21
+   },
+   "fx": [
+    {
+     "kind": "ask",
+     "on": "how"
+    }
+   ]
+  },
+  {
+   "text": "Their trails named this place: it's known as the Racetrack.",
    "cam": {
     "lat": 36.6812,
     "lon": -117.5585,
     "z": 14.11
    },
    "highlight": {
-    "on": "lake"
+    "on": "Racetrack"
    },
    "fx": [
     {
-     "kind": "ask",
-     "on": "what"
+     "kind": "speech",
+     "on": "known"
     }
-   ]
-  },
-  {
-   "text": "Rocks here weigh up to three hundred twenty kilograms.",
-   "cam": {
-    "lat": 36.6812,
-    "lon": -117.5585,
-    "z": 15.01
-   },
-   "stamp": {
-    "label": "UP TO 320 KILOGRAMS",
-    "on": "kilograms"
-   },
+   ],
    "react": {
     "expr": "surprised",
-    "on": "kilograms",
+    "on": "Racetrack",
     "dur": 1.4
    }
   },
   {
-   "text": "From orbit, it's flat dried clay, walled in by mountains.",
-   "cam": {
-    "lat": 36.6812,
-    "lon": -117.5585,
-    "z": 14.11
-   },
-   "tag": {
-    "lat": 36.6812,
-    "lon": -117.5585,
-    "label": "DRIED CLAY",
-    "on": "clay"
-   },
-   "photo": {
-    "file": "photos/racetrack_playa/p5.jpg",
-    "label": "RACETRACK PLAYA",
-    "credit": "Lgcharlot, CC BY-SA 4.0",
-    "on": "mountains",
-    "dur": 2.8
-   }
-  },
-  {
-   "text": "Central Park would fit inside it.",
+   "text": "Drop Central Park onto it, and the park comes up short.",
    "cam": {
     "lat": 36.6812,
     "lon": -117.5585,
@@ -130,7 +111,28 @@
    }
   },
   {
-   "text": "Those rocks are sailing stones. They travel across the clay.",
+   "text": "Mountains wall in its floor of dried clay.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 14.11
+   },
+   "tag": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "label": "DRIED CLAY",
+    "on": "clay"
+   },
+   "photo": {
+    "file": "photos/racetrack_playa/p5.jpg",
+    "label": "RACETRACK PLAYA",
+    "credit": "Lgcharlot, CC BY-SA 4.0",
+    "on": "Mountains",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Rain floods the clay with shallow water, which freezes at night.",
    "cam": {
     "lat": 36.6812,
     "lon": -117.5585,
@@ -138,48 +140,46 @@
    },
    "fx": [
     {
-     "kind": "scan",
-     "on": null,
-     "fallback": true
+     "kind": "water",
+     "on": "floods"
     }
-   ],
+   ]
+  },
+  {
+   "text": "By morning, the ice cracks into panels, and wind drives them.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 15.01
+   },
+   "fx": [
+    {
+     "kind": "cracks",
+     "on": "cracks"
+    }
+   ]
+  },
+  {
+   "text": "Those panels shove the stones. Tracks have been recorded since nineteen forty-eight.",
+   "cam": {
+    "lat": 36.6812,
+    "lon": -117.5585,
+    "z": 15.01
+   },
+   "stamp": {
+    "label": "RECORDED SINCE 1948",
+    "on": "since"
+   },
    "photo": {
     "file": "photos/racetrack_playa/p0.jpg",
-    "label": "A SAILING STONE",
+    "label": "THE PLAYA AT NIGHT",
     "credit": "Dan Duriscoe, for the en:U.S. National P",
     "on": "stones",
     "dur": 2.8
    }
   },
   {
-   "text": "They leave long racetrack imprints. Those are the lines.",
-   "cam": {
-    "lat": 36.6812,
-    "lon": -117.5585,
-    "z": 15.01
-   },
-   "fx": [
-    {
-     "kind": "pulse",
-     "on": null,
-     "fallback": true
-    }
-   ]
-  },
-  {
-   "text": "People have documented this since nineteen forty eight.",
-   "cam": {
-    "lat": 36.6812,
-    "lon": -117.5585,
-    "z": 12.31
-   },
-   "stamp": {
-    "label": "SINCE 1948",
-    "on": "since"
-   }
-  },
-  {
-   "text": "Next target: hundreds of desert figures, found by drones. Follow for the next scan. Orbi out.",
+   "text": "Next target: desert drawings that drones keep finding. Follow for the next scan. Orbi out.",
    "cam": {
     "lat": -14.7101,
     "lon": -75.1635,
@@ -199,7 +199,7 @@
    }
   }
  ],
- "hook": "3 MILE DRY LAKE",
+ "hook": "320 KG ROCKS",
  "description": "Racetrack Playa is a dry lake in Death Valley National Park, California, where sailing stones weighing up to 320 kg travel across the clay and leave linear tracks. The phenomenon has been documented since 1948. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Dan Duriscoe, for the en:U.S. National P; Lgcharlot, CC BY-SA 4.0, Wikimedia Commons. Source: Wikipedia.",
  "hashtags": [
   "#RacetrackPlaya",
