@@ -20,5 +20,16 @@
   "due": "2026-11-05T09:00:00.000Z",
   "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_vredefort_impact_structure.mp4",
   "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_vredefort_impact_structure_tiktok.mp4"
+ },
+ "racetrack_playa": {
+  "no": 3,
+  "services": [
+   "tiktok",
+   "youtube",
+   "instagram"
+  ],
+  "due": "2026-11-06T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_racetrack_playa.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_racetrack_playa_tiktok.mp4"
  }
 }
