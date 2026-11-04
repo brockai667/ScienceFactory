@@ -35,7 +35,14 @@
      "kind": "ask",
      "on": "what"
     }
-   ]
+   ],
+   "photo": {
+    "file": "photos/lake_hillier/p0.jpg",
+    "label": "THE REAL COLOR",
+    "credit": "Aussie Oc, CC BY-SA 4.0",
+    "on": "pink",
+    "dur": 2.8
+   }
   },
   {
    "text": "Scoop it into a container, and it stays pink.",
@@ -124,13 +131,20 @@
      "kind": "trace",
      "on": "rings"
     }
-   ]
+   ],
+   "photo": {
+    "file": "photos/lake_hillier/p1.jpg",
+    "label": "PAPERBARK WOODLAND",
+    "credit": "Yodaobione, CC BY-SA 4.0",
+    "on": "woodland",
+    "dur": 2.8
+   }
   },
   {
    "text": "Next target: an African valley below sea level. Follow for the next scan. Orbi out.",
    "cam": {
-    "lat": 14.2417,
-    "lon": 40.3,
+    "lat": 14.0,
+    "lon": 40.5,
     "z": 13.0,
     "hop": true
    },
@@ -148,7 +162,7 @@
   }
  ],
  "hook": "600 M PINK LAKE",
- "description": "Lake Hillier is a saline lake about 600 metres long on Middle Island, off the south coast of Western Australia, and its pink colour stays the same even in a container. The colour is believed to come from the organism Dunaliella salina, which the Extreme Microbiome Project found in a metagenomic analysis of the lake. Imagery: Esri, Maxar, Earthstar Geographics. Source: Wikipedia.",
+ "description": "Lake Hillier is a saline lake about 600 metres long on Middle Island, off the south coast of Western Australia, and its pink colour stays the same even in a container. The colour is believed to come from the organism Dunaliella salina, which the Extreme Microbiome Project found in a metagenomic analysis of the lake. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Aussie Oc, CC BY-SA 4.0; Yodaobione, CC BY-SA 4.0, Wikimedia Commons. Source: Wikipedia.",
  "hashtags": [
   "#LakeHillier",
   "#PinkLake",

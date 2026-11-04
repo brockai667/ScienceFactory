@@ -32,7 +32,11 @@
      "on": "lake"
     },
     "react": null,
-    "photo": null
+    "photo": {
+     "index": 0,
+     "label": "THE REAL COLOR",
+     "on": "pink"
+    }
    },
    {
     "text": "Scoop it into a container, and it stays pink.",
@@ -93,7 +97,11 @@
     "shot": "wide",
     "overlay": null,
     "react": null,
-    "photo": null
+    "photo": {
+     "index": 1,
+     "label": "PAPERBARK WOODLAND",
+     "on": "woodland"
+    }
    },
    {
     "text": "Next target: an African valley below sea level. Follow for the next scan. Orbi out.",
@@ -116,7 +124,22 @@
   ],
   "hook_title": "600 M PINK LAKE"
  },
- "photos": [],
+ "photos": [
+  {
+   "name": "File:Lake Hillier 2 Middle Island Recherche Archipelago NR IV-2011.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Lake_Hillier_2_Middle_Island_Recherche_Archipelago_NR_IV-2011.JPG/1920px-Lake_Hillier_2_Middle_Island_Recherche_Archipelago_NR_IV-2011.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "The Lake Hillier, Middle Island, Recherche Archipelago Nature Reserve, in Western Australia, is a saline lake notable for its pink color, April 2011.",
+   "credit": "Aussie Oc, CC BY-SA 4.0",
+   "file": "photos/lake_hillier/p0.jpg"
+  },
+  {
+   "name": "File:Pink Lake (Lake Hillier) on Middle Island off the coast of Esperance Western Australia.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Pink_Lake_%28Lake_Hillier%29_on_Middle_Island_off_the_coast_of_Esperance_Western_Australia.jpg/1920px-Pink_Lake_%28Lake_Hillier%29_on_Middle_Island_off_the_coast_of_Esperance_Western_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Pink Lake [Lake Hillier] on Middle Island off the coast of Esperance Western Australia",
+   "credit": "Yodaobione, CC BY-SA 4.0",
+   "file": "photos/lake_hillier/p1.jpg"
+  }
+ ],
  "lat": -34.0946,
  "lon": 123.2028,
  "shape": null,
