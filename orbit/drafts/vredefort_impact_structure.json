@@ -4,76 +4,63 @@
   "feature_km": 110,
   "hooks": [
    {
-    "text": "This dome is about one hundred ten kilometers wide, and it's only the middle.",
-    "title": "110 KM DOME"
-   },
-   {
-    "text": "This rock ring is over two billion years old, yet still shows from space.",
+    "text": "Over two billion years old, and this dome is only the middle of something.",
     "title": "2 BILLION YEARS"
    },
    {
-    "text": "Why is there a dome one hundred ten kilometers wide in South Africa?",
+    "text": "A rock dome one hundred ten kilometers wide, and it's only the middle.",
+    "title": "110 KM DOME"
+   },
+   {
+    "text": "Why does a dome one hundred ten kilometers wide sit in South Africa?",
     "title": "110 KM WIDE"
    }
   ],
   "beats": [
    {
-    "text": "This dome is about one hundred ten kilometers wide, and it's only the middle.",
+    "text": "Over two billion years old, and this dome is only the middle of something.",
     "shot": "feature",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "So what was this the center of?",
+    "text": "The middle of what, exactly?",
     "shot": "feature",
     "overlay": {
-     "type": "highlight",
-     "on": "center"
+     "type": "ruler",
+     "on": "middle",
+     "label": "110 KM"
     },
     "react": null,
     "photo": null
    },
    {
-    "text": "It is over two billion years old.",
-    "shot": "close",
-    "overlay": {
-     "type": "stamp",
-     "on": "old",
-     "label": "OVER 2 BILLION YEARS"
-    },
-    "react": {
-     "expr": "happy",
-     "on": "old"
-    },
-    "photo": null
-   },
-   {
-    "text": "From orbit, rings of rock circle the town of Vredefort.",
+    "text": "Luxembourg would fit inside just this middle part.",
     "shot": "feature",
-    "overlay": {
-     "type": "rings",
-     "on": "rings"
-    },
-    "react": null,
-    "photo": {
-     "index": 0,
-     "label": "VREDEFORT DOME",
-     "on": "orbit"
-    }
-   },
-   {
-    "text": "Luxembourg would fit inside it.",
-    "shot": "wide",
     "overlay": {
      "type": "scale",
      "on": "Luxembourg"
     },
-    "react": null,
+    "react": {
+     "expr": "happy",
+     "on": "Luxembourg"
+    },
     "photo": null
    },
    {
-    "text": "Something from space hit here. Its crater spanned up to three hundred kilometers.",
+    "text": "Whatever surrounded it wore away. Only rings of bent bedrock remain.",
+    "shot": "wide",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 0,
+     "label": "VREDEFORT DOME",
+     "on": "rings"
+    }
+   },
+   {
+    "text": "Something from space hit here, leaving a crater up to three hundred kilometers wide.",
     "shot": "wide",
     "overlay": {
      "type": "stamp",
@@ -87,25 +74,36 @@
     "photo": null
    },
    {
-    "text": "That crater wore away. This dome is the bedrock left at its centre.",
+    "text": "In nineteen sixty-one, geologists found the proof: shatter cones.",
+    "shot": "close",
+    "overlay": {
+     "type": "tag",
+     "on": "shatter",
+     "label": "SHATTER CONES"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Only Yarrabubba, in Australia, is a clearly older impact scar.",
     "shot": "feature",
     "overlay": null,
     "react": null,
     "photo": null
    },
    {
-    "text": "Today it's a UNESCO World Heritage Site.",
+    "text": "Since two thousand five, it's a UNESCO World Heritage Site.",
     "shot": "close",
     "overlay": null,
     "react": null,
     "photo": {
      "index": 1,
      "label": "WORLD HERITAGE SITE",
-     "on": "Heritage"
+     "on": "UNESCO"
     }
    },
    {
-    "text": "Next target: a dry lake crossed by straight tracks. Follow for the next scan. Orbi out.",
+    "text": "Next target: rocks that crawl across a dry lake. Follow for the next scan. Orbi out.",
     "shot": "space",
     "overlay": null,
     "react": {
@@ -123,7 +121,7 @@
    "#SatelliteView",
    "#EarthFromSpace"
   ],
-  "hook_title": "110 KM DOME"
+  "hook_title": "2 BILLION YEARS"
  },
  "photos": [
   {

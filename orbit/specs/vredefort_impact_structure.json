@@ -12,7 +12,7 @@
  "feature_km": 110.0,
  "beats": [
   {
-   "text": "This dome is about one hundred ten kilometers wide, and it's only the middle.",
+   "text": "Over two billion years old, and this dome is only the middle of something.",
    "cam": {
     "lat": -27,
     "lon": 27.5,
@@ -21,14 +21,18 @@
    "globe": true
   },
   {
-   "text": "So what was this the center of?",
+   "text": "The middle of what, exactly?",
    "cam": {
     "lat": -27,
     "lon": 27.5,
     "z": 9.75
    },
-   "highlight": {
-    "on": "center"
+   "ruler": {
+    "lat": -27,
+    "lon": 27.5,
+    "km": 110.0,
+    "label": "110 KM",
+    "on": "middle"
    },
    "fx": [
     {
@@ -38,56 +42,7 @@
    ]
   },
   {
-   "text": "It is over two billion years old.",
-   "cam": {
-    "lat": -27,
-    "lon": 27.5,
-    "z": 10.65
-   },
-   "stamp": {
-    "label": "OVER 2 BILLION YEARS",
-    "on": "old"
-   },
-   "fx": [
-    {
-     "kind": "rewind",
-     "on": "it",
-     "n": 2000000000
-    }
-   ],
-   "react": {
-    "expr": "happy",
-    "on": "old",
-    "dur": 1.4
-   }
-  },
-  {
-   "text": "From orbit, rings of rock circle the town of Vredefort.",
-   "cam": {
-    "lat": -27,
-    "lon": 27.5,
-    "z": 9.75
-   },
-   "rings": {
-    "lat": -27,
-    "lon": 27.5,
-    "km": [
-     16.5,
-     33.0,
-     49.5
-    ],
-    "on": "rings"
-   },
-   "photo": {
-    "file": "photos/vredefort_impact_structure/p0.jpg",
-    "label": "VREDEFORT DOME",
-    "credit": "Júlio Reis (User:Tintazul)",
-    "on": "orbit",
-    "dur": 2.8
-   }
-  },
-  {
-   "text": "Luxembourg would fit inside it.",
+   "text": "Luxembourg would fit inside just this middle part.",
    "cam": {
     "lat": -27,
     "lon": 27.5,
@@ -434,14 +389,40 @@
      ]
     ],
     "on": "Luxembourg"
+   },
+   "react": {
+    "expr": "happy",
+    "on": "Luxembourg",
+    "dur": 1.4
    }
   },
   {
-   "text": "Something from space hit here. Its crater spanned up to three hundred kilometers.",
+   "text": "Whatever surrounded it wore away. Only rings of bent bedrock remain.",
    "cam": {
     "lat": -27,
     "lon": 27.5,
     "z": 7.95
+   },
+   "fx": [
+    {
+     "kind": "trace",
+     "on": "rings"
+    }
+   ],
+   "photo": {
+    "file": "photos/vredefort_impact_structure/p0.jpg",
+    "label": "VREDEFORT DOME",
+    "credit": "Júlio Reis (User:Tintazul)",
+    "on": "rings",
+    "dur": 2.8
+   }
+  },
+  {
+   "text": "Something from space hit here, leaving a crater up to three hundred kilometers wide.",
+   "cam": {
+    "lat": -27,
+    "lon": 27.5,
+    "z": 9.85
    },
    "stamp": {
     "label": "UP TO 300 KILOMETERS",
@@ -457,11 +438,31 @@
    }
   },
   {
-   "text": "That crater wore away. This dome is the bedrock left at its centre.",
+   "text": "In nineteen sixty-one, geologists found the proof: shatter cones.",
    "cam": {
     "lat": -27,
     "lon": 27.5,
-    "z": 9.85
+    "z": 9.75
+   },
+   "tag": {
+    "lat": -27,
+    "lon": 27.5,
+    "label": "SHATTER CONES",
+    "on": "shatter"
+   },
+   "fx": [
+    {
+     "kind": "cracks",
+     "on": "shatter"
+    }
+   ]
+  },
+  {
+   "text": "Only Yarrabubba, in Australia, is a clearly older impact scar.",
+   "cam": {
+    "lat": -27,
+    "lon": 27.5,
+    "z": 9.95
    },
    "fx": [
     {
@@ -472,7 +473,7 @@
    ]
   },
   {
-   "text": "Today it's a UNESCO World Heritage Site.",
+   "text": "Since two thousand five, it's a UNESCO World Heritage Site.",
    "cam": {
     "lat": -27,
     "lon": 27.5,
@@ -489,12 +490,12 @@
     "file": "photos/vredefort_impact_structure/p1.jpg",
     "label": "WORLD HERITAGE SITE",
     "credit": "Leo za1, CC BY-SA 3.0",
-    "on": "Heritage",
+    "on": "UNESCO",
     "dur": 2.8
    }
   },
   {
-   "text": "Next target: a dry lake crossed by straight tracks. Follow for the next scan. Orbi out.",
+   "text": "Next target: rocks that crawl across a dry lake. Follow for the next scan. Orbi out.",
    "cam": {
     "lat": 36.6812,
     "lon": -117.5585,
@@ -514,7 +515,7 @@
    }
   }
  ],
- "hook": "110 KM DOME",
+ "hook": "2 BILLION YEARS",
  "description": "The Vredefort Dome in South Africa is the central uplift of an impact structure formed about 2.023 billion years ago, whose worn-away crater was estimated at 170 to 300 km across. It was added to UNESCO's World Heritage list in 2005. Imagery: Esri, Maxar, Earthstar Geographics. Photos: Júlio Reis (User:Tintazul); Leo za1, CC BY-SA 3.0, Wikimedia Commons. Source: Wikipedia.",
  "hashtags": [
   "#Vredefort",
