@@ -53,5 +53,16 @@
   "due": "2026-11-08T09:00:00.000Z",
   "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_area_51.mp4",
   "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_area_51_tiktok.mp4"
+ },
+ "lake_hillier": {
+  "no": 6,
+  "services": [
+   "tiktok",
+   "youtube",
+   "instagram"
+  ],
+  "due": "2026-11-09T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_lake_hillier.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_lake_hillier_tiktok.mp4"
  }
 }
