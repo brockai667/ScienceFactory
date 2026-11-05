@@ -512,272 +512,272 @@
    {
     "id": "heat_shimmer",
     "what": "Wavy heat distortion over hot terrain",
-    "example": "Triggers: hot, scorching, desert, burning.",
-    "engine": "new"
+    "example": "Triggers: hot, scorching, desert, burning. Engine fx heat_shimmer (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "sand_drift",
     "what": "Blowing sand particles across the frame",
-    "example": "Triggers: dune, sand, wind, desert.",
-    "engine": "new"
+    "example": "Triggers: dune, sand, wind, desert. Engine fx sand_drift (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "lightning_flash",
     "what": "White flash with branching bolt",
-    "example": "Triggers: storm, lightning, thunder, strike.",
-    "engine": "new"
+    "example": "Triggers: storm, lightning, thunder, strike. Engine fx lightning_flash (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "xray_layers",
     "what": "Peel-back cut-away layers of the ground",
-    "example": "Triggers: beneath, underground, layers, inside.",
-    "engine": "new"
+    "example": "Triggers: beneath, underground, layers, inside. Engine fx xray_layers (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "footprint_trail",
     "what": "Footprints appear along a path",
-    "example": "Triggers: walked, trail, journey, steps.",
-    "engine": "new"
+    "example": "Triggers: walked, trail, journey, steps. Engine fx footprint_trail (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "radar_blips",
     "what": "Radar sweep with blips",
-    "example": "Triggers: detect, signal, scan, hidden.",
-    "engine": "new"
+    "example": "Triggers: detect, signal, scan, hidden. Engine fx radar_blips (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "tide_timelapse",
     "what": "Water level rises and falls",
-    "example": "Triggers: tide, flood, rises, retreat.",
-    "engine": "new"
+    "example": "Triggers: tide, flood, rises, retreat. Engine fx tide_timelapse (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "terminator_sweep",
     "what": "Day/night shadow line sweeping",
-    "example": "Triggers: night, daylight, sunrise, dark.",
-    "engine": "new"
+    "example": "Triggers: night, daylight, sunrise, dark. Engine fx terminator_sweep (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "compass_spin",
     "what": "Compass needle spins then settles",
-    "example": "Triggers: north, direction, magnetic, compass.",
-    "engine": "new"
+    "example": "Triggers: north, direction, magnetic, compass. Engine fx compass_spin (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "magnifier_lens",
     "what": "Magnifier lens zooms into detail",
-    "example": "Triggers: look closer, tiny, detail, close.",
-    "engine": "new"
+    "example": "Triggers: look closer, tiny, detail, close. Engine fx magnifier_lens (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "split_then_now",
     "what": "Split screen before and after",
-    "example": "Triggers: then, now, used to, once.",
-    "engine": "new"
+    "example": "Triggers: then, now, used to, once. Engine fx split_then_now (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "tape_unroll",
     "what": "Measuring tape unrolls across scene",
-    "example": "Triggers: long, wide, measures, across.",
-    "engine": "new"
+    "example": "Triggers: long, wide, measures, across. Engine fx tape_unroll (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "thermometer",
     "what": "Thermometer gauge rising",
-    "example": "Triggers: degrees, temperature, freezing, hot.",
-    "engine": "new"
+    "example": "Triggers: degrees, temperature, freezing, hot. Engine fx thermometer (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "population_dots_fx",
     "what": "Dots appear as people count",
-    "example": "Triggers: people, live, population, residents.",
-    "engine": "new"
+    "example": "Triggers: people, live, population, residents. Engine fx population_dots_fx (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "orbit_path",
     "what": "Satellite orbit path trace",
-    "example": "Triggers: orbit, passes, satellite, overhead.",
-    "engine": "new"
+    "example": "Triggers: orbit, passes, satellite, overhead. Engine fx orbit_path (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "snow_fall",
     "what": "Falling snow overlay",
-    "example": "Triggers: snow, blizzard, frozen, ice.",
-    "engine": "new"
+    "example": "Triggers: snow, blizzard, frozen, ice. Engine fx snow_fall (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "rain_streaks",
     "what": "Rain streak overlay",
-    "example": "Triggers: rain, monsoon, wet, downpour.",
-    "engine": "new"
+    "example": "Triggers: rain, monsoon, wet, downpour. Engine fx rain_streaks (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "fog_roll",
     "what": "Fog rolling over the scene",
-    "example": "Triggers: fog, mist, cloud, haze.",
-    "engine": "new"
+    "example": "Triggers: fog, mist, cloud, haze. Engine fx fog_roll (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "aurora_ribbons",
     "what": "Colored aurora ribbons at top",
-    "example": "Triggers: aurora, polar, northern lights, glow.",
-    "engine": "new"
+    "example": "Triggers: aurora, polar, northern lights, glow. Engine fx aurora_ribbons (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "lava_glow",
     "what": "Pulsing orange glow in cracks",
-    "example": "Triggers: lava, volcano, magma, molten.",
-    "engine": "new"
+    "example": "Triggers: lava, volcano, magma, molten. Engine fx lava_glow (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "earthquake_shake",
     "what": "Screen shake with ripple rings",
-    "example": "Triggers: quake, tremor, fault, shake.",
-    "engine": "new"
+    "example": "Triggers: quake, tremor, fault, shake. Engine fx earthquake_shake (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "ash_cloud",
     "what": "Dark plume rising",
-    "example": "Triggers: eruption, ash, smoke, plume.",
-    "engine": "new"
+    "example": "Triggers: eruption, ash, smoke, plume. Engine fx ash_cloud (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "star_field",
     "what": "Stars twinkling in background",
-    "example": "Triggers: night sky, stars, cosmic, space.",
-    "engine": "new"
+    "example": "Triggers: night sky, stars, cosmic, space. Engine fx star_field (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "meteor_streak",
     "what": "Meteor streak across frame",
-    "example": "Triggers: meteor, falling, comet.",
-    "engine": "new"
+    "example": "Triggers: meteor, falling, comet. Engine fx meteor_streak (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "depth_sounding",
     "what": "Sonar rings sinking downward",
-    "example": "Triggers: deep, ocean floor, trench.",
-    "engine": "new"
+    "example": "Triggers: deep, ocean floor, trench. Engine fx depth_sounding (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "wind_arrows",
     "what": "Flowing wind arrow field",
-    "example": "Triggers: wind, current, jet, storm.",
-    "engine": "new"
+    "example": "Triggers: wind, current, jet, storm. Engine fx wind_arrows (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "grid_overlay",
     "what": "Lat/long grid fades in",
-    "example": "Triggers: located, coordinates, position.",
-    "engine": "new"
+    "example": "Triggers: located, coordinates, position. Engine fx grid_overlay (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "time_counter",
     "what": "Rolling year counter",
-    "example": "Triggers: years, centuries, since, ago.",
-    "engine": "new"
+    "example": "Triggers: years, centuries, since, ago. Engine fx time_counter (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "mini_globe_pin",
     "what": "Mini globe corner with pin",
-    "example": "Triggers: where, located, continent.",
-    "engine": "new"
+    "example": "Triggers: where, located, continent. Engine fx mini_globe_pin (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "color_shift",
     "what": "False color to real color toggle",
-    "example": "Triggers: actually, looks like, true color.",
-    "engine": "new"
+    "example": "Triggers: actually, looks like, true color. Engine fx color_shift (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "zoom_ruler_ticks",
     "what": "Scale bar grows with zoom",
-    "example": "Triggers: kilometers, miles, scale.",
-    "engine": "new"
+    "example": "Triggers: kilometers, miles, scale. Engine fx zoom_ruler_ticks (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "shockwave_ring",
     "what": "Expanding ring distortion",
-    "example": "Triggers: blast, wave, boom, spreads.",
-    "engine": "new"
+    "example": "Triggers: blast, wave, boom, spreads. Engine fx shockwave_ring (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "pixel_reveal",
     "what": "Pixelated image sharpening",
-    "example": "Triggers: reveal, unmask, resolve, focus.",
-    "engine": "new"
+    "example": "Triggers: reveal, unmask, resolve, focus. Engine fx pixel_reveal (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "flicker_glitch",
     "what": "Brief digital glitch bars",
-    "example": "Triggers: error, corrupted, anomaly, glitch.",
-    "engine": "new"
+    "example": "Triggers: error, corrupted, anomaly, glitch. Engine fx flicker_glitch (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "label_arrow_pop",
     "what": "Arrow with bouncing label",
-    "example": "Triggers: this, here, notice, that spot.",
-    "engine": "new"
+    "example": "Triggers: this, here, notice, that spot. Engine fx label_arrow_pop (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "clock_spin",
     "what": "Clock hands whirling",
-    "example": "Triggers: hours, daily, per day, quickly.",
-    "engine": "new"
+    "example": "Triggers: hours, daily, per day, quickly. Engine fx clock_spin (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "bar_race",
     "what": "Animated bar comparing two values",
-    "example": "Triggers: more than, versus, compared.",
-    "engine": "new"
+    "example": "Triggers: more than, versus, compared. Engine fx bar_race (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "heat_map_bloom",
     "what": "Heat map color bloom over area",
-    "example": "Triggers: concentrated, most, hotspot.",
-    "engine": "new"
+    "example": "Triggers: concentrated, most, hotspot. Engine fx heat_map_bloom (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "ripple_water",
     "what": "Concentric water ripples",
-    "example": "Triggers: drop, lake, still, water.",
-    "engine": "new"
+    "example": "Triggers: drop, lake, still, water. Engine fx ripple_water (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "ice_crack_spread",
     "what": "Crack lines spreading on ice",
-    "example": "Triggers: ice, glacier, calving, break.",
-    "engine": "new"
+    "example": "Triggers: ice, glacier, calving, break. Engine fx ice_crack_spread (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "season_swap",
     "what": "Seasonal color swap",
-    "example": "Triggers: autumn, season, spring, changes.",
-    "engine": "new"
+    "example": "Triggers: autumn, season, spring, changes. Engine fx season_swap (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "night_lights_on",
     "what": "City lights switching on",
-    "example": "Triggers: lights, city, glow at night.",
-    "engine": "new"
+    "example": "Triggers: lights, city, glow at night. Engine fx night_lights_on (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "silhouette_outline",
     "what": "Draw outline of shape around feature",
-    "example": "Triggers: shape, looks like, outline, resembles.",
-    "engine": "new"
+    "example": "Triggers: shape, looks like, outline, resembles. Engine fx silhouette_outline (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "number_slot_roll",
     "what": "Slot-machine number roll",
-    "example": "Triggers: exactly, number, count of.",
-    "engine": "new"
+    "example": "Triggers: exactly, number, count of. Engine fx number_slot_roll (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "scan_line_sweep",
     "what": "Horizontal scan line sweep",
-    "example": "Triggers: scanning, analysis, reading.",
-    "engine": "new"
+    "example": "Triggers: scanning, analysis, reading. Engine fx scan_line_sweep (fx_new.py).",
+    "engine": "ready"
    },
    {
     "id": "ruler",

@@ -646,6 +646,42 @@ def beat_fx(txt, i, n, nb, measured):
     return fx
 
 
+NEW_FX_MAX = 1      # dalsie efekty (fx_new.py) na video; variety_catalog rules: max 1 "signature" prvok na video
+NEW_FX_WINDOW = 5   # efekt z poslednych 5 vydanych dielov sa neopakuje
+
+
+def recent_new_fx():
+    """druhy efektov z fx_new pouzite v poslednych NEW_FX_WINDOW vydanych dieloch (published.json + specs/)."""
+    try:
+        import fx_new
+        pub = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "published.json"), encoding="utf-8"))
+    except Exception:
+        return set()
+    out = set()
+    for _, slug in sorted((v.get("no", 0), k) for k, v in pub.items())[-NEW_FX_WINDOW:]:
+        p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "specs", slug + ".json")
+        if os.path.exists(p):
+            out |= {f["kind"] for b in json.load(open(p, encoding="utf-8"))["beats"] for f in b.get("fx", [])
+                    if f["kind"] in fx_new.EFFECTS}
+    return out
+
+
+def new_fx(txt, i, n, nb, fx, beats):
+    """Jeden dalsi efekt z fx_new.TRIGGERS podla slov beatu (bez opakovania vo videu ani v poslednych dieloch);
+    nie cez pravitko, foto, dopad."""
+    if i == 0 or i == n - 1 or len(fx) >= 2 or any(k in nb for k in ("ruler", "rings", "scale", "impact", "photo")):
+        return []
+    try:
+        import fx_new
+    except ImportError:                                      # engine efekty (cv2) nie su k dispozicii -> bez nich
+        return []
+    used = [f["kind"] for x in beats for f in x.get("fx", []) if f["kind"] in fx_new.EFFECTS]
+    if len(used) >= NEW_FX_MAX:
+        return []
+    f = fx_new.pick(txt, nb, used=set(used) | recent_new_fx(), have=[f["kind"] for f in fx])
+    return [f] if f else []
+
+
 def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
     lat, lon = fact["lat"], fact["lon"]
     km = float(s["feature_km"])
@@ -693,6 +729,7 @@ def build(fact, s, photos, scale=None, shape=None, no=None, nxt_pos=None):
             hw = HIT.search(b["text"], m.start()) or HIT.search(b["text"]) or m
             nb["impact"] = {"on": hw.group(1).lower()}
         fx = beat_fx(b["text"], i, len(s["beats"]), nb, measured)
+        fx += new_fx(b["text"], i, len(s["beats"]), nb, fx, beats)
         busy = fx or any(k in nb for k in ("ruler", "rings", "scale", "highlight", "tag", "stamp", "impact", "photo"))
         if not busy and 0 < i < len(s["beats"]) - 1:         # nic sa nedeje -> nahradny efekt (sken / sonar), striedavo
             nfb = sum(1 for x in beats for f in x.get("fx", []) if f.get("fallback"))

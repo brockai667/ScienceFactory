@@ -931,6 +931,8 @@ def draw_fx(fr, t, cam, spec, beats, words):
                     paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), int(min(H - 700, max(300, y0 - lab.shape[0] - 30))), al)
             elif k == "follow":                               # tlacidlo sledovat + tuknutie
                 draw_follow(fr, t, dt, out, spec)
+            else:                                             # dalsie efekty (fx_new.py, variety_catalog visual_effects)
+                fx_new.draw(k, fr, t, dt, cx, cy, R, out, f, cam, spec)
 
 
 def avatar():
@@ -1072,6 +1074,8 @@ def draw_highlight(fr, t, cam, spec, beats, words):
 # ---------------------------------------------------------------- Orbi (rozpravac) + foto karty
 sys.path.insert(0, HERE)
 import mascots
+import fx_new
+fx_new.E = sys.modules[__name__]
 
 ORBI_H, ORBI_X, ORBI_BOTTOM = 330, 30, 1745
 CYAN = (255, 240, 78)                                        # BGR
@@ -1354,6 +1358,27 @@ def mix_audio(spec, voice, total, beats, work, words=()):
                 w = sfx_whoosh(1.8, rng)
                 w = w if f.get("dir", -1) > 0 else w[::-1]
                 put(ts, w / (np.abs(w).max() + 1e-9) * db(-17), ev)
+            elif fx_new.SOUND.get(k):                          # zvuky dalsich efektov
+                snd = fx_new.SOUND[k]
+                if snd == "boom":
+                    put(ts, sfx_boom(rng, 1.2) / 1.5 * db(-12), ev)
+                elif snd == "whoosh":
+                    w = sfx_whoosh(1.2, rng); put(ts, w / (np.abs(w).max() + 1e-9) * db(-17), ev)
+                elif snd == "riser":
+                    put(ts, sfx.riser(SR, rng, 0.9) * db(-19), ev)
+                elif snd == "pop":
+                    put(ts, sfx.pop(SR, rng, f0=900) * db(-15), ev)
+                elif snd == "tick":
+                    for i in range(8):
+                        put(ts + 0.09 * i, sfx.tick(SR, rng) * db(-22), ev)
+                elif snd == "ping":
+                    for j in range(2):
+                        n0 = int(0.5 * SR); tt = np.arange(n0) / SR
+                        put(ts + 0.6 * j, np.sin(2 * math.pi * 1150 * tt) * np.exp(-tt / 0.13) * db(-18), ev)
+                elif snd in ("glitch", "crack"):
+                    for i in range(5):
+                        c = rng.normal(0, 1, int(0.05 * SR)) * np.exp(-np.linspace(0, 6, int(0.05 * SR)))
+                        put(ts + 0.08 * i + rng.uniform(0, 0.03), c / 3 * db(-14 if snd == "crack" else -18), ev)
             elif k == "pulse":
                 for j in range(3):
                     n0 = int(0.5 * SR); tt = np.arange(n0) / SR
