@@ -139,6 +139,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          python orbit/publish.py --check-stop > /dev/null || exit 0   # po STOP_AFTER dieloch zasoba netreba (ziadny falosny mail)
           python orbit/bank.py left && exit 0
           T="CURIO - doplniť scripty"
           if [ -z "$(gh issue list --state open --search "$T in:title" --json number --jq '.[].number')" ]; then
