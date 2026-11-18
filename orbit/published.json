@@ -108,5 +108,95 @@
   "due": "2026-11-13T09:00:00.000Z",
   "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_north_sentinel_island.mp4",
   "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_north_sentinel_island_tiktok.mp4"
+ },
+ "surtsey": {
+  "no": 11,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-19T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_surtsey.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_surtsey_tiktok.mp4"
+ },
+ "grand_prismatic_spring": {
+  "no": 12,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-20T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_grand_prismatic_spring.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_grand_prismatic_spring_tiktok.mp4"
+ },
+ "palm_jumeirah": {
+  "no": 13,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-21T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_palm_jumeirah.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_palm_jumeirah_tiktok.mp4"
+ },
+ "mir_mine": {
+  "no": 14,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-22T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_mir_mine.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_mir_mine_tiktok.mp4"
+ },
+ "hashima_island": {
+  "no": 15,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-23T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_hashima_island.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_hashima_island_tiktok.mp4"
+ },
+ "great_salt_lake": {
+  "no": 16,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-24T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_great_salt_lake.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_great_salt_lake_tiktok.mp4"
+ },
+ "manicouagan_ring": {
+  "no": 17,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-25T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_manicouagan_ring.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_manicouagan_ring_tiktok.mp4"
+ },
+ "kawah_ijen": {
+  "no": 18,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-26T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_kawah_ijen.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_kawah_ijen_tiktok.mp4"
+ },
+ "giza_pyramid_complex": {
+  "no": 19,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-27T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_giza_pyramid_complex.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_giza_pyramid_complex_tiktok.mp4"
+ },
+ "meteor_crater": {
+  "no": 20,
+  "services": [
+   "tiktok"
+  ],
+  "due": "2026-11-28T09:00:00.000Z",
+  "video": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_meteor_crater.mp4",
+  "tiktok": "https://github.com/brockai667/ScienceFactory/releases/download/orbit/orbit_meteor_crater_tiktok.mp4"
  }
 }

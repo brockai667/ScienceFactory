@@ -56,7 +56,12 @@ def dms(v, pos, neg):
 
 # ---------------------------------------------------------------- dlazdice
 _tiles = {}
+# starsia snimka Esri Wayback pre jednu epizodu (spec "imagery_release": cislo vydania, "imagery_minz": od akej urovne)
+WAYBACK = "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{rel}/{z}/{y}/{x}"
+WB = {"rel": None, "minz": 11}
 def tile_path(z, x, y):
+    if WB["rel"] and z >= WB["minz"]:
+        return os.path.join(TDIR + f"_wb{WB['rel']}", str(z), str(y), f"{x}.jpg")
     return os.path.join(TDIR, str(z), str(y), f"{x}.jpg")
 
 
@@ -66,10 +71,16 @@ def fetch(key):
     if os.path.exists(p) and os.path.getsize(p) > 0:
         return
     os.makedirs(os.path.dirname(p), exist_ok=True)
+    wb = bool(WB["rel"]) and z >= WB["minz"]
     for a in range(4):
         try:
-            d = urllib.request.urlopen(urllib.request.Request(TILE.format(z=z, x=x, y=y), headers=UA), timeout=30).read()
+            u = WAYBACK.format(rel=WB["rel"], z=z, x=x, y=y) if wb else TILE.format(z=z, x=x, y=y)
+            d = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30).read()
             open(p, "wb").write(d); return
+        except urllib.error.HTTPError as e:
+            if wb and e.code == 404:             # stare vydanie tu dlazdicu nema -> aktualna snimka
+                wb = False; continue
+            time.sleep(2 + 3 * a)
         except Exception:
             time.sleep(2 + 3 * a)
     open(p, "wb").write(b"")                    # chyba -> prazdna (ciern) dlazdica, nezhodi render
@@ -254,11 +265,12 @@ def word_times(beats, work):
     while i < len(orig):
         if "s" in orig[i]:
             i += 1; continue
-        j = i
-        while j < len(orig) and "s" not in orig[j]:
+        j = i; bi = orig[i]["b"]                 # nenajdene slova (cisla slovom) ostanu vo svojom beate
+        while j < len(orig) and "s" not in orig[j] and orig[j]["b"] is bi:
             j += 1
-        lo = orig[i - 1]["e"] if i > 0 else orig[i]["b"]["t0"]
-        hi = orig[j]["s"] if j < len(orig) else orig[i]["b"]["t_end_voice"]
+        lo = orig[i - 1]["e"] if i > 0 and orig[i - 1]["b"] is bi else bi["t0"]
+        hi = orig[j]["s"] if j < len(orig) and orig[j]["b"] is bi else bi["t_end_voice"]
+        lo = min(max(lo, bi["t0"]), bi["t_end_voice"]); hi = max(lo + 0.05, min(hi, bi["t_end_voice"]))
         tot = sum(len(o["k"]) + 1 for o in orig[i:j]); t = lo
         for o in orig[i:j]:
             d = (hi - lo) * (len(o["k"]) + 1) / tot
@@ -336,6 +348,8 @@ def build_ass(words, keys, work):
         chunks.append(cur)
     for i, ch in enumerate(chunks):
         end = chunks[i + 1][0]["s"] if i + 1 < len(chunks) and chunks[i + 1][0]["b"] is ch[0]["b"] else ch[-1]["e"] + 0.2
+        if i + 1 < len(chunks):                  # nikdy dva titulky naraz (kratka medzera medzi beatmi)
+            end = min(end, chunks[i + 1][0]["s"])
         txt = []
         for w in ch:
             t = re.sub(r"[^\w'’\-?]", "", w["t"]).upper()
@@ -347,15 +361,24 @@ def build_ass(words, keys, work):
 
 
 # ---------------------------------------------------------------- kamera
-def camera_track(spec, beats, total):
-    """Pre kazdy snimok (lat, lon, z, globe_R alebo None, globe_mix)."""
+def out_times(spec, total):
+    """v2 slucka: (zaciatok odletu, koniec odletu) - zrkadlo uvodneho priletu, posledny snimok = prvy snimok."""
+    t1 = total - (GLOBE_T - 0.3)
+    return t1 - float(spec.get("out_fly", 1.3)), t1
+
+
+def camera_track(spec, beats, total, words=()):
+    """Pre kazdy snimok (lat, lon, z)."""
+    v2 = bool(spec.get("v2"))
+    drift_k = float(spec.get("drift", 0.11 if v2 else 0.035))
+    drift0 = float(spec.get("drift0", 0.24)) if v2 else drift_k   # v2: po pristati kamera hned pokracuje dnu (ziadne statie)
     keys = []
     prev = None
     for i, b in enumerate(beats):
         c = b["cam"]
         if i == 0:
             t_fly0 = GLOBE_T - 0.3
-            keys.append(("fly", t_fly0, t_fly0 + 1.5,           # miesto musi byt na obrazovke do ~3 s (hook)
+            keys.append(("fly", t_fly0, t_fly0 + float(spec.get("fly0", 1.5)),   # miesto musi byt na obrazovke do ~3 s (hook)
                          (c["lat"], c["lon"], GLOBE_ZEND), (c["lat"], c["lon"], c["z"])))
         else:
             mv = min(1.7, max(0.9, 0.4 * (b["t1"] - b["t0"]))) if abs(c["z"] - prev["z"]) > 0.5 else 1.0
@@ -364,26 +387,47 @@ def camera_track(spec, beats, total):
             keys.append(("hop" if c.get("hop") else "fly", b["t0"] - 0.15, b["t0"] - 0.15 + mv,
                          (prev["lat"], prev["lon"], prev["z"]), (c["lat"], c["lon"], c["z"])))
         prev = c
+        for m in b.get("moves", []):                          # v2: dalsie pohyby kamery vnutri beatu (na slovo)
+            ts = word_at(words, b, m.get("on"), 0.5 * (b["t1"] - b["t0"])) - 0.15
+            keys.append(("fly", ts, ts + float(m.get("dur", 1.2)),
+                         (prev["lat"], prev["lon"], prev["z"]), (m["lat"], m["lon"], m["z"])))
+            prev = m
+    if spec.get("outro") == "loop":                           # v2: odlet spat na globus (slucka)
+        a0, a1 = out_times(spec, total)
+        c0 = beats[0]["cam"]
+        keys.append(("out", a0, a1, (prev["lat"], prev["lon"], prev["z"]), (c0["lat"], c0["lon"], GLOBE_ZEND)))
+
+    def at(t, upto, starts):
+        cur = None
+        for j in range(upto):
+            kind, a, bnd, _, p1 = keys[j]
+            if t < a:
+                continue
+            p0 = starts[j]
+            u = ease((t - a) / max(0.05, bnd - a))
+            # z: pri velkej zmene "skok von a dnu" by bol prehnany - staci plynuly log-zoom
+            lat = p0[0] + (p1[0] - p0[0]) * u
+            lon = p0[1] + (p1[1] - p0[1]) * u
+            z = p0[2] + (p1[2] - p0[2]) * u
+            if kind == "hop":                               # obluk: presun sa deje vysoko nad Zemou (z ~4 v strede)
+                v = min(1.0, max(0.0, (t - a) / max(0.05, bnd - a)))
+                w = ease(min(1.0, max(0.0, (v - 0.25) / 0.5)))
+                lat, lon = p0[0] + (p1[0] - p0[0]) * w, p0[1] + (p1[1] - p0[1]) * w
+                dip = max(0.0, (p0[2] + p1[2]) / 2 - 4.0)
+                z = p0[2] + (p1[2] - p0[2]) * ease(v) - dip * math.sin(math.pi * v)
+            drift = 0.0 if kind == "out" else max(0.0, t - bnd) * (drift0 if j == 0 else drift_k)   # pomaly dych kamery po dolete
+            cur = (lat, lon, z + drift)
+        return cur
+
+    # v2: kazdy pohyb zacina tam, kde kamera naozaj je (aj s dychom) -> ziadny skok na hrane beatu
+    starts = [k[3] for k in keys]
+    if v2:
+        for j in range(1, len(keys)):
+            starts[j] = at(keys[j][1], j, starts) or keys[j][3]
     frames = []
     n = int(math.ceil(total * FPS))
     for f in range(n):
-        t = f / FPS
-        cur = None
-        for kind, a, bnd, p0, p1 in keys:
-            if t >= a:
-                u = ease((t - a) / max(0.05, bnd - a))
-                # z: pri velkej zmene "skok von a dnu" by bol prehnany - staci plynuly log-zoom
-                lat = p0[0] + (p1[0] - p0[0]) * u
-                lon = p0[1] + (p1[1] - p0[1]) * u
-                z = p0[2] + (p1[2] - p0[2]) * u
-                if kind == "hop":                           # obluk: presun sa deje vysoko nad Zemou (z ~4 v strede)
-                    v = min(1.0, max(0.0, (t - a) / max(0.05, bnd - a)))
-                    w = ease(min(1.0, max(0.0, (v - 0.25) / 0.5)))
-                    lat, lon = p0[0] + (p1[0] - p0[0]) * w, p0[1] + (p1[1] - p0[1]) * w
-                    dip = max(0.0, (p0[2] + p1[2]) / 2 - 4.0)
-                    z = p0[2] + (p1[2] - p0[2]) * ease(v) - dip * math.sin(math.pi * v)
-                drift = max(0.0, t - bnd) * 0.035          # pomaly dych kamery po dolete
-                cur = (lat, lon, z + drift)
+        cur = at(f / FPS, len(keys), starts)
         if cur is None:
             cur = (beats[0]["cam"]["lat"], beats[0]["cam"]["lon"], GLOBE_ZEND)
         frames.append(cur)
@@ -463,10 +507,29 @@ def draw_overlays(fr, t, cam, spec, beats, words):
     paste_rgba(fr, text_rgba("Imagery: Esri, Maxar, Earthstar Geographics", 22, fill=(255, 255, 255, 150)), 40, 1830)
     # vyhladavaci riadok: pise suradnice 0,15-1,4 s, drzi do konca 1. beatu
     b0 = beats[0]
-    if t < b0["t1"] + 0.3:
+    hold = float(spec.get("intro_hold", 2.3)) if spec.get("v2") else b0["t1"]   # v2: banner zmizne, ked kamera doleti
+    if spec.get("outro") == "loop":                           # v2: koniec = globus + (volitelne) otazka pre divaka
+        tau = spec.get("_total", 1e9) - t
+        if tau < 0.45:
+            paste_rgba(fr, search_bar("", True), 60, 130, ease(min(1.0, (0.45 - tau) / 0.3)))
+        ot = spec.get("outro_text")
+        if ot and tau < 1.5:
+            for i, ln in enumerate(ot if isinstance(ot, list) else [ot]):
+                lab = text_rgba(ln, 84, fill=(255, 214, 0, 255) if i else (255, 255, 255, 255), box=(0, 0, 0, 185))
+                paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 330 + i * 130, ease(min(1.0, (1.5 - tau) / 0.3)))
+        if not ot and spec.get("hook") and tau < 0.45:        # bez otazky: hak sa vrati -> posledny snimok = prvy
+            hw = spec["hook"].split()
+            cut = len(hw) if len(spec["hook"]) <= 12 or len(hw) < 2 else min(
+                range(1, len(hw)), key=lambda c: max(len(" ".join(hw[:c])), len(" ".join(hw[c:]))))
+            ua = ease(min(1.0, (0.45 - tau) / 0.4))
+            for i, ln in enumerate([" ".join(hw[:cut]), " ".join(hw[cut:])]):
+                if ln:
+                    lab = text_rgba(ln, 104, fill=(255, 214, 0, 255) if i else (255, 255, 255, 255), box=(0, 0, 0, 185))
+                    paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 300 + i * 150 - int(25 * ua), ua)
+    if t < hold + 0.3:
         s = spec["coords"]
         k = int(len(s) * min(1.0, max(0.0, (t - 0.15) / 1.25)))
-        a = 1.0 if t < b0["t1"] - 0.1 else max(0.0, 1 - (t - b0["t1"] + 0.1) / 0.4)
+        a = 1.0 if t < hold - 0.1 else max(0.0, 1 - (t - hold + 0.1) / 0.4)
         paste_rgba(fr, search_bar(s[:k], k < len(s)), 60, 130, a)
         if spec.get("series_no") is not None:                 # odznak serie nad pravym koncom vyhladavaca
             bd = badge(int(spec["series_no"]))
@@ -522,7 +585,7 @@ def draw_overlays(fr, t, cam, spec, beats, words):
                 paste_rgba(fr, lab, int(x - lab.shape[1] / 2), int(y - 20 - 150 * u - lab.shape[0]), u)
         if "stamp" in b:
             r = b["stamp"]; ts = word_at(words, b, r.get("on"), 0.5)
-            if ts <= t < b["t1"]:
+            if ts <= t < b["t1"] and not any(c0 - 0.1 <= t < c1 for c0, c1, _ in ORBI.get("cards", [])):   # nie pod fotkou
                 u = ease((t - ts) / 0.3) * min(1.0, (b["t1"] - t) / 0.25)
                 lab = text_rgba(r["label"], 70, fill=(255, 255, 255, 255), box=(0, 0, 0, 170))
                 paste_rgba(fr, lab, int(W / 2 - lab.shape[1] / 2), 330 - int(30 * (1 - u)), u)
@@ -885,7 +948,8 @@ def draw_fx(fr, t, cam, spec, beats, words):
                       for sx, sy in ((1, 0), (-1, 0), (0, 1), (0, -1))]
                 glow_lines(fr, cr, CYAN, 5, core=(255, 255, 230), alpha=out)
             elif k == "depth":                                # hlbkomer: znacka klesa ku dnu, jama tmavne
-                rr = min(R, 420); u = ease(min(1.0, max(0.0, dt - 0.3) / 1.6))
+                cd = min(1.6, max(0.5, b["t1"] - 0.6 - (ts + 0.3)))          # pocitadlo dobehne pred koncom beatu
+                rr = min(R, 420); u = ease(min(1.0, max(0.0, dt - 0.3) / cd))
                 m = np.zeros((H, W), np.float32)
                 cv2.fillPoly(m, [np.round(feature_px(spec, cam) * 16).astype(np.int32)], 1.0, cv2.LINE_AA, 4)
                 bb = roi(feature_px(spec, cam), 30)
@@ -1141,6 +1205,7 @@ def prep_orbi(spec, beats, words, work):
             t1 = min([t0 + p.get("dur", 2.8)] + [s - 0.15 for s in ov if s > t0 + 1.2])   # fotka nezakryje dalsi overlay
             cards.append((t0, t1, photo_card(os.path.join(HERE, p["file"]), p["label"], p["credit"])))
     ORBI["cards"] = cards
+    ORBI["loop_total"] = spec.get("_total") if spec.get("outro") == "loop" else None
 
 
 _sprites = {}
@@ -1198,6 +1263,9 @@ def draw_orbi(fr, t, cam):
             else:
                 target = data
     pop = ease((t - 0.35) / 0.35) if t < 0.7 else 1.0
+    lt = ORBI.get("loop_total")
+    if lt and lt - t < 0.6:                                  # slucka: Orbi pred koncom zmizne (1. snimok je bez neho)
+        pop = min(pop, ease((lt - t - 0.15) / 0.35))
     if pop <= 0:
         return
     if target:
@@ -1292,6 +1360,8 @@ def mix_audio(spec, voice, total, beats, work, words=()):
     vp = float(np.percentile(np.abs(v), 99.9))              # spicka hlasu; efekty -18 az -12 dB pod nou
     db = lambda d: vp * 10 ** (d / 20)
     put(GLOBE_T - 1.0, sfx_whoosh(1.8, rng) * 1.2)          # ponor z glóbusu
+    if spec.get("outro") == "loop":
+        put(out_times(spec, total)[0] - 0.1, sfx_whoosh(1.8, rng)[::-1])   # odlet spat na globus
     prev = beats[0]["cam"]
     for b in beats[1:]:
         c = b["cam"]
@@ -1435,17 +1505,20 @@ def render(spec, beats, words, cams, total, work, out):
     yy, xx = _yy, _xx
     vig = np.clip(1.12 - (((xx - W / 2) / W) ** 2 + ((yy - H / 2) / H) ** 2) * 1.1, 0.55, 1)[..., None]
     sw = sepia_window(beats, words)
+    loop = spec.get("outro") == "loop"
+    total = spec.get("_total", len(cams) / FPS)
     for f, cam in enumerate(cams):
         t = f / FPS
-        if t < GLOBE_T:
-            g = render_globe(*globe_params(spec, t))
-            mix = min(1.0, max(0.0, (t - (GLOBE_T - 0.3)) / 0.3))
+        tg = t if t < GLOBE_T else (total - t if loop and total - t < GLOBE_T else None)   # cas na globuse (uvod / zrkadlovy koniec)
+        if tg is not None:
+            g = render_globe(*globe_params(spec, tg))
+            mix = min(1.0, max(0.0, (tg - (GLOBE_T - 0.3)) / 0.3))
             fr = g if mix <= 0 else g * (1 - mix) + render_flat(*cam) * mix
         else:
             fr = render_flat(*cam)
         fr = fr * vig
-        ocam = cam if t >= GLOBE_T - 0.3 else (globe_params(spec, t)[0], globe_params(spec, t)[1],
-                                               math.log2(2 * math.pi * globe_params(spec, t)[2] / 256))
+        gp = globe_params(spec, tg) if tg is not None and tg < GLOBE_T - 0.3 else None
+        ocam = cam if gp is None else (gp[0], gp[1], math.log2(2 * math.pi * gp[2] / 256))
         draw_highlight(fr, t, ocam, spec, beats, words)
         draw_fx(fr, t, ocam, spec, beats, words)
         draw_impact(fr, t, ocam, spec, beats, words)
@@ -1453,7 +1526,7 @@ def render(spec, beats, words, cams, total, work, out):
         draw_cards(fr, t)
         draw_orbi(fr, t, ocam)
         film_post(fr, t, sw)
-        if t < 0.12:
+        if t < 0.12 and not loop:                             # slucka: prvy snimok = posledny, bez stmievacky
             fr *= t / 0.12 * 0.6 + 0.4
         p.stdin.write(np.clip(fr, 0, 255).astype(np.uint8).tobytes())
         if f % 150 == 0:
@@ -1466,6 +1539,8 @@ def render(spec, beats, words, cams, total, work, out):
 def main():
     spec_path = sys.argv[1]
     spec = json.load(open(spec_path, encoding="utf-8"))
+    if spec.get("imagery_release"):
+        WB["rel"] = int(spec["imagery_release"]); WB["minz"] = int(spec.get("imagery_minz", 11))
     slug = os.path.splitext(os.path.basename(spec_path))[0]
     work = os.path.join(ROOT, "temp", "orbit_" + slug)
     os.makedirs(os.path.join(work, "fonts"), exist_ok=True)
@@ -1474,7 +1549,7 @@ def main():
         open(fdst, "wb").write(open(FONT, "rb").read())
     out = os.path.abspath(sys.argv[2] if len(sys.argv) > 2 else os.path.join(ROOT, "output", f"orbit_{slug}.mp4"))
     beats = spec["beats"]
-    print("1) hlas"); voice, total = tts(spec, beats, work); total += 0.6; print(f"   {total:.1f} s")
+    print("1) hlas"); voice, total = tts(spec, beats, work); total += float(spec.get("tail", 0.6)); spec["_total"] = total; print(f"   {total:.1f} s")
     print("2) casy slov"); words = word_times(beats, work)
     keys = set()
     for b in beats:
@@ -1483,8 +1558,10 @@ def main():
                 keys.add(re.sub(r"[^a-z0-9]", "", b[k]["on"].lower()))
     build_ass(words, keys, work)
     prep_orbi(spec, beats, words, work)
-    print("3) kamera + dlazdice"); cams = camera_track(spec, beats, total); prefetch(spec, cams); setup_grade(cams)
+    print("3) kamera + dlazdice"); cams = camera_track(spec, beats, total, words); prefetch(spec, cams); setup_grade(cams)
     print("4) zvuk"); mix_audio(spec, voice, total, beats, work, words)
+    if spec.get("outro") == "loop":                           # efekty a popisky posledneho beatu skoncia s odletom
+        beats[-1]["t1"] = max(beats[-1]["t0"] + 0.5, min(beats[-1]["t1"], out_times(spec, total)[0] + 0.25))
     print("5) render"); render(spec, beats, words, cams, total, work, out)
     out_tt = os.path.splitext(out)[0] + "_tiktok.mp4"          # rovnaky obraz, zvuk bez hudby
     subprocess.run([FF, "-y", "-i", out, "-i", "mix_tt.wav", "-map", "0:v", "-map", "1:a", "-c:v", "copy",

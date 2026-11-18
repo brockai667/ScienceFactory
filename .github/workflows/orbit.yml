@@ -29,6 +29,10 @@ on:
         description: "Stiahnut naplanovane diely na prerobenie (slugy oddelene medzerou), nic nepisat ani nerenderovat"
         type: string
         default: ""
+      retry:
+        description: "Len doplnit Buffer (YT+IG) pri dieloch z orbit/published.json, ktore ho este nemaju; nic nepisat ani nerenderovat"
+        type: boolean
+        default: false
 
 permissions:
   contents: write          # ulozi scenar (orbit/specs), fotky a stav fronty
@@ -77,7 +81,7 @@ jobs:
         run: python orbit/publish.py --check-stop
 
       - name: Doplnit Buffer pri starsich dieloch
-        if: (github.event_name == 'schedule' || github.event.inputs.publish == 'true')
+        if: (github.event_name == 'schedule' || github.event.inputs.publish == 'true' || github.event.inputs.retry == 'true')
         continue-on-error: true
         env:
           BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
@@ -100,7 +104,7 @@ jobs:
 
       - name: Napisat scenar (zasoba orbit/bank, inak Groq + kontrola faktov)
         id: write
-        if: github.event.inputs.retime != 'true' && (github.event.inputs.unpublish == '' || github.event.inputs.unpublish == null)
+        if: github.event.inputs.retime != 'true' && github.event.inputs.retry != 'true' && (github.event.inputs.unpublish == '' || github.event.inputs.unpublish == null)
         env:
           MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
           MODELS_BASE_URL: https://api.groq.com/openai/v1

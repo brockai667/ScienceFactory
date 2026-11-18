@@ -114,7 +114,7 @@
   "title": "Grand Prismatic Spring",
   "lat": 44.525,
   "lon": -110.8381,
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "socotra",
@@ -139,14 +139,14 @@
   "title": "Surtsey",
   "lat": 63.303,
   "lon": -20.605,
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "hashima_island",
   "title": "Hashima Island",
   "lat": 32.62777778,
   "lon": 129.73833333,
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "pripyat",
@@ -167,7 +167,7 @@
   "title": "Mir mine",
   "lat": 62.52583333,
   "lon": 113.98416667,
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "bingham_canyon_mine",
@@ -209,7 +209,7 @@
   "title": "Great Salt Lake",
   "lat": 41.16666667,
   "lon": -112.53333333,
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "salar_de_uyuni",
@@ -356,7 +356,7 @@
   "title": "Palm Jumeirah",
   "lat": 25.11805556,
   "lon": 55.13333333,
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "the_world_archipelago",
@@ -503,7 +503,7 @@
   "title": "Meteor Crater",
   "lat": 35.02805556,
   "lon": -111.02333333,
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "wolfe_creek_crater",
@@ -748,7 +748,7 @@
   "title": "Giza pyramid complex",
   "lat": 29.97611111,
   "lon": 31.13277778,
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "teotihuacan",

@@ -929,6 +929,8 @@ def fx_thermometer(c):
     n = float(c.f["n"]) if c.f.get("n") is not None else 50.0
     unit = c.f.get("unit", "C")
     lo, hi = (-40.0, 60.0) if unit == "C" else (-40.0, 140.0)
+    if n > hi:
+        lo, hi = 0.0, float(np.ceil(n / 50.0) * 50)
     s = E.back_ease(c.dt, 0.35)
     if s <= 0.05:
         return
@@ -1115,7 +1117,9 @@ def fx_ripple_water(c):
     env = np.clip((front - d) / 60, 0, 1) * np.clip(1 - d / rr, 0, 1) * a
     w = np.sin(d / 22 - c.dt * 12)
     off = 7 * w * env
-    sub = cv2.remap(c.fr, E._xx[y0:y1, x0:x1] - dx / d * off, E._yy[y0:y1, x0:x1] - dy / d * off, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+    mx = (E._xx[y0:y1, x0:x1] - dx / d * off).astype(np.float32)
+    my = (E._yy[y0:y1, x0:x1] - dy / d * off).astype(np.float32)
+    sub = cv2.remap(c.fr, mx, my, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
     sub += (np.clip(w, 0, 1) ** 4 * env * 70)[..., None] * np.array([1.0, 0.95, 0.85], np.float32)
     c.fr[y0:y1, x0:x1] = sub
     if c.dt < 0.4:
