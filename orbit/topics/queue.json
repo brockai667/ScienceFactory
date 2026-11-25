@@ -174,9 +174,11 @@
  {
   "slug": "bingham_canyon_mine",
   "title": "Bingham Canyon Mine",
-  "lat": 40.523,
-  "lon": -112.151,
-  "status": "todo"
+  "lat": 40.5316,
+  "lon": -112.1353,
+  "status": "written",
+  "located": true,
+  "no": 21
  },
  {
   "slug": "uluru",

@@ -1,0 +1,150 @@
+{
+ "title": "FOUR KM EXCAVATION",
+ "coords": "40.5316 N, 112.1353 W",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": 40.5316,
+  "lon": -112.1353
+ },
+ "source": "https://en.wikipedia.org/wiki/Bingham_Canyon_Mine",
+ "feature_km": 4.0,
+ "hook": "FOUR KM EXCAVATION",
+ "series_no": 21,
+ "v2": true,
+ "outro": "loop",
+ "outro_text": [
+  "HOW BIG IS IT?",
+  "CAN YOU SEE IT?"
+ ],
+ "tail": 1.4,
+ "fly0": 1.3,
+ "description": "This mine is the largest human-made excavation, four kilometers wide. The Bingham Canyon Mine in Utah, United States, is the deepest open-pit mine in the world. How big is it? can you see it? Imagery: Esri, Maxar, Earthstar Geographics. Photo: Doc Searls from Santa Barbara, USA (CC BY 2.0), Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#binghamcanyonmine",
+  "#utah",
+  "#unitedstates",
+  "#openpitmining",
+  "#coppermine",
+  "#satellite",
+  "#earthfromspace"
+ ],
+ "beats": [
+  {
+   "text": "This mine is the largest human-made excavation, four kilometers wide.",
+   "cam": {
+    "lat": 40.5316,
+    "lon": -112.1353,
+    "z": 13.65
+   },
+   "rings": {
+    "lat": 40.5316,
+    "lon": -112.1353,
+    "km": [
+     2.4
+    ],
+    "on": "mine"
+   }
+  },
+  {
+   "text": "It is the Bingham Canyon Mine, an open-pit copper mine in Utah.",
+   "cam": {
+    "lat": 40.5316,
+    "lon": -112.13341,
+    "z": 14.45
+   },
+   "photo": {
+    "file": "photos/bingham_canyon_mine/p4.jpg",
+    "label": "BINGHAM CANYON OPEN",
+    "credit": "Doc Searls from Santa Barbara, USA, CC BY 2.0",
+    "on": "mine",
+    "dur": 2.4
+   }
+  },
+  {
+   "text": "The pit is three quarters of a mile deep.",
+   "cam": {
+    "lat": 40.52465,
+    "lon": -112.14444,
+    "z": 15.85
+   },
+   "stamp": {
+    "label": "THREE QUARTERS",
+    "on": "deep"
+   },
+   "fx": [
+    {
+     "kind": "depth",
+     "on": "the"
+    },
+    {
+     "kind": "zoom_ruler_ticks",
+     "on": "mile"
+    }
+   ],
+   "react": {
+    "expr": "surprised",
+    "on": "quarters",
+    "dur": 1.3
+   }
+  },
+  {
+   "text": "The pit covers one thousand nine hundred acres.",
+   "cam": {
+    "lat": 40.53505,
+    "lon": -112.13076,
+    "z": 15.05
+   },
+   "stamp": {
+    "label": "NINE HUNDRED ACRES",
+    "on": "acres"
+   }
+  },
+  {
+   "text": "It has produced over nineteen million short tons of copper.",
+   "cam": {
+    "lat": 40.52659,
+    "lon": -112.1353,
+    "z": 15.45
+   },
+   "stamp": {
+    "label": "NINETEEN MILLION",
+    "on": "million"
+   }
+  },
+  {
+   "text": "The mine has produced more copper than any other mine in history.",
+   "cam": {
+    "lat": 40.52806,
+    "lon": -112.13064,
+    "z": 14.65
+   },
+   "fx": [
+    {
+     "kind": "scan",
+     "on": null,
+     "fallback": true
+    }
+   ]
+  },
+  {
+   "text": "It was designated a National Historic Landmark in nineteen sixty-six.",
+   "cam": {
+    "lat": 40.5316,
+    "lon": -112.1353,
+    "z": 14.05
+   },
+   "moves": [
+    {
+     "lat": 40.5316,
+     "lon": -112.1353,
+     "z": 13.05,
+     "on": "sixty-six",
+     "dur": 1.5
+    }
+   ]
+  }
+ ],
+ "shape": null
+}

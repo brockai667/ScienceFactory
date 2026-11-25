@@ -1,0 +1,145 @@
+{
+ "draft": {
+  "title": "FOUR KM EXCAVATION",
+  "feature_km": 4,
+  "hooks": [
+   {
+    "text": "This mine is the largest human-made excavation, four kilometers wide.",
+    "title": "FOUR KM EXCAVATION"
+   },
+   {
+    "text": "This mine has produced over nineteen million short tons of copper.",
+    "title": "NINETEEN MILLION TON"
+   },
+   {
+    "text": "This mine began in nineteen oh six and is still open.",
+    "title": "NINETEEN OH SIX"
+   }
+  ],
+  "beats": [
+   {
+    "text": "This mine is the largest human-made excavation, four kilometers wide.",
+    "overlay": {
+     "type": "rings",
+     "on": "mine"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It is the Bingham Canyon Mine, an open-pit copper mine in Utah.",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 4,
+     "label": "BINGHAM CANYON OPEN PIT",
+     "on": "mine"
+    }
+   },
+   {
+    "text": "The pit is three quarters of a mile deep.",
+    "overlay": {
+     "type": "stamp",
+     "on": "deep",
+     "label": "THREE QUARTERS"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "quarters"
+    },
+    "photo": null
+   },
+   {
+    "text": "The pit covers one thousand nine hundred acres.",
+    "overlay": {
+     "type": "stamp",
+     "on": "acres",
+     "label": "NINE HUNDRED ACRES"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It has produced over nineteen million short tons of copper.",
+    "overlay": {
+     "type": "stamp",
+     "on": "million",
+     "label": "NINETEEN MILLION"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "The mine has produced more copper than any other mine in history.",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It was designated a National Historic Landmark in nineteen sixty-six.",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   }
+  ],
+  "question": [
+   "HOW BIG IS IT?",
+   "CAN YOU SEE IT?"
+  ],
+  "description": "This mine is the largest human-made excavation, four kilometers wide. The Bingham Canyon Mine in Utah, United States, is the deepest open-pit mine in the world.",
+  "hashtags": [
+   "#BinghamCanyonMine",
+   "#Utah",
+   "#UnitedStates",
+   "#OpenPitMining",
+   "#CopperMine"
+  ],
+  "hook_title": "FOUR KM EXCAVATION",
+  "v2": true
+ },
+ "photos": [
+  {
+   "name": "File:Bingham Canyon mine 1942.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Bingham_Canyon_mine_1942.jpg/1920px-Bingham_Canyon_mine_1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "View of the Utah Copper Company open-pit mine workings at Carr Fork, as seen from the railroad, Bingham Canyon, Utah",
+   "credit": "Andreas Feininger"
+  },
+  {
+   "name": "File:Bingham Canyon Mine 1942c.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Bingham_Canyon_Mine_1942c.jpg/1920px-Bingham_Canyon_Mine_1942c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Carr Fork Canyon as seen from \"G\" bridge, Bingham Copper Mine, Utah. In the background can be seen a train with waste or over-burden material on its way to the ",
+   "credit": "Andreas Feininger"
+  },
+  {
+   "name": "File:Bingham Canyon April 2005.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Bingham_Canyon_April_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "Bingham Canyon Mine, Utah This is an image of a place or building that is listed on the National Register of Historic Places in the United States of America. It",
+   "credit": "Tim Jarrett, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Bingham Canyon Open Pit Copper Mine 2012-09-17 21-25-59.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg/1920px-Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Bingham Canyon Open Pit Copper Mine",
+   "credit": "Jet6581, CC BY-SA 3.0"
+  },
+  {
+   "name": "File:Bingham Canyon mine 2016.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bingham_Canyon_mine_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "The Bingham Canyon Copper Mine in the Oquirrh Mountains in Utah, and the largest manmade excavation on Earth. It is over half a mile deep. The tallest structure",
+   "credit": "Doc Searls from Santa Barbara, USA, CC BY 2.0",
+   "file": "photos/bingham_canyon_mine/p4.jpg"
+  },
+  {
+   "name": "File:Bingham Canyon mine dumps, 2004.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bingham_Canyon_mine_dumps%2C_2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "The Brigham Mine in the Oquirrh Mountains of Utah, shot on aproach to SLC",
+   "credit": "Doc Searls from Santa Barbara, USA, CC BY 2.0"
+  }
+ ],
+ "lat": 40.5316,
+ "lon": -112.1353,
+ "shape": null,
+ "scale": null,
+ "next": null,
+ "v2": true
+}
