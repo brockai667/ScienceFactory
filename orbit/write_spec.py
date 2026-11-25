@@ -173,14 +173,14 @@ Return JSON: {"title": str, "feature_km": number (size of the main thing visible
 "description": str (2 sentences, facts only), "hashtags": [5 strings starting with #]}"""
 
 # v2 (od #011): hak od 0. sekundy, kamera nikdy nestoji, dokaz (foto) v 3.-6. s, 7 beatov, ziadne rozlucenie, video sa zacykli
-V2_WORDS = (68, 92)           # 10 rucnych dielov #011-#020 ma 72-89 slov (26-32 s reci)
+V2_WORDS = (62, 92)           # 10 rucnych dielov #011-#020 ma 72-89 slov (26-32 s reci)
 V2_BEAT_MAX = 16              # najdlhsi beat v referenciach ma 16 slov
-V2_CHARS = 480                # referencie maju 395-476 znakov; 473 znakov = 32,3 s videa, Pripjat s 570 hovorenymi = 39 s
+V2_CHARS = 500                # referencie maju 395-476 znakov; 473 znakov = 32,3 s videa, Pripjat s 570 hovorenymi = 39 s
 SYSTEM_V2 = """You write narration for a 30 second vertical video about a place seen on a satellite map.
 The camera lands on the place at second 0 and keeps moving all the time. A voice reads every word.
 Viewers leave in seconds 4-8 if nothing proves the first sentence, and they leave at any goodbye. So the video starts with the claim, proves it at once, and ends on the strongest fact (it then loops back to the start).
 
-Structure, exactly 7 beats, 70 to 88 words and at most 470 characters in total, one or two short spoken sentences per beat (max 16 words per beat), plain English:
+Structure, exactly 7 beats, 64 to 78 short words in total (about 420 characters, never more than 460), one or two short spoken sentences per beat (max 16 words per beat), plain English:
 1. Hook, spoken from second 0. Start by naming what the viewer sees right now ("This island...", "This lake...", "These three shapes...", "Thousands of people once lived on this tiny island.") and add the most surprising true fact: a number, an age or an impossibility. Write 3 different candidates in "hooks"; beat 1 text is your best one.
 2. Proof: name the place and where it is, and back up the hook in plain words ("It is Surtsey, and it burst out of the sea off Iceland."). A photo of the place appears on this beat: give it a photo cue if the list has a photo that clearly shows the place.
 3-6. One new concrete fact per beat, each about something the camera can show while it flies over the place: its size, its depth, one part of it, what happens there, who goes there, what changed.
@@ -461,11 +461,12 @@ def validate_v2(s, photos, ctx):
     errs += v_numbers(bs, ctx, 2)
     words = sum(len(b.get("text", "").split()) for b in bs)
     if not V2_WORDS[0] <= words <= V2_WORDS[1]:
-        errs.append(f"need 70-88 words, got {words}")
+        errs.append(f"need 64-78 words, got {words}")
     chars = len(" ".join(b.get("text", "") for b in bs))
     if chars > V2_CHARS:
-        errs.append(f"the narration takes too long to say ({chars} characters, the limit is {V2_CHARS}): cut about "
-                    f"{-(-(chars - V2_CHARS + 10) // 6)} words, keep 7 beats, name at most two years")
+        errs.append(f"the narration takes too long to say ({chars} characters, the limit is {V2_CHARS}): cut "
+                    f"{-(-(chars - V2_CHARS + 50) // 6)} words: drop one side detail from the longest beats, keep 7 beats, "
+                    f"at most 11 words per beat")
     for i, b in enumerate(bs):
         t = b.get("text", "")
         if re.search(r"\d", t):
