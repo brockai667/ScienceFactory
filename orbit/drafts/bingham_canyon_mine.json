@@ -54,7 +54,7 @@
     "overlay": {
      "type": "stamp",
      "on": "acres",
-     "label": "NINE HUNDRED ACRES"
+     "label": "1,900 ACRES"
     },
     "react": null,
     "photo": null
@@ -64,7 +64,7 @@
     "overlay": {
      "type": "stamp",
      "on": "million",
-     "label": "NINETEEN MILLION"
+     "label": "19 MILLION SHORT TONS"
     },
     "react": null,
     "photo": null
@@ -136,8 +136,8 @@
    "credit": "Doc Searls from Santa Barbara, USA, CC BY 2.0"
   }
  ],
- "lat": 40.5316,
- "lon": -112.1353,
+ "lat": 40.523,
+ "lon": -112.151,
  "shape": null,
  "scale": null,
  "next": null,

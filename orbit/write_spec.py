@@ -189,6 +189,8 @@ Structure, exactly 7 beats, 64 to 78 short words in total (about 420 characters,
 - Never sign off: no "follow", "subscribe", "next target", "next scan", "Orbi out", "see you".
 - Never tease a later fact ("wait till you hear", "stay to the end", "you'll see"): say the fact itself.
 - At most two numbers per beat, and never the same number twice in the video.
+- Every beat is a different kind of fact. Never two beats about the same thing (two production records, two sizes).
+- Beat 7 is not an award, a listing or a founding date: it is what happened to the place or what it is like today.
 - Write every number and year in words ("nineteen seventy", "forty-nine thousand"), never in digits. Name at most two years in the whole video.
 - Do not repeat a sentence, name or nickname you already used.
 
@@ -223,7 +225,7 @@ Visual cues (each "on" is ONE word copied exactly from that beat's text, where t
 - No filler that only comments on the fact ("which is amazing", "truly remarkable"). End each beat on the fact.
 - react (1 or 2 in the whole video, the robot's face reacts): {"expr":"surprised" or "happy","on":word} on the most shocking fact.
 - photo (beat 2, plus at most one more in beats 3-6, never in beat 1 or beat 7): {"index":N,"label":"SHORT CAPTION","on":word} using a photo from the list.
-- "question": a short question for the viewer shown on the last frame, exactly 2 lines in ALL CAPS, max 16 characters each, the second ending with "?" (["WOULD YOU", "LAND HERE?"], ["HOW DID THEY", "BUILD THIS?"]).
+- "question": ONE short question for the viewer (would they go there, live there, dare it) shown on the last frame, split over exactly 2 lines in ALL CAPS, max 16 characters each, the second ending with "?" (["WOULD YOU", "LAND HERE?"], ["HOW DID THEY", "BUILD THIS?"]).
 
 Return JSON: {"title": str, "feature_km": number (size of the main thing visible from above, in km, from the article),
 "hooks": [{"text": str, "title": str}, {"text": str, "title": str}, {"text": str, "title": str}],
@@ -493,9 +495,9 @@ def validate_v2(s, photos, ctx):
     errs += v_hooks(s, need_digits=False)
     q = s.get("question")
     if not (isinstance(q, list) and len(q) == 2 and all(isinstance(x, str) and 0 < len(x) <= 16 and x == x.upper() for x in q)
-            and q[1].strip().endswith("?")):
-        errs.append('"question" must be 2 ALL-CAPS lines, max 16 characters each, the second ending with "?" '
-                    '(["WOULD YOU", "LAND HERE?"])')
+            and q[1].strip().endswith("?") and "?" not in q[0]):
+        errs.append('"question" must be 2 ALL-CAPS lines, max 16 characters each: ONE question split over the two lines, only '
+                    'the second line ends with "?" (["WOULD YOU", "LAND HERE?"])')
     return errs + v_km_cues(s, bs, photos)
 
 
@@ -558,6 +560,41 @@ def proper(text, src):
     return text[:1] + re.sub(r"[A-Za-z]+", lambda m: names.get(m.group(0).lower(), m.group(0)), text[1:])
 
 
+_ONE = "one|two|three|four|five|six|seven|eight|nine"
+_TEEN = "ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen"
+_TENS = "twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety"
+YEARW_RX = re.compile(rf"\b({_TEEN}|twenty)[ -](?:oh[ -]({_ONE})|({_TENS})(?:[ -]({_ONE}))?|({_TEEN}))\b", re.I)
+NUM_RX = r"\d[\d,]*(?: (?:MILLION|BILLION))?"
+_NW = f"{_ONE}|{_TEEN}|{_TENS}|zero|hundred|thousand|million|billion"
+NUMRUN_RX = re.compile(rf"\b(?:{_NW})(?:[ -](?:and[ -])?(?:{_NW}))*\b", re.I)
+
+
+def num_label(t):
+    """slova -> cislice: 'nineteen sixty-six' -> 1966, 'one thousand nine hundred acres' -> '1,900 acres', 'FOUR KM' -> '4 KM'"""
+    u = lambda w: UNITS[w.lower()] if w else 0
+    t = YEARW_RX.sub(lambda m: str(u(m.group(1)) * 100 + u(m.group(2)) + u(m.group(3)) + u(m.group(4)) + u(m.group(5))), t)
+    return NUMRUN_RX.sub(lambda m: m.group(0) if m.group(0).lower() == "one" else digits(m.group(0)), t)   # "ONE FAMILY" ostava
+
+
+def stamp_fix(label, text):
+    """stitok v2 ukaze to iste cislo, co povie hlas, a k cislu podstatne meno; zlomky ('THREE QUARTERS') ostavaju slovami"""
+    if re.search(r"quarter|half|third", label, re.I):
+        return label
+    lab, bt = num_label(label).upper(), num_label(text)
+    ln, bn = re.findall(NUM_RX, lab), re.findall(NUM_RX, bt.upper())
+    bare = lambda x: x.replace(",", "")
+    if not ln or not bn or (all(bare(x) in map(bare, bn) for x in ln) and re.search(r"[A-Z]{2}", re.sub(NUM_RX, "", lab))):
+        return lab
+    bt = bt.upper()
+    n0 = next((x for x in bn if bare(x).endswith(bare(ln[0]))), bn[0])    # hlas: 1,900; stitok: 900 -> plati hlas
+    out = [n0]
+    for w in re.findall(r"[A-Za-z]+", bt[bt.index(n0) + len(n0):])[:3]:
+        if w.lower() in ("of", "in", "the", "a", "an", "and", "to", "on", "at", "by", "from", "than"):
+            break
+        out.append(w)
+    return " ".join(out[:3]).upper()
+
+
 def repair_v2(s):
     """v2: chyby v napovediach obrazu opravi kod (model na ne palil pokusy): zly stitok prec, reakcie 1-2, aspon 1 overlay.
     Roky cislicami -> slovami (hlas ich cita dlho, dlzku treba pocitat zo slov). "tag" -> "stamp": kod nevie, kde na mape
@@ -572,6 +609,8 @@ def repair_v2(s):
                 c["on"] = year_words(int(str(c["on"]).strip(".,"))).split()[0]
         if (b.get("overlay") or {}).get("type") == "tag":
             b["overlay"]["type"] = "stamp"
+        if (b.get("overlay") or {}).get("type") == "stamp" and b["overlay"].get("label"):
+            b["overlay"]["label"] = stamp_fix(str(b["overlay"]["label"]), b.get("text", ""))
     for e in v_labels(bs, v2=True):
         m = re.match(r"beat (\d+) ", e)
         if m:
@@ -1022,7 +1061,10 @@ def dress(nb, b, i, n, beats, photos, lat, lon, km, scale, impact_ok, measured, 
     p = b.get("photo")
     if p and 0 < i < n - 1:
         ph = photos[p["index"]]
-        nb["photo"] = {"file": ph["file"], "label": cut(p.get("label", ""), 22), "credit": ph["credit"],
+        pl = cut(p.get("label", ""), 22)
+        if v2 and len(pl) < len(str(p.get("label", "")).strip()):
+            pl = re.sub(r"\s+(OPEN|THE|OF|A|AN|IN|ON|AT|AND|FROM|NEAR|WITH|BY)$", "", pl)
+        nb["photo"] = {"file": ph["file"], "label": pl, "credit": ph["credit"],
                        "on": p["on"], "dur": photo_dur}
 
 
@@ -1167,9 +1209,9 @@ def build_v2(fact, s, photos, shape=None, no=None):
         if len(t) > 1 and t not in tags and t not in ("#orbit", "#shorts"):
             tags.append(t)
     ns, ew = ("N" if lat >= 0 else "S"), ("E" if lon >= 0 else "W")
-    spec = {"title": s.get("title") or fact["title"], "coords": f"{abs(lat):.4f} {ns}, {abs(lon):.4f} {ew}",
+    spec = {"title": re.sub(r"\s*\(.*?\)", "", fact["title"]), "coords": f"{abs(lat):.4f} {ns}, {abs(lon):.4f} {ew}",
             "voice": "am_michael", "speed": 1.1, "music": "cine_616.mp3", "start": {"lat": lat, "lon": lon},
-            "source": fact["url"], "feature_km": km, "hook": cut(s.get("hook_title", ""), 22), "series_no": no,
+            "source": fact["url"], "feature_km": km, "hook": cut(num_label(s.get("hook_title", "")), 22), "series_no": no,
             "v2": True, "outro": "loop"}
     if ask:
         spec["outro_text"] = q
@@ -1234,6 +1276,7 @@ def main():
         log("   prerender z ulozeneho navrhu")
         if d.get("v2"):
             s["v2"] = True                                        # navrh v2 -> build_v2; stary navrh ostava v1
+            repair_v2(s)
         v2 = bool(s.get("v2"))
         shape, scale = d.get("shape"), d.get("scale")
         nq = None if v2 else next((x for x in queue if x["slug"] == d.get("next")), None) or next(
@@ -1251,6 +1294,9 @@ def main():
         if shape and km and not 0.6 * km <= span <= 1.5 * km:     # obrys je nieco ine nez utvar z clanku (ramena, rieky)
             log(f"   obrys {span} km nesedi s {km} km, zvyraznenie kruhom")
             shape = None
+            if span > 1.5 * km and not q.get("located"):
+                lat, lon = fact["lat"], fact["lon"] = q["lat"], q["lon"]
+                log(f"   OSM objekt je vacsi nez utvar -> stred ostava z Wikipedie ({lat}, {lon})")
         log(f"   velkost {km} km, porovnanie: {scale['fact'] if scale else 'ziadne'}")
         nq = None if v2 else next((x for x in queue if x["status"] == "todo" and x["slug"] != slug and   # v2: ziadny "Next target"
                                    os.path.exists(os.path.join(TOP, "facts", x["slug"] + ".json"))), None)

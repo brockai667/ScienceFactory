@@ -1,16 +1,16 @@
 {
- "title": "FOUR KM EXCAVATION",
- "coords": "40.5316 N, 112.1353 W",
+ "title": "Bingham Canyon Mine",
+ "coords": "40.5230 N, 112.1510 W",
  "voice": "am_michael",
  "speed": 1.1,
  "music": "cine_616.mp3",
  "start": {
-  "lat": 40.5316,
-  "lon": -112.1353
+  "lat": 40.523,
+  "lon": -112.151
  },
  "source": "https://en.wikipedia.org/wiki/Bingham_Canyon_Mine",
  "feature_km": 4.0,
- "hook": "FOUR KM EXCAVATION",
+ "hook": "4 KM EXCAVATION",
  "series_no": 21,
  "v2": true,
  "outro": "loop",
@@ -34,13 +34,13 @@
   {
    "text": "This mine is the largest human-made excavation, four kilometers wide.",
    "cam": {
-    "lat": 40.5316,
-    "lon": -112.1353,
+    "lat": 40.523,
+    "lon": -112.151,
     "z": 13.65
    },
    "rings": {
-    "lat": 40.5316,
-    "lon": -112.1353,
+    "lat": 40.523,
+    "lon": -112.151,
     "km": [
      2.4
     ],
@@ -50,13 +50,13 @@
   {
    "text": "It is the Bingham Canyon Mine, an open-pit copper mine in Utah.",
    "cam": {
-    "lat": 40.5316,
-    "lon": -112.13341,
+    "lat": 40.523,
+    "lon": -112.14911,
     "z": 14.45
    },
    "photo": {
     "file": "photos/bingham_canyon_mine/p4.jpg",
-    "label": "BINGHAM CANYON OPEN",
+    "label": "BINGHAM CANYON",
     "credit": "Doc Searls from Santa Barbara, USA, CC BY 2.0",
     "on": "mine",
     "dur": 2.4
@@ -65,8 +65,8 @@
   {
    "text": "The pit is three quarters of a mile deep.",
    "cam": {
-    "lat": 40.52465,
-    "lon": -112.14444,
+    "lat": 40.51605,
+    "lon": -112.16014,
     "z": 15.85
    },
    "stamp": {
@@ -92,32 +92,32 @@
   {
    "text": "The pit covers one thousand nine hundred acres.",
    "cam": {
-    "lat": 40.53505,
-    "lon": -112.13076,
+    "lat": 40.52645,
+    "lon": -112.14646,
     "z": 15.05
    },
    "stamp": {
-    "label": "NINE HUNDRED ACRES",
+    "label": "1,900 ACRES",
     "on": "acres"
    }
   },
   {
    "text": "It has produced over nineteen million short tons of copper.",
    "cam": {
-    "lat": 40.52659,
-    "lon": -112.1353,
+    "lat": 40.51799,
+    "lon": -112.151,
     "z": 15.45
    },
    "stamp": {
-    "label": "NINETEEN MILLION",
+    "label": "19 MILLION SHORT TONS",
     "on": "million"
    }
   },
   {
    "text": "The mine has produced more copper than any other mine in history.",
    "cam": {
-    "lat": 40.52806,
-    "lon": -112.13064,
+    "lat": 40.51946,
+    "lon": -112.14634,
     "z": 14.65
    },
    "fx": [
@@ -131,14 +131,14 @@
   {
    "text": "It was designated a National Historic Landmark in nineteen sixty-six.",
    "cam": {
-    "lat": 40.5316,
-    "lon": -112.1353,
+    "lat": 40.523,
+    "lon": -112.151,
     "z": 14.05
    },
    "moves": [
     {
-     "lat": 40.5316,
-     "lon": -112.1353,
+     "lat": 40.523,
+     "lon": -112.151,
      "z": 13.05,
      "on": "sixty-six",
      "dur": 1.5
