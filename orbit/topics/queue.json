@@ -151,9 +151,11 @@
  {
   "slug": "pripyat",
   "title": "Pripyat",
-  "lat": 51.40611111,
-  "lon": 30.05722222,
-  "status": "todo"
+  "lat": 51.4052,
+  "lon": 30.0551,
+  "status": "written",
+  "located": true,
+  "no": 11
  },
  {
   "slug": "kola_superdeep_borehole",
