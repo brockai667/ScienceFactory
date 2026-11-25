@@ -46,8 +46,13 @@ def next_due(pub):
 def texts(spec):
     no = spec.get("series_no") or 0
     title = f"{spec['title']} from space · ORBIT #{no:03d}"[:100]
-    tags = " ".join(spec.get("hashtags") or []) + " #orbit #shorts"
-    caption = f"{spec['beats'][0]['text']}\n\n{spec['description']}\n\n{tags}"
+    seen, own = {"#orbit", "#shorts"}, []                      # bez duplicit (aj velkost pismen); #orbit #shorts raz na konci
+    for t in spec.get("hashtags") or []:
+        if t.lower() not in seen:
+            seen.add(t.lower()); own.append(t)
+    tags = " ".join(own) + " #orbit #shorts"
+    head = "" if spec.get("v2") else f"{spec['beats'][0]['text']}\n\n"   # v2: popis uz zacina hakom
+    caption = f"{head}{spec['description']}\n\n{tags}"
     return title, caption
 
 
