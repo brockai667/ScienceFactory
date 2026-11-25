@@ -508,6 +508,39 @@ def prompt(fact, photos, scale, nxt, km=None, v2=False):
     return user, side, ctx
 
 
+def more_text(fact, n=4500):
+    """v2 potrebuje 7 roznych faktov: ulozeny vytah (~1200 znakov) nestaci -> cely text clanku z Wikipedie, skrateny na vety."""
+    try:
+        r = requests.get("https://en.wikipedia.org/w/api.php", headers=UA, timeout=30, params={
+            "action": "query", "titles": fact["title"], "redirects": 1, "prop": "extracts", "explaintext": 1,
+            "exsectionformat": "plain", "format": "json", "formatversion": 2})
+        t = re.sub(r"\n{2,}", "\n", (r.json()["query"]["pages"][0].get("extract") or "")).strip()
+    except (requests.RequestException, ValueError, KeyError, IndexError) as e:
+        log(f"   dlhsi text clanku zlyhal ({e}), ostava vytah")
+        return fact["extract"]
+    if len(t) <= len(fact["extract"]):
+        return fact["extract"]
+    t = t[:n]
+    return t[:max(t.rfind(". "), t.rfind(".\n")) + 1] or t
+
+
+def repair_v2(s):
+    """v2: chyby v napovediach obrazu opravi kod (model na ne palil pokusy): zly stitok prec, reakcie 1-2, aspon 1 overlay."""
+    bs = s["beats"]
+    for e in v_labels(bs, v2=True):
+        m = re.match(r"beat (\d+) ", e)
+        if m:
+            bs[int(m.group(1)) - 1]["overlay"] = None
+    rs = [b for b in bs if b.get("react")]
+    for b in rs[2:]:
+        b["react"] = None
+    if not rs and len(bs) > 3:
+        b = next((x for x in bs[2:-1] if numbers(x.get("text", ""))), bs[3])
+        b["react"] = {"expr": "surprised", "on": max(b["text"].split(), key=len).strip(".,!?;:'\"")}
+    if len(bs) > 2 and not any((b.get("overlay") or {}).get("type") in ("ruler", "tag", "stamp", "highlight") for b in bs[2:]):
+        bs[2]["overlay"] = {"type": "highlight", "on": max(bs[2]["text"].split(), key=len).strip(".,!?;:'\"")}
+
+
 def write(fact, photos, scale, nxt, km=None, v2=False):
     user, side, ctx = prompt(fact, photos, scale, nxt, km, v2)
     validate_ = validate_v2 if v2 else validate
@@ -531,9 +564,12 @@ def write(fact, photos, scale, nxt, km=None, v2=False):
             if isinstance(h, dict):
                 sp = re.findall(r"\d+", digits(re.sub(r"[^\w\s-]", " ", str(h.get("text", "")))).replace(",", ""))
                 tt = str(h.get("title", "")); tn = re.findall(r"\d+", tt)
-                if sp and tn and not set(tn) & (set(sp) | (years(str(h.get("text", ""))) if v2 else set())):
+                tk = set(tn) | {str(int(x) * 1000) for x in re.findall(r"(\d+)K(?![A-Z])", tt)}   # "49K" = 49000
+                if sp and tn and not tk & (set(sp) | (years(str(h.get("text", ""))) if v2 else set())):
                     log(f"   titulok {tt} -> cislo {sp[0]} z hooku: {h.get('text')}")
-                    h["title"] = tt.replace(tn[0], sp[0], 1)
+                    h["title"] = re.sub(re.escape(tn[0]) + r"K?(?![A-Z0-9])", sp[0], tt, count=1)
+        if v2 and len(s["beats"]) >= 6:
+            repair_v2(s)
         errs = validate_(s, photos, ctx)
         if len(s.get("beats") or []) < 6:                    # rozbity navrh: zopakovat tu istu poziadavku (opravy ostanu)
             log(f"   pokus {att + 1}: rozbity navrh, znova: {json.dumps(s)[:300]}")
@@ -573,7 +609,10 @@ def write(fact, photos, scale, nxt, km=None, v2=False):
             return s
         log(f"   pokus {att + 1}: " + " | ".join(errs)[:400])
         msgs = msgs[:2] + [{"role": "assistant", "content": json.dumps(s)},   # len posledny navrh (Groq 8000 tok/min)
-                           {"role": "user", "content": "Fix these problems and return the full JSON again:\n- " + "\n- ".join(errs)}]
+                           {"role": "user", "content": "Fix these problems and return the full JSON again:\n- " + "\n- ".join(errs) + (
+                               "\nEvery problem starting with 'fact:' is a claim that is NOT written in the article. Do not rephrase "
+                               "it: delete that claim and write a different fact that the article states."
+                               if any(e.startswith("fact:") for e in errs) else "")}]
     sys.exit("scenar nepresiel kontrolou ani na 10. pokus")
 
 
@@ -694,7 +733,7 @@ def vision_models(base):
         except (requests.RequestException, ValueError, KeyError):
             pass
         found = [i for i in ids if re.search(r"llama-4|scout|maverick|vision|[-_]vl|gemma-3|pixtral", i, re.I)]
-        log(f"   vision kandidati: {found or 'ziadny'} (z {len(ids)} modelov)")
+        log(f"   vision kandidati: {found or 'ziadny'} (z {len(ids)} modelov)" + ("" if found else f": {sorted(ids)}"))
         _VM.extend(dict.fromkeys([v for v in VISION if v in ids] + found))
     return _VM
 
@@ -1167,6 +1206,9 @@ def main():
         nq = None if v2 else next((x for x in queue if x["status"] == "todo" and x["slug"] != slug and   # v2: ziadny "Next target"
                                    os.path.exists(os.path.join(TOP, "facts", x["slug"] + ".json"))), None)
         nxt = json.load(open(os.path.join(TOP, "facts", nq["slug"] + ".json"), encoding="utf-8")) if nq else None
+        if v2:
+            fact["extract"] = more_text(fact)
+            log(f"   text clanku: {len(fact['extract'])} znakov")
         s = write(fact, photos, scale, nxt, km, v2)
         if not ok:
             lat, lon, ok = locate(fact, q["lat"], q["lon"], float(s["feature_km"]))
