@@ -153,9 +153,9 @@
   "title": "Pripyat",
   "lat": 51.4052,
   "lon": 30.0551,
-  "status": "written",
+  "status": "skip",
   "located": true,
-  "no": 11
+  "why": "skusobny diel 25.11.: z orbitu len les, slabe fakty"
  },
  {
   "slug": "kola_superdeep_borehole",

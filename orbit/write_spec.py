@@ -175,11 +175,12 @@ Return JSON: {"title": str, "feature_km": number (size of the main thing visible
 # v2 (od #011): hak od 0. sekundy, kamera nikdy nestoji, dokaz (foto) v 3.-6. s, 7 beatov, ziadne rozlucenie, video sa zacykli
 V2_WORDS = (68, 92)           # 10 rucnych dielov #011-#020 ma 72-89 slov (26-32 s reci)
 V2_BEAT_MAX = 16              # najdlhsi beat v referenciach ma 16 slov
+V2_CHARS = 480                # referencie maju 395-476 znakov; 473 znakov = 32,3 s videa, Pripjat s 570 hovorenymi = 39 s
 SYSTEM_V2 = """You write narration for a 30 second vertical video about a place seen on a satellite map.
 The camera lands on the place at second 0 and keeps moving all the time. A voice reads every word.
 Viewers leave in seconds 4-8 if nothing proves the first sentence, and they leave at any goodbye. So the video starts with the claim, proves it at once, and ends on the strongest fact (it then loops back to the start).
 
-Structure, exactly 7 beats, 70 to 88 words in total, one or two short spoken sentences per beat (max 16 words per beat), plain English:
+Structure, exactly 7 beats, 70 to 88 words and at most 470 characters in total, one or two short spoken sentences per beat (max 16 words per beat), plain English:
 1. Hook, spoken from second 0. Start by naming what the viewer sees right now ("This island...", "This lake...", "These three shapes...", "Thousands of people once lived on this tiny island.") and add the most surprising true fact: a number, an age or an impossibility. Write 3 different candidates in "hooks"; beat 1 text is your best one.
 2. Proof: name the place and where it is, and back up the hook in plain words ("It is Surtsey, and it burst out of the sea off Iceland."). A photo of the place appears on this beat: give it a photo cue if the list has a photo that clearly shows the place.
 3-6. One new concrete fact per beat, each about something the camera can show while it flies over the place: its size, its depth, one part of it, what happens there, who goes there, what changed.
@@ -188,10 +189,12 @@ Structure, exactly 7 beats, 70 to 88 words in total, one or two short spoken sen
 - Never sign off: no "follow", "subscribe", "next target", "next scan", "Orbi out", "see you".
 - Never tease a later fact ("wait till you hear", "stay to the end", "you'll see"): say the fact itself.
 - At most two numbers per beat, and never the same number twice in the video.
+- Write every number and year in words ("nineteen seventy", "forty-nine thousand"), never in digits. Name at most two years in the whole video.
 - Do not repeat a sentence, name or nickname you already used.
 
 Hook rules (beat 1):
 - One spoken sentence, 14 words max. It must work with sound on and eyes off the screen.
+- The hook is a checkable fact (a number, a date, a record, a ban), never a mood ("lie silent", "frozen in time").
 - Name the thing on screen (island, lake, ring, hole, shapes, color) in the first 6 words, with "this" or "these".
 - Banned: "something strange", "weird", "mysterious", "you won't believe", "secret", "scientists are baffled", "Did you know", "Today we", any claim not in the article.
 - Never say the coordinate numbers (they are typed on screen).
@@ -212,10 +215,9 @@ Example (a different place, 72 words):
 
 Visual cues (each "on" is ONE word copied exactly from that beat's text, where the cue appears):
 - beat 1 overlay: {"type":"rings","on":word} on the word that names what the viewer sees (the code draws a ring around the place).
-- overlays in beats 3-7 (at most one per beat, use 1 to 3; labels in plain words with a noun, never a bare number, no abbreviations like MYA or KM2):
+- overlays in beats 3-7 (at most one per beat, use 1 to 3, only these three types; labels in plain words with a noun, never a bare number, no abbreviations like MYA or KM2):
   {"type":"ruler","on":word,"label":"40 KM"} for the size (label must match feature_km),
-  {"type":"tag","on":word,"label":"SHORT WORDS"} to pin a named part,
-  {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"} for the key date or record ("NO LANDING", "EMPTY SINCE 1974", "2016: NEW BRIDGE"),
+  {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"} for the key date, record or a named part ("NO LANDING", "EMPTY SINCE 1974", "2016: NEW BRIDGE"),
   {"type":"highlight","on":word} spotlights the outline of the place.
   Tag and stamp labels show the fact itself, 2-4 words taken from that beat's text, never a category word (NICKNAME, NAME, IMPACT, FACT, DATE, RECORD, SIZE, AGE).
 - No filler that only comments on the fact ("which is amazing", "truly remarkable"). End each beat on the fact.
@@ -460,8 +462,14 @@ def validate_v2(s, photos, ctx):
     words = sum(len(b.get("text", "").split()) for b in bs)
     if not V2_WORDS[0] <= words <= V2_WORDS[1]:
         errs.append(f"need 70-88 words, got {words}")
+    chars = len(" ".join(b.get("text", "") for b in bs))
+    if chars > V2_CHARS:
+        errs.append(f"the narration takes too long to say ({chars} characters, the limit is {V2_CHARS}): cut about "
+                    f"{-(-(chars - V2_CHARS + 10) // 6)} words, keep 7 beats, name at most two years")
     for i, b in enumerate(bs):
         t = b.get("text", "")
+        if re.search(r"\d", t):
+            errs.append(f"beat {i + 1} has digits ({', '.join(re.findall(r'[0-9][0-9,.]*', t))}): write every number in words")
         if len(t.split()) > V2_BEAT_MAX:
             errs.append(f"beat {i + 1} is longer than {V2_BEAT_MAX} words")
         if "?" in t:
@@ -524,9 +532,45 @@ def more_text(fact, n=4500):
     return t[:max(t.rfind(". "), t.rfind(".\n")) + 1] or t
 
 
+def year_words(y):
+    """1970 -> 'nineteen seventy', 2005 -> 'two thousand five', 1905 -> 'nineteen oh five' (hlas cita slova, nie cislice)"""
+    one = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
+    ten = dict(zip(range(20, 100, 10), "twenty thirty forty fifty sixty seventy eighty ninety".split()))
+    two = lambda n: one[n] if n < 20 else ten[n - n % 10] + ("-" + one[n % 10] if n % 10 else "")
+    h, r = divmod(y, 100)
+    if y % 1000 == 0:
+        return one[y // 1000] + " thousand"
+    if 2000 < y < 2010:
+        return "two thousand " + one[r]
+    if r == 0:
+        return two(h) + " hundred"
+    return two(h) + (" oh " + one[r] if r < 10 else " " + two(r))
+
+
+YEAR_RX = re.compile(r"(?<![\d,.])(1[0-9]{3}|20[0-9]{2})(?![\d,]|\.\d)")
+
+
+def proper(text, src):
+    """otazka je v scenari VELKYMI: v popise vratit vlastnym menam velke pismeno ('Will you enter Pripyat?')"""
+    low = set(re.findall(r"\b[a-z]{3,}\b", src))
+    names = {c.lower(): c for c in re.findall(r"\b[A-Z][a-z]{2,}\b", src) if c.lower() not in low}
+    return text[:1] + re.sub(r"[A-Za-z]+", lambda m: names.get(m.group(0).lower(), m.group(0)), text[1:])
+
+
 def repair_v2(s):
-    """v2: chyby v napovediach obrazu opravi kod (model na ne palil pokusy): zly stitok prec, reakcie 1-2, aspon 1 overlay."""
+    """v2: chyby v napovediach obrazu opravi kod (model na ne palil pokusy): zly stitok prec, reakcie 1-2, aspon 1 overlay.
+    Roky cislicami -> slovami (hlas ich cita dlho, dlzku treba pocitat zo slov). "tag" -> "stamp": kod nevie, kde na mape
+    pomenovana cast lezi, stitok by visel v strede utvaru (Pripjat: UNOPENED WHEEL nad lesom)."""
     bs = s["beats"]
+    for b in bs:
+        if YEAR_RX.search(b.get("text", "")):
+            b["text"] = YEAR_RX.sub(lambda m: year_words(int(m.group(1))), b["text"])
+        for k in ("overlay", "react", "photo"):
+            c = b.get(k)
+            if isinstance(c, dict) and YEAR_RX.fullmatch(str(c.get("on", "")).strip(".,")):
+                c["on"] = year_words(int(str(c["on"]).strip(".,"))).split()[0]
+        if (b.get("overlay") or {}).get("type") == "tag":
+            b["overlay"]["type"] = "stamp"
     for e in v_labels(bs, v2=True):
         m = re.match(r"beat (\d+) ", e)
         if m:
@@ -732,7 +776,7 @@ def vision_models(base):
             ids = [m["id"] for m in r.json().get("data", [])]
         except (requests.RequestException, ValueError, KeyError):
             pass
-        found = [i for i in ids if re.search(r"llama-4|scout|maverick|vision|[-_]vl|gemma-3|pixtral", i, re.I)]
+        found = [i for i in ids if re.search(r"llama-4|scout|maverick|vision|[-_]vl|gemma-3|pixtral|qwen", i, re.I)]
         log(f"   vision kandidati: {found or 'ziadny'} (z {len(ids)} modelov)" + ("" if found else f": {sorted(ids)}"))
         _VM.extend(dict.fromkeys([v for v in VISION if v in ids] + found))
     return _VM
@@ -924,6 +968,10 @@ def new_fx(txt, i, n, nb, fx, beats):
     if len(used) >= NEW_FX_MAX:
         return []
     f = fx_new.pick(txt, nb, used=set(used) | recent_new_fx(), have=[f["kind"] for f in fx])
+    n = f.get("n") if f else None
+    if isinstance(n, (int, float)) and 1000 <= n <= 2100 and (
+            str(int(n)) in years(txt) or re.search(rf"\b{int(n)}\b", txt + " " + nb.get("stamp", {}).get("label", ""))):
+        return []                                            # cislo je rok, nie pocet
     return [f] if f else []
 
 
@@ -1110,7 +1158,7 @@ def build_v2(fact, s, photos, shape=None, no=None):
     q = [str(x).strip().upper() for x in s.get("question") or []][:2]
     ask = bool(no) and no % 2 == 1 and len(q) == 2           # A/B test: otazka na konci len pri neparnych dieloch
     desc = s.get("description", "").strip()
-    desc = (desc + (" " + q[0].capitalize() + " " + q[1].lower() if ask else "") + " Imagery: Esri, Maxar, Earthstar Geographics."
+    desc = (desc + (" " + proper(q[0].capitalize() + " " + q[1].lower(), fact["title"] + " " + fact.get("extract", "")) if ask else "") + " Imagery: Esri, Maxar, Earthstar Geographics."
             + (f" Photo{'s' if len(cr) > 1 else ''}: {', '.join(cr)}, Wikimedia Commons." if cr else "") + " Source: Wikipedia.")
     tags = []
     for t in (s.get("hashtags") or [])[:6] + ["#satellite", "#earthfromspace"]:   # #orbit #shorts prida publish.py
@@ -1216,7 +1264,10 @@ def main():
             log(f"   stred utvaru: {lat}, {lon} (Wikipedia {q['lat']}, {q['lon']}){'' if ok else ' - NEDOROVNANE'}")
             fact["lat"], fact["lon"] = q["lat"], q["lon"] = lat, lon
             q["located"] = ok
-    q["no"] = q.get("no") or 1 + max(x.get("no") or 0 for x in queue)   # cislo dielu serie
+    pp = os.path.join(HERE, "published.json")                      # rucne diely #011-#020 su len tu, nie vo fronte
+    pub = json.load(open(pp, encoding="utf-8")) if os.path.exists(pp) else {}
+    q["no"] = q.get("no") or 1 + max([x.get("no") or 0 for x in queue] +
+                                     [v.get("no") or 0 for v in pub.values() if isinstance(v, dict)])   # cislo dielu serie
     download(photos, slug, {b["photo"]["index"] for b in s["beats"] if b.get("photo")})
     os.makedirs(os.path.join(HERE, "drafts"), exist_ok=True)       # surovy navrh: prerender bez noveho pisania
     json.dump({"draft": s, "photos": photos, "lat": fact["lat"], "lon": fact["lon"], "shape": shape, "scale": scale,
