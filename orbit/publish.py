@@ -18,7 +18,7 @@ PUB = os.path.join(HERE, "published.json")
 FEED = os.path.join(HERE, "tiktok.json")
 QUEUE = os.path.join(HERE, "topics", "queue.json")
 SLOT_HOUR = 10                                               # Bratislava; 1 video denne (TikTok z appky v rovnaky cas)
-STOP_AFTER = 20                                              # #001-#010 test, #011-#020 seria v2; potom stop a porovnat cisla
+STOP_AFTER = 50                                              # #001-#010 test, #011-#020 rucna seria v2, od #021 pise fabrika sama (25. 11. 2026); po #050 stop a porovnat cisla
 TAG = "orbit"                                                # GitHub Release s videami (verejny, zadarmo)
 
 

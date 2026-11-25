@@ -36,7 +36,6 @@ on:
 
 permissions:
   contents: write          # ulozi scenar (orbit/specs), fotky a stav fronty
-  issues: write            # "CURIO - doplnit scripty" (GitHub posle mail)
 
 concurrency:
   group: orbit
@@ -76,7 +75,7 @@ jobs:
       - name: Prepare config
         run: cp config.example.json config.json
 
-      - name: Stop po 10 videach (caka na verdikt podla videni)
+      - name: Stop po STOP_AFTER videach (orbit/publish.py; caka na verdikt podla videni)
         if: (github.event_name == 'schedule' || github.event.inputs.publish == 'true')
         run: python orbit/publish.py --check-stop
 
@@ -102,7 +101,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python orbit/publish.py --unpublish ${{ github.event.inputs.unpublish }}
 
-      - name: Napisat scenar (zasoba orbit/bank, inak Groq + kontrola faktov)
+      - name: Napisat scenar v2 (Groq + kontrola faktov; 3 pokusy - tema, ktora 2x neprejde, sa preskoci)
         id: write
         if: github.event.inputs.retime != 'true' && github.event.inputs.retry != 'true' && (github.event.inputs.unpublish == '' || github.event.inputs.unpublish == null)
         env:
@@ -111,7 +110,9 @@ jobs:
           MODELS_MODEL: openai/gpt-oss-120b
           MODELS_FALLBACK: openai/gpt-oss-20b
           ORBIT_REBUILD: ${{ github.event.inputs.rebuild == 'true' && '1' || '0' }}
-        run: python orbit/write_spec.py "${{ github.event.inputs.topic }}"
+        run: |
+          T="${{ github.event.inputs.topic }}"
+          python orbit/write_spec.py "$T" || python orbit/write_spec.py "$T" || python orbit/write_spec.py "$T"
 
       - name: Render
         if: (github.event_name == 'schedule' || github.event.inputs.render == 'true')
@@ -137,19 +138,6 @@ jobs:
           BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python orbit/publish.py "${{ steps.write.outputs.slug }}"
-
-      - name: Zasoba scenarov (prazdna -> mail CURIO - doplnit scripty)
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.publish == 'true')
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python orbit/publish.py --check-stop > /dev/null || exit 0   # po STOP_AFTER dieloch zasoba netreba (ziadny falosny mail)
-          python orbit/bank.py left && exit 0
-          T="CURIO - doplniť scripty"
-          if [ -z "$(gh issue list --state open --search "$T in:title" --json number --jq '.[].number')" ]; then
-            gh issue create --title "$T" --body "Zásoba ručne prepracovaných scenárov (orbit/bank) je prázdna. Ďalšie diely by písal Groq. Doplniť: python orbit/bank.py prep N, napísať drafty, bank.py check."
-          fi
-          exit 1
 
       - name: Upload video + scenar
         if: always()

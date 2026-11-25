@@ -1304,7 +1304,15 @@ def main():
         if v2:
             fact["extract"] = more_text(fact)
             log(f"   text clanku: {len(fact['extract'])} znakov")
-        s = write(fact, photos, scale, nxt, km, v2)
+        try:
+            s = write(fact, photos, scale, nxt, km, v2)
+        except SystemExit as e:                                   # tema, ktoru model 2x nezvladne, nesmie blokovat frontu
+            if "nepresiel" in str(e):
+                q["fails"] = q.get("fails", 0) + 1
+                if q["fails"] >= 2 and q["status"] == "todo":
+                    q["status"], q["why"] = "skip", "scenar 2x nepresiel kontrolou"
+                json.dump(queue, open(qp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            raise
         if not ok:
             lat, lon, ok = locate(fact, q["lat"], q["lon"], float(s["feature_km"]))
         if not q.get("located"):
