@@ -183,9 +183,11 @@
  {
   "slug": "uluru",
   "title": "Uluru",
-  "lat": -25.345,
-  "lon": 131.03611111,
-  "status": "todo"
+  "lat": -25.3457,
+  "lon": 131.0372,
+  "status": "done",
+  "located": true,
+  "no": 22
  },
  {
   "slug": "wave_rock",

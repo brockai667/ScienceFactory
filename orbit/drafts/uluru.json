@@ -1,0 +1,147 @@
+{
+ "draft": {
+  "title": "ULURU NAMED",
+  "feature_km": 9.4,
+  "hooks": [
+   {
+    "text": "This monolith was named Ayers Rock in eighteen seventy three.",
+    "title": "NAMED 1873"
+   },
+   {
+    "text": "This monolith glows red at sunrise and sunset.",
+    "title": "RED GLOW"
+   },
+   {
+    "text": "This sacred site was the first dual‑named landmark in the Northern Territory.",
+    "title": "FIRST DUAL"
+   }
+  ],
+  "beats": [
+   {
+    "text": "This monolith was named Ayers Rock in eighteen seventy three.",
+    "overlay": {
+     "type": "rings",
+     "on": "monolith"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It is Uluru, a sandstone monolith in Australia's Northern Territory.",
+    "overlay": null,
+    "react": null,
+    "photo": {
+     "index": 0,
+     "label": "Sunset over Uluru",
+     "on": "Uluru"
+    }
+   },
+   {
+    "text": "Its base circles nine point four kilometers around.",
+    "overlay": {
+     "type": "ruler",
+     "on": "nine",
+     "label": "9.4 KM"
+    },
+    "react": {
+     "expr": "surprised",
+     "on": "kilometers"
+    },
+    "photo": null
+   },
+   {
+    "text": "Archaeological findings show humans settled nearby more than ten thousand years ago.",
+    "overlay": {
+     "type": "highlight",
+     "on": "settled"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Uluru is listed as a UNESCO World Heritage Site.",
+    "overlay": {
+     "type": "stamp",
+     "on": "UNESCO",
+     "label": "WORLD HERITAGE"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It has been a popular tourist destination since the late nineteen thirties.",
+    "overlay": {
+     "type": "highlight",
+     "on": "tourist"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It towers three hundred forty eight meters above the desert floor.",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   }
+  ],
+  "question": [
+   "WOULD YOU",
+   "CLIMB HERE?"
+  ],
+  "description": "This monolith was named Ayers Rock in eighteen seventy three. Uluru stands in Australia’s Northern Territory as a UNESCO World Heritage Site.",
+  "hashtags": [
+   "#Uluru",
+   "#Australia",
+   "#UNESCO",
+   "#WorldHeritage",
+   "#Sandstone"
+  ],
+  "hook_title": "NAMED 1873",
+  "v2": true
+ },
+ "photos": [
+  {
+   "name": "File:Uluṟu (Ayers Rock), Sunset.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Ulu%E1%B9%9Fu_%28Ayers_Rock%29%2C_Sunset.jpg/1920px-Ulu%E1%B9%9Fu_%28Ayers_Rock%29%2C_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Uluru (Ayers Rock), Sunset",
+   "credit": "Weyf, CC0",
+   "file": "photos/uluru/p0.jpg"
+  },
+  {
+   "name": "File:Uluru Ayers Rock sunrise.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Uluru_Ayers_Rock_sunrise.jpg/1920px-Uluru_Ayers_Rock_sunrise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "A panorama shot of Ayers rocker in Uluru, Northen territory, Australia. It was taken at sunrise.",
+   "credit": "Stonechenrock, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru -- 2019 -- 3602-6.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru_--_2019_--_3602-6.jpg/1920px-Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru_--_2019_--_3602-6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Uluru (Ayers Rock) in Uluṟu-Kata Tjuṯa National Park at sunset, Petermann Ranges, Northern Territory, AustraliaThe photograph was taken at the Uluru Coach Sunse",
+   "credit": "Dietmar Rabich, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru, Kuniya Walk -- 2019 -- 3615.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru%2C_Kuniya_Walk_--_2019_--_3615.jpg/1920px-Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru%2C_Kuniya_Walk_--_2019_--_3615.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Kuniya Walk near Mutitjulu Waterhole at Uluru (Ayers Rock) in Uluṟu-Kata Tjuṯa National Park, Petermann Ranges, Northern Territory, Australia",
+   "credit": "Dietmar Rabich, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru, Kuniya Walk -- 2019 -- 3630.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru%2C_Kuniya_Walk_--_2019_--_3630.jpg/1920px-Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru%2C_Kuniya_Walk_--_2019_--_3630.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Kuniya Walk near Mutitjulu Waterhole at Uluru (Ayers Rock) in Uluṟu-Kata Tjuṯa National Park, Petermann Ranges, Northern Territory, Australia",
+   "credit": "Dietmar Rabich, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru, Kuniya Walk -- 2019 -- 3636.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru%2C_Kuniya_Walk_--_2019_--_3636.jpg/1920px-Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru%2C_Kuniya_Walk_--_2019_--_3636.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Kuniya Walk near Mutitjulu Waterhole at Uluru (Ayers Rock) in Uluṟu-Kata Tjuṯa National Park, Petermann Ranges, Northern Territory, Australia",
+   "credit": "Dietmar Rabich, CC BY-SA 4.0"
+  }
+ ],
+ "lat": -25.3457,
+ "lon": 131.0372,
+ "shape": null,
+ "scale": null,
+ "next": null,
+ "v2": true
+}

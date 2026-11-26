@@ -1,0 +1,140 @@
+{
+ "title": "Uluru",
+ "coords": "25.3457 S, 131.0372 E",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "music": "cine_616.mp3",
+ "start": {
+  "lat": -25.3457,
+  "lon": 131.0372
+ },
+ "source": "https://en.wikipedia.org/wiki/Uluru",
+ "feature_km": 9.4,
+ "hook": "NAMED 1873",
+ "series_no": 22,
+ "v2": true,
+ "outro": "loop",
+ "tail": 1.4,
+ "fly0": 1.3,
+ "description": "This monolith was named Ayers Rock in eighteen seventy three. Uluru stands in Australia’s Northern Territory as a UNESCO World Heritage Site. Imagery: Esri, Maxar, Earthstar Geographics. Photo: Weyf (CC0), Wikimedia Commons. Source: Wikipedia.",
+ "hashtags": [
+  "#uluru",
+  "#australia",
+  "#unesco",
+  "#worldheritage",
+  "#sandstone",
+  "#satellite",
+  "#earthfromspace"
+ ],
+ "beats": [
+  {
+   "text": "This monolith was named Ayers Rock in eighteen seventy three.",
+   "cam": {
+    "lat": -25.3457,
+    "lon": 131.0372,
+    "z": 12.67
+   },
+   "rings": {
+    "lat": -25.3457,
+    "lon": 131.0372,
+    "km": [
+     5.64
+    ],
+    "on": "monolith"
+   }
+  },
+  {
+   "text": "It is Uluru, a sandstone monolith in Australia's Northern Territory.",
+   "cam": {
+    "lat": -25.34809,
+    "lon": 131.03984,
+    "z": 13.47
+   },
+   "fx": [
+    {
+     "kind": "sand_drift",
+     "on": "sandstone"
+    }
+   ],
+   "photo": {
+    "file": "photos/uluru/p0.jpg",
+    "label": "SUNSET OVER ULURU",
+    "credit": "Weyf, CC0",
+    "on": "Uluru",
+    "dur": 2.4
+   }
+  },
+  {
+   "text": "Its base circles nine point four kilometers around.",
+   "cam": {
+    "lat": -25.34317,
+    "lon": 131.0372,
+    "z": 13.27
+   },
+   "ruler": {
+    "lat": -25.3457,
+    "lon": 131.0372,
+    "km": 9.4,
+    "label": "9.4 KM",
+    "on": "nine"
+   },
+   "react": {
+    "expr": "surprised",
+    "on": "kilometers",
+    "dur": 1.3
+   }
+  },
+  {
+   "text": "Archaeological findings show humans settled nearby more than ten thousand years ago.",
+   "cam": {
+    "lat": -25.34749,
+    "lon": 131.03522,
+    "z": 13.07
+   },
+   "highlight": {
+    "on": "settled"
+   }
+  },
+  {
+   "text": "Uluru is listed as a UNESCO World Heritage Site.",
+   "cam": {
+    "lat": -25.33292,
+    "lon": 131.05134,
+    "z": 13.67
+   },
+   "stamp": {
+    "label": "WORLD HERITAGE",
+    "on": "UNESCO"
+   }
+  },
+  {
+   "text": "It has been a popular tourist destination since the late nineteen thirties.",
+   "cam": {
+    "lat": -25.3457,
+    "lon": 131.04,
+    "z": 13.27
+   },
+   "highlight": {
+    "on": "tourist"
+   }
+  },
+  {
+   "text": "It towers three hundred forty eight meters above the desert floor.",
+   "cam": {
+    "lat": -25.3457,
+    "lon": 131.0372,
+    "z": 13.07
+   },
+   "moves": [
+    {
+     "lat": -25.3457,
+     "lon": 131.0372,
+     "z": 12.07,
+     "on": "desert",
+     "dur": 1.5
+    }
+   ]
+  }
+ ],
+ "shape": null
+}
