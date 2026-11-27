@@ -1,0 +1,143 @@
+{
+ "draft": {
+  "title": "Lake Retba",
+  "feature_km": 35,
+  "hooks": [
+   {
+    "text": "This lake holds up to forty percent salt, making its water extremely buoyant.",
+    "title": "40% SALT"
+   },
+   {
+    "text": "This lake turns pink each dry season, thanks to algae that produce red pigment.",
+    "title": "PINK SEASON"
+   },
+   {
+    "text": "This lake lets you float effortlessly because its water is extra salty.",
+    "title": "FLOAT EASILY"
+   }
+  ],
+  "beats": [
+   {
+    "text": "This lake holds up to forty percent salt, making its water extremely buoyant.",
+    "overlay": {
+     "type": "rings",
+     "on": "lake"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "It is Lake Retba, the pink lake north-east of Dakar, Senegal.",
+    "overlay": {
+     "type": "highlight",
+     "on": "Lake"
+    },
+    "react": null,
+    "photo": {
+     "index": 2,
+     "label": "Pink Lake Senegal",
+     "on": "Lake"
+    }
+   },
+   {
+    "text": "Dry season water reaches three hundred fifty grams salt per litre.",
+    "overlay": null,
+    "react": {
+     "expr": "surprised",
+     "on": "three"
+    },
+    "photo": null
+   },
+   {
+    "text": "Its density lets visitors float effortlessly without swimming.",
+    "overlay": {
+     "type": "highlight",
+     "on": "float"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "Thirty eight thousand tonnes of salt are harvested each year.",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "UNESCO has considered it for Heritage since October two thousand five.",
+    "overlay": {
+     "type": "stamp",
+     "on": "October",
+     "label": "UNESCO REVIEW"
+    },
+    "react": null,
+    "photo": null
+   },
+   {
+    "text": "In twenty twenty five the lake regained some pink colour after the flood.",
+    "overlay": null,
+    "react": null,
+    "photo": null
+   }
+  ],
+  "question": [
+   "WILL YOU",
+   "FLOAT HERE?"
+  ],
+  "description": "This lake holds up to forty percent salt, making its water extremely buoyant. Lake Retba lies north-east of Dakar in Senegal.",
+  "hashtags": [
+   "#LakeRetba",
+   "#Senegal",
+   "#PinkLake",
+   "#SaltHarvest",
+   "#UNESCO"
+  ],
+  "hook_title": "40% SALT",
+  "v2": true
+ },
+ "photos": [
+  {
+   "name": "File:Lac Rose in Senegal.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Lac_Rose_in_Senegal.jpg/1920px-Lac_Rose_in_Senegal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Site privilégié pour l'arrivée du Paris/Dakar, le lac rose possède 390g de sel par litre d'eau",
+   "credit": "Arnault, CC BY-SA 2.0"
+  },
+  {
+   "name": "File:Lake Retba (Lac Rose), worker is digging the salt in the lake.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Lake_Retba_%28Lac_Rose%29%2C_worker_is_digging_the_salt_in_the_lake.jpg/1920px-Lake_Retba_%28Lac_Rose%29%2C_worker_is_digging_the_salt_in_the_lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "This is an image of \"African people at work\" from",
+   "credit": "林戈亮, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Lac Rose, Senegal.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Lac_Rose%2C_Senegal.jpg/1920px-Lac_Rose%2C_Senegal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "The Pink Lake in Senegal. A unique lake with an unusually pink hue due to the salts and bacteria that are found in the lake just outside of the Senegalese capit",
+   "credit": "Jankow815, CC BY-SA 4.0",
+   "file": "photos/lake_retba/p2.jpg"
+  },
+  {
+   "name": "File:Lac rose au Sénégal.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Lac_rose_au_S%C3%A9n%C3%A9gal.jpg/1920px-Lac_rose_au_S%C3%A9n%C3%A9gal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Lac rose au Sénégal",
+   "credit": "Abrahami, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:RetbaLakeShore.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/RetbaLakeShore.jpg/1920px-RetbaLakeShore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "desc": "Retba See vom Strand aus gesehen",
+   "credit": "Jjm2311, CC BY-SA 4.0"
+  },
+  {
+   "name": "File:Lac Rose 002 (46633569581).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Lac_Rose_002_%2846633569581%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "desc": "The Pink Lake",
+   "credit": "John Crane from Prague, Czech Republic, CC BY 2.0"
+  }
+ ],
+ "lat": 14.674,
+ "lon": -17.3221,
+ "shape": null,
+ "scale": null,
+ "next": null,
+ "v2": true
+}

@@ -194,14 +194,17 @@
   "title": "Wave Rock",
   "lat": -32.44389,
   "lon": 118.89828,
-  "status": "todo"
+  "status": "skip",
+  "why": "2/5 z orbitu (model: Small hill, no distinct wave shape visible.)"
  },
  {
   "slug": "lake_retba",
   "title": "Lake Retba",
-  "lat": 14.83833889,
-  "lon": -17.24482222,
-  "status": "todo"
+  "lat": 14.674,
+  "lon": -17.3221,
+  "status": "done",
+  "located": true,
+  "no": 23
  },
  {
   "slug": "spotted_lake",
