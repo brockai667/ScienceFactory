@@ -211,7 +211,8 @@
   "title": "Spotted Lake",
   "lat": 49.07806,
   "lon": -119.56694,
-  "status": "todo"
+  "status": "skip",
+  "why": "2/5 z orbitu (model: Small white blob, lacks striking visual detail.)"
  },
  {
   "slug": "great_salt_lake",
@@ -223,9 +224,11 @@
  {
   "slug": "salar_de_uyuni",
   "title": "Salar de Uyuni",
-  "lat": -20.133775,
-  "lon": -67.48913333,
-  "status": "todo"
+  "lat": -20.2043,
+  "lon": -67.5914,
+  "status": "written",
+  "located": true,
+  "no": 24
  },
  {
   "slug": "dead_sea",
