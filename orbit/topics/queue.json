@@ -226,9 +226,8 @@
   "title": "Salar de Uyuni",
   "lat": -20.2043,
   "lon": -67.5914,
-  "status": "written",
-  "located": true,
-  "no": 24
+  "status": "todo",
+  "located": true
  },
  {
   "slug": "dead_sea",

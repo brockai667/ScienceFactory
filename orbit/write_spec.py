@@ -191,6 +191,8 @@ Structure, exactly 7 beats, 64 to 78 short words in total (about 420 characters,
 - At most two numbers per beat, and never the same number twice in the video.
 - Every beat is a different kind of fact. Never two beats about the same thing (two production records, two sizes).
 - Beat 7 is not an award, a listing or a founding date: it is what happened to the place or what it is like today.
+- No beat about a UNESCO or heritage listing, an award, or how popular the place is with tourists: say what the place is made of, what happens there or what it went through.
+- A size, depth or distance always has its unit right after the number ("one hundred twenty nine kilometers wide", never "one hundred twenty nine wide").
 - Write every number and year in words ("nineteen seventy", "forty-nine thousand"), never in digits. Name at most two years in the whole video.
 - Do not repeat a sentence, name or nickname you already used.
 
@@ -217,7 +219,7 @@ Example (a different place, 72 words):
 
 Visual cues (each "on" is ONE word copied exactly from that beat's text, where the cue appears):
 - beat 1 overlay: {"type":"rings","on":word} on the word that names what the viewer sees (the code draws a ring around the place).
-- overlays in beats 3-7 (at most one per beat, use 1 to 3, only these three types; labels in plain words with a noun, never a bare number, no abbreviations like MYA or KM2):
+- overlays in beats 3-7 (at most one per beat, only these three types; use at least TWO stamps, on the two strongest facts, plus a ruler if one of these beats says the size; highlight is an extra and never replaces a stamp; labels in plain words with a noun, never a bare number, no abbreviations like MYA or KM2):
   {"type":"ruler","on":word,"label":"40 KM"} for the size (label must match feature_km),
   {"type":"stamp","on":word,"label":"SHORT DATE OR FACT"} for the key date, record or a named part ("NO LANDING", "EMPTY SINCE 1974", "2016: NEW BRIDGE"),
   {"type":"highlight","on":word} spotlights the outline of the place.
@@ -250,7 +252,7 @@ Return JSON: {"problems": [str]}, one short line per false or invented fact. Emp
 JUDGE = """You pick the strongest opening line (hook) for a 30 second vertical video about a place seen on a satellite map.
 Score each candidate 0-2 on each point:
 1. Picture: names a concrete visual in the first 6 words.
-2. Tension: a number, scale or impossibility that makes you ask a question, WITHOUT revealing the cause or answer (hook or title naming the cause scores 0 here).
+2. Tension: a number, scale or impossibility that makes you ask a question, WITHOUT revealing the cause or answer (hook or title naming the cause scores 0 here). A hook whose only fact is the year the place was named, founded or listed scores 0 here when another candidate has a size, a record or a ban.
 3. Speed and sound: 14 words or fewer, clear without seeing the screen, no hype phrases, no coordinate numbers.
 4. Truth and fit: every claim is in the article; the title is a plain fact with the hook's own number (not poetic or invented words, not the cause).
 Highest total wins; a tie goes to the shorter one.
@@ -264,7 +266,7 @@ HIT = re.compile(r"\b(struck|strikes|hit|hits|slammed|smashed|crashed|landed|imp
 TEASE = re.compile(r"\bwait (till|until|to)\b|\bstay (till|until|to the end)\b|\byou'll (soon )?(see|hear|find)\b"
                    r"|one more surprise|\bfind out\b|keep watching", re.I)
 SOFT = re.compile(r"never repeat a number|one number per beat|numbers per beat|need \d+-\d+ words|react cues|not a bare number"
-                  r"|longer than \d+ words|title '.*' needs a true number")
+                  r"|longer than \d+ words|title '.*' needs a true number|listing or tourism line")
 SIGNOFF_RX = re.compile(r"\bfollow\b|next target|next scan|orbi out|subscribe|see you|\bstay tuned\b", re.I)   # v2: ziadne rozlucenie
 
 
@@ -480,13 +482,24 @@ def validate_v2(s, photos, ctx):
         if SIGNOFF_RX.search(t):
             errs.append(f"beat {i + 1} signs off ('{SIGNOFF_RX.search(t).group(0)}'): no goodbye and no 'Next target', "
                         f"the last beat is the strongest fact")
+        if NOUNIT_RX.search(t):
+            errs.append(f"beat {i + 1} says a number without its unit ('{NOUNIT_RX.search(t).group(0)}'): put the unit "
+                        f"right after the number (kilometers, meters, miles, feet)")
+        if FILLER_RX.search(t):
+            errs.append(f"beat {i + 1} is a listing or tourism line ('{FILLER_RX.search(t).group(0)}'): replace it with a "
+                        f"concrete fact about the place itself (what it is made of, what happens there, what it went through)")
+    for i, h in enumerate(h for h in s.get("hooks") or [] if isinstance(h, dict)):
+        if NOUNIT_RX.search(str(h.get("text", ""))):
+            errs.append(f"hook {i + 1} says a number without its unit ('{NOUNIT_RX.search(str(h['text'])).group(0)}'): put the "
+                        f"unit right after the number (kilometers, meters, miles, feet)")
     if bs and (len(bs[0].get("text", "").split()) > 15 or not re.search(r"\b(this|these)\b", bs[0].get("text", ""), re.I)):
         errs.append("beat 1 must be the hook: 14 words max, naming what the viewer sees with 'this' or 'these'")
     errs += v_tease(bs) + v_ear(bs)
     if not 1 <= sum(1 for b in bs if b.get("react")) <= 2:
         errs.append("use 1 or 2 react cues")
-    if sum(1 for b in bs[2:] if (b.get("overlay") or {}).get("type") in ("ruler", "tag", "stamp", "highlight")) < 1:
-        errs.append("use 1 to 3 overlays (ruler, tag, stamp, highlight) in beats 3-7")
+    if sum(1 for b in bs[2:] if (b.get("overlay") or {}).get("type") in ("ruler", "stamp")) < 2:
+        errs.append("beats 3-7 need at least 2 stamp overlays (label = the fact in 2-4 words from that beat, like "
+                    "'38,000 TONNES' or 'NO LANDING'); highlight does not count")
     errs += v_labels(bs, v2=True)
     if photos and len(bs) > 1 and not bs[1].get("photo"):
         errs.append("beat 2 needs a photo cue: the photo of the place is the proof of the hook")
@@ -576,6 +589,41 @@ def num_label(t):
     return NUMRUN_RX.sub(lambda m: m.group(0) if m.group(0).lower() == "one" else digits(m.group(0)), t)   # "ONE FAMILY" ostava
 
 
+NOUNIT_RX = re.compile(rf"\b(?:{_NW})\s+(?:wide|long|deep|high|tall|across|thick)\b", re.I)    # "one hundred twenty nine wide"
+FILLER_RX = re.compile(r"\bUNESCO\b|world heritage|heritage (?:site|list)|tourist (?:destination|attraction|spot)"
+                       r"|popular (?:tourist|destination|attraction|spot|with|among)", re.I)
+_STOPW = set("of in the a an and to on at by from than is are was were each per every that which with for or as it its has have "
+             "had since after before when while but so above below over under around about into within without between".split())
+
+
+def auto_stamp(text):
+    """beat bez popisu -> peciatka z cisla a slov za nim: 'Thirty eight thousand tonnes of salt...' -> '38,000 TONNES',
+    'forty percent salt' -> '40% SALT'. Roky a cislo bez podstatneho mena sa neberu. None = v beate nic vhodne."""
+    for m in NUMRUN_RX.finditer(text):
+        w = m.group(0)
+        if w.lower() == "one" or YEARW_RX.match(text, m.start()):
+            continue
+        num, end = digits(w), m.end()
+        d = re.match(rf"[ -]point((?:[ -](?:{_ONE}|zero))+)", text[end:], re.I)
+        if d:                                                # "nine point four" -> 9.4
+            num += "." + "".join(str(UNITS[x.lower()]) for x in re.findall(r"[A-Za-z]+", d.group(1)))
+            end += d.end()
+        words = []
+        for x in re.findall(r"[A-Za-z']+", re.split(r"[.!?;:,]", text[end:])[0]):
+            if x.lower() in _STOPW:
+                break
+            words.append(x)
+        if words and words[0].lower() == "percent":
+            num, words = num + "%", words[1:]
+        if not words or (num.replace(",", "").isdigit() and 1500 <= int(num.replace(",", "")) <= 2100 and len(words) < 1):
+            continue
+        lab = f"{num} {' '.join(words[:2])}".upper()
+        if len(lab) > 26:
+            lab = f"{num} {words[0]}".upper()
+        return {"type": "stamp", "on": re.match(r"\S+", text[m.start():]).group(0).strip(".,!?;:'\""), "label": lab}
+    return None
+
+
 def stamp_fix(label, text):
     """stitok v2 ukaze to iste cislo, co povie hlas, a k cislu podstatne meno; zlomky ('THREE QUARTERS') ostavaju slovami"""
     if re.search(r"quarter|half|third", label, re.I):
@@ -621,6 +669,15 @@ def repair_v2(s):
     if not rs and len(bs) > 3:
         b = next((x for x in bs[2:-1] if numbers(x.get("text", ""))), bs[3])
         b["react"] = {"expr": "surprised", "on": max(b["text"].split(), key=len).strip(".,!?;:'\"")}
+    cnt = lambda: sum(1 for b in bs[2:] if (b.get("overlay") or {}).get("type") in ("ruler", "stamp"))
+    free = [b for b in bs[2:] if not b.get("overlay") and not b.get("photo")] + \
+           [b for b in bs[2:] if (b.get("overlay") or {}).get("type") == "highlight" and not b.get("photo")]
+    for b in free:                                           # qc.py: kruh + 2 popisy = 3 skutocne efekty (Salar mal len kruh)
+        if cnt() >= 2:
+            break
+        st = auto_stamp(b.get("text", ""))
+        if st:
+            b["overlay"] = st
     if len(bs) > 2 and not any((b.get("overlay") or {}).get("type") in ("ruler", "tag", "stamp", "highlight") for b in bs[2:]):
         bs[2]["overlay"] = {"type": "highlight", "on": max(bs[2]["text"].split(), key=len).strip(".,!?;:'\"")}
 

@@ -133,8 +133,30 @@ def _():
     assert W.validate_v2(s, photos, {"article": fact["extract"], "scale": None, "next": None})
     for slug in GOOD:
         fact, s, photos, _ = draft_from_ref(slug)
+        W.repair_v2(s)                                           # ako write(): chybajuce peciatky doplni kod
         errs = W.validate_v2(s, photos, {"article": fact["extract"], "scale": None, "next": None})
         assert not errs, f"{slug}: {errs}"
+
+
+@test("2c v2: peciatka z cisla, cislo bez jednotky a vypln (UNESCO, turisti) su chyba, repair doplni popisy")
+def _():
+    assert W.auto_stamp("Thirty eight thousand tonnes of salt are harvested each year.")["label"] == "38,000 TONNES"
+    assert W.auto_stamp("This lake holds up to forty percent salt.")["label"] == "40% SALT"
+    assert W.auto_stamp("Its base circles nine point four kilometers around.")["label"] == "9.4 KILOMETERS"
+    assert W.auto_stamp("This monolith was named Ayers Rock in eighteen seventy three.") is None
+    assert W.auto_stamp("Only one family owns it.") is None
+    fact, s, photos, _ = draft_from_ref("surtsey")
+    ctx = {"article": fact["extract"], "scale": None, "next": None}
+    x = copy.deepcopy(s); x["beats"][3]["text"] = "The crater is one hundred twenty nine wide."
+    assert any("without its unit" in e for e in W.validate_v2(x, photos, ctx))
+    x = copy.deepcopy(s); x["beats"][4]["text"] = "It is listed as a UNESCO World Heritage Site."
+    assert any("listing or tourism line" in e for e in W.validate_v2(x, photos, ctx))
+    x = copy.deepcopy(s)
+    for b in x["beats"][2:]:
+        b["overlay"] = None
+    x["beats"][2]["text"] = "The eruption began one hundred thirty meters under water."
+    W.repair_v2(x)
+    assert (x["beats"][2].get("overlay") or {}).get("label") == "130 METERS", x["beats"][2]
 
 
 @test("2b validate_v2: zle navrhy neprejdu (8 beatov, sign-off, Next target, dlhy, otazka, chyba foto)")
